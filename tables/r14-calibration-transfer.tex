@@ -1,13 +1,21 @@
 \begin{table*}[t]\centering\footnotesize
-\caption{Calibration transfer and write-only padding on each target model\textquotesingle s 46 test tasks (24 customers). BA is the endpoint-suite maximum; paired $\Delta$ is relative to target-local joint shaping (percentage points). Costs divide summed test bytes/calls by undefended target-model totals.}\label{tab:calibration-transfer}
-\begin{tabularx}{\textwidth}{@{}llrrYYrr@{}}\toprule
-Target & Calibration / intervention & Cancel BA & Return BA & $\Delta$ cancel [95\% CI] & $\Delta$ return [95\% CI] & Bytes$\times$ & Calls$\times$\\\midrule
+\caption{Calibration source, localized padding and training sensitivity. Top: original 46 test tasks / 24 customers per endpoint; $\Delta$ is the seven-attack max-BA contrast against target-local joint shaping (points). Bottom: 100 paired training-customer resamples, evaluated on the same fixed tests.}\label{tab:calibration-transfer}
+\begin{tabularx}{\textwidth}{@{}lYrrrrrr@{}}\toprule
+Target & Calibration / intervention & Cancel BA & Return BA & $\Delta$ cancel & $\Delta$ return & Bytes$\times$ & Calls$\times$\\\midrule
 MiniMax & MiniMax joint & 60.4 & 67.5 & -- & -- & 20.06 & 3.36\\
-MiniMax & GLM joint & 50.8 & 63.0 & $-9.6$ [-21.1, 6.4] & $-4.5$ [-25.0, 12.3] & 17.48 & 3.11\\
-MiniMax & Write padding & 50.0 & 61.3 & $-10.4$ [-23.3, 0.0] & $-6.2$ [-20.0, 9.4] & 1.45 & 1.00\\
+MiniMax & GLM joint & 50.8 & 63.0 & $-9.6$ & $-4.5$ & 17.48 & 3.11\\
+MiniMax & Write padding & 50.0 & 61.3 & $-10.4$ & $-6.2$ & 1.45 & 1.00\\
 GLM & GLM joint & 50.0 & 67.3 & -- & -- & 15.95 & 4.24\\
-GLM & MiniMax joint & 70.8 & 50.0 & $+20.8$ [-12.6, 35.3] & $-17.3$ [-38.2, -5.3] & 18.65 & 4.66\\
-GLM & Write padding & 60.0 & 61.6 & $+10.0$ [-21.4, 34.4] & $-5.7$ [-26.0, 15.8] & 1.51 & 1.00\\
+GLM & MiniMax joint & 70.8 & 50.0 & $+20.8$ & $-17.3$ & 18.65 & 4.66\\
+GLM & Write padding & 60.0 & 61.6 & $+10.0$ & $-5.7$ & 1.51 & 1.00\\\bottomrule
+\end{tabularx}
+\smallskip
+\begin{tabularx}{\textwidth}{@{}llYYY@{}}\toprule
+Target & Label & Local recalibration BA: 95\% spread & Imported $-$ local $\Delta$: median [95\% spread] & Same $\Delta$ with attacker resampling: median [95\% spread]\\\midrule
+MiniMax & cancel & [50.0, 64.8] & +0.0 [-13.0, 11.1] & +0.0 [-14.6, 16.5] \\
+MiniMax & return & [55.2, 73.4] & -4.5 [-20.2, 6.1] & -1.2 [-11.7, 10.8] \\
+GLM & cancel & [50.0, 69.2] & +2.5 [-13.8, 17.1] & +2.9 [-14.4, 17.5] \\
+GLM & return & [50.0, 67.9] & +0.0 [-16.9, 18.4] & +0.3 [-11.2, 18.9] \\
 \bottomrule\end{tabularx}
-\par\smallskip\raggedright The seven attacks include protected refits, decoded-tool, target-call-count and total-exchange-count rules. Nominal intervals reselect both maxima on 2,000 common customer draws, conditional on the fitted attackers. Each source calibration uses only source training data; target attackers use target training data. Write padding executes no cover calls. These are local TLS replays of fixed model trajectories; no live planner latency or utility is inferred from these costs.
+\par\smallskip\raggedright Original eight customer-paired contrasts: 99,999 whole-suite swaps each, Holm-adjusted $p=1.000$ throughout. Historical nominal intervals remain in the supplement. Resampling spreads measure training sensitivity, not confidence in a population effect. All seven attacks (including decoding and call counts) are refitted per condition. Costs are summed local TLS test bytes/calls relative to raw target totals; they exclude live planner utility and WAN delay.
 \end{table*}

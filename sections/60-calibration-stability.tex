@@ -1,0 +1,64 @@
+\section{Calibration Source and Training-Customer Sensitivity}\label{sec:calibration-stability}
+\paragraph{Question and design}
+The opposite GLM point changes ($+20.8$ cancellation and $-17.3$ return BA points) describe a target-dependent operating point. They do not isolate a causal model-source effect: changing source calibration also changes a finite training sample's templates, caps and donors. We therefore add a local-recalibration baseline and an attacker-only baseline. This post hoc protocol fixed 100 replicate seeds and the complete seven-attack endpoint suite before the new results. The source inputs, plan and implementation are hashed. No model calls, new customers or new task outcomes are added.
+
+Each replicate draws 29 training customers with replacement and retains all their tasks, using identical customer draws for the two source endpoints. All 24 original test customers remain disjoint. Duplicate customer selections weight episode-derived calibration lengths; the original donor deduplication and fixed cover random seeds are retained. Donor pool ordering follows the resampling order. The original calibration helper's allowed-task list remains distinct from the actual sampled tasks, which are archived explicitly. The resulting training sample can contain a different number of episode occurrences from the original 69 tasks.
+
+Both calibrations are applied to all 115 saved trajectories from each endpoint, producing 460 fresh local TLS 1.2 captures per replicate and 46,000 captures overall. Attacks fit only target training trajectories. Each fit includes majority, clean-trained gradient boosting, defended-data logistic regression and gradient boosting, decoded-tool gradient boosting, decoded target-call count and total exchange count. The decoder and count thresholds are refitted. These are length/direction experiments, with no reconstructed timing or new live-planner measurements.
+
+\paragraph{Three sensitivity regimes}
+\emph{Calibration only} rebuilds the defense and refits attacks on the full original target training population. \emph{Calibration plus attacker} also resamples training customers for attack fitting, independently of the calibration draw but paired across conditions. \emph{Attacker only} refits attacks on the original frozen local-calibration captures. Single-class training fits retain the draw and use constant predictions. Fixed-test percentile ranges measure pipeline sensitivity; they are not population confidence intervals. Original results are preserved, and the new implementation reproduces both original calibrators and all 84 original seven-attacker prediction arrays exactly.
+
+\paragraph{Conditional permutation tests and multiplicity}
+The original table has eight target-level contrasts: two endpoints, two interventions relative to local joint shaping, and two labels. For each contrast we perform 99,999 seeded customer-level swaps of the entire seven-attacker condition prediction vector; all tasks of a customer move together. We reselect each suite maximum and use the absolute difference as a two-sided statistic with the plus-one Monte Carlo correction. Holm adjustment covers all eight contrasts. The null is conditional exchangeability of prediction vectors within customers, not a randomized causal model-source intervention. A small clustered example is checked against complete swap enumeration.
+
+\begin{table}[ht]\centering\small
+\caption{Original contrasts under customer-paired permutation tests. $\Delta$ is intervention minus local joint max-BA in points.}\label{tab:r21-permutation}
+\begin{tabular}{lllrrr}\toprule
+Target & Intervention & Label & $\Delta$ & Raw $p$ & Holm $p$\\\midrule
+MiniMax & Write padding & cancel & -10.4 & 0.20175 & 1.000 \\
+MiniMax & Imported joint & cancel & -9.6 & 0.12785 & 1.000 \\
+MiniMax & Write padding & return & -6.2 & 0.34301 & 1.000 \\
+MiniMax & Imported joint & return & -4.5 & 0.55133 & 1.000 \\
+GLM & Imported joint & cancel & +20.8 & 0.13382 & 1.000 \\
+GLM & Write padding & cancel & +10.0 & 0.48630 & 1.000 \\
+GLM & Imported joint & return & -17.3 & 0.17389 & 1.000 \\
+GLM & Write padding & return & -5.7 & 0.61884 & 1.000 \\
+\bottomrule\end{tabular}\end{table}
+The earlier return percentile interval excluded zero, whereas the paired permutation test gives $p=0.174$ before adjustment. These are different inferential constructions for a nonsmooth maximum over fitted attacks in a small clustered sample. We retain the historical intervals for traceability and withdraw the earlier ``resolved return reduction'' interpretation. None of the eight contrasts is resolved by the corrected tests; this does not establish equivalence between the defenses.
+
+\begin{table}[ht]\centering\small
+\caption{Local-pipeline stability on the fixed 46-task test population. Entries are median BA [2.5th, 97.5th percentiles] over 100 training-customer resamples.}\label{tab:r21-local}
+\begin{tabular}{llrrr}\toprule
+Endpoint & Label & Calibration only & Calibration + attacker & Attacker only\\\midrule
+MiniMax & cancel & 50.0 [50.0, 64.8] & 52.1 [50.0, 65.4] & 57.5 [50.0, 72.5] \\
+MiniMax & return & 67.5 [55.2, 73.4] & 62.6 [50.0, 72.1] & 63.9 [50.0, 67.5] \\
+GLM & cancel & 57.5 [50.0, 69.2] & 55.8 [50.0, 68.1] & 52.9 [50.0, 60.8] \\
+GLM & return & 52.5 [50.0, 67.9] & 53.6 [50.0, 65.7] & 66.4 [50.0, 67.3] \\
+\bottomrule\end{tabular}\end{table}
+
+\begin{table}[ht]\centering\small
+\caption{Imported-minus-local max-BA contrasts after paired source-calibration resampling. Fixed-test cells are median [95\% sensitivity spread], in points. Joint train/test cells are exploratory percentile intervals with attacker retraining.}\label{tab:r21-deltas}
+\begin{tabular}{llrrr}\toprule
+Endpoint & Label & Calibration only & Calibration + attacker & Joint train/test\\\midrule
+MiniMax & cancel & +0.0 [-13.0, 11.1] & +0.0 [-14.6, 16.5] & [-26.1, 22.3] \\
+MiniMax & return & -4.5 [-20.2, 6.1] & -1.2 [-11.7, 10.8] & [-18.7, 17.5] \\
+GLM & cancel & +2.5 [-13.8, 17.1] & +2.9 [-14.4, 17.5] & [-21.7, 27.4] \\
+GLM & return & +0.0 [-16.9, 18.4] & +0.3 [-11.2, 18.9] & [-19.9, 26.3] \\
+\bottomrule\end{tabular}\end{table}
+For joint sampling intervals, each of the 100 training replicates supplies 20 common 24-customer test bootstrap draws. All tasks from a selected customer stay together and both suite maxima are reselected. Single-class test draws are counted and omitted without replacement. The 2,000 nested draws are not 2,000 independent training fits. These exploratory empirical-population intervals include calibration and attacker-refit variability but are neither multiplicity-adjusted confirmatory intervals nor evidence for unobserved customer populations.
+Invalid joint test draws (MiniMax cancel/return, GLM cancel/return): 8, 3, 8, 3.
+
+\begin{table}[ht]\centering\small
+\caption{Resampled-calibration cost: median [95\% spread] of summed test cost divided by raw target totals.}\label{tab:r21-cost}
+\begin{tabular}{llrr}\toprule
+Target & Calibration source & Bytes$\times$ & Calls$\times$\\\midrule
+MiniMax & MiniMax & 17.35 [12.7, 20.0] & 3.17 [2.8, 3.4] \\
+GLM & MiniMax & 16.06 [11.7, 18.6] & 4.39 [3.9, 4.7] \\
+MiniMax & GLM & 15.58 [13.4, 17.5] & 2.90 [2.6, 3.1] \\
+GLM & GLM & 13.97 [11.7, 16.0] & 3.85 [3.4, 4.2] \\
+\bottomrule\end{tabular}\end{table}
+
+\paragraph{What this establishes}
+Local GLM return BA has median 52.5\% and 95\% calibration-sensitivity range 50.0--67.9\%: a 17.9-point width comparable to the original 17.3-point source contrast. Under paired source resampling, the imported-minus-local return contrast has median 0.0 and range $[-16.9,18.4]$ points; with attacker resampling its median is $+0.3$ and range $[-11.2,18.9]$. The joint train/test interval is $[-19.9,26.3]$. Hence the original directional attribution is not stable to local training variability. These ranges describe empirical sensitivity, not equivalence or a universal absence of source effects.
+The deployment comparison must be indexed by target, source calibration, training sample and attacker fitting. An observed nonmonotone difference is a reason to measure that operating point; it is not sufficient evidence of a model-source transfer penalty. The additional experiment prices local recalibration variability and identifies which claims require a new customer population. The operational decision is to compare imported calibration with repeated local calibration under matched attacker fitting before carrying a numerical defense claim forward. All original attack, reward and cost measurements retain their stated scopes.
