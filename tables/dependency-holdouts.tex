@@ -1,0 +1,11 @@
+\begin{table}[t]\centering\footnotesize
+\caption{Dependency--holdout--claim map. Each row excludes one explanation, not all confounding.}\label{tab:dependency-holdouts}
+\begin{tabularx}{\columnwidth}{@{}p{.27\columnwidth}YY@{}}\toprule
+Dependency / source & Required holdout & Claim licensed; residual limit\\\midrule
+Task / UI Traces & Question/task-family & New task units; fixed harness remains.\\
+Browser / FP-Agent & Visitor/configuration & Configuration transfer; task-only split does not test it.\\
+Workflow / traffic benchmark & Agent topology or composition & Tested topology shift; no all-orchestrator guarantee.\\
+Hardware / LeakyLMs & GPU/serving calibration & Tested architectural transfer given calibration; not unknown-hardware recovery.\\
+Repository / coding fingerprints & Repository and generation pathway & Tested attribution domain; not covert human-mediated use.\\
+Order / worked case & Same units, refit shuffle & Fixed-program order increment; not task-independent identity.\\\bottomrule
+\end{tabularx}\end{table}

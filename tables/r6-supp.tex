@@ -1,0 +1,107 @@
+\begin{table}[htbp]\centering\footnotesize
+\caption{E13 baseline prompt: intent BA [95\% customer-cluster interval] and AUROC. The full suite unions all available views.}
+\begin{tabular}{llrrrr}\toprule
+Condition & View & Cancel BA [CI] & Return BA [CI] & Cancel AUC & Return AUC\\\midrule
+Raw & Size/order & \mbox{91.7 [84.7, 100.0]} & \mbox{86.4 [79.5, 97.2]} & 0.917 & 0.875 \\
+Raw & Timing/direction & \mbox{53.8 [50.0, 72.5]} & \mbox{52.9 [50.0, 64.1]} & 0.531 & 0.570 \\
+Raw & Joint features & \mbox{84.3 [72.5, 97.4]} & \mbox{80.5 [69.9, 93.6]} & 0.836 & 0.835 \\
+Raw & Full adaptive suite & \mbox{91.7 [84.7, 100.0]} & \mbox{86.4 [79.5, 97.2]} & 0.917 & 0.875 \\
+\addlinespace[2pt]
+Per-call padding & Size/order & \mbox{68.6 [50.0, 92.8]} & \mbox{54.8 [50.0, 74.8]} & 0.678 & 0.514 \\
+Per-call padding & Timing/direction & \mbox{54.6 [50.0, 63.0]} & \mbox{62.7 [53.8, 78.0]} & 0.500 & 0.657 \\
+Per-call padding & Joint features & \mbox{51.0 [50.0, 61.4]} & \mbox{50.2 [50.0, 69.0]} & 0.569 & 0.545 \\
+Per-call padding & Full adaptive suite & \mbox{68.6 [50.8, 92.8]} & \mbox{62.7 [54.2, 79.3]} & 0.678 & 0.657 \\
+\addlinespace[2pt]
+Shadow, serial & Size/order & \mbox{50.0 [50.0, 56.9]} & \mbox{50.7 [50.0, 62.5]} & 0.500 & 0.505 \\
+Shadow, serial & Timing/direction & \mbox{61.4 [53.8, 67.7]} & \mbox{52.9 [50.0, 62.5]} & 0.625 & 0.500 \\
+Shadow, serial & Joint features & \mbox{51.0 [50.0, 64.6]} & \mbox{50.0 [50.0, 57.7]} & 0.596 & 0.500 \\
+Shadow, serial & Estimated flush removed & \mbox{57.8 [50.0, 70.7]} & \mbox{53.4 [50.0, 64.6]} & 0.583 & 0.530 \\
+Shadow, serial & Full adaptive suite & \mbox{61.4 [54.6, 71.1]} & \mbox{53.4 [50.0, 65.8]} & 0.625 & 0.530 \\
+\addlinespace[2pt]
+Shadow, two in flight & Size/order & \mbox{51.7 [50.0, 68.3]} & \mbox{57.7 [51.5, 66.1]} & 0.509 & 0.569 \\
+Shadow, two in flight & Timing/direction & \mbox{50.0 [50.0, 57.1]} & \mbox{50.0 [50.0, 59.9]} & 0.554 & 0.500 \\
+Shadow, two in flight & Joint features & \mbox{50.0 [50.0, 57.1]} & \mbox{52.6 [50.0, 63.3]} & 0.531 & 0.522 \\
+Shadow, two in flight & Estimated flush removed & \mbox{50.0 [50.0, 64.0]} & \mbox{50.0 [50.0, 56.7]} & 0.500 & 0.500 \\
+Shadow, two in flight & Full adaptive suite & \mbox{51.7 [50.0, 69.1]} & \mbox{57.7 [53.4, 66.8]} & 0.554 & 0.569 \\
+\addlinespace[2pt]
+Full tunnel, 2 ms & Size/order & \mbox{62.5 [54.3, 70.1]} & \mbox{52.9 [50.0, 61.0]} & 0.594 & 0.521 \\
+Full tunnel, 2 ms & Timing/direction & \mbox{53.1 [50.2, 59.3]} & \mbox{50.0 [50.0, 55.6]} & 0.641 & 0.500 \\
+Full tunnel, 2 ms & Joint features & \mbox{56.2 [50.9, 63.9]} & \mbox{50.0 [50.0, 57.4]} & 0.656 & 0.569 \\
+Full tunnel, 2 ms & Full adaptive suite & \mbox{62.5 [55.6, 70.2]} & \mbox{52.9 [50.1, 61.3]} & 0.656 & 0.569 \\
+\addlinespace[2pt]
+Full tunnel, 5 ms & Size/order & \mbox{51.4 [50.0, 59.0]} & \mbox{54.5 [50.0, 60.3]} & 0.500 & 0.513 \\
+Full tunnel, 5 ms & Timing/direction & \mbox{53.1 [50.0, 71.9]} & \mbox{53.2 [50.0, 62.4]} & 0.575 & 0.548 \\
+Full tunnel, 5 ms & Joint features & \mbox{52.4 [50.0, 61.8]} & \mbox{57.3 [53.1, 63.7]} & 0.534 & 0.555 \\
+Full tunnel, 5 ms & Full adaptive suite & \mbox{53.1 [50.3, 71.9]} & \mbox{57.3 [54.2, 64.2]} & 0.575 & 0.555 \\
+\addlinespace[2pt]
+\bottomrule\end{tabular}
+\end{table}
+\clearpage
+\begin{table}[htbp]\centering\footnotesize
+\caption{E13 rules prompt: intent BA [95\% customer-cluster interval] and AUROC. The full suite unions all available views.}
+\begin{tabular}{llrrrr}\toprule
+Condition & View & Cancel BA [CI] & Return BA [CI] & Cancel AUC & Return AUC\\\midrule
+Raw & Size/order & \mbox{94.4 [83.3, 100.0]} & \mbox{87.0 [78.0, 97.6]} & 0.944 & 0.905 \\
+Raw & Timing/direction & \mbox{57.8 [50.0, 70.6]} & \mbox{56.1 [50.0, 63.9]} & 0.598 & 0.557 \\
+Raw & Joint features & \mbox{84.7 [75.2, 98.2]} & \mbox{79.1 [67.8, 92.0]} & 0.851 & 0.822 \\
+Raw & Full adaptive suite & \mbox{94.4 [83.3, 100.0]} & \mbox{87.0 [78.0, 97.6]} & 0.944 & 0.905 \\
+\addlinespace[2pt]
+Per-call padding & Size/order & \mbox{70.1 [50.0, 86.0]} & \mbox{54.8 [50.0, 74.7]} & 0.680 & 0.500 \\
+Per-call padding & Timing/direction & \mbox{55.8 [50.0, 70.2]} & \mbox{50.6 [50.0, 62.4]} & 0.530 & 0.534 \\
+Per-call padding & Joint features & \mbox{59.4 [50.0, 76.6]} & \mbox{53.6 [50.0, 71.0]} & 0.575 & 0.508 \\
+Per-call padding & Full adaptive suite & \mbox{70.1 [50.0, 86.0]} & \mbox{54.8 [50.0, 74.8]} & 0.680 & 0.534 \\
+\addlinespace[2pt]
+Shadow, serial & Size/order & \mbox{58.2 [50.2, 71.2]} & \mbox{57.9 [50.7, 66.8]} & 0.581 & 0.597 \\
+Shadow, serial & Timing/direction & \mbox{51.5 [50.0, 69.8]} & \mbox{57.7 [52.3, 68.8]} & 0.500 & 0.560 \\
+Shadow, serial & Joint features & \mbox{51.1 [50.0, 64.4]} & \mbox{55.1 [52.2, 65.3]} & 0.519 & 0.555 \\
+Shadow, serial & Estimated flush removed & \mbox{50.1 [50.0, 55.6]} & \mbox{60.7 [50.8, 70.9]} & 0.500 & 0.622 \\
+Shadow, serial & Full adaptive suite & \mbox{58.2 [52.9, 72.2]} & \mbox{60.7 [56.3, 71.7]} & 0.581 & 0.622 \\
+\addlinespace[2pt]
+Shadow, two in flight & Size/order & \mbox{54.7 [50.0, 66.7]} & \mbox{60.2 [50.5, 73.8]} & 0.580 & 0.576 \\
+Shadow, two in flight & Timing/direction & \mbox{50.0 [50.0, 57.8]} & \mbox{54.0 [50.0, 62.6]} & 0.556 & 0.585 \\
+Shadow, two in flight & Joint features & \mbox{55.3 [50.0, 67.1]} & \mbox{52.3 [50.0, 61.0]} & 0.578 & 0.546 \\
+Shadow, two in flight & Estimated flush removed & \mbox{50.8 [50.0, 61.7]} & \mbox{54.0 [50.0, 67.0]} & 0.541 & 0.528 \\
+Shadow, two in flight & Full adaptive suite & \mbox{55.3 [50.8, 68.2]} & \mbox{60.2 [54.5, 73.9]} & 0.580 & 0.585 \\
+\addlinespace[2pt]
+Full tunnel, 2 ms & Size/order & \mbox{51.5 [50.0, 65.0]} & \mbox{53.7 [50.0, 59.7]} & 0.500 & 0.500 \\
+Full tunnel, 2 ms & Timing/direction & \mbox{53.1 [50.0, 64.2]} & \mbox{53.1 [50.0, 60.9]} & 0.500 & 0.563 \\
+Full tunnel, 2 ms & Joint features & \mbox{51.5 [50.0, 58.1]} & \mbox{59.1 [52.2, 66.1]} & 0.500 & 0.590 \\
+Full tunnel, 2 ms & Full adaptive suite & \mbox{53.1 [50.0, 65.6]} & \mbox{59.1 [52.8, 66.1]} & 0.500 & 0.590 \\
+\addlinespace[2pt]
+Full tunnel, 5 ms & Size/order & \mbox{50.0 [50.0, 53.6]} & \mbox{55.4 [50.9, 62.7]} & 0.500 & 0.549 \\
+Full tunnel, 5 ms & Timing/direction & \mbox{50.0 [50.0, 50.4]} & \mbox{56.3 [51.0, 61.6]} & 0.500 & 0.530 \\
+Full tunnel, 5 ms & Joint features & \mbox{50.0 [50.0, 57.5]} & \mbox{52.3 [50.0, 59.5]} & 0.500 & 0.534 \\
+Full tunnel, 5 ms & Full adaptive suite & \mbox{50.0 [50.0, 57.5]} & \mbox{56.3 [55.0, 63.3]} & 0.500 & 0.549 \\
+\addlinespace[2pt]
+\bottomrule\end{tabular}
+\end{table}
+\clearpage
+\begin{table}[htbp]\centering\footnotesize
+\caption{E13 live execution costs, both prompt arms. Medians and 95th percentiles describe observed local RPCs; they are not production-service latency estimates.}
+\begin{tabular}{llrrrrrr}\toprule
+Prompt & Condition & Bytes$\times$ & Calls$\times$ & First p50/p95 & Last real p50/p95 & Traffic p50/p95 & RPC p50/p95\\\midrule
+baseline & Raw & 1.00 & 1.00 & 2.3/3.4 & 8.8/15.4 & 8.8/15.5 & 1.0/1.8\\
+baseline & Per-call padding & 3.92 & 1.00 & 2.3/3.7 & 8.5/16.6 & 8.5/16.7 & 1.0/1.8\\
+baseline & Shadow, serial & 15.11 & 3.83 & 3.0/5.0 & 12.5/26.2 & 27.8/46.6 & 0.9/1.7\\
+baseline & Shadow, two in flight & 15.11 & 3.83 & 2.7/4.5 & 11.3/20.8 & 23.6/37.4 & 1.2/2.4\\
+baseline & Full tunnel, 2 ms & 125.71 & 1.00 & 5.4/11.2 & 30.9/56.4 & 267.0/270.4 & 4.0/6.2\\
+baseline & Full tunnel, 5 ms & 125.71 & 1.00 & 11.3/12.4 & 71.4/112.3 & 666.1/666.6 & 10.0/10.9\\
+rules & Raw & 1.00 & 1.00 & 2.2/3.7 & 8.1/15.7 & 8.2/15.7 & 1.0/1.7\\
+rules & Per-call padding & 3.95 & 1.00 & 2.2/3.6 & 8.4/15.5 & 8.4/15.5 & 1.0/1.8\\
+rules & Shadow, serial & 15.47 & 3.88 & 3.0/5.2 & 12.7/23.9 & 28.9/41.8 & 1.0/1.7\\
+rules & Shadow, two in flight & 15.47 & 3.88 & 2.7/4.4 & 11.1/20.7 & 23.8/36.5 & 1.2/2.4\\
+rules & Full tunnel, 2 ms & 128.38 & 1.00 & 5.4/7.7 & 29.8/48.8 & 267.0/267.9 & 4.0/5.8\\
+rules & Full tunnel, 5 ms & 128.38 & 1.00 & 11.1/12.4 & 69.5/112.9 & 666.2/666.6 & 10.0/11.0\\
+\bottomrule\end{tabular}
+\par\smallskip All time columns are milliseconds. The saved results additionally report queue/service times, a descriptive 100 ms per-call deadline count, cell lateness, failures, and paired mean last-response differences.
+\end{table}
+\begin{table}[htbp]\centering\footnotesize
+\caption{E13 learned timing/shape detectors on held-out customers, pooling both prompt arms. Flush labels identify records after the online flush declaration; cover labels identify encrypted requests. Ground truth is used only for fitting/scoring, never as an attacker feature.}
+\begin{tabular}{llrrr}\toprule
+Condition & Detector & BA [95\% CI] & AUROC & Records/requests\\\midrule
+Shadow, serial & flush & \mbox{90.4 [88.3, 92.5]} & 0.967 & 15278 \\
+Shadow, serial & cover & \mbox{82.5 [80.3, 84.7]} & 0.898 & 7639 \\
+Shadow, two in flight & flush & \mbox{92.3 [90.6, 93.9]} & 0.979 & 15278 \\
+Shadow, two in flight & cover & \mbox{96.1 [95.4, 96.7]} & 0.995 & 7639 \\
+\bottomrule\end{tabular}
+\end{table}

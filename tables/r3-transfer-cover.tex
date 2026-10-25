@@ -1,0 +1,19 @@
+\begin{table*}[t]\centering\footnotesize
+\caption{E6/E7: randomized cover on 115 retail reference programs $\times$ 3 seeds. Entries are the best held-out balanced accuracy (\%) over all attackers for the cancellation (C, 18 positive tasks) and return (R, 32) targets. Dispatch view: tool names and response lengths. Network view: TLS~1.2 record lengths on the agent--tool link under raw, 1024-byte bucket or constant framing.}\label{tab:transfer-cover}
+\setlength{\tabcolsep}{3.5pt}
+\begin{tabularx}{\textwidth}{@{}Yrrrrrrrrrrr@{}}\toprule
+ & \multicolumn{4}{c}{Dispatch view (E6)} & \multicolumn{7}{c}{Network view (E7)}\\\cmidrule(lr){2-5}\cmidrule(lr){6-12}
+ & & & & & \multicolumn{2}{c}{Raw} & \multicolumn{2}{c}{Bucket} & \multicolumn{2}{c}{Constant} & \\\cmidrule(lr){6-7}\cmidrule(lr){8-9}\cmidrule(lr){10-11}
+Cover policy & C & R & Calls+ & DB eq. & C & R & C & R & C & R & Bytes$\times$\\\midrule
+No cover & 100.0 & 100.0 & 0.00 & 100.0 & 100.0 & 95.7 & 60.1 & 73.9 & 59.7 & 53.6 & 3.4\\
+Cancel, $p{=}0.5$ & 86.1 & 100.0 & 0.10 & 100.0 & --- & --- & --- & --- & --- & --- & ---\\
+Cancel, $p{=}1$ & 100.0 & 100.0 & 0.20 & 100.0 & --- & --- & --- & --- & --- & --- & ---\\
+Cancel, $p{=}1$, live execution & 100.0 & 100.0 & 0.20 & 0.0 & --- & --- & --- & --- & --- & --- & ---\\
+Cancel count $\to 2$ & 76.9 & 100.0 & 0.35 & 100.0 & 72.7 & 95.7 & 67.5 & 66.0 & 64.9 & 59.1 & 4.6\\
+One decoy program & 91.9 & 85.9 & 1.01 & 100.0 & 91.9 & 85.9 & 60.0 & 59.1 & 59.7 & 56.8 & 6.9\\
+Two decoy programs & 83.5 & 78.1 & 1.98 & 100.0 & --- & --- & --- & --- & --- & --- & ---\\
+Shape equalization & 50.0 & 54.5 & 6.71 & 100.0 & 51.2 & 60.5 & 55.3 & 50.6 & 54.4 & 50.0 & 26.3\\
+\bottomrule\end{tabularx}
+\par\smallskip\raggedright
+Calls+: cover calls per real call. DB eq.: orders/users equal to reference. Cover is sampled from other users' reference programs and placed at random positions; all policies except ``live'' run cover in a per-session sandbox. Attackers: $D_0$/$D_2$ gradient boosting and logistic regression, a count rule and, on the network view, a size-profiling decoder; task-grouped 5-fold cross-validation. Bytes$\times$: constant framing relative to raw framing without cover. Suite-maximum intervals: Supplement S12. Defense templates/pools/caps use all 115 tasks; attacker fitting uses training folds. No network configuration meets the criterion for both targets.
+\end{table*}

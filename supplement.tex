@@ -1,0 +1,115 @@
+% Standalone supplement. Original observations and negative results are retained.
+\documentclass[conference,compsoc]{IEEEtran}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{booktabs,tabularx,array,graphicx,amsmath}
+\usepackage{longtable}
+\usepackage[dvipsnames,table]{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,fit,calc,matrix,shapes.geometric}
+\usepackage[hyphens]{url}
+\usepackage{hyperref}
+\hypersetup{hidelinks,pdfauthor={}}
+\newcommand{\scope}{\textsc{Scope}}
+\newcommand{\NRR}{\textsf{U}}
+\newcommand{\NRA}{\textsf{A}}
+\newcommand{\NRV}{\textsf{?}}
+\newcommand{\NA}{--}
+\newcommand{\soktakeaway}[2]{%
+  \par\smallskip\noindent
+  \fcolorbox{MidnightBlue!45}{MidnightBlue!5}{%
+    \parbox{\dimexpr\columnwidth-2\fboxsep-2\fboxrule\relax}{%
+      \footnotesize\textbf{\color{MidnightBlue!85!black}#1.} #2%
+    }%
+  }\par\smallskip
+}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcommand{\auditpartial}{\textbf{P}}
+\input{tables/final-counts}
+\renewcommand{\thesection}{S\arabic{section}}
+\renewcommand{\thesubsection}{\thesection.\arabic{subsection}}
+\renewcommand{\thetable}{S\arabic{table}}
+\title{Supplementary Evidence: Evaluating LLM and Agent Side-Channel Defenses}
+\author{}
+\begin{document}
+\maketitle
+This supplement supplies implementation details, full result grids and historical coding records. The main paper contains the complete 58-family map, nine audit rules, 20-family matrix, 39-record index and four experimental demonstrations. Main-text Exp~1 maps to archived E1/E3/E5; Exp~2 to E2/E6/E7; Exp~3 to E9/E10/E12; and Exp~4 to E13/E14. The main Appendix~C indexes the remaining extensions. Historical E-keys and S-section numbers below remain stable for reproduction.
+
+\paragraph{Shared evidence notation}
+B means bound, P partial, U unreported in inspected scope, A source unavailable, ? an unverified binding, and -- inapplicable. Archived machine fields NR-R/NR-A/NR-V map respectively to U/A/?. Source availability and applicability retain distinct meanings. S1--S10 contain search, coding and literature audit details; S11--S17 contain transport/agent mechanisms and initial analyses; S18--S23 contain source reconciliation, timing controls, stronger attacks, the model extension and sensitivity checks.
+\section{Search and Evidence Audit}\label{app:search}
+\input{tables/selection-flow}
+\input{sections/22-search-audit-summary}
+\input{tables/search-reconciliation}
+\input{sections/19-final-ledger}
+\input{tables/result-lineage-example}
+\input{tables/observable-origin-map}
+\input{tables/related-sok-matrix}
+\input{tables/receiver-intervention-matrix}
+\input{tables/dependency-holdouts}
+\input{sections/21-retained-controls-summary}
+\input{sections/17-public-trace-details}
+\input{sections/23-defense-comparison}
+\input{tables/intervention-status}
+\input{sections/24-conclusion-sensitivity}
+\input{tables/conclusion-source-dependencies}
+\input{sections/29-scope-comparison-boundary}
+\input{sections/31-result-audit}
+\input{sections/33-controlled-details}
+\input{sections/34-search-update}
+\input{sections/38-retained-controlled}
+\input{tables/synthesis-decisions}
+\begin{figure*}[t]\centering\input{figures/defense-decision-procedure}\caption{Operational evidence-reuse checks.}\label{fig:defense-decision}\end{figure*}
+\clearpage
+\onecolumn
+\input{tables/r3-supp-transfer}
+\input{tables/transfer-streaming}
+\input{tables/r3-transfer-cover}
+\input{tables/r3-transfer-predictions}
+\clearpage
+\input{tables/r3-supp-e8}
+\par\noindent The preceding E8 rows and availability statement describe the historical stand-in study. S14 reports the subsequent real-model collection and training-only calibration.\par
+\clearpage
+\input{tables/r4-supp}
+
+\clearpage
+\section{Cross-Fitting, Operating Points and Leakage Localization (E10--E12)}\label{sec:r5-supp}
+This section preserves the original-suite results. The expanded 11-attack E10/E12 analyses in S21 supersede those attack maxima in the main paper; the original predictions remain available for direct comparison.
+E10 retrospectively reuses the E9 defense design and attack suite under customer-grouped stratified 5-fold cross-fitting over all 690 completed episodes (115 tasks, 53 customers; 14 cancellation-positive and 18 return-positive customers). In each fold, the count template, donor pools, size caps and all attackers are fit only on the other folds. Out-of-fold predictions are pooled, and intervals use 2,000 customer-cluster bootstrap draws with the suite maximum recomputed per draw. The six analyzed configurations are specified in \path{r5lib.py}. E11 selects among them using inner customer folds of the 69 frozen training tasks only (rule in \path{e11_select.py}), then evaluates it on the 46 original test tasks. These analyses reuse an already analyzed cohort; only the original E9 protocol was frozen before test collection. E12 ablates undefended traces to locate the signal.
+
+Records are computed with an analytic TLS~1.2 AES-GCM model (fragment plus 24 bytes, 16,384-byte fragments). The model is validated against all 2,760 socket captures of the completed cohort and 120 fresh loopback captures of new cross-fitted sessions. \path{verify_r5.py} also checks byte-identical reproduction of the E9 calibration, all sessions, and all 32 result cells of both the 660-run primary grid of the 663-run snapshot and the completed cohort. The same analysis on the 660-episode snapshot grid is retained in \path{snapshot-660/}; there the bucket point gives 50.6\%/51.6\% with upper bounds of 59.2\%/58.3\%. Cross-fitted templates use more training customers than E9 and are therefore larger, which raises call overhead (5.0$\times$ versus 3.8$\times$). A quantile template is a natural next operating point.
+
+\input{tables/r5-supp}
+\clearpage
+\input{tables/conditional-null}
+\clearpage
+\twocolumn
+\input{sections/39-shadow-deployment}
+\clearpage
+\input{sections/40-evidence-concordance}
+\clearpage
+\onecolumn
+\input{sections/41-live-timing}
+\clearpage
+\input{sections/43-robustness}
+\clearpage
+\input{sections/44-strong-crossfit}
+\clearpage
+\input{sections/45-luna-extension}
+
+\clearpage
+\input{sections/47-r8-empirical-audit}
+\input{sections/46-r8-sok-audit}
+\input{sections/48-r8-attributes}
+\clearpage\input{sections/53-endpoint-replication}
+\clearpage\input{sections/54-transfer-boundaries}
+\clearpage\input{sections/55-live-planner-utility}
+\clearpage\input{sections/57-record-mode-synthesis}
+\clearpage\input{sections/56-holdout-matrix}
+\clearpage
+\twocolumn
+\input{tables/corpus-citations}
+
+\bibliographystyle{IEEEtran}
+\bibliography{refs,refs-final-additions,refs-deployment,evidence/search-completion-20261021-001/new_refs,evidence/search-completion-20261021-001/new_refs_adjacent}
+\end{document}

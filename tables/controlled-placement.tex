@@ -1,0 +1,40 @@
+\begin{table}[!t]\centering\footnotesize
+\caption{Corrected TLS application-record results. Costs use each workload's own unprotected texts (all 48 outputs); accuracy uses 24 test outputs in 12 topics. Intervals resample topics.}
+\label{tab:controlled-placement}
+\setlength{\tabcolsep}{2.2pt}
+\begin{tabularx}{\columnwidth}{@{}Yrrr@{}}\toprule
+\multicolumn{4}{@{}l}{\textbf{A. Two-link placement (T1; retained experiment)}}\\
+Protection & Upstream acc. & Terminal acc. & Terminal bytes\\\midrule
+None & 100.0 & 100.0 & 720.96\\
+Upstream only & 50.0 & 100.0 & 720.96\\
+Both, loose cap & 50.0 & 50.0 & 16,848\\\midrule
+\multicolumn{4}{@{}l}{\textbf{B. Matched workload costs and defended-fit accuracy}}\\
+Workload / framing & Mean bytes & Ratio & Acc. (\%)\\\midrule
+T1: unprotected & 720.96 & 1.00 & 100.0\\
+T1: 256B bucket & 856.96 & 1.19 & 100.0\\
+T1: 512B bucket & 1,085.92 & 1.51 & 100.0\\
+T1: 1024B bucket & 1,401.25 & 1.94 & 70.8\\
+T1: training-fitted cap & 1,570.00 & 2.18 & 50.0\\
+T1: loose cap & 16,848.00 & 23.37 & 50.0\\
+T2: unprotected & 272.48 & 1.00 & 100.0\\
+T2: 256B bucket & 438.29 & 1.61 & 87.5\\
+T2: 512B bucket & 628.00 & 2.30 & 50.0\\
+T2: 1024B bucket & 1,140.00 & 4.18 & 50.0\\
+T3: unprotected & 456.33 & 1.00 & 91.7\\
+T3: 256B bucket & 608.38 & 1.33 & 62.5\\
+T3: 512B bucket & 654.17 & 1.43 & 50.0\\
+T3: 1024B bucket & 1,140.00 & 2.50 & 50.0\\
+T4: unprotected & 720.96 & 1.00 & 45.8\\
+\midrule
+\multicolumn{4}{@{}l}{\textbf{C. Adaptation on identical defended T1 tests}}\\
+Defense & $D_0$ (\%) & $D_2$ (\%) & Gain [95\% CI], pp\\\midrule
++512B offset & 50.0 & 100.0 & 50.0 [50.0, 50.0]\\
+1024B bucket & 50.0 & 70.8 & 20.8 [8.3, 33.3]\\
+$U(0,512)$B & 86.4 & 99.9 & 13.5 [10.7, 16.2]\\
+$U(0,1024)$B & 68.2 & 89.2 & 21.1 [17.2, 24.8]\\
+Loose cap & 50.0 & 50.0 & 0.0 [0.0, 0.0]\\
+Training-fitted cap & 50.0 & 50.0 & 0.0 [0.0, 0.0]\\
+\bottomrule\end{tabularx}
+\par\smallskip\raggedright\footnotesize
+Panel C uses 12 training pairs. Four-pair accuracy is the same except under $U(0,1024)$B, where it is 90.2\%. Random padding averages 50 draws within each topic; these are not 50 independent corpora. T2/T3 are sentence-prefix constructions. T4 relabels both original response lengths and has a 58.3\% test majority baseline. The cap equalizes only the specified record-length projection when no message overflows.
+\end{table}

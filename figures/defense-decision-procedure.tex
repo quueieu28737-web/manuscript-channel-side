@@ -1,0 +1,20 @@
+\begin{tikzpicture}[font=\scriptsize,>=Latex,
+check/.style={draw,rounded corners,fill=blue!6,align=left,text width=4.8cm,minimum height=16mm},
+test/.style={draw,fill=orange!10,align=left,text width=4.8cm,minimum height=16mm}]
+\node[check] (receiver) at (0,0) {\textbf{1. Bind the receiver}\\Target, actual fields and linkage; does protection reach the final emitter?};
+\node[check] (action) at (5.65,0) {\textbf{2. Bind the execution boundary}\\Is cover discarded, isolated, or admitted to tool/GUI execution?};
+\node[check] (effect) at (11.3,0) {\textbf{3. Bind the evaluation}\\Attacker access/adaptation, workload, inference, utility and cost object.};
+\draw[->] (receiver)--(action);
+\draw[->] (action)--(effect);
+\node[test] (rtest) at (0,-2.0) {Changed emitter or view:\\capture the final hop.\\Same verified projection: retain the source-local inference result.};
+\node[test] (atest) at (5.65,-2.0) {Executed cover: check terminal goals and policy. Verified discard excludes direct action effects; retain delay/resource checks.};
+\node[test] (etest) at (11.3,-2.0) {Changed mechanism or workload:\\measure that component/condition.\\Adaptation claims require the same defended-test comparison.};
+\draw[->] (receiver)--(rtest);
+\draw[->] (action)--(atest);
+\draw[->] (effect)--(etest);
+\node[draw,rounded corners,fill=green!8,align=center,text width=16.1cm,minimum height=10mm] (out) at (5.65,-3.7)
+{\textbf{Output for the requested claim:} supported within matched conditions; incompatible because of an observed mismatch; or unresolved because a required binding is missing. No branch certifies universal protection.};
+\draw[->] (rtest.south)--++(0,-.25)-|(out.north west);
+\draw[->] (atest)--(out);
+\draw[->] (etest.south)--++(0,-.25)-|(out.north east);
+\end{tikzpicture}

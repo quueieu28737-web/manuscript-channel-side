@@ -1,0 +1,70 @@
+% IEEE S&P 2027 submission format; requires IEEEtran.cls v1.8b.
+\documentclass[conference,compsoc]{IEEEtran}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage[dvipsnames,table]{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,fit,calc,matrix,shapes.geometric}
+\usepackage[hyphens]{url}
+\usepackage{hyperref}
+
+\hypersetup{hidelinks,pdfauthor={}}
+\newcommand{\scope}{\textsc{Scope}}
+\newcommand{\NRR}{\textsf{U}}
+\newcommand{\NRA}{\textsf{A}}
+\newcommand{\NRV}{\textsf{?}}
+\newcommand{\NA}{--}
+\newcommand{\evidenceStrong}{\cellcolor{ForestGreen!22}Strong}
+\newcommand{\evidenceLimited}{\cellcolor{Goldenrod!24}Limited}
+\newcommand{\evidenceNone}{\cellcolor{Gray!18}No verified direct evidence}
+\newcommand{\soktakeaway}[2]{%
+  \par\smallskip\noindent
+  \fcolorbox{MidnightBlue!45}{MidnightBlue!5}{%
+    \parbox{\dimexpr\columnwidth-2\fboxsep-2\fboxrule\relax}{%
+      \footnotesize\textbf{\color{MidnightBlue!85!black}#1.} #2%
+    }%
+  }\par\smallskip
+}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcommand{\auditpartial}{\textbf{P}}
+\input{tables/final-counts}
+
+\title{SoK: Transfer Boundaries of LLM and Agent\\Side-Channel Defenses}
+\author{}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+When does a side-channel defense result remain valid after an agent system changes? We systematize defense transfer boundaries: the emitter, executed state, calibration population, attacker observation and evaluation environment. A map of 82 study families, 39 source-bound result records and a nine-item audit distinguish supported transfers from incompatible comparisons. Controlled demonstrations expose the consequences: upstream padding does not protect a new emitter; read-cover reasoning does not establish state preservation for writes; calibration and attacker refitting change measured protection; and timing reveals signals hidden by length-only evaluation. A two-endpoint transfer matrix shows that moving calibration can exchange protection between targets: cancellation balanced accuracy rises from 50.0\% to 70.8\% while return falls from 67.3\% to 50.0\%. These known-cohort measurements turn model sensitivity into a directional transfer test. Our contribution is an operational account of where defense evidence stops transferring, which measurement resolves each boundary, and how to select defenses without borrowing protection, utility or cost from a different operating point.
+\end{abstract}
+
+\input{sections/01-introduction}
+\input{sections/03-methodology}
+\input{sections/04-scope}
+\input{sections/26-corpus-map}
+\input{sections/11-discussion}
+\input{sections/27-intervention-contracts}
+\input{sections/28-fingerprint-dependencies}
+\input{sections/37-transfer-tests}
+\input{sections/10-open-challenges}
+\input{sections/12-conclusion}
+
+
+\bibliographystyle{IEEEtran}
+\bibliography{refs,refs-final-additions,refs-deployment,evidence/search-completion-20261021-001/new_refs,evidence/search-completion-20261021-001/new_refs_adjacent}
+\appendices
+\input{tables/r9-record-index}
+\input{tables/r15-experiment-index}
+\input{sections/30-reproducibility-guide}
+\input{sections/49-r9-record-index}
+\input{sections/50-r9-experiment-index}
+\input{sections/51-r9-extensions}
+\input{sections/56-holdout-matrix}
+\end{document}

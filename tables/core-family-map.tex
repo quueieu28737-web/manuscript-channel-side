@@ -1,0 +1,81 @@
+\begin{table*}[!t]\centering\footnotesize
+\caption{Complete map of the 58 core study families. Each family appears once; layer and type labels may be multiple and do not imply one-to-one causal paths. The blocks group source layers, not evidential quality.}\label{tab:core-family-map}
+\setlength{\tabcolsep}{2pt}
+\begin{minipage}[t]{0.49\textwidth}\vspace{0pt}\centering
+\begin{tabularx}{\linewidth}{@{}Ycc@{}}\toprule
+Core family & $G\,\to\,O$ & Type\\\midrule
+\multicolumn{3}{@{}l}{\textbf{hardware generation, P1 (8)}}\\\midrule
+Edge EM leakage~\cite{alhalawani2026physicaledge} & $1\,\to\,1$ & \texttt{I}\\
+Energon~\cite{chaudhuri2025energon} & $1\,\to\,1$ & \texttt{II}\\
+MoEcho~\cite{ding2025moecho} & $1\,\to\,1$ & \texttt{I}\\
+I Know What You Said~\cite{gao2025iknow} & $1\,\to\,1$ & \texttt{I}\\
+Behind Bars~\cite{gu2026behindbars} & $1\,\to\,1$ & \texttt{I}\\
+PAGE404~\cite{nazaraliyev2026page404} & $1\,\to\,1$ & \texttt{I}\\
+Spill the Beans~\cite{spillbeans2025} & $1\,\to\,1$ & \texttt{I}\\
+ArchSnoop~\cite{weng2026archsnoop} & $1\,\to\,1$ & \texttt{II}\\
+\midrule
+\multicolumn{3}{@{}l}{\textbf{hardware and service, P1/P2 (8)}}\\\midrule
+SparLeak~\cite{chen2026sparleak} & $1,2\,\to\,1$ & \texttt{I}\\
+Shape and Substance~\cite{hadad2026shape} & $1,2\,\to\,1$ & \texttt{I}\\
+TDXRay~\cite{hornetz2026tdxray} & $1,2\,\to\,1$ & \texttt{I}\\
+SparSEEty~\cite{jo2026sparseety} & $1,2\,\to\,1$ & \texttt{I}\\
+OTRO~\cite{lee2026otro} & $1,2\,\to\,1$ & \texttt{I}\\
+Detokenization Leaks~\cite{weiss2026detokenization} & $1,2\,\to\,1$ & \texttt{I}\\
+LLM-WFIN~\cite{jiao2025llmwfin} & $1,2\,\to\,1,3$ & \texttt{I}\\
+LLM-serving RCA~\cite{scheinert2026rca} & $1,2\,\to\,2$ & \texttt{IV}\\
+\midrule
+\multicolumn{3}{@{}l}{\textbf{service generation, P2 (13 of 22)}}\\\midrule
+SplitDecoy~\cite{politis2026splitdecoy} & $2\,\to\,2$ & \texttt{I}\\
+KVGov~\cite{addagada2026kvgov} & $2\,\to\,2,4$ & \texttt{I}\\
+LLMs Have Rhythm~\cite{alhazbi2025rhythm} & $2\,\to\,3$ & \texttt{II}\\
+Remote timing~\cite{carlini2024remote} & $2\,\to\,3$ & \texttt{I}\\
+NetEcho~\cite{netecho2025} & $2\,\to\,3$ & \texttt{I}\\
+Prompt Echo~\cite{prompt_echo2026} & $2\,\to\,3$ & \texttt{I}\\
+Speculative decoding~\cite{wei2024speculation} & $2\,\to\,3$ & \texttt{I}\\
+Remote keylogging~\cite{weiss2024prompt} & $2\,\to\,3$ & \texttt{I}\\
+Whisper Leak~\cite{whisperleak2025} & $2\,\to\,3$ & \texttt{I}\\
+Cache contention~\cite{abubakar2026contention} & $2\,\to\,4$ & \texttt{I}\\
+Routing metadata~\cite{chen2026routingmetadata} & $2\,\to\,4$ & \texttt{I}\\
+SafeKV~\cite{chu2025safekv} & $2\,\to\,4$ & \texttt{I}\\
+ML privacy channels~\cite{debenedetti2024privacy} & $2\,\to\,4$ & \texttt{I}\\
+\bottomrule\end{tabularx}\end{minipage}\hfill
+\begin{minipage}[t]{0.49\textwidth}\vspace{0pt}\centering
+\begin{tabularx}{\linewidth}{@{}Ycc@{}}\toprule
+Core family & $G\,\to\,O$ & Type\\\midrule
+\multicolumn{3}{@{}l}{\textbf{service generation, P2 (9)}}\\\midrule
+Early Bird~\cite{earlybird2025} & $2\,\to\,4$ & \texttt{I}\\
+Prompt-cache audit~\cite{gu2025promptcaching} & $2\,\to\,4$ & \texttt{I}\\
+InputSnatch~\cite{inputsnatch2024} & $2\,\to\,4$ & \texttt{I}\\
+Leaky Language Models~\cite{majidi2026leakylms} & $2\,\to\,4$ & \texttt{I}\\
+PromptPeek~\cite{promptpeek2025} & $2\,\to\,4$ & \texttt{I}\\
+SpliceLeak~\cite{spliceleak2026} & $2\,\to\,4$ & \texttt{I}\\
+Time Will Tell~\cite{timewilltell2024} & $2\,\to\,4$ & \texttt{I}\\
+CachePrune~\cite{wu2026cacheprune} & $2\,\to\,4$ & \texttt{I}\\
+MoE prompt stealing~\cite{yona2024stealing} & $2\,\to\,4$ & \texttt{I}\\
+\midrule
+\multicolumn{3}{@{}l}{\textbf{cross-layer sources (5)}}\\\midrule
+ClawGuard~\cite{gan2026clawguard} & $1,5\,\to\,1$ & \texttt{IV}\\
+MIRAGE~\cite{revankar2026mirage} & $2,5\,\to\,2$ & \texttt{IV}\\
+Cloud traffic benchmark~\cite{pouryousef2026traffic} & $2,5,8\,\to\,3$ & \texttt{I,II}\\
+Web-agent unmasking~\cite{fayolle2026webagents} & $3,7\,\to\,3,7$ & \texttt{II,III}\\
+LumiMAS~\cite{solomon2026lumimas} & $4,5\,\to\,4,6$ & \texttt{IV}\\
+\midrule
+\multicolumn{3}{@{}l}{\textbf{orchestration/workflow sources (15)}}\\\midrule
+AgentPrint~\cite{agentprint2025} & $5\,\to\,3$ & \texttt{I,II}\\
+Cycle detection~\cite{george2025cycles} & $5\,\to\,4,6$ & \texttt{IV}\\
+SIGLEAK~\cite{geng2026sigleak} & $5,6\,\to\,4,6$ & \texttt{I}\\
+ProcGrep~\cite{oderinwale2026procgrep} & $5,6\,\to\,4,6$ & \texttt{II}\\
+AgentProv~\cite{wang2026agentprov} & $5,6\,\to\,6$ & \texttt{II}\\
+Lidar~\cite{wang2026lidar} & $5,6\,\to\,6$ & \texttt{II}\\
+Dangol workflow~\cite{dangol2026workflow} & $5,6,8\,\to\,3,6,8$ & \texttt{I}\\
+Campaign attribution~\cite{park2026crosscampaign} & $5,6,8\,\to\,6,8$ & \texttt{II}\\
+WRA~\cite{jeong2026wra} & $5,7\,\to\,3$ & \texttt{I}\\
+PersonaFingerprint~\cite{song2026personafingerprint} & $5,7\,\to\,3$ & \texttt{I}\\
+Whose Agent?~\cite{kang2026whoseagent} & $5,7\,\to\,7$ & \texttt{II}\\
+AgentTell~\cite{shahriar2026agenttell} & $5,7\,\to\,7$ & \texttt{I}\\
+UI Traces~\cite{uitraces2026} & $5,7\,\to\,7$ & \texttt{II}\\
+FP-Agent~\cite{wang2026fpagent} & $5,7\,\to\,7$ & \texttt{II}\\
+AHB~\cite{zhu2026turing} & $5,7\,\to\,7$ & \texttt{III}\\
+\bottomrule\end{tabularx}\end{minipage}
+\par\smallskip\raggedright $G$ denotes signal-generation layers and $O$ the receiving observation layers. Layer indices: 1 hardware; 2 serving/runtime; 3 transport; 4 application/API; 5 orchestration; 6 tools; 7 browser/environment; 8 multi-agent communication. Types: I confidentiality/privacy; II attribution; III human--agent distinction/evasion; IV authorized diagnostics. These are objectives and observer roles, not mutually exclusive security guarantees. Privileged operator receivers and physical receivers are marked by the layer they inspect. Source versions, locators and normalization of prose-only layer descriptions are in the artifact.
+\end{table*}

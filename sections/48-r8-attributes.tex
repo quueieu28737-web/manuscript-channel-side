@@ -1,0 +1,25 @@
+\subsection{Same-operation semantic-attribute diagnostic (E16)}\label{sec:r8-attribute}
+This exploratory analysis addresses a different target from cancel/return. We fix the observed operation to \texttt{return\_delivered\_order\_items}, requesting exactly one item, and predict whether the selected initial-order product belongs to a frozen 15-name digital-device grouping. The benchmark supplies product names, not this broader taxonomy; the grouping is researcher-defined and is not validated as a real-world secret. It was fixed before fitting or inspecting traffic/target associations. The original 690-episode population was already available, so this is not a fresh confirmatory dataset.
+
+\paragraph{Source, alignment and grouping}
+The 138 eligible calls occur in 114 episodes. Full-session reconstruction exactly matches the saved raw TLS socket records, including episode hashes, ordered calls and UTF-8 body lengths. We select exact per-call request/response record slices using known call boundaries. This is an oracle diagnostic; it does not demonstrate passive discovery of a call's location. Each feature vector contains record count, total, maximum and minimum length in each direction. No plaintext, identifiers or measured timing are used.
+
+Repeated calls are averaged within prompt/customer/order/item. Each prompt then has 20 instances (9 positive, 11 negative), spanning 15 customers (8 with positives, 9 with negatives, 2 with both). The same 20 instances and aggregated features occur in both prompt arms; the two arms are not independent replications. We retain the original five customer folds. All training folds have both classes; one test fold lacks positives, so results pool OOF predictions rather than average fold BA.
+
+\paragraph{Frozen fits and negative controls}
+The pre-fit protocol binds code, input and source hashes. Learners are LR ($C=1$, balanced), RF (200 trees, depth 3, minimum leaf 2), and GB (50 stages, depth 1, learning rate 0.05), with no post-result tuning or orientation reversal. Operation-only and canonical constant-size inputs contain no varying information; a constant-class predictor gives exactly 50\% BA. The order-item-count-only diagnostic retains a potential whole-order-size confounder. A fixed-seed label shuffle within the old folds is shared across repeats/prompts; it is one sanity check, not a permutation distribution or a significance test.
+
+\begin{table}[ht]\centering\footnotesize
+\caption{Same-operation attribute diagnostic. Both prompts have identical features and results. Fixed three-model suite maximum BA and 95\% customer-bootstrap interval; 20 instances, 15 customers per prompt.}\label{tab:r8-attribute}
+\begin{tabular}{@{}lrr@{}}\toprule
+Observation / target & BA (\%) & 95\% interval\\\midrule
+Raw record summaries, original target & 30.3 & [16.7,52.7]\\
+Constant-class reference & 50.0 & [50.0,50.0]\\
+Whole-order item count only & 51.5 & [40.6,68.8]\\
+Raw summaries, fixed shuffled target & 65.2 & [47.4,85.7]\\\bottomrule
+\end{tabular}\end{table}
+
+The raw fixed-suite maximum is 30.3\%; the original-direction AUROCs are 0.182/0.182/0.187 for LR/RF/GB. These below-chance scores do not imply no information: reverse associations may exist. We preserve the frozen orientation instead of selecting a more favorable attack after seeing the result. The high shuffled-label point further illustrates the instability of this tiny grouped cohort. These results neither establish a stable non-action-attribute attack nor prove absence of such leakage, and provide no evidence of defense effectiveness.
+
+\paragraph{Residual confounding and reproducibility}
+Initial whole-order sizes 1/2/3/4/5 have 6/3/2/7/2 instances, with 3/0/1/5/0 positive labels. Fixing the requested count does not balance full-order size. No post-result matching is fitted. Intervals use 2,000 fixed-prediction customer bootstrap draws, omitting one-class draws and recording their count; they exclude refitting uncertainty and target-choice uncertainty. An independent verifier checks the source chain, grouping and repeat aggregation, reloads 150 saved models, reproduces 600 OOF scores and all BA intervals, and verifies positive-class score orientation. Full per-model BA/AUROC, every fold's scores, controls and support counts are retained in the attribute module. Protocol SHA-256: \texttt{c2c7c67363f80a89c5df947380e7f071619}\\\texttt{6844ce4365a2b9770fd732d28ad59}.

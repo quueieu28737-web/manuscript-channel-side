@@ -1,0 +1,23 @@
+\section{Introduction}\label{sec:introduction}
+Encryption conceals message content, yet LLM engines and agents expose packet sizes, cache timing, visited domains and tool sequences \cite{weiss2024prompt,promptpeek2025,earlybird2025,agentprint2025,uitraces2026,jeong2026wra}. A defense result applies to a particular receiver, execution boundary and workload. Reusing a headline score across a frontend, dispatcher or tool provider can change both its protected signal and its cost object.
+
+Our unit is the \emph{evaluated result record}. Separating Dangol's stored/live results prevents subtracting unmatched scores; separating Early Bird's KV-prefix and semantic-cache mechanisms prevents borrowing overhead. Observer access, threat polarity and execution state explain why read-only privacy cover and state-changing evasion have different utility consequences.
+
+\paragraph{Central question and contributions}
+\emph{Which changes invalidate a measured defense result?} The map locates systems, records bind operating points, and the audit identifies transfer obligations.
+\begin{itemize}
+\item \textbf{Systematic transfer evidence.} The complete 39-record census separates six trace transformations, five simulation/estimate results, six component/calibration measurements, 20 executed collections/prototypes and two unresolved placements. A six-axis, 82-family matrix distinguishes reported holdouts from condition sweeps and unresolved evidence.
+\item \textbf{Target-dependent calibration transfer.} Moving MiniMax calibration to GLM changes cancellation/return BA from 50.0/67.3\% to 70.8/50.0\%. Protection shifts in opposite directions; a single aggregate transfer score hides this operating-point change.
+\item \textbf{Localization and utility boundaries.} Write-only shaping costs 1.45--1.51$\times$ bytes but leaves return BA at 61.3--61.6\%; detector precision differs sharply across endpoints. Fresh deadline-controlled planners succeed on 37/50 versus 33/50 tasks with prefix cover. These measurements determine what oracle localization and logical state equivalence actually license.
+\end{itemize}
+Exp~1's DPI premise and Exp~2's isolated-state invariant are mechanism checks. The empirical contribution is the measured operating-point, target and utility behavior beyond those invariants; Table~\ref{tab:rq-findings} links it to the SoK findings.
+\input{tables/r9-rq-findings}
+
+\soktakeaway{Scope of claims}{We contribute record-level systematization and controlled demonstrations of evidence transfer. The real-agent target is a requested operation category; the known retail cohort contains 53 customers. Measurements establish fitted-suite inference, logical state conformance and scoped resource costs. A separate 100-episode live study measures prefix-shadow utility under injected deadlines. Deployment-wide security and full joint utility require the validation specified in \S\ref{sec:validity}.}
+
+Figure~\ref{fig:system-model} places trace and action paths on the same agent--tool chain. This joint view makes the receiving representation and the execution boundary explicit before selecting a defense.
+\begin{figure*}[t]
+\centering\input{figures/fig1-system-model}
+\caption{Observation and execution boundaries. The four demonstrations test emitter placement, stateful execution/link composition, real-agent operation signatures, and timing with matched transport controls.}
+\label{fig:system-model}
+\end{figure*}

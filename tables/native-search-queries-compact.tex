@@ -1,0 +1,12 @@
+\begin{table}[!b]\centering\footnotesize
+\caption{Executed native queries. S1 retains the full export accounting; Q4 was issued only on IEEE and not exported in the original acquisition.}\label{tab:native-executable-queries}
+\begin{tabularx}{\columnwidth}{@{}lY@{}}\toprule
+ID & Exact query\\\midrule
+Q1 & \texttt{("large language model" OR LLM) AND ("side channel" OR "side-channel" OR "timing attack")}\\
+Q2 & \texttt{(agent OR agentic) AND ("traffic analysis" OR fingerprinting OR "metadata leakage" OR "side channel" OR "side-channel")}\\
+Q3 & \texttt{("KV cache" OR "prompt caching" OR "speculative decoding") AND (privacy OR leakage OR attack)}\\
+Q4 & \texttt{("browser agent" OR "research agent" OR "tool calling" OR "model context protocol" OR "multi-agent") AND (timing OR fingerprinting OR leakage)}\\
+Q4b & \texttt{(("browser agent" OR "research agent" OR "tool calling" OR "model context protocol" OR "multi-agent") AND (timing OR fingerprinting OR leakage) AND ("large language model" OR LLM))}\\
+Q5 & \texttt{("language model" OR LLM) AND ("traffic shaping" OR "cache isolation" OR padding OR "side-channel defense")}\\
+Q6 & \texttt{("language model" OR chatbot OR "AI assistant" OR "generative AI") AND ("side channel" OR "side-channel" OR "traffic analysis" OR fingerprinting OR "timing leakage")}\\\bottomrule
+\end{tabularx}\end{table}

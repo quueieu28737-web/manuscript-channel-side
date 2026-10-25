@@ -1,0 +1,51 @@
+\begin{table*}[ht]\centering\footnotesize\setlength{\tabcolsep}{3pt}
+\caption{E10 cross-fitted network view: all configurations and prompts. Core = R4 suite; Ext. adds random forest, $k$-NN and a forest size decoder. SA-AUC: sign-agnostic AUROC $\max(A,1-A)$.}
+\begin{tabular}{@{}llrrrrrrr@{}}\toprule
+Configuration & Prompt & Cancel core [CI] & Ext. & SA-AUC & Return core [CI] & Ext. & SA-AUC & Bytes$\times$/Calls$\times$\\\midrule
+R4 point (all tools, constant) (padding only) & baseline & 68.1 [55.4, 78.9] & 68.1 & 0.63 & 67.1 [57.2, 77.0] & 67.1 & 0.63 & 3.9/1.0\\
+R4 point (all tools, constant) & baseline & 60.5 [51.5, 70.5] & 60.5 & 0.59 & 52.1 [50.0, 60.3] & 52.7 & 0.63 & 19.8/5.0\\
+R4 point (all tools, constant) (padding only) & rules & 64.4 [54.6, 75.8] & 64.4 & 0.60 & 63.3 [52.7, 74.2] & 63.3 & 0.63 & 3.9/1.0\\
+R4 point (all tools, constant) & rules & 58.8 [50.0, 68.6] & 58.8 & 0.57 & 59.4 [50.5, 68.0] & 59.4 & 0.58 & 19.9/5.0\\
+All tools, 1024-B buckets & baseline & 52.2 [50.0, 60.5] & 52.2 & 0.54 & 52.7 [50.0, 60.2] & 52.7 & 0.61 & 12.4/5.0\\
+All tools, 1024-B buckets & rules & 53.4 [50.0, 60.6] & 53.4 & 0.57 & 50.7 [50.0, 57.3] & 52.4 & 0.56 & 12.4/5.0\\
+All tools, constant, q80 cap & baseline & 56.5 [50.5, 66.6] & 56.5 & 0.55 & 60.2 [55.0, 66.0] & 60.2 & 0.61 & 15.2/5.0\\
+All tools, constant, q80 cap & rules & 51.0 [50.0, 57.8] & 51.0 & 0.54 & 51.3 [50.0, 56.4] & 51.3 & 0.61 & 15.3/5.0\\
+Writes only, constant & baseline & 53.5 [50.0, 65.8] & 56.1 & 0.60 & 56.1 [50.0, 67.4] & 56.1 & 0.63 & 11.3/2.9\\
+Writes only, constant & rules & 62.6 [50.0, 74.4] & 62.6 & 0.60 & 57.6 [50.0, 68.2] & 57.6 & 0.58 & 11.4/2.9\\
+Writes only, constant, q80 cap & baseline & 53.7 [50.0, 66.4] & 53.7 & 0.55 & 62.0 [51.2, 73.3] & 62.0 & 0.66 & 8.6/2.9\\
+Writes only, constant, q80 cap & rules & 51.7 [50.0, 63.3] & 53.4 & 0.58 & 58.6 [50.0, 70.3] & 58.6 & 0.64 & 8.7/2.9\\
+Writes only, 1024-B buckets & baseline & 56.4 [50.0, 66.5] & 56.4 & 0.55 & 58.1 [50.1, 68.6] & 59.7 & 0.66 & 6.9/2.9\\
+Writes only, 1024-B buckets & rules & 52.6 [50.0, 63.8] & 52.6 & 0.60 & 58.7 [51.6, 69.6] & 58.7 & 0.59 & 7.0/2.9\\
+\bottomrule\end{tabular}\end{table*}
+
+\begin{table}[ht]\centering\small
+\caption{E11 inner (training-fold) selection statistics. Eligible: all four inner network BAs $\le 60\%$.}
+\begin{tabular}{@{}lrrrrrr@{}}\toprule
+Configuration & C/base & R/base & C/rules & R/rules & Bytes$\times$ & Eligible\\\midrule
+R4 point (all tools, constant) & 54.9 & 53.5 & 58.4 & 52.6 & 15.2 & yes\\
+All tools, 1024-B buckets & 53.3 & 58.1 & 55.3 & 56.8 & 9.8 & yes\\
+All tools, constant, q80 cap & 56.8 & 56.8 & 53.1 & 54.8 & 11.7 & yes\\
+Writes only, constant & 67.1 & 50.0 & 77.9 & 57.2 & 9.4 & no\\
+Writes only, constant, q80 cap & 71.1 & 64.9 & 67.5 & 71.6 & 7.1 & no\\
+Writes only, 1024-B buckets & 56.7 & 67.4 & 53.7 & 64.8 & 5.9 & no\\
+\bottomrule\end{tabular}\end{table}
+
+\begin{table}[ht]\centering\small
+\caption{E12 observer ablation on undefended traces, cross-fitted (core-suite BA, \%).}
+\begin{tabular}{@{}lllrr@{}}\toprule
+Observer & Prompt & View & Cancel & Return\\\midrule
+full & baseline & dispatch & 91.7 & 93.8\\
+full & baseline & network & 91.7 & 85.5\\
+full & rules & dispatch & 90.7 & 93.8\\
+full & rules & network & 90.7 & 85.5\\
+no writes & baseline & dispatch & 53.1 & 65.7\\
+no writes & baseline & network & 55.2 & 59.9\\
+no writes & rules & dispatch & 60.8 & 66.2\\
+no writes & rules & network & 55.2 & 59.6\\
+writes only & baseline & dispatch & 91.7 & 93.8\\
+writes only & baseline & network & 91.7 & 84.9\\
+writes only & rules & dispatch & 90.7 & 93.8\\
+writes only & rules & network & 90.7 & 84.1\\
+\bottomrule\end{tabular}\end{table}
+
+\noindent Rules-prompt homogenization: distinct read-only call sequences fall from 74 to 62 (entropy 5.63 to 5.37 bits), whereas state-changing sequences stay at 37 versus 36 (4.08 versus 4.09 bits).\par

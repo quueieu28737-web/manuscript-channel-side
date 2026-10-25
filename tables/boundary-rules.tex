@@ -1,0 +1,11 @@
+\begin{table}[t]\centering\footnotesize
+\caption{Observable-based eligibility. A hidden target alone does not make a semantic attack a side channel.}\label{tab:boundary-rules}
+\begin{tabularx}{\columnwidth}{@{}p{.39\columnwidth}Y@{}}\toprule
+Observed input & Decision and required distinction\\\midrule
+Length, timing, cache response & Core when measured execution dependence supports hidden-target inference.\\
+Own-site actions & Core attribution with site permission; no automatic access to other sites or private tool logs.\\
+Reply states the secret & Direct disclosure; adjacent, not auxiliary-channel evidence.\\
+Reply style/content identifies a user & Adjacent unless a separately evaluated auxiliary mechanism is established. WildAuth stays a mixed-view comparator.\\
+Output-filter membership oracle & Can be core: the filter's execution, not ordinary semantic output inference, mediates the signal.\\
+Privileged loop/fault logs & Separate diagnostic component when C1--C5 hold; does not increase confidentiality evidence.\\\bottomrule
+\end{tabularx}\end{table}

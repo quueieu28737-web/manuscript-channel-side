@@ -1,0 +1,13 @@
+\begin{table*}[t]\centering\footnotesize
+\caption{Current reassessment of the seven author-written judgments recorded before E5--E7. Historical outcome labels are preserved in the artifact, not counted as audit accuracy.}\label{tab:transfer-predictions}
+\begin{tabularx}{\textwidth}{@{}lp{.27\textwidth}Y@{}}\toprule
+ID & Claim under examination & Current evidence and qualification\\\midrule
+P1 & Buffered cost transfers to a stream & Emitter mismatch supported: per-event padding leaves T1 at 100\%; constant-shape stream costs 2.42$\times$.\\
+P2 & Low $D_0$ establishes protection & Counterexample supported: batching and cancellation cover give $D_0$ 50\%, $D_2$ 100\%.\\
+P3 & Per-event padding prevents identification & Counterexample supported: top-1 58--62\% versus 2.1\% chance in the closed candidate set.\\
+P4 & Equal cancellation count hides cancellation & Residual leakage supported: count rule 50\%; maximum BA 76.9\%.\\
+P5 & Dispatch protection transfers to the tool link & Protected-source premise unmet: count/decoy policies already leak at dispatch. Network BA 72.7--95.7\% shows persistence.\\
+P6 & Framing alone protects intent & Bucketed return remains above threshold; remaining framing-only cells inconclusive.\\
+P7 & Joint cover/framing protects both targets & Not established: no configuration meets both target criteria. Joint constant framing: 50.0--54.4\% BA; 26.3$\times$ bytes, 7.7$\times$ calls.\\
+\bottomrule\end{tabularx}
+\end{table*}

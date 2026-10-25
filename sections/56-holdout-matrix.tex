@@ -1,0 +1,99 @@
+\section{Family-Level Holdout Evidence}\label{app:holdouts}
+Tables~\ref{tab:holdouts1}--\ref{tab:holdouts3} cover all 82 indexed families. T: task/input/user; M: model; C: harness/topology; H: hardware; N: network/load; D: time. \textbf{H} records an explicitly reported held-out unit/domain, \textbf{V} a condition comparison or recalibration, \textbf{X} an explicit restriction or absent/unverified holdout in the inspected scope, and \textbf{?} an unresolved axis. A dash applies only to conceptual families. H does not certify all grouping details or successful transfer; V is not a holdout. Notes restrict each code. Core and adjacent families remain separate (C/A). The machine-readable matrix preserves the full source excerpts, locators and input hash; these tables synthesize that archived extraction rather than claim a new full-paper audit.
+\begin{table*}[p]\centering\footnotesize
+\caption{Holdout evidence, families 1--28. Codes and axes are defined in Appendix~\ref{app:holdouts}.}\label{tab:holdouts1}
+\setlength{\tabcolsep}{3pt}\begin{tabularx}{\textwidth}{@{}p{.20\textwidth}cccccccY@{}}\toprule
+Family & Scope & T & M & C & H & N & D & Source locator and qualification\\\midrule
+F01 AgentPrint~\cite{agentprint2025} & C & ? & ? & ? & ? & ? & ? & Random trace splits; prompt grouping unresolved. III; V; Appendix D.A--D.D; Fig. 11\\
+F02 UI Traces~\cite{uitraces2026} & C & V & V & V & ? & ? & ? & Cross-task/site comparisons; exact-question overlap remains. 3--4; source index\\
+F03 WRA~\cite{jeong2026wra} & C & H & ? & ? & ? & ? & ? & Prompt tests and synthetic persona split; version reconciliation open. 3.1; 6.1; 8--9; Tables 1/8/10/11; Appendix C.1--C.3\\
+F04 FP-Agent~\cite{wang2026fpagent} & C & H & ? & X & ? & ? & ? & Separate task holdout; visitor/host separation unresolved. 4.1--4.7; Tables 2/4; 6.1--6.2; Appendix E/Table 8\\
+F05 Prompt length~\cite{weiss2024prompt} & C & H & ? & V & ? & V & V & OOD inputs; browser/API and day/night buffering controls. 5.1--5.3; Fig. 4; Tables 2--3\\
+F06 PromptPeek~\cite{promptpeek2025} & C & V & ? & ? & ? & V & ? & Candidate-prior and simulated request-load sweeps. III.B; VI.A--VI.C; Table II\\
+F07 NetEcho~\cite{netecho2025} & C & V & ? & V & ? & ? & ? & Deployment/frontend scenarios; independent split binding unresolved. III.A; Table III; VI.A--VI.B/Table VI\\
+F08 Early Bird~\cite{earlybird2025} & C & ? & V & ? & ? & ? & ? & Provider observations and candidate calibration; grouped split unresolved. arXiv 2409.20002: II.C; IV.A; V.A; Tables IV--V\\
+F09 InputSnatch~\cite{inputsnatch2024} & C & H & ? & ? & ? & ? & ? & Held-out and generated target prompts; candidate-prior dependence. arXiv 2411.18191: 3.2; 4.3--4.4; Tables 2/4\\
+F10 Whisper Leak~\cite{whisperleak2025} & C & H & V & ? & ? & ? & ? & Unique target-prompt holdout; model/provider comparisons. 3.1; 3 classifier/split discussion; 4.1--4.2; Table 1; 6\\
+F11 Spill the Beans~\cite{spillbeans2025} & C & V & ? & ? & ? & ? & ? & Exposure/monitor sweeps; independent capture grouping unresolved. Threat model; 5/Table 1; 6.1\\
+F12 SpliceLeak~\cite{spliceleak2026} & C & V & ? & ? & ? & ? & ? & Bounded cloze tasks and chunk/candidate coverage. Threat model; VII.A--VII.C; Figs. 7--8\\
+F13 Time Will Tell~\cite{timewilltell2024} & C & ? & ? & ? & ? & V & V & Concurrent network/load profiling; short-window recalibration. 3; 4.1--4.4; 6.2--6.5; Tables 3--4\\
+F14 Prompt Echo~\cite{prompt_echo2026} & C & H & V & ? & ? & ? & ? & Overlap-filtered prompts; models evaluated separately. 3.1; 5.1--5.3; Tables 2--3\\
+F15 I Know What You Said~\cite{gao2025iknow} & C & H & V & V & V & ? & ? & Prompt overlap filtering; model/hardware/framework comparisons. Abstract; source index\\
+F16 Speculation~\cite{wei2024speculation} & C & H & ? & ? & ? & V & ? & New traces and OOD paraphrases; remote/load conditions. v4: 4.3--4.8; Table 1; 6.1\\
+F17 Behind Bars~\cite{gu2026behindbars} & C & ? & V & ? & V & ? & ? & Model identification CV; additional hardware evaluation. Table1; 6.1--6.3; Table7 (printed5383/PDF12); 7.1/7.3; Open Science\\
+F18 Prompt caching~\cite{gu2025promptcaching} & C & ? & V & ? & ? & ? & V & Provider survey over two months; historical exposure only. 3.1--3.2; 4.1--4.2; Tables 1--2\\
+F19 Whose Agent~\cite{kang2026whoseagent} & C & ? & ? & ? & ? & ? & ? & Trial split; task/site/version independence unresolved. 4,6.1--6.3; Tables4--5; Fig7;7\\
+F20 Workflow traffic~\cite{dangol2026workflow} & C & ? & ? & H & ? & ? & ? & Leave-composition-out; stored and live populations separated. 3,9.1,9.7--9.14;Table6\\
+F21 GPU contention~\cite{abubakar2026contention} & C & ? & ? & V & ? & V & ? & Serving-stack and interleaved-load controls. IV,IX,TableVII,X,XIV--XVII\\
+F22 AgentTell~\cite{shahriar2026agenttell} & C & V & ? & ? & ? & V & ? & Secret rotation; cold/loaded and equal-completability controls. 3--5;AppendixD.2--D.3,Table8;AppendixE\\
+F23 Traffic benchmark~\cite{pouryousef2026traffic} & C & ? & ? & H & ? & ? & ? & Topology shift distinct from feature-view restriction. III,IV-A--C,V-A TablesI--III,V-B Fig8,VI\\
+F24 Remote timing~\cite{carlini2024remote} & C & ? & V & ? & ? & ? & V & Month-long observations; method/model changes confounded. III,IV-B--C,V-D--E,VI-C,VII,Figs8,10,12\\
+F25 Persona fingerprint~\cite{song2026personafingerprint} & C & ? & ? & X & ? & ? & ? & Pooled sites; leave-site-out not verified. 2,3.1--3.4,4,5.1,5.5--5.8\\
+F26 TDXRay~\cite{hornetz2026tdxray} & C & ? & ? & ? & ? & ? & ? & Tokenizer-localized LLM case; AES result separate. 3;5.1--5.4;6.1--6.2\\
+F27 Detokenization~\cite{weiss2026detokenization} & C & ? & ? & X & ? & ? & ? & Explicit same-instance profiling restriction. 3.1 and 3.3: shared-code, SMT and same-instance profiling; source index\\
+F28 Spillage~\cite{roh2026spillage} & A & V & ? & ? & ? & ? & ? & Task-irrelevance and selected-site evaluation. 4.1--4.2 (evaluator inputs), 5.4, Table 4, 6.2\\
+\bottomrule\end{tabularx}\end{table*}
+\begin{table*}[p]\centering\footnotesize
+\caption{Holdout evidence, families 29--56. Codes and axes are defined in Appendix~\ref{app:holdouts}.}\label{tab:holdouts2}
+\setlength{\tabcolsep}{3pt}\begin{tabularx}{\textwidth}{@{}p{.20\textwidth}cccccccY@{}}\toprule
+Family & Scope & T & M & C & H & N & D & Source locator and qualification\\\midrule
+F29 PlanTwin~\cite{yu2026plantwin} & A & V & ? & ? & ? & ? & ? & Template candidate pool; production transfer unresolved. 2.2,3.2,4.2--4.4,5.1--5.9,6.1\\
+F30 SICC~\cite{xu2026sicc} & A & ? & ? & ? & ? & ? & ? & Authorized-view theorem; empirical shift binding unresolved. Theorem 1; Experiments Setup; Tables 3--4, 7--8\\
+F31 TOPR~\cite{qiao2026topr} & A & V & ? & ? & ? & ? & ? & Benchmark and alignment populations differ. 3.1--3.2,4,5.2,5.6,6,Limitations\\
+F32 ClawGuard~\cite{gan2026clawguard} & C & ? & ? & V & ? & ? & V & Carrier recollection and cycle drift; not zero-shot transfer. III-C,IV,VI,AppendixA\\
+F33 SIGLEAK~\cite{geng2026sigleak} & C & V & ? & ? & ? & ? & ? & Paired prompts; not physical-skill removal. Definition3,3.2,4.1--4.2\\
+F34 ProcGrep~\cite{oderinwale2026procgrep} & C & H & ? & V & ? & ? & ? & Task-grouped attribution under scaffold regimes. 4--5,Tables7--8\\
+F35 SecEmb~\cite{umar2025secemb} & A & ? & X & ? & ? & ? & ? & Single GPT-2 workload; DLRM result separate. III,V,VI-D;Figs14--15\\
+F36 Mobile agents~\cite{wu2025mobileagents} & A & ? & ? & ? & ? & ? & ? & Direct leakage cases; holdout binding unresolved. IV-D3 log leakage; V-D2 deep-link leakage; V-D3 log leakage; Table II; VI-A\\
+F37 Hidden risks~\cite{mudryi2025hidden} & A & ? & ? & ? & ? & ? & ? & Content exfiltration/access-control cases. 3.2 framework and risk scope; source index\\
+F38 Browser privacy~\cite{ukani2025browserprivacy} & A & ? & ? & V & ? & ? & ? & Browser/profile-state measurements; mixed leakage mechanisms. V-C1--3 browser/network/profile-state measurements; source index\\
+F39 LLMs Have Rhythm~\cite{alhazbi2025rhythm} & C & ? & V & ? & ? & H & V & New captures and cross-network tests; overlapping windows caveat. III-IV; V-C--G; VI-A/B; Table I; Figs10--16; VII\\
+F40 MoEcho~\cite{ding2025moecho} & C & H & V & ? & ? & V & ? & Cross-template/dataset tests; contention/context conditions. 3.1;4;6.2--6.6;Tables3,5--10;7.2;8.1--8.2\\
+F41 LLM-Fin~\cite{nazari2024llmfin} & A & ? & H & ? & ? & ? & ? & Unseen variants within known architecture families. III; IV-B/C; Tables II--III; IV-C/D; V-A; V-A versus Introduction/Fig.2; Table IV\\
+F42 ML privacy channels~\cite{debenedetti2024privacy} & C & ? & V & ? & ? & ? & ? & Enumerative/filter probes across named models; no learned split. 4.1; 4.2.1; 4.2.2/Fig.7; 4.2.3; 4.2.3/Table2\\
+F43 MoE stealing~\cite{yona2024stealing} & C & ? & ? & ? & ? & ? & ? & Constructive word extraction in controlled shared batches. 2.2; 4; 4; 4/Table2; 5/Fig.7\\
+F44 Energon~\cite{chaudhuri2025energon} & C & ? & V & ? & ? & ? & ? & Known-candidate CV; exploratory hardware not transfer proof. III-A/B; IV-A/C; IV-B/Tables I,III; V; VII\\
+F45 SafeKV~\cite{chu2025safekv} & C & ? & V & ? & ? & ? & ? & Named serving models; calibration/test separation unreported. 3; 7.1; 7.2.1;7.2.3/Fig.12; 7.3/Table7; 7.4; 4.2.2 versus6/7.2.3\\
+F46 InferNet~\cite{anwar2026infernet} & A & ? & V & ? & V & ? & ? & Same-label mixed-model and platform comparisons. 5.2; source index\\
+F47 ArchSnoop~\cite{weng2026archsnoop} & C & ? & H & ? & V & ? & ? & Random-weight training to official/fine-tuned models; power modes. 3.2;6.1; 6.1; Fig9, paperp58, visually checked; 6.2.3;6.3.1; 4.1;7.1-7.2\\
+F48 Coding fingerprints~\cite{ghaleb2026codingfingerprint} & A & X & ? & X & ? & ? & X & PR CV; repository/time/human-mediated holdouts unreported. 2.1-2.4; Tables 1-2; 4; 6; replication reference\\
+F49 AHB~\cite{zhu2026turing} & C & ? & ? & X & ? & ? & ? & Offline/live humanization; website-transfer binding unresolved. 2.1-2.2; 3.1; 4.1-4.3; 5.1.2; Table 1 Trip Planning; E.1-E.3\\
+F50 WildAuth~\cite{wang2026dialogue} & A & H & ? & X & ? & ? & ? & User-disjoint cross-topic split; no verified cross-service test. 2.3; 4.1-4.3; 5.3-5.5; 6.1-6.2; Tables 1-3; Appendix D/Table4\\
+F51 Cycles~\cite{george2025cycles} & C & X & ? & X & ? & ? & X & One application; no held-out split located. 1; 2; 2.1 CDCS/CDDAG versus CDSA/Hybrid; 3.1; Tables1-2; 3.2; 4\\
+F52 LumiMAS~\cite{solomon2026lumimas} & C & ? & V & V & ? & ? & ? & Nonoverlap logs; backend/platform comparisons; task grouping open. 3;4.1-4.3;5.1.1-5.1.7;5.2;Table1;6.1-6.5;B.1/Table3;B.2/Table4;C.1.1\\
+F53 SymDiag~\cite{cui2026symdiag} & A & V & V & ? & ? & ? & ? & Domains/reasoners vary with inputs and feedback. 3.1-3.4;4.1.1-4.1.5;5.1;6.1-6.4;7\\
+F54 LeakyLMs~\cite{majidi2026leakylms} & C & ? & H & ? & V & ? & ? & Held-out architecture configurations; known-GPU calibration. 3;4.4-4.5 Tables1-2;5.4-5.5 Tables3-6/Fig6;6;A.1;B.4-B.7\\
+F55 KVGov~\cite{addagada2026kvgov} & C & ? & ? & ? & V & ? & ? & Simulation, A100 timing and HMAC microcost separate. 2.2-2.3;4;5.1-5.3 Tables3-4;5.7-5.9 Tables8-9;7\\
+F56 Data-centric survey~\cite{lahjouji2026datacentric} & A & - & - & - & - & - & - & Conceptual synthesis; empirical holdout not applicable. 1 Fig1;4-6;8-9 discussion/conclusions\\
+\bottomrule\end{tabularx}\end{table*}
+\begin{table*}[p]\centering\footnotesize
+\caption{Holdout evidence, families 57--82. Codes and axes are defined in Appendix~\ref{app:holdouts}.}\label{tab:holdouts3}
+\setlength{\tabcolsep}{3pt}\begin{tabularx}{\textwidth}{@{}p{.20\textwidth}cccccccY@{}}\toprule
+Family & Scope & T & M & C & H & N & D & Source locator and qualification\\\midrule
+F57 Serving RCA~\cite{scheinert2026rca} & C & ? & ? & X & ? & ? & ? & Single serving deployment with injected faults. Sections3,4.1-4.3,5.1-5.2; Table1\\
+F58 ZeroPrint~\cite{shao2026zeroprint} & A & ? & V & ? & ? & ? & ? & Known-family provenance pairs; partition not re-extracted. Header;4.1-4.4;Figure1;5.1-5.3\\
+F59 Endpoint fingerprints~\cite{leshin2026endpoint} & A & ? & ? & V & ? & ? & V & Controlled endpoint changes over matched time windows. Sections3,4.1-4.3,6.1-6.2/Table1,7-9\\
+F60 StepFinder~\cite{zhu2026stepfinder} & A & H & ? & ? & ? & ? & ? & Task-disjoint subsets; denominator reconciliation unresolved. Header;Sections4,5.1-5.4,6;Tables4-5\\
+F61 Web-agent detection~\cite{fayolle2026webagents} & C & ? & V & ? & ? & ? & ? & Six agents with human/scraper controls. 3.1.4;3.3;6;7\\
+F62 Cross-campaign~\cite{park2026crosscampaign} & C & V & ? & V & ? & ? & ? & Crossed-style and regenerated conditions; execution stress subset. AppendixB decomposition; source index\\
+F63 AgentProv~\cite{wang2026agentprov} & C & ? & V & ? & ? & ? & ? & Substituted checkpoints; system-prompt perturbation. 3.1-3.4;4.1-4.4;A.5\\
+F64 LiDAR~\cite{wang2026lidar} & C & ? & V & V & ? & ? & ? & Enrollment-only identity; two harnesses and perturbations. 2;5.1-5.3;6.1-6.5\\
+F65 LLM-WFIN~\cite{jiao2025llmwfin} & C & V & ? & ? & ? & ? & ? & Site traces; loading versus query phases. 3.2-3.3;5.1-5.2;6.1-6.5;Tables2-5;publisher rendered primary article\\
+F66 MIRAGE~\cite{revankar2026mirage} & C & V & V & ? & ? & ? & ? & Encodings/models/scenarios; matched decoder-layer controls. 3.4;4.1-4.2;7.1-7.4;AppendixL.3-L.4\\
+F67 Routing metadata~\cite{chen2026routingmetadata} & C & V & ? & V & ? & ? & ? & Request domains and routers; exploratory sensitive-label gate. III;IV;V;VI;VII\\
+F68 Shape and Substance~\cite{hadad2026shape} & C & V & V & V & V & ? & ? & Geometry/model/cache/hardware conditions; padding estimate. IV;V;VII;VIII;IX\\
+F69 SplitDecoy~\cite{politis2026splitdecoy} & C & ? & ? & ? & ? & ? & ? & Repeated seeds; forward/backward boundary, not a holdout. 2;5.1-5.3;Table7-8;A.2.2\\
+F70 PAGE404~\cite{nazaraliyev2026page404} & C & V & V & ? & ? & ? & ? & Architecture and prompt-length targets; transfer binding open. II-B;IV-D4-D6;V\\
+F71 Edge EM~\cite{alhalawani2026physicaledge} & C & H & ? & ? & ? & ? & ? & Unseen-word test separate from profiled vocabulary recovery. IV;V;VI\\
+F72 SparLeak~\cite{chen2026sparleak} & C & V & V & V & ? & ? & ? & Models/datasets/sparse mechanisms; per-phase outcomes. 3.1;4-7;Table4\\
+F73 Sparseety~\cite{jo2026sparseety} & C & V & V & V & ? & ? & ? & Models/datasets/implementations; oracle-conditioned extraction. III;V;VI;VIII;IX\\
+F74 OTRO~\cite{lee2026otro} & C & ? & ? & ? & ? & ? & ? & Closed-corpus conditional leakage; epoch cost separately derived. III;V;VI;VII-C-E;TableIII\\
+F75 CachePrune~\cite{wu2026cacheprune} & C & V & V & ? & ? & ? & ? & Models/workloads and detector-miss stress; separate fits. 3.1;5.1-5.6;Table1;AppendixA\\
+F76 Privacy foundations~\cite{kotevska2026privacyfoundations} & A & - & - & - & - & - & - & Conceptual contract; cross-institution example illustrative. III;IV/TableIII;IV-A;VI\\
+F77 DP-MemView~\cite{dpmemview2026} & A & ? & ? & ? & ? & ? & ? & Semantic response privacy; holdout binding not re-extracted. Problem Definition;DP-MemView;Experiments;AppendixB.5\\
+F78 PriCon~\cite{pricon2026} & A & ? & ? & ? & ? & ? & ? & Semantic cloud consultation; holdout binding not re-extracted. PDF3;5.1-5.2;Tables2-4\\
+F79 SCAAR~\cite{mondol2025scaar} & A & ? & ? & ? & ? & ? & ? & LLM EM/length test; other classifier results separate. 7;LLM extension;TVLA experiment\\
+F80 CacheSolidarity~\cite{pennas2026cachesolidarity} & A & ? & ? & ? & ? & ? & ? & Candidate-prefix timing gap; no scored inference error. v1 title;5.2.3;Figure7\\
+F81 Vision encoder~\cite{zhou2026visionencoder} & A & ? & ? & ? & ? & ? & ? & Representation inversion; holdout binding not re-extracted. 2;3;5;7;8/Table5\\
+F82 Split gradients~\cite{politis2026gradients} & A & ? & ? & ? & ? & ? & ? & Split-compute content inversion; holdout binding unresolved. 3;4.1-4.5;5;AppendixB\\
+\bottomrule\end{tabularx}\end{table*}

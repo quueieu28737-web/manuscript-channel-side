@@ -1,0 +1,18 @@
+{\footnotesize
+\begin{longtable}{@{}lllrrr@{}}
+\caption{Luna dispatch-view diagnostic: maximum over majority, D2 logistic regression and D2 gradient boosting. Each prompt uses 29 training and 46 test tasks. Percent BA and AUROC have customer-bootstrap 95\% intervals. Read-only retains only get/find/list prefixes; it is not Sol E12's entire writes-removed complement.}\label{tab:r7-luna-dispatch}\\
+\toprule Prompt & View & Target & BA [95\% CI] & AUROC [95\% CI] & Valid draws\\\midrule\endfirsthead
+\toprule Prompt & View & Target & BA [95\% CI] & AUROC [95\% CI] & Valid draws\\\midrule\endhead
+Standard & all & cancel & 78.3 [50.0, 96.2] & 0.829 [0.619, 0.959] & 1994/2000\\
+Standard & all & return & 63.2 [50.0, 78.4] & 0.691 [0.502, 0.842] & 2000/2000\\
+Standard & writes-only & cancel & 87.5 [81.1, 94.6] & 0.925 [0.859, 1.000] & 1994/2000\\
+Standard & writes-only & return & 66.6 [53.6, 80.5] & 0.769 [0.582, 0.919] & 2000/2000\\
+Standard & reads-only & cancel & 50.0 [50.0, 64.3] & 0.500 [0.500, 0.722] & 1994/2000\\
+Standard & reads-only & return & 57.0 [50.0, 74.2] & 0.522 [0.500, 0.758] & 2000/2000\\
+Rules & all & cancel & 73.8 [50.0, 98.0] & 0.850 [0.513, 1.000] & 1994/2000\\
+Rules & all & return & 67.5 [50.0, 82.2] & 0.782 [0.575, 0.913] & 2000/2000\\
+Rules & writes-only & cancel & 89.2 [67.1, 100.0] & 0.917 [0.768, 1.000] & 1994/2000\\
+Rules & writes-only & return & 77.8 [60.2, 92.6] & 0.906 [0.769, 0.986] & 2000/2000\\
+Rules & reads-only & cancel & 50.8 [50.0, 63.2] & 0.500 [0.500, 0.774] & 1994/2000\\
+Rules & reads-only & return & 57.3 [50.0, 75.2] & 0.564 [0.500, 0.800] & 2000/2000\\
+\bottomrule\end{longtable}}

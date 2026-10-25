@@ -1,0 +1,17 @@
+\begin{table}[t]
+\centering\footnotesize
+\caption{Post-review H2 controls. Positive values denote a question-mean log-loss reduction (nats); brackets are conditional 98.333\% resampling intervals. Not a new agent run.}
+\label{tab:h2-controls}
+\setlength{\tabcolsep}{3pt}
+\begin{tabularx}{\columnwidth}{@{}Y>{\raggedright\arraybackslash}p{0.17\columnwidth}>{\raggedright\arraybackslash}p{0.34\columnwidth}@{}}
+\toprule
+Contrast & Test rows / questions & Effect [interval] \\
+\midrule
+Matched tasks, 3 identities: coarse minus sequence &30/10& 0.2634\newline [$-$0.2584,0.7241] \\
+First-document-epoch \emph{proxy}: coarse minus sequence &1135/226& 0.1504\newline [0.1193,0.1825] \\
+Original clean minus mean of 3 refit shuffle increments &1135/226& 0.3447\newline [0.2961,0.3953] \\
+\bottomrule
+\end{tabularx}
+\par\smallskip\raggedright\footnotesize
+All 14-class common support is empty. The first-document view is reconstructed, not authenticated. Its 0.1504 feature increment and H3's 0.1503 timestamp-adaptation effect are distinct contrasts on the same archive, not independent replications. Cross-document order assumes an archive receiver. All three shuffles select coarse, so their zero increments make this contrast's 0.3447 point equal to original H2. The intervals use separate frozen bootstrap seeds (20261018 here; 20261008 for original H2), yielding different finite-resampling endpoints. Zero selected increments do not establish information equivalence. No task utility or live defense is measured.
+\end{table}

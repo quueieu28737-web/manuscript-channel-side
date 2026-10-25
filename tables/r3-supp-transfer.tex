@@ -1,0 +1,122 @@
+\section{Second-round transfer tests (E5--E7)}\label{app:transfer}
+E5 and individual-attacker E6 results below retain the R2 measurements. Current E6/E7 suite summaries use post-review reanalysis in \path{experiments/sp2027-r3/}; historical registration and outputs remain in \path{experiments/sp2027-r2/}. A suite maximum is recomputed in each of 2,000 common task-bootstrap draws. Intervals condition on fixed out-of-fold predictions and omit retraining/search uncertainty. Meets: upper BA bound $<0.60$ and maximum point AUROC $<0.65$; Above: lower BA bound $>0.60$; otherwise inconclusive. This is a finite-suite criterion, not a security guarantee.
+\begin{table*}[!ht]\centering\scriptsize
+\caption{E5 per attacker with 95\% topic-bootstrap intervals (12 test topics). Wire: mean application-record bytes incl.\ 5-byte headers. Amb.: mean size of the nearest-sequence tie set.}
+\begin{tabular}{@{}lllrrrrrrr@{}}\toprule
+TLS & Target & Framing & Wire & $D_0$ total & $D_2$ total & $D_2$ count & $D_2$ sequence & ID & Amb.\\\midrule
+1.2 & T1 & Buffered, unpadded & 721 & 100.0 [100.0,100.0] & 100.0 [100.0,100.0] & 100.0 [100.0,100.0] & 100.0 [100.0,100.0] & 87.5 & 1.3\\
+1.2 & T1 & Buffered, training cap & 1570 & 50.0 [50.0,50.0] & 50.0 [50.0,50.0] & 50.0 [50.0,50.0] & 50.0 [50.0,50.0] & 2.1 & 48.0\\
+1.2 & T1 & Stream, per token & 15038 & 100.0 [100.0,100.0] & 100.0 [100.0,100.0] & 100.0 [100.0,100.0] & 100.0 [100.0,100.0] & 100.0 & 1.0\\
+1.2 & T1 & + random event pad & 19194 & 100.0 [100.0,100.0] & 100.0 [100.0,100.0] & 100.0 [100.0,100.0] & 100.0 [100.0,100.0] & 62.3 & 1.0\\
+1.2 & T1 & + constant event size & 18255 & 100.0 [100.0,100.0] & 100.0 [100.0,100.0] & 100.0 [100.0,100.0] & 100.0 [100.0,100.0] & 58.3 & 2.3\\
+1.2 & T1 & 8-token batches, const. & 3040 & 50.0 [50.0,50.0] & 100.0 [100.0,100.0] & 100.0 [100.0,100.0] & 100.0 [100.0,100.0] & 20.8 & 9.4\\
+1.2 & T1 & Const.\ events + count cap & 36092 & 50.0 [50.0,50.0] & 50.0 [50.0,50.0] & 50.0 [50.0,50.0] & 50.0 [50.0,50.0] & 6.3 & 44.1\\
+1.2 & T3 & Buffered, unpadded & 456 & 91.7 [79.2,100.0] & 91.7 [79.2,100.0] & 91.7 [79.2,100.0] & 91.7 [79.2,100.0] & 91.7 & 1.2\\
+1.2 & T3 & Buffered, training cap & 635 & 50.0 [50.0,50.0] & 50.0 [50.0,50.0] & 50.0 [50.0,50.0] & 50.0 [50.0,50.0] & 4.2 & 44.2\\
+1.2 & T3 & Stream, per token & 9713 & 87.5 [75.0,100.0] & 87.5 [75.0,100.0] & 87.5 [75.0,100.0] & 87.5 [75.0,100.0] & 100.0 & 1.0\\
+1.2 & T3 & + random event pad & 12398 & 71.2 [58.3,83.8] & 87.9 [75.8,99.2] & 87.5 [75.0,100.0] & 87.9 [76.2,98.3] & 72.5 & 1.0\\
+1.2 & T3 & + constant event size & 11803 & 79.2 [66.7,91.7] & 87.5 [75.0,100.0] & 87.5 [75.0,100.0] & 87.5 [75.0,100.0] & 70.8 & 1.8\\
+1.2 & T3 & 8-token batches, const. & 2023 & 50.0 [50.0,50.0] & 87.5 [75.0,100.0] & 87.5 [75.0,100.0] & 87.5 [75.0,100.0] & 18.8 & 8.4\\
+1.2 & T3 & Const.\ events + count cap & 15411 & 50.0 [50.0,50.0] & 50.0 [50.0,50.0] & 50.0 [50.0,50.0] & 50.0 [50.0,50.0] & 12.5 & 38.6\\
+1.3 & T1 & Buffered, unpadded & 686 & 100.0 [100.0,100.0] & 100.0 [100.0,100.0] & 100.0 [100.0,100.0] & 100.0 [100.0,100.0] & 87.5 & 1.3\\
+1.3 & T1 & Buffered, training cap & 1500 & 50.0 [50.0,50.0] & 50.0 [50.0,50.0] & 50.0 [50.0,50.0] & 50.0 [50.0,50.0] & 2.1 & 48.0\\
+1.3 & T1 & Stream, per token & 14294 & 100.0 [100.0,100.0] & 100.0 [100.0,100.0] & 100.0 [100.0,100.0] & 100.0 [100.0,100.0] & 100.0 & 1.0\\
+1.3 & T1 & + random event pad & 18450 & 100.0 [100.0,100.0] & 100.0 [100.0,100.0] & 100.0 [100.0,100.0] & 100.0 [100.0,100.0] & 62.3 & 1.0\\
+1.3 & T1 & + constant event size & 17511 & 100.0 [100.0,100.0] & 100.0 [100.0,100.0] & 100.0 [100.0,100.0] & 100.0 [100.0,100.0] & 58.3 & 2.3\\
+1.3 & T1 & 8-token batches, const. & 2938 & 50.0 [50.0,50.0] & 100.0 [100.0,100.0] & 100.0 [100.0,100.0] & 100.0 [100.0,100.0] & 20.8 & 9.4\\
+1.3 & T1 & Const.\ events + count cap & 34626 & 50.0 [50.0,50.0] & 50.0 [50.0,50.0] & 50.0 [50.0,50.0] & 50.0 [50.0,50.0] & 6.3 & 44.1\\
+1.3 & T3 & Buffered, unpadded & 433 & 91.7 [79.2,100.0] & 91.7 [79.2,100.0] & 91.7 [79.2,100.0] & 83.3 [70.8,95.8] & 91.7 & 1.2\\
+1.3 & T3 & Buffered, training cap & 606 & 50.0 [50.0,50.0] & 50.0 [50.0,50.0] & 50.0 [50.0,50.0] & 50.0 [50.0,50.0] & 4.2 & 44.2\\
+1.3 & T3 & Stream, per token & 9230 & 87.5 [75.0,100.0] & 87.5 [75.0,100.0] & 87.5 [75.0,100.0] & 87.5 [75.0,100.0] & 100.0 & 1.0\\
+1.3 & T3 & + random event pad & 11915 & 68.8 [56.7,81.7] & 87.9 [75.8,99.2] & 87.5 [75.0,100.0] & 87.5 [75.4,98.3] & 72.5 & 1.0\\
+1.3 & T3 & + constant event size & 11321 & 79.2 [66.7,91.7] & 87.5 [75.0,100.0] & 87.5 [75.0,100.0] & 87.5 [75.0,100.0] & 70.8 & 1.8\\
+1.3 & T3 & 8-token batches, const. & 1953 & 50.0 [50.0,50.0] & 87.5 [75.0,100.0] & 87.5 [75.0,100.0] & 87.5 [75.0,100.0] & 18.8 & 8.4\\
+1.3 & T3 & Const.\ events + count cap & 14782 & 50.0 [50.0,50.0] & 50.0 [50.0,50.0] & 50.0 [50.0,50.0] & 50.0 [50.0,50.0] & 12.5 & 38.6\\
+\bottomrule\end{tabular}\end{table*}
+\begin{table*}[!ht]\centering\scriptsize
+\caption{E6 dispatch view: balanced accuracy (\%) with task-cluster bootstrap intervals (115 tasks, 3 seeds per task), best AUROC, active-account equality and cover-call error rate.}
+\begin{tabular}{@{}llrrrrrrr@{}}\toprule
+Target & Cover & $D_0$ GB & $D_2$ LR & $D_2$ GB & Count rule & AUROC & Acct.\ eq. & Cover err.\\\midrule
+cancel & No cover & 100.0 [100.0,100.0] & 100.0 [100.0,100.0] & 100.0 [100.0,100.0] & 100.0 [100.0,100.0] & 1.00 & 100.0 & 0.0\\
+cancel & Cancel, $p{=}0.5$ & 74.6 [71.6,77.4] & 84.5 [75.9,92.1] & 86.1 [78.4,93.9] & 83.3 [75.0,91.2] & 0.95 & 100.0 & 0.0\\
+cancel & Cancel, $p{=}1$ & 50.0 [50.0,50.0] & 97.1 [92.4,100.0] & 100.0 [100.0,100.0] & 100.0 [100.0,100.0] & 1.00 & 100.0 & 0.0\\
+cancel & Cancel, $p{=}1$, live execution & 50.0 [50.0,50.0] & 98.1 [95.4,100.0] & 100.0 [100.0,100.0] & 100.0 [100.0,100.0] & 1.00 & 100.0 & 0.0\\
+cancel & Cancel count $\to 2$ & 50.0 [50.0,50.0] & 76.9 [64.8,88.0] & 69.4 [57.6,81.7] & 50.0 [50.0,50.0] & 0.85 & 100.0 & 2.8\\
+cancel & One decoy program & 91.9 [89.8,94.2] & 68.1 [60.2,76.7] & 66.0 [60.1,72.2] & 91.9 [89.8,94.2] & 0.92 & 100.0 & 3.0\\
+cancel & Two decoy programs & 83.5 [80.5,86.5] & 55.9 [48.4,63.6] & 57.0 [49.9,64.1] & 83.5 [80.5,86.5] & 0.86 & 100.0 & 4.3\\
+cancel & Shape equalization & 50.0 [50.0,50.0] & 44.8 [37.6,52.4] & 49.2 [44.0,54.8] & 50.0 [50.0,50.0] & 0.50 & 100.0 & 5.7\\
+return & No cover & 100.0 [100.0,100.0] & 97.8 [94.0,100.0] & 100.0 [100.0,100.0] & 100.0 [100.0,100.0] & 1.00 & 100.0 & 0.0\\
+return & Cancel, $p{=}0.5$ & 100.0 [100.0,100.0] & 98.0 [94.3,100.0] & 100.0 [100.0,100.0] & 100.0 [100.0,100.0] & 1.00 & 100.0 & 0.0\\
+return & Cancel, $p{=}1$ & 100.0 [100.0,100.0] & 97.5 [94.8,99.6] & 100.0 [100.0,100.0] & 100.0 [100.0,100.0] & 1.00 & 100.0 & 0.0\\
+return & Cancel, $p{=}1$, live execution & 100.0 [100.0,100.0] & 98.0 [94.3,100.0] & 100.0 [100.0,100.0] & 100.0 [100.0,100.0] & 1.00 & 100.0 & 0.0\\
+return & Cancel count $\to 2$ & 100.0 [100.0,100.0] & 98.0 [95.4,100.0] & 100.0 [100.0,100.0] & 100.0 [100.0,100.0] & 1.00 & 100.0 & 2.8\\
+return & One decoy program & 85.9 [82.9,89.0] & 73.2 [66.6,79.5] & 71.1 [65.5,76.8] & 85.9 [82.9,89.0] & 0.88 & 100.0 & 3.0\\
+return & Two decoy programs & 78.1 [75.0,81.2] & 70.6 [64.1,77.3] & 69.1 [62.9,75.0] & 78.1 [75.0,81.2] & 0.85 & 100.0 & 4.3\\
+return & Shape equalization & 50.0 [50.0,50.0] & 54.5 [48.4,60.3] & 50.3 [45.4,55.5] & 50.0 [50.0,50.0] & 0.53 & 100.0 & 5.7\\
+\bottomrule\end{tabular}\end{table*}
+
+\begin{table*}[!ht]\centering\scriptsize
+\caption{Corrected E6 suite maxima and task-bootstrap intervals. Individual-attacker results above are unchanged. AUROC is also maximized over the evaluated suite.}
+\begin{tabular}{@{}llrrl@{}}\toprule
+Target & Cover & Max BA [95\% CI] & Max AUROC & Criterion\\\midrule
+cancel & No cover & 100.0 [100.0,100.0] & 1.00 & Above\\
+cancel & Cancel, $p{=}0.5$ & 86.1 [80.9,94.2] & 0.95 & Above\\
+cancel & Cancel, $p{=}1$ & 100.0 [100.0,100.0] & 1.00 & Above\\
+cancel & Cancel, $p{=}1$, live & 100.0 [100.0,100.0] & 1.00 & Above\\
+cancel & Cancel count $\to2$ & 76.9 [67.0,88.1] & 0.85 & Above\\
+cancel & One decoy & 91.9 [89.8,94.2] & 0.92 & Above\\
+cancel & Two decoys & 83.5 [80.5,86.5] & 0.86 & Above\\
+cancel & Shape & 50.0 [50.0,54.8] & 0.50 & Meets\\
+return & No cover & 100.0 [100.0,100.0] & 1.00 & Above\\
+return & Cancel, $p{=}0.5$ & 100.0 [100.0,100.0] & 1.00 & Above\\
+return & Cancel, $p{=}1$ & 100.0 [100.0,100.0] & 1.00 & Above\\
+return & Cancel, $p{=}1$, live & 100.0 [100.0,100.0] & 1.00 & Above\\
+return & Cancel count $\to2$ & 100.0 [100.0,100.0] & 1.00 & Above\\
+return & One decoy & 85.9 [82.9,89.0] & 0.88 & Above\\
+return & Two decoys & 78.1 [75.0,81.2] & 0.85 & Above\\
+return & Shape & 54.5 [50.0,60.4] & 0.53 & Inconcl.\\
+\bottomrule\end{tabular}\end{table*}
+
+\begin{table*}[!ht]\centering\scriptsize
+\caption{Corrected E7 suite maxima (4,140 saved TLS sessions). Decoder: held-out request/response size-to-tool accuracy; it differs from request-only identification. Costs use raw/no-cover as denominator. Defense calibration uses the full public task population.}
+\begin{tabular}{@{}lllrrlrrr@{}}\toprule
+Target & Framing & Cover & Max BA [95\% CI] & AUROC & Criterion & Decoder & Bytes$\times$ & Calls$\times$\\\midrule
+cancel & raw & No cover & 100.0 [100.0,100.0] & 1.00 & Above & 92.8 & 1.00 & 1.00\\
+cancel & raw & Cancel count $\to2$ & 72.7 [63.4,84.5] & 0.81 & Above & 94.7 & 1.38 & 1.35\\
+cancel & raw & One decoy & 91.9 [89.8,94.2] & 0.92 & Above & 99.7 & 2.03 & 2.01\\
+cancel & raw & Shape & 51.2 [50.0,58.8] & 0.54 & Meets & 100.0 & 7.56 & 7.71\\
+cancel & bucket1024 & No cover & 60.1 [50.0,73.3] & 0.67 & Inconcl. & 35.2 & 2.42 & 1.00\\
+cancel & bucket1024 & Cancel count $\to2$ & 67.5 [58.5,78.9] & 0.70 & Inconcl. & 33.5 & 3.25 & 1.35\\
+cancel & bucket1024 & One decoy & 60.0 [53.4,68.7] & 0.59 & Inconcl. & 35.5 & 4.90 & 2.01\\
+cancel & bucket1024 & Shape & 55.3 [52.2,63.6] & 0.59 & Inconcl. & 26.5 & 18.56 & 7.71\\
+cancel & const & No cover & 59.7 [50.0,72.3] & 0.62 & Inconcl. & 30.4 & 3.41 & 1.00\\
+cancel & const & Cancel count $\to2$ & 64.9 [54.9,76.7] & 0.66 & Inconcl. & 30.0 & 4.61 & 1.35\\
+cancel & const & One decoy & 59.7 [52.6,67.4] & 0.59 & Inconcl. & 30.5 & 6.87 & 2.01\\
+cancel & const & Shape & 54.4 [50.0,62.5] & 0.50 & Inconcl. & 21.6 & 26.32 & 7.71\\
+return & raw & No cover & 95.7 [90.7,99.4] & 0.96 & Above & 93.8 & 1.00 & 1.00\\
+return & raw & Cancel count $\to2$ & 95.7 [90.6,99.4] & 0.96 & Above & 95.4 & 1.38 & 1.35\\
+return & raw & One decoy & 85.9 [82.9,89.0] & 0.88 & Above & 100.0 & 2.03 & 2.01\\
+return & raw & Shape & 60.5 [54.9,66.4] & 0.61 & Inconcl. & 100.0 & 7.56 & 7.71\\
+return & bucket1024 & No cover & 73.9 [66.6,83.1] & 0.76 & Above & 35.2 & 2.42 & 1.00\\
+return & bucket1024 & Cancel count $\to2$ & 66.0 [59.8,75.8] & 0.70 & Inconcl. & 33.5 & 3.25 & 1.35\\
+return & bucket1024 & One decoy & 59.1 [54.1,66.8] & 0.60 & Inconcl. & 35.5 & 4.90 & 2.01\\
+return & bucket1024 & Shape & 50.6 [50.0,57.3] & 0.52 & Meets & 26.5 & 18.56 & 7.71\\
+return & const & No cover & 53.6 [50.0,63.9] & 0.55 & Inconcl. & 30.4 & 3.41 & 1.00\\
+return & const & Cancel count $\to2$ & 59.1 [52.3,68.6] & 0.61 & Inconcl. & 30.0 & 4.61 & 1.35\\
+return & const & One decoy & 56.8 [51.4,63.6] & 0.57 & Inconcl. & 30.5 & 6.87 & 2.01\\
+return & const & Shape & 50.0 [50.0,55.1] & 0.50 & Meets & 21.6 & 26.32 & 7.71\\
+\bottomrule\end{tabular}\end{table*}
+
+\begin{table*}[!ht]\centering\footnotesize
+\caption{Request-only tool identification: training-fold size table, unseen-size fallback to the training majority. Each of 582 reference calls is tested once. The 95.7\% raw in-sample purity is excluded from held-out accuracy.}
+\begin{tabular}{@{}llrr@{}}\toprule
+Task stratification & Framing & Held-out accuracy (\%) & Training-majority baseline (\%)\\\midrule
+cancel & raw & 89.9 & 29.4\\
+cancel & bucket1024 & 29.4 & 29.4\\
+cancel & const & 29.4 & 29.4\\
+return & raw & 91.4 & 29.4\\
+return & bucket1024 & 29.4 & 29.4\\
+return & const & 29.4 & 29.4\\
+\bottomrule\end{tabular}
+\par\smallskip Training-only tool-count maxima overflow on five distinct held-out tasks (22, 28, 40, 67, 87) under either target split. This is a feasibility audit, not a rerun of defense efficacy. Full fold membership and overflow records are released. No tested network configuration meets the criterion for both targets.
+\end{table*}

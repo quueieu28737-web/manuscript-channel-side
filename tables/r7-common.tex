@@ -1,0 +1,57 @@
+\begin{longtable}{@{}llrrrr@{}}
+\caption{Matched-suite sensitivity: the same seven R7 models in every E14 condition. BA and AUROC maxima are independently reselected in every customer-bootstrap draw. This subset is used for the cost plot, not to replace the stronger available attack union or its absolute assessment.}\label{tab:r7-common}\\
+\toprule Prompt / condition & Target & BA [95\% CI] & AUROC & Valid draws & Subset gate\\\midrule\endfirsthead
+\toprule Prompt / condition & Target & BA [95\% CI] & AUROC & Valid draws & Subset gate\\\midrule\endhead
+Standard / Undefended & cancel & 84.3 [72.7, 97.4] & 0.836 & 1988 & Unmet\\
+Standard / Undefended & return & 76.9 [62.2, 90.4] & 0.828 & 2000 & Unmet\\
+Standard / Per-call constant & cancel & 53.2 [50.0, 69.5] & 0.604 & 1988 & Unmet\\
+Standard / Per-call constant & return & 59.1 [50.0, 73.8] & 0.656 & 2000 & Unmet\\
+Standard / Serial shadow & cancel & 50.0 [50.0, 65.0] & 0.548 & 1988 & Unmet\\
+Standard / Serial shadow & return & 52.9 [50.0, 60.3] & 0.526 & 2000 & Unmet\\
+Standard / Two-in-flight shadow & cancel & 50.0 [50.0, 59.7] & 0.500 & 1988 & Pass\\
+Standard / Two-in-flight shadow & return & 57.3 [55.0, 69.2] & 0.596 & 2000 & Unmet\\
+Standard / Full tunnel, 2 ms & cancel & 59.9 [54.6, 67.3] & 0.708 & 1988 & Unmet\\
+Standard / Full tunnel, 2 ms & return & 55.2 [50.1, 61.0] & 0.567 & 2000 & Unmet\\
+Standard / Full tunnel, 5 ms & cancel & 54.6 [50.0, 70.5] & 0.618 & 1988 & Unmet\\
+Standard / Full tunnel, 5 ms & return & 53.7 [51.3, 61.2] & 0.551 & 2000 & Unmet\\
+Standard / Record buckets & cancel & 53.1 [50.0, 78.5] & 0.510 & 1988 & Unmet\\
+Standard / Record buckets & return & 69.8 [50.0, 86.9] & 0.689 & 2000 & Unmet\\
+Standard / Tamaraw 40/12 ms & cancel & 55.3 [50.0, 68.7] & 0.590 & 1988 & Unmet\\
+Standard / Tamaraw 40/12 ms & return & 55.3 [51.1, 64.4] & 0.594 & 2000 & Unmet\\
+Standard / Tamaraw 4/1.2 ms & cancel & 57.8 [50.0, 71.8] & 0.609 & 1988 & Unmet\\
+Standard / Tamaraw 4/1.2 ms & return & 51.8 [50.0, 61.8] & 0.525 & 2000 & Unmet\\
+Standard / FRONT & cancel & 59.0 [50.0, 69.9] & 0.623 & 1988 & Unmet\\
+Standard / FRONT & return & 69.3 [58.3, 81.8] & 0.713 & 2000 & Unmet\\
+Standard / WTF-PAD adaptation & cancel & 51.9 [50.0, 64.1] & 0.560 & 1988 & Unmet\\
+Standard / WTF-PAD adaptation & return & 62.7 [50.0, 79.6] & 0.635 & 2000 & Unmet\\
+Standard / WT random-donor & cancel & 50.0 [50.0, 67.0] & 0.526 & 1988 & Unmet\\
+Standard / WT random-donor & return & 56.7 [51.7, 67.8] & 0.607 & 2000 & Unmet\\
+Standard / FRONT, short calibration & cancel & 52.4 [50.0, 61.3] & 0.546 & 1988 & Unmet\\
+Standard / FRONT, short calibration & return & 56.0 [50.0, 71.1] & 0.618 & 2000 & Unmet\\
+Rules / Undefended & cancel & 84.7 [75.2, 98.5] & 0.851 & 1988 & Unmet\\
+Rules / Undefended & return & 78.3 [63.3, 92.2] & 0.818 & 2000 & Unmet\\
+Rules / Per-call constant & cancel & 59.4 [50.0, 77.5] & 0.594 & 1988 & Unmet\\
+Rules / Per-call constant & return & 61.9 [50.0, 77.4] & 0.563 & 2000 & Unmet\\
+Rules / Serial shadow & cancel & 56.1 [50.0, 76.2] & 0.589 & 1988 & Unmet\\
+Rules / Serial shadow & return & 59.8 [53.8, 69.4] & 0.626 & 2000 & Unmet\\
+Rules / Two-in-flight shadow & cancel & 56.9 [50.0, 69.2] & 0.566 & 1988 & Unmet\\
+Rules / Two-in-flight shadow & return & 57.1 [53.8, 67.9] & 0.639 & 2000 & Unmet\\
+Rules / Full tunnel, 2 ms & cancel & 52.8 [51.2, 61.6] & 0.504 & 1988 & Unmet\\
+Rules / Full tunnel, 2 ms & return & 55.3 [51.7, 66.2] & 0.577 & 2000 & Unmet\\
+Rules / Full tunnel, 5 ms & cancel & 58.3 [50.0, 67.9] & 0.539 & 1988 & Unmet\\
+Rules / Full tunnel, 5 ms & return & 54.3 [51.6, 62.6] & 0.595 & 2000 & Unmet\\
+Rules / Record buckets & cancel & 56.7 [50.0, 81.2] & 0.615 & 1988 & Unmet\\
+Rules / Record buckets & return & 70.8 [51.2, 88.0] & 0.703 & 2000 & Unmet\\
+Rules / Tamaraw 40/12 ms & cancel & 58.6 [56.3, 70.8] & 0.622 & 1988 & Unmet\\
+Rules / Tamaraw 40/12 ms & return & 50.0 [50.0, 60.3] & 0.500 & 2000 & Unmet\\
+Rules / Tamaraw 4/1.2 ms & cancel & 52.5 [50.0, 61.6] & 0.505 & 1988 & Unmet\\
+Rules / Tamaraw 4/1.2 ms & return & 54.6 [51.4, 61.5] & 0.534 & 2000 & Unmet\\
+Rules / FRONT & cancel & 58.5 [50.0, 69.6] & 0.544 & 1988 & Unmet\\
+Rules / FRONT & return & 60.4 [50.0, 75.1] & 0.635 & 2000 & Unmet\\
+Rules / WTF-PAD adaptation & cancel & 57.2 [50.0, 74.2] & 0.559 & 1988 & Unmet\\
+Rules / WTF-PAD adaptation & return & 61.0 [50.0, 77.6] & 0.625 & 2000 & Unmet\\
+Rules / WT random-donor & cancel & 51.4 [50.0, 68.8] & 0.606 & 1988 & Unmet\\
+Rules / WT random-donor & return & 56.3 [50.0, 66.6] & 0.558 & 2000 & Unmet\\
+Rules / FRONT, short calibration & cancel & 51.2 [50.0, 70.1] & 0.501 & 1988 & Unmet\\
+Rules / FRONT, short calibration & return & 62.9 [50.0, 77.2] & 0.655 & 2000 & Unmet\\
+\bottomrule\end{longtable}

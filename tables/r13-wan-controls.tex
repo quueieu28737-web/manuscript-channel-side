@@ -1,0 +1,27 @@
+\begin{table*}[t]
+\centering
+\caption{Timing defenses under loopback versus WAN conditions (276 test episodes). Full-suite intent Balanced Accuracy (BA) reported for cancellation / return. Incomplete/exhausted reflects sessions failing to complete all real calls within the fixed horizon.}
+\label{tab:wan-controls-comparison}
+\footnotesize\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lcccccc}
+\toprule
+\textbf{Condition} & \textbf{Network Environment} & \textbf{Full-Suite BA} & \textbf{Real p95 ms} & \textbf{Dur p95 ms} & \textbf{Byte Mult.} & \textbf{Status / Exh.} \\
+\midrule
+Raw transport & Loopback (0 ms, 0 ms jit.) & 91.7\% / 86.4\% & 15.4 & 15.5 & 1.0$\times$ & 276/276 \\
+& WAN Mild (20 ms, 5 ms jit.) & 91.7\% / 86.4\% & 506.4 & 506.4 & 1.0$\times$ & 276/276 \\
+& WAN Real. (50 ms, 10 ms jit.) & 91.7\% / 86.4\% & 1178.8 & 1178.8 & 1.0$\times$ & 276/276 \\
+\midrule
+Per-call constant framing & Loopback (0 ms, 0 ms jit.) & 68.6\% / 62.7\% & 16.6 & 16.7 & 3.9$\times$ & 276/276 \\
+& WAN Mild (20 ms, 5 ms jit.) & 68.6\% / 54.8\% & 504.8 & 504.9 & 3.9$\times$ & 276/276 \\
+& WAN Real. (50 ms, 10 ms jit.) & 68.6\% / 54.8\% & 1172.6 & 1172.6 & 3.9$\times$ & 276/276 \\
+\midrule
+Serial shadow cover & Loopback (0 ms, 0 ms jit.) & 61.4\% / 53.4\% & 26.2 & 46.6 & 15.1$\times$ & 276/276 \\
+& WAN Mild (20 ms, 5 ms jit.) & 50.0\% / 50.7\% & 855.4 & 1314.9 & 15.3$\times$ & 276/276 \\
+& WAN Real. (50 ms, 10 ms jit.) & 54.0\% / 54.6\% & 1999.5 & 3112.4 & 15.3$\times$ & 276/276 \\
+\midrule
+Full tunnel (2 ms cell) & Loopback (0 ms, 0 ms jit.) & 62.5\% / 52.9\% & 56.4 & 270.4 & 125.7$\times$ & 276/276 \\
+& WAN Mild (20 ms, 5 ms jit.) & 54.4\% / 56.8\% & 286.7 & 291.6 & 127.0$\times$ & 85/276 \\
+& WAN Real. (50 ms, 10 ms jit.) & 55.0\% / 52.6\% & 269.5 & 325.9 & 127.0$\times$ & 5/276 \\
+\bottomrule
+\end{tabular}
+\end{table*}

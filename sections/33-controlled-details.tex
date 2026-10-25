@@ -1,0 +1,19 @@
+\section{Controlled Replay Details and Revised Accounting}\label{app:controlled-details}
+The current experimental source is \path{experiments/reviewer-audit/recompute.py}, with the instrumented retail implementation in \path{retail_replay.py}. Historical inputs and previous summaries are retained unchanged; revised JSON files take precedence for the current manuscript. No fresh model generations were requested.
+
+\paragraph{TLS corpus and length accounting}
+The 48 saved outputs comprise 24 brief/expanded pairs. Training and testing each contain 12 topics and 24 outputs. T1 uses the original verbosity labels. T2 retains brief responses and takes the first two period-delimited sentences of expanded responses. T3 uses the first two and first three sentences of each expanded response. T4 retains both original outputs per topic and labels their domain. There is one generation per prompt, not repeated model sampling. T4 has 14 positive and 10 negative test outputs (seven versus five topics), so 50\% is not its empirical majority-class baseline.
+
+For every regime and framing policy, \path{tls_records.json} saves topic, split, label, plaintext bytes, application-record count, payload bytes, wire bytes and recovered plaintext hash. \path{tls_gradient.json} reports absolute means and matched denominators. All 48 texts are used for cost means; only 24 held-out outputs are used for accuracy. A record contains five TLS header bytes plus 24 encryption-overhead bytes under the pinned TLS~1.2 suite. Handshake traffic, TCP/IP and timing are outside this cost scope. Bucket 1024 uses four 256-byte writes per quantum, hence 1,140 rather than 1,082 wire bytes per quantum. Buckets 256/512 use 128-byte writes.
+
+The training-fitted cap rounds the maximum framed training length, 1,194 bytes, up to 1,280 bytes. It emits ten records of 128 bytes (1,570 wire bytes). Overflow adds 128-byte frames, never truncates, and leaks an overflow-dependent length; none of the saved test responses overflows. The loose 16-record, 1,024-byte-per-record control is 16,848 wire bytes and is not a lower bound on protection cost.
+
+Cohen's absolute standardized mean difference, recomputed across the 48 constructed plaintext lengths using pooled sample variance, is 12.264 (T1), 5.723 (T2), 3.418 (T3) and 0.033 (T4). Previous values embedded in regime labels were not produced by that calculation and are withdrawn. These descriptive values are not entropy, independent tests or a model of required framing cost.
+
+\paragraph{Adaptive fitting and bootstrap hierarchy}
+The clean threshold is fitted to training TLS payload bytes. The defended thresholds use the first four or all twelve training topic pairs. The 1024B defended threshold is 1,680 TLS payload bytes. Stochastic padding has 50 draws; the first is measured on sockets and 49 are calculated using socket-checked record accounting. The independent resampling unit is one of 12 test topics. For each topic, correctness or paired gain is averaged across its two outputs and all draws before 10,000 percentile-bootstrap resamples (seed 20261021). We do not refit the model in that bootstrap or infer uncertainty across fresh model generations. Stored per-topic/per-draw correctness permits exact reconstruction. Both constant caps give a constant specified length sequence without overflow; this says nothing about unobserved timing or metadata.
+
+\paragraph{Retained synthetic tool control}
+The original 24 saved inventory/calendar programs are a separate synthetic demonstration. Discard, shadow and read-only routes preserve the prescribed states by construction; 9/24 live-write runs meet both the narrow goal and protected-bystander condition. This is not evidence for autonomous-agent planning or safe deployment of destructive cover.
+
+\input{sections/36-tau-cover-details}

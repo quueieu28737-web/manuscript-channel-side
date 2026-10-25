@@ -1,0 +1,13 @@
+\begin{table*}[t]\centering\footnotesize
+\caption{Primary observable/receiver profile $\times$ signal origin across all \FinalCore{} core families (showing Snapshot 43 $\to$ Full \FinalCore{}). Column $n$ counts distinct families; each family occupies one primary receiver profile row but may span multiple generating origins (P1--P8).}\label{tab:origin-receiver-map}
+\begin{tabularx}{\textwidth}{@{}YrrrrrrrrY@{}}\toprule
+Observable / receiving permission & $n$ (43$\to$\FinalCore{}) & P1 & P2 & P4 & P5 & P6 & P7 & P8 & Representative sources\\\midrule
+Flow / destination / routing metadata & $12\to 16$ & 0 & 10 & 1 & 7 & 2 & 2 & 3 & AgentPrint; WRA; NetEcho; LLM-WFIN; Routing Metadata \\
+Own-site actions / browser / harness & $5\to 8$ & 0 & 0 & 1 & 8 & 2 & 6 & 0 & UI Traces; FP-Agent; WebAgents;AgentProv; Lidar \\
+API duration / cache / split-return & $12\to 14$ & 0 & 14 & 1 & 0 & 0 & 0 & 0 & Early Bird; LeakyLMs; CachePrune; SplitDecoy \\
+Resource / physical / sparsity / page & $10\to 15$ & 15 & 6 & 0 & 1 & 0 & 0 & 0 & TDXRay; OTRO; PAGE404; SparLeak; SparSEEty; PhysicalEdge \\
+Trajectory / procedure / diagnostic log & $4\to 5$ & 0 & 1 & 1 & 5 & 2 & 0 & 0 & SIGLEAK; ClawGuard; cycle detection; MIRAGE (diagnostics) \\\midrule
+Total distinct core families & $43\to\mathbf{\FinalCore{}}$ & \multicolumn{8}{l}{Each family contributes once to $n$; generating-layer memberships may overlap.}\\
+\bottomrule\end{tabularx}
+\par\smallskip\raggedright\footnotesize P1 hardware; P2 serving; P4 application/API; P5 orchestration; P6 tools; P7 environment; P8 multi-agent. P3 denotes transport (coded as a receiving projection). Five Type~IV authorized diagnostic components (ClawGuard, cycle detection, LumiMAS, LLM RCA, MIRAGE) are separated from Type~I confidentiality claims.
+\end{table*}

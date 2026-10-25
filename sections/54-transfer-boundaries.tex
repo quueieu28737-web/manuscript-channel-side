@@ -1,0 +1,87 @@
+\section{Attacker and Calibration Transfer Boundaries}\label{sec:transfer-matrices}
+
+This exploratory extension retains the earlier small-suite results and adds the complete inherited endpoint suite plus an exchange-count rule: majority, clean-trained gradient boosting, defended-data logistic regression and gradient boosting, decoded-tool gradient boosting, decoded target-call count, and total exchange count. It is not the larger Sol timing/CNN suite. All thresholds and decoders fit training customers only. Each of 2,000 customer bootstrap draws reselects the maximum; single-class draws are excluded. Point metrics are independently recomputed from saved predictions. Model endpoints share the original task/customer partition; neither has a verified immutable weight revision.
+
+\subsection{Attacker transfer}
+
+Rows train on the source model and test on held-out customers under the target model. Joint conditions retain target-local calibration, so this table isolates attacker transfer. Calibration transfer is a separate experiment below.
+
+\begin{center}\small\begin{tabular}{llllrrl}\toprule
+
+Source & Target & Condition & Target label & BA (\%) & Bytes$\times$ & 95\% interval\\\midrule
+
+MiniMax & MiniMax & Raw & cancel & 58.3 & -- & [50.0, 83.3]\\
+
+MiniMax & MiniMax & Raw & return & 83.5 & -- & [68.4, 98.7]\\
+
+MiniMax & MiniMax & Joint & cancel & 60.4 & -- & [50.0, 74.1]\\
+
+MiniMax & MiniMax & Joint & return & 67.5 & -- & [57.7, 87.2]\\
+
+MiniMax & GLM & Raw & cancel & 75.0 & -- & [59.7, 100.0]\\
+
+MiniMax & GLM & Raw & return & 77.5 & -- & [66.0, 97.4]\\
+
+MiniMax & GLM & Joint & cancel & 50.0 & -- & [50.0, 50.0]\\
+
+MiniMax & GLM & Joint & return & 55.8 & -- & [50.0, 81.1]\\
+
+GLM & MiniMax & Raw & cancel & 65.4 & -- & [54.7, 85.2]\\
+
+GLM & MiniMax & Raw & return & 88.1 & -- & [76.5, 98.7]\\
+
+GLM & MiniMax & Joint & cancel & 67.1 & -- & [50.0, 87.0]\\
+
+GLM & MiniMax & Joint & return & 53.5 & -- & [50.0, 70.0]\\
+
+GLM & GLM & Raw & cancel & 100.0 & -- & [100.0, 100.0]\\
+
+GLM & GLM & Raw & return & 86.6 & -- & [73.7, 97.4]\\
+
+GLM & GLM & Joint & cancel & 50.0 & -- & [50.0, 80.8]\\
+
+GLM & GLM & Joint & return & 67.3 & -- & [58.7, 89.5]\\
+
+\bottomrule\end{tabular}\end{center}
+
+\subsection{Calibration transfer and localized padding}
+
+Source training templates, donors and caps are applied to target trajectories, including target training trajectories used to refit attackers. All 690 sessions are actual local TLS captures. Write-only padding uses true tool identity at the trusted defense boundary; the adversary receives lengths and directions only. It introduces no cover calls. Byte ratios divide summed test wire bytes by target-model undefended test bytes. Different target trajectories change transferred-template overflow and cost.
+
+\begin{center}\small\begin{tabular}{llllrrl}\toprule
+
+Source & Target & Condition & Target label & BA (\%) & Bytes$\times$ & 95\% interval\\\midrule
+
+MiniMax & MiniMax & Joint & cancel & 60.4 & 20.06 & [50.0, 74.1]\\
+
+MiniMax & MiniMax & Joint & return & 67.5 & 20.06 & [57.7, 87.2]\\
+
+MiniMax & MiniMax & Write padding & cancel & 50.0 & 1.45 & [50.0, 62.4]\\
+
+MiniMax & MiniMax & Write padding & return & 61.3 & 1.45 & [52.6, 80.2]\\
+
+MiniMax & GLM & Joint & cancel & 70.8 & 18.65 & [60.5, 90.2]\\
+
+MiniMax & GLM & Joint & return & 50.0 & 18.65 & [50.0, 59.2]\\
+
+GLM & MiniMax & Joint & cancel & 50.8 & 17.48 & [50.0, 69.2]\\
+
+GLM & MiniMax & Joint & return & 63.0 & 17.48 & [50.0, 82.9]\\
+
+GLM & GLM & Joint & cancel & 50.0 & 15.95 & [50.0, 80.8]\\
+
+GLM & GLM & Joint & return & 67.3 & 15.95 & [58.7, 89.5]\\
+
+GLM & GLM & Write padding & cancel & 60.0 & 1.51 & [50.0, 87.0]\\
+
+GLM & GLM & Write padding & return & 61.6 & 1.51 & [53.4, 83.1]\\
+
+\bottomrule\end{tabular}\end{center}
+
+\paragraph{Scope of the conclusion} The observed changes are directional and target-dependent. Wide customer intervals preclude turning these point contrasts into a universal failure threshold. The engineering screening criterion remains unchanged. Expanded-suite MiniMax joint return BA is 67.5\%, versus 59.9\% in the original endpoint suite: the added exchange-count attacker is the changed evaluation contract, not a revision of the underlying trajectories. Claims of inexpensive write padding must likewise use the expanded-suite 61.3/61.6\% return values, not the earlier small-suite values.
+
+\paragraph{Paired transfer uncertainty}
+Paired contrasts use the same customer draws and reselect each condition's suite maximum. Moving MiniMax calibration to GLM changes cancellation by $+20.8$ points (95\% interval $[-12.6,35.3]$) and return by $-17.3$ points ($[-38.2,-5.3]$). Moving GLM calibration to MiniMax changes cancellation by $-9.6$ ($[-21.1,6.4]$) and return by $-4.5$ ($[-25.0,12.3]$). These conditional intervals distinguish the observed direction of transfer from the precision available for each target; they include no attacker-retraining uncertainty. All eight calibration/write-padding contrasts are saved in the artifact.
+
+\paragraph{Request-field mechanism check}
+Exact serialization accounting identifies which request fields contribute variable length. Across 39 MiniMax and 40 GLM return calls, the item-list field contributes 28--70 bytes (means 40.2 and 37.8), whereas the order identifier contributes 25 bytes and payment-method field 39--44 bytes. This explains a source of length variability without identifying a semantic privacy attribute: the accounting omits fields only for diagnosis, not as a valid API intervention. Response size, call count and timing provide additional channels. The earlier same-operation product-category diagnostic remains inconclusive; operation localization cannot be promoted to attribute inference.

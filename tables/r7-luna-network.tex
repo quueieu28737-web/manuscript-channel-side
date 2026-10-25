@@ -1,0 +1,22 @@
+{\footnotesize
+\begin{longtable}{@{}lllrrrr@{}}
+\caption{Luna local TLS replay: all 16 prompt/condition/target cells from 600 sessions. The inherited R4 suite includes undefended-trained $D_0$, condition-refitted $D_2$ and decoder/count controls; it differs from the expanded Sol union. Percent BA and AUROC have customer-bootstrap 95\% intervals. B/C denotes wire-byte and dispatch-record ratios to the same prompt's undefended test replay. Records include unknown/error attempts and generated cover; C is not a successful-action ratio.}\label{tab:r7-luna-network}\\
+\toprule Prompt & Condition & Target & BA [95\% CI] & AUROC [95\% CI] & B$\times$/C$\times$ & Gate\\\midrule\endfirsthead
+\toprule Prompt & Condition & Target & BA [95\% CI] & AUROC [95\% CI] & B$\times$/C$\times$ & Gate\\\midrule\endhead
+Standard & Undefended & cancel & 64.2 [50.0, 100.0] & 0.642 [0.500, 1.000] & 1.00/1.00 & Inconcl.\\
+Standard & Padding & cancel & 50.4 [50.0, 69.8] & 0.567 [0.500, 0.781] & 3.98/1.00 & Inconcl.\\
+Standard & Shape & cancel & 58.3 [50.0, 70.0] & 0.767 [0.500, 0.955] & 4.25/3.91 & Inconcl.\\
+Standard & Joint & cancel & 60.4 [50.0, 72.0] & 0.623 [0.500, 0.724] & 15.57/3.91 & Inconcl.\\
+Rules & Undefended & cancel & 65.4 [58.3, 100.0] & 0.667 [0.507, 1.000] & 1.00/1.00 & Inconcl.\\
+Rules & Padding & cancel & 57.5 [50.0, 81.1] & 0.542 [0.500, 0.839] & 3.95/1.00 & Inconcl.\\
+Rules & Shape & cancel & 55.8 [50.0, 77.4] & 0.579 [0.500, 0.878] & 4.26/3.95 & Inconcl.\\
+Rules & Joint & cancel & 59.2 [50.0, 72.5] & 0.569 [0.500, 0.715] & 15.58/3.95 & Inconcl.\\
+Standard & Undefended & return & 84.9 [72.2, 100.0] & 0.851 [0.728, 1.000] & 1.00/1.00 & Above\\
+Standard & Padding & return & 50.0 [50.0, 56.4] & 0.531 [0.500, 0.702] & 3.98/1.00 & Pass\\
+Standard & Shape & return & 54.5 [50.0, 64.3] & 0.500 [0.500, 0.643] & 4.25/3.91 & Inconcl.\\
+Standard & Joint & return & 57.0 [50.0, 71.4] & 0.595 [0.500, 0.769] & 15.57/3.91 & Inconcl.\\
+Rules & Undefended & return & 90.9 [71.4, 100.0] & 0.909 [0.714, 1.000] & 1.00/1.00 & Above\\
+Rules & Padding & return & 50.0 [50.0, 70.9] & 0.500 [0.500, 0.669] & 3.95/1.00 & Inconcl.\\
+Rules & Shape & return & 59.1 [50.0, 75.0] & 0.500 [0.500, 0.750] & 4.26/3.95 & Inconcl.\\
+Rules & Joint & return & 50.0 [50.0, 57.1] & 0.500 [0.500, 0.617] & 15.58/3.95 & Pass\\
+\bottomrule\end{longtable}}

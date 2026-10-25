@@ -1,0 +1,22 @@
+% Exact executed query strings, not a new or retroactively improved protocol.
+\begin{table*}[t]
+\centering\footnotesize
+\caption{Executed native queries and saved export occurrences. IEEE dates: October 8, 2026; ACM query/partition acquisition: October 8--9, 2026. Counts are not included study families.}
+\label{tab:native-executable-queries}
+\begin{tabularx}{\textwidth}{@{}lXrr@{}}
+\toprule
+ID & Exact query & IEEE saved/hits & ACM saved/original hits\\
+\midrule
+Q1 & \texttt{("large language model" OR LLM) AND ("side channel" OR "side-channel" OR "timing attack")} & 63/63 & 479/479\\
+Q2 & \texttt{(agent OR agentic) AND ("traffic analysis" OR fingerprinting OR "metadata leakage" OR "side channel" OR "side-channel")} & 671/671 & 6,181/6,181\\
+Q3 & \texttt{("KV cache" OR "prompt caching" OR "speculative decoding") AND (privacy OR leakage OR attack)} & 37/37 & 511/511\\
+Q4 & \texttt{("browser agent" OR "research agent" OR "tool calling" OR "model context protocol" OR "multi-agent") AND (timing OR fingerprinting OR leakage)} & 0/35,743 & Not run\\
+Q4b & \texttt{(("browser agent" OR "research agent" OR "tool calling" OR "model context protocol" OR "multi-agent") AND (timing OR fingerprinting OR leakage) AND ("large language model" OR LLM))} & 847/847 & 4,026/4,026\\
+Q5 & \texttt{("language model" OR LLM) AND ("traffic shaping" OR "cache isolation" OR padding OR "side-channel defense")} & 95/95 & 3,689/3,688\\
+Q6 & \texttt{("language model" OR chatbot OR "AI assistant" OR "generative AI") AND ("side channel" OR "side-channel" OR "traffic analysis" OR fingerprinting OR "timing leakage")} & 366/366 & 1,801/1,801\\
+\bottomrule
+\end{tabularx}
+\par\smallskip\footnotesize\raggedright
+IEEE used Command Search/default metadata, without a lower-year or document-type filter; every result page was exported as RIS with Citation and Abstract. Q4's zero means not exported in the October 8 acquisition, not zero hits or a completed screen. Q4b supplements Q4; recall preservation is unverified. The later Q4 prefix does not reconstruct historical membership.
+ACM used the All field in the ACM Full-Text Collection (not Guide), then native E-Publication Date partitions and All Results/BibTeX export. Partition receipts retain exact dates and URLs. Q4b's June bin has 285 displayed versus 284 saved; agreement of the overall saved/original counts does not repair the missing identity. Q5's partition total differs from its original whole-query count. Final-named export files were byte/hash matched on October 9; these two retrieval discrepancies remain. The October 8 coded-set cutoff is checked separately from acquisition partitions.
+\end{table*}

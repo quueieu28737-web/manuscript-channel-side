@@ -1,0 +1,26 @@
+\subsection{Retail source, permissions and full statistical results}\label{app:tau-cover-details}
+The pinned $\tau$-bench commit is \nolinkurl{59a200c6d575d595120f1cb70fea53cef0632f6b}. The instrumented replay preserves the 115 tasks, nine policies, three seeds and two positions (6,210 rows in \path{retail_units.json}); 97 tasks are eligible. The target is the presence of an attempted reference cancellation. Counts include rejected dispatches. The allowed observer receives ordered tool names and response byte lengths, not argument IDs, response contents or backend state. The tool view is separate from the TLS size observer.
+
+The fixed split takes the first 48 sorted eligible task IDs for fitting (7 positive, 41 negative) and the remaining 49 for testing (11 positive, 38 negative). IDs are recorded in \path{retail_diagnostics.json}. Every test task contributes all three seeds. For each task we average accuracy across seeds, then resample 49 tasks 10,000 times for accuracy intervals. Balanced-accuracy intervals independently resample within the 11 positive and 38 negative task strata. These intervals condition on this split, fitted models and saved tasks; policy development was not held out. AUROC uses the uncalibrated ridge linear decision score, including ties. Confusion matrices in \path{retail_observers.json} count 147 task-seed units; they are not 147 independent tasks. Paired $D_2-D_0$ differences are averaged within task before the task bootstrap.
+
+\begin{table*}[t]\centering\footnotesize
+\caption{Legacy learned observer on the held-out retail tasks. Intervals are conditional task-bootstrap intervals, not policy-generalization guarantees. The majority baseline is 77.55\% accuracy and 50\% BA.}\label{tab:retail-statistics}
+\begin{tabularx}{\textwidth}{@{}Yllll@{}}\toprule
+Policy / position & $D_0$ accuracy [95\% CI] & $D_2$ accuracy [95\% CI] & $D_2$ BA [95\% CI] & AUROC\\\midrule
+Instruction aware before & 51.02 [36.73, 65.31] & 73.47 [61.22, 85.71] & 47.37 [43.42, 50.00] & 0.634\\
+Instruction aware after & 51.02 [36.73, 65.31] & 71.43 [59.18, 83.67] & 52.51 [41.37, 66.15] & 0.694\\
+Other-account cancel before & 22.45 [12.24, 34.69] & 71.43 [59.18, 83.67] & 46.05 [40.79, 50.00] & 0.497\\
+Other-account cancel after & 22.45 [12.24, 34.69] & 71.43 [59.18, 83.67] & 46.05 [40.79, 50.00] & 0.497\\
+Blind cancel before & 22.45 [12.24, 34.69] & 71.43 [59.18, 83.67] & 46.05 [40.79, 50.00] & 0.597\\
+Blind cancel after & 22.45 [12.24, 34.69] & 68.03 [54.42, 80.27] & 47.09 [38.16, 58.37] & 0.622\\
+\bottomrule\end{tabularx}\end{table*}
+
+The known-position filter scores 100\% accuracy/BA for each policy and position. The cancellation-count rule scores 100\% for blind and other-account cancellation in both positions. Their percentile bootstrap intervals are [100,100] because every observed task is correct; this degeneracy is not a claim about population-level certainty. No identifiers are needed. We do not evaluate an ID-filter attack because IDs are not in the specified view. The legacy model on the other-account after condition recomputes to 71.43\%, correcting the previous prose value 68.03\%; 68.03\% belongs to blind cancellation after insertion.
+
+\paragraph{State metrics and uncertainty}
+\path{retail_utility.json} contains task-bootstrap intervals for database equality, full-account equality and equality of reference-changed objects, along with full-census means. The field name \texttt{native\_reward} is retained only for compatibility with the old script; its calculation is orders/users equality, not an invocation of the full reward/response evaluator. Products are shared read-only by the retail tools. The revised account metric checks all orders owned by the active user, plus the user's record. The reference-changed-object set is constructed from baseline differences, not from all accessed objects. Simulator no-cover database equality is a reference-relative 100\%, not proof of user-task success.
+
+\paragraph{Error and denominator reconciliation}
+Item self-write before insertion succeeds and changes state in 173/291 units; all remaining 118 errors are unavailable-variant checks. After insertion, 120 errors are non-pending status and 77 are unavailable variants, leaving 94 successful mutations. The raw error strings are retained. Price-difference checks over the 173 initially successful selections find zero differences, but the API still appends a refund and changes the status. The coincidence 204/291 = 68/97 = 70.10\% combines two distinct quantities: preserved reference-changed objects under item self-write and tasks offering an instruction-unmentioned candidate.
+
+For blind cancellation before insertion, database-equal counts by task are: 16:3, 30:3, 31:2, 32:3, 38:3, 54:3, 55:3, 59:2, 66:3, 69:3, 81:2, 99:3. They sum to 33 across 12 tasks. The error-free sensitivity subset is 82 tasks $\times$ 3 seeds = 246 units: 24/246 before and 94/246 after. Simplifying these fractions to 12/123 or 47/123 does not change the underlying sample size. All-unit counts and task IDs are recorded, so repeated seeds are never represented as new independent tasks.

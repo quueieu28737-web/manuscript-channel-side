@@ -1,0 +1,19 @@
+\begin{table}[t]
+\centering
+\caption{Serial shadow cover flush-phase detection across network conditions (15,278 records from 276 test episodes). Direct transfer applies the frozen loopback detector $D_{\text{loop}}$; Adapted fits 5-fold customer-grouped models on the WAN workload.}
+\label{tab:wan-flush-comparison}
+\small
+\begin{tabular}{lcccc}
+\toprule
+\textbf{Network Condition} & \textbf{Model} & \textbf{Flush Point BA} & \textbf{95\% CI} & \textbf{AUROC} \\
+\midrule
+Loopback (0 ms, 0 ms jitter) & Frozen $D_{\text{loop}}$ & 90.4\% & [88.3, 92.5] & 0.967 \\
+\midrule
+WAN Mild (20 ms, 5 ms jitter) & Transfer $D_{\text{loop}}$ & 89.4\% & [87.2, 91.7] & 0.962 \\
+& Adapted $D_{\text{WAN}}$ & 89.2\% & [86.6, 91.5] & 0.958 \\
+\midrule
+WAN Realistic (50 ms, 10 ms jitter) & Transfer $D_{\text{loop}}$ & 89.4\% & [87.3, 91.7] & 0.963 \\
+& Adapted $D_{\text{WAN}}$ & 89.0\% & [86.5, 91.3] & 0.958 \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,13 @@
+\begin{table*}[t]\centering\footnotesize
+\caption{Load-bearing source ablation within the original 60-family snapshot. Entries identify its actual dependence; S9/S10 report subsequent controlled evidence and source expansion separately.}\label{tab:source-dependencies}
+\begin{tabularx}{\textwidth}{@{}p{.2\textwidth}YY@{}}\toprule
+Conclusion / source locator & What is supported & What is lost on source removal / NR dependence\\\midrule
+Action preservation / UI Traces 6.1,Fig5 & Recorded delays preserve structure and allow adaptation & Action-delay instance and one D1/D2 positive lost; exact release-point binding not needed for protocol claim.\\
+Procedural preservation / SIGLEAK 4/C & Skill inference persists under common extraction defense & Skill-defense instance lost; no paired installation-effect claim.\\
+Re-emission / NetEcho IV-C--E & Downstream reserialization can restore fine granularity & Only direct downstream re-emission instance lost; no multisource replication claimed.\\
+State change / AHB 5.2.3/Table1/E.3 & Fake actions can cause unintended UI transitions & Only executed mobile state-change instance lost; detector-run binding remains U.\\
+Private-intent cover / WRA 8.1/Table8 & Real/decoy execution with interleaved-domain inference evaluation lowers one-decoy $E_{\rm func}$ & Private-intent decoy instance lost; AHB state-effect instance remains. Same-condition terminal utility/cost are \NRR{}.\\
+Mode split / Dangol \S9.7, OHTTP paragraph after Table~5; 9.8--9.9/Table6 & Capture frontier differs from live protocol and timing ablation & Concrete accuracy 0.17/0.30 pair and one D1/D2 positive lost.\\
+Cost boundary / Early Bird V-A/B; Splice VII-C; Speculation 6.1; KVGov 5.9 & Separate component and deployment costs & Removing one withdraws its example, not other boundary instances; full service costs remain unknown.\\
+Generator dependence / UI Traces, FP-Agent, traffic benchmark, LeakyLMs & Task, browser, topology and calibration tests differ & Each source's axis withdrawn when removed; no pooled portability estimate.\\\bottomrule
+\end{tabularx}\end{table*}

@@ -1,0 +1,79 @@
+\section{Conditional Task-Permutation Reference}
+
+This post hoc diagnostic holds the fitted E9 attackers fixed and permutes labels over the 46 test tasks 2,000 times (seed 20261023), keeping each task\textquotesingle s three repetitions together. Each draw recomputes the attack-suite maximum. It characterizes a task-label exchangeability reference; it does not preserve dependencies among tasks belonging to one customer. Consequently, the tail fractions below are conditional reference values, not customer-valid population $p$-values or evidence of equivalence. The original customer-cluster intervals, paired contrasts and frozen absolute criterion remain the primary assessments.
+
+\begin{table}[ht]\centering\footnotesize
+
+\caption{All 32 E9 cells: observed maximum BA, permutation mean and 95th percentile (\%), conditional tail fraction $(1+\#\{T_b\ge T_{\rm obs}\})/2001$, and positive excess over the 95th percentile (percentage points).}
+
+\begin{tabular}{@{}llllrrrrr@{}}\toprule
+
+Prompt & View & Condition & Target & BA & Ref. mean & Ref. 95th & Tail & Excess\\\midrule
+
+baseline & dispatch & Padding & cancel & 97.2 & 54.6 & 65.3 & 0.0005 & 31.9\\
+
+baseline & network & Padding & cancel & 66.1 & 55.2 & 70.8 & 0.0755 & 0.0\\
+
+baseline & dispatch & Padding & return & 97.0 & 54.1 & 65.1 & 0.0005 & 31.9\\
+
+baseline & network & Padding & return & 55.5 & 56.2 & 67.4 & 0.4883 & 0.0\\
+
+baseline & dispatch & Raw & cancel & 97.2 & 54.6 & 65.3 & 0.0005 & 31.9\\
+
+baseline & network & Raw & cancel & 97.2 & 55.5 & 68.5 & 0.0005 & 28.7\\
+
+baseline & dispatch & Raw & return & 97.0 & 54.1 & 65.1 & 0.0005 & 31.9\\
+
+baseline & network & Raw & return & 94.0 & 55.3 & 65.4 & 0.0005 & 28.7\\
+
+baseline & dispatch & Joint & cancel & 55.6 & 54.2 & 62.8 & 0.3048 & 0.0\\
+
+baseline & network & Joint & cancel & 50.0 & 54.7 & 66.2 & 1.0000 & 0.0\\
+
+baseline & dispatch & Joint & return & 57.7 & 53.0 & 58.7 & 0.1034 & 0.0\\
+
+baseline & network & Joint & return & 50.0 & 54.1 & 62.6 & 1.0000 & 0.0\\
+
+baseline & dispatch & Shape & cancel & 55.6 & 54.2 & 62.8 & 0.3048 & 0.0\\
+
+baseline & network & Shape & cancel & 60.8 & 54.9 & 63.3 & 0.0870 & 0.0\\
+
+baseline & dispatch & Shape & return & 57.7 & 53.0 & 58.7 & 0.1034 & 0.0\\
+
+baseline & network & Shape & return & 51.9 & 54.3 & 60.4 & 0.7956 & 0.0\\
+
+rules & dispatch & Padding & cancel & 97.2 & 54.6 & 68.5 & 0.0005 & 28.7\\
+
+rules & network & Padding & cancel & 67.6 & 55.7 & 69.2 & 0.1034 & 0.0\\
+
+rules & dispatch & Padding & return & 97.0 & 54.4 & 65.1 & 0.0005 & 31.9\\
+
+rules & network & Padding & return & 57.9 & 55.6 & 67.2 & 0.3033 & 0.0\\
+
+rules & dispatch & Raw & cancel & 97.2 & 54.6 & 68.5 & 0.0005 & 28.7\\
+
+rules & network & Raw & cancel & 97.2 & 55.1 & 68.5 & 0.0005 & 28.7\\
+
+rules & dispatch & Raw & return & 97.0 & 54.4 & 65.1 & 0.0005 & 31.9\\
+
+rules & network & Raw & return & 93.5 & 55.6 & 65.8 & 0.0005 & 27.8\\
+
+rules & dispatch & Joint & cancel & 56.5 & 53.2 & 59.7 & 0.1889 & 0.0\\
+
+rules & network & Joint & cancel & 50.0 & 53.8 & 63.2 & 1.0000 & 0.0\\
+
+rules & dispatch & Joint & return & 64.7 & 53.5 & 60.7 & 0.0115 & 4.0\\
+
+rules & network & Joint & return & 60.6 & 54.1 & 60.6 & 0.0680 & 0.0\\
+
+rules & dispatch & Shape & cancel & 56.5 & 53.2 & 59.7 & 0.1889 & 0.0\\
+
+rules & network & Shape & cancel & 52.8 & 54.3 & 60.8 & 0.6122 & 0.0\\
+
+rules & dispatch & Shape & return & 64.7 & 53.5 & 60.7 & 0.0115 & 4.0\\
+
+rules & network & Shape & return & 53.2 & 54.6 & 59.6 & 0.7081 & 0.0\\
+
+\bottomrule\end{tabular}\end{table}
+
+The baseline raw network cells exceed the reference 95th percentiles (68.5\%/65.4\%), whereas baseline joint cells have no positive excess. This is consistent with the measured paired reductions; failure to exceed a reference threshold is not a population guarantee. The diagnostic uses saved predictions and makes its task-level exchangeability assumption explicit.

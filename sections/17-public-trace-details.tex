@@ -1,0 +1,33 @@
+\section{Public-Trace Reanalysis: Protocol and Boundaries}
+\label{app:public-traces}
+UI Traces (commit \texttt{4f3df18}) supplies 4,200 records/14 declared identities, retaining 1,806 error/absent-result indicators. Labels are declarations, not authenticated backends or task correctness. The supplemental package binds source bytes, code and receipts.
+\input{tables/public-trace-results}
+
+Predictors use JS types, local time and callback order, excluding collector time/navigation, URL/DOM text, questions, answers and diagnostics. Cross-document order assumes an archive receiver, not authenticated website capture. Exact-question-disjoint train/validation/test groups have 2,043/1,022/1,135 rows and 395/202/226 questions (823 distinct questions). The source split identifies FRAMES but has no semantic task-family field. Full identity--dataset/exact-question support and a seven-bin first-word \emph{grammatical proxy}, explicitly not a semantic family, are supplemental; neither semantic independence nor family balance is established.
+
+The original 19-fit comparison selects weighted logistic/forest candidates on validation loss only; selected models are forests. H2 adds type bigrams to coarse counts/page-age. Original intervals use 3,000 paired-question resamples and a nominal 98.333\% three-contrast allocation, conditional on fixed fitting/selection and noise realizations. Archived H1's identical selected predictor yields exactly zero difference and interval $[0,0]$; it is a selection illustration, not equivalence evidence.
+
+For $Q$ questions with $n_q$ records each, loss is $Q^{-1}\sum_q n_q^{-1}\sum_{i\in q}-\log p_{i,y_i}$; accuracy substitutes the correct-argmax indicator. Fit weights $N/(Qn_q)$ equalize question weight. Add $\epsilon=10^{-6}$ to every class probability, renormalize, then clip true-label probability to $[\epsilon,1]$. Bootstrap draws $Q$ questions with replacement; original contrasts share draw indices, with percentile endpoints 0.8333\% and 99.1667\%.
+
+\paragraph{Controls declared with original outcomes known}
+The additive protocol is frozen before new fits, with original outcomes known. All-14 common support is empty. Select the largest identity subset with at least 20 common training questions, then greatest support and lexical tie-break: Gemini 3.1, Gemma 4-31B, Seed 2-lite, with 32/10/10 questions. Hash order selects one row per question/identity, retaining failures; test has 30 rows. This is a three-class sensitivity result.
+
+\input{tables/h2-field-permissions}
+
+The first-Wikipedia-document \emph{proxy} stops at HTTP navigation, beforeunload, unmarked origin/URL change or clock reset, but not SPA history alone. Markers gate membership and never enter features. No frame/document IDs authenticate membership; late callbacks may cross boundaries. Empty views remain and epochs are not pooled. The supplement gives the complete six-event projection example and boundary implementation.
+
+Three row-seeded shuffles preserve counts/timestamps/coarse features in \emph{all partitions}, refitting combined candidates with coarse retained. Fits total 8 matched-task, 8 document-proxy, 8 clean and 12 shuffled; all 36 finish before test prediction, without convergence warnings. Clean H2 reproduces exactly. Each shuffle selects coarse: zero increment is then an algebraic consequence of selecting the same predictor. This checks the selection pipeline, not whether shuffled sequence features contain no information; a forced-sequence comparison would be a different, unperformed analysis.
+
+\input{tables/h2-controls}
+
+New intervals use 3,000 question resamples, seed 20261018 and 98.333\% allocation across the three new contrasts, conditional on fits and shuffle streams. They are exploratory, not blind confirmation or global adjustment across all historical analyses. Separate code reconstructs points/intervals from saved probabilities. Matched-task uncertainty and the 509/1,135 test error flags (3.4--91.5\% by identity) prevent intrinsic-identity claims.
+
+The saved-result verifier supplies local replay; it does not establish independent replication or live utility/cost.
+
+\paragraph{Failure/activity diagnostics}
+The configuration was frozen with prior outcomes known: three representations, four candidates each, original weights, seed 20261008; all 12 fits precede test prediction. Failure-only uses error/absent-result bits; empty-only uses no projected events; activity-only uses log-count plus seven page-age summaries, not cross-document duration. Candidate hyperparameters and projections are supplemental. No new confirmatory intervals are supplied. Flags cover 43.00\% overall and 44.85\% test rows, not authenticated task success. Stratifying 509 flagged/203 questions versus 626 unflagged/216 questions changes support; increments are not a causal failure effect. Semantic-family balance remains unavailable.
+
+\input{tables/h2-failure-diagnostics}
+
+\paragraph{Exact H3 perturbation and adaptation}
+The unchanged perturbation sets $t'_{ire}=t_{ie}+u_{ire}$, $u_{ire}\sim U(0,5000\,\mathrm{ms})$, independently per valid page-local timestamp in source-array order. Missing times consume no draw; types/order/page keys remain fixed. Three row-seeded realizations transform all partitions. Each adaptation clones the clean-selected representation/architecture and fits once on perturbed training rows with identical weights, without retuning or additional data (three fits). Both programs predict the same perturbed test rows; average paired losses across realizations, rows within question, then questions. The supplemental exact protocol supplies entry points, seed strings and invariants. The transformation edits stored times; it does not execute action delays.

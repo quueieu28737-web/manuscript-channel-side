@@ -1,0 +1,20 @@
+\begin{table}[t]
+\centering\footnotesize
+\caption{Additive failure/activity diagnostics on all 1,135 test rows/226 questions. Point scores use the original question weights; no new confirmatory intervals. Original programs are read from saved probabilities, not refitted.}
+\label{tab:h2-failure-diagnostics}
+\begin{tabularx}{\columnwidth}{@{}Yrr@{}}
+\toprule
+Program & Loss (nats) & Accuracy (\%) \\
+\midrule
+Training prior (saved) & 2.64267 & 6.59 \\
+Error/result flags only$^{a}$ & 2.47464 & 14.25 \\
+Projected-empty flag only & 2.63832 & 6.79 \\
+Activity/page-age only$^{b}$ & 1.81732 & 37.68 \\
+Original coarse (saved) & 1.44058 & 51.29 \\
+Original coarse+sequence (saved) & 1.09591 & 66.26 \\
+\bottomrule
+\end{tabularx}
+\par\smallskip\raggedright\footnotesize
+$^{a}$Analyst-only diagnostic, not an observer-valid attacker; two binary flags, not error text.
+$^{b}$Total event count and seven local-page-time summaries; no action types/order, diagnostics, text or session duration. Same four candidate architectures and validation-only selection for each of the three new representations (12 fits). Low-dimensional baselines do not rule out higher-order failure/task confounding.
+\end{table}

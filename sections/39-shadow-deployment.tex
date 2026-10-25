@@ -1,0 +1,48 @@
+\section{Shadow Cover: Deployment Paths and Observer Boundaries}\label{sec:shadow-deployment}
+This section translates the measured isolation mechanism into deployment contracts. The evidence is the existing E6/E7 reference-program study and E9--E12 real-agent trajectory analysis. The three paths below are engineering designs grounded in existing API primitives; they have not been evaluated as production integrations.
+
+\subsection{What padding leaves visible, and what a tunnel changes}
+E7's no-cover bucketed framing leaves return BA at 73.9\%. E9's baseline per-call padding leaves cancellation/return BA at 66.1\%/55.5\%. A padded request and response still contribute observable records: invocation count, direction changes and ordered turns remain available even if individual sizes coincide. The joint E9 intervention reduces the two measured BAs to 50.0\% by combining call-profile shaping with constant framing. This identifies a useful intervention boundary; it does not prove that executing dummy tools is necessary for every network threat model.
+
+RFC~9347 describes a different construction: aggregate and fragment inner traffic into fixed-size ESP packets, send at a constant rate and use padding when no inner data is ready \cite{rfc9347}. For a passive observer of that tunnel alone, dummy transport traffic can conceal application call boundaries without reaching a tool. Protecting workflow duration also requires a common or otherwise workload-independent transmission horizon in both directions; destination choice, tunnel start/stop and congestion responses remain part of the observation contract. The E7/E9 per-call ablations do not measure this complete construction. E13 separately implements bidirectional fixed-cell TLS encapsulation with a training-sized horizon and measures its security/cost on the same live tool workload; it is not an IPsec implementation.
+
+At the orchestrator-to-tool boundary, a multiparty relay may instead see decoded RPCs, tool names or forwarding events after a transport tunnel terminates. A tunnel's padding disappears at that point. Cover must survive to the relevant observer as plausible calls, or application fields must remain encrypted through the relay. E6/E9 evaluate the specified call-name/length and network projections. They do not establish indistinguishability against unrestricted argument inspection, routing logs or a tool provider's state view.
+
+\subsection{Three execution paths}
+\paragraph{1. Authorized reads and verified no-ops}
+Where authorized read operations suffice for the protected observation, issue them against permitted live resources and discard their responses before the planner. This can avoid a replicated backend. The read-only decoy pattern is related to WRA \cite{jeong2026wra}; its ability to conceal write intent depends on what the observer sees. A receiver that recognizes write methods cannot be confused by adding only reads. E12 localizes operation-category information in the write-bearing profile; its action-defined labels do not establish leakage of unrelated attributes.
+
+A no-op needs the invariant $f(s,a)=s$ for the designated protected state. Idempotence alone permits the first call to change state. Reads can also incur billing, access logs, cache changes or rate limits, so the adapter must specify its state scope and budget those effects. Cover selection must respect resource authorization and avoid exposing unrelated users' data. No claim about reads being the majority of production tool traffic is needed for this path.
+
+\paragraph{2. Native noncommit and isolated test environments}
+Kubernetes server-side dry-run performs admission and validation without persisting the resource; unsafe admission side effects cause rejection, and authorization matches the corresponding real request \cite{kubernetesdryrun}. This supplies a concrete noncommit primitive. Stripe sandboxes instead keep a separate test environment in which payments do not move real money \cite{stripesandboxes}. They instantiate isolated state, rather than a dry-run flag on a live payment. Neither feature alone establishes cover indistinguishability: an observer that reads the dry-run flag, test credential or separate destination can classify the call.
+
+Database transactions can execute operations and then roll back their transactional updates \cite{postgresrollback}. This path is suitable only when relevant effects lie within the rollback contract. PostgreSQL sequence updates, for example, are not undone by transaction abort \cite{postgressequences}; locks, quotas and external effects also need explicit treatment. A rollback is not a general substitute for isolating irreversible remote actions. Common ingress framing must hide mode metadata from the intended observer, while the provider performing the operation remains trusted for that distinction.
+
+\paragraph{3. A trusted gateway with isolated shadow endpoints}
+A tool/MCP gateway can receive a common envelope containing an authenticated, encrypted real/cover marker. A fixed-length marker field is present in both modes and is readable only by the trusted gateway. It forwards real calls unchanged, routes cover writes to an isolated simulator and suppresses cover responses to the planner. The simulator can maintain only the state needed by supported operations; it need not clone an entire enterprise service. Error handling must fail closed: an unsupported shadow operation must never fall through to a live write.
+
+This gives cover calls real local execution and real response packets, but does not automatically reproduce production latency or size distributions. A shared response scheduler and framing policy must normalize the exposed differences; their delay and resource costs need measurement. Retries, authentication failures, quota exhaustion and overflow must follow the same isolation contract. An encrypted marker alone is insufficient if a relay can infer the branch from destinations or correlate ingress calls with gateway-to-provider traffic.
+
+\subsection{Where the protection ends}
+The intended topology is an orchestrator, an optional forwarding relay, a trusted gateway, and separate live and shadow executors. Table~\ref{tab:shadow-boundary} distinguishes roles that are often conflated as a ``proxy.'' The trust requirement follows the ability to distinguish or commit the two branches, rather than organizational ownership alone.
+
+\begin{table}[t]
+\centering\footnotesize
+\caption{Deployment contracts by observer. These are architectural conditions, not newly measured guarantees.}\label{tab:shadow-boundary}
+\begin{tabularx}{\columnwidth}{@{}p{.24\columnwidth}Y@{}}
+\toprule
+Observer & Required protection boundary\\
+\midrule
+Passive ingress link & Joint call/size shaping or a complete transport tunnel; include timing and session horizon in the threat model.\\
+Call-visible relay & Cover must reach it; marker, mode, routing and identifying arguments must be hidden or matched. E9 covers only its specified projection.\\
+Trusted gateway & Reads the marker and routes branches; it is outside the protected observer set.\\
+Downstream link & Ingress-only cover is insufficient if only real calls traverse this link; add protection on that link.\\
+Tool provider & Sees live effects and mode/credentials; hiding committed intent requires additional assumptions beyond this design.\\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+For a passive client-to-gateway observer, gateway-local cover can supply the measured kind of call-profile intervention. For an honest-but-curious relay, a protection claim additionally requires that its complete view exclude the discriminator and reveal no reliable substitute through arguments, timing or routing. A TLS-terminating relay that can read the marker does not satisfy this condition. The trusted gateway and the provider's commit log are not protected by moving cover into a local simulator.
+
+All three paths preserve the logical planner transcript only when real observations pass unchanged and cover cannot affect live state or planner-visible feedback. That is the invariant checked in the existing replay. E13 adds local live-tool latency, failures, timing-aware attacks and complete tunnel controls at matched workload. Production quotas, WAN effects and fresh timing-dependent LLM interaction require deployment-specific evaluation. The contribution of shadow cover is a concrete way to shape an observable call profile while isolating its state effects, with an explicit choice of where that isolation must be enforced.

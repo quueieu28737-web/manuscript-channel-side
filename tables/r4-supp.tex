@@ -1,0 +1,102 @@
+\section{Complete Real-Agent Evaluation with Training-Only Calibration (E9)}\label{sec:r4}
+\subsection{Cohort and execution}
+All 690 episodes in the frozen protocol are complete: 115 tasks, two prompt arms and three repetition identifiers. The fixed split assigns 69 tasks from 29 customers to training (414 episodes) and 46 tasks from 24 disjoint customers to testing (276 episodes). Every test task has all six prompt/repetition cells, and all failures and handoffs remain in the analysis. Training finished before defense calibration was frozen and test inference began. This section updates the earlier 663-episode publication snapshot to the full cohort; the immutable snapshot and the previous manuscript remain available in the archived release. No model configuration, prompt, split or defense parameter changed for this completion.
+
+GPT-6.1 Sol with low reasoning effort supplies the planner and a separate user simulator through Codex app-server. The planner receives the retail policy, public tool schemas, interaction history and actual sandbox observations, and emits one structured action at each step. Reference actions and reward targets are used only for scoring. Each decision has a fresh ephemeral context without host tools or a host environment. The harness executes decisions in the pinned public retail simulator, with a 30-step limit. Repetition identifiers are cache namespaces; provider random seeds, temperature and an immutable weight snapshot are unavailable.
+
+\subsection{Prompts and defense calibration}
+The baseline prompt is the retail policy. The rules prompt adds one customer-details read after identification and before order access, an order read before each order write, and avoidance of unnecessary repeated reads. It preserves authorization and task requirements and prohibits unrelated operations for hiding intent. Both arms are evaluated under raw transport, padding only, online shape cover only, and joint shape cover with constant framing.
+
+Only training trajectories from both prompts determine shared per-tool count maxima, donor pools and size caps. Donor calls exclude the active customer. Request caps are the largest training request plus four bytes rounded to a 256-byte multiple; response caps use the training 95th percentile plus four bytes rounded to a 1024-byte multiple, including training donor responses. Frozen caps are 1,024 and 3,072 bytes. The online dispatcher uses only past real-call counts, inserts a shadow call with probability 0.6 when a deficit exists and flushes remaining deficits at episode end. Overflow calls pass through; oversize messages expand to a 1024-byte bucket. Test data never recalibrate these parameters.
+
+Shadow calls execute on isolated cloned state; their observations are suppressed and real calls/responses pass through unchanged. For deterministic tools with no timing-dependent side effects, projecting away cover gives the same planner-visible history under all program conditions. The replay therefore isolates transport intervention on the same realized actions, with reward preserved by the isolation invariant. All 690 real-call projections agree across the 2,760 saved sessions. Online means scheduling from past calls; interactive wall-clock delay and shared-resource feedback remain outside this replay measurement. A byte-transparent relay captures actual serialized requests and sandbox responses over local TLS~1.2.
+
+\subsection{Attackers and uncertainty}
+The frozen suite includes a training-majority baseline, clean-trained gradient boosting, defense-trained logistic regression and gradient boosting, a dispatch count rule, and network size-decoding learners and rules. All fitted parameters, thresholds and decoder tables use training data only. Targets are cancellation and return intent from the reference task; native task reward is scored separately using final database equality and required response strings. Points weight tasks equally. Intervals use 2,000 common customer-cluster bootstrap draws, retaining each customer's tasks and repetitions together and recomputing the suite maximum in each draw. Intervals condition on fitted attackers. Prompt contrasts pair task/repetition identifiers, without assuming identical conversations or shared model randomness.
+
+
+\begin{table}[ht]\centering\small
+\caption{E9 dispatch view: maximum BA (\%) with 95\% interval and maximum AUROC across the fixed suite, on 138 test episodes per prompt. BA and AUROC are separate suite maxima.}
+\begin{tabular}{@{}llrrrr@{}}\toprule
+Prompt & Condition & Cancel BA [CI] & AUC & Return BA [CI] & AUC\\\midrule
+baseline & Raw & 97.2 [90.0, 100.0] & 0.997 & 97.0 [88.9, 100.0] & 0.972\\
+baseline & Padding only & 97.2 [90.0, 100.0] & 0.997 & 97.0 [88.9, 100.0] & 0.972\\
+baseline & Shape only & 55.6 [50.0, 63.0] & 0.556 & 57.7 [50.0, 67.4] & 0.620\\
+baseline & Joint & 55.6 [50.0, 63.0] & 0.556 & 57.7 [50.0, 67.4] & 0.620\\
+rules & Raw & 97.2 [90.0, 100.0] & 0.972 & 97.0 [88.9, 100.0] & 0.970\\
+rules & Padding only & 97.2 [90.0, 100.0] & 0.972 & 97.0 [88.9, 100.0] & 0.970\\
+rules & Shape only & 56.5 [50.0, 68.3] & 0.655 & 64.7 [54.3, 77.4] & 0.693\\
+rules & Joint & 56.5 [50.0, 68.3] & 0.655 & 64.7 [54.3, 77.4] & 0.693\\
+\bottomrule\end{tabular}\end{table}
+
+\begin{table}[ht]\centering\small
+\caption{E9 network view: maximum BA (\%) with 95\% interval and maximum AUROC across the fixed suite, on 138 test episodes per prompt. BA and AUROC are separate suite maxima.}
+\begin{tabular}{@{}llrrrr@{}}\toprule
+Prompt & Condition & Cancel BA [CI] & AUC & Return BA [CI] & AUC\\\midrule
+baseline & Raw & 97.2 [90.0, 100.0] & 0.993 & 94.0 [85.8, 100.0] & 0.948\\
+baseline & Padding only & 66.1 [50.0, 83.9] & 0.634 & 55.5 [50.0, 73.0] & 0.567\\
+baseline & Shape only & 60.8 [55.4, 71.3] & 0.657 & 51.9 [50.5, 57.8] & 0.579\\
+baseline & Joint & 50.0 [50.0, 60.6] & 0.500 & 50.0 [50.0, 65.5] & 0.500\\
+rules & Raw & 97.2 [90.0, 100.0] & 0.978 & 93.5 [85.0, 99.5] & 0.937\\
+rules & Padding only & 67.6 [50.0, 85.0] & 0.636 & 57.9 [50.0, 78.9] & 0.548\\
+rules & Shape only & 52.8 [50.0, 65.5] & 0.588 & 53.2 [50.4, 63.9] & 0.544\\
+rules & Joint & 50.0 [50.0, 65.1] & 0.500 & 60.6 [50.0, 73.3] & 0.641\\
+\bottomrule\end{tabular}\end{table}
+
+\subsection{Utility, overhead and prompt contrasts}
+
+\begin{table}[ht]\centering\small
+\caption{Held-out utility and overhead. Reward and session overflow rates are percentages; ratios use raw transport within the same prompt.}
+\begin{tabular}{@{}llrrrrrr@{}}\toprule
+Prompt & Condition & Reward [CI] & Calls$\times$ & Bytes$\times$ & Count overflow & Cap overflow & Underfill\\\midrule
+baseline & Raw & 79.7 [69.0, 89.7] & 1.00 & 1.00 & 0.0 & 0.0 & 0.0\\
+baseline & Padding only & 79.7 [69.0, 89.7] & 1.00 & 4.02 & 0.0 & 6.5 & 0.0\\
+baseline & Shape only & 79.7 [69.0, 89.7] & 3.83 & 4.16 & 38.4 & 0.0 & 0.0\\
+baseline & Joint & 79.7 [69.0, 89.7] & 3.83 & 15.39 & 38.4 & 39.9 & 0.0\\
+rules & Raw & 76.1 [63.3, 88.7] & 1.00 & 1.00 & 0.0 & 0.0 & 0.0\\
+rules & Padding only & 76.1 [63.3, 88.7] & 1.00 & 4.04 & 0.0 & 6.5 & 0.0\\
+rules & Shape only & 76.1 [63.3, 88.7] & 3.88 & 4.27 & 44.2 & 0.0 & 0.0\\
+rules & Joint & 76.1 [63.3, 88.7] & 3.88 & 15.72 & 44.2 & 38.4 & 0.0\\
+\bottomrule\end{tabular}\end{table}
+
+Cancellation has 6 positive tasks from 5 customers; return has 11 positive tasks from 7 customers. Single-class draws excluded from 2,000 replicates: 6 for cancellation and 0 for return.
+
+Baseline native reward is 110/138 (79.7\%); rules reward is 105/138 (76.1\%). All 24 baseline and 23 rules handoffs remain in the denominator. Joint-program cover-call error rates are 5.3\% and 5.0\%, respectively; all shape conditions have zero underfill. Overflow rates expose the resource demands of retaining real calls under the frozen training template.
+
+\begin{table}[ht]\centering\small
+\caption{Mechanical adherence to the two prompt-specified read-order rules (\% with customer-cluster interval).}
+\begin{tabular}{@{}lrrr@{}}\toprule
+Prompt & One successful customer read first & Order read before write & Both\\\midrule
+baseline & 86.2 [74.5, 97.3] & 100.0 [100.0, 100.0] & 86.2 [74.5, 97.3]\\
+rules & 97.1 [91.7, 100.0] & 100.0 [100.0, 100.0] & 97.1 [91.7, 100.0]\\
+\bottomrule\end{tabular}\end{table}
+
+\begin{table}[ht]\centering\small
+\caption{Paired prompt contrasts using common customer-bootstrap draws.}
+\begin{tabular}{@{}lr@{}}\toprule
+Rules minus baseline & Difference [95\% CI], pp\\\midrule
+Task reward & -3.6 [-9.5, 1.4]\\
+Raw network, cancel BA & 0.0 [-8.3, 8.3]\\
+Raw network, return BA & -0.5 [-2.6, 0.0]\\
+Joint network, cancel BA & 0.0 [-1.7, 7.4]\\
+Joint network, return BA & 10.6 [-13.3, 22.8]\\
+\bottomrule\end{tabular}\end{table}
+
+\begin{table}[ht]\centering\small
+\caption{Post hoc paired program contrasts. The fixed attack suite is re-maximized under each condition within each common customer-bootstrap draw. Original predictions and the predeclared absolute criterion are unchanged.}
+\begin{tabular}{@{}llr@{}}\toprule
+Prompt & Target & Joint minus raw BA [95\% CI], pp\\\midrule
+baseline & cancel & -47.2 [-50.0, -33.3]\\
+baseline & return & -44.0 [-48.9, -27.8]\\
+rules & cancel & -47.2 [-50.0, -26.0]\\
+rules & return & -33.0 [-44.3, -18.9]\\
+\bottomrule\end{tabular}\end{table}
+
+\subsection{Interpretation and reproducibility}
+The completed cohort shows strong raw-trace intent inference and a large reduction under joint transport intervention. Rules improve mechanical adherence to the two read-order rules while leaving network BA above 93\%. Baseline joint shaping reaches 50\% BA for both targets, reducing the raw scores by 47.2 and 44.0 points. The finite-suite criterion requires the BA interval upper bound below 60\% and point AUROC below 0.65. Baseline shape-only return meets it for that target; no condition meets it for both targets. Baseline joint upper bounds are 60.6\%/65.5\%, leaving the absolute-threshold conclusion inconclusive. The full-sample suite maximum equals the 50\% majority baseline; several fitted attacks make heterogeneous predictions whose customer-resampled BA can exceed 50\%. With only five cancellation-positive and seven return-positive customers, reselecting the maximum within each draw yields wider intervals. This mechanism does not imply a universal 10-point resolution floor or prove absence of residual population signal. The paired reduction intervals above exclude zero. Supplement S16 adds a task-permutation reference; the primary intervals remain clustered by customer. Rules-plus-joint return BA is 60.6\%; its rules-minus-baseline contrast includes zero, as does the reward contrast.
+
+The evidence covers one public retail environment and one mutable model alias, which also supplies user simulation. All 115 tasks were available during prior project development. The formal customer holdout therefore provides internal evaluation; external independent replication, broader model/environment transfer, provider-traffic measurement and interactive feedback effects remain follow-up questions.
+
+The full cohort contains 11,586 model decisions, 2,760 TLS sessions and 176 attack-prediction sets. The frozen verifier passed after training-only recalibration, sandbox state replay, cover reconstruction, TLS accounting, metric/interval recomputation and request-provenance checks. Additional checks bind all agent actions and dialogue to actual model outputs and re-score required response strings. Offline attacker refitting reproduces the saved results and predictions exactly.
+
+\path{experiments/sp2027-r4-full-20261023/} supplies full results, predictions and captures, plus the 27 new episodes and model records needed to extend the immutable 663-run snapshot. The three separately reported snapshot test episodes join the 27 new ones to expand the primary test from 246 to 276. \texttt{reproduce.py --reanalyze} reconstructs the full cohort from the base archives and delta, reruns analysis and executes the original frozen verifier without invoking a model. \texttt{verify\_extension.py} checks decision alignment and provenance. The earlier snapshot, historical R2/R3 studies and pilot archives retain their original denominators and bytes.

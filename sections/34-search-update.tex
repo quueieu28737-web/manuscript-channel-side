@@ -1,0 +1,35 @@
+\section{Completed Finite Retrieval Update and Exact Reconciliation}\label{app:search-update}
+Four Semantic Scholar bulk queries (\texttt{S1R}, \texttt{S2}, \texttt{S3}, \texttt{S4}) and two native arXiv searches (\texttt{ARXIV-A1}, \texttt{ARXIV-A2}) were completed on October 21, 2026, returning 615 occurrences deduplicated to 565 unique records. Combined with the original 60-family October 8 snapshot, the final merged index contains \FinalN{} families: \FinalCore{} core (53 non-diagnostic and 5 Type~IV diagnostic) and \FinalAdjacent{} adjacent.
+
+\subsection{Executable queries and pre/post-audit disposition accounting}
+The Semantic Scholar bulk queries (2023--2026) and native arXiv CS searches (January 1, 2023--October 21, 2026) are:
+\begin{quote}\small\raggedright
+S1R (116): (agent | workflow) + (LLM | ``language model'') + (``side channel'' | ``side-channel'' | fingerprinting).\\
+S2 (120): (LLM | ``language model'') + (traffic | streaming) + (leakage | side-channel | fingerprinting).\\
+S3 (15): (LLM | ``language model'') + (padding | ``re-emission'') + (privacy | leakage | side-channel).\\
+S4 (287): (agent | LLM) + (decoy | ``cover traffic'' | ``fake actions'' | ``cover actions'').\\
+ARXIV-A1 (50): \texttt{"side-channel" AND "large language"}; ARXIV-A2 (27): \texttt{"side-channel" AND agent}.
+\end{quote}
+
+Table~\ref{tab:finite-flow} provides the complete item-by-item reconciliation before and after the 204-record exclusion audit (177 high-risk pattern matches plus 27 reason-stratified samples, seed \texttt{20261021}). Before the exclusion audit, screening identified 221 C2/C3 exclusions (\texttt{EXCLUDE\_NO\_HIDDEN\_AUXILIARY\_TARGET}), 14 new core families, 23 existing core families, and 28 source-reviewed adjacent contexts. The exclusion audit rerouted exactly four records out of the 221 C2/C3 exclusions ($221-4=217$):
+\begin{enumerate}
+\item \texttt{SUP-0192} (MIRAGE \cite{revankar2026mirage}): rerouted to \texttt{NEW\_CORE\_SOURCE\_VERIFIED} ($14+1=15$ final new core families, all 15 incorporated into the \FinalN{}-family index via \path{addition.csv}).
+\item \texttt{SUP-0552} (InputSnatch arXiv version \cite{inputsnatch2024}): rerouted to \texttt{EXISTING\_CORE} ($23+1=24$ existing core recoveries; merged as an alias of the already-indexed snapshot family \texttt{inputsnatch2024}, adding $+0$ net new families).
+\item \texttt{SUP-0191} (LLM Self-Recognition) and \texttt{SUP-0424} (Reverse-Engineering Model Editing): rerouted to \texttt{ADJACENT\_SOURCE\_REVIEWED} ($28+2=30$ final source-reviewed adjacent contexts). Of these 30 source-reviewed adjacent contexts, 7 boundary-defining studies (\path{addition-adjacent.csv}) are incorporated into the \FinalN{}-family index ($17+7=24$ adjacent), while the other 23 (including \texttt{SUP-0191} and \texttt{SUP-0424}) remain in the 565-record disposition ledger as non-indexed context.
+\end{enumerate}
+Thus the family transition is strictly additive and self-consistent: $60\text{ (snapshot)} + 15\text{ (14 pre-audit + 1 audited new core)} + 7\text{ (selected adjacent)} = 82\text{ families}$ ($43+15=58$ core; $17+7=24$ adjacent).
+
+\begin{table}[!ht]\centering\footnotesize
+\caption{Post-audit disposition flow for the completed 565-record supplementary frame (see Table~\ref{tab:corpus-reconciliation} for pre-audit vs.\ post-audit $\Delta$).}\label{tab:finite-flow}
+\begin{tabularx}{\columnwidth}{@{}Yr@{}}\toprule
+Stage or final post-audit route & Count\\\midrule
+Complete-query occurrences / duplicates merged & 615 / 50\\
+Unique records with an explicit route & 565\\\midrule
+Excluded: no hidden auxiliary target ($221-4$ rerouted) & 217\\
+Excluded: outside LLM execution / different target & 156 / 19\\
+Existing core ($23+1$ alias) / adjacent recovered & 24 / 1\\
+New source-bound core families ($14+1$ MIRAGE; all indexed) & 15\\
+Adjacent source-reviewed ($28+2$; 7 indexed) / metadata-only & 30 / 28\\
+Other security background / reviewed background / proposal & 53 / 4 / 1\\
+Missing abstract / unavailable primary full text & 16 / 1\\\bottomrule
+\end{tabularx}\end{table}

@@ -1,0 +1,67 @@
+\section{Additional Endpoint Model Replications}\label{sec:endpoint-replication}
+
+Two endpoint replications each execute 115 tasks once with the standard prompt, using the original 69/46 task and 29/24 customer split. All training trajectories precede defense calibration and test collection. Network interventions replay the same real model trajectories over local TLS; they do not measure defended online replanning. Model aliases are not immutable weight revisions. The deployment owner identifies MiniMax-M3 as a DeepSeek backend; this attribution is not independently verified.
+
+MiniMax uses a 4,096-token output limit. GLM uses 16,384 after an interface preflight exposed truncation; all earlier-interface episodes, including successes, are archived and excluded. GLM requests disable parallel tool calls to match the single-action harness. Transport timeouts resume cached decisions and preserve failed attempts; model protocol failures remain terminal outcomes. The GLM transport waiting limit changed from 180 to 600 seconds without changing inference requests. This budget asymmetry permits within-model defense contrasts, not an equal-budget model ranking.
+
+\subsection{MiniMax-M3}
+
+Native task success is 68/115, including 23 terminal protocol failures in the denominator. The archived verifier passes 5627 checks. These archived endpoint rows use the original six attacks; the subsequent transfer section adds total exchange count and supplies the expanded-suite figures used in the main text. Network BA intervals use 2,000 customer bootstrap draws, reselecting the suite maximum conditional on fitted attackers. The small positive customer counts remain five/seven for cancellation/return.
+
+\begin{center}\begin{tabular}{llll}\toprule
+
+View / condition & Target & BA (\%) & 95\% interval\\\midrule
+
+raw & cancel & 58.3 & [50.0, 83.3]\\
+
+shape\_const & cancel & 60.4 & [50.0, 74.1]\\
+
+raw & return & 83.5 & [68.2, 98.7]\\
+
+shape\_const & return & 59.9 & [50.0, 79.7]\\
+
+all & cancel & 58.3 & [50.0, 83.3]\\
+
+all & return & 83.5 & [68.2, 98.7]\\
+
+writes-only & cancel & 58.3 & [50.0, 80.0]\\
+
+writes-only & return & 83.8 & [72.5, 95.8]\\
+
+writes-removed & cancel & 52.9 & [50.0, 70.5]\\
+
+writes-removed & return & 58.7 & [50.0, 81.4]\\
+
+\bottomrule\end{tabular}\end{center}
+
+\subsection{GLM-5.3-flash}
+
+Native task success is 83/115, including 16 terminal protocol failures in the denominator. The archived verifier passes 5023 checks. These archived endpoint rows use the original six attacks; the subsequent transfer section adds total exchange count and supplies the expanded-suite figures used in the main text. Network BA intervals use 2,000 customer bootstrap draws, reselecting the suite maximum conditional on fitted attackers. The small positive customer counts remain five/seven for cancellation/return.
+
+\begin{center}\begin{tabular}{llll}\toprule
+
+View / condition & Target & BA (\%) & 95\% interval\\\midrule
+
+raw & cancel & 100.0 & [100.0, 100.0]\\
+
+shape\_const & cancel & 50.0 & [50.0, 79.1]\\
+
+raw & return & 86.6 & [73.7, 97.4]\\
+
+shape\_const & return & 67.3 & [58.7, 89.5]\\
+
+all & cancel & 100.0 & [100.0, 100.0]\\
+
+all & return & 86.6 & [73.7, 97.4]\\
+
+writes-only & cancel & 100.0 & [100.0, 100.0]\\
+
+writes-only & return & 78.1 & [67.5, 92.4]\\
+
+writes-removed & cancel & 65.0 & [50.0, 89.5]\\
+
+writes-removed & return & 63.0 & [50.0, 84.6]\\
+
+\bottomrule\end{tabular}\end{center}
+
+\paragraph{Interpretation} Both endpoints reproduce a return-operation signature and its reduction under joint shaping. MiniMax cancellation is weak before defense and does not improve; GLM return retains substantial residual inference. No endpoint establishes the joint absolute screening criterion for both targets. The result strengthens the evidence-binding contribution: protection claims require the model, target, receiver view and calibration population to be specified together. Write-selected TLS captures are oracle localization diagnostics; attackers receive only lengths, directions and order.

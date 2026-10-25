@@ -1,0 +1,9 @@
+\begin{table}[t]\centering\footnotesize
+\caption{Deployment boundary: the relevant passive observer and what the measured mechanism can protect.}\label{tab:r7-deployment}
+\begin{tabularx}{\columnwidth}{@{}p{.18\columnwidth}YY@{}}\toprule
+Setting & Visible information & Applicability / trusted point\\\midrule
+Same-host sidecar & Host trace/process/IPC metadata, if permitted & Link padding alone does not hide host instrumentation; isolate the monitor's access.\\
+Same-VPC gateway & Ingress record sizes, times and addresses & Tunnel or shadow shaping can protect this link; gateway/markers remain trusted.\\
+Remote SaaS/MCP & IP, unprotected SNI, per-endpoint flows and times & Shared ingress needed for tool-identity cover; ECH alone does not hide destination IP.\\
+Cross-organization & Each hop's routing; provider calls/commit log & No guarantee across all hops. A trusted isolated executor is an explicit added assumption.\\\bottomrule
+\end{tabularx}\end{table}

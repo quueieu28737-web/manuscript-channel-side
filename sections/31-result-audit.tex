@@ -1,0 +1,24 @@
+\section{Result-Pair Comparability, Nine-Item Split Audit}\label{app:result-audit}
+This audit applies the paper's comparison rules to the 33 result records across 22 families (and the nine-item split reporting checklist to the 16 baseline and 4 newly added evaluated-mitigation families).
+
+\subsection{Within-family and within-cohort pairwise comparability}
+While the machine-readable inventory retains all $\binom{33}{2}=528$ unordered pairs for completeness, 426 pairs cross unrelated mechanism cohorts and are outside scope by definition. Table~\ref{tab:pair-descriptive} summarizes two nested informative subsets (the 13 are included in the 102): the \textbf{13 within-family pairs} and the \textbf{102 within-cohort related pairs} (traffic-envelope: 66; cache-service: 28; behavioral humanization: 3; generator fingerprint: 3; local-memory: 1; fixed guardrail: 1).
+
+\begin{table}[t]\centering\footnotesize
+\caption{Descriptive comparability within the 13 same-family pairs and 102 related-cohort pairs.}\label{tab:pair-descriptive}
+\begin{tabularx}{\columnwidth}{@{}Yrrr@{}}\toprule
+Subset & Compatible & Incompatible & Unresolved\\\midrule
+Same family ($n=13$) &7 (53.8\%)&6 (46.2\%)&0\\
+Related cohort ($n=102$) &16 (15.7\%)&80 (78.4\%)&6 (5.9\%)\\\bottomrule
+\end{tabularx}\end{table}
+
+Within the 13 same-family pairs, seven compare aligned outcomes and six substitute different primitives or cost objects. Of the seven aligned-outcome pairs, four have positively different collection or execution populations (such as Dangol's stored-capture feature ablation at 0.17 accuracy versus live loopback OHTTP at 0.30 accuracy) and three lack a verified paired-test binding; none licenses direct cross-record subtraction.
+
+\subsection{Nine-item split reporting audit}
+Table~\ref{tab:six-check-audit} uses R4 for defended fitting, R5 for a matched adaptation contrast, R7 for inference, R8 for utility and R9 for cost across both the 16 original evaluated-mitigation families (144 cells) and the 20 total evaluated-mitigation families (including \texttt{wu2026cacheprune}, \texttt{lee2026otro}, \texttt{chen2026sparleak} and \texttt{hadad2026shape}; 180 cells).
+\input{tables/six-check-audit}
+
+The current \path{combined_result_records.json} makes the six expansion records explicit alongside the 33 preserved baseline records: 39 records from 26 distinct families, while the reporting audit covers 20 mitigation families.
+
+\subsection{Current source-follow-up corrections}
+A renewed source inspection resolves three of the 14 previously unverified family cells. For the cloud-traffic benchmark, \S V-C1/Fig.~9(a) locates execution-trigger instructions before and after the original prompt and reports the resulting reformulation experiment \cite{pouryousef2026traffic}. This supports R3 placement at the paper-report level; requiring a historical-run artifact would exceed R3's definition. For Shape and Substance, \S IX-B1 derives the proposed padding cost from unprotected timing measurements but reports neither protected-condition fitting nor a matched protected-test adaptation contrast \cite{hadad2026shape}. Its R4/R5 statuses therefore become \NRR{}, the appropriate scoped reporting status. The current matrix has 11 unverified cells: five R4 and six R5. All historical CSVs and coding columns remain unchanged; a source-linked correction overlay generates the current tables. Public-source checks for the remaining cells identify the missing fit, split or result bindings individually.

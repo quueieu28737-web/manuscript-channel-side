@@ -1,0 +1,23 @@
+\section{Live Planner Utility with Prefix Shadow Execution}\label{sec:live-planner-utility}
+This exploratory paired study selects 50 existing task IDs by a frozen SHA-based ordering before new collection, with two fresh GLM planner episodes per task. Both agent and user contexts issue new model requests; cached decisions are used only to resume the same episode after transport failure. The 100 episodes use the served GLM alias, native single-tool actions, a 16,384-token budget and ten workers. They share known tasks with earlier studies and are not a new-customer confirmation. Arm order alternates by task parity.
+
+\paragraph{Execution and deadline contract}
+The baseline executes real actions in the retail environment. The prefix-shadow arm additionally executes at most one training-template deficit call on isolated state after each real call; its response is hidden from the planner. Both arms delay each real response by 20\,ms, with another 20\,ms for cover. For task IDs divisible by five, the first tool response receives another 200\,ms delay. The 120\,ms deadline is evaluated against this configured delay, not OS scheduling noise. The real operation can already have executed when its response is replaced by a timeout warning; the next planner request sees that warning and can inspect or retry the state. This tests reaction to a controlled execution/observation mismatch. There is no terminal flush, constant TLS framing or actual WAN path in this utility diagnostic.
+
+\begin{center}\small\begin{tabular}{lrr}\toprule
+Outcome & Baseline & Prefix shadow\\\midrule
+Episodes & 50 & 50\\
+Native successes & 37 & 33\\
+Terminal protocol failures & 11 & 7\\
+Real tool calls & 360 & 390\\
+Isolated cover calls & 0 & 390\\
+Injected response timeouts & 12 & 12\\
+Tool actions following timeout & 96 & 93\\
+Final-pass response-wait p95 (ms) & 32.0 & 47.0\\
+\bottomrule\end{tabular}\end{center}
+
+\paragraph{Interpretation and verification}
+The paired native-success difference is -8.0 percentage points, with a 2,000-draw customer-bootstrap interval [-23.9,6.5] over 37 customers. All protocol failures remain in the denominator. Subsequent actions demonstrate live reactions to timeout observations; their count alone does not establish correct recovery. The verifier rebuilds actual and reference tool states, checks output requirements and native rewards, matches model-request counts, and checks all live-metric rows. Recorded response waits are from the final execution pass: cache recovery deterministically replays completed action prefixes and their delays. The frozen Windows monotonic clock has 15.625\,ms resolution, so sub-tick differences are not resolved. These waits exclude LLM generation and WAN transit, and are not original uninterrupted end-to-end latencies. Reward is measured on the actual model decisions, rather than inherited from an undefended trajectory.
+
+\paragraph{Transport recovery provenance}
+An import-order bug selected the shared endpoint adapter, which honored a 180\,s caller timeout despite the live protocol's intended 600\,s transport wait. After 97 completed episodes, explicit adapter resolution selected the local 600\,s implementation; request bodies, model settings, parsing and all cached decisions remained unchanged. The amendment preserves the old adapter, hashes, logs and no-progress stop, and permits bounded recovery after the identified code fix. This infrastructure wait is separate from the experimentally injected 120\,ms tool-response deadline. Failed model outputs are terminal outcomes, not transport retries. The utility estimate applies to this prefix scheduler and fault model; it cannot supply a reward value for the full joint framing/flush replay rows in Exp~3.

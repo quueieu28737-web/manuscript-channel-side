@@ -1,0 +1,24 @@
+\begin{tikzpicture}[font=\scriptsize,>=Latex,
+box/.style={draw,rounded corners,align=center,text width=3.35cm,minimum height=10mm,fill=blue!5},
+boundary/.style={box,fill=orange!12},
+observer/.style={box,fill=green!8}]
+\node[box] (llm) at (0,0) {LLM service\\token stream / cache activity};
+\node[boundary] (api) at (4.25,0) {Upstream protected link\\padding or batching};
+\node[boundary] (front) at (8.5,0) {Content-aware frontend\\decoded content $\rightarrow$ new stream};
+\node[observer] (net) at (12.75,0) {Final network observer\\groups, lengths, timing};
+\draw[->] (llm)--(api);
+\draw[->] (api)--(front);
+\draw[->] (front)--(net);
+\node[box] (policy) at (0,-2.1) {Agent action policy\\task goal / current state};
+\node[boundary] (cover) at (4.25,-2.1) {Cover boundary\\discard, shadow, or execute};
+\node[box] (dispatch) at (8.5,-2.1) {Tool / GUI dispatch\\real and admitted cover actions};
+\node[observer] (state) at (12.75,-2.1) {Environment / receiving site\\events and changed task state};
+\draw[->] (policy)--(cover);
+\draw[->] (cover)--(dispatch);
+\draw[->] (dispatch)--(state);
+\draw[->,dashed] (llm.south)--node[left,align=right]{action\\selection}(policy.north);
+\node[font=\scriptsize,align=center] at (6.37,-.95)
+{Trace path: upstream protection must be related to the final emitting interface (NetEcho).};
+\node[font=\scriptsize,align=center] at (6.37,-3.0)
+{Action path: executed cover can change state (AHB); timestamp-only edits can retain event structure (UI Traces).};
+\end{tikzpicture}

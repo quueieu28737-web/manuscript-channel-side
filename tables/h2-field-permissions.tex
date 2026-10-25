@@ -1,0 +1,20 @@
+\begin{table}[t]
+\centering\footnotesize
+\caption{Public-trace permission projection. ``Site'' means its own document only; it does not authenticate cross-document capture. Full field-level CSV and one complete ingested-record projection are supplemental.}
+\label{tab:h2-field-permissions}
+\begin{tabularx}{\columnwidth}{@{}p{0.29\columnwidth}p{0.16\columnwidth}Y@{}}
+\toprule
+Field & Site JS & Analysis use \\
+\midrule
+Type, page-local time & Yes & Original predictors; activity diagnostic \\
+Within-document order & Yes & Type bigrams \\
+Cross-document order & Unverified & Archive-receiver bigrams \\
+URL/origin & Own page & Origin gate only; no text/page-key feature \\
+HTTP navigation, collector time & No & Boundary proxy only / time excluded \\
+Error/result metadata & No & Analyst-only failure baseline \\
+Task/answer metadata & No & Excluded; question hash splits/weights only \\
+DOM/link text & Own page & Excluded from all predictors \\
+Document/frame ID & Absent & No authenticated document membership \\
+\bottomrule
+\end{tabularx}
+\end{table}

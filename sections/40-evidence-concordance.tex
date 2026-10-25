@@ -1,0 +1,74 @@
+\section{Evidence Concordance and Evaluation Boundaries}\label{app:concordance}
+\subsection{From families to result records}
+The map has 82 families: 58 core and 24 adjacent. Ledger inclusion is an additional, result-level decision; it does not redefine core eligibility. All 20 audited mitigation families contribute 33 result records. Six contextual families contribute one record each, giving 26 families and 39 records. Multiple records separate mechanisms, execution modes or cost objects within a family. The 78 utility/cost field positions are two fields per result, not 78 independent experiments.
+
+\begin{table}[!ht]\centering\footnotesize
+\caption{Exact family-to-record reconciliation. Mitigation records total 33; contextual records total 6. Audit cells are 20 mitigation families $\times$ 9 items.}\label{tab:family-record-reconciliation}
+\begin{tabularx}{\columnwidth}{@{}Yr@{}}\toprule
+Family & Records\\\midrule
+AHB~\cite{zhu2026turing} & 2\\
+CachePrune~\cite{wu2026cacheprune} & 2\\
+Cloud traffic benchmark~\cite{pouryousef2026traffic} & 2\\
+Dangol workflow~\cite{dangol2026workflow} & 2\\
+Early Bird~\cite{earlybird2025} & 2\\
+I Know What You Said~\cite{gao2025iknow} & 1\\
+KVGov~\cite{addagada2026kvgov} & 3\\
+NetEcho~\cite{netecho2025} & 2\\
+OTRO~\cite{lee2026otro} & 2\\
+Remote timing~\cite{carlini2024remote} & 1\\
+SafeKV~\cite{chu2025safekv} & 1\\
+Shape and Substance~\cite{hadad2026shape} & 1\\
+SparLeak~\cite{chen2026sparleak} & 1\\
+Speculative decoding~\cite{wei2024speculation} & 1\\
+SpliceLeak~\cite{spliceleak2026} & 2\\
+TDXRay~\cite{hornetz2026tdxray} & 1\\
+Time Will Tell~\cite{timewilltell2024} & 2\\
+UI Traces~\cite{uitraces2026} & 1\\
+Whisper Leak~\cite{whisperleak2025} & 3\\
+WRA~\cite{jeong2026wra} & 1\\
+\midrule\multicolumn{2}{l}{Contextual records (outside the 20-family audit)}\\
+AgentTell~\cite{shahriar2026agenttell} & 1\\
+Behind Bars~\cite{gu2026behindbars} & 1\\
+FP-Agent~\cite{wang2026fpagent} & 1\\
+LLMs Have Rhythm~\cite{alhazbi2025rhythm} & 1\\
+ML privacy channels~\cite{debenedetti2024privacy} & 1\\
+SIGLEAK~\cite{geng2026sigleak} & 1\\
+\bottomrule\end{tabularx}\end{table}
+
+The contextual record IDs are SIG-common-guardrail (SIGLEAK), AGENTTELL-fixed-instruction (AgentTell), FP-CLOUDFLARE (FP-Agent), BAR-co-running-noise (Behind Bars), RHYTHM-VPN (LLMs Have Rhythm), and DEB-filter-origin (ML privacy channels). Their roles are common-instruction residual leakage, fixed privacy instruction, access control, interference, generic VPN transport, and a privacy filter that creates an auxiliary signal. These contextual conditions do not constitute the audited confidentiality-mitigation claim.
+
+The other 32 core families remain in the map: AgentPrint~\cite{agentprint2025}, AgentProv~\cite{wang2026agentprov}, ArchSnoop~\cite{weng2026archsnoop}, Cache contention~\cite{abubakar2026contention}, Campaign attribution~\cite{park2026crosscampaign}, ClawGuard~\cite{gan2026clawguard}, Cycle detection~\cite{george2025cycles}, Detokenization Leaks~\cite{weiss2026detokenization}, Edge EM leakage~\cite{alhalawani2026physicaledge}, Energon~\cite{chaudhuri2025energon}, InputSnatch~\cite{inputsnatch2024}, Leaky Language Models~\cite{majidi2026leakylms}, Lidar~\cite{wang2026lidar}, LLM-serving RCA~\cite{scheinert2026rca}, LLM-WFIN~\cite{jiao2025llmwfin}, LumiMAS~\cite{solomon2026lumimas}, MIRAGE~\cite{revankar2026mirage}, MoE prompt stealing~\cite{yona2024stealing}, MoEcho~\cite{ding2025moecho}, PAGE404~\cite{nazaraliyev2026page404}, PersonaFingerprint~\cite{song2026personafingerprint}, ProcGrep~\cite{oderinwale2026procgrep}, Prompt Echo~\cite{prompt_echo2026}, Prompt-cache audit~\cite{gu2025promptcaching}, PromptPeek~\cite{promptpeek2025}, Remote keylogging~\cite{weiss2024prompt}, Routing metadata~\cite{chen2026routingmetadata}, SparSEEty~\cite{jo2026sparseety}, Spill the Beans~\cite{spillbeans2025}, SplitDecoy~\cite{politis2026splitdecoy}, Web-agent unmasking~\cite{fayolle2026webagents}, Whose Agent?~\cite{kang2026whoseagent}. Their dispositions comprise 22 without a mitigation evaluation in the inspected scope, five authorized diagnostics, four unbound quantitative assertions, and SplitDecoy's distinct split-training boundary case. Thus absence from the result ledger does not imply exclusion from the SoK or that the family has no empirical evaluation. The artifact's family--record concordance gives the group, record IDs, source version and locators for every one of the 82 families.
+
+\subsection{Experiment identifiers and manuscript locations}
+The archived identifiers resolve protocols, predictions and verifiers. The main paper organizes these records into four demonstrations; the table maps each key to its current location.
+\begin{table}[!ht]\centering\footnotesize
+\caption{Experiment concordance. Historical names are retained in code and data.}\label{tab:experiment-concordance}
+\begin{tabularx}{\columnwidth}{@{}lYY@{}}\toprule
+ID & Evidence / question & Current account\\\midrule
+E1 & Two-link buffered transport; terminal caps & Main 8.1; S9/S11\\
+E2 & Saved finite-state tool plans; cover/state effects & S9; retail extension in 8.2/S11\\
+E3 & Clean versus defended fitting on buffered traces & Main 8.1; S9/S11\\
+E5 & Token-stream emitters & Main 8.1; S12\\
+E6 & Randomized dispatch cover & Main 8.2; S12\\
+E7 & Agent--tool TLS composition & Main 8.2; S12\\
+E8 & Scripted/noisy stand-in planners & S13; pipeline check\\
+E9 & Real agents; pretest-frozen calibration & Main 8.3; S14\\
+E10/E12 & Cross-fitting and oracle localization & Main 8.3; original suite S15, expanded suite S21\\
+E11 & Retrospective operating-point selection & Main Appendix C; S15\\
+E13 & Live tool timing, latency and complete tunnels & Main 8.4; S19\\
+E14 & Expanded attacks and classical WF adaptations & Main 8.4; S20\\
+E15 & Additional same-provider Luna trajectories & Main Appendix C; S22\\
+E16 & Same-operation attribute diagnostic & Main Appendix C; S23.6\\
+\bottomrule\end{tabularx}\end{table}
+
+\subsection{Absolute thresholds and relative reductions}
+The E9 suite criterion remains BA upper 95\% bound $<0.60$ and maximum AUROC $<0.65$. Joint shaping under the standard prompt has BA 50.0\%/50.0\%, with upper bounds 60.6\%/65.5\%; the absolute claim is inconclusive. The post hoc paired intervals support a reduction relative to undefended transport, not certification of this absolute target. With 24 held-out customers and only 5/7 positive customers, finite-cluster resampling and reselection of the suite maximum affect uncertainty. This is not a demonstrated universal bootstrap resolution floor or proof that the width is caused only by sample size. More repeats of the same customers do not supply new independent clusters.
+
+The original-suite E10 bucketed standard-prompt upper bounds (60.5\%/60.2\%) do not meet the two-target absolute criterion; S21 reports the larger expanded-suite maxima and intervals used in the current main paper. Customer-grouped fitting avoids training/test mixing within a fold but remains retrospective reuse of the same cohort. E11's training-fold point-estimate selection rule is distinct from the E9 interval criterion; choosing a configuration under the former does not imply passing the latter. A future confirmatory cohort should freeze the defended policy, attacker suite, timing projection and cluster analysis before collection. Sample planning should vary independent positive and negative customers using explicit assumptions about heterogeneity and refitting, rather than infer guaranteed power from a near-chance point estimate.
+
+\subsection{Timing evaluation: protocol and E13 coverage}
+E7 and E9--E12 evaluate record sizes, directions and sequence order. They omit inter-arrival times, elapsed session duration and request service times. The end flush may form a detectable suffix; serial cover may delay responses, whereas concurrent cover may produce bursts. Logical planner-history equivalence excludes clocks, resource contention and timeout-dependent behavior. The observed byte/call ratios therefore cannot be read as measured interactive latency or timing-channel suppression.
+
+The follow-up protocol calls for capturing timestamped ingress and egress traffic during live tool execution, with stable monotonic clock calibration, and measuring both serial and bounded-concurrency scheduling. Fit joint size/timing attackers, a flush/change-point segmenter and a real-versus-cover detector using only training customers. Keep the customer split, prompt arms and repeats together; evaluate the resulting intent BA/AUROC and paired changes on frozen test customers. Report timing-only, size/order-only and joint views, both with and without the flush suffix, including failures and timeouts.
+
+At the same operating points, report first-response and episode p50/p95 latency, queueing, deadline violations, backend quotas, bytes/calls and native task reward. Compare per-call padding, full-profile cover, a paced/bounded-flush variant and a complete transport tunnel with a stated traffic horizon under matched workloads. Do not label synthetic delays or analytic service-time scenarios as measured production latency. E13 (S19) executes the local tool-chain portion of this specification, including observed TLS arrival timing, learned flush removal, serial/two-in-flight RPCs and complete fixed-rate tunnels. Fresh LLM replanning, WAN deployment, production quotas, an alternative paced-flush policy and a new customer cohort remain separate validation targets.

@@ -1,0 +1,17 @@
+\section{Scope and Systematization Method}\label{sec:methodology}\label{sec:background}
+\subsection{Research questions, eligibility and threat polarity}
+We organize the systematization around four questions: which hidden targets, threat polarities and auxiliary observables appear across LLM and agent systems (RQ1); how signal generation origin relates to receiver observation permissions (RQ2); which holdouts establish portability across tasks, configurations and hardware (RQ3); and which evidence binds workflow protection, logical state preservation and resource cost, distinguishing these from full end-to-end planner utility (RQ4).
+
+Core inclusion requires five conjunctive criteria: (C1) LLM or agent execution, (C2) a hidden target property, (C3) an execution-dependent auxiliary observable rather than ordinary output semantics alone, (C4) specified observer permissions, and (C5) an empirical inference evaluation. Mixed-feature papers qualify only if they isolate an auxiliary-only C3 component; thus coding fingerprints, WildAuth, ZeroPrint, endpoint-content fingerprints and StepFinder remain adjacent boundary comparators \cite{ghaleb2026codingfingerprint,wang2026dialogue,shao2026zeroprint,leshin2026endpoint,zhu2026stepfinder}. Table~\ref{tab:boundary-rules} states the observable eligibility rules.
+\input{tables/boundary-rules}
+
+We use four narrative groupings of objectives and observer roles, not mutually exclusive classes. An unauthorized identity inference can be both attribution and a confidentiality concern. Each record separately specifies the inference target, observer, authorization relation and protected interest:
+\textbf{Type I} concerns confidentiality/privacy; \textbf{Type II} concerns model, harness or identity attribution; \textbf{Type III} concerns evasion of a platform's human--agent detector; \textbf{Type IV} concerns authorized operator diagnostics. Types can overlap. WRA protects research intent (I); UI Traces attributes agents (II); AHB evades a defensive detector (III); ClawGuard diagnoses loops (IV) \cite{jeong2026wra,uitraces2026,zhu2026turing,gan2026clawguard}. These roles are mapped per core family, alongside generating and receiving layers, in Table~\ref{tab:core-family-map}.
+
+\subsection{Corpus construction and reconciliation}
+We assemble the corpus through 40 seeds, venue-targeted proceedings screening and one-hop citation snowballing, supplemented by database and bulk keyword searches. The supplementary search returned 615 occurrences and 565 unique records; auditing 204 exclusions rerouted four records, yielding 15 new core and seven adjacent families. The final collection has \FinalCore{} core and \FinalAdjacent{} adjacent families. Appendix~\ref{app:records} provides the complete result-level index.
+
+\subsection{Source-bound result records}
+Each result record binds its target, observation boundary, operating point and source section/table/figure/paragraph locator. Authors checked the records and audit entries against these sources. Appendix~\ref{app:records} provides the complete record index, and Appendix~\ref{app:equivalence} identifies the supporting artifacts.
+
+\soktakeaway{SoK Takeaway 1 (Map evidence to the receiving deployment)}{A family-level label does not identify which signal, observer permission or protected objective a result supports. The complete core map separates signal origin from receiving access; the result ledger then binds each comparison to a source version and operating point.}
