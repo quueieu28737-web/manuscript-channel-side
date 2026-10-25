@@ -46,7 +46,7 @@ GLM & GLM & Joint & return & 67.3 & -- & [58.7, 89.5]\\
 
 \subsection{Calibration transfer and localized padding}
 
-Source training templates, donors and caps are applied to target trajectories, including target training trajectories used to refit attackers. All 690 sessions are actual local TLS captures. Write-only padding uses true tool identity at the trusted defense boundary; the adversary receives lengths and directions only. It introduces no cover calls. Byte ratios divide summed test wire bytes by target-model undefended test bytes. Different target trajectories change transferred-template overflow and cost.
+Source training templates, donors and caps are applied to target trajectories, including target training trajectories used to refit attackers. All 690 sessions are actual local TLS captures. Write-only padding uses true tool identity at the trusted defense boundary; the adversary receives lengths and directions only. It introduces no cover calls. Byte ratios divide summed test wire bytes by target-model undefended test bytes. Test-call ratios (MiniMax/GLM) are 3.36/4.24$\times$ for local joint, 3.11/4.66$\times$ for imported joint and 1.00/1.00$\times$ for write padding. Raw totals are 510/332 calls; request-record counts agree with saved call arrays.
 
 \begin{center}\small\begin{tabular}{llllrrl}\toprule
 
@@ -78,7 +78,7 @@ GLM & GLM & Write padding & return & 61.6 & 1.51 & [53.4, 83.1]\\
 
 \bottomrule\end{tabular}\end{center}
 
-\paragraph{Scope of the conclusion} The observed changes are directional and target-dependent. Wide customer intervals preclude turning these point contrasts into a universal failure threshold. The engineering screening criterion remains unchanged. Expanded-suite MiniMax joint return BA is 67.5\%, versus 59.9\% in the original endpoint suite: the added exchange-count attacker is the changed evaluation contract, not a revision of the underlying trajectories. Claims of inexpensive write padding must likewise use the expanded-suite 61.3/61.6\% return values, not the earlier small-suite values.
+\paragraph{Scope of the conclusion} Target-specific contrasts retain the original engineering screen. Expanded-suite MiniMax joint return BA is 67.5\%, versus 59.9\% previously: the added exchange-count attack changes the evaluation contract, not the trajectories. Write-padding comparisons likewise use the expanded-suite 61.3/61.6\% return values.
 
 \paragraph{Paired transfer uncertainty}
 Paired contrasts use the same customer draws and reselect each condition's suite maximum. Moving MiniMax calibration to GLM changes cancellation by $+20.8$ points (95\% interval $[-12.6,35.3]$) and return by $-17.3$ points ($[-38.2,-5.3]$). Moving GLM calibration to MiniMax changes cancellation by $-9.6$ ($[-21.1,6.4]$) and return by $-4.5$ ($[-25.0,12.3]$). These conditional intervals distinguish the observed direction of transfer from the precision available for each target; they include no attacker-retraining uncertainty. All eight calibration/write-padding contrasts are saved in the artifact.

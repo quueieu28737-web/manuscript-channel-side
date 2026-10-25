@@ -1,0 +1,19 @@
+\begin{table}[t]\centering\footnotesize
+\caption{Item-by-item reconciliation of the 565-record October 21 search frame (before and after the 204-record exclusion audit) and the transition from the 60-family snapshot to all \FinalN{} coded families.}\label{tab:corpus-reconciliation}
+\setlength{\tabcolsep}{3.5pt}
+\begin{tabularx}{\columnwidth}{@{}Yrrr@{}}\toprule
+Route / family category & Pre-audit & Audit $\Delta$ & Final (Indexed)\\\midrule
+Excluded: no hidden C2/C3 target & 221 & $-4$ & 217 (0)\\
+Excluded: outside LLM / diff.\ target & 175 & $0$ & 175 (0)\\
+Existing snapshot core / adjacent & 23 / 1 & $+1 / 0$ & 24 / 1 (in 60)\\
+New source-verified core families & 14 & $+1$ & 15 (\textbf{+15})\\
+Adjacent source-reviewed contexts & 28 & $+2$ & 30 (\textbf{+7})\\
+Adjacent metadata-only contexts & 28 & $0$ & 28 (0)\\
+Background / proposal metadata & 58 & $0$ & 58 (0)\\
+Missing abstract / unavailable text & 17 & $0$ & 17 (0)\\\midrule
+\textbf{565-frame total / Net added families} & \textbf{565} & \textbf{0 net} & \textbf{565 (+22)}\\
+\textbf{Coded collection}: Core / Adjacent (\textbf{Total}) & \multicolumn{3}{r}{Snapshot: 43 / 17 (\textbf{60}) $\to$ Full: \FinalCore{} / \FinalAdjacent{} (\textbf{\FinalN{}})}\\\bottomrule
+\end{tabularx}
+\par\smallskip\raggedright\footnotesize
+The exclusion audit selected 177 high-risk pattern matches plus 27 reason-stratified records (seed 20261021), rather than all 396 initially excluded records. This enriched 204-record subset rerouted 4 records out of the 221 initial C2/C3 exclusions: (1) \texttt{SUP-0192} (MIRAGE \cite{revankar2026mirage}) moved to new core ($14+1=15$, all 15 added to the family index); (2) \texttt{SUP-0552} (InputSnatch arXiv alias) merged into existing family \texttt{inputsnatch2024} ($23+1=24$, $+0$ new families); and (3--4) \texttt{SUP-0191} and \texttt{SUP-0424} moved to source-reviewed adjacent contexts ($28+2=30$, of which 7 boundary-defining studies enter the adjacent index and 23 remain in the 565-record ledger). Thus $60 + 15\text{ (core)} + 7\text{ (adjacent)} = \FinalN{}$.
+\end{table}

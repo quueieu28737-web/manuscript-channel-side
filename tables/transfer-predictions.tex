@@ -1,0 +1,14 @@
+\begin{table*}[t]\centering\footnotesize
+\caption{Audit judgments recorded before E5--E7 were run, and their outcomes under the pre-registered thresholds (protected: BA upper 95\% bound $<0.60$ and AUROC $<0.65$; not protected: lower bound $>0.60$).}\label{tab:transfer-predictions}
+\setlength{\tabcolsep}{3pt}
+\begin{tabularx}{\textwidth}{@{}lp{.25\textwidth}p{.2\textwidth}Y@{}}\toprule
+ID & Transfer claim & Audit judgment (checks) & Outcome and evidence\\\midrule
+P1 & Buffered 2.18$\times$ cap transfers to a token stream & Unres.$\to$Incomp. (C1, R9) & Confirmed: Per-event padding: T1 100\%; constant shape costs 2.42$\times$ stream bytes and doubles completion\\
+P2 & Low $D_0$ under batching shows protection & Unres.\ (R5) & Confirmed: Batch: $D_0$ 50\%, $D_2$ 100\%; cancel cover: $D_0$ 50\%, $D_2$ 100\%\\
+P3 & Per-event padding prevents response identification & Unres.$\to$Incomp. (C1, R7) & Confirmed: Top-1 ID 58--62\% vs.\ 2.1\% chance\\
+P4 & Equal cancel count hides cancellation & Unres.$\to$Incomp. (C3, R2) & Confirmed: Count rule 50\%; learned 76.9\% [65, 88]\\
+P5 & Dispatch cover protects the tool link & Unres.\ (C1) & Confirmed: Request size names the tool in 95.7\% of calls; BA 72.7--95.7\%\\
+P6 & Transport framing alone protects intent & Unres.$\to$Incomp. (C1, C2) & Partly: Bucket/return 73.9\% [65, 83]; other cells 53.6--60.1\%, inconclusive\\
+P7 & Joint cover + framing protects, no DB damage & Unres.; needs C1--C3 & Partly: Return 50.0\%, cancel 54.4\% [47, 62]; DB 100\%; 26.3$\times$ bytes, 7.7$\times$ calls\\
+\bottomrule\end{tabularx}
+\end{table*}

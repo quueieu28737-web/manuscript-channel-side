@@ -314,6 +314,14 @@ E.~Hadad and M.~Guri, ``Shape and substance: Dual-layer side-channel attacks on
   Available: \url{https://arxiv.org/html/2603.25403v1}
 \BIBentrySTDinterwordspacing
 
+\bibitem{chen2026sparleak}
+\BIBentryALTinterwordspacing
+F.~Chen, L.~Du, J.~Zhou, P.~Li, and Z.~Su, ``Sparleak: Privacy leakage from
+  sparse attention in {LLM} inference on shared gpus,'' \emph{arXiv preprint
+  arXiv:2609.38830v1}, 2026, consulted 2609.38830v1; source-scoped access 21
+  October 2026. [Online]. Available: \url{https://arxiv.org/html/2609.38830v1}
+\BIBentrySTDinterwordspacing
+
 \bibitem{inputsnatch2024}
 \BIBentryALTinterwordspacing
 X.~Zheng, H.~Han, S.~Shi, Q.~Fang, Z.~Du, X.~Hu, and Q.~Guo, ``Inputsnatch:
@@ -429,14 +437,6 @@ K.~Chu, Z.~Lin, D.~Xiang, Z.~Shen, J.~Su, C.~Chu, Y.~Yang, W.~Zhang, W.~Wu, and
   {LLM} inference,'' \emph{arXiv preprint arXiv:2508.08438v2}, 2026, consulted
   arXiv:2508.08438v2; archived access 18 October 2026. [Online]. Available:
   \url{https://arxiv.org/abs/2508.08438v2}
-\BIBentrySTDinterwordspacing
-
-\bibitem{chen2026sparleak}
-\BIBentryALTinterwordspacing
-F.~Chen, L.~Du, J.~Zhou, P.~Li, and Z.~Su, ``Sparleak: Privacy leakage from
-  sparse attention in {LLM} inference on shared gpus,'' \emph{arXiv preprint
-  arXiv:2609.38830v1}, 2026, consulted 2609.38830v1; source-scoped access 21
-  October 2026. [Online]. Available: \url{https://arxiv.org/html/2609.38830v1}
 \BIBentrySTDinterwordspacing
 
 \bibitem{wei2024speculation}

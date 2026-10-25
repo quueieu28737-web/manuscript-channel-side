@@ -1,0 +1,13 @@
+\begin{table}[t]\centering\footnotesize
+\caption{Author-constructed scenario exercise: complete confusion matrices. Each triple gives predictions (Compatible, Incompatible, Unresolved) for the indicated true category. The last two columns distinguish detecting mismatches from retaining compatible reuse.}\label{tab:m1-validity}
+\setlength{\tabcolsep}{2pt}
+\begin{tabularx}{\columnwidth}{@{}Yccccc@{}}\toprule
+Procedure & True C & True I & True U & I recall & C recall\\\midrule
+Always C & 7,0,0 & 12,0,0 & 5,0,0 & 0.0 & 100.0\\
+Always I & 0,7,0 & 0,12,0 & 0,5,0 & 100.0 & 0.0\\
+Always U & 0,0,7 & 0,0,12 & 0,0,5 & 0.0 & 0.0\\
+Coder column 1 & 7,0,0 & 0,12,0 & 0,1,4 & 100.0 & 100.0\\
+Coder column 2 & 7,0,0 & 0,11,1 & 0,1,4 & 91.7 & 100.0\\
+\bottomrule\end{tabularx}
+\par\smallskip\raggedright This illustrates the recorded labeling exercise; scenarios and labels were not independently held out. C recall is specificity when Incompatible is the positive class and evaluation is restricted to the C/I subset. Unresolved is retained as a third outcome.
+\end{table}

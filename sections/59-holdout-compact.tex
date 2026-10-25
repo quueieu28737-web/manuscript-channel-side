@@ -1,0 +1,50 @@
+\section{Family-Level Holdout Evidence}\label{app:holdouts}
+Table~\ref{tab:r19-holdouts} covers all 82 indexed families and 492 axis cells. T: task/input/user; M: model; C: harness/topology; H: hardware; N: network/load; D: time. H means an explicitly reported held-out unit/domain; V a condition comparison or recalibration; X a scoped restriction; ? unresolved extraction; -- inapplicable to conceptual families. H identifies separation, not guaranteed transfer success. The 73 hardware and 71 temporal ? cells are not evidence of absent experiments. Core/adjacent scope is C/A. Supplement S28 retains each source locator and interpretation; the archive preserves the underlying extraction.
+\begin{table*}[t]\centering\footnotesize
+\caption{Complete holdout-code matrix; codes and axes are defined in Appendix~\ref{app:holdouts}. Source-qualified row notes are in Supplement S28.}\label{tab:r19-holdouts}
+\setlength{\tabcolsep}{2.4pt}
+\begin{tabularx}{\textwidth}{@{}Yccccccc@{\hspace{9pt}}Yccccccc@{}}\toprule
+Family & Scope & T & M & C & H & N & D & Family & Scope & T & M & C & H & N & D\\\midrule
+F01 AgentPrint~\cite{agentprint2025} & C & ? & ? & ? & ? & ? & ? & F42 ML privacy channels~\cite{debenedetti2024privacy} & C & ? & V & ? & ? & ? & ?\\
+F02 UI Traces~\cite{uitraces2026} & C & V & V & V & ? & ? & ? & F43 MoE stealing~\cite{yona2024stealing} & C & ? & ? & ? & ? & ? & ?\\
+F03 WRA~\cite{jeong2026wra} & C & H & ? & ? & ? & ? & ? & F44 Energon~\cite{chaudhuri2025energon} & C & ? & V & ? & ? & ? & ?\\
+F04 FP-Agent~\cite{wang2026fpagent} & C & H & ? & X & ? & ? & ? & F45 SafeKV~\cite{chu2025safekv} & C & ? & V & ? & ? & ? & ?\\
+F05 Prompt length~\cite{weiss2024prompt} & C & H & ? & V & ? & V & V & F46 InferNet~\cite{anwar2026infernet} & A & ? & V & ? & V & ? & ?\\
+F06 PromptPeek~\cite{promptpeek2025} & C & V & ? & ? & ? & V & ? & F47 ArchSnoop~\cite{weng2026archsnoop} & C & ? & H & ? & V & ? & ?\\
+F07 NetEcho~\cite{netecho2025} & C & V & ? & V & ? & ? & ? & F48 Coding fingerprints~\cite{ghaleb2026codingfingerprint} & A & X & ? & X & ? & ? & X\\
+F08 Early Bird~\cite{earlybird2025} & C & ? & V & ? & ? & ? & ? & F49 AHB~\cite{zhu2026turing} & C & ? & ? & X & ? & ? & ?\\
+F09 InputSnatch~\cite{inputsnatch2024} & C & H & ? & ? & ? & ? & ? & F50 WildAuth~\cite{wang2026dialogue} & A & H & ? & X & ? & ? & ?\\
+F10 Whisper Leak~\cite{whisperleak2025} & C & H & V & ? & ? & ? & ? & F51 Cycles~\cite{george2025cycles} & C & X & ? & X & ? & ? & X\\
+F11 Spill the Beans~\cite{spillbeans2025} & C & V & ? & ? & ? & ? & ? & F52 LumiMAS~\cite{solomon2026lumimas} & C & ? & V & V & ? & ? & ?\\
+F12 SpliceLeak~\cite{spliceleak2026} & C & V & ? & ? & ? & ? & ? & F53 SymDiag~\cite{cui2026symdiag} & A & V & V & ? & ? & ? & ?\\
+F13 Time Will Tell~\cite{timewilltell2024} & C & ? & ? & ? & ? & V & V & F54 LeakyLMs~\cite{majidi2026leakylms} & C & ? & H & ? & V & ? & ?\\
+F14 Prompt Echo~\cite{prompt_echo2026} & C & H & V & ? & ? & ? & ? & F55 KVGov~\cite{addagada2026kvgov} & C & ? & ? & ? & V & ? & ?\\
+F15 I Know What You Said~\cite{gao2025iknow} & C & H & V & V & V & ? & ? & F56 Data-centric survey~\cite{lahjouji2026datacentric} & A & - & - & - & - & - & -\\
+F16 Speculation~\cite{wei2024speculation} & C & H & ? & ? & ? & V & ? & F57 Serving RCA~\cite{scheinert2026rca} & C & ? & ? & X & ? & ? & ?\\
+F17 Behind Bars~\cite{gu2026behindbars} & C & ? & V & ? & V & ? & ? & F58 ZeroPrint~\cite{shao2026zeroprint} & A & ? & V & ? & ? & ? & ?\\
+F18 Prompt caching~\cite{gu2025promptcaching} & C & ? & V & ? & ? & ? & V & F59 Endpoint fingerprints~\cite{leshin2026endpoint} & A & ? & ? & V & ? & ? & V\\
+F19 Whose Agent~\cite{kang2026whoseagent} & C & ? & ? & ? & ? & ? & ? & F60 StepFinder~\cite{zhu2026stepfinder} & A & H & ? & ? & ? & ? & ?\\
+F20 Workflow traffic~\cite{dangol2026workflow} & C & ? & ? & H & ? & ? & ? & F61 Web-agent detection~\cite{fayolle2026webagents} & C & ? & V & ? & ? & ? & ?\\
+F21 GPU contention~\cite{abubakar2026contention} & C & ? & ? & V & ? & V & ? & F62 Cross-campaign~\cite{park2026crosscampaign} & C & V & ? & V & ? & ? & ?\\
+F22 AgentTell~\cite{shahriar2026agenttell} & C & V & ? & ? & ? & V & ? & F63 AgentProv~\cite{wang2026agentprov} & C & ? & V & ? & ? & ? & ?\\
+F23 Traffic benchmark~\cite{pouryousef2026traffic} & C & ? & ? & H & ? & ? & ? & F64 LiDAR~\cite{wang2026lidar} & C & ? & V & V & ? & ? & ?\\
+F24 Remote timing~\cite{carlini2024remote} & C & ? & V & ? & ? & ? & V & F65 LLM-WFIN~\cite{jiao2025llmwfin} & C & V & ? & ? & ? & ? & ?\\
+F25 Persona fingerprint~\cite{song2026personafingerprint} & C & ? & ? & X & ? & ? & ? & F66 MIRAGE~\cite{revankar2026mirage} & C & V & V & ? & ? & ? & ?\\
+F26 TDXRay~\cite{hornetz2026tdxray} & C & ? & ? & ? & ? & ? & ? & F67 Routing metadata~\cite{chen2026routingmetadata} & C & V & ? & V & ? & ? & ?\\
+F27 Detokenization~\cite{weiss2026detokenization} & C & ? & ? & X & ? & ? & ? & F68 Shape and Substance~\cite{hadad2026shape} & C & V & V & V & V & ? & ?\\
+F28 Spillage~\cite{roh2026spillage} & A & V & ? & ? & ? & ? & ? & F69 SplitDecoy~\cite{politis2026splitdecoy} & C & ? & ? & ? & ? & ? & ?\\
+F29 PlanTwin~\cite{yu2026plantwin} & A & V & ? & ? & ? & ? & ? & F70 PAGE404~\cite{nazaraliyev2026page404} & C & V & V & ? & ? & ? & ?\\
+F30 SICC~\cite{xu2026sicc} & A & ? & ? & ? & ? & ? & ? & F71 Edge EM~\cite{alhalawani2026physicaledge} & C & H & ? & ? & ? & ? & ?\\
+F31 TOPR~\cite{qiao2026topr} & A & V & ? & ? & ? & ? & ? & F72 SparLeak~\cite{chen2026sparleak} & C & V & V & V & ? & ? & ?\\
+F32 ClawGuard~\cite{gan2026clawguard} & C & ? & ? & V & ? & ? & V & F73 Sparseety~\cite{jo2026sparseety} & C & V & V & V & ? & ? & ?\\
+F33 SIGLEAK~\cite{geng2026sigleak} & C & V & ? & ? & ? & ? & ? & F74 OTRO~\cite{lee2026otro} & C & ? & ? & ? & ? & ? & ?\\
+F34 ProcGrep~\cite{oderinwale2026procgrep} & C & H & ? & V & ? & ? & ? & F75 CachePrune~\cite{wu2026cacheprune} & C & V & V & ? & ? & ? & ?\\
+F35 SecEmb~\cite{umar2025secemb} & A & ? & X & ? & ? & ? & ? & F76 Privacy foundations~\cite{kotevska2026privacyfoundations} & A & - & - & - & - & - & -\\
+F36 Mobile agents~\cite{wu2025mobileagents} & A & ? & ? & ? & ? & ? & ? & F77 DP-MemView~\cite{dpmemview2026} & A & ? & ? & ? & ? & ? & ?\\
+F37 Hidden risks~\cite{mudryi2025hidden} & A & ? & ? & ? & ? & ? & ? & F78 PriCon~\cite{pricon2026} & A & ? & ? & ? & ? & ? & ?\\
+F38 Browser privacy~\cite{ukani2025browserprivacy} & A & ? & ? & V & ? & ? & ? & F79 SCAAR~\cite{mondol2025scaar} & A & ? & ? & ? & ? & ? & ?\\
+F39 LLMs Have Rhythm~\cite{alhazbi2025rhythm} & C & ? & V & ? & ? & H & V & F80 CacheSolidarity~\cite{pennas2026cachesolidarity} & A & ? & ? & ? & ? & ? & ?\\
+F40 MoEcho~\cite{ding2025moecho} & C & H & V & ? & ? & V & ? & F81 Vision encoder~\cite{zhou2026visionencoder} & A & ? & ? & ? & ? & ? & ?\\
+F41 LLM-Fin~\cite{nazari2024llmfin} & A & ? & H & ? & ? & ? & ? & F82 Split gradients~\cite{politis2026gradients} & A & ? & ? & ? & ? & ? & ?\\
+\bottomrule\end{tabularx}
+\end{table*}

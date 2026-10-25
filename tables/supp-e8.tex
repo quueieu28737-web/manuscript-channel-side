@@ -1,0 +1,18 @@
+\section{Autonomous-agent pipeline (E8) and online cover}\label{app:e8}
+\path{experiments/sp2027-r2/agent/} runs tool-calling agents and a user simulator on the 115 retail tasks, applies \emph{online} cover (decided before each real call from the history only, with a final flush) and replays every session over TLS. Because sandboxed cover and framing never reach the agent, one trajectory per task and seed serves all policies. No LLM was available for this revision; the rows below use stand-in planners and validate the pipeline. The scripted planner replays reference programs (native reward 1.00); the noisy planner inserts extra reads before each reference call with probability 0.3 (7.2 versus 5.1 real calls per session). These are synthetic results, not agent measurements.
+\begin{table*}[!ht]\centering\scriptsize
+\caption{Best held-out balanced accuracy (\%) [95\% task-cluster interval] for offline versus online cover. Const.: constant framing on the agent--tool link. Calls+: cover calls per real call. Overflow: sessions whose real calls exceed the shape template or the cancellation target.}
+\begin{tabular}{@{}llrrrrrr@{}}\toprule
+Planner / cover timing & Cover & Dispatch C & Dispatch R & Const.\ C & Const.\ R & Calls+ & Overflow (\%)\\\midrule
+Offline (E6/E7) & cancel const2 & 76.9 [65,88] & 100.0 [100,100] & 64.9 [52,76] & 59.1 [49,68] & 0.35 & 0.0\\
+Offline (E6/E7) & decoy1 & 91.9 [90,94] & 85.9 [83,89] & 59.7 [52,67] & 56.8 [50,64] & 1.01 & 0.0\\
+Offline (E6/E7) & shape eq & 50.0 [50,50] & 54.5 [48,60] & 54.4 [47,62] & 50.0 [50,50] & 6.71 & 0.0\\
+\midrule
+Online, scripted & cancel const2 & 79.6 [68,90] & 100.0 [100,100] & 63.0 [51,74] & 59.1 [49,68] & 0.36 & 3.8\\
+Online, scripted & decoy1 & 92.3 [90,94] & 88.6 [86,91] & 51.2 [42,60] & 56.3 [49,63] & 0.98 & 0.0\\
+Online, scripted & shape eq & 63.8 [57,71] & 55.1 [49,61] & 57.5 [50,65] & 55.9 [50,62] & 6.73 & 0.0\\
+\midrule
+Online, noisy scripted & cancel const2 & 79.1 [67,89] & 100.0 [100,100] & 66.0 [56,75] & 60.0 [53,67] & 0.25 & 4.1\\
+Online, noisy scripted & decoy1 & 92.3 [90,94] & 88.6 [86,91] & 51.8 [43,61] & 56.2 [50,62] & 0.69 & 0.0\\
+Online, noisy scripted & shape eq & 55.9 [48,63] & 53.9 [48,60] & 60.5 [52,70] & 56.2 [49,63] & 4.52 & 20.9\\
+\bottomrule\end{tabular}\end{table*}

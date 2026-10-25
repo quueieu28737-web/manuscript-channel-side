@@ -42,7 +42,7 @@
 \maketitle
 
 \begin{abstract}
-Side-channel defenses for LLM serving and agent systems are evaluated at one operating point and then reused at another: a different emitter, tool dispatcher, model or observer. We ask which changes invalidate a measured defense result. Our unit of analysis is the evaluated result record, which binds an outcome to its target, receiver, intervention boundary, attacker fit, workload and cost object. A map of 82 study families, 39 source-bound records and a nine-item reuse audit show that the evidence deployment needs is the evidence least often reported: inference is bound for 17 of 20 mitigation families, but matched adaptation for only 2 of 11 applicable families and utility at the protected operating point for 3 of 17; no family reports an explicit hardware or temporal holdout. Four controlled experiments then exercise each boundary: upstream padding does not protect a re-emitting frontend, idempotent cover does not preserve state, timing exposes cover that length-only evaluation scores at chance, and defense calibration does not transfer as a scalar. Moving a calibrated defense from MiniMax to GLM raises cancellation balanced accuracy from 50.0\% to 70.8\% while lowering return from 67.3\% to 50.0\%: protection is exchanged between targets rather than uniformly degraded. We distill these results into a decision procedure: identify the boundary a deployment changes, require evidence bound on that boundary, and otherwise re-measure it.
+Side-channel defenses for LLM serving and agent systems are evaluated at one operating point and reused at another. We systematize which deployment changes require new evidence. Our unit is the evaluated result record: one outcome bound to its target, receiver, intervention, attacker fit, workload and cost object. Across 82 study families and 39 records, eight of 15 same-family pairs measure different primitives, targets or costs; only 17 of 133 related pairs support a source-qualified descriptive comparison. Record-local auditing further separates individually reported outcomes from joint evidence: two of 20 applicable mitigation records bind inference, utility and cost, sharing one configuration. Four controlled demonstrations connect these distinctions to emitter placement, stateful cover, calibration and timing. On GLM, importing MiniMax calibration changes cancellation/return balanced accuracy by $+20.8/-17.3$ points; paired customer intervals resolve the return reduction but not the cancellation increase. The imported calibration also increases byte cost from $15.95\times$ to $18.65\times$. These target-specific, costed contrasts turn transfer boundaries into an operational decision table: identify the changed boundary, retain the evidence that still applies, and test the missing binding before deployment.
 \end{abstract}
 
 \input{sections/01-introduction}
@@ -66,5 +66,5 @@ Side-channel defenses for LLM serving and agent systems are evaluated at one ope
 \input{sections/49-r9-record-index}
 \input{sections/50-r9-experiment-index}
 \input{sections/51-r9-extensions}
-\input{sections/56-holdout-matrix}
+\input{sections/59-holdout-compact}
 \end{document}

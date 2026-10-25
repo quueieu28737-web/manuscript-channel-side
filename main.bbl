@@ -664,6 +664,32 @@ E.~Rescorla, K.~Oku, N.~Sullivan, and C.~A. Wood, ``{TLS Encrypted Client
   \url{https://www.postgresql.org/docs/18/functions-sequence.html}, accessed
   October 24, 2026.
 
+\bibitem{anwar2026infernet}
+\BIBentryALTinterwordspacing
+R.~H. Anwar, J.~O. Weiss, T.~Alves, S.~Kundu, and M.~T. Raza, ``{InferNet}:
+  Exploiting aggregate {GPU} profiles as side-channel for {DNN} architecture
+  inference,'' \emph{ACM Transactions on AI Security and Privacy}, 2026.
+  [Online]. Available:
+  \url{https://rhasnainanwar.me/assets/pdf/2304.03388v2.pdf}
+\BIBentrySTDinterwordspacing
+
+\bibitem{cui2026symdiag}
+\BIBentryALTinterwordspacing
+W.~Cui, H.~Zhang, Y.~Huang, Q.~Li \emph{et~al.}, ``{SymDiag}: Explainable
+  diagnosis for {LLM} reasoning via neuro-symbolic verification,'' in
+  \emph{Proceedings of the 32nd ACM SIGKDD Conference on Knowledge Discovery
+  and Data Mining V.2}, 2026, consulted arXiv:2608.08786v1; archived access 18
+  October 2026. [Online]. Available: \url{https://arxiv.org/abs/2608.08786v1}
+\BIBentrySTDinterwordspacing
+
+\bibitem{lahjouji2026datacentric}
+\BIBentryALTinterwordspacing
+N.~Lahjouji and A.~G. Colaco, ``Agents that know too much: A data-centric
+  survey of privacy in {LLM} agents,'' \emph{arXiv preprint arXiv:2606.26627},
+  2026, consulted arXiv:2606.26627v1; archived access 19 October 2026.
+  [Online]. Available: \url{https://arxiv.org/abs/2606.26627v1}
+\BIBentrySTDinterwordspacing
+
 \bibitem{roh2026spillage}
 \BIBentryALTinterwordspacing
 J.~Roh, E.~Bagdasarian, H.~Haddadi, and A.~S. Shamsabadi, ``{SPILLage}: Agentic
@@ -712,46 +738,6 @@ L.~Wu, C.~Wang, T.~Liu, Y.~Zhao, and H.~Wang, ``From assistants to adversaries:
   \url{https://arxiv.org/abs/2505.12981}
 \BIBentrySTDinterwordspacing
 
-\bibitem{mudryi2025hidden}
-\BIBentryALTinterwordspacing
-M.~Mudryi, M.~Chaklosh, and G.~M. Wójcik, ``The hidden dangers of browsing
-  {AI} agents,'' \emph{arXiv preprint arXiv:2505.13076v1}, 2025, version 1.
-  [Online]. Available: \url{https://arxiv.org/abs/2505.13076}
-\BIBentrySTDinterwordspacing
-
-\bibitem{ukani2025browserprivacy}
-\BIBentryALTinterwordspacing
-A.~Ukani, H.~Haddadi, A.~S. Shamsabadi, and P.~Snyder, ``Privacy practices of
-  browser agents,'' \emph{arXiv preprint arXiv:2512.07725}, 2025. [Online].
-  Available: \url{https://arxiv.org/abs/2512.07725}
-\BIBentrySTDinterwordspacing
-
-\bibitem{anwar2026infernet}
-\BIBentryALTinterwordspacing
-R.~H. Anwar, J.~O. Weiss, T.~Alves, S.~Kundu, and M.~T. Raza, ``{InferNet}:
-  Exploiting aggregate {GPU} profiles as side-channel for {DNN} architecture
-  inference,'' \emph{ACM Transactions on AI Security and Privacy}, 2026.
-  [Online]. Available:
-  \url{https://rhasnainanwar.me/assets/pdf/2304.03388v2.pdf}
-\BIBentrySTDinterwordspacing
-
-\bibitem{cui2026symdiag}
-\BIBentryALTinterwordspacing
-W.~Cui, H.~Zhang, Y.~Huang, Q.~Li \emph{et~al.}, ``{SymDiag}: Explainable
-  diagnosis for {LLM} reasoning via neuro-symbolic verification,'' in
-  \emph{Proceedings of the 32nd ACM SIGKDD Conference on Knowledge Discovery
-  and Data Mining V.2}, 2026, consulted arXiv:2608.08786v1; archived access 18
-  October 2026. [Online]. Available: \url{https://arxiv.org/abs/2608.08786v1}
-\BIBentrySTDinterwordspacing
-
-\bibitem{lahjouji2026datacentric}
-\BIBentryALTinterwordspacing
-N.~Lahjouji and A.~G. Colaco, ``Agents that know too much: A data-centric
-  survey of privacy in {LLM} agents,'' \emph{arXiv preprint arXiv:2606.26627},
-  2026, consulted arXiv:2606.26627v1; archived access 19 October 2026.
-  [Online]. Available: \url{https://arxiv.org/abs/2606.26627v1}
-\BIBentrySTDinterwordspacing
-
 \bibitem{dpmemview2026}
 \BIBentryALTinterwordspacing
 J.~W. Kim, B.~Min, K.~Edemacu, Y.~Choi, S.-H. Cho, and B.~Jang, ``Dp-memview: A
@@ -761,6 +747,13 @@ J.~W. Kim, B.~Min, K.~Edemacu, Y.~Choi, S.-H. Cho, and B.~Jang, ``Dp-memview: A
   \url{https://arxiv.org/html/2608.03130v1}
 \BIBentrySTDinterwordspacing
 
+\bibitem{mudryi2025hidden}
+\BIBentryALTinterwordspacing
+M.~Mudryi, M.~Chaklosh, and G.~M. Wójcik, ``The hidden dangers of browsing
+  {AI} agents,'' \emph{arXiv preprint arXiv:2505.13076v1}, 2025, version 1.
+  [Online]. Available: \url{https://arxiv.org/abs/2505.13076}
+\BIBentrySTDinterwordspacing
+
 \bibitem{pricon2026}
 \BIBentryALTinterwordspacing
 Y.-M. Wang, Y.-X. Li, S.-L. Fan, Y.-H. Zheng, and T.-H. Chang, ``Ask without
@@ -768,6 +761,13 @@ Y.-M. Wang, Y.-X. Li, S.-L. Fan, Y.-H. Zheng, and T.-H. Chang, ``Ask without
   \emph{arXiv preprint arXiv:2609.32642v1}, 2026, consulted 2609.32642v1;
   source-scoped access 21 October 2026. [Online]. Available:
   \url{https://arxiv.org/html/2609.32642v1}
+\BIBentrySTDinterwordspacing
+
+\bibitem{ukani2025browserprivacy}
+\BIBentryALTinterwordspacing
+A.~Ukani, H.~Haddadi, A.~S. Shamsabadi, and P.~Snyder, ``Privacy practices of
+  browser agents,'' \emph{arXiv preprint arXiv:2512.07725}, 2025. [Online].
+  Available: \url{https://arxiv.org/abs/2512.07725}
 \BIBentrySTDinterwordspacing
 
 \bibitem{mondol2025scaar}

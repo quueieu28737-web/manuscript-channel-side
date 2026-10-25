@@ -1,0 +1,7 @@
+\begin{table}[ht]\centering\footnotesize
+\caption{Additional Luna study: all 75 runs per prompt, including task failures. Tool counts are dispatches to registered tools, including failed calls; tool errors also include unknown-name attempts. Wall-clock time covers model interaction and local execution. These are undefended planner runs, not live-cover replanning.}\label{tab:r7-luna-utility}
+\begin{tabular}{@{}lrrrrrr@{}}\toprule
+Prompt & Reward & \shortstack{Median / p95\\(s)} & \shortstack{Tool / model\\calls} & \shortstack{Tool\\errors} & \shortstack{Protocol\\errors} & \shortstack{Infra / timeout\\/ retry}\\\midrule
+Standard & 32/75 & 92.5 / 159.0 & 498 / 1530 & 36 & 3 & 0 / 0 / 0\\
+Rules & 33/75 & 92.5 / 175.5 & 505 / 1542 & 37 & 4 & 0 / 0 / 0\\
+\bottomrule\end{tabular}\end{table}

@@ -1,0 +1,17 @@
+\begin{table}[t]\centering\footnotesize
+\caption{E5: the same 48 saved responses emitted by a buffered or a token-streaming frontend (TLS~1.3 loopback captures). Bytes are relative to the unpadded emitter of the same kind. TTFB/Done: first and last delivered byte in token intervals (accounting proxy). Accuracies on 24 held-out outputs (12 topics); ID: closed-world top-1 identification among 48 responses (chance 2.1\%).}\label{tab:transfer-streaming}
+\setlength{\tabcolsep}{1.6pt}
+\begin{tabularx}{\columnwidth}{@{}Yrrrrrrr@{}}\toprule
+ & & & & \multicolumn{2}{c}{T1 acc.} & T3 & \\\cmidrule(lr){5-6}\cmidrule(lr){7-7}
+Emitter / framing & Bytes$\times$ & TTFB & Done & $D_0$ & $D_2$ & $D_2$ & ID\\\midrule
+Buffered, unpadded & 1.00 & 105 & 105 & 100.0 & 100.0 & 91.7 & 87.5\\
+Buffered, training cap & 2.19 & 105 & 105 & 50.0 & 50.0 & 50.0 & 2.1\\
+Stream, per token & 1.00 & 1 & 105 & 100.0 & 100.0 & 87.5 & 100.0\\
++ random event pad & 1.29 & 1 & 105 & 100.0 & 100.0 & 87.9 & 62.3\\
++ constant event size & 1.23 & 1 & 105 & 100.0 & 100.0 & 87.5 & 58.3\\
+8-token batches, const. & 0.21 & 8 & 105 & 50.0 & 100.0 & 87.5 & 20.8\\
+Const.\ events + count cap & 2.42 & 1 & 208 & 50.0 & 50.0 & 50.0 & 6.3\\
+\bottomrule\end{tabularx}
+\par\smallskip\raggedright
+$D_2$ is the best of total-byte threshold, record-count threshold and a logistic sequence model, each fitted on defended training outputs. Random padding: 10 socket-measured draws plus an independent profiling run. TLS~1.2 gives identical accuracies and byte ratios within 0.03. Tokens: o200k\_base proxy. Count cap: 208 (T1) and 88 (T3) events fitted on training outputs; 2/24 and 5/24 test outputs overflow it.
+\end{table}

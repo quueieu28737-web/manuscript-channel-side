@@ -1,0 +1,20 @@
+\begin{table*}[t]\centering\footnotesize
+\caption{Timing-aware E13/E14 comparison: standard prompt, 138 held-out episodes, 24 customers (5 cancel-positive, 7 return-positive). Each BA pair is cancel/return (\%). The common seven models permit a matched-suite comparison; the full union also retains all earlier attacks. All full-union two-target gates remain unconfirmed.}\label{tab:r7-controls}
+\begin{tabular}{@{}llrrrrrr@{}}\toprule
+View & Condition & Common-seven BA & Full-union BA & Upper BA & Bytes$\times$ & Calls$\times$ & RPC p95 (ms)\\\midrule
+M & Undefended & 84.3/76.9 & 91.7/86.4 & 100.0/97.2 & 1.00 & 1.00 & 15.4\\
+M & Per-call constant & 53.2/59.1 & 68.6/62.7 & 92.8/79.5 & 3.92 & 1.00 & 16.6\\
+M & Serial shadow & 50.0/52.9 & 61.4/53.4 & 71.4/65.8 & 15.11 & 3.83 & 26.2\\
+M & Two-in-flight shadow & 50.0/57.3 & 51.7/57.7 & 69.1/69.7 & 15.11 & 3.83 & 20.8\\
+M & Full tunnel, 2 ms & 59.9/55.2 & 62.5/55.2 & 70.2/62.0 & 125.71 & 1.00 & 56.4\\
+M & Full tunnel, 5 ms & 54.6/53.7 & 54.6/57.3 & 72.9/64.2 & 125.71 & 1.00 & 112.3\\
+S & Record buckets & 53.1/69.8 & 53.1/69.8 & 78.5/86.9 & 2.25 & 1.00 & --\\
+S & Tamaraw 40/12 ms & 55.3/55.3 & 55.3/55.3 & 68.7/64.4 & 12.15 & 1.00 & --\\
+S & Tamaraw 4/1.2 ms & 57.8/51.8 & 57.8/51.8 & 71.8/61.8 & 11.99 & 1.00 & --\\
+S & FRONT & 59.0/69.3 & 59.0/69.3 & 69.9/81.8 & 2.51 & 1.00 & --\\
+S & WTF-PAD adaptation & 51.9/62.7 & 51.9/62.7 & 64.1/79.6 & 1.88 & 1.00 & --\\
+S & WT random-donor & 50.0/56.7 & 50.0/56.7 & 67.0/67.8 & 2.04 & 1.00 & --\\
+S & FRONT, short calibration & 52.4/56.0 & 52.4/56.0 & 61.3/71.1 & 2.33 & 1.00 & --\\
+\bottomrule\end{tabular}
+\par\smallskip\raggedright M: measured local tool RPC on saved actions; S: offline traffic transformation. RPC p95 ends at the last real response, excluding LLM/WAN. S-row simulated spans are not RPC latency. Upper BA is the full-union 95\% bound. M unions contain 17--22 attacks; S unions contain the common seven. Ratios use prompt-specific undefended captures; S20/S23 give both prompts, interval and finish-time details. No row measures live defended-planner utility.
+\end{table*}

@@ -1,6 +1,8 @@
 \section{Shadow Cover: Deployment Paths and Observer Boundaries}\label{sec:shadow-deployment}
 This section translates the measured isolation mechanism into deployment contracts. The evidence is the existing E6/E7 reference-program study and E9--E12 real-agent trajectory analysis. The three paths below are engineering designs grounded in existing API primitives; they have not been evaluated as production integrations.
 
+\input{tables/r7-deployment}
+
 \subsection{What padding leaves visible, and what a tunnel changes}
 E7's no-cover bucketed framing leaves return BA at 73.9\%. E9's baseline per-call padding leaves cancellation/return BA at 66.1\%/55.5\%. A padded request and response still contribute observable records: invocation count, direction changes and ordered turns remain available even if individual sizes coincide. The joint E9 intervention reduces the two measured BAs to 50.0\% by combining call-profile shaping with constant framing. This identifies a useful intervention boundary; it does not prove that executing dummy tools is necessary for every network threat model.
 

@@ -1,0 +1,33 @@
+\begin{table}[t]\centering\footnotesize
+\caption{Retail state and observer results. State columns use 97 eligible tasks (291 units per position); observer columns use 49 held-out tasks (147 units). Percentages are task means across three seeds. B/A denotes before/after.}\label{tab:tau-cover-bridge}
+\setlength{\tabcolsep}{2.2pt}
+\begin{tabularx}{\columnwidth}{@{}Yrrrr@{}}\toprule
+\multicolumn{5}{@{}l}{\textbf{A. Distinct state scopes (reference execution as comparator)}}\\
+Policy / position & DB eq. & Account eq. & Object eq. & Mutated\\\midrule
+No cover B/A & 100.00 & 100.00 & 100.00 & 0.00\\
+Discard B/A & 100.00 & 100.00 & 100.00 & 0.00\\
+Shadow B/A & 100.00 & 100.00 & 100.00 & 0.00\\
+Read only B/A & 100.00 & 100.00 & 100.00 & 0.00\\
+Address self-write B/A & 100.00 & 100.00 & 100.00 & 0.00\\
+Item self-write B & 40.55 & 40.55 & 70.10 & 59.45\\
+Item self-write A & 67.70 & 67.70 & 97.25 & 32.30\\
+Instruction aware B & 35.05 & 35.05 & 78.35 & 70.10\\
+Instruction aware A & 46.39 & 46.39 & 89.69 & 53.61\\
+Other-account cancel B & 0.00 & 100.00 & 100.00 & 100.00\\
+Other-account cancel A & 0.00 & 100.00 & 100.00 & 100.00\\
+Blind cancel B & 11.34 & 11.34 & 62.54 & 100.00\\
+Blind cancel A & 41.24 & 41.24 & 92.44 & 58.76\\
+\midrule
+\multicolumn{5}{@{}l}{\textbf{B. Legacy learned observer versus allowed-view rules}}\\
+Policy / position & $D_0$ acc. & $D_2$ acc. & $D_2$ BA & Rule acc.\\\midrule
+Majority (all conditions) & 77.55 & 77.55 & 50.00 & ---\\
+Instruction aware B & 51.02 & 73.47 & 47.37 & 100.00\\
+Instruction aware A & 51.02 & 71.43 & 52.51 & 100.00\\
+Other-account cancel B & 22.45 & 71.43 & 46.05 & 100.00\\
+Other-account cancel A & 22.45 & 71.43 & 46.05 & 100.00\\
+Blind cancel B & 22.45 & 71.43 & 46.05 & 100.00\\
+Blind cancel A & 22.45 & 68.03 & 47.09 & 100.00\\
+\bottomrule\end{tabularx}
+\par\smallskip\raggedright
+DB eq.: equality of orders/users against reference (products are read-only), the native reward's database criterion, not an output-response/authorization check. Account eq.: all orders owned by the active user plus that user's record. Object eq.: objects changed by the reference program, not all accessed objects. Mutated: cover itself changes state. Other-account calls yield 0\% DB equality but 100\% active-account equality. BA: balanced accuracy. Rule: remove the known first/last cover call, then inspect cancellation verbs; blind/other-account cancellation also admits the $N_{\rm cancel}\ge2$ rule. Both rules attain 100\% acc./BA in their stated conditions. Other non-cancellation policies retain 100\% verb inference. Full intervals, AUROC and confusion matrices appear in Supplement S9 and the JSON artifact.
+\end{table}
