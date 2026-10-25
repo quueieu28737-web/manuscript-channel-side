@@ -1,0 +1,11 @@
+\begin{table}[t]\centering\footnotesize\setlength{\tabcolsep}{2pt}
+\caption{Exp 3: exploratory cross-fit comparison under the 11-attack union: all 690 episodes and 53 customers. Maximum network BA with customer-bootstrap 95\% intervals. Standard prompt unless marked Rules; byte/call ratios relative to undefended transport.}\label{tab:r5}
+\begin{tabular}{@{}lrrr@{}}\toprule
+Configuration & Cancel BA (\%) & Return BA (\%) & B$\times$/C$\times$\\\midrule
+Undefended & \mbox{91.7 [82.1, 100.0]} & \mbox{85.5 [76.7, 93.4]} & 1.0/1.0\\
+Joint constant & \mbox{60.5 [52.9, 72.4]} & \mbox{55.5 [51.8, 64.2]} & 19.8/5.0\\
+Joint buckets & \mbox{57.1 [50.0, 71.5]} & \mbox{52.7 [50.0, 61.7]} & 12.4/5.0\\
+Rules + buckets & \mbox{56.9 [50.2, 71.2]} & \mbox{52.7 [50.0, 65.0]} & 12.4/5.0\\
+\bottomrule\end{tabular}
+\par\smallskip\raggedright\footnotesize Joint constant is the frozen study's shadow-count plus constant-framing design, refit within each fold. Joint buckets changes framing to 1024-byte buckets. Every bootstrap draw reselects the complete maximum. Intervals condition on fitted predictions.
+\end{table}

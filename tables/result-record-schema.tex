@@ -1,0 +1,12 @@
+\begin{table}[t]\centering\footnotesize
+\caption{A single result record. Only fields relevant to the requested comparison must align; unavailable required fields remain unresolved.}\label{tab:result-record}
+\begin{tabularx}{\columnwidth}{@{}p{.22\columnwidth}Y@{}}\toprule
+Record field & Required meaning\\\midrule
+Source & Family/result ID, version, source locator, reading scope and hash.\\
+Target & Hidden property, inference goal and protection relation: confidentiality, attribution, human/agent distinction or authorized diagnosis.\\
+Receiver & Actual permission and released representation, including session/document linkage and any auxiliary inputs.\\
+Intervention & Where protection ends; whether edits affect stored traces, transmission or executed actions.\\
+Attacker & Fit/calibration condition, test population, training access and adaptation budget.\\
+Workload & Task, system, topology/hardware and grouping/holdout.\\
+Outcomes & Inference metric / denominator; objective or proxy utility; applicable cost object; uncertainty and field states.\\\bottomrule
+\end{tabularx}\end{table}
