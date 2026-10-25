@@ -75,6 +75,17 @@ H.~Jeong, M.~Teymoorianfard, A.~Kumar, A.~Houmansadr, and E.~Bagdasarian,
   \url{https://www.usenix.org/conference/usenixsecurity26/presentation/jeong}
 \BIBentrySTDinterwordspacing
 
+\bibitem{juarez2014critical}
+M.~Juarez, S.~Afroz, G.~Acar, C.~Diaz, and R.~Greenstadt, ``A critical
+  evaluation of website fingerprinting attacks,'' in \emph{Proceedings of the
+  ACM SIGSAC Conference on Computer and Communications Security}, 2014, pp.
+  263--274.
+
+\bibitem{mathews2023critical}
+N.~Mathews, J.~K. Holland, S.~E. Oh, M.~S. Rahman, N.~Hopper, and M.~Wright,
+  ``{SoK}: A critical evaluation of efficient website fingerprinting
+  defenses,'' in \emph{IEEE Symposium on Security and Privacy}, 2023.
+
 \bibitem{ghaleb2026codingfingerprint}
 \BIBentryALTinterwordspacing
 T.~A. Ghaleb, ``Fingerprinting {AI} coding agents on {GitHub},'' \emph{arXiv
@@ -587,12 +598,6 @@ X.~Cai, R.~Nithyanand, T.~Wang, R.~Johnson, and I.~Goldberg, ``A systematic
   \url{https://doi.org/10.1145/2660267.2660362}
 \BIBentrySTDinterwordspacing
 
-\bibitem{juarez2014critical}
-M.~Juarez, S.~Afroz, G.~Acar, C.~Diaz, and R.~Greenstadt, ``A critical
-  evaluation of website fingerprinting attacks,'' in \emph{Proceedings of the
-  ACM SIGSAC Conference on Computer and Communications Security}, 2014, pp.
-  263--274.
-
 \bibitem{juarez2016wtfpad}
 \BIBentryALTinterwordspacing
 M.~Juarez, M.~Imani, M.~Perry, C.~Diaz, and M.~Wright, ``Toward an efficient
@@ -608,19 +613,6 @@ T.~Wang and I.~Goldberg, ``Walkie-talkie: An efficient defense against passive
   \url{https://www.usenix.org/conference/usenixsecurity17/technical-sessions/presentation/wang-tao}
 \BIBentrySTDinterwordspacing
 
-\bibitem{mathews2023critical}
-N.~Mathews, J.~K. Holland, S.~E. Oh, M.~S. Rahman, N.~Hopper, and M.~Wright,
-  ``{SoK}: A critical evaluation of efficient website fingerprinting
-  defenses,'' in \emph{IEEE Symposium on Security and Privacy}, 2023.
-
-\bibitem{cover2006elements}
-\BIBentryALTinterwordspacing
-T.~M. Cover and J.~A. Thomas, \emph{Elements of Information Theory},
-  2nd~ed.\hskip 1em plus 0.5em minus 0.4em\relax Wiley-Interscience, 2006,
-  theorem 2.8.1, Data-processing inequality. [Online]. Available:
-  \url{https://onlinelibrary.wiley.com/doi/book/10.1002/047174882X}
-\BIBentrySTDinterwordspacing
-
 \bibitem{nazari2024llmfin}
 \BIBentryALTinterwordspacing
 N.~Nazari, F.~Xiang, C.~Fang, H.~M. Makrani, A.~Puri, K.~Patwari, H.~Sayadi,
@@ -628,6 +620,14 @@ N.~Nazari, F.~Xiang, C.~Fang, H.~M. Makrani, A.~Puri, K.~Patwari, H.~Sayadi,
   models fingerprinting attack on edge devices,'' in \emph{International
   Symposium on Quality Electronic Design}, 2024. [Online]. Available:
   \url{https://web.cs.ucdavis.edu/~srafatir/pages/documents/llm_fingerprint.pdf}
+\BIBentrySTDinterwordspacing
+
+\bibitem{cover2006elements}
+\BIBentryALTinterwordspacing
+T.~M. Cover and J.~A. Thomas, \emph{Elements of Information Theory},
+  2nd~ed.\hskip 1em plus 0.5em minus 0.4em\relax Wiley-Interscience, 2006,
+  theorem 2.8.1, Data-processing inequality. [Online]. Available:
+  \url{https://onlinelibrary.wiley.com/doi/book/10.1002/047174882X}
 \BIBentrySTDinterwordspacing
 
 \bibitem{rfc9347}

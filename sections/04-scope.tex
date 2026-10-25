@@ -1,5 +1,5 @@
-\section{Result Records, Comparability Rules and Validity}\label{sec:scope}
-The atomic unit of our repository is one \emph{evaluated result record}, rather than a whole paper or a single headline score. A result record binds a source version and locator to seven structured fields: Source, Target (and threat polarity Types~I--IV), Receiver projection, Intervention boundary, Attacker training/calibration ($D_0$: clean-condition fit; $D_2$: protected-condition fit), Workload/holdout, and Outcomes (inference metric, task/component utility, and cost object; Table~\ref{tab:result-record}). A study family contributes multiple records whenever it evaluates distinct execution modes (e.g., stored capture vs.\ live loopback in Dangol \cite{dangol2026workflow}), distinct mechanisms (e.g., $K$-prefix KV simulation vs.\ GPTCache semantic de-identification in Early Bird \cite{earlybird2025}), or separately scoped performance benchmarks (e.g., SafeKV \cite{chu2025safekv} and OTRO \cite{lee2026otro}).
+\section{Result Records and Comparability Rules}\label{sec:scope}
+The atomic unit of our systematization is one \emph{evaluated result record}, rather than a whole paper or a single headline score. A result record binds a source version and locator to seven structured fields: Source, Target (and threat polarity Types~I--IV), Receiver projection, Intervention boundary, Attacker training/calibration ($D_0$: clean-condition fit; $D_2$: protected-condition fit), Workload/holdout, and Outcomes (inference metric, task/component utility, and cost object; Table~\ref{tab:result-record}). A study family contributes multiple records whenever it evaluates distinct execution modes (e.g., stored capture vs.\ live loopback in Dangol \cite{dangol2026workflow}), distinct mechanisms (e.g., $K$-prefix KV simulation vs.\ GPTCache semantic de-identification in Early Bird \cite{earlybird2025}), or separately scoped performance benchmarks (e.g., SafeKV \cite{chu2025safekv} and OTRO \cite{lee2026otro}).
 \input{tables/result-record-schema}
 
 \paragraph{Indexing schema and comparison contracts}
@@ -8,5 +8,5 @@ The mnemonic \scope{} (Secret/target, Channel, Observer, Pipeline, Exploitation 
 \input{tables/result-lineage-example}
 
 
-\paragraph{Executable comparison rules}
-The record schema and comparison contracts precede the audit results. Table~\ref{tab:audit-rules} gives all nine operational rules and a shared evidence-status alphabet; Table~\ref{tab:family-audit} applies them to every mitigation family. Twenty-four constructed cases and seven mechanism checks exercise rule application in the artifact, while the source-linked cases in \S\ref{sec:discussion} explain the substantive comparison judgments.
+\paragraph{From contracts to an audit}
+Section~\ref{sec:defenses} operationalizes these contracts as nine reuse items with a shared evidence-status alphabet (Table~\ref{tab:audit-rules}) and applies them to every mitigation family (Table~\ref{tab:family-audit}).
