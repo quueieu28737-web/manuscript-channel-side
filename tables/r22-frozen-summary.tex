@@ -1,0 +1,11 @@
+\begin{table}[t]\centering\footnotesize\setlength{\tabcolsep}{3pt}
+\caption{Frozen Exp~3 comparison, standard prompt: 138 test episodes, 46 tasks, 24 held-out customers. BA (\%) uses the frozen suite; brackets give customer-cluster 95\% intervals.}\label{tab:r4-primary}
+\begin{tabularx}{\columnwidth}{@{}Yrrr@{}}\toprule
+Condition & Cancel BA & Return BA & B$\times$/C$\times$\\\midrule
+Undefended & 97.2 [90.0,100.0] & 94.0 [85.8,100.0] & 1.00/1.00\\
+Padding only & 66.1 [50.0,83.9] & 55.5 [50.0,73.0] & 4.02/1.00\\
+Shape only & 60.8 [55.4,71.3] & 51.9 [50.5,57.8] & 4.16/3.83\\
+Joint & 50.0 [50.0,60.6] & 50.0 [50.0,65.5] & 15.39/3.83\\\bottomrule
+\end{tabularx}
+\par\smallskip\raggedright B/C: byte/call ratios to raw transport. Joint replays the same real-agent decisions with isolated prefix cover and constant framing; planner utility is measured separately. Supplement S31 retains both prompts, original rewards and paired contrasts.
+\end{table}

@@ -7,6 +7,7 @@
 \usepackage{tabularx}
 \usepackage{array}
 \usepackage{graphicx}
+\usepackage{placeins}
 \usepackage{amsmath}
 \usepackage[dvipsnames,table]{xcolor}
 \usepackage{tikz}
@@ -42,7 +43,7 @@
 \maketitle
 
 \begin{abstract}
-Side-channel defenses for LLM serving and agent systems are evaluated at one operating point and reused at another. We systematize which deployment changes require new evidence. Our unit is the evaluated result record: one outcome bound to its target, receiver, intervention, attacker fit, workload and cost object. Across 82 study families and 39 records, eight of 15 same-family pairs measure different primitives, targets or costs; only 17 of 133 related pairs support a source-qualified descriptive comparison. Record-local auditing identifies one reusable inference--utility--cost package: CachePrune alone supports this join in the audited collection, through two records sharing one configuration. Four controlled demonstrations connect these distinctions to emitter placement, stateful cover, calibration and timing. On GLM, importing MiniMax calibration changes cancellation/return balanced accuracy by $+20.8/-17.3$ points and byte cost from $15.95\times$ to $18.65\times$. Customer-paired permutation tests do not resolve these directions after multiplicity correction. A 100-resample study puts local GLM return BA at 50.0--67.9\% (95\% sensitivity range), demonstrating the need for a local-recalibration baseline. Together these costed measurements turn evidence-transfer requirements into an operational decision table: identify the changed boundary, retain the evidence that still applies, and test the missing binding before deployment.
+Side-channel defenses for LLM serving and agent systems are evaluated at one operating point and reused at another. This SoK systematizes the evidence required to carry a defense result across deployment boundaries. Our unit is the evaluated result record: one outcome bound to its target, receiver, intervention, attacker fit, workload and cost object. Across 82 study families and 39 records, eight of 15 same-family pairs concern different primitives, targets or costs; only 17 of 133 related pairs support a source-qualified descriptive comparison. Record-local joins identify one configuration-linked inference--utility--cost package, supplied by two CachePrune records. A six-axis holdout map distinguishes evidence for input, model, topology, hardware, network and temporal changes. Four controlled studies support the synthesis with costed examples of emitter, execution-state, calibration and observation changes. Their results expose distinct re-evaluation needs: timing can recover signal missed by length-only attacks, while 100 training-customer resamples put local GLM return accuracy at 50.0--67.9\%, preventing a model-source interpretation of an unstable calibration contrast. We integrate the literature audit and these scoped measurements into a deployment decision table: identify the changed boundary, retain applicable evidence, and measure the missing binding before reusing a defense claim.
 \end{abstract}
 
 \input{sections/01-introduction}
@@ -53,6 +54,7 @@ Side-channel defenses for LLM serving and agent systems are evaluated at one ope
 \input{sections/28-fingerprint-dependencies}
 \input{sections/11-discussion}
 \input{sections/37-transfer-tests}
+\FloatBarrier
 \input{sections/10-open-challenges}
 \input{sections/12-conclusion}
 

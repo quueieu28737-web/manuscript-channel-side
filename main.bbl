@@ -630,14 +630,6 @@ T.~M. Cover and J.~A. Thomas, \emph{Elements of Information Theory},
   \url{https://onlinelibrary.wiley.com/doi/book/10.1002/047174882X}
 \BIBentrySTDinterwordspacing
 
-\bibitem{rfc9347}
-\BIBentryALTinterwordspacing
-C.~Hopps, ``{Aggregation and Fragmentation Mode for Encapsulating Security
-  Payload (ESP) and Its Use for IP Traffic Flow Security (IP-TFS)},'' RFC
-  Editor, Tech. Rep. RFC 9347, Jan. 2023. [Online]. Available:
-  \url{https://www.rfc-editor.org/rfc/rfc9347}
-\BIBentrySTDinterwordspacing
-
 \bibitem{rfc9849}
 \BIBentryALTinterwordspacing
 E.~Rescorla, K.~Oku, N.~Sullivan, and C.~A. Wood, ``{TLS Encrypted Client
