@@ -812,4 +812,22 @@ G.~Politis and E.~Pappas, ``What gradients add to text leakage in split
   October 2026. [Online]. Available: \url{https://arxiv.org/html/2610.04128v1}
 \BIBentrySTDinterwordspacing
 
+\bibitem{sirinam2018deep}
+P.~Sirinam, M.~Imani, M.~Juarez, and M.~Wright, ``Deep fingerprinting:
+  Undermining website fingerprinting defenses with deep learning,'' in
+  \emph{ACM CCS}, 2018, pp. 1928--1943.
+
+\bibitem{gong2021wfdefproxy}
+\BIBentryALTinterwordspacing
+J.~Gong, W.~Zhang, C.~Zhang, and T.~Wang, ``{WFDefProxy}: Modularly
+  implementing and empirically evaluating website fingerprinting defenses,''
+  arXiv:2111.12629v1, 2021. [Online]. Available:
+  \url{https://arxiv.org/abs/2111.12629v1}
+\BIBentrySTDinterwordspacing
+
+\bibitem{mathews2023critical}
+N.~Mathews, J.~K. Holland, S.~E. Oh, M.~S. Rahman, N.~Hopper, and M.~Wright,
+  ``{SoK}: A critical evaluation of efficient website fingerprinting
+  defenses,'' in \emph{IEEE Symposium on Security and Privacy}, 2023.
+
 \end{thebibliography}

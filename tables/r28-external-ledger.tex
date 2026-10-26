@@ -1,0 +1,22 @@
+{\footnotesize
+\begin{longtable}{@{}p{.07\textwidth}p{.17\textwidth}p{.30\textwidth}p{.385\textwidth}@{}}
+\caption{Complete external retrospective frame. DF: Sirinam et al.; WFDP: WFDefProxy; M: Mathews et al. Locators refer to the follow-up publication. R items identify requested bindings, not recoded scores for the original defense paper.}\label{tab:r28-external-ledger}\\
+\toprule ID & Defense / source locator & Published outcome & Binding and measurement decision\\\midrule\endfirsthead
+\toprule ID & Defense / source locator & Published outcome & Binding and measurement decision\\\midrule\endhead
+\bottomrule\endfoot
+B01 & WTF-PAD; DF~\cite{sirinam2018deep}, 5.4 / Table 3 & DF accuracy 90.7\%; strongest prior comparator 69.0\% in the same table. & R4,R7: Fit the stronger attacker on the protected distribution; retain each attack-specific result.\\
+B02 & Walkie-Talkie; DF~\cite{sirinam2018deep}, 5.4 / Table 3; 5.8 & DF accuracy 49.7\% under symmetric collisions; asymmetric collisions give 87.2\%. & R2,R4,R7: Keep the symmetric-pairing condition; a new attacker alone does not imply failure.\\
+B03 & FRONT; WFDP~\cite{gong2021wfdefproxy}, 6.2 / Table 10 & Same-parameter data overhead 52\% to 75\%; DF TPR 72.06\% to 42.79\% (FPR 2.16\% to 2.49\%). & R3,R9: Measure restart behavior and live cost; preserve the improved live security outcome.\\
+B04 & Tamaraw; WFDP~\cite{gong2021wfdefproxy}, 6.1 / Table 9 & Optimistic/pessimistic/live data overhead 207/224/179\%; time 19/26/21\%; DF TPR 2.59/2.74/6.43\%. & R3,R9: Bind the soft-stop implementation and costs; retain the low-TPR live result.\\
+B05 & Random-WT; WFDP~\cite{gong2021wfdefproxy}, 6.3 / Table 11; 4.4 & DF TPR 87.47\% to 83.41\%; data overhead 96\% to 88\%; time overhead 44\% to 23\%. & R3,R9: Price the live burst schedule; Random-WT is not symmetric Walkie-Talkie.\\
+B06 & DynaFlow; M~\cite{mathews2023critical}, IV-F; Table II & Closed-world attack accuracy 38.3\%. & R2,R4,R6: Test IAT-switch features; keep the workload and subpage composition.\\
+B07 & BiMorphing; M~\cite{mathews2023critical}, IV-A; Table II & Closed-world attack accuracy 81.0\%. & R4,R6: Refit a deep attacker; do not pool different datasets.\\
+B08 & DFD; M~\cite{mathews2023critical}, IV-D; Table II & Closed-world attack accuracy 94.2\%. & R2,R4,R5: Match perturbation variation in protected training/testing and include timing.\\
+B09 & FRONT; M~\cite{mathews2023critical}, IV-G; Table II & Closed-world attack accuracy 81.8\%. & R4,R6: Fit with defended variants and the staged training schedule.\\
+B10 & HyWF; M~\cite{mathews2023critical}, IV-B; Table II & Closed-world attack accuracy 56.8\%. & R2,R4,R6: Bind one-split visibility and augmented protected fitting.\\
+B11 & TrafficSliver; M~\cite{mathews2023critical}, IV-B; Table II & Closed-world attack accuracy 5.4\%. & R2,R3,R4,R6: Retain BE-TS one-split results; do not inherit them for an all-split observer.\\
+B12 & Spring; M~\cite{mathews2023critical}, IV-C; Table II & Closed-world attack accuracy 80.0\%. & R2,R4: Include rounded timing and multiple protected training variants.\\
+B13 & Interspace; M~\cite{mathews2023critical}, IV-C; Table II & Closed-world attack accuracy 76.1\%. & R2,R4: Include rounded timing and multiple protected training variants.\\
+B14 & BANP; M~\cite{mathews2023critical}, IV-E; Table II & Closed-world attack accuracy 89.6\%. & R4,R5: Refit after generating perturbations with the accessible defense generator.\\
+B15 & DynaFlow; M~\cite{mathews2023critical}, Appendix B & Live accuracy 63.6\%; mean per-site bandwidth/time overhead 123\%/379\%; different URLs and crawler. & R3,R6,R9: Keep a separate live record; simulation and live numbers are not a matched causal contrast.\\
+\end{longtable}}

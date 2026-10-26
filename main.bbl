@@ -630,6 +630,19 @@ T.~M. Cover and J.~A. Thomas, \emph{Elements of Information Theory},
   \url{https://onlinelibrary.wiley.com/doi/book/10.1002/047174882X}
 \BIBentrySTDinterwordspacing
 
+\bibitem{sirinam2018deep}
+P.~Sirinam, M.~Imani, M.~Juarez, and M.~Wright, ``Deep fingerprinting:
+  Undermining website fingerprinting defenses with deep learning,'' in
+  \emph{ACM CCS}, 2018, pp. 1928--1943.
+
+\bibitem{gong2021wfdefproxy}
+\BIBentryALTinterwordspacing
+J.~Gong, W.~Zhang, C.~Zhang, and T.~Wang, ``{WFDefProxy}: Modularly
+  implementing and empirically evaluating website fingerprinting defenses,''
+  arXiv:2111.12629v1, 2021. [Online]. Available:
+  \url{https://arxiv.org/abs/2111.12629v1}
+\BIBentrySTDinterwordspacing
+
 \bibitem{rfc9849}
 \BIBentryALTinterwordspacing
 E.~Rescorla, K.~Oku, N.~Sullivan, and C.~A. Wood, ``{TLS Encrypted Client
