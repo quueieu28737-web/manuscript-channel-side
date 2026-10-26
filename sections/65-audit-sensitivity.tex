@@ -1,0 +1,111 @@
+\section{Audit Accounting and Judgment Sensitivity}\label{app:audit-sensitivity}
+This deterministic reanalysis uses the archived 39-record/351-cell audit and all 741 pair judgments. It adds no sources, model calls, customers or independent recoding. The original labels, cohort definitions, source locators and rationales are unchanged. The released tables record both input hashes and every query membership. The goal is to expose which choices support a finite-corpus statement and which additional evidence would change it.
+
+\subsection{Common starting set and query masks}
+There are 33 mitigation records from 20 families and six contextual controls. Every join starts from the same 33; a required inapplicable item excludes that record from that query only. Partial, unverified and unreported bindings stay eligible. All required items must be B to count as bound. Table~\ref{tab:r25-membership} makes this rule visible record by record; the full cell table in Section~\ref{app:record-joins} supplies source locators and rationales. Inference--utility and inference--cost each admit 22 records but not the same set. Triple-join eligibility covers 20 records, 14 families and 19 archived configuration groups; its two positive records reduce to one CachePrune configuration. Configuration identifiers deduplicate the archived packages and do not imply common sampled requests.
+
+\subsection{Status-rule stress checks}
+Table~\ref{tab:r25-relaxation} varies accepted statuses while holding applicability, cohorts and records fixed. B is the supported result. The other columns deliberately weaken that standard: accepting P tests the effect of treating partial evidence as sufficient, and accepting ? treats an unverified binding as if satisfied. P may encode a known missing or mismatched operating-point link, so these stress counts are not additional supported joins or a recoding of sources. U remains unreported in these columns. If U is also mechanically accepted, every eligible row passes by construction; the released all-status column documents this vacuous extreme rather than presenting it as evidence.
+
+\begin{table}[ht]\centering\small
+\caption{Status-rule stress counts, with applicability held fixed. Only the B column denotes supported joins.}\label{tab:r25-relaxation}
+\begin{tabular}{@{}lrrrrr@{}}\toprule
+Query & Eligible & B & B or P & B or ? & B or P or ?\\\midrule
+Inference + utility & 22 & 4 & 6 & 4 & 6\\
+Inference + cost & 22 & 5 & 11 & 5 & 11\\
+Matched adaptation + inference & 17 & 2 & 2 & 15 & 16\\
+Inference + utility + cost & 20 & 2 & 2 & 2 & 2\\
+All five bindings & 14 & 0 & 0 & 0 & 0\\
+\bottomrule\end{tabular}\end{table}
+The triple join is unchanged under these relaxations, whereas matched adaptation--inference rises from 2 to 15 when ? is accepted, and to 16 when P is also accepted. The distinction matters operationally: the latter query needs resolution of fit/test bindings, while the triple join needs presently unreported outcome bindings. Stability to P/? does not authenticate the source interpretation or establish that additional unreported evidence does not exist.
+
+\subsection{Pair scope and family dependence}
+The 133 related pairs belong to six mechanism-question cohorts (Table~\ref{tab:r25-cohorts}). The other 608 are outside those declared queries, not failed comparisons. Resolving all 11 uncertain related judgments as compatible gives 28 compatible pairs instead of 17; retaining them as unresolved leaves 17. The 105 known mismatches stay fixed. This is a conditional completion range within the stated cohorts, not robustness to every alternative cohort construction.
+
+\begin{table}[ht]\centering\small
+\caption{Exhaustive related-pair accounting, stratified by declared question.}\label{tab:r25-cohorts}
+\begin{tabular}{@{}lrrrr@{}}\toprule
+Cohort & Pairs & Compatible & Mismatch & Unresolved\\\midrule
+behavioral humanization & 3 & 1 & 2 & 0\\
+cache service & 45 & 2 & 37 & 6\\
+fixed instruction & 1 & 0 & 0 & 1\\
+generator fingerprint & 3 & 3 & 0 & 0\\
+local memory & 15 & 0 & 14 & 1\\
+traffic envelope & 66 & 11 & 52 & 3\\
+\bottomrule\end{tabular}\end{table}
+The 15 same-family pairs arise from 11 families, and their eight mismatches occur in six families. Pairs share records; families with more records contribute more pairs. Table~\ref{tab:r25-deletions} removes every family and all its incident pairs, one family at a time. Related-pair compatibility spans 7.8--15.2\%; the same-family mismatch fraction spans 5/12--8/12. Deleting KVGov removes three mismatches, while deleting Whisper Leak removes three compatible pairs. Neither operation adds independent observations. We report descriptive counts and dependency checks rather than binomial confidence intervals over dependent pairs.
+
+For the triple join, removing CachePrune leaves zero bound records among 18 eligible records. Removing any other mitigation family retains the two records and their single configuration. The archived \texttt{joint-leave-family-out.csv} gives all 100 query-by-family deletions, and \texttt{query-membership.csv} gives all 165 query-by-record decisions. These diagnostics expose concentration and rule dependence; they do not measure independent coder agreement or validate the framework by counting its own outputs.
+
+\clearpage
+\begin{table}[ht]\centering\small
+\caption{All 33 mitigation records and their five query memberships. B: eligible and bound; E: eligible but not bound; x with item numbers: excluded because those required items are inapplicable. IU=R7/R8; IC=R7/R9; AI=R4/R5/R7; IUC=R7/R8/R9; All=R4/R5/R7/R8/R9. Source rationales are in Section~\ref{app:record-joins}.}\label{tab:r25-membership}
+\begin{tabular}{@{}lccccc@{}}\toprule
+Record & IU & IC & AI & IUC & All\\\midrule
+UI-delay-offline & E & x9 & B & x9 & x9\\
+WRA-decoy-execution & E & E & x4,5 & E & x4,5\\
+NET-upstream-local & E & E & E & E & E\\
+NET-dummy-padding-simulation & E & E & E & E & E\\
+EARLY-K-calibration-oracle & E & E & E & E & E\\
+EARLY-semantic-deidentification & x7 & x7 & x4,5,7 & x7 & x4,5,7\\
+WHISPER-randompadding-capture & E & E & E & E & E\\
+WHISPER-batching-replay & E & E & E & E & E\\
+WHISPER-injection-replay & E & E & E & E & E\\
+SPLICE-CTBF-signal & E & E & x4,5 & E & x4,5\\
+SPLICE-QCP-cost & x7 & x7 & x4,5,7 & x7 & x4,5,7\\
+TIME-length-instruction & E & E & E & E & E\\
+TIME-padding-estimate & x7 & x7 & x4,5,7 & x7 & x4,5,7\\
+SPEC-padding-REST & x8 & B & E & x8 & x8\\
+DANGOL-capture & E & B & B & E & E\\
+DANGOL-livebinding & E & B & E & E & E\\
+SAFE-post-trigger & E & E & x4,5 & E & x4,5\\
+AHB-online-executed & B & E & E & E & E\\
+AHB-offline & E & x9 & E & x9 & x9\\
+KVGOV-partialflush-sim & E & E & x4,5 & E & x4,5\\
+KVGOV-hardware-gap & x7 & x7,9 & x4,5,7 & x7,9 & x4,5,7,9\\
+KVGOV-HMAC-cost & x7 & x7 & x4,5,7 & x7 & x4,5,7\\
+TRAFFIC-prompt-reformulation & E & E & E & E & E\\
+TRAFFIC-temperature & E & E & E & E & E\\
+CARLINI-fixed-rate & x7 & x7 & x4,5,7 & x7 & x4,5,7\\
+GAO-zero-copy-off & x7,8 & x7 & x4,5,7 & x7,8 & x4,5,7,8\\
+TDXRAY-oblivious-map & x7 & x7 & x4,5,7 & x7 & x4,5,7\\
+CACHEPRUNE-selective & B & B & x4,5 & B & x4,5\\
+CACHEPRUNE-context & B & B & x4,5 & B & x4,5\\
+OTRO-unpadded & x7,8 & x7 & x4,5,7 & x7,8 & x4,5,7,8\\
+OTRO-epochpad & x8 & E & x4,5 & x8 & x4,5,8\\
+SPARLEAK-replacement & B & E & E & E & E\\
+SHAPE-padding-estimate & E & E & E & E & E\\
+\bottomrule\end{tabular}\end{table}
+
+\clearpage
+\begin{table}[ht]\centering\small
+\caption{All 26 leave-one-family-out pair inventories. C: compatible related pairs; M: same-family mismatches. Counts reuse remaining records and are not sampling replicates.}\label{tab:r25-deletions}
+\begin{tabular}{@{}lrrrr@{}}\toprule
+Removed family & Related pairs & C & Same-family pairs & M\\\midrule
+KVGov~\cite{addagada2026kvgov} & 109 & 16 & 12 & 5\\
+LLMs Have Rhythm~\cite{alhazbi2025rhythm} & 131 & 15 & 15 & 8\\
+Remote timing~\cite{carlini2024remote} & 122 & 17 & 15 & 8\\
+SparLeak~\cite{chen2026sparleak} & 128 & 17 & 15 & 8\\
+SafeKV~\cite{chu2025safekv} & 124 & 16 & 15 & 8\\
+Dangol workflow~\cite{dangol2026workflow} & 112 & 16 & 14 & 8\\
+ML privacy channels~\cite{debenedetti2024privacy} & 133 & 17 & 15 & 8\\
+Early Bird~\cite{earlybird2025} & 116 & 16 & 14 & 7\\
+I Know What You Said~\cite{gao2025iknow} & 128 & 17 & 15 & 8\\
+SIGLEAK~\cite{geng2026sigleak} & 132 & 17 & 15 & 8\\
+Behind Bars~\cite{gu2026behindbars} & 133 & 17 & 15 & 8\\
+Shape and Substance~\cite{hadad2026shape} & 128 & 17 & 15 & 8\\
+TDXRay~\cite{hornetz2026tdxray} & 128 & 17 & 15 & 8\\
+WRA~\cite{jeong2026wra} & 122 & 17 & 15 & 8\\
+OTRO~\cite{lee2026otro} & 124 & 17 & 14 & 7\\
+NetEcho~\cite{netecho2025} & 112 & 10 & 14 & 8\\
+Cloud traffic benchmark~\cite{pouryousef2026traffic} & 130 & 14 & 14 & 8\\
+AgentTell~\cite{shahriar2026agenttell} & 132 & 17 & 15 & 8\\
+SpliceLeak~\cite{spliceleak2026} & 116 & 17 & 14 & 7\\
+Time Will Tell~\cite{timewilltell2024} & 112 & 17 & 14 & 7\\
+UI Traces~\cite{uitraces2026} & 131 & 17 & 15 & 8\\
+FP-Agent~\cite{wang2026fpagent} & 133 & 17 & 15 & 8\\
+Speculative decoding~\cite{wei2024speculation} & 122 & 17 & 15 & 8\\
+Whisper Leak~\cite{whisperleak2025} & 103 & 8 & 12 & 8\\
+CachePrune~\cite{wu2026cacheprune} & 116 & 16 & 14 & 7\\
+AHB~\cite{zhu2026turing} & 130 & 16 & 14 & 8\\
+\bottomrule\end{tabular}\end{table}

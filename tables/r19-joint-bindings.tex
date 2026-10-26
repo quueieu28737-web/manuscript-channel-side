@@ -1,12 +1,12 @@
 \begin{table}[t]\centering\footnotesize
-\caption{Configuration-linked evidence for reuse queries; contextual controls excluded. Counts describe this collection, not paper quality or field prevalence.}\label{tab:r19-joint}
-\begin{tabularx}{\columnwidth}{@{}Yrrr@{}}\toprule
-Binding & Records & Families & Configs\\\midrule
-Inference + utility & 4/22 & 3 & 3\\
-Inference + cost & 5/22 & 3 & 4\\
-Matched adaptation + inference & 2/17 & 2 & 2\\
-Inference + utility + cost & 2/20 & 1 & 1\\
-All five bindings & 0/14 & 0 & 0\\
+\caption{Query accounting from the same 33 mitigation records. Out: at least one required item is inapplicable; Eligible: remaining records; Bound: all required items are B.}\label{tab:r19-joint}
+\begin{tabularx}{\columnwidth}{@{}Yrrrr@{}}\toprule
+Query & Out & Eligible & Bound & Fam./Cfg.\\\midrule
+Inference + utility & 11 & 22 & 4 & 3/3\\
+Inference + cost & 11 & 22 & 5 & 3/4\\
+Matched adaptation + inference & 16 & 17 & 2 & 2/2\\
+Inference + utility + cost & 13 & 20 & 2 & 1/1\\
+All five bindings & 19 & 14 & 0 & 0/0\\
 \bottomrule\end{tabularx}
-\par\smallskip\raggedright Joins link configurations, not necessarily identical requests or paired effects. The 2/20 row is CachePrune alone: two outcomes, one family/configuration. Eligible sources need not claim the combined result. Cost retains its payload/capture/wire scope. The supplement lists all 351 cells and positive identities.
+\par\smallskip\raggedright Required items by row: R7/R8; R7/R9; R4/R5/R7; R7/R8/R9; all five. The two sets of 22 eligible records differ. Six contextual controls are outside the starting 33. Fam./Cfg.\ deduplicates bound records. CachePrune supplies the triple join: two outcomes at one configuration. Joins preserve cost scope and do not imply paired effects. S33 lists every exclusion and status.
 \end{table}

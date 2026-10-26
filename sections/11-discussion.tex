@@ -1,4 +1,5 @@
 \section{Synthesis: From Evidence to Reuse Decisions}\label{sec:discussion}
+\input{tables/r19-deployment-decisions}
 The census (\S\ref{sec:defenses}) covers all 39 records and the holdout matrix (\S\ref{sec:evaluation}) all 82 families. We now select three examples by the \emph{comparison decision} they expose, not by effect size: a changed receiving path, cover with different state effects, and an adaptation/cost mismatch within a named mechanism. Each exposes a different reason why a deployment conclusion cannot be read directly from a mechanism name.
 
 \subsection{Case 1: bind the final target-bearing emitter}
@@ -19,4 +20,3 @@ A matched adaptation contrast compares clean-trained $D_0$ and defense-trained $
 Start with the intended receiver, protected outcome and intervention. Record-level comparison identifies whether the cited result measures that object. Configuration-level joint binding identifies which inference, utility and cost outcomes share its configuration. Deployment decisions use the holdout matrix to identify evidence for the proposed change and specify the remaining measurement. Table~\ref{tab:r19-decisions} makes these outputs operational: a new emitter needs a receiver-specific capture, writes need state/authorization checks, source-calibration comparisons need a local fitting-variability control, and an online scheduler needs its own planner utility and latency measurement. The calibration control follows from the comparison design: changing the source can also change the finite training sample used to fit the defense.
 
 Appendix~\ref{app:case-study} applies this procedure in one compact case study. The literature audit and the decision table establish the SoK contribution; the case study provides a worked application with separately scoped measurements.
-\input{tables/r19-deployment-decisions}
