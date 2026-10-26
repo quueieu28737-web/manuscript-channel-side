@@ -34,7 +34,7 @@ bound=[sum(v[j]=='B' for v in agg.values()) for j in range(9)]
 app=[sum(v[j]!='--' for v in agg.values()) for j in range(9)]
 text+=r'\midrule Bound & '+' & '.join(map(str,bound))+r'\\'+'\nApplicable & '+' & '.join(map(str,app))+r'\\'+'\n'
 text+=r'''\bottomrule\end{tabularx}
-\par\smallskip\raggedright \textbf{B}: bound; \textbf{P}: partial; U: unreported in inspected scope; ?: unverified binding; --: inapplicable. Table~\ref{tab:audit-rules} defines R1--R9. Each cell is generated from the scoped records: B if any record is B, otherwise P, ?, U, A, then --. This availability summary retains a witness for every B; separate cells can refer to different configurations. NetEcho and Early Bird retain unresolved record-specific R5 bindings. Dangol's B in R5 is supported by stored capture; its live binding remains unresolved. S36 records the projection and its 13 corrections.
+\par\smallskip\raggedright \textbf{B}: bound; \textbf{P}: partial; U: unreported in inspected scope; ?: unverified binding; --: inapplicable. Table~\ref{tab:audit-rules} defines R1--R9. Each cell is generated from records: B if any is B, otherwise P, ?, U, A, then --. Different columns can refer to different configurations. Table~\ref{tab:r33-crosswalk} lists every inference/cost projection and its record identities. The 13 prior family-display corrections changed aggregation, not the underlying record judgments (S36).
 \end{table}
 '''
 text=text.replace('Per-family evidence bindings for all 20 evaluated-mitigation families.','Record-derived evidence availability for all 20 evaluated-mitigation families.')

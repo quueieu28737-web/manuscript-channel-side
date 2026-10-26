@@ -1,0 +1,83 @@
+id,citation_key,classification,task_input_user,model,harness_topology,hardware,network_load,time,interpretation,source_url,source_locators
+F01,agentprint2025,core,?,?,?,?,?,?,Random trace splits; prompt grouping unresolved,https://arxiv.org/html/2510.07176v1,III; V; Appendix D.A–D.D; Fig. 11
+F02,uitraces2026,core,V,V,V,?,?,?,Cross-task/site comparisons; exact-question overlap remains,https://arxiv.org/abs/2605.14786,"3–4; 6.1; Table1; Fig.5/PDFp8; A.5/B.1/B.2; Table13/PDFp25; Table14; pinned trace_analyzer.py:81–97,449–498; plot_delay_attack.py; frames_sampled_split_record.json"
+F03,jeong2026wra,core,H,?,?,?,?,?,Prompt tests and synthetic persona split; version reconciliation open,https://www.usenix.org/conference/usenixsecurity26/presentation/jeong,3.1; 6.1; 8–9; Tables 1/8/10/11; Appendix C.1–C.3
+F04,wang2026fpagent,core,H,?,X,?,?,?,Separate task holdout; visitor/host separation unresolved,https://arxiv.org/html/2605.01247v1,4.1–4.7; Tables 2/4; 6.1–6.2; Appendix E/Table 8
+F05,weiss2024prompt,core,H,?,V,?,V,V,OOD inputs; browser/API and day/night buffering controls,https://www.usenix.org/conference/usenixsecurity24/presentation/weiss,5.1–5.3; Fig. 4; Tables 2–3
+F06,promptpeek2025,core,V,?,?,?,V,?,Candidate-prior and simulated request-load sweeps,https://www.ndss-symposium.org/ndss-paper/i-know-what-you-asked-prompt-leakage-via-kv-cache-sharing-in-multi-tenant-llm-serving/,III.B; VI.A–VI.C; Table II
+F07,netecho2025,core,V,?,V,?,?,?,Deployment/frontend scenarios; independent split binding unresolved,https://arxiv.org/abs/2510.25472,III.A; Table III; VI.A–VI.B/Table VI
+F08,earlybird2025,core,?,V,?,?,?,?,Provider observations and candidate calibration; grouped split unresolved,https://ieeexplore.ieee.org/document/11206380/,arXiv 2409.20002: II.C; IV.A; V.A; Tables IV–V
+F09,inputsnatch2024,core,H,?,?,?,?,?,Held-out and generated target prompts; candidate-prior dependence,https://link.springer.com/chapter/10.1007/978-981-92-4805-6_32,arXiv 2411.18191: 3.2; 4.3–4.4; Tables 2/4
+F10,whisperleak2025,core,H,V,?,?,?,?,Unique target-prompt holdout; model/provider comparisons,https://arxiv.org/abs/2511.03675,3.1; 3 classifier/split discussion; 4.1–4.2; Table 1; 6
+F11,spillbeans2025,core,V,?,?,?,?,?,Exposure/monitor sweeps; independent capture grouping unresolved,https://arxiv.org/abs/2505.00817,Threat model; 5/Table 1; 6.1
+F12,spliceleak2026,core,V,?,?,?,?,?,Bounded cloze tasks and chunk/candidate coverage,https://arxiv.org/abs/2606.21842,Threat model; VII.A–VII.C; Figs. 7–8
+F13,timewilltell2024,core,?,?,?,?,V,V,Concurrent network/load profiling; short-window recalibration,https://arxiv.org/abs/2412.15431,3; 4.1–4.4; 6.2–6.5; Tables 3–4
+F14,prompt_echo2026,core,H,V,?,?,?,?,Overlap-filtered prompts; models evaluated separately,https://www.usenix.org/conference/usenixsecurity26/presentation/li-sijia,3.1; 5.1–5.3; Tables 2–3
+F15,gao2025iknow,core,H,V,V,V,?,?,Prompt overlap filtering; model/hardware/framework comparisons,https://www.usenix.org/conference/usenixsecurity25/presentation/gao-zibo,Abstract; Introduction; 3.1; 5; 6.1/Table1 (printed1658/PDF11); 6.4–6.5 scope; 12; Appendices A/B/F
+F16,wei2024speculation,core,H,?,?,?,V,?,New traces and OOD paraphrases; remote/load conditions,https://arxiv.org/abs/2411.01076v4,v4: 4.3–4.8; Table 1; 6.1
+F17,gu2026behindbars,core,?,V,?,V,?,?,Model identification CV; additional hardware evaluation,https://www.usenix.org/conference/usenixsecurity26/presentation/gu-cheng,Table1; 6.1–6.3; Table7 (printed5383/PDF12); 7.1/7.3; Open Science
+F18,gu2025promptcaching,core,?,V,?,?,?,V,Provider survey over two months; historical exposure only,https://proceedings.mlr.press/v267/gu25b.html,3.1–3.2; 4.1–4.2; Tables 1–2
+F19,kang2026whoseagent,core,?,?,?,?,?,?,Trial split; task/site/version independence unresolved,https://arxiv.org/html/2606.20910v1,"4,6.1–6.3; Tables4–5; Fig7;7"
+F20,dangol2026workflow,core,?,?,H,?,?,?,Leave-composition-out; stored and live populations separated,https://arxiv.org/html/2606.07150v3,"3,9.1,9.7–9.14;Table6"
+F21,abubakar2026contention,core,?,?,V,?,V,?,Serving-stack and interleaved-load controls,https://arxiv.org/html/2609.06853v1,"IV,IX,TableVII,X,XIV–XVII"
+F22,shahriar2026agenttell,core,V,?,?,?,V,?,Secret rotation; cold/loaded and equal-completability controls,https://arxiv.org/html/2609.32915v1,"3–5;AppendixD.2–D.3,Table8;AppendixE"
+F23,pouryousef2026traffic,core,?,?,H,?,?,?,Topology shift distinct from feature-view restriction,https://arxiv.org/html/2609.31877v1,"III,IV-A–C,V-A TablesI–III,V-B Fig8,VI"
+F24,carlini2024remote,core,?,V,?,?,?,V,Month-long observations; method/model changes confounded,https://arxiv.org/html/2410.17175v1,"III,IV-B–C,V-D–E,VI-C,VII,Figs8,10,12"
+F25,song2026personafingerprint,core,?,?,X,?,?,?,Pooled sites; leave-site-out not verified,https://arxiv.org/html/2605.15962v1,"2,3.1–3.4,4,5.1,5.5–5.8"
+F26,hornetz2026tdxray,core,?,?,?,?,?,?,Tokenizer-localized LLM case; AES result separate,https://tdxray.cpusec.org/assets/tdxray_sp26.pdf,3;5.1–5.4;6.1–6.2
+F27,weiss2026detokenization,core,?,?,X,?,?,?,Explicit same-instance profiling restriction,https://arxiv.org/html/2609.06674v1,"[""3.1 and 3.3: shared-code, SMT and same-instance profiling"",""5.1: dataset-aligned main evaluation"",""5.6: live OpenClaw subset, first segments and judge-ASR"",""6: process-specific limitation; proposed mitigations"",""Appendix A: public code link, exploit components withheld""]"
+F28,roh2026spillage,adjacent,V,?,?,?,?,?,Task-irrelevance and selected-site evaluation,https://arxiv.org/html/2602.13516v1,"4.1–4.2 (evaluator inputs), 5.4, Table 4, 6.2"
+F29,yu2026plantwin,adjacent,V,?,?,?,?,?,Template candidate pool; production transfer unresolved,https://arxiv.org/html/2603.18377v2,"2.2,3.2,4.2–4.4,5.1–5.9,6.1"
+F30,xu2026sicc,adjacent,?,?,?,?,?,?,Authorized-view theorem; empirical shift binding unresolved,https://arxiv.org/html/2609.26076v1,"Theorem 1; Experiments Setup; Tables 3–4, 7–8"
+F31,qiao2026topr,adjacent,V,?,?,?,?,?,Benchmark and alignment populations differ,https://arxiv.org/html/2512.16310v4,"3.1–3.2,4,5.2,5.6,6,Limitations"
+F32,gan2026clawguard,core,?,?,V,?,?,V,Carrier recollection and cycle drift; not zero-shot transfer,https://arxiv.org/html/2605.06205v1,"III-C,IV,VI,AppendixA"
+F33,geng2026sigleak,core,V,?,?,?,?,?,Paired prompts; not physical-skill removal,https://arxiv.org/html/2607.25560v1,"Definition3,3.2,4.1–4.2"
+F34,oderinwale2026procgrep,core,H,?,V,?,?,?,Task-grouped attribution under scaffold regimes,https://arxiv.org/html/2606.16988v1,"4–5,Tables7–8"
+F35,umar2025secemb,adjacent,?,X,?,?,?,?,Single GPT-2 workload; DLRM result separate,https://bearhw.ece.vt.edu/content/dam/bearhw_ece_vt_edu/publications/2025_HPCA_SecEmb.pdf,"III,V,VI-D;Figs14–15"
+F36,wu2025mobileagents,adjacent,?,?,?,?,?,?,Direct leakage cases; holdout binding unresolved,https://arxiv.org/html/2505.12981v1,"[""IV-D3 log leakage"",""V-D2 deep-link leakage"",""V-D3 log leakage"",""Table II"",""VI-A""]"
+F37,mudryi2025hidden,adjacent,?,?,?,?,?,?,Content exfiltration/access-control cases,https://arxiv.org/html/2505.13076v1,"[""3.2 framework and risk scope"",""5.3.1 access-control case"",""5.3.2 exfiltration case"",""Appendix A risk tables""]"
+F38,ukani2025browserprivacy,adjacent,?,?,V,?,?,?,Browser/profile-state measurements; mixed leakage mechanisms,https://arxiv.org/html/2512.07725v1,"[""V-C1–3 browser/network/profile-state measurements"",""V-E1–2 personal-information tests"",""VI-A/B discussion""]"
+F39,alhazbi2025rhythm,core,?,V,?,?,H,V,New captures and cross-network tests; overlapping windows caveat,https://arxiv.org/html/2502.20589v1,III-IV; V-C–G; VI-A/B; Table I; Figs10–16; VII
+F40,ding2025moecho,core,H,V,?,?,V,?,Cross-template/dataset tests; contention/context conditions,https://arxiv.org/html/2508.15036v1,"3.1;4;6.2–6.6;Tables3,5–10;7.2;8.1–8.2"
+F41,nazari2024llmfin,adjacent,?,H,?,?,?,?,Unseen variants within known architecture families,https://web.cs.ucdavis.edu/~srafatir/pages/documents/llm_fingerprint.pdf,"[""III"",""IV-B/C; Tables II–III"",""IV-C/D; V-A"",""V-A versus Introduction/Fig.2"",""Table IV""]"
+F42,debenedetti2024privacy,core,?,V,?,?,?,?,Enumerative/filter probes across named models; no learned split,https://arxiv.org/html/2309.05610v2,"[""4.1"",""4.2.1"",""4.2.2/Fig.7"",""4.2.3"",""4.2.3/Table2""]"
+F43,yona2024stealing,core,?,?,?,?,?,?,Constructive word extraction in controlled shared batches,https://arxiv.org/html/2410.22884v1,"[""2.2"",""4"",""4"",""4/Table2"",""5/Fig.7""]"
+F44,chaudhuri2025energon,core,?,V,?,?,?,?,Known-candidate CV; exploratory hardware not transfer proof,https://arxiv.org/html/2508.01768v1,"[""III-A/B"",""IV-A/C"",""IV-B/Tables I,III"",""V"",""VII""]"
+F45,chu2025safekv,core,?,V,?,?,?,?,Named serving models; calibration/test separation unreported,https://arxiv.org/html/2508.08438v2,"[""3"",""7.1"",""7.2.1;7.2.3/Fig.12"",""7.3/Table7"",""7.4"",""4.2.2 versus6/7.2.3""]"
+F46,anwar2026infernet,adjacent,?,V,?,V,?,?,Same-label mixed-model and platform comparisons,https://rhasnainanwar.me/assets/pdf/2304.03388v2.pdf,"[""5.2;Tables13–14"",""5.2;6.1;AppendixB/Table15"",""6.1/Table5"",""6.3;7.1;7.2"",""7.3/Tables9–10"",""6.4"",""8""]"
+F47,weng2026archsnoop,core,?,H,?,V,?,?,Random-weight training to official/fine-tuned models; power modes,https://dl.acm.org/doi/epdf/10.1145/3765613.3811673,"[""3.2;6.1"",""6.1"",""Fig9, paperp58, visually checked"",""6.2.3;6.3.1"",""4.1;7.1-7.2""]"
+F48,ghaleb2026codingfingerprint,adjacent,X,?,X,?,?,X,PR CV; repository/time/human-mediated holdouts unreported,https://arxiv.org/html/2601.17406v1,2.1-2.4; Tables 1-2; 4; 6; replication reference
+F49,zhu2026turing,core,?,?,X,?,?,?,Offline/live humanization; website-transfer binding unresolved,https://arxiv.org/html/2604.09574v1,2.1-2.2; 3.1; 4.1-4.3; 5.1.2; Table 1 Trip Planning; E.1-E.3
+F50,wang2026dialogue,adjacent,H,?,X,?,?,?,User-disjoint cross-topic split; no verified cross-service test,https://dl.acm.org/doi/10.1145/3774904.3793048,2.3; 4.1-4.3; 5.3-5.5; 6.1-6.2; Tables 1-3; Appendix D/Table4
+F51,george2025cycles,core,X,?,X,?,?,X,One application; no held-out split located,https://arxiv.org/html/2511.10650v1,1; 2; 2.1 CDCS/CDDAG versus CDSA/Hybrid; 3.1; Tables1-2; 3.2; 4
+F52,solomon2026lumimas,core,?,V,V,?,?,?,Nonoverlap logs; backend/platform comparisons; task grouping open,https://arxiv.org/html/2508.12412v2,3;4.1-4.3;5.1.1-5.1.7;5.2;Table1;6.1-6.5;B.1/Table3;B.2/Table4;C.1.1
+F53,cui2026symdiag,adjacent,V,V,?,?,?,?,Domains/reasoners vary with inputs and feedback,https://arxiv.org/html/2608.08786v1,3.1-3.4;4.1.1-4.1.5;5.1;6.1-6.4;7
+F54,majidi2026leakylms,core,?,H,?,V,?,?,Held-out architecture configurations; known-GPU calibration,https://arxiv.org/html/2607.20723v1,3;4.4-4.5 Tables1-2;5.4-5.5 Tables3-6/Fig6;6;A.1;B.4-B.7
+F55,addagada2026kvgov,core,?,?,?,V,?,?,"Simulation, A100 timing and HMAC microcost separate",https://arxiv.org/html/2608.09225v1,2.2-2.3;4;5.1-5.3 Tables3-4;5.7-5.9 Tables8-9;7
+F56,lahjouji2026datacentric,adjacent,-,-,-,-,-,-,Conceptual synthesis; empirical holdout not applicable,https://arxiv.org/html/2606.26627v1,1 Fig1;4-6;8-9 discussion/conclusions
+F57,scheinert2026rca,core,?,?,X,?,?,?,Single serving deployment with injected faults,https://arxiv.org/html/2603.02057v1,"Sections3,4.1-4.3,5.1-5.2; Table1"
+F58,shao2026zeroprint,adjacent,?,V,?,?,?,?,Known-family provenance pairs; partition not re-extracted,https://arxiv.org/html/2510.06605v2,Header;4.1-4.4;Figure1;5.1-5.3
+F59,leshin2026endpoint,adjacent,?,?,V,?,?,V,Controlled endpoint changes over matched time windows,https://arxiv.org/html/2603.19022v1,"Sections3,4.1-4.3,6.1-6.2/Table1,7-9"
+F60,zhu2026stepfinder,adjacent,H,?,?,?,?,?,Task-disjoint subsets; denominator reconciliation unresolved,https://arxiv.org/html/2606.03467v1,"Header;Sections4,5.1-5.4,6;Tables4-5"
+F61,fayolle2026webagents,core,?,V,?,?,?,?,Six agents with human/scraper controls,https://arxiv.org/html/2606.30119v1,3.1.4;3.3;6;7
+F62,park2026crosscampaign,core,V,?,V,?,?,?,Crossed-style and regenerated conditions; execution stress subset,https://arxiv.org/html/2607.18826v1,AppendixB decomposition;AppendixH hard-crossed and independent-regeneration experiments
+F63,wang2026agentprov,core,?,V,?,?,?,?,Substituted checkpoints; system-prompt perturbation,https://arxiv.org/html/2609.00052v1,3.1-3.4;4.1-4.4;A.5
+F64,wang2026lidar,core,?,V,V,?,?,?,Enrollment-only identity; two harnesses and perturbations,https://arxiv.org/html/2609.28559v1,2;5.1-5.3;6.1-6.5
+F65,jiao2025llmwfin,core,V,?,?,?,?,?,Site traces; loading versus query phases,https://doi.org/10.3390/electronics14071263,3.2-3.3;5.1-5.2;6.1-6.5;Tables2-5;publisher rendered primary article
+F66,revankar2026mirage,core,V,V,?,?,?,?,Encodings/models/scenarios; matched decoder-layer controls,https://arxiv.org/html/2606.10304v1,3.4;4.1-4.2;7.1-7.4;AppendixL.3-L.4
+F67,chen2026routingmetadata,core,V,?,V,?,?,?,Request domains and routers; exploratory sensitive-label gate,https://arxiv.org/html/2610.09981v1,III;IV;V;VI;VII
+F68,hadad2026shape,core,V,V,V,V,?,?,Geometry/model/cache/hardware conditions; padding estimate,https://arxiv.org/html/2603.25403v1,IV;V;VII;VIII;IX
+F69,politis2026splitdecoy,core,?,?,?,?,?,?,"Repeated seeds; forward/backward boundary, not a holdout",https://arxiv.org/html/2609.04382v1,2;5.1-5.3;Table7-8;A.2.2
+F70,nazaraliyev2026page404,core,V,V,?,?,?,?,Architecture and prompt-length targets; transfer binding open,https://arxiv.org/html/2610.20962v1,II-B;IV-D4-D6;V
+F71,alhalawani2026physicaledge,core,H,?,?,?,?,?,Unseen-word test separate from profiled vocabulary recovery,https://arxiv.org/html/2610.14215v1,IV;V;VI
+F72,chen2026sparleak,core,V,V,V,?,?,?,Models/datasets/sparse mechanisms; per-phase outcomes,https://arxiv.org/html/2609.38830v1,3.1;4-7;Table4
+F73,jo2026sparseety,core,V,V,V,?,?,?,Models/datasets/implementations; oracle-conditioned extraction,https://arxiv.org/html/2608.02995v1,III;V;VI;VIII;IX
+F74,lee2026otro,core,?,?,?,?,?,?,Closed-corpus conditional leakage; epoch cost separately derived,https://arxiv.org/html/2606.17358v1,III;V;VI;VII-C-E;TableIII
+F75,wu2026cacheprune,core,V,V,?,?,?,?,Models/workloads and detector-miss stress; separate fits,https://arxiv.org/html/2605.23640v1,3.1;5.1-5.6;Table1;AppendixA
+F76,kotevska2026privacyfoundations,adjacent,-,-,-,-,-,-,Conceptual contract; cross-institution example illustrative,https://arxiv.org/html/2609.39787v1,III;IV/TableIII;IV-A;VI
+F77,dpmemview2026,adjacent,?,?,?,?,?,?,Semantic response privacy; holdout binding not re-extracted,https://arxiv.org/html/2608.03130v1,Problem Definition;DP-MemView;Experiments;AppendixB.5
+F78,pricon2026,adjacent,?,?,?,?,?,?,Semantic cloud consultation; holdout binding not re-extracted,https://arxiv.org/html/2609.32642v1,PDF3;5.1-5.2;Tables2-4
+F79,mondol2025scaar,adjacent,?,?,?,?,?,?,LLM EM/length test; other classifier results separate,https://arxiv.org/html/2501.14512v1,7;LLM extension;TVLA experiment
+F80,pennas2026cachesolidarity,adjacent,?,?,?,?,?,?,Candidate-prefix timing gap; no scored inference error,https://arxiv.org/html/2603.10726v1,v1 title;5.2.3;Figure7
+F81,zhou2026visionencoder,adjacent,?,?,?,?,?,?,Representation inversion; holdout binding not re-extracted,https://arxiv.org/html/2606.14783v1,2;3;5;7;8/Table5
+F82,politis2026gradients,adjacent,?,?,?,?,?,?,Split-compute content inversion; holdout binding unresolved,https://arxiv.org/html/2610.04128v1,3;4.1-4.5;5;AppendixB

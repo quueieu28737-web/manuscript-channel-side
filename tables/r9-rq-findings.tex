@@ -1,9 +1,9 @@
 \begin{table*}[t]\centering\footnotesize
-\caption{Research questions and headline findings. RQ1 supplies the field context; RQ2--RQ4 correspond to the three SoK contributions. All counts are inventories of the indexed literature, not prevalence estimates.}\label{tab:rq-findings}
-\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{.14\textwidth}Y>{\raggedright\arraybackslash}p{.27\textwidth}@{}}\toprule
-Question & Headline finding & Contribution and basis\\\midrule
-RQ1: landscape & Signal generation clusters at serving (32 core families) and orchestration (19), while receiving views cluster at application, hardware and transport. Threat polarity (privacy, attribution, evasion, diagnostics) changes what a ``defense'' protects. & Field context: 82-family index, 58-core-family map (\S\S\ref{sec:methodology}--\ref{sec:corpus-map}).\\
-RQ2: comparability & Of 133 related record pairs, 17 support scoped descriptive comparison, 105 compare different objects and 11 remain unresolved. Eight of 15 same-paper pairs change the primitive, target or cost object. & \textbf{C1} Record-level comparison: 133 judged pairs within the complete 741-pair inventory, with locators and reasons (\S\ref{sec:defenses}).\\
-RQ3: joint evidence & One configuration (CachePrune) binds inference, utility and cost; matched clean-vs-protected attacker refitting is bound in 2 of 17 eligible records; no record binds all five deployment items. & \textbf{C2} Configuration-level joint binding: 351 record--item cells with source locators (\S\ref{sec:defenses}).\\
-RQ4: transfer & The three model and two topology holdouts test attack generalization. For the other entries, the split must be linked to a defended condition before it can support a defense-transfer claim. & \textbf{C3} Deployment decisions: six-axis holdout matrix and decision table (\S\ref{sec:evaluation}, Table~\ref{tab:r19-decisions}).\\\bottomrule
-\end{tabularx}\end{table*}
+\caption{Research questions, synthesis outputs and their scope.}\label{tab:rq-findings}
+\begin{tabularx}{\textwidth}{@{}p{.16\textwidth}YY@{}}\toprule
+Question & Synthesis output & Concrete use / evidential basis\\\midrule
+RQ1: landscape & Map hidden targets and signal-generating versus receiving layers. & 82 study families supply context; 20 families supply the evaluated mitigation records.\\
+RQ2: comparability & Retain like targets while separating changed mechanisms, execution modes and cost objects. & Early Bird prefix recovery and CachePrune direct recovery form candidates; semantic-cache overhead does not price prefix isolation. Pair counts depend on granularity.\\
+RQ3: joint evidence & Identify outcomes measured at the same configuration, with all query members listed. & CachePrune gives one source-scoped quality/cost package for two targets; SparLeak supplies intensity-specific inference/quality pairs.\\
+RQ4: transfer & Distinguish attack generalization from a tested defense or transported calibration. & The three model and two topology holdouts test attack generalization; a proposed defense extension requires a linked defended condition.\\
+\bottomrule\end{tabularx}\end{table*}

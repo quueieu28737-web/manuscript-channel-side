@@ -1,0 +1,9 @@
+\begin{table*}[t]\centering\footnotesize
+\caption{Formal guarantees and the runtime evidence they require when instantiated in LLM systems. The guarantees have different quantifiers and are not ranked by one attack score.}\label{tab:r33-formal}
+\begin{tabularx}{\textwidth}{@{}p{.17\textwidth}YYY@{}}\toprule
+Foundation & Protected object / guarantee & LLM-system correspondence & What must remain in scope\\\midrule
+Differential privacy \cite{dwork2014foundations} & Neighboring inputs/databases and a released mechanism; likelihood-ratio bound. & Training privacy or a randomized output/metadata release, depending on the stated adjacency. & State adjacency, budget, composition and the complete observer transcript. A guarantee for model weights alone does not cover an unmodeled serving trace.\\
+Quantitative information flow \cite{smith2009qif} & A secret, prior, observation channel and loss; Shannon information or guessing vulnerability. & Quantify prompt/model information in timing, length or access traces. & Specify the prior and leakage measure. A finite trained attack supplies an achieved score, not a universal leakage upper bound.\\
+Constant-time verification \cite{almeida2016constanttime} & Trace noninterference relative to permitted public outputs and a leakage model. & Fixed-work kernels or oblivious lookup components, e.g. TDXRay. & Preserve compiler/hardware assumptions and the released outputs; variable token counts and scheduling remain separate channels.\\
+Oblivious memory \cite{stefanov2013pathoram} & Indistinguishability of physical access patterns for equal-length logical access sequences. & Protect cache/memory lookup addresses, as in the OTRO design. & Address obliviousness does not itself hide the number/timing of logical accesses. Price padded and unpadded implementations separately.\\
+\bottomrule\end{tabularx}\end{table*}

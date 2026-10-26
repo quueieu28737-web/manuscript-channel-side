@@ -35,14 +35,14 @@
 \newcommand{\auditpartial}{\textbf{P}}
 \input{tables/final-counts}
 
-\title{SoK: Transfer Boundaries of LLM and Agent\\Side-Channel Defenses}
+\title{SoK: Reusing Defense Evidence in LLM and Agent Side Channels}
 \author{}
 
 \begin{document}
 \maketitle
 
 \begin{abstract}
-Side-channel defenses for LLM serving and agent systems are evaluated at one operating point and reused at another. This SoK turns dispersed defense evidence into traceable comparisons, configuration-bound outcomes and deployment measurement requirements. Its three contributions are record-level comparison, configuration-level joint binding and deployment decisions. We organize 82 study families and audit 39 result records from 26 families, binding each outcome to its target, receiver, intervention, attacker fit, workload and cost object. First, among 133 within-question pairs drawn from 741 possible pairs, 17 permit scoped descriptive comparison, 105 change the compared object and 11 remain unresolved. Eight of 15 same-family pairs change primitive, target or cost object. Second, configuration-linked joins distinguish outcomes that can be interpreted together. CachePrune illustrates this distinction: two recorded outcomes share one inference--utility--cost package at a single configuration. Third, a six-axis holdout synthesis separates attack generalization from defended-condition tests and defense transfer. The distinction prevents a paper's attack-side holdout from being inherited by its mitigation claim. External retrospective cases and seven time-ordered internal judgments illustrate the framework's use in retaining scoped outcomes, separating mismatched evidence and specifying measurements required by a deployment change.
+Choosing a side-channel defense requires knowing which reported outcomes apply to the intended deployment. This SoK organizes that evidence for LLM serving and agent systems. We map 82 study families and examine 39 result records, including 33 mitigation records from 20 families. A taxonomy of changes to the observed signal, executed intervention and evaluation setting guides three practical tasks: compare like outcomes, identify protection, utility and cost measured at the same configuration, and specify what a new deployment still needs to measure. A running cache-reuse example shows the distinction: Early Bird's prefix-recovery result and semantic-cache overhead concern different mechanisms, whereas CachePrune links two recovery targets to one quality-and-cost package. We publish the record identities and query memberships needed to reconstruct these decisions. Pair counts are an inventory conditioned on record granularity, not an estimate of deficient research. Worked applications retain useful source results while separating incompatible cost or utility claims. The resulting evidence atlas and reporting template support source-scoped candidate selection and explicit measurement plans.
 \end{abstract}
 
 \input{sections/01-introduction}
@@ -57,7 +57,7 @@ Side-channel defenses for LLM serving and agent systems are evaluated at one ope
 
 
 \bibliographystyle{IEEEtran}
-\bibliography{refs,refs-final-additions,refs-deployment,refs-search-completion}
+\bibliography{refs,refs-final-additions,refs-deployment,refs-search-completion,refs-methodology}
 \appendices
 \input{tables/r9-record-index}
 \input{tables/r15-experiment-index}
@@ -66,4 +66,5 @@ Side-channel defenses for LLM serving and agent systems are evaluated at one ope
 \input{sections/50-r9-experiment-index}
 \input{sections/59-holdout-compact}
 \input{sections/62-appendix-case-study}
+\input{sections/70-audit-reconstruction}
 \end{document}

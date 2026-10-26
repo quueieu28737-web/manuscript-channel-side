@@ -1,0 +1,19 @@
+{
+  "entries": 125,
+  "future_citation_years": [
+    {
+      "key": "inputsnatch2024",
+      "year": "2027",
+      "note": "First online August 24, 2026; publisher citation year 2027",
+      "url": "https://link.springer.com/chapter/10.1007/978-981-92-4805-6_32"
+    }
+  ],
+  "inputsnatch_verification": {
+    "checked": "2026-10-26",
+    "url": "https://link.springer.com/chapter/10.1007/978-981-92-4805-6_32",
+    "first_online": "2026-08-24",
+    "publisher_citation_year": 2027,
+    "action": "retain publisher year and explicit first-online note"
+  },
+  "scope": "Brace/key/URL-field/year check of bibliography plus primary-source check of the future-year exception; not live metadata verification of every existing entry."
+}

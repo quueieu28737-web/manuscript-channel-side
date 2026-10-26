@@ -1,0 +1,38 @@
+\begin{table*}[t]\centering\scriptsize
+\caption{All 33 mitigation records: query membership. B: eligible and bound; E: eligible with at least one incomplete binding; x: required item inapplicable. IU=inference/utility; IC=inference/cost; AI=adaptation/inference; IUC=triple; All=R4/R5/R7/R8/R9. Full R1--R9 source rationales remain in S28.}\label{tab:r33-membership}
+\begin{tabularx}{\textwidth}{@{}Yccccc@{}}\toprule
+Record / cited family & IU & IC & AI & IUC & All\\\midrule
+\texttt{UI-\allowbreak{}delay-\allowbreak{}offline}~\cite{uitraces2026} & E & x & B & x & x\\
+\texttt{WRA-\allowbreak{}decoy-\allowbreak{}execution}~\cite{jeong2026wra} & E & E & x & E & x\\
+\texttt{NET-\allowbreak{}upstream-\allowbreak{}local}~\cite{netecho2025} & E & E & E & E & E\\
+\texttt{NET-\allowbreak{}dummy-\allowbreak{}padding-\allowbreak{}simulation}~\cite{netecho2025} & E & E & E & E & E\\
+\texttt{EARLY-\allowbreak{}K-\allowbreak{}calibration-\allowbreak{}oracle}~\cite{earlybird2025} & E & E & E & E & E\\
+\texttt{EARLY-\allowbreak{}semantic-\allowbreak{}deidentification}~\cite{earlybird2025} & x & x & x & x & x\\
+\texttt{WHISPER-\allowbreak{}randompadding-\allowbreak{}capture}~\cite{whisperleak2025} & E & E & E & E & E\\
+\texttt{WHISPER-\allowbreak{}batching-\allowbreak{}replay}~\cite{whisperleak2025} & E & E & E & E & E\\
+\texttt{WHISPER-\allowbreak{}injection-\allowbreak{}replay}~\cite{whisperleak2025} & E & E & E & E & E\\
+\texttt{SPLICE-\allowbreak{}CTBF-\allowbreak{}signal}~\cite{spliceleak2026} & E & E & x & E & x\\
+\texttt{SPLICE-\allowbreak{}QCP-\allowbreak{}cost}~\cite{spliceleak2026} & x & x & x & x & x\\
+\texttt{TIME-\allowbreak{}length-\allowbreak{}instruction}~\cite{timewilltell2024} & E & E & E & E & E\\
+\texttt{TIME-\allowbreak{}padding-\allowbreak{}estimate}~\cite{timewilltell2024} & x & x & x & x & x\\
+\texttt{SPEC-\allowbreak{}padding-\allowbreak{}REST}~\cite{wei2024speculation} & x & B & E & x & x\\
+\texttt{DANGOL-\allowbreak{}capture}~\cite{dangol2026workflow} & E & B & B & E & E\\
+\texttt{DANGOL-\allowbreak{}livebinding}~\cite{dangol2026workflow} & E & B & E & E & E\\
+\texttt{SAFE-\allowbreak{}post-\allowbreak{}trigger}~\cite{chu2025safekv} & E & E & x & E & x\\
+\texttt{AHB-\allowbreak{}online-\allowbreak{}executed}~\cite{zhu2026turing} & B & E & E & E & E\\
+\texttt{AHB-\allowbreak{}offline}~\cite{zhu2026turing} & E & x & E & x & x\\
+\texttt{KVGOV-\allowbreak{}partialflush-\allowbreak{}sim}~\cite{addagada2026kvgov} & E & E & x & E & x\\
+\texttt{KVGOV-\allowbreak{}hardware-\allowbreak{}gap}~\cite{addagada2026kvgov} & x & x & x & x & x\\
+\texttt{KVGOV-\allowbreak{}HMAC-\allowbreak{}cost}~\cite{addagada2026kvgov} & x & x & x & x & x\\
+\texttt{TRAFFIC-\allowbreak{}prompt-\allowbreak{}reformulation}~\cite{pouryousef2026traffic} & E & E & E & E & E\\
+\texttt{TRAFFIC-\allowbreak{}temperature}~\cite{pouryousef2026traffic} & E & E & E & E & E\\
+\texttt{CARLINI-\allowbreak{}fixed-\allowbreak{}rate}~\cite{carlini2024remote} & x & x & x & x & x\\
+\texttt{GAO-\allowbreak{}zero-\allowbreak{}copy-\allowbreak{}off}~\cite{gao2025iknow} & x & x & x & x & x\\
+\texttt{TDXRAY-\allowbreak{}oblivious-\allowbreak{}map}~\cite{hornetz2026tdxray} & x & x & x & x & x\\
+\texttt{CACHEPRUNE-\allowbreak{}selective}~\cite{wu2026cacheprune} & B & B & x & B & x\\
+\texttt{CACHEPRUNE-\allowbreak{}context}~\cite{wu2026cacheprune} & B & B & x & B & x\\
+\texttt{OTRO-\allowbreak{}unpadded}~\cite{lee2026otro} & x & x & x & x & x\\
+\texttt{OTRO-\allowbreak{}epochpad}~\cite{lee2026otro} & x & E & x & x & x\\
+\texttt{SPARLEAK-\allowbreak{}replacement}~\cite{chen2026sparleak} & B & E & E & E & E\\
+\texttt{SHAPE-\allowbreak{}padding-\allowbreak{}estimate}~\cite{hadad2026shape} & E & E & E & E & E\\
+\bottomrule\end{tabularx}\end{table*}

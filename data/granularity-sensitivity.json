@@ -1,0 +1,5897 @@
+{
+  "method": "Project fixed pair judgments onto coarser groups. A mixed edge retains conflicting statuses; internal edges become hidden, not corrected. Not a recoding, sampling CI or alternative full-paper evaluation.",
+  "input_hashes": {
+    "pair-inventory.csv": "60633e5025078cb3e41114d545ec319f8ba21fbfd20fb92804f1954a4a6c85d7",
+    "record-scopes.csv": "6068a3af229abf9f74c95daa4dffed9212cd9c21cdfaaa4bc3a001da43ee225d"
+  },
+  "variants": [
+    {
+      "rule": "Scoped result records",
+      "units": 39,
+      "projected_pairs": 133,
+      "hidden_within_unit_pairs": [],
+      "counts": {
+        "UNRESOLVED": 11,
+        "COMPATIBLE": 17,
+        "INCOMPATIBLE": 105
+      },
+      "memberships": {
+        "UI-delay-offline": [
+          "UI-delay-offline"
+        ],
+        "WRA-decoy-execution": [
+          "WRA-decoy-execution"
+        ],
+        "NET-upstream-local": [
+          "NET-upstream-local"
+        ],
+        "NET-dummy-padding-simulation": [
+          "NET-dummy-padding-simulation"
+        ],
+        "EARLY-K-calibration-oracle": [
+          "EARLY-K-calibration-oracle"
+        ],
+        "EARLY-semantic-deidentification": [
+          "EARLY-semantic-deidentification"
+        ],
+        "WHISPER-randompadding-capture": [
+          "WHISPER-randompadding-capture"
+        ],
+        "WHISPER-batching-replay": [
+          "WHISPER-batching-replay"
+        ],
+        "WHISPER-injection-replay": [
+          "WHISPER-injection-replay"
+        ],
+        "SPLICE-CTBF-signal": [
+          "SPLICE-CTBF-signal"
+        ],
+        "SPLICE-QCP-cost": [
+          "SPLICE-QCP-cost"
+        ],
+        "TIME-length-instruction": [
+          "TIME-length-instruction"
+        ],
+        "TIME-padding-estimate": [
+          "TIME-padding-estimate"
+        ],
+        "SPEC-padding-REST": [
+          "SPEC-padding-REST"
+        ],
+        "DANGOL-capture": [
+          "DANGOL-capture"
+        ],
+        "DANGOL-livebinding": [
+          "DANGOL-livebinding"
+        ],
+        "SIG-common-guardrail": [
+          "SIG-common-guardrail"
+        ],
+        "SAFE-post-trigger": [
+          "SAFE-post-trigger"
+        ],
+        "AHB-online-executed": [
+          "AHB-online-executed"
+        ],
+        "AHB-offline": [
+          "AHB-offline"
+        ],
+        "KVGOV-partialflush-sim": [
+          "KVGOV-partialflush-sim"
+        ],
+        "KVGOV-hardware-gap": [
+          "KVGOV-hardware-gap"
+        ],
+        "KVGOV-HMAC-cost": [
+          "KVGOV-HMAC-cost"
+        ],
+        "TRAFFIC-prompt-reformulation": [
+          "TRAFFIC-prompt-reformulation"
+        ],
+        "TRAFFIC-temperature": [
+          "TRAFFIC-temperature"
+        ],
+        "CARLINI-fixed-rate": [
+          "CARLINI-fixed-rate"
+        ],
+        "GAO-zero-copy-off": [
+          "GAO-zero-copy-off"
+        ],
+        "TDXRAY-oblivious-map": [
+          "TDXRAY-oblivious-map"
+        ],
+        "AGENTTELL-fixed-instruction": [
+          "AGENTTELL-fixed-instruction"
+        ],
+        "FP-CLOUDFLARE": [
+          "FP-CLOUDFLARE"
+        ],
+        "BAR-co-running-noise": [
+          "BAR-co-running-noise"
+        ],
+        "RHYTHM-VPN": [
+          "RHYTHM-VPN"
+        ],
+        "DEB-filter-origin": [
+          "DEB-filter-origin"
+        ],
+        "CACHEPRUNE-selective": [
+          "CACHEPRUNE-selective"
+        ],
+        "CACHEPRUNE-context": [
+          "CACHEPRUNE-context"
+        ],
+        "OTRO-unpadded": [
+          "OTRO-unpadded"
+        ],
+        "OTRO-epochpad": [
+          "OTRO-epochpad"
+        ],
+        "SPARLEAK-replacement": [
+          "SPARLEAK-replacement"
+        ],
+        "SHAPE-padding-estimate": [
+          "SHAPE-padding-estimate"
+        ]
+      },
+      "pairs": [
+        {
+          "units": [
+            "AGENTTELL-fixed-instruction",
+            "SIG-common-guardrail"
+          ],
+          "judgment": "UNRESOLVED",
+          "underlying_statuses": [
+            "UNRESOLVED"
+          ],
+          "pair_ids": [
+            "F500"
+          ]
+        },
+        {
+          "units": [
+            "AHB-offline",
+            "AHB-online-executed"
+          ],
+          "judgment": "COMPATIBLE",
+          "underlying_statuses": [
+            "COMPATIBLE"
+          ],
+          "pair_ids": [
+            "F532"
+          ]
+        },
+        {
+          "units": [
+            "AHB-offline",
+            "UI-delay-offline"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F019"
+          ]
+        },
+        {
+          "units": [
+            "AHB-online-executed",
+            "UI-delay-offline"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F018"
+          ]
+        },
+        {
+          "units": [
+            "CACHEPRUNE-context",
+            "CACHEPRUNE-selective"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F727"
+          ]
+        },
+        {
+          "units": [
+            "CACHEPRUNE-context",
+            "EARLY-K-calibration-oracle"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F176"
+          ]
+        },
+        {
+          "units": [
+            "CACHEPRUNE-context",
+            "EARLY-semantic-deidentification"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F209"
+          ]
+        },
+        {
+          "units": [
+            "CACHEPRUNE-context",
+            "KVGOV-HMAC-cost"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F617"
+          ]
+        },
+        {
+          "units": [
+            "CACHEPRUNE-context",
+            "KVGOV-hardware-gap"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F601"
+          ]
+        },
+        {
+          "units": [
+            "CACHEPRUNE-context",
+            "KVGOV-partialflush-sim"
+          ],
+          "judgment": "UNRESOLVED",
+          "underlying_statuses": [
+            "UNRESOLVED"
+          ],
+          "pair_ids": [
+            "F584"
+          ]
+        },
+        {
+          "units": [
+            "CACHEPRUNE-context",
+            "SAFE-post-trigger"
+          ],
+          "judgment": "UNRESOLVED",
+          "underlying_statuses": [
+            "UNRESOLVED"
+          ],
+          "pair_ids": [
+            "F527"
+          ]
+        },
+        {
+          "units": [
+            "CACHEPRUNE-context",
+            "SPLICE-CTBF-signal"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F331"
+          ]
+        },
+        {
+          "units": [
+            "CACHEPRUNE-context",
+            "SPLICE-QCP-cost"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F359"
+          ]
+        },
+        {
+          "units": [
+            "CACHEPRUNE-selective",
+            "EARLY-K-calibration-oracle"
+          ],
+          "judgment": "COMPATIBLE",
+          "underlying_statuses": [
+            "COMPATIBLE"
+          ],
+          "pair_ids": [
+            "F175"
+          ]
+        },
+        {
+          "units": [
+            "CACHEPRUNE-selective",
+            "EARLY-semantic-deidentification"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F208"
+          ]
+        },
+        {
+          "units": [
+            "CACHEPRUNE-selective",
+            "KVGOV-HMAC-cost"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F616"
+          ]
+        },
+        {
+          "units": [
+            "CACHEPRUNE-selective",
+            "KVGOV-hardware-gap"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F600"
+          ]
+        },
+        {
+          "units": [
+            "CACHEPRUNE-selective",
+            "KVGOV-partialflush-sim"
+          ],
+          "judgment": "UNRESOLVED",
+          "underlying_statuses": [
+            "UNRESOLVED"
+          ],
+          "pair_ids": [
+            "F583"
+          ]
+        },
+        {
+          "units": [
+            "CACHEPRUNE-selective",
+            "SAFE-post-trigger"
+          ],
+          "judgment": "UNRESOLVED",
+          "underlying_statuses": [
+            "UNRESOLVED"
+          ],
+          "pair_ids": [
+            "F526"
+          ]
+        },
+        {
+          "units": [
+            "CACHEPRUNE-selective",
+            "SPLICE-CTBF-signal"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F330"
+          ]
+        },
+        {
+          "units": [
+            "CACHEPRUNE-selective",
+            "SPLICE-QCP-cost"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F358"
+          ]
+        },
+        {
+          "units": [
+            "CARLINI-fixed-rate",
+            "DANGOL-capture"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F452"
+          ]
+        },
+        {
+          "units": [
+            "CARLINI-fixed-rate",
+            "DANGOL-livebinding"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F475"
+          ]
+        },
+        {
+          "units": [
+            "CARLINI-fixed-rate",
+            "NET-dummy-padding-simulation"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F133"
+          ]
+        },
+        {
+          "units": [
+            "CARLINI-fixed-rate",
+            "NET-upstream-local"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F098"
+          ]
+        },
+        {
+          "units": [
+            "CARLINI-fixed-rate",
+            "SPEC-padding-REST"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F428"
+          ]
+        },
+        {
+          "units": [
+            "CARLINI-fixed-rate",
+            "TIME-length-instruction"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F377"
+          ]
+        },
+        {
+          "units": [
+            "CARLINI-fixed-rate",
+            "TIME-padding-estimate"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F403"
+          ]
+        },
+        {
+          "units": [
+            "CARLINI-fixed-rate",
+            "WHISPER-batching-replay"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F263"
+          ]
+        },
+        {
+          "units": [
+            "CARLINI-fixed-rate",
+            "WHISPER-injection-replay"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F293"
+          ]
+        },
+        {
+          "units": [
+            "CARLINI-fixed-rate",
+            "WHISPER-randompadding-capture"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F232"
+          ]
+        },
+        {
+          "units": [
+            "CARLINI-fixed-rate",
+            "WRA-decoy-execution"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F062"
+          ]
+        },
+        {
+          "units": [
+            "DANGOL-capture",
+            "DANGOL-livebinding"
+          ],
+          "judgment": "COMPATIBLE",
+          "underlying_statuses": [
+            "COMPATIBLE"
+          ],
+          "pair_ids": [
+            "F442"
+          ]
+        },
+        {
+          "units": [
+            "DANGOL-capture",
+            "NET-dummy-padding-simulation"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F122"
+          ]
+        },
+        {
+          "units": [
+            "DANGOL-capture",
+            "NET-upstream-local"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F087"
+          ]
+        },
+        {
+          "units": [
+            "DANGOL-capture",
+            "SPEC-padding-REST"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F417"
+          ]
+        },
+        {
+          "units": [
+            "DANGOL-capture",
+            "TIME-length-instruction"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F366"
+          ]
+        },
+        {
+          "units": [
+            "DANGOL-capture",
+            "TIME-padding-estimate"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F392"
+          ]
+        },
+        {
+          "units": [
+            "DANGOL-capture",
+            "WHISPER-batching-replay"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F252"
+          ]
+        },
+        {
+          "units": [
+            "DANGOL-capture",
+            "WHISPER-injection-replay"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F282"
+          ]
+        },
+        {
+          "units": [
+            "DANGOL-capture",
+            "WHISPER-randompadding-capture"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F221"
+          ]
+        },
+        {
+          "units": [
+            "DANGOL-capture",
+            "WRA-decoy-execution"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F051"
+          ]
+        },
+        {
+          "units": [
+            "DANGOL-livebinding",
+            "NET-dummy-padding-simulation"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F123"
+          ]
+        },
+        {
+          "units": [
+            "DANGOL-livebinding",
+            "NET-upstream-local"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F088"
+          ]
+        },
+        {
+          "units": [
+            "DANGOL-livebinding",
+            "SPEC-padding-REST"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F418"
+          ]
+        },
+        {
+          "units": [
+            "DANGOL-livebinding",
+            "TIME-length-instruction"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F367"
+          ]
+        },
+        {
+          "units": [
+            "DANGOL-livebinding",
+            "TIME-padding-estimate"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F393"
+          ]
+        },
+        {
+          "units": [
+            "DANGOL-livebinding",
+            "WHISPER-batching-replay"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F253"
+          ]
+        },
+        {
+          "units": [
+            "DANGOL-livebinding",
+            "WHISPER-injection-replay"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F283"
+          ]
+        },
+        {
+          "units": [
+            "DANGOL-livebinding",
+            "WHISPER-randompadding-capture"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F222"
+          ]
+        },
+        {
+          "units": [
+            "DANGOL-livebinding",
+            "WRA-decoy-execution"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F052"
+          ]
+        },
+        {
+          "units": [
+            "EARLY-K-calibration-oracle",
+            "EARLY-semantic-deidentification"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F147"
+          ]
+        },
+        {
+          "units": [
+            "EARLY-K-calibration-oracle",
+            "KVGOV-HMAC-cost"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F164"
+          ]
+        },
+        {
+          "units": [
+            "EARLY-K-calibration-oracle",
+            "KVGOV-hardware-gap"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F163"
+          ]
+        },
+        {
+          "units": [
+            "EARLY-K-calibration-oracle",
+            "KVGOV-partialflush-sim"
+          ],
+          "judgment": "UNRESOLVED",
+          "underlying_statuses": [
+            "UNRESOLVED"
+          ],
+          "pair_ids": [
+            "F162"
+          ]
+        },
+        {
+          "units": [
+            "EARLY-K-calibration-oracle",
+            "SAFE-post-trigger"
+          ],
+          "judgment": "UNRESOLVED",
+          "underlying_statuses": [
+            "UNRESOLVED"
+          ],
+          "pair_ids": [
+            "F159"
+          ]
+        },
+        {
+          "units": [
+            "EARLY-K-calibration-oracle",
+            "SPLICE-CTBF-signal"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F151"
+          ]
+        },
+        {
+          "units": [
+            "EARLY-K-calibration-oracle",
+            "SPLICE-QCP-cost"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F152"
+          ]
+        },
+        {
+          "units": [
+            "EARLY-semantic-deidentification",
+            "KVGOV-HMAC-cost"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F197"
+          ]
+        },
+        {
+          "units": [
+            "EARLY-semantic-deidentification",
+            "KVGOV-hardware-gap"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F196"
+          ]
+        },
+        {
+          "units": [
+            "EARLY-semantic-deidentification",
+            "KVGOV-partialflush-sim"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F195"
+          ]
+        },
+        {
+          "units": [
+            "EARLY-semantic-deidentification",
+            "SAFE-post-trigger"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F192"
+          ]
+        },
+        {
+          "units": [
+            "EARLY-semantic-deidentification",
+            "SPLICE-CTBF-signal"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F184"
+          ]
+        },
+        {
+          "units": [
+            "EARLY-semantic-deidentification",
+            "SPLICE-QCP-cost"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F185"
+          ]
+        },
+        {
+          "units": [
+            "GAO-zero-copy-off",
+            "OTRO-epochpad"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F673"
+          ]
+        },
+        {
+          "units": [
+            "GAO-zero-copy-off",
+            "OTRO-unpadded"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F672"
+          ]
+        },
+        {
+          "units": [
+            "GAO-zero-copy-off",
+            "SHAPE-padding-estimate"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F675"
+          ]
+        },
+        {
+          "units": [
+            "GAO-zero-copy-off",
+            "SPARLEAK-replacement"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F674"
+          ]
+        },
+        {
+          "units": [
+            "GAO-zero-copy-off",
+            "TDXRAY-oblivious-map"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F664"
+          ]
+        },
+        {
+          "units": [
+            "KVGOV-HMAC-cost",
+            "KVGOV-hardware-gap"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F589"
+          ]
+        },
+        {
+          "units": [
+            "KVGOV-HMAC-cost",
+            "KVGOV-partialflush-sim"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F572"
+          ]
+        },
+        {
+          "units": [
+            "KVGOV-HMAC-cost",
+            "SAFE-post-trigger"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F515"
+          ]
+        },
+        {
+          "units": [
+            "KVGOV-HMAC-cost",
+            "SPLICE-CTBF-signal"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F319"
+          ]
+        },
+        {
+          "units": [
+            "KVGOV-HMAC-cost",
+            "SPLICE-QCP-cost"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F347"
+          ]
+        },
+        {
+          "units": [
+            "KVGOV-hardware-gap",
+            "KVGOV-partialflush-sim"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F571"
+          ]
+        },
+        {
+          "units": [
+            "KVGOV-hardware-gap",
+            "SAFE-post-trigger"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F514"
+          ]
+        },
+        {
+          "units": [
+            "KVGOV-hardware-gap",
+            "SPLICE-CTBF-signal"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F318"
+          ]
+        },
+        {
+          "units": [
+            "KVGOV-hardware-gap",
+            "SPLICE-QCP-cost"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F346"
+          ]
+        },
+        {
+          "units": [
+            "KVGOV-partialflush-sim",
+            "SAFE-post-trigger"
+          ],
+          "judgment": "COMPATIBLE",
+          "underlying_statuses": [
+            "COMPATIBLE"
+          ],
+          "pair_ids": [
+            "F513"
+          ]
+        },
+        {
+          "units": [
+            "KVGOV-partialflush-sim",
+            "SPLICE-CTBF-signal"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F317"
+          ]
+        },
+        {
+          "units": [
+            "KVGOV-partialflush-sim",
+            "SPLICE-QCP-cost"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F345"
+          ]
+        },
+        {
+          "units": [
+            "NET-dummy-padding-simulation",
+            "NET-upstream-local"
+          ],
+          "judgment": "COMPATIBLE",
+          "underlying_statuses": [
+            "COMPATIBLE"
+          ],
+          "pair_ids": [
+            "F076"
+          ]
+        },
+        {
+          "units": [
+            "NET-dummy-padding-simulation",
+            "SPEC-padding-REST"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F121"
+          ]
+        },
+        {
+          "units": [
+            "NET-dummy-padding-simulation",
+            "TIME-length-instruction"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F119"
+          ]
+        },
+        {
+          "units": [
+            "NET-dummy-padding-simulation",
+            "TIME-padding-estimate"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F120"
+          ]
+        },
+        {
+          "units": [
+            "NET-dummy-padding-simulation",
+            "WHISPER-batching-replay"
+          ],
+          "judgment": "COMPATIBLE",
+          "underlying_statuses": [
+            "COMPATIBLE"
+          ],
+          "pair_ids": [
+            "F115"
+          ]
+        },
+        {
+          "units": [
+            "NET-dummy-padding-simulation",
+            "WHISPER-injection-replay"
+          ],
+          "judgment": "COMPATIBLE",
+          "underlying_statuses": [
+            "COMPATIBLE"
+          ],
+          "pair_ids": [
+            "F116"
+          ]
+        },
+        {
+          "units": [
+            "NET-dummy-padding-simulation",
+            "WHISPER-randompadding-capture"
+          ],
+          "judgment": "COMPATIBLE",
+          "underlying_statuses": [
+            "COMPATIBLE"
+          ],
+          "pair_ids": [
+            "F114"
+          ]
+        },
+        {
+          "units": [
+            "NET-dummy-padding-simulation",
+            "WRA-decoy-execution"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F040"
+          ]
+        },
+        {
+          "units": [
+            "NET-upstream-local",
+            "SPEC-padding-REST"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F086"
+          ]
+        },
+        {
+          "units": [
+            "NET-upstream-local",
+            "TIME-length-instruction"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F084"
+          ]
+        },
+        {
+          "units": [
+            "NET-upstream-local",
+            "TIME-padding-estimate"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F085"
+          ]
+        },
+        {
+          "units": [
+            "NET-upstream-local",
+            "WHISPER-batching-replay"
+          ],
+          "judgment": "COMPATIBLE",
+          "underlying_statuses": [
+            "COMPATIBLE"
+          ],
+          "pair_ids": [
+            "F080"
+          ]
+        },
+        {
+          "units": [
+            "NET-upstream-local",
+            "WHISPER-injection-replay"
+          ],
+          "judgment": "COMPATIBLE",
+          "underlying_statuses": [
+            "COMPATIBLE"
+          ],
+          "pair_ids": [
+            "F081"
+          ]
+        },
+        {
+          "units": [
+            "NET-upstream-local",
+            "WHISPER-randompadding-capture"
+          ],
+          "judgment": "COMPATIBLE",
+          "underlying_statuses": [
+            "COMPATIBLE"
+          ],
+          "pair_ids": [
+            "F079"
+          ]
+        },
+        {
+          "units": [
+            "NET-upstream-local",
+            "WRA-decoy-execution"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F039"
+          ]
+        },
+        {
+          "units": [
+            "OTRO-epochpad",
+            "OTRO-unpadded"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F736"
+          ]
+        },
+        {
+          "units": [
+            "OTRO-epochpad",
+            "SHAPE-padding-estimate"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F740"
+          ]
+        },
+        {
+          "units": [
+            "OTRO-epochpad",
+            "SPARLEAK-replacement"
+          ],
+          "judgment": "UNRESOLVED",
+          "underlying_statuses": [
+            "UNRESOLVED"
+          ],
+          "pair_ids": [
+            "F739"
+          ]
+        },
+        {
+          "units": [
+            "OTRO-epochpad",
+            "TDXRAY-oblivious-map"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F684"
+          ]
+        },
+        {
+          "units": [
+            "OTRO-unpadded",
+            "SHAPE-padding-estimate"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F738"
+          ]
+        },
+        {
+          "units": [
+            "OTRO-unpadded",
+            "SPARLEAK-replacement"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F737"
+          ]
+        },
+        {
+          "units": [
+            "OTRO-unpadded",
+            "TDXRAY-oblivious-map"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F683"
+          ]
+        },
+        {
+          "units": [
+            "RHYTHM-VPN",
+            "TRAFFIC-prompt-reformulation"
+          ],
+          "judgment": "COMPATIBLE",
+          "underlying_statuses": [
+            "COMPATIBLE"
+          ],
+          "pair_ids": [
+            "F629"
+          ]
+        },
+        {
+          "units": [
+            "RHYTHM-VPN",
+            "TRAFFIC-temperature"
+          ],
+          "judgment": "COMPATIBLE",
+          "underlying_statuses": [
+            "COMPATIBLE"
+          ],
+          "pair_ids": [
+            "F643"
+          ]
+        },
+        {
+          "units": [
+            "SAFE-post-trigger",
+            "SPLICE-CTBF-signal"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F314"
+          ]
+        },
+        {
+          "units": [
+            "SAFE-post-trigger",
+            "SPLICE-QCP-cost"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F342"
+          ]
+        },
+        {
+          "units": [
+            "SHAPE-padding-estimate",
+            "SPARLEAK-replacement"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F741"
+          ]
+        },
+        {
+          "units": [
+            "SHAPE-padding-estimate",
+            "TDXRAY-oblivious-map"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F686"
+          ]
+        },
+        {
+          "units": [
+            "SPARLEAK-replacement",
+            "TDXRAY-oblivious-map"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F685"
+          ]
+        },
+        {
+          "units": [
+            "SPEC-padding-REST",
+            "TIME-length-instruction"
+          ],
+          "judgment": "UNRESOLVED",
+          "underlying_statuses": [
+            "UNRESOLVED"
+          ],
+          "pair_ids": [
+            "F365"
+          ]
+        },
+        {
+          "units": [
+            "SPEC-padding-REST",
+            "TIME-padding-estimate"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F391"
+          ]
+        },
+        {
+          "units": [
+            "SPEC-padding-REST",
+            "WHISPER-batching-replay"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F251"
+          ]
+        },
+        {
+          "units": [
+            "SPEC-padding-REST",
+            "WHISPER-injection-replay"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F281"
+          ]
+        },
+        {
+          "units": [
+            "SPEC-padding-REST",
+            "WHISPER-randompadding-capture"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F220"
+          ]
+        },
+        {
+          "units": [
+            "SPEC-padding-REST",
+            "WRA-decoy-execution"
+          ],
+          "judgment": "UNRESOLVED",
+          "underlying_statuses": [
+            "UNRESOLVED"
+          ],
+          "pair_ids": [
+            "F050"
+          ]
+        },
+        {
+          "units": [
+            "SPLICE-CTBF-signal",
+            "SPLICE-QCP-cost"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F307"
+          ]
+        },
+        {
+          "units": [
+            "TIME-length-instruction",
+            "TIME-padding-estimate"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F364"
+          ]
+        },
+        {
+          "units": [
+            "TIME-length-instruction",
+            "WHISPER-batching-replay"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F249"
+          ]
+        },
+        {
+          "units": [
+            "TIME-length-instruction",
+            "WHISPER-injection-replay"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F279"
+          ]
+        },
+        {
+          "units": [
+            "TIME-length-instruction",
+            "WHISPER-randompadding-capture"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F218"
+          ]
+        },
+        {
+          "units": [
+            "TIME-length-instruction",
+            "WRA-decoy-execution"
+          ],
+          "judgment": "UNRESOLVED",
+          "underlying_statuses": [
+            "UNRESOLVED"
+          ],
+          "pair_ids": [
+            "F048"
+          ]
+        },
+        {
+          "units": [
+            "TIME-padding-estimate",
+            "WHISPER-batching-replay"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F250"
+          ]
+        },
+        {
+          "units": [
+            "TIME-padding-estimate",
+            "WHISPER-injection-replay"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F280"
+          ]
+        },
+        {
+          "units": [
+            "TIME-padding-estimate",
+            "WHISPER-randompadding-capture"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F219"
+          ]
+        },
+        {
+          "units": [
+            "TIME-padding-estimate",
+            "WRA-decoy-execution"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F049"
+          ]
+        },
+        {
+          "units": [
+            "TRAFFIC-prompt-reformulation",
+            "TRAFFIC-temperature"
+          ],
+          "judgment": "COMPATIBLE",
+          "underlying_statuses": [
+            "COMPATIBLE"
+          ],
+          "pair_ids": [
+            "F622"
+          ]
+        },
+        {
+          "units": [
+            "WHISPER-batching-replay",
+            "WHISPER-injection-replay"
+          ],
+          "judgment": "COMPATIBLE",
+          "underlying_statuses": [
+            "COMPATIBLE"
+          ],
+          "pair_ids": [
+            "F246"
+          ]
+        },
+        {
+          "units": [
+            "WHISPER-batching-replay",
+            "WHISPER-randompadding-capture"
+          ],
+          "judgment": "COMPATIBLE",
+          "underlying_statuses": [
+            "COMPATIBLE"
+          ],
+          "pair_ids": [
+            "F214"
+          ]
+        },
+        {
+          "units": [
+            "WHISPER-batching-replay",
+            "WRA-decoy-execution"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F044"
+          ]
+        },
+        {
+          "units": [
+            "WHISPER-injection-replay",
+            "WHISPER-randompadding-capture"
+          ],
+          "judgment": "COMPATIBLE",
+          "underlying_statuses": [
+            "COMPATIBLE"
+          ],
+          "pair_ids": [
+            "F215"
+          ]
+        },
+        {
+          "units": [
+            "WHISPER-injection-replay",
+            "WRA-decoy-execution"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F045"
+          ]
+        },
+        {
+          "units": [
+            "WHISPER-randompadding-capture",
+            "WRA-decoy-execution"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F043"
+          ]
+        }
+      ]
+    },
+    {
+      "rule": "Shared configuration package",
+      "units": 38,
+      "projected_pairs": 124,
+      "hidden_within_unit_pairs": [
+        "F727"
+      ],
+      "counts": {
+        "UNRESOLVED": 9,
+        "COMPATIBLE": 16,
+        "INCOMPATIBLE": 98,
+        "MIXED": 1
+      },
+      "memberships": {
+        "UI-delay-offline": [
+          "UI-delay-offline"
+        ],
+        "WRA-decoy-execution": [
+          "WRA-decoy-execution"
+        ],
+        "NET-upstream-local": [
+          "NET-upstream-local"
+        ],
+        "NET-dummy-padding-simulation": [
+          "NET-dummy-padding-simulation"
+        ],
+        "EARLY-K-calibration-oracle": [
+          "EARLY-K-calibration-oracle"
+        ],
+        "EARLY-semantic-deidentification": [
+          "EARLY-semantic-deidentification"
+        ],
+        "WHISPER-randompadding-capture": [
+          "WHISPER-randompadding-capture"
+        ],
+        "WHISPER-batching-replay": [
+          "WHISPER-batching-replay"
+        ],
+        "WHISPER-injection-replay": [
+          "WHISPER-injection-replay"
+        ],
+        "SPLICE-CTBF-signal": [
+          "SPLICE-CTBF-signal"
+        ],
+        "SPLICE-QCP-cost": [
+          "SPLICE-QCP-cost"
+        ],
+        "TIME-length-instruction": [
+          "TIME-length-instruction"
+        ],
+        "TIME-padding-estimate": [
+          "TIME-padding-estimate"
+        ],
+        "SPEC-padding-REST": [
+          "SPEC-padding-REST"
+        ],
+        "DANGOL-capture": [
+          "DANGOL-capture"
+        ],
+        "DANGOL-livebinding": [
+          "DANGOL-livebinding"
+        ],
+        "SIG-common-guardrail": [
+          "SIG-common-guardrail"
+        ],
+        "SAFE-post-trigger": [
+          "SAFE-post-trigger"
+        ],
+        "AHB-online-executed": [
+          "AHB-online-executed"
+        ],
+        "AHB-offline": [
+          "AHB-offline"
+        ],
+        "KVGOV-partialflush-sim": [
+          "KVGOV-partialflush-sim"
+        ],
+        "KVGOV-hardware-gap": [
+          "KVGOV-hardware-gap"
+        ],
+        "KVGOV-HMAC-cost": [
+          "KVGOV-HMAC-cost"
+        ],
+        "TRAFFIC-prompt-reformulation": [
+          "TRAFFIC-prompt-reformulation"
+        ],
+        "TRAFFIC-temperature": [
+          "TRAFFIC-temperature"
+        ],
+        "CARLINI-fixed-rate": [
+          "CARLINI-fixed-rate"
+        ],
+        "GAO-zero-copy-off": [
+          "GAO-zero-copy-off"
+        ],
+        "TDXRAY-oblivious-map": [
+          "TDXRAY-oblivious-map"
+        ],
+        "AGENTTELL-fixed-instruction": [
+          "AGENTTELL-fixed-instruction"
+        ],
+        "FP-CLOUDFLARE": [
+          "FP-CLOUDFLARE"
+        ],
+        "BAR-co-running-noise": [
+          "BAR-co-running-noise"
+        ],
+        "RHYTHM-VPN": [
+          "RHYTHM-VPN"
+        ],
+        "DEB-filter-origin": [
+          "DEB-filter-origin"
+        ],
+        "CACHEPRUNE-default": [
+          "CACHEPRUNE-selective",
+          "CACHEPRUNE-context"
+        ],
+        "OTRO-unpadded": [
+          "OTRO-unpadded"
+        ],
+        "OTRO-epochpad": [
+          "OTRO-epochpad"
+        ],
+        "SPARLEAK-replacement": [
+          "SPARLEAK-replacement"
+        ],
+        "SHAPE-padding-estimate": [
+          "SHAPE-padding-estimate"
+        ]
+      },
+      "pairs": [
+        {
+          "units": [
+            "AGENTTELL-fixed-instruction",
+            "SIG-common-guardrail"
+          ],
+          "judgment": "UNRESOLVED",
+          "underlying_statuses": [
+            "UNRESOLVED"
+          ],
+          "pair_ids": [
+            "F500"
+          ]
+        },
+        {
+          "units": [
+            "AHB-offline",
+            "AHB-online-executed"
+          ],
+          "judgment": "COMPATIBLE",
+          "underlying_statuses": [
+            "COMPATIBLE"
+          ],
+          "pair_ids": [
+            "F532"
+          ]
+        },
+        {
+          "units": [
+            "AHB-offline",
+            "UI-delay-offline"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F019"
+          ]
+        },
+        {
+          "units": [
+            "AHB-online-executed",
+            "UI-delay-offline"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F018"
+          ]
+        },
+        {
+          "units": [
+            "CACHEPRUNE-default",
+            "EARLY-K-calibration-oracle"
+          ],
+          "judgment": "MIXED",
+          "underlying_statuses": [
+            "COMPATIBLE",
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F175",
+            "F176"
+          ]
+        },
+        {
+          "units": [
+            "CACHEPRUNE-default",
+            "EARLY-semantic-deidentification"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F208",
+            "F209"
+          ]
+        },
+        {
+          "units": [
+            "CACHEPRUNE-default",
+            "KVGOV-HMAC-cost"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F616",
+            "F617"
+          ]
+        },
+        {
+          "units": [
+            "CACHEPRUNE-default",
+            "KVGOV-hardware-gap"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F600",
+            "F601"
+          ]
+        },
+        {
+          "units": [
+            "CACHEPRUNE-default",
+            "KVGOV-partialflush-sim"
+          ],
+          "judgment": "UNRESOLVED",
+          "underlying_statuses": [
+            "UNRESOLVED"
+          ],
+          "pair_ids": [
+            "F583",
+            "F584"
+          ]
+        },
+        {
+          "units": [
+            "CACHEPRUNE-default",
+            "SAFE-post-trigger"
+          ],
+          "judgment": "UNRESOLVED",
+          "underlying_statuses": [
+            "UNRESOLVED"
+          ],
+          "pair_ids": [
+            "F526",
+            "F527"
+          ]
+        },
+        {
+          "units": [
+            "CACHEPRUNE-default",
+            "SPLICE-CTBF-signal"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F330",
+            "F331"
+          ]
+        },
+        {
+          "units": [
+            "CACHEPRUNE-default",
+            "SPLICE-QCP-cost"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F358",
+            "F359"
+          ]
+        },
+        {
+          "units": [
+            "CARLINI-fixed-rate",
+            "DANGOL-capture"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F452"
+          ]
+        },
+        {
+          "units": [
+            "CARLINI-fixed-rate",
+            "DANGOL-livebinding"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F475"
+          ]
+        },
+        {
+          "units": [
+            "CARLINI-fixed-rate",
+            "NET-dummy-padding-simulation"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F133"
+          ]
+        },
+        {
+          "units": [
+            "CARLINI-fixed-rate",
+            "NET-upstream-local"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F098"
+          ]
+        },
+        {
+          "units": [
+            "CARLINI-fixed-rate",
+            "SPEC-padding-REST"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F428"
+          ]
+        },
+        {
+          "units": [
+            "CARLINI-fixed-rate",
+            "TIME-length-instruction"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F377"
+          ]
+        },
+        {
+          "units": [
+            "CARLINI-fixed-rate",
+            "TIME-padding-estimate"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F403"
+          ]
+        },
+        {
+          "units": [
+            "CARLINI-fixed-rate",
+            "WHISPER-batching-replay"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F263"
+          ]
+        },
+        {
+          "units": [
+            "CARLINI-fixed-rate",
+            "WHISPER-injection-replay"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F293"
+          ]
+        },
+        {
+          "units": [
+            "CARLINI-fixed-rate",
+            "WHISPER-randompadding-capture"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F232"
+          ]
+        },
+        {
+          "units": [
+            "CARLINI-fixed-rate",
+            "WRA-decoy-execution"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F062"
+          ]
+        },
+        {
+          "units": [
+            "DANGOL-capture",
+            "DANGOL-livebinding"
+          ],
+          "judgment": "COMPATIBLE",
+          "underlying_statuses": [
+            "COMPATIBLE"
+          ],
+          "pair_ids": [
+            "F442"
+          ]
+        },
+        {
+          "units": [
+            "DANGOL-capture",
+            "NET-dummy-padding-simulation"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F122"
+          ]
+        },
+        {
+          "units": [
+            "DANGOL-capture",
+            "NET-upstream-local"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F087"
+          ]
+        },
+        {
+          "units": [
+            "DANGOL-capture",
+            "SPEC-padding-REST"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F417"
+          ]
+        },
+        {
+          "units": [
+            "DANGOL-capture",
+            "TIME-length-instruction"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F366"
+          ]
+        },
+        {
+          "units": [
+            "DANGOL-capture",
+            "TIME-padding-estimate"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F392"
+          ]
+        },
+        {
+          "units": [
+            "DANGOL-capture",
+            "WHISPER-batching-replay"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F252"
+          ]
+        },
+        {
+          "units": [
+            "DANGOL-capture",
+            "WHISPER-injection-replay"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F282"
+          ]
+        },
+        {
+          "units": [
+            "DANGOL-capture",
+            "WHISPER-randompadding-capture"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F221"
+          ]
+        },
+        {
+          "units": [
+            "DANGOL-capture",
+            "WRA-decoy-execution"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F051"
+          ]
+        },
+        {
+          "units": [
+            "DANGOL-livebinding",
+            "NET-dummy-padding-simulation"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F123"
+          ]
+        },
+        {
+          "units": [
+            "DANGOL-livebinding",
+            "NET-upstream-local"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F088"
+          ]
+        },
+        {
+          "units": [
+            "DANGOL-livebinding",
+            "SPEC-padding-REST"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F418"
+          ]
+        },
+        {
+          "units": [
+            "DANGOL-livebinding",
+            "TIME-length-instruction"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F367"
+          ]
+        },
+        {
+          "units": [
+            "DANGOL-livebinding",
+            "TIME-padding-estimate"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F393"
+          ]
+        },
+        {
+          "units": [
+            "DANGOL-livebinding",
+            "WHISPER-batching-replay"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F253"
+          ]
+        },
+        {
+          "units": [
+            "DANGOL-livebinding",
+            "WHISPER-injection-replay"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F283"
+          ]
+        },
+        {
+          "units": [
+            "DANGOL-livebinding",
+            "WHISPER-randompadding-capture"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F222"
+          ]
+        },
+        {
+          "units": [
+            "DANGOL-livebinding",
+            "WRA-decoy-execution"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F052"
+          ]
+        },
+        {
+          "units": [
+            "EARLY-K-calibration-oracle",
+            "EARLY-semantic-deidentification"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F147"
+          ]
+        },
+        {
+          "units": [
+            "EARLY-K-calibration-oracle",
+            "KVGOV-HMAC-cost"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F164"
+          ]
+        },
+        {
+          "units": [
+            "EARLY-K-calibration-oracle",
+            "KVGOV-hardware-gap"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F163"
+          ]
+        },
+        {
+          "units": [
+            "EARLY-K-calibration-oracle",
+            "KVGOV-partialflush-sim"
+          ],
+          "judgment": "UNRESOLVED",
+          "underlying_statuses": [
+            "UNRESOLVED"
+          ],
+          "pair_ids": [
+            "F162"
+          ]
+        },
+        {
+          "units": [
+            "EARLY-K-calibration-oracle",
+            "SAFE-post-trigger"
+          ],
+          "judgment": "UNRESOLVED",
+          "underlying_statuses": [
+            "UNRESOLVED"
+          ],
+          "pair_ids": [
+            "F159"
+          ]
+        },
+        {
+          "units": [
+            "EARLY-K-calibration-oracle",
+            "SPLICE-CTBF-signal"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F151"
+          ]
+        },
+        {
+          "units": [
+            "EARLY-K-calibration-oracle",
+            "SPLICE-QCP-cost"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F152"
+          ]
+        },
+        {
+          "units": [
+            "EARLY-semantic-deidentification",
+            "KVGOV-HMAC-cost"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F197"
+          ]
+        },
+        {
+          "units": [
+            "EARLY-semantic-deidentification",
+            "KVGOV-hardware-gap"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F196"
+          ]
+        },
+        {
+          "units": [
+            "EARLY-semantic-deidentification",
+            "KVGOV-partialflush-sim"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F195"
+          ]
+        },
+        {
+          "units": [
+            "EARLY-semantic-deidentification",
+            "SAFE-post-trigger"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F192"
+          ]
+        },
+        {
+          "units": [
+            "EARLY-semantic-deidentification",
+            "SPLICE-CTBF-signal"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F184"
+          ]
+        },
+        {
+          "units": [
+            "EARLY-semantic-deidentification",
+            "SPLICE-QCP-cost"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F185"
+          ]
+        },
+        {
+          "units": [
+            "GAO-zero-copy-off",
+            "OTRO-epochpad"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F673"
+          ]
+        },
+        {
+          "units": [
+            "GAO-zero-copy-off",
+            "OTRO-unpadded"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F672"
+          ]
+        },
+        {
+          "units": [
+            "GAO-zero-copy-off",
+            "SHAPE-padding-estimate"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F675"
+          ]
+        },
+        {
+          "units": [
+            "GAO-zero-copy-off",
+            "SPARLEAK-replacement"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F674"
+          ]
+        },
+        {
+          "units": [
+            "GAO-zero-copy-off",
+            "TDXRAY-oblivious-map"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F664"
+          ]
+        },
+        {
+          "units": [
+            "KVGOV-HMAC-cost",
+            "KVGOV-hardware-gap"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F589"
+          ]
+        },
+        {
+          "units": [
+            "KVGOV-HMAC-cost",
+            "KVGOV-partialflush-sim"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F572"
+          ]
+        },
+        {
+          "units": [
+            "KVGOV-HMAC-cost",
+            "SAFE-post-trigger"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F515"
+          ]
+        },
+        {
+          "units": [
+            "KVGOV-HMAC-cost",
+            "SPLICE-CTBF-signal"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F319"
+          ]
+        },
+        {
+          "units": [
+            "KVGOV-HMAC-cost",
+            "SPLICE-QCP-cost"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F347"
+          ]
+        },
+        {
+          "units": [
+            "KVGOV-hardware-gap",
+            "KVGOV-partialflush-sim"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F571"
+          ]
+        },
+        {
+          "units": [
+            "KVGOV-hardware-gap",
+            "SAFE-post-trigger"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F514"
+          ]
+        },
+        {
+          "units": [
+            "KVGOV-hardware-gap",
+            "SPLICE-CTBF-signal"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F318"
+          ]
+        },
+        {
+          "units": [
+            "KVGOV-hardware-gap",
+            "SPLICE-QCP-cost"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F346"
+          ]
+        },
+        {
+          "units": [
+            "KVGOV-partialflush-sim",
+            "SAFE-post-trigger"
+          ],
+          "judgment": "COMPATIBLE",
+          "underlying_statuses": [
+            "COMPATIBLE"
+          ],
+          "pair_ids": [
+            "F513"
+          ]
+        },
+        {
+          "units": [
+            "KVGOV-partialflush-sim",
+            "SPLICE-CTBF-signal"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F317"
+          ]
+        },
+        {
+          "units": [
+            "KVGOV-partialflush-sim",
+            "SPLICE-QCP-cost"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F345"
+          ]
+        },
+        {
+          "units": [
+            "NET-dummy-padding-simulation",
+            "NET-upstream-local"
+          ],
+          "judgment": "COMPATIBLE",
+          "underlying_statuses": [
+            "COMPATIBLE"
+          ],
+          "pair_ids": [
+            "F076"
+          ]
+        },
+        {
+          "units": [
+            "NET-dummy-padding-simulation",
+            "SPEC-padding-REST"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F121"
+          ]
+        },
+        {
+          "units": [
+            "NET-dummy-padding-simulation",
+            "TIME-length-instruction"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F119"
+          ]
+        },
+        {
+          "units": [
+            "NET-dummy-padding-simulation",
+            "TIME-padding-estimate"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F120"
+          ]
+        },
+        {
+          "units": [
+            "NET-dummy-padding-simulation",
+            "WHISPER-batching-replay"
+          ],
+          "judgment": "COMPATIBLE",
+          "underlying_statuses": [
+            "COMPATIBLE"
+          ],
+          "pair_ids": [
+            "F115"
+          ]
+        },
+        {
+          "units": [
+            "NET-dummy-padding-simulation",
+            "WHISPER-injection-replay"
+          ],
+          "judgment": "COMPATIBLE",
+          "underlying_statuses": [
+            "COMPATIBLE"
+          ],
+          "pair_ids": [
+            "F116"
+          ]
+        },
+        {
+          "units": [
+            "NET-dummy-padding-simulation",
+            "WHISPER-randompadding-capture"
+          ],
+          "judgment": "COMPATIBLE",
+          "underlying_statuses": [
+            "COMPATIBLE"
+          ],
+          "pair_ids": [
+            "F114"
+          ]
+        },
+        {
+          "units": [
+            "NET-dummy-padding-simulation",
+            "WRA-decoy-execution"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F040"
+          ]
+        },
+        {
+          "units": [
+            "NET-upstream-local",
+            "SPEC-padding-REST"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F086"
+          ]
+        },
+        {
+          "units": [
+            "NET-upstream-local",
+            "TIME-length-instruction"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F084"
+          ]
+        },
+        {
+          "units": [
+            "NET-upstream-local",
+            "TIME-padding-estimate"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F085"
+          ]
+        },
+        {
+          "units": [
+            "NET-upstream-local",
+            "WHISPER-batching-replay"
+          ],
+          "judgment": "COMPATIBLE",
+          "underlying_statuses": [
+            "COMPATIBLE"
+          ],
+          "pair_ids": [
+            "F080"
+          ]
+        },
+        {
+          "units": [
+            "NET-upstream-local",
+            "WHISPER-injection-replay"
+          ],
+          "judgment": "COMPATIBLE",
+          "underlying_statuses": [
+            "COMPATIBLE"
+          ],
+          "pair_ids": [
+            "F081"
+          ]
+        },
+        {
+          "units": [
+            "NET-upstream-local",
+            "WHISPER-randompadding-capture"
+          ],
+          "judgment": "COMPATIBLE",
+          "underlying_statuses": [
+            "COMPATIBLE"
+          ],
+          "pair_ids": [
+            "F079"
+          ]
+        },
+        {
+          "units": [
+            "NET-upstream-local",
+            "WRA-decoy-execution"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F039"
+          ]
+        },
+        {
+          "units": [
+            "OTRO-epochpad",
+            "OTRO-unpadded"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F736"
+          ]
+        },
+        {
+          "units": [
+            "OTRO-epochpad",
+            "SHAPE-padding-estimate"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F740"
+          ]
+        },
+        {
+          "units": [
+            "OTRO-epochpad",
+            "SPARLEAK-replacement"
+          ],
+          "judgment": "UNRESOLVED",
+          "underlying_statuses": [
+            "UNRESOLVED"
+          ],
+          "pair_ids": [
+            "F739"
+          ]
+        },
+        {
+          "units": [
+            "OTRO-epochpad",
+            "TDXRAY-oblivious-map"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F684"
+          ]
+        },
+        {
+          "units": [
+            "OTRO-unpadded",
+            "SHAPE-padding-estimate"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F738"
+          ]
+        },
+        {
+          "units": [
+            "OTRO-unpadded",
+            "SPARLEAK-replacement"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F737"
+          ]
+        },
+        {
+          "units": [
+            "OTRO-unpadded",
+            "TDXRAY-oblivious-map"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F683"
+          ]
+        },
+        {
+          "units": [
+            "RHYTHM-VPN",
+            "TRAFFIC-prompt-reformulation"
+          ],
+          "judgment": "COMPATIBLE",
+          "underlying_statuses": [
+            "COMPATIBLE"
+          ],
+          "pair_ids": [
+            "F629"
+          ]
+        },
+        {
+          "units": [
+            "RHYTHM-VPN",
+            "TRAFFIC-temperature"
+          ],
+          "judgment": "COMPATIBLE",
+          "underlying_statuses": [
+            "COMPATIBLE"
+          ],
+          "pair_ids": [
+            "F643"
+          ]
+        },
+        {
+          "units": [
+            "SAFE-post-trigger",
+            "SPLICE-CTBF-signal"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F314"
+          ]
+        },
+        {
+          "units": [
+            "SAFE-post-trigger",
+            "SPLICE-QCP-cost"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F342"
+          ]
+        },
+        {
+          "units": [
+            "SHAPE-padding-estimate",
+            "SPARLEAK-replacement"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F741"
+          ]
+        },
+        {
+          "units": [
+            "SHAPE-padding-estimate",
+            "TDXRAY-oblivious-map"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F686"
+          ]
+        },
+        {
+          "units": [
+            "SPARLEAK-replacement",
+            "TDXRAY-oblivious-map"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F685"
+          ]
+        },
+        {
+          "units": [
+            "SPEC-padding-REST",
+            "TIME-length-instruction"
+          ],
+          "judgment": "UNRESOLVED",
+          "underlying_statuses": [
+            "UNRESOLVED"
+          ],
+          "pair_ids": [
+            "F365"
+          ]
+        },
+        {
+          "units": [
+            "SPEC-padding-REST",
+            "TIME-padding-estimate"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F391"
+          ]
+        },
+        {
+          "units": [
+            "SPEC-padding-REST",
+            "WHISPER-batching-replay"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F251"
+          ]
+        },
+        {
+          "units": [
+            "SPEC-padding-REST",
+            "WHISPER-injection-replay"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F281"
+          ]
+        },
+        {
+          "units": [
+            "SPEC-padding-REST",
+            "WHISPER-randompadding-capture"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F220"
+          ]
+        },
+        {
+          "units": [
+            "SPEC-padding-REST",
+            "WRA-decoy-execution"
+          ],
+          "judgment": "UNRESOLVED",
+          "underlying_statuses": [
+            "UNRESOLVED"
+          ],
+          "pair_ids": [
+            "F050"
+          ]
+        },
+        {
+          "units": [
+            "SPLICE-CTBF-signal",
+            "SPLICE-QCP-cost"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F307"
+          ]
+        },
+        {
+          "units": [
+            "TIME-length-instruction",
+            "TIME-padding-estimate"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F364"
+          ]
+        },
+        {
+          "units": [
+            "TIME-length-instruction",
+            "WHISPER-batching-replay"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F249"
+          ]
+        },
+        {
+          "units": [
+            "TIME-length-instruction",
+            "WHISPER-injection-replay"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F279"
+          ]
+        },
+        {
+          "units": [
+            "TIME-length-instruction",
+            "WHISPER-randompadding-capture"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F218"
+          ]
+        },
+        {
+          "units": [
+            "TIME-length-instruction",
+            "WRA-decoy-execution"
+          ],
+          "judgment": "UNRESOLVED",
+          "underlying_statuses": [
+            "UNRESOLVED"
+          ],
+          "pair_ids": [
+            "F048"
+          ]
+        },
+        {
+          "units": [
+            "TIME-padding-estimate",
+            "WHISPER-batching-replay"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F250"
+          ]
+        },
+        {
+          "units": [
+            "TIME-padding-estimate",
+            "WHISPER-injection-replay"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F280"
+          ]
+        },
+        {
+          "units": [
+            "TIME-padding-estimate",
+            "WHISPER-randompadding-capture"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F219"
+          ]
+        },
+        {
+          "units": [
+            "TIME-padding-estimate",
+            "WRA-decoy-execution"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F049"
+          ]
+        },
+        {
+          "units": [
+            "TRAFFIC-prompt-reformulation",
+            "TRAFFIC-temperature"
+          ],
+          "judgment": "COMPATIBLE",
+          "underlying_statuses": [
+            "COMPATIBLE"
+          ],
+          "pair_ids": [
+            "F622"
+          ]
+        },
+        {
+          "units": [
+            "WHISPER-batching-replay",
+            "WHISPER-injection-replay"
+          ],
+          "judgment": "COMPATIBLE",
+          "underlying_statuses": [
+            "COMPATIBLE"
+          ],
+          "pair_ids": [
+            "F246"
+          ]
+        },
+        {
+          "units": [
+            "WHISPER-batching-replay",
+            "WHISPER-randompadding-capture"
+          ],
+          "judgment": "COMPATIBLE",
+          "underlying_statuses": [
+            "COMPATIBLE"
+          ],
+          "pair_ids": [
+            "F214"
+          ]
+        },
+        {
+          "units": [
+            "WHISPER-batching-replay",
+            "WRA-decoy-execution"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F044"
+          ]
+        },
+        {
+          "units": [
+            "WHISPER-injection-replay",
+            "WHISPER-randompadding-capture"
+          ],
+          "judgment": "COMPATIBLE",
+          "underlying_statuses": [
+            "COMPATIBLE"
+          ],
+          "pair_ids": [
+            "F215"
+          ]
+        },
+        {
+          "units": [
+            "WHISPER-injection-replay",
+            "WRA-decoy-execution"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F045"
+          ]
+        },
+        {
+          "units": [
+            "WHISPER-randompadding-capture",
+            "WRA-decoy-execution"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F043"
+          ]
+        }
+      ]
+    },
+    {
+      "rule": "Family and measurement mode",
+      "units": 35,
+      "projected_pairs": 103,
+      "hidden_within_unit_pairs": [
+        "F246",
+        "F589",
+        "F622",
+        "F727"
+      ],
+      "counts": {
+        "INCOMPATIBLE": 83,
+        "COMPATIBLE": 10,
+        "UNRESOLVED": 9,
+        "MIXED": 1
+      },
+      "memberships": {
+        "('uitraces2026', 'Tr')": [
+          "UI-delay-offline"
+        ],
+        "('jeong2026wra', 'Ex')": [
+          "WRA-decoy-execution"
+        ],
+        "('netecho2025', 'Ex')": [
+          "NET-upstream-local"
+        ],
+        "('netecho2025', 'Tr')": [
+          "NET-dummy-padding-simulation"
+        ],
+        "('earlybird2025', 'Si')": [
+          "EARLY-K-calibration-oracle"
+        ],
+        "('earlybird2025', 'Ex')": [
+          "EARLY-semantic-deidentification"
+        ],
+        "('whisperleak2025', 'Ex')": [
+          "WHISPER-randompadding-capture"
+        ],
+        "('whisperleak2025', 'Tr')": [
+          "WHISPER-batching-replay",
+          "WHISPER-injection-replay"
+        ],
+        "('spliceleak2026', 'Ex')": [
+          "SPLICE-CTBF-signal"
+        ],
+        "('spliceleak2026', 'Co')": [
+          "SPLICE-QCP-cost"
+        ],
+        "('timewilltell2024', 'Ex')": [
+          "TIME-length-instruction"
+        ],
+        "('timewilltell2024', 'Si')": [
+          "TIME-padding-estimate"
+        ],
+        "('wei2024speculation', 'Un')": [
+          "SPEC-padding-REST"
+        ],
+        "('dangol2026workflow', 'Tr')": [
+          "DANGOL-capture"
+        ],
+        "('dangol2026workflow', 'Ex')": [
+          "DANGOL-livebinding"
+        ],
+        "('geng2026sigleak', 'Ex')": [
+          "SIG-common-guardrail"
+        ],
+        "('chu2025safekv', 'Ex')": [
+          "SAFE-post-trigger"
+        ],
+        "('zhu2026turing', 'Ex')": [
+          "AHB-online-executed"
+        ],
+        "('zhu2026turing', 'Tr')": [
+          "AHB-offline"
+        ],
+        "('addagada2026kvgov', 'Si')": [
+          "KVGOV-partialflush-sim"
+        ],
+        "('addagada2026kvgov', 'Co')": [
+          "KVGOV-hardware-gap",
+          "KVGOV-HMAC-cost"
+        ],
+        "('pouryousef2026traffic', 'Ex')": [
+          "TRAFFIC-prompt-reformulation",
+          "TRAFFIC-temperature"
+        ],
+        "('carlini2024remote', 'Un')": [
+          "CARLINI-fixed-rate"
+        ],
+        "('gao2025iknow', 'Co')": [
+          "GAO-zero-copy-off"
+        ],
+        "('hornetz2026tdxray', 'Co')": [
+          "TDXRAY-oblivious-map"
+        ],
+        "('shahriar2026agenttell', 'Ex')": [
+          "AGENTTELL-fixed-instruction"
+        ],
+        "('wang2026fpagent', 'Ex')": [
+          "FP-CLOUDFLARE"
+        ],
+        "('gu2026behindbars', 'Ex')": [
+          "BAR-co-running-noise"
+        ],
+        "('alhazbi2025rhythm', 'Ex')": [
+          "RHYTHM-VPN"
+        ],
+        "('debenedetti2024privacy', 'Ex')": [
+          "DEB-filter-origin"
+        ],
+        "('wu2026cacheprune', 'Ex')": [
+          "CACHEPRUNE-selective",
+          "CACHEPRUNE-context"
+        ],
+        "('lee2026otro', 'Co')": [
+          "OTRO-unpadded"
+        ],
+        "('lee2026otro', 'Si')": [
+          "OTRO-epochpad"
+        ],
+        "('chen2026sparleak', 'Ex')": [
+          "SPARLEAK-replacement"
+        ],
+        "('hadad2026shape', 'Si')": [
+          "SHAPE-padding-estimate"
+        ]
+      },
+      "pairs": [
+        {
+          "units": [
+            "('addagada2026kvgov', 'Co')",
+            "('addagada2026kvgov', 'Si')"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F571",
+            "F572"
+          ]
+        },
+        {
+          "units": [
+            "('addagada2026kvgov', 'Co')",
+            "('chu2025safekv', 'Ex')"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F514",
+            "F515"
+          ]
+        },
+        {
+          "units": [
+            "('addagada2026kvgov', 'Co')",
+            "('earlybird2025', 'Ex')"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F196",
+            "F197"
+          ]
+        },
+        {
+          "units": [
+            "('addagada2026kvgov', 'Co')",
+            "('earlybird2025', 'Si')"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F163",
+            "F164"
+          ]
+        },
+        {
+          "units": [
+            "('addagada2026kvgov', 'Co')",
+            "('spliceleak2026', 'Co')"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F346",
+            "F347"
+          ]
+        },
+        {
+          "units": [
+            "('addagada2026kvgov', 'Co')",
+            "('spliceleak2026', 'Ex')"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F318",
+            "F319"
+          ]
+        },
+        {
+          "units": [
+            "('addagada2026kvgov', 'Co')",
+            "('wu2026cacheprune', 'Ex')"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F600",
+            "F601",
+            "F616",
+            "F617"
+          ]
+        },
+        {
+          "units": [
+            "('addagada2026kvgov', 'Si')",
+            "('chu2025safekv', 'Ex')"
+          ],
+          "judgment": "COMPATIBLE",
+          "underlying_statuses": [
+            "COMPATIBLE"
+          ],
+          "pair_ids": [
+            "F513"
+          ]
+        },
+        {
+          "units": [
+            "('addagada2026kvgov', 'Si')",
+            "('earlybird2025', 'Ex')"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F195"
+          ]
+        },
+        {
+          "units": [
+            "('addagada2026kvgov', 'Si')",
+            "('earlybird2025', 'Si')"
+          ],
+          "judgment": "UNRESOLVED",
+          "underlying_statuses": [
+            "UNRESOLVED"
+          ],
+          "pair_ids": [
+            "F162"
+          ]
+        },
+        {
+          "units": [
+            "('addagada2026kvgov', 'Si')",
+            "('spliceleak2026', 'Co')"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F345"
+          ]
+        },
+        {
+          "units": [
+            "('addagada2026kvgov', 'Si')",
+            "('spliceleak2026', 'Ex')"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F317"
+          ]
+        },
+        {
+          "units": [
+            "('addagada2026kvgov', 'Si')",
+            "('wu2026cacheprune', 'Ex')"
+          ],
+          "judgment": "UNRESOLVED",
+          "underlying_statuses": [
+            "UNRESOLVED"
+          ],
+          "pair_ids": [
+            "F583",
+            "F584"
+          ]
+        },
+        {
+          "units": [
+            "('alhazbi2025rhythm', 'Ex')",
+            "('pouryousef2026traffic', 'Ex')"
+          ],
+          "judgment": "COMPATIBLE",
+          "underlying_statuses": [
+            "COMPATIBLE"
+          ],
+          "pair_ids": [
+            "F629",
+            "F643"
+          ]
+        },
+        {
+          "units": [
+            "('carlini2024remote', 'Un')",
+            "('dangol2026workflow', 'Ex')"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F475"
+          ]
+        },
+        {
+          "units": [
+            "('carlini2024remote', 'Un')",
+            "('dangol2026workflow', 'Tr')"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F452"
+          ]
+        },
+        {
+          "units": [
+            "('carlini2024remote', 'Un')",
+            "('jeong2026wra', 'Ex')"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F062"
+          ]
+        },
+        {
+          "units": [
+            "('carlini2024remote', 'Un')",
+            "('netecho2025', 'Ex')"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F098"
+          ]
+        },
+        {
+          "units": [
+            "('carlini2024remote', 'Un')",
+            "('netecho2025', 'Tr')"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F133"
+          ]
+        },
+        {
+          "units": [
+            "('carlini2024remote', 'Un')",
+            "('timewilltell2024', 'Ex')"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F377"
+          ]
+        },
+        {
+          "units": [
+            "('carlini2024remote', 'Un')",
+            "('timewilltell2024', 'Si')"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F403"
+          ]
+        },
+        {
+          "units": [
+            "('carlini2024remote', 'Un')",
+            "('wei2024speculation', 'Un')"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F428"
+          ]
+        },
+        {
+          "units": [
+            "('carlini2024remote', 'Un')",
+            "('whisperleak2025', 'Ex')"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F232"
+          ]
+        },
+        {
+          "units": [
+            "('carlini2024remote', 'Un')",
+            "('whisperleak2025', 'Tr')"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F263",
+            "F293"
+          ]
+        },
+        {
+          "units": [
+            "('chen2026sparleak', 'Ex')",
+            "('gao2025iknow', 'Co')"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F674"
+          ]
+        },
+        {
+          "units": [
+            "('chen2026sparleak', 'Ex')",
+            "('hadad2026shape', 'Si')"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F741"
+          ]
+        },
+        {
+          "units": [
+            "('chen2026sparleak', 'Ex')",
+            "('hornetz2026tdxray', 'Co')"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F685"
+          ]
+        },
+        {
+          "units": [
+            "('chen2026sparleak', 'Ex')",
+            "('lee2026otro', 'Co')"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F737"
+          ]
+        },
+        {
+          "units": [
+            "('chen2026sparleak', 'Ex')",
+            "('lee2026otro', 'Si')"
+          ],
+          "judgment": "UNRESOLVED",
+          "underlying_statuses": [
+            "UNRESOLVED"
+          ],
+          "pair_ids": [
+            "F739"
+          ]
+        },
+        {
+          "units": [
+            "('chu2025safekv', 'Ex')",
+            "('earlybird2025', 'Ex')"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F192"
+          ]
+        },
+        {
+          "units": [
+            "('chu2025safekv', 'Ex')",
+            "('earlybird2025', 'Si')"
+          ],
+          "judgment": "UNRESOLVED",
+          "underlying_statuses": [
+            "UNRESOLVED"
+          ],
+          "pair_ids": [
+            "F159"
+          ]
+        },
+        {
+          "units": [
+            "('chu2025safekv', 'Ex')",
+            "('spliceleak2026', 'Co')"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F342"
+          ]
+        },
+        {
+          "units": [
+            "('chu2025safekv', 'Ex')",
+            "('spliceleak2026', 'Ex')"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F314"
+          ]
+        },
+        {
+          "units": [
+            "('chu2025safekv', 'Ex')",
+            "('wu2026cacheprune', 'Ex')"
+          ],
+          "judgment": "UNRESOLVED",
+          "underlying_statuses": [
+            "UNRESOLVED"
+          ],
+          "pair_ids": [
+            "F526",
+            "F527"
+          ]
+        },
+        {
+          "units": [
+            "('dangol2026workflow', 'Ex')",
+            "('dangol2026workflow', 'Tr')"
+          ],
+          "judgment": "COMPATIBLE",
+          "underlying_statuses": [
+            "COMPATIBLE"
+          ],
+          "pair_ids": [
+            "F442"
+          ]
+        },
+        {
+          "units": [
+            "('dangol2026workflow', 'Ex')",
+            "('jeong2026wra', 'Ex')"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F052"
+          ]
+        },
+        {
+          "units": [
+            "('dangol2026workflow', 'Ex')",
+            "('netecho2025', 'Ex')"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F088"
+          ]
+        },
+        {
+          "units": [
+            "('dangol2026workflow', 'Ex')",
+            "('netecho2025', 'Tr')"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F123"
+          ]
+        },
+        {
+          "units": [
+            "('dangol2026workflow', 'Ex')",
+            "('timewilltell2024', 'Ex')"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F367"
+          ]
+        },
+        {
+          "units": [
+            "('dangol2026workflow', 'Ex')",
+            "('timewilltell2024', 'Si')"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F393"
+          ]
+        },
+        {
+          "units": [
+            "('dangol2026workflow', 'Ex')",
+            "('wei2024speculation', 'Un')"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F418"
+          ]
+        },
+        {
+          "units": [
+            "('dangol2026workflow', 'Ex')",
+            "('whisperleak2025', 'Ex')"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F222"
+          ]
+        },
+        {
+          "units": [
+            "('dangol2026workflow', 'Ex')",
+            "('whisperleak2025', 'Tr')"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F253",
+            "F283"
+          ]
+        },
+        {
+          "units": [
+            "('dangol2026workflow', 'Tr')",
+            "('jeong2026wra', 'Ex')"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F051"
+          ]
+        },
+        {
+          "units": [
+            "('dangol2026workflow', 'Tr')",
+            "('netecho2025', 'Ex')"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F087"
+          ]
+        },
+        {
+          "units": [
+            "('dangol2026workflow', 'Tr')",
+            "('netecho2025', 'Tr')"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F122"
+          ]
+        },
+        {
+          "units": [
+            "('dangol2026workflow', 'Tr')",
+            "('timewilltell2024', 'Ex')"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F366"
+          ]
+        },
+        {
+          "units": [
+            "('dangol2026workflow', 'Tr')",
+            "('timewilltell2024', 'Si')"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F392"
+          ]
+        },
+        {
+          "units": [
+            "('dangol2026workflow', 'Tr')",
+            "('wei2024speculation', 'Un')"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F417"
+          ]
+        },
+        {
+          "units": [
+            "('dangol2026workflow', 'Tr')",
+            "('whisperleak2025', 'Ex')"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F221"
+          ]
+        },
+        {
+          "units": [
+            "('dangol2026workflow', 'Tr')",
+            "('whisperleak2025', 'Tr')"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F252",
+            "F282"
+          ]
+        },
+        {
+          "units": [
+            "('earlybird2025', 'Ex')",
+            "('earlybird2025', 'Si')"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F147"
+          ]
+        },
+        {
+          "units": [
+            "('earlybird2025', 'Ex')",
+            "('spliceleak2026', 'Co')"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F185"
+          ]
+        },
+        {
+          "units": [
+            "('earlybird2025', 'Ex')",
+            "('spliceleak2026', 'Ex')"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F184"
+          ]
+        },
+        {
+          "units": [
+            "('earlybird2025', 'Ex')",
+            "('wu2026cacheprune', 'Ex')"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F208",
+            "F209"
+          ]
+        },
+        {
+          "units": [
+            "('earlybird2025', 'Si')",
+            "('spliceleak2026', 'Co')"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F152"
+          ]
+        },
+        {
+          "units": [
+            "('earlybird2025', 'Si')",
+            "('spliceleak2026', 'Ex')"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F151"
+          ]
+        },
+        {
+          "units": [
+            "('earlybird2025', 'Si')",
+            "('wu2026cacheprune', 'Ex')"
+          ],
+          "judgment": "MIXED",
+          "underlying_statuses": [
+            "COMPATIBLE",
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F175",
+            "F176"
+          ]
+        },
+        {
+          "units": [
+            "('gao2025iknow', 'Co')",
+            "('hadad2026shape', 'Si')"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F675"
+          ]
+        },
+        {
+          "units": [
+            "('gao2025iknow', 'Co')",
+            "('hornetz2026tdxray', 'Co')"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F664"
+          ]
+        },
+        {
+          "units": [
+            "('gao2025iknow', 'Co')",
+            "('lee2026otro', 'Co')"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F672"
+          ]
+        },
+        {
+          "units": [
+            "('gao2025iknow', 'Co')",
+            "('lee2026otro', 'Si')"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F673"
+          ]
+        },
+        {
+          "units": [
+            "('geng2026sigleak', 'Ex')",
+            "('shahriar2026agenttell', 'Ex')"
+          ],
+          "judgment": "UNRESOLVED",
+          "underlying_statuses": [
+            "UNRESOLVED"
+          ],
+          "pair_ids": [
+            "F500"
+          ]
+        },
+        {
+          "units": [
+            "('hadad2026shape', 'Si')",
+            "('hornetz2026tdxray', 'Co')"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F686"
+          ]
+        },
+        {
+          "units": [
+            "('hadad2026shape', 'Si')",
+            "('lee2026otro', 'Co')"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F738"
+          ]
+        },
+        {
+          "units": [
+            "('hadad2026shape', 'Si')",
+            "('lee2026otro', 'Si')"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F740"
+          ]
+        },
+        {
+          "units": [
+            "('hornetz2026tdxray', 'Co')",
+            "('lee2026otro', 'Co')"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F683"
+          ]
+        },
+        {
+          "units": [
+            "('hornetz2026tdxray', 'Co')",
+            "('lee2026otro', 'Si')"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F684"
+          ]
+        },
+        {
+          "units": [
+            "('jeong2026wra', 'Ex')",
+            "('netecho2025', 'Ex')"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F039"
+          ]
+        },
+        {
+          "units": [
+            "('jeong2026wra', 'Ex')",
+            "('netecho2025', 'Tr')"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F040"
+          ]
+        },
+        {
+          "units": [
+            "('jeong2026wra', 'Ex')",
+            "('timewilltell2024', 'Ex')"
+          ],
+          "judgment": "UNRESOLVED",
+          "underlying_statuses": [
+            "UNRESOLVED"
+          ],
+          "pair_ids": [
+            "F048"
+          ]
+        },
+        {
+          "units": [
+            "('jeong2026wra', 'Ex')",
+            "('timewilltell2024', 'Si')"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F049"
+          ]
+        },
+        {
+          "units": [
+            "('jeong2026wra', 'Ex')",
+            "('wei2024speculation', 'Un')"
+          ],
+          "judgment": "UNRESOLVED",
+          "underlying_statuses": [
+            "UNRESOLVED"
+          ],
+          "pair_ids": [
+            "F050"
+          ]
+        },
+        {
+          "units": [
+            "('jeong2026wra', 'Ex')",
+            "('whisperleak2025', 'Ex')"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F043"
+          ]
+        },
+        {
+          "units": [
+            "('jeong2026wra', 'Ex')",
+            "('whisperleak2025', 'Tr')"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F044",
+            "F045"
+          ]
+        },
+        {
+          "units": [
+            "('lee2026otro', 'Co')",
+            "('lee2026otro', 'Si')"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F736"
+          ]
+        },
+        {
+          "units": [
+            "('netecho2025', 'Ex')",
+            "('netecho2025', 'Tr')"
+          ],
+          "judgment": "COMPATIBLE",
+          "underlying_statuses": [
+            "COMPATIBLE"
+          ],
+          "pair_ids": [
+            "F076"
+          ]
+        },
+        {
+          "units": [
+            "('netecho2025', 'Ex')",
+            "('timewilltell2024', 'Ex')"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F084"
+          ]
+        },
+        {
+          "units": [
+            "('netecho2025', 'Ex')",
+            "('timewilltell2024', 'Si')"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F085"
+          ]
+        },
+        {
+          "units": [
+            "('netecho2025', 'Ex')",
+            "('wei2024speculation', 'Un')"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F086"
+          ]
+        },
+        {
+          "units": [
+            "('netecho2025', 'Ex')",
+            "('whisperleak2025', 'Ex')"
+          ],
+          "judgment": "COMPATIBLE",
+          "underlying_statuses": [
+            "COMPATIBLE"
+          ],
+          "pair_ids": [
+            "F079"
+          ]
+        },
+        {
+          "units": [
+            "('netecho2025', 'Ex')",
+            "('whisperleak2025', 'Tr')"
+          ],
+          "judgment": "COMPATIBLE",
+          "underlying_statuses": [
+            "COMPATIBLE"
+          ],
+          "pair_ids": [
+            "F080",
+            "F081"
+          ]
+        },
+        {
+          "units": [
+            "('netecho2025', 'Tr')",
+            "('timewilltell2024', 'Ex')"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F119"
+          ]
+        },
+        {
+          "units": [
+            "('netecho2025', 'Tr')",
+            "('timewilltell2024', 'Si')"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F120"
+          ]
+        },
+        {
+          "units": [
+            "('netecho2025', 'Tr')",
+            "('wei2024speculation', 'Un')"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F121"
+          ]
+        },
+        {
+          "units": [
+            "('netecho2025', 'Tr')",
+            "('whisperleak2025', 'Ex')"
+          ],
+          "judgment": "COMPATIBLE",
+          "underlying_statuses": [
+            "COMPATIBLE"
+          ],
+          "pair_ids": [
+            "F114"
+          ]
+        },
+        {
+          "units": [
+            "('netecho2025', 'Tr')",
+            "('whisperleak2025', 'Tr')"
+          ],
+          "judgment": "COMPATIBLE",
+          "underlying_statuses": [
+            "COMPATIBLE"
+          ],
+          "pair_ids": [
+            "F115",
+            "F116"
+          ]
+        },
+        {
+          "units": [
+            "('spliceleak2026', 'Co')",
+            "('spliceleak2026', 'Ex')"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F307"
+          ]
+        },
+        {
+          "units": [
+            "('spliceleak2026', 'Co')",
+            "('wu2026cacheprune', 'Ex')"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F358",
+            "F359"
+          ]
+        },
+        {
+          "units": [
+            "('spliceleak2026', 'Ex')",
+            "('wu2026cacheprune', 'Ex')"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F330",
+            "F331"
+          ]
+        },
+        {
+          "units": [
+            "('timewilltell2024', 'Ex')",
+            "('timewilltell2024', 'Si')"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F364"
+          ]
+        },
+        {
+          "units": [
+            "('timewilltell2024', 'Ex')",
+            "('wei2024speculation', 'Un')"
+          ],
+          "judgment": "UNRESOLVED",
+          "underlying_statuses": [
+            "UNRESOLVED"
+          ],
+          "pair_ids": [
+            "F365"
+          ]
+        },
+        {
+          "units": [
+            "('timewilltell2024', 'Ex')",
+            "('whisperleak2025', 'Ex')"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F218"
+          ]
+        },
+        {
+          "units": [
+            "('timewilltell2024', 'Ex')",
+            "('whisperleak2025', 'Tr')"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F249",
+            "F279"
+          ]
+        },
+        {
+          "units": [
+            "('timewilltell2024', 'Si')",
+            "('wei2024speculation', 'Un')"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F391"
+          ]
+        },
+        {
+          "units": [
+            "('timewilltell2024', 'Si')",
+            "('whisperleak2025', 'Ex')"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F219"
+          ]
+        },
+        {
+          "units": [
+            "('timewilltell2024', 'Si')",
+            "('whisperleak2025', 'Tr')"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F250",
+            "F280"
+          ]
+        },
+        {
+          "units": [
+            "('uitraces2026', 'Tr')",
+            "('zhu2026turing', 'Ex')"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F018"
+          ]
+        },
+        {
+          "units": [
+            "('uitraces2026', 'Tr')",
+            "('zhu2026turing', 'Tr')"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F019"
+          ]
+        },
+        {
+          "units": [
+            "('wei2024speculation', 'Un')",
+            "('whisperleak2025', 'Ex')"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F220"
+          ]
+        },
+        {
+          "units": [
+            "('wei2024speculation', 'Un')",
+            "('whisperleak2025', 'Tr')"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F251",
+            "F281"
+          ]
+        },
+        {
+          "units": [
+            "('whisperleak2025', 'Ex')",
+            "('whisperleak2025', 'Tr')"
+          ],
+          "judgment": "COMPATIBLE",
+          "underlying_statuses": [
+            "COMPATIBLE"
+          ],
+          "pair_ids": [
+            "F214",
+            "F215"
+          ]
+        },
+        {
+          "units": [
+            "('zhu2026turing', 'Ex')",
+            "('zhu2026turing', 'Tr')"
+          ],
+          "judgment": "COMPATIBLE",
+          "underlying_statuses": [
+            "COMPATIBLE"
+          ],
+          "pair_ids": [
+            "F532"
+          ]
+        }
+      ]
+    },
+    {
+      "rule": "Family only",
+      "units": 26,
+      "projected_pairs": 44,
+      "hidden_within_unit_pairs": [
+        "F076",
+        "F147",
+        "F214",
+        "F215",
+        "F246",
+        "F307",
+        "F364",
+        "F442",
+        "F532",
+        "F571",
+        "F572",
+        "F589",
+        "F622",
+        "F727",
+        "F736"
+      ],
+      "counts": {
+        "MIXED": 8,
+        "INCOMPATIBLE": 31,
+        "COMPATIBLE": 2,
+        "UNRESOLVED": 3
+      },
+      "memberships": {
+        "uitraces2026": [
+          "UI-delay-offline"
+        ],
+        "jeong2026wra": [
+          "WRA-decoy-execution"
+        ],
+        "netecho2025": [
+          "NET-upstream-local",
+          "NET-dummy-padding-simulation"
+        ],
+        "earlybird2025": [
+          "EARLY-K-calibration-oracle",
+          "EARLY-semantic-deidentification"
+        ],
+        "whisperleak2025": [
+          "WHISPER-randompadding-capture",
+          "WHISPER-batching-replay",
+          "WHISPER-injection-replay"
+        ],
+        "spliceleak2026": [
+          "SPLICE-CTBF-signal",
+          "SPLICE-QCP-cost"
+        ],
+        "timewilltell2024": [
+          "TIME-length-instruction",
+          "TIME-padding-estimate"
+        ],
+        "wei2024speculation": [
+          "SPEC-padding-REST"
+        ],
+        "dangol2026workflow": [
+          "DANGOL-capture",
+          "DANGOL-livebinding"
+        ],
+        "geng2026sigleak": [
+          "SIG-common-guardrail"
+        ],
+        "chu2025safekv": [
+          "SAFE-post-trigger"
+        ],
+        "zhu2026turing": [
+          "AHB-online-executed",
+          "AHB-offline"
+        ],
+        "addagada2026kvgov": [
+          "KVGOV-partialflush-sim",
+          "KVGOV-hardware-gap",
+          "KVGOV-HMAC-cost"
+        ],
+        "pouryousef2026traffic": [
+          "TRAFFIC-prompt-reformulation",
+          "TRAFFIC-temperature"
+        ],
+        "carlini2024remote": [
+          "CARLINI-fixed-rate"
+        ],
+        "gao2025iknow": [
+          "GAO-zero-copy-off"
+        ],
+        "hornetz2026tdxray": [
+          "TDXRAY-oblivious-map"
+        ],
+        "shahriar2026agenttell": [
+          "AGENTTELL-fixed-instruction"
+        ],
+        "wang2026fpagent": [
+          "FP-CLOUDFLARE"
+        ],
+        "gu2026behindbars": [
+          "BAR-co-running-noise"
+        ],
+        "alhazbi2025rhythm": [
+          "RHYTHM-VPN"
+        ],
+        "debenedetti2024privacy": [
+          "DEB-filter-origin"
+        ],
+        "wu2026cacheprune": [
+          "CACHEPRUNE-selective",
+          "CACHEPRUNE-context"
+        ],
+        "lee2026otro": [
+          "OTRO-unpadded",
+          "OTRO-epochpad"
+        ],
+        "chen2026sparleak": [
+          "SPARLEAK-replacement"
+        ],
+        "hadad2026shape": [
+          "SHAPE-padding-estimate"
+        ]
+      },
+      "pairs": [
+        {
+          "units": [
+            "addagada2026kvgov",
+            "chu2025safekv"
+          ],
+          "judgment": "MIXED",
+          "underlying_statuses": [
+            "COMPATIBLE",
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F513",
+            "F514",
+            "F515"
+          ]
+        },
+        {
+          "units": [
+            "addagada2026kvgov",
+            "earlybird2025"
+          ],
+          "judgment": "MIXED",
+          "underlying_statuses": [
+            "INCOMPATIBLE",
+            "UNRESOLVED"
+          ],
+          "pair_ids": [
+            "F162",
+            "F163",
+            "F164",
+            "F195",
+            "F196",
+            "F197"
+          ]
+        },
+        {
+          "units": [
+            "addagada2026kvgov",
+            "spliceleak2026"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F317",
+            "F318",
+            "F319",
+            "F345",
+            "F346",
+            "F347"
+          ]
+        },
+        {
+          "units": [
+            "addagada2026kvgov",
+            "wu2026cacheprune"
+          ],
+          "judgment": "MIXED",
+          "underlying_statuses": [
+            "INCOMPATIBLE",
+            "UNRESOLVED"
+          ],
+          "pair_ids": [
+            "F583",
+            "F584",
+            "F600",
+            "F601",
+            "F616",
+            "F617"
+          ]
+        },
+        {
+          "units": [
+            "alhazbi2025rhythm",
+            "pouryousef2026traffic"
+          ],
+          "judgment": "COMPATIBLE",
+          "underlying_statuses": [
+            "COMPATIBLE"
+          ],
+          "pair_ids": [
+            "F629",
+            "F643"
+          ]
+        },
+        {
+          "units": [
+            "carlini2024remote",
+            "dangol2026workflow"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F452",
+            "F475"
+          ]
+        },
+        {
+          "units": [
+            "carlini2024remote",
+            "jeong2026wra"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F062"
+          ]
+        },
+        {
+          "units": [
+            "carlini2024remote",
+            "netecho2025"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F098",
+            "F133"
+          ]
+        },
+        {
+          "units": [
+            "carlini2024remote",
+            "timewilltell2024"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F377",
+            "F403"
+          ]
+        },
+        {
+          "units": [
+            "carlini2024remote",
+            "wei2024speculation"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F428"
+          ]
+        },
+        {
+          "units": [
+            "carlini2024remote",
+            "whisperleak2025"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F232",
+            "F263",
+            "F293"
+          ]
+        },
+        {
+          "units": [
+            "chen2026sparleak",
+            "gao2025iknow"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F674"
+          ]
+        },
+        {
+          "units": [
+            "chen2026sparleak",
+            "hadad2026shape"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F741"
+          ]
+        },
+        {
+          "units": [
+            "chen2026sparleak",
+            "hornetz2026tdxray"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F685"
+          ]
+        },
+        {
+          "units": [
+            "chen2026sparleak",
+            "lee2026otro"
+          ],
+          "judgment": "MIXED",
+          "underlying_statuses": [
+            "INCOMPATIBLE",
+            "UNRESOLVED"
+          ],
+          "pair_ids": [
+            "F737",
+            "F739"
+          ]
+        },
+        {
+          "units": [
+            "chu2025safekv",
+            "earlybird2025"
+          ],
+          "judgment": "MIXED",
+          "underlying_statuses": [
+            "INCOMPATIBLE",
+            "UNRESOLVED"
+          ],
+          "pair_ids": [
+            "F159",
+            "F192"
+          ]
+        },
+        {
+          "units": [
+            "chu2025safekv",
+            "spliceleak2026"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F314",
+            "F342"
+          ]
+        },
+        {
+          "units": [
+            "chu2025safekv",
+            "wu2026cacheprune"
+          ],
+          "judgment": "UNRESOLVED",
+          "underlying_statuses": [
+            "UNRESOLVED"
+          ],
+          "pair_ids": [
+            "F526",
+            "F527"
+          ]
+        },
+        {
+          "units": [
+            "dangol2026workflow",
+            "jeong2026wra"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F051",
+            "F052"
+          ]
+        },
+        {
+          "units": [
+            "dangol2026workflow",
+            "netecho2025"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F087",
+            "F088",
+            "F122",
+            "F123"
+          ]
+        },
+        {
+          "units": [
+            "dangol2026workflow",
+            "timewilltell2024"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F366",
+            "F367",
+            "F392",
+            "F393"
+          ]
+        },
+        {
+          "units": [
+            "dangol2026workflow",
+            "wei2024speculation"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F417",
+            "F418"
+          ]
+        },
+        {
+          "units": [
+            "dangol2026workflow",
+            "whisperleak2025"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F221",
+            "F222",
+            "F252",
+            "F253",
+            "F282",
+            "F283"
+          ]
+        },
+        {
+          "units": [
+            "earlybird2025",
+            "spliceleak2026"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F151",
+            "F152",
+            "F184",
+            "F185"
+          ]
+        },
+        {
+          "units": [
+            "earlybird2025",
+            "wu2026cacheprune"
+          ],
+          "judgment": "MIXED",
+          "underlying_statuses": [
+            "COMPATIBLE",
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F175",
+            "F176",
+            "F208",
+            "F209"
+          ]
+        },
+        {
+          "units": [
+            "gao2025iknow",
+            "hadad2026shape"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F675"
+          ]
+        },
+        {
+          "units": [
+            "gao2025iknow",
+            "hornetz2026tdxray"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F664"
+          ]
+        },
+        {
+          "units": [
+            "gao2025iknow",
+            "lee2026otro"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F672",
+            "F673"
+          ]
+        },
+        {
+          "units": [
+            "geng2026sigleak",
+            "shahriar2026agenttell"
+          ],
+          "judgment": "UNRESOLVED",
+          "underlying_statuses": [
+            "UNRESOLVED"
+          ],
+          "pair_ids": [
+            "F500"
+          ]
+        },
+        {
+          "units": [
+            "hadad2026shape",
+            "hornetz2026tdxray"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F686"
+          ]
+        },
+        {
+          "units": [
+            "hadad2026shape",
+            "lee2026otro"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F738",
+            "F740"
+          ]
+        },
+        {
+          "units": [
+            "hornetz2026tdxray",
+            "lee2026otro"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F683",
+            "F684"
+          ]
+        },
+        {
+          "units": [
+            "jeong2026wra",
+            "netecho2025"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F039",
+            "F040"
+          ]
+        },
+        {
+          "units": [
+            "jeong2026wra",
+            "timewilltell2024"
+          ],
+          "judgment": "MIXED",
+          "underlying_statuses": [
+            "INCOMPATIBLE",
+            "UNRESOLVED"
+          ],
+          "pair_ids": [
+            "F048",
+            "F049"
+          ]
+        },
+        {
+          "units": [
+            "jeong2026wra",
+            "wei2024speculation"
+          ],
+          "judgment": "UNRESOLVED",
+          "underlying_statuses": [
+            "UNRESOLVED"
+          ],
+          "pair_ids": [
+            "F050"
+          ]
+        },
+        {
+          "units": [
+            "jeong2026wra",
+            "whisperleak2025"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F043",
+            "F044",
+            "F045"
+          ]
+        },
+        {
+          "units": [
+            "netecho2025",
+            "timewilltell2024"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F084",
+            "F085",
+            "F119",
+            "F120"
+          ]
+        },
+        {
+          "units": [
+            "netecho2025",
+            "wei2024speculation"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F086",
+            "F121"
+          ]
+        },
+        {
+          "units": [
+            "netecho2025",
+            "whisperleak2025"
+          ],
+          "judgment": "COMPATIBLE",
+          "underlying_statuses": [
+            "COMPATIBLE"
+          ],
+          "pair_ids": [
+            "F079",
+            "F080",
+            "F081",
+            "F114",
+            "F115",
+            "F116"
+          ]
+        },
+        {
+          "units": [
+            "spliceleak2026",
+            "wu2026cacheprune"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F330",
+            "F331",
+            "F358",
+            "F359"
+          ]
+        },
+        {
+          "units": [
+            "timewilltell2024",
+            "wei2024speculation"
+          ],
+          "judgment": "MIXED",
+          "underlying_statuses": [
+            "INCOMPATIBLE",
+            "UNRESOLVED"
+          ],
+          "pair_ids": [
+            "F365",
+            "F391"
+          ]
+        },
+        {
+          "units": [
+            "timewilltell2024",
+            "whisperleak2025"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F218",
+            "F219",
+            "F249",
+            "F250",
+            "F279",
+            "F280"
+          ]
+        },
+        {
+          "units": [
+            "uitraces2026",
+            "zhu2026turing"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F018",
+            "F019"
+          ]
+        },
+        {
+          "units": [
+            "wei2024speculation",
+            "whisperleak2025"
+          ],
+          "judgment": "INCOMPATIBLE",
+          "underlying_statuses": [
+            "INCOMPATIBLE"
+          ],
+          "pair_ids": [
+            "F220",
+            "F251",
+            "F281"
+          ]
+        }
+      ]
+    }
+  ]
+}

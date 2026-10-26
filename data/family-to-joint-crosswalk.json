@@ -1,0 +1,94 @@
+[
+  {
+    "family": "earlybird2025",
+    "inference": [
+      "EARLY-K-calibration-oracle"
+    ],
+    "cost": [
+      "EARLY-semantic-deidentification"
+    ],
+    "same_record": []
+  },
+  {
+    "family": "spliceleak2026",
+    "inference": [
+      "SPLICE-CTBF-signal"
+    ],
+    "cost": [
+      "SPLICE-QCP-cost"
+    ],
+    "same_record": []
+  },
+  {
+    "family": "timewilltell2024",
+    "inference": [
+      "TIME-length-instruction"
+    ],
+    "cost": [
+      "TIME-padding-estimate"
+    ],
+    "same_record": []
+  },
+  {
+    "family": "wei2024speculation",
+    "inference": [
+      "SPEC-padding-REST"
+    ],
+    "cost": [
+      "SPEC-padding-REST"
+    ],
+    "same_record": [
+      "SPEC-padding-REST"
+    ]
+  },
+  {
+    "family": "dangol2026workflow",
+    "inference": [
+      "DANGOL-capture",
+      "DANGOL-livebinding"
+    ],
+    "cost": [
+      "DANGOL-capture",
+      "DANGOL-livebinding"
+    ],
+    "same_record": [
+      "DANGOL-capture",
+      "DANGOL-livebinding"
+    ]
+  },
+  {
+    "family": "addagada2026kvgov",
+    "inference": [
+      "KVGOV-partialflush-sim"
+    ],
+    "cost": [
+      "KVGOV-HMAC-cost"
+    ],
+    "same_record": []
+  },
+  {
+    "family": "wu2026cacheprune",
+    "inference": [
+      "CACHEPRUNE-selective",
+      "CACHEPRUNE-context"
+    ],
+    "cost": [
+      "CACHEPRUNE-selective",
+      "CACHEPRUNE-context"
+    ],
+    "same_record": [
+      "CACHEPRUNE-selective",
+      "CACHEPRUNE-context"
+    ]
+  },
+  {
+    "family": "lee2026otro",
+    "inference": [
+      "OTRO-epochpad"
+    ],
+    "cost": [
+      "OTRO-unpadded"
+    ],
+    "same_record": []
+  }
+]

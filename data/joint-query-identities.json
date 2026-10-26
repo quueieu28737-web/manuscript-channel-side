@@ -1,0 +1,481 @@
+{
+  "queries": {
+    "Inference + utility": {
+      "excluded": 11,
+      "eligible": 22,
+      "bound_ids": [
+        "AHB-online-executed",
+        "CACHEPRUNE-selective",
+        "CACHEPRUNE-context",
+        "SPARLEAK-replacement"
+      ],
+      "families": [
+        "chen2026sparleak",
+        "wu2026cacheprune",
+        "zhu2026turing"
+      ],
+      "configurations": [
+        "AHB-online-executed",
+        "CACHEPRUNE-default",
+        "SPARLEAK-replacement"
+      ]
+    },
+    "Inference + cost": {
+      "excluded": 11,
+      "eligible": 22,
+      "bound_ids": [
+        "SPEC-padding-REST",
+        "DANGOL-capture",
+        "DANGOL-livebinding",
+        "CACHEPRUNE-selective",
+        "CACHEPRUNE-context"
+      ],
+      "families": [
+        "dangol2026workflow",
+        "wei2024speculation",
+        "wu2026cacheprune"
+      ],
+      "configurations": [
+        "CACHEPRUNE-default",
+        "DANGOL-capture",
+        "DANGOL-livebinding",
+        "SPEC-padding-REST"
+      ]
+    },
+    "Matched adaptation + inference": {
+      "excluded": 16,
+      "eligible": 17,
+      "bound_ids": [
+        "UI-delay-offline",
+        "DANGOL-capture"
+      ],
+      "families": [
+        "dangol2026workflow",
+        "uitraces2026"
+      ],
+      "configurations": [
+        "DANGOL-capture",
+        "UI-delay-offline"
+      ]
+    },
+    "Inference + utility + cost": {
+      "excluded": 13,
+      "eligible": 20,
+      "bound_ids": [
+        "CACHEPRUNE-selective",
+        "CACHEPRUNE-context"
+      ],
+      "families": [
+        "wu2026cacheprune"
+      ],
+      "configurations": [
+        "CACHEPRUNE-default"
+      ]
+    },
+    "All five bindings": {
+      "excluded": 19,
+      "eligible": 14,
+      "bound_ids": [],
+      "families": [],
+      "configurations": []
+    }
+  },
+  "memberships": [
+    {
+      "record_id": "UI-delay-offline",
+      "family": "uitraces2026",
+      "configuration": "UI-delay-offline",
+      "source_url": "https://arxiv.org/html/2605.14786v1",
+      "source_locator": "6.1 Fig5;A.5",
+      "Inference + utility": "E",
+      "Inference + cost": "x",
+      "Matched adaptation + inference": "B",
+      "Inference + utility + cost": "x",
+      "All five bindings": "x"
+    },
+    {
+      "record_id": "WRA-decoy-execution",
+      "family": "jeong2026wra",
+      "configuration": "WRA-decoy-execution",
+      "source_url": "https://www.usenix.org/system/files/usenixsecurity26-jeong.pdf",
+      "source_locator": "8.1-8.3 Tables8-11",
+      "Inference + utility": "E",
+      "Inference + cost": "E",
+      "Matched adaptation + inference": "x",
+      "Inference + utility + cost": "E",
+      "All five bindings": "x"
+    },
+    {
+      "record_id": "NET-upstream-local",
+      "family": "netecho2025",
+      "configuration": "NET-upstream-local",
+      "source_url": "https://arxiv.org/html/2510.25472v1",
+      "source_locator": "IV-C-E TableIII-IV",
+      "Inference + utility": "E",
+      "Inference + cost": "E",
+      "Matched adaptation + inference": "E",
+      "Inference + utility + cost": "E",
+      "All five bindings": "E"
+    },
+    {
+      "record_id": "NET-dummy-padding-simulation",
+      "family": "netecho2025",
+      "configuration": "NET-dummy-padding-simulation",
+      "source_url": "https://arxiv.org/html/2510.25472v1",
+      "source_locator": "VII TableIX",
+      "Inference + utility": "E",
+      "Inference + cost": "E",
+      "Matched adaptation + inference": "E",
+      "Inference + utility + cost": "E",
+      "All five bindings": "E"
+    },
+    {
+      "record_id": "EARLY-K-calibration-oracle",
+      "family": "earlybird2025",
+      "configuration": "EARLY-K-calibration-oracle",
+      "source_url": "https://arxiv.org/html/2409.20002v5",
+      "source_locator": "V-A TableVI;IV-A",
+      "Inference + utility": "E",
+      "Inference + cost": "E",
+      "Matched adaptation + inference": "E",
+      "Inference + utility + cost": "E",
+      "All five bindings": "E"
+    },
+    {
+      "record_id": "EARLY-semantic-deidentification",
+      "family": "earlybird2025",
+      "configuration": "EARLY-semantic-deidentification",
+      "source_url": "https://arxiv.org/html/2409.20002v5",
+      "source_locator": "V-B",
+      "Inference + utility": "x",
+      "Inference + cost": "x",
+      "Matched adaptation + inference": "x",
+      "Inference + utility + cost": "x",
+      "All five bindings": "x"
+    },
+    {
+      "record_id": "WHISPER-randompadding-capture",
+      "family": "whisperleak2025",
+      "configuration": "WHISPER-randompadding-capture",
+      "source_url": "https://arxiv.org/html/2511.03675v1",
+      "source_locator": "6.1 Tables3-4",
+      "Inference + utility": "E",
+      "Inference + cost": "E",
+      "Matched adaptation + inference": "E",
+      "Inference + utility + cost": "E",
+      "All five bindings": "E"
+    },
+    {
+      "record_id": "WHISPER-batching-replay",
+      "family": "whisperleak2025",
+      "configuration": "WHISPER-batching-replay",
+      "source_url": "https://arxiv.org/html/2511.03675v1",
+      "source_locator": "6.2 Fig7",
+      "Inference + utility": "E",
+      "Inference + cost": "E",
+      "Matched adaptation + inference": "E",
+      "Inference + utility + cost": "E",
+      "All five bindings": "E"
+    },
+    {
+      "record_id": "WHISPER-injection-replay",
+      "family": "whisperleak2025",
+      "configuration": "WHISPER-injection-replay",
+      "source_url": "https://arxiv.org/html/2511.03675v1",
+      "source_locator": "6.3 Table5",
+      "Inference + utility": "E",
+      "Inference + cost": "E",
+      "Matched adaptation + inference": "E",
+      "Inference + utility + cost": "E",
+      "All five bindings": "E"
+    },
+    {
+      "record_id": "SPLICE-CTBF-signal",
+      "family": "spliceleak2026",
+      "configuration": "SPLICE-CTBF-signal",
+      "source_url": "https://arxiv.org/html/2606.21842v1",
+      "source_locator": "VII-C TableII",
+      "Inference + utility": "E",
+      "Inference + cost": "E",
+      "Matched adaptation + inference": "x",
+      "Inference + utility + cost": "E",
+      "All five bindings": "x"
+    },
+    {
+      "record_id": "SPLICE-QCP-cost",
+      "family": "spliceleak2026",
+      "configuration": "SPLICE-QCP-cost",
+      "source_url": "https://arxiv.org/html/2606.21842v1",
+      "source_locator": "VII-C TableII",
+      "Inference + utility": "x",
+      "Inference + cost": "x",
+      "Matched adaptation + inference": "x",
+      "Inference + utility + cost": "x",
+      "All five bindings": "x"
+    },
+    {
+      "record_id": "TIME-length-instruction",
+      "family": "timewilltell2024",
+      "configuration": "TIME-length-instruction",
+      "source_url": "https://arxiv.org/html/2412.15431v1",
+      "source_locator": "7.2",
+      "Inference + utility": "E",
+      "Inference + cost": "E",
+      "Matched adaptation + inference": "E",
+      "Inference + utility + cost": "E",
+      "All five bindings": "E"
+    },
+    {
+      "record_id": "TIME-padding-estimate",
+      "family": "timewilltell2024",
+      "configuration": "TIME-padding-estimate",
+      "source_url": "https://arxiv.org/html/2412.15431v1",
+      "source_locator": "7.3",
+      "Inference + utility": "x",
+      "Inference + cost": "x",
+      "Matched adaptation + inference": "x",
+      "Inference + utility + cost": "x",
+      "All five bindings": "x"
+    },
+    {
+      "record_id": "SPEC-padding-REST",
+      "family": "wei2024speculation",
+      "configuration": "SPEC-padding-REST",
+      "source_url": "https://arxiv.org/html/2411.01076v4",
+      "source_locator": "6.1 Fig6-7 Table2",
+      "Inference + utility": "x",
+      "Inference + cost": "B",
+      "Matched adaptation + inference": "E",
+      "Inference + utility + cost": "x",
+      "All five bindings": "x"
+    },
+    {
+      "record_id": "DANGOL-capture",
+      "family": "dangol2026workflow",
+      "configuration": "DANGOL-capture",
+      "source_url": "https://arxiv.org/html/2606.07150v3",
+      "source_locator": "9.8-9.9 Table6",
+      "Inference + utility": "E",
+      "Inference + cost": "B",
+      "Matched adaptation + inference": "B",
+      "Inference + utility + cost": "E",
+      "All five bindings": "E"
+    },
+    {
+      "record_id": "DANGOL-livebinding",
+      "family": "dangol2026workflow",
+      "configuration": "DANGOL-livebinding",
+      "source_url": "https://arxiv.org/html/2606.07150v3",
+      "source_locator": "9.7, OHTTP paragraph after Table 5",
+      "Inference + utility": "E",
+      "Inference + cost": "B",
+      "Matched adaptation + inference": "E",
+      "Inference + utility + cost": "E",
+      "All five bindings": "E"
+    },
+    {
+      "record_id": "SAFE-post-trigger",
+      "family": "chu2025safekv",
+      "configuration": "SAFE-post-trigger",
+      "source_url": "https://arxiv.org/html/2508.08438v2",
+      "source_locator": "7.2.4 Fig12;7.3-7.4",
+      "Inference + utility": "E",
+      "Inference + cost": "E",
+      "Matched adaptation + inference": "x",
+      "Inference + utility + cost": "E",
+      "All five bindings": "x"
+    },
+    {
+      "record_id": "AHB-online-executed",
+      "family": "zhu2026turing",
+      "configuration": "AHB-online-executed",
+      "source_url": "https://arxiv.org/html/2604.09574v1",
+      "source_locator": "5.1.2 Table1;E.1-E.3",
+      "Inference + utility": "B",
+      "Inference + cost": "E",
+      "Matched adaptation + inference": "E",
+      "Inference + utility + cost": "E",
+      "All five bindings": "E"
+    },
+    {
+      "record_id": "AHB-offline",
+      "family": "zhu2026turing",
+      "configuration": "AHB-offline",
+      "source_url": "https://arxiv.org/html/2604.09574v1",
+      "source_locator": "Table1 offline rows;E.1-E.3",
+      "Inference + utility": "E",
+      "Inference + cost": "x",
+      "Matched adaptation + inference": "E",
+      "Inference + utility + cost": "x",
+      "All five bindings": "x"
+    },
+    {
+      "record_id": "KVGOV-partialflush-sim",
+      "family": "addagada2026kvgov",
+      "configuration": "KVGOV-partialflush-sim",
+      "source_url": "https://arxiv.org/html/2608.09225v1",
+      "source_locator": "5.1-5.3",
+      "Inference + utility": "E",
+      "Inference + cost": "E",
+      "Matched adaptation + inference": "x",
+      "Inference + utility + cost": "E",
+      "All five bindings": "x"
+    },
+    {
+      "record_id": "KVGOV-hardware-gap",
+      "family": "addagada2026kvgov",
+      "configuration": "KVGOV-hardware-gap",
+      "source_url": "https://arxiv.org/html/2608.09225v1",
+      "source_locator": "5.7-5.8",
+      "Inference + utility": "x",
+      "Inference + cost": "x",
+      "Matched adaptation + inference": "x",
+      "Inference + utility + cost": "x",
+      "All five bindings": "x"
+    },
+    {
+      "record_id": "KVGOV-HMAC-cost",
+      "family": "addagada2026kvgov",
+      "configuration": "KVGOV-HMAC-cost",
+      "source_url": "https://arxiv.org/html/2608.09225v1",
+      "source_locator": "5.9",
+      "Inference + utility": "x",
+      "Inference + cost": "x",
+      "Matched adaptation + inference": "x",
+      "Inference + utility + cost": "x",
+      "All five bindings": "x"
+    },
+    {
+      "record_id": "TRAFFIC-prompt-reformulation",
+      "family": "pouryousef2026traffic",
+      "configuration": "TRAFFIC-prompt-reformulation",
+      "source_url": "https://arxiv.org/html/2609.31877v1",
+      "source_locator": "V-C1 Fig9a",
+      "Inference + utility": "E",
+      "Inference + cost": "E",
+      "Matched adaptation + inference": "E",
+      "Inference + utility + cost": "E",
+      "All five bindings": "E"
+    },
+    {
+      "record_id": "TRAFFIC-temperature",
+      "family": "pouryousef2026traffic",
+      "configuration": "TRAFFIC-temperature",
+      "source_url": "https://arxiv.org/html/2609.31877v1",
+      "source_locator": "V-C1 Fig9a",
+      "Inference + utility": "E",
+      "Inference + cost": "E",
+      "Matched adaptation + inference": "E",
+      "Inference + utility + cost": "E",
+      "All five bindings": "E"
+    },
+    {
+      "record_id": "CARLINI-fixed-rate",
+      "family": "carlini2024remote",
+      "configuration": "CARLINI-fixed-rate",
+      "source_url": "https://arxiv.org/html/2410.17175v1",
+      "source_locator": "VII Fig11-12",
+      "Inference + utility": "x",
+      "Inference + cost": "x",
+      "Matched adaptation + inference": "x",
+      "Inference + utility + cost": "x",
+      "All five bindings": "x"
+    },
+    {
+      "record_id": "GAO-zero-copy-off",
+      "family": "gao2025iknow",
+      "configuration": "GAO-zero-copy-off",
+      "source_url": "https://www.usenix.org/system/files/usenixsecurity25-gao-zibo.pdf",
+      "source_locator": "7.1",
+      "Inference + utility": "x",
+      "Inference + cost": "x",
+      "Matched adaptation + inference": "x",
+      "Inference + utility + cost": "x",
+      "All five bindings": "x"
+    },
+    {
+      "record_id": "TDXRAY-oblivious-map",
+      "family": "hornetz2026tdxray",
+      "configuration": "TDXRAY-oblivious-map",
+      "source_url": "https://tdxray.cpusec.org/assets/tdxray_sp26.pdf",
+      "source_locator": "6.1 Fig8 Table3",
+      "Inference + utility": "x",
+      "Inference + cost": "x",
+      "Matched adaptation + inference": "x",
+      "Inference + utility + cost": "x",
+      "All five bindings": "x"
+    },
+    {
+      "record_id": "CACHEPRUNE-selective",
+      "family": "wu2026cacheprune",
+      "configuration": "CACHEPRUNE-default",
+      "source_url": "https://arxiv.org/html/2605.23640v1",
+      "source_locator": "3.1;5.1-5.6;Table1;AppendixA",
+      "Inference + utility": "B",
+      "Inference + cost": "B",
+      "Matched adaptation + inference": "x",
+      "Inference + utility + cost": "B",
+      "All five bindings": "x"
+    },
+    {
+      "record_id": "CACHEPRUNE-context",
+      "family": "wu2026cacheprune",
+      "configuration": "CACHEPRUNE-default",
+      "source_url": "https://arxiv.org/html/2605.23640v1",
+      "source_locator": "3.1;5.1-5.6;Table1;AppendixA",
+      "Inference + utility": "B",
+      "Inference + cost": "B",
+      "Matched adaptation + inference": "x",
+      "Inference + utility + cost": "B",
+      "All five bindings": "x"
+    },
+    {
+      "record_id": "OTRO-unpadded",
+      "family": "lee2026otro",
+      "configuration": "OTRO-unpadded",
+      "source_url": "https://arxiv.org/html/2606.17358v1",
+      "source_locator": "III;V;VI;VII-C-E;TableIII",
+      "Inference + utility": "x",
+      "Inference + cost": "x",
+      "Matched adaptation + inference": "x",
+      "Inference + utility + cost": "x",
+      "All five bindings": "x"
+    },
+    {
+      "record_id": "OTRO-epochpad",
+      "family": "lee2026otro",
+      "configuration": "OTRO-epochpad",
+      "source_url": "https://arxiv.org/html/2606.17358v1",
+      "source_locator": "III;V;VI;VII-C-E;TableIII",
+      "Inference + utility": "x",
+      "Inference + cost": "E",
+      "Matched adaptation + inference": "x",
+      "Inference + utility + cost": "x",
+      "All five bindings": "x"
+    },
+    {
+      "record_id": "SPARLEAK-replacement",
+      "family": "chen2026sparleak",
+      "configuration": "SPARLEAK-replacement",
+      "source_url": "https://arxiv.org/html/2609.38830v1",
+      "source_locator": "3.1;4-7;Table4",
+      "Inference + utility": "B",
+      "Inference + cost": "E",
+      "Matched adaptation + inference": "E",
+      "Inference + utility + cost": "E",
+      "All five bindings": "E"
+    },
+    {
+      "record_id": "SHAPE-padding-estimate",
+      "family": "hadad2026shape",
+      "configuration": "SHAPE-padding-estimate",
+      "source_url": "https://arxiv.org/html/2603.25403v1",
+      "source_locator": "IV;V;VII;VIII;IX",
+      "Inference + utility": "E",
+      "Inference + cost": "E",
+      "Matched adaptation + inference": "E",
+      "Inference + utility + cost": "E",
+      "All five bindings": "E"
+    }
+  ]
+}
