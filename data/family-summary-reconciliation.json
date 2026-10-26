@@ -1,0 +1,237 @@
+{
+  "record_judgments_changed": 0,
+  "family_cells_changed": 13,
+  "bound_counts": [
+    20,
+    17,
+    17,
+    4,
+    2,
+    17,
+    16,
+    4,
+    11
+  ],
+  "applicable_counts": [
+    20,
+    20,
+    20,
+    11,
+    11,
+    20,
+    17,
+    17,
+    19
+  ],
+  "changes": [
+    {
+      "family": "netecho2025",
+      "item": "R5",
+      "old": "P",
+      "new": "?",
+      "records": [
+        {
+          "id": "NET-upstream-local",
+          "status": "?",
+          "source_scope": "IV-C-E TableIII-IV. Scenario-fitted inference; matched clean/refitted protected-test rows not bound."
+        },
+        {
+          "id": "NET-dummy-padding-simulation",
+          "status": "?",
+          "source_scope": "VII TableIX. Replay inference; insertion budget is a partial cost object, not measured live transport."
+        }
+      ]
+    },
+    {
+      "family": "netecho2025",
+      "item": "R9",
+      "old": "U",
+      "new": "P",
+      "records": [
+        {
+          "id": "NET-upstream-local",
+          "status": "U",
+          "source_scope": "IV-C-E TableIII-IV. Scenario-fitted inference; matched clean/refitted protected-test rows not bound."
+        },
+        {
+          "id": "NET-dummy-padding-simulation",
+          "status": "P",
+          "source_scope": "VII TableIX. Replay inference; insertion budget is a partial cost object, not measured live transport."
+        }
+      ]
+    },
+    {
+      "family": "earlybird2025",
+      "item": "R5",
+      "old": "P",
+      "new": "?",
+      "records": [
+        {
+          "id": "EARLY-K-calibration-oracle",
+          "status": "?",
+          "source_scope": "V-A TableVI;IV-A. K-conditioned calibrated oracle recovery; query cost is not protected service cost."
+        },
+        {
+          "id": "EARLY-semantic-deidentification",
+          "status": "--",
+          "source_scope": "V-B. Semantic processor cost; no protected token-recovery outcome in this record."
+        }
+      ]
+    },
+    {
+      "family": "whisperleak2025",
+      "item": "R3",
+      "old": "P",
+      "new": "B",
+      "records": [
+        {
+          "id": "WHISPER-randompadding-capture",
+          "status": "B",
+          "source_scope": "3.2;6.1 Tables3-4. New padded captures; global fitting is specified, its protected-condition mapping incomplete; matched adaptation unreported."
+        },
+        {
+          "id": "WHISPER-batching-replay",
+          "status": "B",
+          "source_scope": "6.2 Fig7. Grouped traces bind AUPRC, not executed delay or task utility."
+        },
+        {
+          "id": "WHISPER-injection-replay",
+          "status": "B",
+          "source_scope": "6.3 Table5. Synthetic volume estimate lacks a complete placement-specific resource binding."
+        }
+      ]
+    },
+    {
+      "family": "whisperleak2025",
+      "item": "R9",
+      "old": "B",
+      "new": "P",
+      "records": [
+        {
+          "id": "WHISPER-randompadding-capture",
+          "status": "U",
+          "source_scope": "3.2;6.1 Tables3-4. New padded captures; global fitting is specified, its protected-condition mapping incomplete; matched adaptation unreported."
+        },
+        {
+          "id": "WHISPER-batching-replay",
+          "status": "U",
+          "source_scope": "6.2 Fig7. Grouped traces bind AUPRC, not executed delay or task utility."
+        },
+        {
+          "id": "WHISPER-injection-replay",
+          "status": "P",
+          "source_scope": "6.3 Table5. Synthetic volume estimate lacks a complete placement-specific resource binding."
+        }
+      ]
+    },
+    {
+      "family": "gao2025iknow",
+      "item": "R6",
+      "old": "B",
+      "new": "P",
+      "records": [
+        {
+          "id": "GAO-zero-copy-off",
+          "status": "P",
+          "source_scope": "7.1. Loading/memory cost; structural argument is not measured defended ASR."
+        }
+      ]
+    },
+    {
+      "family": "gao2025iknow",
+      "item": "R7",
+      "old": "U",
+      "new": "--",
+      "records": [
+        {
+          "id": "GAO-zero-copy-off",
+          "status": "--",
+          "source_scope": "7.1. Loading/memory cost; structural argument is not measured defended ASR."
+        }
+      ]
+    },
+    {
+      "family": "carlini2024remote",
+      "item": "R3",
+      "old": "B",
+      "new": "P",
+      "records": [
+        {
+          "id": "CARLINI-fixed-rate",
+          "status": "P",
+          "source_scope": "VII Fig11-12. Rate-curve bandwidth/per-token-delay cost, with live placement unresolved."
+        }
+      ]
+    },
+    {
+      "family": "carlini2024remote",
+      "item": "R7",
+      "old": "B",
+      "new": "--",
+      "records": [
+        {
+          "id": "CARLINI-fixed-rate",
+          "status": "--",
+          "source_scope": "VII Fig11-12. Rate-curve bandwidth/per-token-delay cost, with live placement unresolved."
+        }
+      ]
+    },
+    {
+      "family": "carlini2024remote",
+      "item": "R9",
+      "old": "P",
+      "new": "B",
+      "records": [
+        {
+          "id": "CARLINI-fixed-rate",
+          "status": "B",
+          "source_scope": "VII Fig11-12. Rate-curve bandwidth/per-token-delay cost, with live placement unresolved."
+        }
+      ]
+    },
+    {
+      "family": "hornetz2026tdxray",
+      "item": "R7",
+      "old": "U",
+      "new": "--",
+      "records": [
+        {
+          "id": "TDXRAY-oblivious-map",
+          "status": "--",
+          "source_scope": "6.1 Fig8 Table3. Vocabulary coverage and lookup cost are component utility/cost; no measured defended recovery."
+        }
+      ]
+    },
+    {
+      "family": "chu2025safekv",
+      "item": "R9",
+      "old": "B",
+      "new": "P",
+      "records": [
+        {
+          "id": "SAFE-post-trigger",
+          "status": "P",
+          "source_scope": "7.2.4 Fig12;7.3-7.4. Post-trigger inference and separately reported service costs have no matched operating-point join."
+        }
+      ]
+    },
+    {
+      "family": "lee2026otro",
+      "item": "R9",
+      "old": "P",
+      "new": "B",
+      "records": [
+        {
+          "id": "OTRO-unpadded",
+          "status": "B",
+          "source_scope": "III;V;VI;VII-C-E;TableIII. Measured unpadded TTFT/memory; padded leakage is a different operating condition."
+        },
+        {
+          "id": "OTRO-epochpad",
+          "status": "P",
+          "source_scope": "III;V;VI;VII-C-E;TableIII. Conditional leakage with a derived per-epoch cost; full measured padded TTFT remains unbound."
+        }
+      ]
+    }
+  ]
+}

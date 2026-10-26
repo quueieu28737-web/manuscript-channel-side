@@ -1,0 +1,165 @@
+{
+  "scope": "Family-level venue linkage in the frozen cited bibliography; not exact-version peer-review certification or a current exhaustive venue search. Four links checked 2026-10-26.",
+  "families": [
+    {
+      "family": "uitraces2026",
+      "stratum": "other_cited_versions",
+      "bibliography_venue": "arXiv preprint arXiv:2605.14786",
+      "cited_url": "https://arxiv.org/abs/2605.14786v1",
+      "verification_url": null,
+      "basis": "Cited bibliography lists a preprint/web version; no assertion that this family has never been peer reviewed."
+    },
+    {
+      "family": "jeong2026wra",
+      "stratum": "venue_linked",
+      "bibliography_venue": "35th USENIX Security Symposium",
+      "cited_url": "https://www.usenix.org/conference/usenixsecurity26/presentation/jeong",
+      "verification_url": "https://www.usenix.org/conference/usenixsecurity26/presentation/jeong",
+      "basis": "Official proceedings page and BibTeX."
+    },
+    {
+      "family": "netecho2025",
+      "stratum": "other_cited_versions",
+      "bibliography_venue": "arXiv preprint arXiv:2510.25472",
+      "cited_url": "https://arxiv.org/abs/2510.25472v1",
+      "verification_url": null,
+      "basis": "Cited bibliography lists a preprint/web version; no assertion that this family has never been peer reviewed."
+    },
+    {
+      "family": "earlybird2025",
+      "stratum": "venue_linked",
+      "bibliography_venue": "IEEE Transactions on Information Forensics and Security",
+      "cited_url": "https://ieeexplore.ieee.org/document/11206380/",
+      "verification_url": "https://arxiv.org/abs/2409.20002v5",
+      "basis": "Author-posted v5 acceptance statement; publisher anti-bot page prevents independent full-text inspection in this check."
+    },
+    {
+      "family": "whisperleak2025",
+      "stratum": "other_cited_versions",
+      "bibliography_venue": "arXiv preprint arXiv:2511.03675",
+      "cited_url": "https://arxiv.org/abs/2511.03675v1",
+      "verification_url": null,
+      "basis": "Cited bibliography lists a preprint/web version; no assertion that this family has never been peer reviewed."
+    },
+    {
+      "family": "spliceleak2026",
+      "stratum": "other_cited_versions",
+      "bibliography_venue": "arXiv preprint arXiv:2606.21842",
+      "cited_url": "https://arxiv.org/abs/2606.21842v1",
+      "verification_url": null,
+      "basis": "Cited bibliography lists a preprint/web version; no assertion that this family has never been peer reviewed."
+    },
+    {
+      "family": "timewilltell2024",
+      "stratum": "other_cited_versions",
+      "bibliography_venue": "arXiv preprint arXiv:2412.15431",
+      "cited_url": "https://arxiv.org/abs/2412.15431v1",
+      "verification_url": null,
+      "basis": "Cited bibliography lists a preprint/web version; no assertion that this family has never been peer reviewed."
+    },
+    {
+      "family": "gao2025iknow",
+      "stratum": "venue_linked",
+      "bibliography_venue": "34th USENIX Security Symposium",
+      "cited_url": "https://www.usenix.org/conference/usenixsecurity25/presentation/gao-zibo",
+      "verification_url": "https://www.usenix.org/conference/usenixsecurity25/presentation/gao-zibo",
+      "basis": "Official proceedings page and BibTeX."
+    },
+    {
+      "family": "wei2024speculation",
+      "stratum": "other_cited_versions",
+      "bibliography_venue": "arXiv preprint arXiv:2411.01076",
+      "cited_url": "https://arxiv.org/abs/2411.01076v4",
+      "verification_url": null,
+      "basis": "Cited bibliography lists a preprint/web version; no assertion that this family has never been peer reviewed."
+    },
+    {
+      "family": "dangol2026workflow",
+      "stratum": "other_cited_versions",
+      "bibliography_venue": "arXiv preprint arXiv:2606.07150v3",
+      "cited_url": "https://arxiv.org/abs/2606.07150v3",
+      "verification_url": null,
+      "basis": "Cited bibliography lists a preprint/web version; no assertion that this family has never been peer reviewed."
+    },
+    {
+      "family": "pouryousef2026traffic",
+      "stratum": "other_cited_versions",
+      "bibliography_venue": "arXiv preprint arXiv:2609.31877v1",
+      "cited_url": "https://arxiv.org/abs/2609.31877v1",
+      "verification_url": null,
+      "basis": "Cited bibliography lists a preprint/web version; no assertion that this family has never been peer reviewed."
+    },
+    {
+      "family": "carlini2024remote",
+      "stratum": "other_cited_versions",
+      "bibliography_venue": "arXiv preprint arXiv:2410.17175v1",
+      "cited_url": "https://arxiv.org/abs/2410.17175v1",
+      "verification_url": null,
+      "basis": "Cited bibliography lists a preprint/web version; no assertion that this family has never been peer reviewed."
+    },
+    {
+      "family": "hornetz2026tdxray",
+      "stratum": "venue_linked",
+      "bibliography_venue": "IEEE Symposium on Security and Privacy",
+      "cited_url": "https://tdxray.cpusec.org/assets/tdxray_sp26.pdf",
+      "verification_url": "https://tdxray.cpusec.org/",
+      "basis": "Author project page identifies IEEE S&P 2026 and links the published paper."
+    },
+    {
+      "family": "chu2025safekv",
+      "stratum": "other_cited_versions",
+      "bibliography_venue": "arXiv preprint arXiv:2508.08438v2",
+      "cited_url": "https://arxiv.org/abs/2508.08438v2",
+      "verification_url": null,
+      "basis": "Cited bibliography lists a preprint/web version; no assertion that this family has never been peer reviewed."
+    },
+    {
+      "family": "zhu2026turing",
+      "stratum": "other_cited_versions",
+      "bibliography_venue": "arXiv preprint arXiv:2604.09574v1",
+      "cited_url": "https://arxiv.org/html/2604.09574v1",
+      "verification_url": null,
+      "basis": "Cited bibliography lists a preprint/web version; no assertion that this family has never been peer reviewed."
+    },
+    {
+      "family": "addagada2026kvgov",
+      "stratum": "other_cited_versions",
+      "bibliography_venue": "arXiv preprint arXiv:2608.09225",
+      "cited_url": "https://arxiv.org/abs/2608.09225v1",
+      "verification_url": null,
+      "basis": "Cited bibliography lists a preprint/web version; no assertion that this family has never been peer reviewed."
+    },
+    {
+      "family": "wu2026cacheprune",
+      "stratum": "other_cited_versions",
+      "bibliography_venue": "arXiv preprint arXiv:2605.23640v1",
+      "cited_url": "https://arxiv.org/html/2605.23640v1",
+      "verification_url": null,
+      "basis": "Cited bibliography lists a preprint/web version; no assertion that this family has never been peer reviewed."
+    },
+    {
+      "family": "lee2026otro",
+      "stratum": "other_cited_versions",
+      "bibliography_venue": "arXiv preprint arXiv:2606.17358v1",
+      "cited_url": "https://arxiv.org/html/2606.17358v1",
+      "verification_url": null,
+      "basis": "Cited bibliography lists a preprint/web version; no assertion that this family has never been peer reviewed."
+    },
+    {
+      "family": "chen2026sparleak",
+      "stratum": "other_cited_versions",
+      "bibliography_venue": "arXiv preprint arXiv:2609.38830v1",
+      "cited_url": "https://arxiv.org/html/2609.38830v1",
+      "verification_url": null,
+      "basis": "Cited bibliography lists a preprint/web version; no assertion that this family has never been peer reviewed."
+    },
+    {
+      "family": "hadad2026shape",
+      "stratum": "other_cited_versions",
+      "bibliography_venue": "arXiv preprint arXiv:2603.25403v1",
+      "cited_url": "https://arxiv.org/html/2603.25403v1",
+      "verification_url": null,
+      "basis": "Cited bibliography lists a preprint/web version; no assertion that this family has never been peer reviewed."
+    }
+  ]
+}

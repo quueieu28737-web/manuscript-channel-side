@@ -1,0 +1,226 @@
+{
+  "source_commit": "f4215e30656f00e986a48e1720fd16aa0440a710",
+  "purpose": "Prior display retained solely to reproduce the 13-entry reconciliation table",
+  "cells": {
+    "uitraces2026": [
+      "B",
+      "P",
+      "B",
+      "B",
+      "B",
+      "B",
+      "B",
+      "U",
+      "--"
+    ],
+    "jeong2026wra": [
+      "B",
+      "P",
+      "B",
+      "--",
+      "--",
+      "P",
+      "B",
+      "P",
+      "U"
+    ],
+    "netecho2025": [
+      "B",
+      "B",
+      "B",
+      "B",
+      "P",
+      "B",
+      "B",
+      "U",
+      "U"
+    ],
+    "earlybird2025": [
+      "B",
+      "B",
+      "B",
+      "B",
+      "P",
+      "B",
+      "B",
+      "U",
+      "B"
+    ],
+    "whisperleak2025": [
+      "B",
+      "B",
+      "P",
+      "P",
+      "U",
+      "B",
+      "B",
+      "U",
+      "B"
+    ],
+    "spliceleak2026": [
+      "B",
+      "B",
+      "B",
+      "--",
+      "--",
+      "B",
+      "B",
+      "U",
+      "B"
+    ],
+    "timewilltell2024": [
+      "B",
+      "B",
+      "B",
+      "P",
+      "U",
+      "B",
+      "B",
+      "U",
+      "B"
+    ],
+    "gao2025iknow": [
+      "B",
+      "B",
+      "B",
+      "--",
+      "--",
+      "B",
+      "U",
+      "--",
+      "B"
+    ],
+    "wei2024speculation": [
+      "B",
+      "B",
+      "P",
+      "P",
+      "U",
+      "B",
+      "B",
+      "--",
+      "B"
+    ],
+    "dangol2026workflow": [
+      "B",
+      "B",
+      "B",
+      "B",
+      "B",
+      "B",
+      "B",
+      "U",
+      "B"
+    ],
+    "pouryousef2026traffic": [
+      "B",
+      "P",
+      "B",
+      "U",
+      "U",
+      "P",
+      "B",
+      "P",
+      "U"
+    ],
+    "carlini2024remote": [
+      "B",
+      "B",
+      "B",
+      "--",
+      "--",
+      "B",
+      "B",
+      "U",
+      "P"
+    ],
+    "hornetz2026tdxray": [
+      "B",
+      "B",
+      "B",
+      "--",
+      "--",
+      "B",
+      "U",
+      "B",
+      "B"
+    ],
+    "chu2025safekv": [
+      "B",
+      "B",
+      "B",
+      "--",
+      "--",
+      "B",
+      "B",
+      "U",
+      "B"
+    ],
+    "zhu2026turing": [
+      "B",
+      "B",
+      "B",
+      "P",
+      "U",
+      "B",
+      "B",
+      "B",
+      "U"
+    ],
+    "addagada2026kvgov": [
+      "B",
+      "B",
+      "B",
+      "--",
+      "--",
+      "B",
+      "B",
+      "U",
+      "B"
+    ],
+    "wu2026cacheprune": [
+      "B",
+      "B",
+      "B",
+      "--",
+      "--",
+      "B",
+      "B",
+      "B",
+      "B"
+    ],
+    "lee2026otro": [
+      "B",
+      "B",
+      "B",
+      "--",
+      "--",
+      "B",
+      "B",
+      "--",
+      "P"
+    ],
+    "chen2026sparleak": [
+      "B",
+      "B",
+      "B",
+      "P",
+      "U",
+      "B",
+      "B",
+      "B",
+      "U"
+    ],
+    "hadad2026shape": [
+      "B",
+      "B",
+      "P",
+      "U",
+      "U",
+      "B",
+      "P",
+      "U",
+      "P"
+    ]
+  }
+}

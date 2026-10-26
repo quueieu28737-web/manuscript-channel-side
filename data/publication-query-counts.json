@@ -1,0 +1,148 @@
+{
+  "group_families": {
+    "all": 20,
+    "venue": 4,
+    "other": 16
+  },
+  "group_records": {
+    "all": 33,
+    "venue": 5,
+    "other": 28
+  },
+  "queries": {
+    "Inference + utility": {
+      "all": {
+        "excluded": 11,
+        "eligible": 22,
+        "bound": 4,
+        "bound_ids": [
+          "AHB-online-executed",
+          "CACHEPRUNE-selective",
+          "CACHEPRUNE-context",
+          "SPARLEAK-replacement"
+        ]
+      },
+      "venue": {
+        "excluded": 3,
+        "eligible": 2,
+        "bound": 0,
+        "bound_ids": []
+      },
+      "other": {
+        "excluded": 8,
+        "eligible": 20,
+        "bound": 4,
+        "bound_ids": [
+          "AHB-online-executed",
+          "CACHEPRUNE-selective",
+          "CACHEPRUNE-context",
+          "SPARLEAK-replacement"
+        ]
+      }
+    },
+    "Inference + cost": {
+      "all": {
+        "excluded": 11,
+        "eligible": 22,
+        "bound": 5,
+        "bound_ids": [
+          "SPEC-padding-REST",
+          "DANGOL-capture",
+          "DANGOL-livebinding",
+          "CACHEPRUNE-selective",
+          "CACHEPRUNE-context"
+        ]
+      },
+      "venue": {
+        "excluded": 3,
+        "eligible": 2,
+        "bound": 0,
+        "bound_ids": []
+      },
+      "other": {
+        "excluded": 8,
+        "eligible": 20,
+        "bound": 5,
+        "bound_ids": [
+          "SPEC-padding-REST",
+          "DANGOL-capture",
+          "DANGOL-livebinding",
+          "CACHEPRUNE-selective",
+          "CACHEPRUNE-context"
+        ]
+      }
+    },
+    "Matched adaptation + inference": {
+      "all": {
+        "excluded": 16,
+        "eligible": 17,
+        "bound": 2,
+        "bound_ids": [
+          "UI-delay-offline",
+          "DANGOL-capture"
+        ]
+      },
+      "venue": {
+        "excluded": 4,
+        "eligible": 1,
+        "bound": 0,
+        "bound_ids": []
+      },
+      "other": {
+        "excluded": 12,
+        "eligible": 16,
+        "bound": 2,
+        "bound_ids": [
+          "UI-delay-offline",
+          "DANGOL-capture"
+        ]
+      }
+    },
+    "Inference + utility + cost": {
+      "all": {
+        "excluded": 13,
+        "eligible": 20,
+        "bound": 2,
+        "bound_ids": [
+          "CACHEPRUNE-selective",
+          "CACHEPRUNE-context"
+        ]
+      },
+      "venue": {
+        "excluded": 3,
+        "eligible": 2,
+        "bound": 0,
+        "bound_ids": []
+      },
+      "other": {
+        "excluded": 10,
+        "eligible": 18,
+        "bound": 2,
+        "bound_ids": [
+          "CACHEPRUNE-selective",
+          "CACHEPRUNE-context"
+        ]
+      }
+    },
+    "All five bindings": {
+      "all": {
+        "excluded": 19,
+        "eligible": 14,
+        "bound": 0,
+        "bound_ids": []
+      },
+      "venue": {
+        "excluded": 4,
+        "eligible": 1,
+        "bound": 0,
+        "bound_ids": []
+      },
+      "other": {
+        "excluded": 15,
+        "eligible": 13,
+        "bound": 0,
+        "bound_ids": []
+      }
+    }
+  }
+}

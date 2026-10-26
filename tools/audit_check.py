@@ -12,6 +12,7 @@ Sources parsed (all under tables/):
   r26-current-sensitivity.tex  current status-relaxation counts
   r26-cohort-rules.tex    cohort sizes and pair counts
 """
+import hashlib
 import argparse
 import json
 import re
@@ -102,21 +103,14 @@ QUERIES = {
     "Inference + utility + cost": [7, 8, 9],
     "All five bindings": [4, 5, 7, 8, 9],
 }
-PRECEDENCE = ["B", "P", "?", "U", "A", "--"]  # family cell = strongest record status
+PRECEDENCE = ["B", "P", "?", "U", "A", "--"]  # documented existential availability projection
 
 
 def peer_reviewed_keys():
-    """Bib keys whose venue is a journal/proceedings rather than an arXiv preprint."""
-    keys = set()
-    for bib in ROOT.glob("refs*.bib"):
-        for entry in bib.read_text(encoding="utf-8").split("@")[1:]:
-            m = re.match(r"\w+\{([^,]+),", entry)
-            if not m:
-                continue
-            venue = re.search(r"(booktitle|journal)\s*=\s*\{(.*)\}", entry)
-            if venue and "arxiv" not in venue.group(2).lower():
-                keys.add(m.group(1).strip())
-    return keys
+    """Explicit venue-linked membership; a family's inspected version may be a preprint."""
+    rows = json.loads((ROOT / "data/publication-strata.json").read_text(encoding="utf-8"))["families"]
+    assert len(rows) == len({r["family"] for r in rows}) == 20
+    return {r["family"] for r in rows if r["stratum"] == "venue_linked"}
 
 
 def query(mit, items, accept=("B",)):
@@ -189,7 +183,7 @@ def main():
             if a != fam[f][j]:
                 agg_mismatch.append(dict(family=f, item=f"R{j+1}", family_cell=fam[f][j], record_cells=col))
         agg[f] = row
-    check("Table 9 family cell = strongest status among that family's record cells",
+    check("Family matrix equals documented record-derived availability projection",
           not agg_mismatch, f"{len(agg_mismatch)} mismatches")
     agg_bound = [sum(agg[f][j] == "B" for f in names) for j in range(9)]
     agg_appl = [sum(agg[f][j] != "--" for f in names) for j in range(9)]
@@ -213,8 +207,31 @@ def main():
             r = [e, len(b), recomputed[q]["BP"], recomputed[q]["BQ"], recomputed[q]["BPQ"]]
             check(f"current stress table '{q}'", s == r, f"recomputed {r} vs table {s}")
 
+    check("all five joint query rows present", set(t10) == set(QUERIES), sorted(t10))
+    check("all five sensitivity query rows present", set(stress) == set(QUERIES), sorted(stress))
+    witnesses = json.loads((ROOT / "data/family-record-witnesses.json").read_text(encoding="utf-8"))
+    expected = [{"family": f, "item": f"R{j+1}", "status": agg[f][j],
+                 "records": [{"id": rid, "status": rec["cells"][j], "source_scope": rec["rationale"]}
+                             for rid, rec in mit.items() if rec["family"] == f]}
+                for f in names for j in range(9)]
+    check("180 source-linked aggregation witnesses", witnesses["cells"] == expected and len(expected)==180)
+    check("record-source hash matches aggregation witnesses", witnesses["source_sha256"] == hashlib.sha256((T/"r19-record-audit.tex").read_bytes()).hexdigest())
+    stratified = json.loads((ROOT/"data/publication-query-counts.json").read_text())
+    pkeys=peer_reviewed_keys()
+    groups={"all":mit,"venue":{k:v for k,v in mit.items() if v["family"] in pkeys},"other":{k:v for k,v in mit.items() if v["family"] not in pkeys}}
+    expected_strata={}
+    for label, items in QUERIES.items():
+        expected_strata[label]={}
+        for group, records in groups.items():
+            o,e,b=query(records,items)
+            expected_strata[label][group]={"excluded":o,"eligible":e,"bound":len(b),"bound_ids":b}
+    check("all 15 stratified query cells and member IDs reproduce", stratified["queries"]==expected_strata)
+    st=parse_query_table("r32-publication-strata.tex",3)
+    check("stratified publication table matches records", set(st)==set(QUERIES) and all(st[q]==[str(expected_strata[q][g]["bound"])+"/"+str(expected_strata[q][g]["eligible"]) for g in groups] for q in QUERIES))
     # ---------------------------------------------------------- venue sensitivity (informational)
     pr = peer_reviewed_keys()
+    strata = json.loads((ROOT / "data/publication-strata.json").read_text(encoding="utf-8"))["families"]
+    check("publication strata cover precisely the mitigation families", {x["family"] for x in strata} == mit_fams)
     pr_fams = sorted(f for f in mit_fams if f in pr)
     pr_mit = {r: v for r, v in mit.items() if v["family"] in pr}
     venue = dict(peer_reviewed_mitigation_families=pr_fams,
@@ -238,7 +255,7 @@ def main():
             print(f"  {m['family']:<24} {m['item']}: Table 9 = {m['family_cell']:<2}  records = {m['record_cells']}")
         print(f"  Table 9 Bound row if aggregated from records: {agg_bound} (printed {footer.get('Bound')})")
     print(f"\nRecord-level '?' cells remaining: {len(q_cells)} -> {q_cells}")
-    print(f"\nPeer-reviewed mitigation families: {len(pr_fams)}/20 {pr_fams}")
+    print(f"\nVenue-linked mitigation families (inspected-version scope retained): {len(pr_fams)}/20 {pr_fams}")
     print("Joins restricted to peer-reviewed families (eligible, bound):")
     for q, v in venue["joins_peer_reviewed_only"].items():
         print(f"  {q:<32} {v}")

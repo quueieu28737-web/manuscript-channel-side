@@ -1,0 +1,2752 @@
+{
+  "source": "tables/r19-record-audit.tex",
+  "source_sha256": "786f8e20228839707c76b1d0943b0d925868654ad22dbdeb30084ab0da0645eb",
+  "rule": "Existential availability projection B > P > ? > U > A > --; no cross-record configuration join",
+  "cells": [
+    {
+      "family": "uitraces2026",
+      "item": "R1",
+      "status": "B",
+      "records": [
+        {
+          "id": "UI-delay-offline",
+          "status": "B",
+          "source_scope": "6.1 Fig5;A.5. Offline protected identity prediction; no live task outcome or executed delay cost."
+        }
+      ]
+    },
+    {
+      "family": "uitraces2026",
+      "item": "R2",
+      "status": "P",
+      "records": [
+        {
+          "id": "UI-delay-offline",
+          "status": "P",
+          "source_scope": "6.1 Fig5;A.5. Offline protected identity prediction; no live task outcome or executed delay cost."
+        }
+      ]
+    },
+    {
+      "family": "uitraces2026",
+      "item": "R3",
+      "status": "B",
+      "records": [
+        {
+          "id": "UI-delay-offline",
+          "status": "B",
+          "source_scope": "6.1 Fig5;A.5. Offline protected identity prediction; no live task outcome or executed delay cost."
+        }
+      ]
+    },
+    {
+      "family": "uitraces2026",
+      "item": "R4",
+      "status": "B",
+      "records": [
+        {
+          "id": "UI-delay-offline",
+          "status": "B",
+          "source_scope": "6.1 Fig5;A.5. Offline protected identity prediction; no live task outcome or executed delay cost."
+        }
+      ]
+    },
+    {
+      "family": "uitraces2026",
+      "item": "R5",
+      "status": "B",
+      "records": [
+        {
+          "id": "UI-delay-offline",
+          "status": "B",
+          "source_scope": "6.1 Fig5;A.5. Offline protected identity prediction; no live task outcome or executed delay cost."
+        }
+      ]
+    },
+    {
+      "family": "uitraces2026",
+      "item": "R6",
+      "status": "B",
+      "records": [
+        {
+          "id": "UI-delay-offline",
+          "status": "B",
+          "source_scope": "6.1 Fig5;A.5. Offline protected identity prediction; no live task outcome or executed delay cost."
+        }
+      ]
+    },
+    {
+      "family": "uitraces2026",
+      "item": "R7",
+      "status": "B",
+      "records": [
+        {
+          "id": "UI-delay-offline",
+          "status": "B",
+          "source_scope": "6.1 Fig5;A.5. Offline protected identity prediction; no live task outcome or executed delay cost."
+        }
+      ]
+    },
+    {
+      "family": "uitraces2026",
+      "item": "R8",
+      "status": "U",
+      "records": [
+        {
+          "id": "UI-delay-offline",
+          "status": "U",
+          "source_scope": "6.1 Fig5;A.5. Offline protected identity prediction; no live task outcome or executed delay cost."
+        }
+      ]
+    },
+    {
+      "family": "uitraces2026",
+      "item": "R9",
+      "status": "--",
+      "records": [
+        {
+          "id": "UI-delay-offline",
+          "status": "--",
+          "source_scope": "6.1 Fig5;A.5. Offline protected identity prediction; no live task outcome or executed delay cost."
+        }
+      ]
+    },
+    {
+      "family": "jeong2026wra",
+      "item": "R1",
+      "status": "B",
+      "records": [
+        {
+          "id": "WRA-decoy-execution",
+          "status": "B",
+          "source_scope": "8.1-8.3 Tables8-11. Decoy inference and separately judged usefulness are not a same-condition task-utility pair."
+        }
+      ]
+    },
+    {
+      "family": "jeong2026wra",
+      "item": "R2",
+      "status": "P",
+      "records": [
+        {
+          "id": "WRA-decoy-execution",
+          "status": "P",
+          "source_scope": "8.1-8.3 Tables8-11. Decoy inference and separately judged usefulness are not a same-condition task-utility pair."
+        }
+      ]
+    },
+    {
+      "family": "jeong2026wra",
+      "item": "R3",
+      "status": "B",
+      "records": [
+        {
+          "id": "WRA-decoy-execution",
+          "status": "B",
+          "source_scope": "8.1-8.3 Tables8-11. Decoy inference and separately judged usefulness are not a same-condition task-utility pair."
+        }
+      ]
+    },
+    {
+      "family": "jeong2026wra",
+      "item": "R4",
+      "status": "--",
+      "records": [
+        {
+          "id": "WRA-decoy-execution",
+          "status": "--",
+          "source_scope": "8.1-8.3 Tables8-11. Decoy inference and separately judged usefulness are not a same-condition task-utility pair."
+        }
+      ]
+    },
+    {
+      "family": "jeong2026wra",
+      "item": "R5",
+      "status": "--",
+      "records": [
+        {
+          "id": "WRA-decoy-execution",
+          "status": "--",
+          "source_scope": "8.1-8.3 Tables8-11. Decoy inference and separately judged usefulness are not a same-condition task-utility pair."
+        }
+      ]
+    },
+    {
+      "family": "jeong2026wra",
+      "item": "R6",
+      "status": "P",
+      "records": [
+        {
+          "id": "WRA-decoy-execution",
+          "status": "P",
+          "source_scope": "8.1-8.3 Tables8-11. Decoy inference and separately judged usefulness are not a same-condition task-utility pair."
+        }
+      ]
+    },
+    {
+      "family": "jeong2026wra",
+      "item": "R7",
+      "status": "B",
+      "records": [
+        {
+          "id": "WRA-decoy-execution",
+          "status": "B",
+          "source_scope": "8.1-8.3 Tables8-11. Decoy inference and separately judged usefulness are not a same-condition task-utility pair."
+        }
+      ]
+    },
+    {
+      "family": "jeong2026wra",
+      "item": "R8",
+      "status": "P",
+      "records": [
+        {
+          "id": "WRA-decoy-execution",
+          "status": "P",
+          "source_scope": "8.1-8.3 Tables8-11. Decoy inference and separately judged usefulness are not a same-condition task-utility pair."
+        }
+      ]
+    },
+    {
+      "family": "jeong2026wra",
+      "item": "R9",
+      "status": "U",
+      "records": [
+        {
+          "id": "WRA-decoy-execution",
+          "status": "U",
+          "source_scope": "8.1-8.3 Tables8-11. Decoy inference and separately judged usefulness are not a same-condition task-utility pair."
+        }
+      ]
+    },
+    {
+      "family": "netecho2025",
+      "item": "R1",
+      "status": "B",
+      "records": [
+        {
+          "id": "NET-upstream-local",
+          "status": "B",
+          "source_scope": "IV-C-E TableIII-IV. Scenario-fitted inference; matched clean/refitted protected-test rows not bound."
+        },
+        {
+          "id": "NET-dummy-padding-simulation",
+          "status": "B",
+          "source_scope": "VII TableIX. Replay inference; insertion budget is a partial cost object, not measured live transport."
+        }
+      ]
+    },
+    {
+      "family": "netecho2025",
+      "item": "R2",
+      "status": "B",
+      "records": [
+        {
+          "id": "NET-upstream-local",
+          "status": "B",
+          "source_scope": "IV-C-E TableIII-IV. Scenario-fitted inference; matched clean/refitted protected-test rows not bound."
+        },
+        {
+          "id": "NET-dummy-padding-simulation",
+          "status": "B",
+          "source_scope": "VII TableIX. Replay inference; insertion budget is a partial cost object, not measured live transport."
+        }
+      ]
+    },
+    {
+      "family": "netecho2025",
+      "item": "R3",
+      "status": "B",
+      "records": [
+        {
+          "id": "NET-upstream-local",
+          "status": "B",
+          "source_scope": "IV-C-E TableIII-IV. Scenario-fitted inference; matched clean/refitted protected-test rows not bound."
+        },
+        {
+          "id": "NET-dummy-padding-simulation",
+          "status": "B",
+          "source_scope": "VII TableIX. Replay inference; insertion budget is a partial cost object, not measured live transport."
+        }
+      ]
+    },
+    {
+      "family": "netecho2025",
+      "item": "R4",
+      "status": "B",
+      "records": [
+        {
+          "id": "NET-upstream-local",
+          "status": "B",
+          "source_scope": "IV-C-E TableIII-IV. Scenario-fitted inference; matched clean/refitted protected-test rows not bound."
+        },
+        {
+          "id": "NET-dummy-padding-simulation",
+          "status": "?",
+          "source_scope": "VII TableIX. Replay inference; insertion budget is a partial cost object, not measured live transport."
+        }
+      ]
+    },
+    {
+      "family": "netecho2025",
+      "item": "R5",
+      "status": "?",
+      "records": [
+        {
+          "id": "NET-upstream-local",
+          "status": "?",
+          "source_scope": "IV-C-E TableIII-IV. Scenario-fitted inference; matched clean/refitted protected-test rows not bound."
+        },
+        {
+          "id": "NET-dummy-padding-simulation",
+          "status": "?",
+          "source_scope": "VII TableIX. Replay inference; insertion budget is a partial cost object, not measured live transport."
+        }
+      ]
+    },
+    {
+      "family": "netecho2025",
+      "item": "R6",
+      "status": "B",
+      "records": [
+        {
+          "id": "NET-upstream-local",
+          "status": "B",
+          "source_scope": "IV-C-E TableIII-IV. Scenario-fitted inference; matched clean/refitted protected-test rows not bound."
+        },
+        {
+          "id": "NET-dummy-padding-simulation",
+          "status": "B",
+          "source_scope": "VII TableIX. Replay inference; insertion budget is a partial cost object, not measured live transport."
+        }
+      ]
+    },
+    {
+      "family": "netecho2025",
+      "item": "R7",
+      "status": "B",
+      "records": [
+        {
+          "id": "NET-upstream-local",
+          "status": "B",
+          "source_scope": "IV-C-E TableIII-IV. Scenario-fitted inference; matched clean/refitted protected-test rows not bound."
+        },
+        {
+          "id": "NET-dummy-padding-simulation",
+          "status": "B",
+          "source_scope": "VII TableIX. Replay inference; insertion budget is a partial cost object, not measured live transport."
+        }
+      ]
+    },
+    {
+      "family": "netecho2025",
+      "item": "R8",
+      "status": "U",
+      "records": [
+        {
+          "id": "NET-upstream-local",
+          "status": "U",
+          "source_scope": "IV-C-E TableIII-IV. Scenario-fitted inference; matched clean/refitted protected-test rows not bound."
+        },
+        {
+          "id": "NET-dummy-padding-simulation",
+          "status": "U",
+          "source_scope": "VII TableIX. Replay inference; insertion budget is a partial cost object, not measured live transport."
+        }
+      ]
+    },
+    {
+      "family": "netecho2025",
+      "item": "R9",
+      "status": "P",
+      "records": [
+        {
+          "id": "NET-upstream-local",
+          "status": "U",
+          "source_scope": "IV-C-E TableIII-IV. Scenario-fitted inference; matched clean/refitted protected-test rows not bound."
+        },
+        {
+          "id": "NET-dummy-padding-simulation",
+          "status": "P",
+          "source_scope": "VII TableIX. Replay inference; insertion budget is a partial cost object, not measured live transport."
+        }
+      ]
+    },
+    {
+      "family": "earlybird2025",
+      "item": "R1",
+      "status": "B",
+      "records": [
+        {
+          "id": "EARLY-K-calibration-oracle",
+          "status": "B",
+          "source_scope": "V-A TableVI;IV-A. K-conditioned calibrated oracle recovery; query cost is not protected service cost."
+        },
+        {
+          "id": "EARLY-semantic-deidentification",
+          "status": "B",
+          "source_scope": "V-B. Semantic processor cost; no protected token-recovery outcome in this record."
+        }
+      ]
+    },
+    {
+      "family": "earlybird2025",
+      "item": "R2",
+      "status": "B",
+      "records": [
+        {
+          "id": "EARLY-K-calibration-oracle",
+          "status": "B",
+          "source_scope": "V-A TableVI;IV-A. K-conditioned calibrated oracle recovery; query cost is not protected service cost."
+        },
+        {
+          "id": "EARLY-semantic-deidentification",
+          "status": "B",
+          "source_scope": "V-B. Semantic processor cost; no protected token-recovery outcome in this record."
+        }
+      ]
+    },
+    {
+      "family": "earlybird2025",
+      "item": "R3",
+      "status": "B",
+      "records": [
+        {
+          "id": "EARLY-K-calibration-oracle",
+          "status": "B",
+          "source_scope": "V-A TableVI;IV-A. K-conditioned calibrated oracle recovery; query cost is not protected service cost."
+        },
+        {
+          "id": "EARLY-semantic-deidentification",
+          "status": "B",
+          "source_scope": "V-B. Semantic processor cost; no protected token-recovery outcome in this record."
+        }
+      ]
+    },
+    {
+      "family": "earlybird2025",
+      "item": "R4",
+      "status": "B",
+      "records": [
+        {
+          "id": "EARLY-K-calibration-oracle",
+          "status": "B",
+          "source_scope": "V-A TableVI;IV-A. K-conditioned calibrated oracle recovery; query cost is not protected service cost."
+        },
+        {
+          "id": "EARLY-semantic-deidentification",
+          "status": "--",
+          "source_scope": "V-B. Semantic processor cost; no protected token-recovery outcome in this record."
+        }
+      ]
+    },
+    {
+      "family": "earlybird2025",
+      "item": "R5",
+      "status": "?",
+      "records": [
+        {
+          "id": "EARLY-K-calibration-oracle",
+          "status": "?",
+          "source_scope": "V-A TableVI;IV-A. K-conditioned calibrated oracle recovery; query cost is not protected service cost."
+        },
+        {
+          "id": "EARLY-semantic-deidentification",
+          "status": "--",
+          "source_scope": "V-B. Semantic processor cost; no protected token-recovery outcome in this record."
+        }
+      ]
+    },
+    {
+      "family": "earlybird2025",
+      "item": "R6",
+      "status": "B",
+      "records": [
+        {
+          "id": "EARLY-K-calibration-oracle",
+          "status": "B",
+          "source_scope": "V-A TableVI;IV-A. K-conditioned calibrated oracle recovery; query cost is not protected service cost."
+        },
+        {
+          "id": "EARLY-semantic-deidentification",
+          "status": "B",
+          "source_scope": "V-B. Semantic processor cost; no protected token-recovery outcome in this record."
+        }
+      ]
+    },
+    {
+      "family": "earlybird2025",
+      "item": "R7",
+      "status": "B",
+      "records": [
+        {
+          "id": "EARLY-K-calibration-oracle",
+          "status": "B",
+          "source_scope": "V-A TableVI;IV-A. K-conditioned calibrated oracle recovery; query cost is not protected service cost."
+        },
+        {
+          "id": "EARLY-semantic-deidentification",
+          "status": "--",
+          "source_scope": "V-B. Semantic processor cost; no protected token-recovery outcome in this record."
+        }
+      ]
+    },
+    {
+      "family": "earlybird2025",
+      "item": "R8",
+      "status": "U",
+      "records": [
+        {
+          "id": "EARLY-K-calibration-oracle",
+          "status": "U",
+          "source_scope": "V-A TableVI;IV-A. K-conditioned calibrated oracle recovery; query cost is not protected service cost."
+        },
+        {
+          "id": "EARLY-semantic-deidentification",
+          "status": "U",
+          "source_scope": "V-B. Semantic processor cost; no protected token-recovery outcome in this record."
+        }
+      ]
+    },
+    {
+      "family": "earlybird2025",
+      "item": "R9",
+      "status": "B",
+      "records": [
+        {
+          "id": "EARLY-K-calibration-oracle",
+          "status": "P",
+          "source_scope": "V-A TableVI;IV-A. K-conditioned calibrated oracle recovery; query cost is not protected service cost."
+        },
+        {
+          "id": "EARLY-semantic-deidentification",
+          "status": "B",
+          "source_scope": "V-B. Semantic processor cost; no protected token-recovery outcome in this record."
+        }
+      ]
+    },
+    {
+      "family": "whisperleak2025",
+      "item": "R1",
+      "status": "B",
+      "records": [
+        {
+          "id": "WHISPER-randompadding-capture",
+          "status": "B",
+          "source_scope": "3.2;6.1 Tables3-4. New padded captures; global fitting is specified, its protected-condition mapping incomplete; matched adaptation unreported."
+        },
+        {
+          "id": "WHISPER-batching-replay",
+          "status": "B",
+          "source_scope": "6.2 Fig7. Grouped traces bind AUPRC, not executed delay or task utility."
+        },
+        {
+          "id": "WHISPER-injection-replay",
+          "status": "B",
+          "source_scope": "6.3 Table5. Synthetic volume estimate lacks a complete placement-specific resource binding."
+        }
+      ]
+    },
+    {
+      "family": "whisperleak2025",
+      "item": "R2",
+      "status": "B",
+      "records": [
+        {
+          "id": "WHISPER-randompadding-capture",
+          "status": "B",
+          "source_scope": "3.2;6.1 Tables3-4. New padded captures; global fitting is specified, its protected-condition mapping incomplete; matched adaptation unreported."
+        },
+        {
+          "id": "WHISPER-batching-replay",
+          "status": "B",
+          "source_scope": "6.2 Fig7. Grouped traces bind AUPRC, not executed delay or task utility."
+        },
+        {
+          "id": "WHISPER-injection-replay",
+          "status": "B",
+          "source_scope": "6.3 Table5. Synthetic volume estimate lacks a complete placement-specific resource binding."
+        }
+      ]
+    },
+    {
+      "family": "whisperleak2025",
+      "item": "R3",
+      "status": "B",
+      "records": [
+        {
+          "id": "WHISPER-randompadding-capture",
+          "status": "B",
+          "source_scope": "3.2;6.1 Tables3-4. New padded captures; global fitting is specified, its protected-condition mapping incomplete; matched adaptation unreported."
+        },
+        {
+          "id": "WHISPER-batching-replay",
+          "status": "B",
+          "source_scope": "6.2 Fig7. Grouped traces bind AUPRC, not executed delay or task utility."
+        },
+        {
+          "id": "WHISPER-injection-replay",
+          "status": "B",
+          "source_scope": "6.3 Table5. Synthetic volume estimate lacks a complete placement-specific resource binding."
+        }
+      ]
+    },
+    {
+      "family": "whisperleak2025",
+      "item": "R4",
+      "status": "P",
+      "records": [
+        {
+          "id": "WHISPER-randompadding-capture",
+          "status": "P",
+          "source_scope": "3.2;6.1 Tables3-4. New padded captures; global fitting is specified, its protected-condition mapping incomplete; matched adaptation unreported."
+        },
+        {
+          "id": "WHISPER-batching-replay",
+          "status": "P",
+          "source_scope": "6.2 Fig7. Grouped traces bind AUPRC, not executed delay or task utility."
+        },
+        {
+          "id": "WHISPER-injection-replay",
+          "status": "P",
+          "source_scope": "6.3 Table5. Synthetic volume estimate lacks a complete placement-specific resource binding."
+        }
+      ]
+    },
+    {
+      "family": "whisperleak2025",
+      "item": "R5",
+      "status": "U",
+      "records": [
+        {
+          "id": "WHISPER-randompadding-capture",
+          "status": "U",
+          "source_scope": "3.2;6.1 Tables3-4. New padded captures; global fitting is specified, its protected-condition mapping incomplete; matched adaptation unreported."
+        },
+        {
+          "id": "WHISPER-batching-replay",
+          "status": "U",
+          "source_scope": "6.2 Fig7. Grouped traces bind AUPRC, not executed delay or task utility."
+        },
+        {
+          "id": "WHISPER-injection-replay",
+          "status": "U",
+          "source_scope": "6.3 Table5. Synthetic volume estimate lacks a complete placement-specific resource binding."
+        }
+      ]
+    },
+    {
+      "family": "whisperleak2025",
+      "item": "R6",
+      "status": "B",
+      "records": [
+        {
+          "id": "WHISPER-randompadding-capture",
+          "status": "B",
+          "source_scope": "3.2;6.1 Tables3-4. New padded captures; global fitting is specified, its protected-condition mapping incomplete; matched adaptation unreported."
+        },
+        {
+          "id": "WHISPER-batching-replay",
+          "status": "B",
+          "source_scope": "6.2 Fig7. Grouped traces bind AUPRC, not executed delay or task utility."
+        },
+        {
+          "id": "WHISPER-injection-replay",
+          "status": "B",
+          "source_scope": "6.3 Table5. Synthetic volume estimate lacks a complete placement-specific resource binding."
+        }
+      ]
+    },
+    {
+      "family": "whisperleak2025",
+      "item": "R7",
+      "status": "B",
+      "records": [
+        {
+          "id": "WHISPER-randompadding-capture",
+          "status": "B",
+          "source_scope": "3.2;6.1 Tables3-4. New padded captures; global fitting is specified, its protected-condition mapping incomplete; matched adaptation unreported."
+        },
+        {
+          "id": "WHISPER-batching-replay",
+          "status": "B",
+          "source_scope": "6.2 Fig7. Grouped traces bind AUPRC, not executed delay or task utility."
+        },
+        {
+          "id": "WHISPER-injection-replay",
+          "status": "B",
+          "source_scope": "6.3 Table5. Synthetic volume estimate lacks a complete placement-specific resource binding."
+        }
+      ]
+    },
+    {
+      "family": "whisperleak2025",
+      "item": "R8",
+      "status": "U",
+      "records": [
+        {
+          "id": "WHISPER-randompadding-capture",
+          "status": "U",
+          "source_scope": "3.2;6.1 Tables3-4. New padded captures; global fitting is specified, its protected-condition mapping incomplete; matched adaptation unreported."
+        },
+        {
+          "id": "WHISPER-batching-replay",
+          "status": "U",
+          "source_scope": "6.2 Fig7. Grouped traces bind AUPRC, not executed delay or task utility."
+        },
+        {
+          "id": "WHISPER-injection-replay",
+          "status": "U",
+          "source_scope": "6.3 Table5. Synthetic volume estimate lacks a complete placement-specific resource binding."
+        }
+      ]
+    },
+    {
+      "family": "whisperleak2025",
+      "item": "R9",
+      "status": "P",
+      "records": [
+        {
+          "id": "WHISPER-randompadding-capture",
+          "status": "U",
+          "source_scope": "3.2;6.1 Tables3-4. New padded captures; global fitting is specified, its protected-condition mapping incomplete; matched adaptation unreported."
+        },
+        {
+          "id": "WHISPER-batching-replay",
+          "status": "U",
+          "source_scope": "6.2 Fig7. Grouped traces bind AUPRC, not executed delay or task utility."
+        },
+        {
+          "id": "WHISPER-injection-replay",
+          "status": "P",
+          "source_scope": "6.3 Table5. Synthetic volume estimate lacks a complete placement-specific resource binding."
+        }
+      ]
+    },
+    {
+      "family": "spliceleak2026",
+      "item": "R1",
+      "status": "B",
+      "records": [
+        {
+          "id": "SPLICE-CTBF-signal",
+          "status": "B",
+          "source_scope": "VII-C TableII. CTBF timing-gap outcome; QCP costs are a different component."
+        },
+        {
+          "id": "SPLICE-QCP-cost",
+          "status": "B",
+          "source_scope": "VII-C TableII. QCP token/TTFT cost; CTBF signal suppression is not attached to this record."
+        }
+      ]
+    },
+    {
+      "family": "spliceleak2026",
+      "item": "R2",
+      "status": "B",
+      "records": [
+        {
+          "id": "SPLICE-CTBF-signal",
+          "status": "B",
+          "source_scope": "VII-C TableII. CTBF timing-gap outcome; QCP costs are a different component."
+        },
+        {
+          "id": "SPLICE-QCP-cost",
+          "status": "B",
+          "source_scope": "VII-C TableII. QCP token/TTFT cost; CTBF signal suppression is not attached to this record."
+        }
+      ]
+    },
+    {
+      "family": "spliceleak2026",
+      "item": "R3",
+      "status": "B",
+      "records": [
+        {
+          "id": "SPLICE-CTBF-signal",
+          "status": "B",
+          "source_scope": "VII-C TableII. CTBF timing-gap outcome; QCP costs are a different component."
+        },
+        {
+          "id": "SPLICE-QCP-cost",
+          "status": "B",
+          "source_scope": "VII-C TableII. QCP token/TTFT cost; CTBF signal suppression is not attached to this record."
+        }
+      ]
+    },
+    {
+      "family": "spliceleak2026",
+      "item": "R4",
+      "status": "--",
+      "records": [
+        {
+          "id": "SPLICE-CTBF-signal",
+          "status": "--",
+          "source_scope": "VII-C TableII. CTBF timing-gap outcome; QCP costs are a different component."
+        },
+        {
+          "id": "SPLICE-QCP-cost",
+          "status": "--",
+          "source_scope": "VII-C TableII. QCP token/TTFT cost; CTBF signal suppression is not attached to this record."
+        }
+      ]
+    },
+    {
+      "family": "spliceleak2026",
+      "item": "R5",
+      "status": "--",
+      "records": [
+        {
+          "id": "SPLICE-CTBF-signal",
+          "status": "--",
+          "source_scope": "VII-C TableII. CTBF timing-gap outcome; QCP costs are a different component."
+        },
+        {
+          "id": "SPLICE-QCP-cost",
+          "status": "--",
+          "source_scope": "VII-C TableII. QCP token/TTFT cost; CTBF signal suppression is not attached to this record."
+        }
+      ]
+    },
+    {
+      "family": "spliceleak2026",
+      "item": "R6",
+      "status": "B",
+      "records": [
+        {
+          "id": "SPLICE-CTBF-signal",
+          "status": "B",
+          "source_scope": "VII-C TableII. CTBF timing-gap outcome; QCP costs are a different component."
+        },
+        {
+          "id": "SPLICE-QCP-cost",
+          "status": "B",
+          "source_scope": "VII-C TableII. QCP token/TTFT cost; CTBF signal suppression is not attached to this record."
+        }
+      ]
+    },
+    {
+      "family": "spliceleak2026",
+      "item": "R7",
+      "status": "B",
+      "records": [
+        {
+          "id": "SPLICE-CTBF-signal",
+          "status": "B",
+          "source_scope": "VII-C TableII. CTBF timing-gap outcome; QCP costs are a different component."
+        },
+        {
+          "id": "SPLICE-QCP-cost",
+          "status": "--",
+          "source_scope": "VII-C TableII. QCP token/TTFT cost; CTBF signal suppression is not attached to this record."
+        }
+      ]
+    },
+    {
+      "family": "spliceleak2026",
+      "item": "R8",
+      "status": "U",
+      "records": [
+        {
+          "id": "SPLICE-CTBF-signal",
+          "status": "U",
+          "source_scope": "VII-C TableII. CTBF timing-gap outcome; QCP costs are a different component."
+        },
+        {
+          "id": "SPLICE-QCP-cost",
+          "status": "U",
+          "source_scope": "VII-C TableII. QCP token/TTFT cost; CTBF signal suppression is not attached to this record."
+        }
+      ]
+    },
+    {
+      "family": "spliceleak2026",
+      "item": "R9",
+      "status": "B",
+      "records": [
+        {
+          "id": "SPLICE-CTBF-signal",
+          "status": "U",
+          "source_scope": "VII-C TableII. CTBF timing-gap outcome; QCP costs are a different component."
+        },
+        {
+          "id": "SPLICE-QCP-cost",
+          "status": "B",
+          "source_scope": "VII-C TableII. QCP token/TTFT cost; CTBF signal suppression is not attached to this record."
+        }
+      ]
+    },
+    {
+      "family": "timewilltell2024",
+      "item": "R1",
+      "status": "B",
+      "records": [
+        {
+          "id": "TIME-length-instruction",
+          "status": "B",
+          "source_scope": "V-B;VII-B. Input-conditioned threshold profiling is specified; the instruction-specific fit mapping is incomplete and matched adaptation unreported."
+        },
+        {
+          "id": "TIME-padding-estimate",
+          "status": "B",
+          "source_scope": "7.3. Analytical plaintext padding cost; no independently evaluated protected inference here."
+        }
+      ]
+    },
+    {
+      "family": "timewilltell2024",
+      "item": "R2",
+      "status": "B",
+      "records": [
+        {
+          "id": "TIME-length-instruction",
+          "status": "B",
+          "source_scope": "V-B;VII-B. Input-conditioned threshold profiling is specified; the instruction-specific fit mapping is incomplete and matched adaptation unreported."
+        },
+        {
+          "id": "TIME-padding-estimate",
+          "status": "B",
+          "source_scope": "7.3. Analytical plaintext padding cost; no independently evaluated protected inference here."
+        }
+      ]
+    },
+    {
+      "family": "timewilltell2024",
+      "item": "R3",
+      "status": "B",
+      "records": [
+        {
+          "id": "TIME-length-instruction",
+          "status": "B",
+          "source_scope": "V-B;VII-B. Input-conditioned threshold profiling is specified; the instruction-specific fit mapping is incomplete and matched adaptation unreported."
+        },
+        {
+          "id": "TIME-padding-estimate",
+          "status": "P",
+          "source_scope": "7.3. Analytical plaintext padding cost; no independently evaluated protected inference here."
+        }
+      ]
+    },
+    {
+      "family": "timewilltell2024",
+      "item": "R4",
+      "status": "P",
+      "records": [
+        {
+          "id": "TIME-length-instruction",
+          "status": "P",
+          "source_scope": "V-B;VII-B. Input-conditioned threshold profiling is specified; the instruction-specific fit mapping is incomplete and matched adaptation unreported."
+        },
+        {
+          "id": "TIME-padding-estimate",
+          "status": "--",
+          "source_scope": "7.3. Analytical plaintext padding cost; no independently evaluated protected inference here."
+        }
+      ]
+    },
+    {
+      "family": "timewilltell2024",
+      "item": "R5",
+      "status": "U",
+      "records": [
+        {
+          "id": "TIME-length-instruction",
+          "status": "U",
+          "source_scope": "V-B;VII-B. Input-conditioned threshold profiling is specified; the instruction-specific fit mapping is incomplete and matched adaptation unreported."
+        },
+        {
+          "id": "TIME-padding-estimate",
+          "status": "--",
+          "source_scope": "7.3. Analytical plaintext padding cost; no independently evaluated protected inference here."
+        }
+      ]
+    },
+    {
+      "family": "timewilltell2024",
+      "item": "R6",
+      "status": "B",
+      "records": [
+        {
+          "id": "TIME-length-instruction",
+          "status": "B",
+          "source_scope": "V-B;VII-B. Input-conditioned threshold profiling is specified; the instruction-specific fit mapping is incomplete and matched adaptation unreported."
+        },
+        {
+          "id": "TIME-padding-estimate",
+          "status": "B",
+          "source_scope": "7.3. Analytical plaintext padding cost; no independently evaluated protected inference here."
+        }
+      ]
+    },
+    {
+      "family": "timewilltell2024",
+      "item": "R7",
+      "status": "B",
+      "records": [
+        {
+          "id": "TIME-length-instruction",
+          "status": "B",
+          "source_scope": "V-B;VII-B. Input-conditioned threshold profiling is specified; the instruction-specific fit mapping is incomplete and matched adaptation unreported."
+        },
+        {
+          "id": "TIME-padding-estimate",
+          "status": "--",
+          "source_scope": "7.3. Analytical plaintext padding cost; no independently evaluated protected inference here."
+        }
+      ]
+    },
+    {
+      "family": "timewilltell2024",
+      "item": "R8",
+      "status": "U",
+      "records": [
+        {
+          "id": "TIME-length-instruction",
+          "status": "U",
+          "source_scope": "V-B;VII-B. Input-conditioned threshold profiling is specified; the instruction-specific fit mapping is incomplete and matched adaptation unreported."
+        },
+        {
+          "id": "TIME-padding-estimate",
+          "status": "U",
+          "source_scope": "7.3. Analytical plaintext padding cost; no independently evaluated protected inference here."
+        }
+      ]
+    },
+    {
+      "family": "timewilltell2024",
+      "item": "R9",
+      "status": "B",
+      "records": [
+        {
+          "id": "TIME-length-instruction",
+          "status": "U",
+          "source_scope": "V-B;VII-B. Input-conditioned threshold profiling is specified; the instruction-specific fit mapping is incomplete and matched adaptation unreported."
+        },
+        {
+          "id": "TIME-padding-estimate",
+          "status": "B",
+          "source_scope": "7.3. Analytical plaintext padding cost; no independently evaluated protected inference here."
+        }
+      ]
+    },
+    {
+      "family": "gao2025iknow",
+      "item": "R1",
+      "status": "B",
+      "records": [
+        {
+          "id": "GAO-zero-copy-off",
+          "status": "B",
+          "source_scope": "7.1. Loading/memory cost; structural argument is not measured defended ASR."
+        }
+      ]
+    },
+    {
+      "family": "gao2025iknow",
+      "item": "R2",
+      "status": "B",
+      "records": [
+        {
+          "id": "GAO-zero-copy-off",
+          "status": "B",
+          "source_scope": "7.1. Loading/memory cost; structural argument is not measured defended ASR."
+        }
+      ]
+    },
+    {
+      "family": "gao2025iknow",
+      "item": "R3",
+      "status": "B",
+      "records": [
+        {
+          "id": "GAO-zero-copy-off",
+          "status": "B",
+          "source_scope": "7.1. Loading/memory cost; structural argument is not measured defended ASR."
+        }
+      ]
+    },
+    {
+      "family": "gao2025iknow",
+      "item": "R4",
+      "status": "--",
+      "records": [
+        {
+          "id": "GAO-zero-copy-off",
+          "status": "--",
+          "source_scope": "7.1. Loading/memory cost; structural argument is not measured defended ASR."
+        }
+      ]
+    },
+    {
+      "family": "gao2025iknow",
+      "item": "R5",
+      "status": "--",
+      "records": [
+        {
+          "id": "GAO-zero-copy-off",
+          "status": "--",
+          "source_scope": "7.1. Loading/memory cost; structural argument is not measured defended ASR."
+        }
+      ]
+    },
+    {
+      "family": "gao2025iknow",
+      "item": "R6",
+      "status": "P",
+      "records": [
+        {
+          "id": "GAO-zero-copy-off",
+          "status": "P",
+          "source_scope": "7.1. Loading/memory cost; structural argument is not measured defended ASR."
+        }
+      ]
+    },
+    {
+      "family": "gao2025iknow",
+      "item": "R7",
+      "status": "--",
+      "records": [
+        {
+          "id": "GAO-zero-copy-off",
+          "status": "--",
+          "source_scope": "7.1. Loading/memory cost; structural argument is not measured defended ASR."
+        }
+      ]
+    },
+    {
+      "family": "gao2025iknow",
+      "item": "R8",
+      "status": "--",
+      "records": [
+        {
+          "id": "GAO-zero-copy-off",
+          "status": "--",
+          "source_scope": "7.1. Loading/memory cost; structural argument is not measured defended ASR."
+        }
+      ]
+    },
+    {
+      "family": "gao2025iknow",
+      "item": "R9",
+      "status": "B",
+      "records": [
+        {
+          "id": "GAO-zero-copy-off",
+          "status": "B",
+          "source_scope": "7.1. Loading/memory cost; structural argument is not measured defended ASR."
+        }
+      ]
+    },
+    {
+      "family": "wei2024speculation",
+      "item": "R1",
+      "status": "B",
+      "records": [
+        {
+          "id": "SPEC-padding-REST",
+          "status": "B",
+          "source_scope": "6.1 Fig6-7 Table2. Accuracy and token-payload ratio share the REST padding condition; live/wire interpretation is unresolved."
+        }
+      ]
+    },
+    {
+      "family": "wei2024speculation",
+      "item": "R2",
+      "status": "B",
+      "records": [
+        {
+          "id": "SPEC-padding-REST",
+          "status": "B",
+          "source_scope": "6.1 Fig6-7 Table2. Accuracy and token-payload ratio share the REST padding condition; live/wire interpretation is unresolved."
+        }
+      ]
+    },
+    {
+      "family": "wei2024speculation",
+      "item": "R3",
+      "status": "P",
+      "records": [
+        {
+          "id": "SPEC-padding-REST",
+          "status": "P",
+          "source_scope": "6.1 Fig6-7 Table2. Accuracy and token-payload ratio share the REST padding condition; live/wire interpretation is unresolved."
+        }
+      ]
+    },
+    {
+      "family": "wei2024speculation",
+      "item": "R4",
+      "status": "P",
+      "records": [
+        {
+          "id": "SPEC-padding-REST",
+          "status": "P",
+          "source_scope": "6.1 Fig6-7 Table2. Accuracy and token-payload ratio share the REST padding condition; live/wire interpretation is unresolved."
+        }
+      ]
+    },
+    {
+      "family": "wei2024speculation",
+      "item": "R5",
+      "status": "U",
+      "records": [
+        {
+          "id": "SPEC-padding-REST",
+          "status": "U",
+          "source_scope": "6.1 Fig6-7 Table2. Accuracy and token-payload ratio share the REST padding condition; live/wire interpretation is unresolved."
+        }
+      ]
+    },
+    {
+      "family": "wei2024speculation",
+      "item": "R6",
+      "status": "B",
+      "records": [
+        {
+          "id": "SPEC-padding-REST",
+          "status": "B",
+          "source_scope": "6.1 Fig6-7 Table2. Accuracy and token-payload ratio share the REST padding condition; live/wire interpretation is unresolved."
+        }
+      ]
+    },
+    {
+      "family": "wei2024speculation",
+      "item": "R7",
+      "status": "B",
+      "records": [
+        {
+          "id": "SPEC-padding-REST",
+          "status": "B",
+          "source_scope": "6.1 Fig6-7 Table2. Accuracy and token-payload ratio share the REST padding condition; live/wire interpretation is unresolved."
+        }
+      ]
+    },
+    {
+      "family": "wei2024speculation",
+      "item": "R8",
+      "status": "--",
+      "records": [
+        {
+          "id": "SPEC-padding-REST",
+          "status": "--",
+          "source_scope": "6.1 Fig6-7 Table2. Accuracy and token-payload ratio share the REST padding condition; live/wire interpretation is unresolved."
+        }
+      ]
+    },
+    {
+      "family": "wei2024speculation",
+      "item": "R9",
+      "status": "B",
+      "records": [
+        {
+          "id": "SPEC-padding-REST",
+          "status": "B",
+          "source_scope": "6.1 Fig6-7 Table2. Accuracy and token-payload ratio share the REST padding condition; live/wire interpretation is unresolved."
+        }
+      ]
+    },
+    {
+      "family": "dangol2026workflow",
+      "item": "R1",
+      "status": "B",
+      "records": [
+        {
+          "id": "DANGOL-capture",
+          "status": "B",
+          "source_scope": "9.8-9.9 Table6. Capture-scoped matched adaptation, accuracy and transformed byte cost."
+        },
+        {
+          "id": "DANGOL-livebinding",
+          "status": "B",
+          "source_scope": "9.7, OHTTP paragraph after Table 5. Live loopback recovery and wire/latency cost; capture refit cannot be inherited."
+        }
+      ]
+    },
+    {
+      "family": "dangol2026workflow",
+      "item": "R2",
+      "status": "B",
+      "records": [
+        {
+          "id": "DANGOL-capture",
+          "status": "B",
+          "source_scope": "9.8-9.9 Table6. Capture-scoped matched adaptation, accuracy and transformed byte cost."
+        },
+        {
+          "id": "DANGOL-livebinding",
+          "status": "B",
+          "source_scope": "9.7, OHTTP paragraph after Table 5. Live loopback recovery and wire/latency cost; capture refit cannot be inherited."
+        }
+      ]
+    },
+    {
+      "family": "dangol2026workflow",
+      "item": "R3",
+      "status": "B",
+      "records": [
+        {
+          "id": "DANGOL-capture",
+          "status": "B",
+          "source_scope": "9.8-9.9 Table6. Capture-scoped matched adaptation, accuracy and transformed byte cost."
+        },
+        {
+          "id": "DANGOL-livebinding",
+          "status": "B",
+          "source_scope": "9.7, OHTTP paragraph after Table 5. Live loopback recovery and wire/latency cost; capture refit cannot be inherited."
+        }
+      ]
+    },
+    {
+      "family": "dangol2026workflow",
+      "item": "R4",
+      "status": "B",
+      "records": [
+        {
+          "id": "DANGOL-capture",
+          "status": "B",
+          "source_scope": "9.8-9.9 Table6. Capture-scoped matched adaptation, accuracy and transformed byte cost."
+        },
+        {
+          "id": "DANGOL-livebinding",
+          "status": "?",
+          "source_scope": "9.7, OHTTP paragraph after Table 5. Live loopback recovery and wire/latency cost; capture refit cannot be inherited."
+        }
+      ]
+    },
+    {
+      "family": "dangol2026workflow",
+      "item": "R5",
+      "status": "B",
+      "records": [
+        {
+          "id": "DANGOL-capture",
+          "status": "B",
+          "source_scope": "9.8-9.9 Table6. Capture-scoped matched adaptation, accuracy and transformed byte cost."
+        },
+        {
+          "id": "DANGOL-livebinding",
+          "status": "?",
+          "source_scope": "9.7, OHTTP paragraph after Table 5. Live loopback recovery and wire/latency cost; capture refit cannot be inherited."
+        }
+      ]
+    },
+    {
+      "family": "dangol2026workflow",
+      "item": "R6",
+      "status": "B",
+      "records": [
+        {
+          "id": "DANGOL-capture",
+          "status": "B",
+          "source_scope": "9.8-9.9 Table6. Capture-scoped matched adaptation, accuracy and transformed byte cost."
+        },
+        {
+          "id": "DANGOL-livebinding",
+          "status": "B",
+          "source_scope": "9.7, OHTTP paragraph after Table 5. Live loopback recovery and wire/latency cost; capture refit cannot be inherited."
+        }
+      ]
+    },
+    {
+      "family": "dangol2026workflow",
+      "item": "R7",
+      "status": "B",
+      "records": [
+        {
+          "id": "DANGOL-capture",
+          "status": "B",
+          "source_scope": "9.8-9.9 Table6. Capture-scoped matched adaptation, accuracy and transformed byte cost."
+        },
+        {
+          "id": "DANGOL-livebinding",
+          "status": "B",
+          "source_scope": "9.7, OHTTP paragraph after Table 5. Live loopback recovery and wire/latency cost; capture refit cannot be inherited."
+        }
+      ]
+    },
+    {
+      "family": "dangol2026workflow",
+      "item": "R8",
+      "status": "U",
+      "records": [
+        {
+          "id": "DANGOL-capture",
+          "status": "U",
+          "source_scope": "9.8-9.9 Table6. Capture-scoped matched adaptation, accuracy and transformed byte cost."
+        },
+        {
+          "id": "DANGOL-livebinding",
+          "status": "U",
+          "source_scope": "9.7, OHTTP paragraph after Table 5. Live loopback recovery and wire/latency cost; capture refit cannot be inherited."
+        }
+      ]
+    },
+    {
+      "family": "dangol2026workflow",
+      "item": "R9",
+      "status": "B",
+      "records": [
+        {
+          "id": "DANGOL-capture",
+          "status": "B",
+          "source_scope": "9.8-9.9 Table6. Capture-scoped matched adaptation, accuracy and transformed byte cost."
+        },
+        {
+          "id": "DANGOL-livebinding",
+          "status": "B",
+          "source_scope": "9.7, OHTTP paragraph after Table 5. Live loopback recovery and wire/latency cost; capture refit cannot be inherited."
+        }
+      ]
+    },
+    {
+      "family": "pouryousef2026traffic",
+      "item": "R1",
+      "status": "B",
+      "records": [
+        {
+          "id": "TRAFFIC-prompt-reformulation",
+          "status": "B",
+          "source_scope": "V-C1 Fig9a. Prompt-intervention inference; semantic preservation asserted rather than task-scored."
+        },
+        {
+          "id": "TRAFFIC-temperature",
+          "status": "B",
+          "source_scope": "V-C1 Fig9a. Temperature changes test fixed-configuration fingerprints; protected fitting and matched adaptation are unreported in scope."
+        }
+      ]
+    },
+    {
+      "family": "pouryousef2026traffic",
+      "item": "R2",
+      "status": "P",
+      "records": [
+        {
+          "id": "TRAFFIC-prompt-reformulation",
+          "status": "P",
+          "source_scope": "V-C1 Fig9a. Prompt-intervention inference; semantic preservation asserted rather than task-scored."
+        },
+        {
+          "id": "TRAFFIC-temperature",
+          "status": "P",
+          "source_scope": "V-C1 Fig9a. Temperature changes test fixed-configuration fingerprints; protected fitting and matched adaptation are unreported in scope."
+        }
+      ]
+    },
+    {
+      "family": "pouryousef2026traffic",
+      "item": "R3",
+      "status": "B",
+      "records": [
+        {
+          "id": "TRAFFIC-prompt-reformulation",
+          "status": "B",
+          "source_scope": "V-C1 Fig9a. Prompt-intervention inference; semantic preservation asserted rather than task-scored."
+        },
+        {
+          "id": "TRAFFIC-temperature",
+          "status": "B",
+          "source_scope": "V-C1 Fig9a. Temperature changes test fixed-configuration fingerprints; protected fitting and matched adaptation are unreported in scope."
+        }
+      ]
+    },
+    {
+      "family": "pouryousef2026traffic",
+      "item": "R4",
+      "status": "U",
+      "records": [
+        {
+          "id": "TRAFFIC-prompt-reformulation",
+          "status": "U",
+          "source_scope": "V-C1 Fig9a. Prompt-intervention inference; semantic preservation asserted rather than task-scored."
+        },
+        {
+          "id": "TRAFFIC-temperature",
+          "status": "U",
+          "source_scope": "V-C1 Fig9a. Temperature changes test fixed-configuration fingerprints; protected fitting and matched adaptation are unreported in scope."
+        }
+      ]
+    },
+    {
+      "family": "pouryousef2026traffic",
+      "item": "R5",
+      "status": "U",
+      "records": [
+        {
+          "id": "TRAFFIC-prompt-reformulation",
+          "status": "U",
+          "source_scope": "V-C1 Fig9a. Prompt-intervention inference; semantic preservation asserted rather than task-scored."
+        },
+        {
+          "id": "TRAFFIC-temperature",
+          "status": "U",
+          "source_scope": "V-C1 Fig9a. Temperature changes test fixed-configuration fingerprints; protected fitting and matched adaptation are unreported in scope."
+        }
+      ]
+    },
+    {
+      "family": "pouryousef2026traffic",
+      "item": "R6",
+      "status": "P",
+      "records": [
+        {
+          "id": "TRAFFIC-prompt-reformulation",
+          "status": "P",
+          "source_scope": "V-C1 Fig9a. Prompt-intervention inference; semantic preservation asserted rather than task-scored."
+        },
+        {
+          "id": "TRAFFIC-temperature",
+          "status": "P",
+          "source_scope": "V-C1 Fig9a. Temperature changes test fixed-configuration fingerprints; protected fitting and matched adaptation are unreported in scope."
+        }
+      ]
+    },
+    {
+      "family": "pouryousef2026traffic",
+      "item": "R7",
+      "status": "B",
+      "records": [
+        {
+          "id": "TRAFFIC-prompt-reformulation",
+          "status": "B",
+          "source_scope": "V-C1 Fig9a. Prompt-intervention inference; semantic preservation asserted rather than task-scored."
+        },
+        {
+          "id": "TRAFFIC-temperature",
+          "status": "B",
+          "source_scope": "V-C1 Fig9a. Temperature changes test fixed-configuration fingerprints; protected fitting and matched adaptation are unreported in scope."
+        }
+      ]
+    },
+    {
+      "family": "pouryousef2026traffic",
+      "item": "R8",
+      "status": "P",
+      "records": [
+        {
+          "id": "TRAFFIC-prompt-reformulation",
+          "status": "P",
+          "source_scope": "V-C1 Fig9a. Prompt-intervention inference; semantic preservation asserted rather than task-scored."
+        },
+        {
+          "id": "TRAFFIC-temperature",
+          "status": "U",
+          "source_scope": "V-C1 Fig9a. Temperature changes test fixed-configuration fingerprints; protected fitting and matched adaptation are unreported in scope."
+        }
+      ]
+    },
+    {
+      "family": "pouryousef2026traffic",
+      "item": "R9",
+      "status": "U",
+      "records": [
+        {
+          "id": "TRAFFIC-prompt-reformulation",
+          "status": "U",
+          "source_scope": "V-C1 Fig9a. Prompt-intervention inference; semantic preservation asserted rather than task-scored."
+        },
+        {
+          "id": "TRAFFIC-temperature",
+          "status": "U",
+          "source_scope": "V-C1 Fig9a. Temperature changes test fixed-configuration fingerprints; protected fitting and matched adaptation are unreported in scope."
+        }
+      ]
+    },
+    {
+      "family": "carlini2024remote",
+      "item": "R1",
+      "status": "B",
+      "records": [
+        {
+          "id": "CARLINI-fixed-rate",
+          "status": "B",
+          "source_scope": "VII Fig11-12. Rate-curve bandwidth/per-token-delay cost, with live placement unresolved."
+        }
+      ]
+    },
+    {
+      "family": "carlini2024remote",
+      "item": "R2",
+      "status": "B",
+      "records": [
+        {
+          "id": "CARLINI-fixed-rate",
+          "status": "B",
+          "source_scope": "VII Fig11-12. Rate-curve bandwidth/per-token-delay cost, with live placement unresolved."
+        }
+      ]
+    },
+    {
+      "family": "carlini2024remote",
+      "item": "R3",
+      "status": "P",
+      "records": [
+        {
+          "id": "CARLINI-fixed-rate",
+          "status": "P",
+          "source_scope": "VII Fig11-12. Rate-curve bandwidth/per-token-delay cost, with live placement unresolved."
+        }
+      ]
+    },
+    {
+      "family": "carlini2024remote",
+      "item": "R4",
+      "status": "--",
+      "records": [
+        {
+          "id": "CARLINI-fixed-rate",
+          "status": "--",
+          "source_scope": "VII Fig11-12. Rate-curve bandwidth/per-token-delay cost, with live placement unresolved."
+        }
+      ]
+    },
+    {
+      "family": "carlini2024remote",
+      "item": "R5",
+      "status": "--",
+      "records": [
+        {
+          "id": "CARLINI-fixed-rate",
+          "status": "--",
+          "source_scope": "VII Fig11-12. Rate-curve bandwidth/per-token-delay cost, with live placement unresolved."
+        }
+      ]
+    },
+    {
+      "family": "carlini2024remote",
+      "item": "R6",
+      "status": "B",
+      "records": [
+        {
+          "id": "CARLINI-fixed-rate",
+          "status": "B",
+          "source_scope": "VII Fig11-12. Rate-curve bandwidth/per-token-delay cost, with live placement unresolved."
+        }
+      ]
+    },
+    {
+      "family": "carlini2024remote",
+      "item": "R7",
+      "status": "--",
+      "records": [
+        {
+          "id": "CARLINI-fixed-rate",
+          "status": "--",
+          "source_scope": "VII Fig11-12. Rate-curve bandwidth/per-token-delay cost, with live placement unresolved."
+        }
+      ]
+    },
+    {
+      "family": "carlini2024remote",
+      "item": "R8",
+      "status": "U",
+      "records": [
+        {
+          "id": "CARLINI-fixed-rate",
+          "status": "U",
+          "source_scope": "VII Fig11-12. Rate-curve bandwidth/per-token-delay cost, with live placement unresolved."
+        }
+      ]
+    },
+    {
+      "family": "carlini2024remote",
+      "item": "R9",
+      "status": "B",
+      "records": [
+        {
+          "id": "CARLINI-fixed-rate",
+          "status": "B",
+          "source_scope": "VII Fig11-12. Rate-curve bandwidth/per-token-delay cost, with live placement unresolved."
+        }
+      ]
+    },
+    {
+      "family": "hornetz2026tdxray",
+      "item": "R1",
+      "status": "B",
+      "records": [
+        {
+          "id": "TDXRAY-oblivious-map",
+          "status": "B",
+          "source_scope": "6.1 Fig8 Table3. Vocabulary coverage and lookup cost are component utility/cost; no measured defended recovery."
+        }
+      ]
+    },
+    {
+      "family": "hornetz2026tdxray",
+      "item": "R2",
+      "status": "B",
+      "records": [
+        {
+          "id": "TDXRAY-oblivious-map",
+          "status": "B",
+          "source_scope": "6.1 Fig8 Table3. Vocabulary coverage and lookup cost are component utility/cost; no measured defended recovery."
+        }
+      ]
+    },
+    {
+      "family": "hornetz2026tdxray",
+      "item": "R3",
+      "status": "B",
+      "records": [
+        {
+          "id": "TDXRAY-oblivious-map",
+          "status": "B",
+          "source_scope": "6.1 Fig8 Table3. Vocabulary coverage and lookup cost are component utility/cost; no measured defended recovery."
+        }
+      ]
+    },
+    {
+      "family": "hornetz2026tdxray",
+      "item": "R4",
+      "status": "--",
+      "records": [
+        {
+          "id": "TDXRAY-oblivious-map",
+          "status": "--",
+          "source_scope": "6.1 Fig8 Table3. Vocabulary coverage and lookup cost are component utility/cost; no measured defended recovery."
+        }
+      ]
+    },
+    {
+      "family": "hornetz2026tdxray",
+      "item": "R5",
+      "status": "--",
+      "records": [
+        {
+          "id": "TDXRAY-oblivious-map",
+          "status": "--",
+          "source_scope": "6.1 Fig8 Table3. Vocabulary coverage and lookup cost are component utility/cost; no measured defended recovery."
+        }
+      ]
+    },
+    {
+      "family": "hornetz2026tdxray",
+      "item": "R6",
+      "status": "B",
+      "records": [
+        {
+          "id": "TDXRAY-oblivious-map",
+          "status": "B",
+          "source_scope": "6.1 Fig8 Table3. Vocabulary coverage and lookup cost are component utility/cost; no measured defended recovery."
+        }
+      ]
+    },
+    {
+      "family": "hornetz2026tdxray",
+      "item": "R7",
+      "status": "--",
+      "records": [
+        {
+          "id": "TDXRAY-oblivious-map",
+          "status": "--",
+          "source_scope": "6.1 Fig8 Table3. Vocabulary coverage and lookup cost are component utility/cost; no measured defended recovery."
+        }
+      ]
+    },
+    {
+      "family": "hornetz2026tdxray",
+      "item": "R8",
+      "status": "B",
+      "records": [
+        {
+          "id": "TDXRAY-oblivious-map",
+          "status": "B",
+          "source_scope": "6.1 Fig8 Table3. Vocabulary coverage and lookup cost are component utility/cost; no measured defended recovery."
+        }
+      ]
+    },
+    {
+      "family": "hornetz2026tdxray",
+      "item": "R9",
+      "status": "B",
+      "records": [
+        {
+          "id": "TDXRAY-oblivious-map",
+          "status": "B",
+          "source_scope": "6.1 Fig8 Table3. Vocabulary coverage and lookup cost are component utility/cost; no measured defended recovery."
+        }
+      ]
+    },
+    {
+      "family": "chu2025safekv",
+      "item": "R1",
+      "status": "B",
+      "records": [
+        {
+          "id": "SAFE-post-trigger",
+          "status": "B",
+          "source_scope": "7.2.4 Fig12;7.3-7.4. Post-trigger inference and separately reported service costs have no matched operating-point join."
+        }
+      ]
+    },
+    {
+      "family": "chu2025safekv",
+      "item": "R2",
+      "status": "B",
+      "records": [
+        {
+          "id": "SAFE-post-trigger",
+          "status": "B",
+          "source_scope": "7.2.4 Fig12;7.3-7.4. Post-trigger inference and separately reported service costs have no matched operating-point join."
+        }
+      ]
+    },
+    {
+      "family": "chu2025safekv",
+      "item": "R3",
+      "status": "B",
+      "records": [
+        {
+          "id": "SAFE-post-trigger",
+          "status": "B",
+          "source_scope": "7.2.4 Fig12;7.3-7.4. Post-trigger inference and separately reported service costs have no matched operating-point join."
+        }
+      ]
+    },
+    {
+      "family": "chu2025safekv",
+      "item": "R4",
+      "status": "--",
+      "records": [
+        {
+          "id": "SAFE-post-trigger",
+          "status": "--",
+          "source_scope": "7.2.4 Fig12;7.3-7.4. Post-trigger inference and separately reported service costs have no matched operating-point join."
+        }
+      ]
+    },
+    {
+      "family": "chu2025safekv",
+      "item": "R5",
+      "status": "--",
+      "records": [
+        {
+          "id": "SAFE-post-trigger",
+          "status": "--",
+          "source_scope": "7.2.4 Fig12;7.3-7.4. Post-trigger inference and separately reported service costs have no matched operating-point join."
+        }
+      ]
+    },
+    {
+      "family": "chu2025safekv",
+      "item": "R6",
+      "status": "B",
+      "records": [
+        {
+          "id": "SAFE-post-trigger",
+          "status": "B",
+          "source_scope": "7.2.4 Fig12;7.3-7.4. Post-trigger inference and separately reported service costs have no matched operating-point join."
+        }
+      ]
+    },
+    {
+      "family": "chu2025safekv",
+      "item": "R7",
+      "status": "B",
+      "records": [
+        {
+          "id": "SAFE-post-trigger",
+          "status": "B",
+          "source_scope": "7.2.4 Fig12;7.3-7.4. Post-trigger inference and separately reported service costs have no matched operating-point join."
+        }
+      ]
+    },
+    {
+      "family": "chu2025safekv",
+      "item": "R8",
+      "status": "U",
+      "records": [
+        {
+          "id": "SAFE-post-trigger",
+          "status": "U",
+          "source_scope": "7.2.4 Fig12;7.3-7.4. Post-trigger inference and separately reported service costs have no matched operating-point join."
+        }
+      ]
+    },
+    {
+      "family": "chu2025safekv",
+      "item": "R9",
+      "status": "P",
+      "records": [
+        {
+          "id": "SAFE-post-trigger",
+          "status": "P",
+          "source_scope": "7.2.4 Fig12;7.3-7.4. Post-trigger inference and separately reported service costs have no matched operating-point join."
+        }
+      ]
+    },
+    {
+      "family": "zhu2026turing",
+      "item": "R1",
+      "status": "B",
+      "records": [
+        {
+          "id": "AHB-online-executed",
+          "status": "B",
+          "source_scope": "5.1.2 Table1;E.1-E.3. Online detectability and objective task accuracy share the executed wrapper; refit code alone is partial."
+        },
+        {
+          "id": "AHB-offline",
+          "status": "B",
+          "source_scope": "Table1 offline rows;E.1-E.3. Offline detectability; online task harm and execution cost do not carry to replay."
+        }
+      ]
+    },
+    {
+      "family": "zhu2026turing",
+      "item": "R2",
+      "status": "B",
+      "records": [
+        {
+          "id": "AHB-online-executed",
+          "status": "B",
+          "source_scope": "5.1.2 Table1;E.1-E.3. Online detectability and objective task accuracy share the executed wrapper; refit code alone is partial."
+        },
+        {
+          "id": "AHB-offline",
+          "status": "B",
+          "source_scope": "Table1 offline rows;E.1-E.3. Offline detectability; online task harm and execution cost do not carry to replay."
+        }
+      ]
+    },
+    {
+      "family": "zhu2026turing",
+      "item": "R3",
+      "status": "B",
+      "records": [
+        {
+          "id": "AHB-online-executed",
+          "status": "B",
+          "source_scope": "5.1.2 Table1;E.1-E.3. Online detectability and objective task accuracy share the executed wrapper; refit code alone is partial."
+        },
+        {
+          "id": "AHB-offline",
+          "status": "B",
+          "source_scope": "Table1 offline rows;E.1-E.3. Offline detectability; online task harm and execution cost do not carry to replay."
+        }
+      ]
+    },
+    {
+      "family": "zhu2026turing",
+      "item": "R4",
+      "status": "P",
+      "records": [
+        {
+          "id": "AHB-online-executed",
+          "status": "P",
+          "source_scope": "5.1.2 Table1;E.1-E.3. Online detectability and objective task accuracy share the executed wrapper; refit code alone is partial."
+        },
+        {
+          "id": "AHB-offline",
+          "status": "P",
+          "source_scope": "Table1 offline rows;E.1-E.3. Offline detectability; online task harm and execution cost do not carry to replay."
+        }
+      ]
+    },
+    {
+      "family": "zhu2026turing",
+      "item": "R5",
+      "status": "U",
+      "records": [
+        {
+          "id": "AHB-online-executed",
+          "status": "U",
+          "source_scope": "5.1.2 Table1;E.1-E.3. Online detectability and objective task accuracy share the executed wrapper; refit code alone is partial."
+        },
+        {
+          "id": "AHB-offline",
+          "status": "U",
+          "source_scope": "Table1 offline rows;E.1-E.3. Offline detectability; online task harm and execution cost do not carry to replay."
+        }
+      ]
+    },
+    {
+      "family": "zhu2026turing",
+      "item": "R6",
+      "status": "B",
+      "records": [
+        {
+          "id": "AHB-online-executed",
+          "status": "B",
+          "source_scope": "5.1.2 Table1;E.1-E.3. Online detectability and objective task accuracy share the executed wrapper; refit code alone is partial."
+        },
+        {
+          "id": "AHB-offline",
+          "status": "B",
+          "source_scope": "Table1 offline rows;E.1-E.3. Offline detectability; online task harm and execution cost do not carry to replay."
+        }
+      ]
+    },
+    {
+      "family": "zhu2026turing",
+      "item": "R7",
+      "status": "B",
+      "records": [
+        {
+          "id": "AHB-online-executed",
+          "status": "B",
+          "source_scope": "5.1.2 Table1;E.1-E.3. Online detectability and objective task accuracy share the executed wrapper; refit code alone is partial."
+        },
+        {
+          "id": "AHB-offline",
+          "status": "B",
+          "source_scope": "Table1 offline rows;E.1-E.3. Offline detectability; online task harm and execution cost do not carry to replay."
+        }
+      ]
+    },
+    {
+      "family": "zhu2026turing",
+      "item": "R8",
+      "status": "B",
+      "records": [
+        {
+          "id": "AHB-online-executed",
+          "status": "B",
+          "source_scope": "5.1.2 Table1;E.1-E.3. Online detectability and objective task accuracy share the executed wrapper; refit code alone is partial."
+        },
+        {
+          "id": "AHB-offline",
+          "status": "U",
+          "source_scope": "Table1 offline rows;E.1-E.3. Offline detectability; online task harm and execution cost do not carry to replay."
+        }
+      ]
+    },
+    {
+      "family": "zhu2026turing",
+      "item": "R9",
+      "status": "U",
+      "records": [
+        {
+          "id": "AHB-online-executed",
+          "status": "U",
+          "source_scope": "5.1.2 Table1;E.1-E.3. Online detectability and objective task accuracy share the executed wrapper; refit code alone is partial."
+        },
+        {
+          "id": "AHB-offline",
+          "status": "--",
+          "source_scope": "Table1 offline rows;E.1-E.3. Offline detectability; online task harm and execution cost do not carry to replay."
+        }
+      ]
+    },
+    {
+      "family": "addagada2026kvgov",
+      "item": "R1",
+      "status": "B",
+      "records": [
+        {
+          "id": "KVGOV-partialflush-sim",
+          "status": "B",
+          "source_scope": "5.1-5.3. Protected simulated inference; HMAC microcost is not its deployment cost."
+        },
+        {
+          "id": "KVGOV-hardware-gap",
+          "status": "B",
+          "source_scope": "5.7-5.8. Unprotected hardware timing calibration; no protected-inference or incremental defense cost claim."
+        },
+        {
+          "id": "KVGOV-HMAC-cost",
+          "status": "B",
+          "source_scope": "5.9. Key derivation microcost; neither protected recovery nor lost cache reuse is measured here."
+        }
+      ]
+    },
+    {
+      "family": "addagada2026kvgov",
+      "item": "R2",
+      "status": "B",
+      "records": [
+        {
+          "id": "KVGOV-partialflush-sim",
+          "status": "B",
+          "source_scope": "5.1-5.3. Protected simulated inference; HMAC microcost is not its deployment cost."
+        },
+        {
+          "id": "KVGOV-hardware-gap",
+          "status": "B",
+          "source_scope": "5.7-5.8. Unprotected hardware timing calibration; no protected-inference or incremental defense cost claim."
+        },
+        {
+          "id": "KVGOV-HMAC-cost",
+          "status": "B",
+          "source_scope": "5.9. Key derivation microcost; neither protected recovery nor lost cache reuse is measured here."
+        }
+      ]
+    },
+    {
+      "family": "addagada2026kvgov",
+      "item": "R3",
+      "status": "B",
+      "records": [
+        {
+          "id": "KVGOV-partialflush-sim",
+          "status": "B",
+          "source_scope": "5.1-5.3. Protected simulated inference; HMAC microcost is not its deployment cost."
+        },
+        {
+          "id": "KVGOV-hardware-gap",
+          "status": "B",
+          "source_scope": "5.7-5.8. Unprotected hardware timing calibration; no protected-inference or incremental defense cost claim."
+        },
+        {
+          "id": "KVGOV-HMAC-cost",
+          "status": "B",
+          "source_scope": "5.9. Key derivation microcost; neither protected recovery nor lost cache reuse is measured here."
+        }
+      ]
+    },
+    {
+      "family": "addagada2026kvgov",
+      "item": "R4",
+      "status": "--",
+      "records": [
+        {
+          "id": "KVGOV-partialflush-sim",
+          "status": "--",
+          "source_scope": "5.1-5.3. Protected simulated inference; HMAC microcost is not its deployment cost."
+        },
+        {
+          "id": "KVGOV-hardware-gap",
+          "status": "--",
+          "source_scope": "5.7-5.8. Unprotected hardware timing calibration; no protected-inference or incremental defense cost claim."
+        },
+        {
+          "id": "KVGOV-HMAC-cost",
+          "status": "--",
+          "source_scope": "5.9. Key derivation microcost; neither protected recovery nor lost cache reuse is measured here."
+        }
+      ]
+    },
+    {
+      "family": "addagada2026kvgov",
+      "item": "R5",
+      "status": "--",
+      "records": [
+        {
+          "id": "KVGOV-partialflush-sim",
+          "status": "--",
+          "source_scope": "5.1-5.3. Protected simulated inference; HMAC microcost is not its deployment cost."
+        },
+        {
+          "id": "KVGOV-hardware-gap",
+          "status": "--",
+          "source_scope": "5.7-5.8. Unprotected hardware timing calibration; no protected-inference or incremental defense cost claim."
+        },
+        {
+          "id": "KVGOV-HMAC-cost",
+          "status": "--",
+          "source_scope": "5.9. Key derivation microcost; neither protected recovery nor lost cache reuse is measured here."
+        }
+      ]
+    },
+    {
+      "family": "addagada2026kvgov",
+      "item": "R6",
+      "status": "B",
+      "records": [
+        {
+          "id": "KVGOV-partialflush-sim",
+          "status": "B",
+          "source_scope": "5.1-5.3. Protected simulated inference; HMAC microcost is not its deployment cost."
+        },
+        {
+          "id": "KVGOV-hardware-gap",
+          "status": "B",
+          "source_scope": "5.7-5.8. Unprotected hardware timing calibration; no protected-inference or incremental defense cost claim."
+        },
+        {
+          "id": "KVGOV-HMAC-cost",
+          "status": "B",
+          "source_scope": "5.9. Key derivation microcost; neither protected recovery nor lost cache reuse is measured here."
+        }
+      ]
+    },
+    {
+      "family": "addagada2026kvgov",
+      "item": "R7",
+      "status": "B",
+      "records": [
+        {
+          "id": "KVGOV-partialflush-sim",
+          "status": "B",
+          "source_scope": "5.1-5.3. Protected simulated inference; HMAC microcost is not its deployment cost."
+        },
+        {
+          "id": "KVGOV-hardware-gap",
+          "status": "--",
+          "source_scope": "5.7-5.8. Unprotected hardware timing calibration; no protected-inference or incremental defense cost claim."
+        },
+        {
+          "id": "KVGOV-HMAC-cost",
+          "status": "--",
+          "source_scope": "5.9. Key derivation microcost; neither protected recovery nor lost cache reuse is measured here."
+        }
+      ]
+    },
+    {
+      "family": "addagada2026kvgov",
+      "item": "R8",
+      "status": "U",
+      "records": [
+        {
+          "id": "KVGOV-partialflush-sim",
+          "status": "U",
+          "source_scope": "5.1-5.3. Protected simulated inference; HMAC microcost is not its deployment cost."
+        },
+        {
+          "id": "KVGOV-hardware-gap",
+          "status": "U",
+          "source_scope": "5.7-5.8. Unprotected hardware timing calibration; no protected-inference or incremental defense cost claim."
+        },
+        {
+          "id": "KVGOV-HMAC-cost",
+          "status": "U",
+          "source_scope": "5.9. Key derivation microcost; neither protected recovery nor lost cache reuse is measured here."
+        }
+      ]
+    },
+    {
+      "family": "addagada2026kvgov",
+      "item": "R9",
+      "status": "B",
+      "records": [
+        {
+          "id": "KVGOV-partialflush-sim",
+          "status": "U",
+          "source_scope": "5.1-5.3. Protected simulated inference; HMAC microcost is not its deployment cost."
+        },
+        {
+          "id": "KVGOV-hardware-gap",
+          "status": "--",
+          "source_scope": "5.7-5.8. Unprotected hardware timing calibration; no protected-inference or incremental defense cost claim."
+        },
+        {
+          "id": "KVGOV-HMAC-cost",
+          "status": "B",
+          "source_scope": "5.9. Key derivation microcost; neither protected recovery nor lost cache reuse is measured here."
+        }
+      ]
+    },
+    {
+      "family": "wu2026cacheprune",
+      "item": "R1",
+      "status": "B",
+      "records": [
+        {
+          "id": "CACHEPRUNE-selective",
+          "status": "B",
+          "source_scope": "3.1;5.1-5.6;Table1;AppendixA. Default selective-sharing configuration links direct recovery, local generation quality and serving cost."
+        },
+        {
+          "id": "CACHEPRUNE-context",
+          "status": "B",
+          "source_scope": "3.1;5.1-5.6;Table1;AppendixA. Contextual recovery uses the same selective-sharing defense; shared quality/cost evidence is counted once at configuration level."
+        }
+      ]
+    },
+    {
+      "family": "wu2026cacheprune",
+      "item": "R2",
+      "status": "B",
+      "records": [
+        {
+          "id": "CACHEPRUNE-selective",
+          "status": "B",
+          "source_scope": "3.1;5.1-5.6;Table1;AppendixA. Default selective-sharing configuration links direct recovery, local generation quality and serving cost."
+        },
+        {
+          "id": "CACHEPRUNE-context",
+          "status": "B",
+          "source_scope": "3.1;5.1-5.6;Table1;AppendixA. Contextual recovery uses the same selective-sharing defense; shared quality/cost evidence is counted once at configuration level."
+        }
+      ]
+    },
+    {
+      "family": "wu2026cacheprune",
+      "item": "R3",
+      "status": "B",
+      "records": [
+        {
+          "id": "CACHEPRUNE-selective",
+          "status": "B",
+          "source_scope": "3.1;5.1-5.6;Table1;AppendixA. Default selective-sharing configuration links direct recovery, local generation quality and serving cost."
+        },
+        {
+          "id": "CACHEPRUNE-context",
+          "status": "B",
+          "source_scope": "3.1;5.1-5.6;Table1;AppendixA. Contextual recovery uses the same selective-sharing defense; shared quality/cost evidence is counted once at configuration level."
+        }
+      ]
+    },
+    {
+      "family": "wu2026cacheprune",
+      "item": "R4",
+      "status": "--",
+      "records": [
+        {
+          "id": "CACHEPRUNE-selective",
+          "status": "--",
+          "source_scope": "3.1;5.1-5.6;Table1;AppendixA. Default selective-sharing configuration links direct recovery, local generation quality and serving cost."
+        },
+        {
+          "id": "CACHEPRUNE-context",
+          "status": "--",
+          "source_scope": "3.1;5.1-5.6;Table1;AppendixA. Contextual recovery uses the same selective-sharing defense; shared quality/cost evidence is counted once at configuration level."
+        }
+      ]
+    },
+    {
+      "family": "wu2026cacheprune",
+      "item": "R5",
+      "status": "--",
+      "records": [
+        {
+          "id": "CACHEPRUNE-selective",
+          "status": "--",
+          "source_scope": "3.1;5.1-5.6;Table1;AppendixA. Default selective-sharing configuration links direct recovery, local generation quality and serving cost."
+        },
+        {
+          "id": "CACHEPRUNE-context",
+          "status": "--",
+          "source_scope": "3.1;5.1-5.6;Table1;AppendixA. Contextual recovery uses the same selective-sharing defense; shared quality/cost evidence is counted once at configuration level."
+        }
+      ]
+    },
+    {
+      "family": "wu2026cacheprune",
+      "item": "R6",
+      "status": "B",
+      "records": [
+        {
+          "id": "CACHEPRUNE-selective",
+          "status": "B",
+          "source_scope": "3.1;5.1-5.6;Table1;AppendixA. Default selective-sharing configuration links direct recovery, local generation quality and serving cost."
+        },
+        {
+          "id": "CACHEPRUNE-context",
+          "status": "B",
+          "source_scope": "3.1;5.1-5.6;Table1;AppendixA. Contextual recovery uses the same selective-sharing defense; shared quality/cost evidence is counted once at configuration level."
+        }
+      ]
+    },
+    {
+      "family": "wu2026cacheprune",
+      "item": "R7",
+      "status": "B",
+      "records": [
+        {
+          "id": "CACHEPRUNE-selective",
+          "status": "B",
+          "source_scope": "3.1;5.1-5.6;Table1;AppendixA. Default selective-sharing configuration links direct recovery, local generation quality and serving cost."
+        },
+        {
+          "id": "CACHEPRUNE-context",
+          "status": "B",
+          "source_scope": "3.1;5.1-5.6;Table1;AppendixA. Contextual recovery uses the same selective-sharing defense; shared quality/cost evidence is counted once at configuration level."
+        }
+      ]
+    },
+    {
+      "family": "wu2026cacheprune",
+      "item": "R8",
+      "status": "B",
+      "records": [
+        {
+          "id": "CACHEPRUNE-selective",
+          "status": "B",
+          "source_scope": "3.1;5.1-5.6;Table1;AppendixA. Default selective-sharing configuration links direct recovery, local generation quality and serving cost."
+        },
+        {
+          "id": "CACHEPRUNE-context",
+          "status": "B",
+          "source_scope": "3.1;5.1-5.6;Table1;AppendixA. Contextual recovery uses the same selective-sharing defense; shared quality/cost evidence is counted once at configuration level."
+        }
+      ]
+    },
+    {
+      "family": "wu2026cacheprune",
+      "item": "R9",
+      "status": "B",
+      "records": [
+        {
+          "id": "CACHEPRUNE-selective",
+          "status": "B",
+          "source_scope": "3.1;5.1-5.6;Table1;AppendixA. Default selective-sharing configuration links direct recovery, local generation quality and serving cost."
+        },
+        {
+          "id": "CACHEPRUNE-context",
+          "status": "B",
+          "source_scope": "3.1;5.1-5.6;Table1;AppendixA. Contextual recovery uses the same selective-sharing defense; shared quality/cost evidence is counted once at configuration level."
+        }
+      ]
+    },
+    {
+      "family": "lee2026otro",
+      "item": "R1",
+      "status": "B",
+      "records": [
+        {
+          "id": "OTRO-unpadded",
+          "status": "B",
+          "source_scope": "III;V;VI;VII-C-E;TableIII. Measured unpadded TTFT/memory; padded leakage is a different operating condition."
+        },
+        {
+          "id": "OTRO-epochpad",
+          "status": "B",
+          "source_scope": "III;V;VI;VII-C-E;TableIII. Conditional leakage with a derived per-epoch cost; full measured padded TTFT remains unbound."
+        }
+      ]
+    },
+    {
+      "family": "lee2026otro",
+      "item": "R2",
+      "status": "B",
+      "records": [
+        {
+          "id": "OTRO-unpadded",
+          "status": "B",
+          "source_scope": "III;V;VI;VII-C-E;TableIII. Measured unpadded TTFT/memory; padded leakage is a different operating condition."
+        },
+        {
+          "id": "OTRO-epochpad",
+          "status": "B",
+          "source_scope": "III;V;VI;VII-C-E;TableIII. Conditional leakage with a derived per-epoch cost; full measured padded TTFT remains unbound."
+        }
+      ]
+    },
+    {
+      "family": "lee2026otro",
+      "item": "R3",
+      "status": "B",
+      "records": [
+        {
+          "id": "OTRO-unpadded",
+          "status": "B",
+          "source_scope": "III;V;VI;VII-C-E;TableIII. Measured unpadded TTFT/memory; padded leakage is a different operating condition."
+        },
+        {
+          "id": "OTRO-epochpad",
+          "status": "B",
+          "source_scope": "III;V;VI;VII-C-E;TableIII. Conditional leakage with a derived per-epoch cost; full measured padded TTFT remains unbound."
+        }
+      ]
+    },
+    {
+      "family": "lee2026otro",
+      "item": "R4",
+      "status": "--",
+      "records": [
+        {
+          "id": "OTRO-unpadded",
+          "status": "--",
+          "source_scope": "III;V;VI;VII-C-E;TableIII. Measured unpadded TTFT/memory; padded leakage is a different operating condition."
+        },
+        {
+          "id": "OTRO-epochpad",
+          "status": "--",
+          "source_scope": "III;V;VI;VII-C-E;TableIII. Conditional leakage with a derived per-epoch cost; full measured padded TTFT remains unbound."
+        }
+      ]
+    },
+    {
+      "family": "lee2026otro",
+      "item": "R5",
+      "status": "--",
+      "records": [
+        {
+          "id": "OTRO-unpadded",
+          "status": "--",
+          "source_scope": "III;V;VI;VII-C-E;TableIII. Measured unpadded TTFT/memory; padded leakage is a different operating condition."
+        },
+        {
+          "id": "OTRO-epochpad",
+          "status": "--",
+          "source_scope": "III;V;VI;VII-C-E;TableIII. Conditional leakage with a derived per-epoch cost; full measured padded TTFT remains unbound."
+        }
+      ]
+    },
+    {
+      "family": "lee2026otro",
+      "item": "R6",
+      "status": "B",
+      "records": [
+        {
+          "id": "OTRO-unpadded",
+          "status": "B",
+          "source_scope": "III;V;VI;VII-C-E;TableIII. Measured unpadded TTFT/memory; padded leakage is a different operating condition."
+        },
+        {
+          "id": "OTRO-epochpad",
+          "status": "B",
+          "source_scope": "III;V;VI;VII-C-E;TableIII. Conditional leakage with a derived per-epoch cost; full measured padded TTFT remains unbound."
+        }
+      ]
+    },
+    {
+      "family": "lee2026otro",
+      "item": "R7",
+      "status": "B",
+      "records": [
+        {
+          "id": "OTRO-unpadded",
+          "status": "--",
+          "source_scope": "III;V;VI;VII-C-E;TableIII. Measured unpadded TTFT/memory; padded leakage is a different operating condition."
+        },
+        {
+          "id": "OTRO-epochpad",
+          "status": "B",
+          "source_scope": "III;V;VI;VII-C-E;TableIII. Conditional leakage with a derived per-epoch cost; full measured padded TTFT remains unbound."
+        }
+      ]
+    },
+    {
+      "family": "lee2026otro",
+      "item": "R8",
+      "status": "--",
+      "records": [
+        {
+          "id": "OTRO-unpadded",
+          "status": "--",
+          "source_scope": "III;V;VI;VII-C-E;TableIII. Measured unpadded TTFT/memory; padded leakage is a different operating condition."
+        },
+        {
+          "id": "OTRO-epochpad",
+          "status": "--",
+          "source_scope": "III;V;VI;VII-C-E;TableIII. Conditional leakage with a derived per-epoch cost; full measured padded TTFT remains unbound."
+        }
+      ]
+    },
+    {
+      "family": "lee2026otro",
+      "item": "R9",
+      "status": "B",
+      "records": [
+        {
+          "id": "OTRO-unpadded",
+          "status": "B",
+          "source_scope": "III;V;VI;VII-C-E;TableIII. Measured unpadded TTFT/memory; padded leakage is a different operating condition."
+        },
+        {
+          "id": "OTRO-epochpad",
+          "status": "P",
+          "source_scope": "III;V;VI;VII-C-E;TableIII. Conditional leakage with a derived per-epoch cost; full measured padded TTFT remains unbound."
+        }
+      ]
+    },
+    {
+      "family": "chen2026sparleak",
+      "item": "R1",
+      "status": "B",
+      "records": [
+        {
+          "id": "SPARLEAK-replacement",
+          "status": "B",
+          "source_scope": "3.1;4-7;Table4. Table 4 pairs ASR and ROUGE at each model/intensity; attack overhead is not defense cost."
+        }
+      ]
+    },
+    {
+      "family": "chen2026sparleak",
+      "item": "R2",
+      "status": "B",
+      "records": [
+        {
+          "id": "SPARLEAK-replacement",
+          "status": "B",
+          "source_scope": "3.1;4-7;Table4. Table 4 pairs ASR and ROUGE at each model/intensity; attack overhead is not defense cost."
+        }
+      ]
+    },
+    {
+      "family": "chen2026sparleak",
+      "item": "R3",
+      "status": "B",
+      "records": [
+        {
+          "id": "SPARLEAK-replacement",
+          "status": "B",
+          "source_scope": "3.1;4-7;Table4. Table 4 pairs ASR and ROUGE at each model/intensity; attack overhead is not defense cost."
+        }
+      ]
+    },
+    {
+      "family": "chen2026sparleak",
+      "item": "R4",
+      "status": "P",
+      "records": [
+        {
+          "id": "SPARLEAK-replacement",
+          "status": "P",
+          "source_scope": "3.1;4-7;Table4. Table 4 pairs ASR and ROUGE at each model/intensity; attack overhead is not defense cost."
+        }
+      ]
+    },
+    {
+      "family": "chen2026sparleak",
+      "item": "R5",
+      "status": "U",
+      "records": [
+        {
+          "id": "SPARLEAK-replacement",
+          "status": "U",
+          "source_scope": "3.1;4-7;Table4. Table 4 pairs ASR and ROUGE at each model/intensity; attack overhead is not defense cost."
+        }
+      ]
+    },
+    {
+      "family": "chen2026sparleak",
+      "item": "R6",
+      "status": "B",
+      "records": [
+        {
+          "id": "SPARLEAK-replacement",
+          "status": "B",
+          "source_scope": "3.1;4-7;Table4. Table 4 pairs ASR and ROUGE at each model/intensity; attack overhead is not defense cost."
+        }
+      ]
+    },
+    {
+      "family": "chen2026sparleak",
+      "item": "R7",
+      "status": "B",
+      "records": [
+        {
+          "id": "SPARLEAK-replacement",
+          "status": "B",
+          "source_scope": "3.1;4-7;Table4. Table 4 pairs ASR and ROUGE at each model/intensity; attack overhead is not defense cost."
+        }
+      ]
+    },
+    {
+      "family": "chen2026sparleak",
+      "item": "R8",
+      "status": "B",
+      "records": [
+        {
+          "id": "SPARLEAK-replacement",
+          "status": "B",
+          "source_scope": "3.1;4-7;Table4. Table 4 pairs ASR and ROUGE at each model/intensity; attack overhead is not defense cost."
+        }
+      ]
+    },
+    {
+      "family": "chen2026sparleak",
+      "item": "R9",
+      "status": "U",
+      "records": [
+        {
+          "id": "SPARLEAK-replacement",
+          "status": "U",
+          "source_scope": "3.1;4-7;Table4. Table 4 pairs ASR and ROUGE at each model/intensity; attack overhead is not defense cost."
+        }
+      ]
+    },
+    {
+      "family": "hadad2026shape",
+      "item": "R1",
+      "status": "B",
+      "records": [
+        {
+          "id": "SHAPE-padding-estimate",
+          "status": "B",
+          "source_scope": "IV;V;VII;VIII;IX. Proposed constant-work defense with derived cost; protected-fit and matched adaptation unreported."
+        }
+      ]
+    },
+    {
+      "family": "hadad2026shape",
+      "item": "R2",
+      "status": "B",
+      "records": [
+        {
+          "id": "SHAPE-padding-estimate",
+          "status": "B",
+          "source_scope": "IV;V;VII;VIII;IX. Proposed constant-work defense with derived cost; protected-fit and matched adaptation unreported."
+        }
+      ]
+    },
+    {
+      "family": "hadad2026shape",
+      "item": "R3",
+      "status": "P",
+      "records": [
+        {
+          "id": "SHAPE-padding-estimate",
+          "status": "P",
+          "source_scope": "IV;V;VII;VIII;IX. Proposed constant-work defense with derived cost; protected-fit and matched adaptation unreported."
+        }
+      ]
+    },
+    {
+      "family": "hadad2026shape",
+      "item": "R4",
+      "status": "U",
+      "records": [
+        {
+          "id": "SHAPE-padding-estimate",
+          "status": "U",
+          "source_scope": "IV;V;VII;VIII;IX. Proposed constant-work defense with derived cost; protected-fit and matched adaptation unreported."
+        }
+      ]
+    },
+    {
+      "family": "hadad2026shape",
+      "item": "R5",
+      "status": "U",
+      "records": [
+        {
+          "id": "SHAPE-padding-estimate",
+          "status": "U",
+          "source_scope": "IV;V;VII;VIII;IX. Proposed constant-work defense with derived cost; protected-fit and matched adaptation unreported."
+        }
+      ]
+    },
+    {
+      "family": "hadad2026shape",
+      "item": "R6",
+      "status": "B",
+      "records": [
+        {
+          "id": "SHAPE-padding-estimate",
+          "status": "B",
+          "source_scope": "IV;V;VII;VIII;IX. Proposed constant-work defense with derived cost; protected-fit and matched adaptation unreported."
+        }
+      ]
+    },
+    {
+      "family": "hadad2026shape",
+      "item": "R7",
+      "status": "P",
+      "records": [
+        {
+          "id": "SHAPE-padding-estimate",
+          "status": "P",
+          "source_scope": "IV;V;VII;VIII;IX. Proposed constant-work defense with derived cost; protected-fit and matched adaptation unreported."
+        }
+      ]
+    },
+    {
+      "family": "hadad2026shape",
+      "item": "R8",
+      "status": "U",
+      "records": [
+        {
+          "id": "SHAPE-padding-estimate",
+          "status": "U",
+          "source_scope": "IV;V;VII;VIII;IX. Proposed constant-work defense with derived cost; protected-fit and matched adaptation unreported."
+        }
+      ]
+    },
+    {
+      "family": "hadad2026shape",
+      "item": "R9",
+      "status": "P",
+      "records": [
+        {
+          "id": "SHAPE-padding-estimate",
+          "status": "P",
+          "source_scope": "IV;V;VII;VIII;IX. Proposed constant-work defense with derived cost; protected-fit and matched adaptation unreported."
+        }
+      ]
+    }
+  ]
+}
