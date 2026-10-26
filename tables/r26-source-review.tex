@@ -1,0 +1,12 @@
+\begin{longtable}{@{}p{.18\textwidth}p{.10\textwidth}p{.19\textwidth}p{.45\textwidth}@{}}
+\caption{All 11 family-cell rereads. Each old code is ?. Source versions are pinned in the receipt file.}\label{tab:r26-source-review}\\
+\toprule Family & New R4/R5 & Inspected locator & Evidence and remaining link\\\midrule\endfirsthead
+\toprule Family & New R4/R5 & Inspected locator & Evidence and remaining link\\\midrule\endhead
+\bottomrule\endfoot
+Whisper Leak~\cite{whisperleak2025} & P/U & 3.2; 6.1-6.3; Tables 3-5; Figure 7 & Training and prompt splits are specified globally; padding uses new captures and batching/injection transform traces. These passages do not map protected training partitions to each mitigation result, or give clean/protected fits on identical defended tests.\\
+Time Will Tell~\cite{timewilltell2024} & P/U & V-B; VII-B & The attack fits an input-length-dependent token-count threshold. The fixed-word instruction is evaluated, but its threshold reprofiling and a paired clean/protected-fit contrast are not specified in these passages.\\
+Speculative decoding~\cite{wei2024speculation} & P/U & 4.3-4.4; 6.1; Appendix D & Fingerprint profiling and padded/aggregated attack outcomes are described. The mitigation result does not identify whether reference profiles are rebuilt on protected traces, nor compare both fits on a shared defended test population.\\
+Cloud traffic benchmark~\cite{pouryousef2026traffic} & U/U & III-C; IV; V-C1; Figure 9(a) & The mitigation discussion evaluates fingerprints learned at a fixed configuration under rewritten prompts and changed temperatures. Protected-condition refitting and a matched clean/protected-fit contrast are not reported in this scope.\\
+SparLeak~\cite{chen2026sparleak} & P/U & 6; 7.1; 7.5; Table 4 & Profiling-based attacks and replacement-intensity ASR/ROUGE outcomes are specified. The mitigation table does not bind the attack-training distribution to each intensity or report matched clean/protected-fit tests.\\
+AHB~\cite{zhu2026turing} & P (retained)/U & 4.2.2; 5.1.2; Table 1; E.1-E.3 & Different detectors on a humanization row are a detector comparison, not a clean/protected-fit contrast. The inspected paper scope and archived static call-chain review do not report that matched contrast; condition-specific code fitting remains partial run evidence.\\
+\end{longtable}

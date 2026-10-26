@@ -1,0 +1,25 @@
+\begin{longtable}{@{}p{.25\textwidth}p{.16\textwidth}p{.10\textwidth}p{.40\textwidth}@{}}
+\caption{Source-qualified H entries. The three model and two topology splits evaluate attacker generalization; other entries retain the indexed split description. The H flag alone does not establish a defended holdout or calibration transfer. M indicates mitigation-audit membership.}\label{tab:r26-h-objects}\\
+\toprule Family & Axis & M & Archived qualification\\\midrule\endfirsthead
+\toprule Family & Axis & M & Archived qualification\\\midrule\endhead
+\bottomrule\endfoot
+WRA~\cite{jeong2026wra} & Task/input/user & yes & Prompt tests and synthetic persona split; version reconciliation open\\
+FP-Agent~\cite{wang2026fpagent} & Task/input/user & no & Separate task holdout; visitor/host separation unresolved\\
+Prompt length~\cite{weiss2024prompt} & Task/input/user & no & OOD inputs; browser/API and day/night buffering controls\\
+InputSnatch~\cite{inputsnatch2024} & Task/input/user & no & Held-out and generated target prompts; candidate-prior dependence\\
+Whisper Leak~\cite{whisperleak2025} & Task/input/user & yes & Unique target-prompt holdout; model/provider comparisons\\
+Prompt Echo~\cite{prompt_echo2026} & Task/input/user & no & Overlap-filtered prompts; models evaluated separately\\
+I Know What You Said~\cite{gao2025iknow} & Task/input/user & yes & Prompt overlap filtering; model/hardware/framework comparisons\\
+Speculation~\cite{wei2024speculation} & Task/input/user & yes & New traces and OOD paraphrases; remote/load conditions\\
+Workflow traffic~\cite{dangol2026workflow} & Topology & yes & Leave-composition-out; stored and live populations separated\\
+Traffic benchmark~\cite{pouryousef2026traffic} & Topology & yes & Topology shift distinct from feature-view restriction\\
+ProcGrep~\cite{oderinwale2026procgrep} & Task/input/user & no & Task-grouped attribution under scaffold regimes\\
+LLMs Have Rhythm~\cite{alhazbi2025rhythm} & Network/load & no & New captures and cross-network tests; overlapping windows caveat\\
+MoEcho~\cite{ding2025moecho} & Task/input/user & no & Cross-template/dataset tests; contention/context conditions\\
+LLM-Fin~\cite{nazari2024llmfin} & Model & no & Unseen variants within known architecture families\\
+ArchSnoop~\cite{weng2026archsnoop} & Model & no & Random-weight training to official/fine-tuned models; power modes\\
+WildAuth~\cite{wang2026dialogue} & Task/input/user & no & User-disjoint cross-topic split; no verified cross-service test\\
+LeakyLMs~\cite{majidi2026leakylms} & Model & no & Held-out architecture configurations; known-GPU calibration\\
+StepFinder~\cite{zhu2026stepfinder} & Task/input/user & no & Task-disjoint subsets; denominator reconciliation unresolved\\
+Edge EM~\cite{alhalawani2026physicaledge} & Task/input/user & no & Unseen-word test separate from profiled vocabulary recovery\\
+\end{longtable}

@@ -1,11 +1,12 @@
 \begin{table*}[t]\centering\footnotesize
 \caption{Claim-conditioned reuse decisions derived from the record and holdout audits. Each changed boundary identifies the evidence that must be bound before carrying a result forward.}\label{tab:r19-decisions}
 \begin{tabularx}{\textwidth}{@{}p{.17\textwidth}p{.29\textwidth}Y@{}}\toprule
-Changed boundary & What the old result leaves open & Minimum evidence before reuse\\\midrule
+Reuse question & Evidence decision & Retain or measure next\\\midrule
 Emitter / representation & An upstream or buffered capture can differ from the final receiving trace and delivery schedule. & Bind inference to the final receiver; retain the emitter's overflow, byte and delivery-delay scope (R2/R3/R9; \S\ref{sec:discussion}).\\
 Read cover $\rightarrow$ writes & Discarding a reply does not establish unchanged commits, authorization or workflow outcomes. & Bind the protected state and utility to the executed intervention; include cover calls, quotas and failures (R3/R8/R9).\\
 Customer / model calibration & A reported split can separate inputs without changing the generator or calibration population. & State held-out units and calibration provenance; separate local fitting variability from source/domain changes; evaluate the requested transfer axis (R5/R6; \S\ref{sec:evaluation}).\\
 Attacker observation & An outcome for one projection or fitted attacker does not supply a result for a richer receiving view. & Evaluate comparable defended tests under the intended observation and adaptation contract; retain receiver-specific inference metrics (R2/R5/R7).\\
 Stored trace $\rightarrow$ online path & A trace transformation or simulated span does not measure executed queues, completion or online latency. & Bind the receiver, harness and resource denominator to the online condition; establish the relevant topology/network holdout (R3/R6/R9).\\
+Bound cache-reuse package & Early Bird prefix recovery and CachePrune direct recovery permit a scoped candidate comparison; CachePrune binds a shared utility/cost package. & Retain that package for its measured configuration; measure prefix-policy serving cost separately, and re-evaluate any changed workload/hardware.\\
 Component $\rightarrow$ workflow utility & Component quality or logical state conformance does not determine a planner's response to scheduling and deadlines. & Report utility at the requested workflow boundary and the same intervention/configuration as protection and cost (R3/R8/R9).\\\bottomrule
 \end{tabularx}\end{table*}

@@ -1,0 +1,15 @@
+\begin{longtable}{@{}p{.19\textwidth}p{.08\textwidth}p{.08\textwidth}p{.56\textwidth}@{}}
+\caption{Declared question groups. Full record identities are in the released scope file.}\label{tab:r26-cohorts}\\
+\toprule Question group & Records & Pairs & Membership rule\\\midrule\endfirsthead
+\toprule Question group & Records & Pairs & Membership rule\\\midrule\endhead
+\bottomrule\endfoot
+traffic envelope & 12 & 66 & Network/API destination, size, timing, count or delivery shaping; includes WRA destination cover, excludes cache probes and content-only identity.\\
+cache service & 10 & 45 & Cache hit/reuse probes, cache policy and its component costs; excludes local memory observation without a service-cache probe.\\
+local memory & 6 & 15 & Memory access/loading/sparsity/obliviousness and associated component costs; excludes network metadata and service-cache timing probes.\\
+behavioral humanization & 3 & 3 & Site/mobile behavioral-trajectory edits or executed GUI humanization; excludes network-destination cover such as WRA.\\
+generator fingerprint & 3 & 3 & Prompt/decoding or route changes with model-identity outcomes; excludes topic/content recovery.\\
+fixed instruction & 2 & 1 & Fixed instruction/guardrail contrasts; source target and observer still require alignment.\\
+access control & 1 & 0 & FP-Agent contextual gate; singleton, no related pair.\\
+contention noise & 1 & 0 & Behind Bars contextual channel; singleton, no related pair.\\
+filter created view & 1 & 0 & ML privacy channels contextual filter; singleton, no related pair.\\
+\end{longtable}

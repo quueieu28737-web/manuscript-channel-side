@@ -149,23 +149,6 @@ B.~Dangol, ``From privacy to workflow integrity: Communication-graph metadata
   October 2026. [Online]. Available: \url{https://arxiv.org/abs/2606.07150v3}
 \BIBentrySTDinterwordspacing
 
-\bibitem{chu2025safekv}
-\BIBentryALTinterwordspacing
-K.~Chu, Z.~Lin, D.~Xiang, Z.~Shen, J.~Su, C.~Chu, Y.~Yang, W.~Zhang, W.~Wu, and
-  W.~Zhang, ``Selective {KV}-cache sharing to mitigate timing side-channels in
-  {LLM} inference,'' \emph{arXiv preprint arXiv:2508.08438v2}, 2026, consulted
-  arXiv:2508.08438v2; archived access 18 October 2026. [Online]. Available:
-  \url{https://arxiv.org/abs/2508.08438v2}
-\BIBentrySTDinterwordspacing
-
-\bibitem{lee2026otro}
-\BIBentryALTinterwordspacing
-J.~Lee, Y.~Wang, R.~Rajat, D.~Wong, M.~Li, and M.~Annavaram, ``Otro: Oblivious
-  tokenization path with square-root oram,'' \emph{arXiv preprint
-  arXiv:2606.17358v1}, 2026, consulted 2606.17358v1; source-scoped access 21
-  October 2026. [Online]. Available: \url{https://arxiv.org/html/2606.17358v1}
-\BIBentrySTDinterwordspacing
-
 \bibitem{alhalawani2026physicaledge}
 \BIBentryALTinterwordspacing
 N.~Alhalawani, G.~Acar, Z.~Liu, and L.~Batina, ``Physical side-channel attacks
@@ -268,6 +251,14 @@ Y.~Jo, J.~Park, E.~Lee, and D.~Song, ``Sparseety: Extracting tokens from
   \emph{arXiv preprint arXiv:2608.02995v1}, 2026, consulted 2608.02995v1;
   source-scoped access 21 October 2026. [Online]. Available:
   \url{https://arxiv.org/html/2608.02995v1}
+\BIBentrySTDinterwordspacing
+
+\bibitem{lee2026otro}
+\BIBentryALTinterwordspacing
+J.~Lee, Y.~Wang, R.~Rajat, D.~Wong, M.~Li, and M.~Annavaram, ``Otro: Oblivious
+  tokenization path with square-root oram,'' \emph{arXiv preprint
+  arXiv:2606.17358v1}, 2026, consulted 2606.17358v1; source-scoped access 21
+  October 2026. [Online]. Available: \url{https://arxiv.org/html/2606.17358v1}
 \BIBentrySTDinterwordspacing
 
 \bibitem{weiss2026detokenization}
@@ -376,6 +367,15 @@ T.-R. Chen, ``Sensitive-topic leakage through {LLM} routing metadata:
   Measurement and mitigation,'' \emph{arXiv preprint arXiv:2610.09981v1}, 2026,
   consulted 2610.09981v1; source-scoped access 21 October 2026. [Online].
   Available: \url{https://arxiv.org/html/2610.09981v1}
+\BIBentrySTDinterwordspacing
+
+\bibitem{chu2025safekv}
+\BIBentryALTinterwordspacing
+K.~Chu, Z.~Lin, D.~Xiang, Z.~Shen, J.~Su, C.~Chu, Y.~Yang, W.~Zhang, W.~Wu, and
+  W.~Zhang, ``Selective {KV}-cache sharing to mitigate timing side-channels in
+  {LLM} inference,'' \emph{arXiv preprint arXiv:2508.08438v2}, 2026, consulted
+  arXiv:2508.08438v2; archived access 18 October 2026. [Online]. Available:
+  \url{https://arxiv.org/abs/2508.08438v2}
 \BIBentrySTDinterwordspacing
 
 \bibitem{debenedetti2024privacy}

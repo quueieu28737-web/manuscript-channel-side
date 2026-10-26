@@ -3,7 +3,7 @@
 \subsection{What the nine items mean}
 R1--R9 are checks on whether an observation can be reused for a specified comparison. They are not a quality score for a paper, a safety grade, or a judgment that an original study ought to have performed every possible experiment. Bound means that at least one result record in a family supplies the requested binding; Partial retains both supported and unbound parts; NR-R means the inspected source scope does not report the requested item; NR-V means the source/run/version binding could not be verified; NA means the requested inference is outside the scoped claim. The 20-family matrix is a family-level summary, while result-level records remain distinct where mechanisms or test populations differ.
 
-R4 concerns fitting/calibrating an attacker on protected data when adaptation is part of the reuse question. R5 concerns a matched clean/adapted contrast on the same defended test. Thus R5 does not demand a learned-attacker refit for fixed-rate analytical costs, deterministic namespace controls, or non-learning mechanism benchmarks. Applicability is explicit in the matrix: each item has 11 applicable families for R4 and R5. For R4 the distribution is 4 Bound, 1 Partial, 1 NR-R, 5 NR-V, 9 NA; for R5 it is 2 Bound, 2 Partial, 1 NR-R, 6 NR-V, 9 NA. NR-R and NR-V cells identify missing reporting or binding evidence, not failed experiments.
+R4 concerns fitting/calibrating an attacker on protected data when adaptation is part of the reuse question. R5 concerns a matched clean/adapted contrast on the same defended test. Thus R5 does not demand a learned-attacker refit for fixed-rate analytical costs, deterministic namespace controls, or non-learning mechanism benchmarks. Each item has 11 applicable families. Following the source reconciliation in S34, R4 has 4 B, 5 P, 2 U and 9 inapplicable; R5 has 2 B, 2 P, 7 U and 9 inapplicable. U denotes an unreported binding within the inspected scope, not a failed experiment.
 
 \begin{table*}[t]\centering\footnotesize
 \caption{R4, R5 and R8 family dispositions. Reasons are scoped to the item, not judgments of overall study quality.}\label{tab:r8-family-reasons}
@@ -13,25 +13,25 @@ UI Traces & B & B & U & Offline attribution does not report objective task utili
 WRA & -- & -- & P & Proxy visibility and executable-decoy utility are not fully joined.\\
 NetEcho & B & P & U & Topic prediction is not downstream task utility.\\
 Early Bird & B & P & U & Semantic-cache timing is not end-to-end task utility.\\
-Whisper Leak & ? & ? & U & Post-defense fit/test binding is unverified; replay volume is not task utility.\\
+Whisper Leak & P & U & U & Global fitting and defended results are described; condition-specific mapping is incomplete and matched adaptation unreported.\\
 SpliceLeak & -- & -- & U & QCP component cost; no task-utility outcome.\\
-Time Will Tell & ? & ? & U & Threshold fit/test binding unverified; analytical padding cost is not task utility.\\
+Time Will Tell & P & U & U & Input-length threshold profiling is specified; instruction-specific reprofiling is unbound and matched adaptation unreported.\\
 I Know What You Said & -- & -- & -- & Zero-copy component control; family-level utility item inapplicable.\\
-Speculative decoding & ? & ? & -- & Learned attack present; protected fit and matched test unverified; payload is cost, not utility.\\
+Speculative decoding & P & U & -- & Profiling and mitigation outcomes are described; protected-profile mapping is incomplete and matched adaptation unreported.\\
 Dangol workflow & B & B & U & Matched result is capture-scoped; objective workflow utility is unreported.\\
-Cloud traffic benchmark & ? & ? & P & Classifier under reformulation; semantic preservation is asserted, not task-tested.\\
+Cloud traffic benchmark & U & U & P & Fixed-configuration fingerprints under changed prompts/temperatures; protected refitting and matched adaptation unreported.\\
 Remote timing & -- & -- & U & Fixed-rate analysis does not bind task utility.\\
 TDXRay & -- & -- & B & Vocabulary coverage is component utility, not deployment-task utility.\\
 SafeKV & -- & -- & U & Detection and serving performance use separate conditions.\\
-AHB/Turing & P & ? & B & Online task accuracy is bound; publication-run fit/test binding remains unverified.\\
+AHB/Turing & P & U & B & Online task accuracy is bound; condition-specific code is partial run evidence; matched adaptation is unreported.\\
 KV-Gov & -- & -- & U & Simulation, hardware gap and HMAC costs are distinct outcomes.\\
 CachePrune & -- & -- & B & QA/summarization outcomes bind selective cache sharing.\\
 OTRO & -- & -- & -- & Mechanism microbenchmark has no scoped task-utility outcome.\\
-SparLeak & ? & ? & B & \S7.5/Table~4 pairs reconstruction ASR and local ROUGE by model/intensity.\\
+SparLeak & P & U & B & \S7.5/Table~4 pairs ASR/ROUGE; profiling-to-intensity mapping is incomplete and matched adaptation unreported.\\
 Shape and Substance & U & U & U & Inspected scope reports analytic padding, not protected-fit/matched-test or task utility.\\\bottomrule
 \end{tabularx}\end{table*}
 \noindent\footnotesize B=Bound, P=Partial, U=NR-R, ?=NR-V, --=NA.
 
-For R5, the matrix's applicable denominator is 11, with 2 Bound (2/11), 2 Partial, 1 NR-R and 6 NR-V. Under the narrower interpretation that only explicitly learned/calibrated adaptive-attack experiments call for this matched contrast, Shape and Substance may be recoded NA: 2/10, with 2 Partial and 6 NR-V among the remaining applicable entries. This is a denominator sensitivity, not a correction to the matrix. For R8, the broad item is task \emph{or} component utility: 4 Bound, 2 Partial, 11 NR-R, 3 NA (4/17 applicable). If the estimand is restricted to deployment-task utility, TDXRay's vocabulary-coverage/lookup result is out of scope, yielding 3 Bound, 2 Partial, 11 NR-R and 4 NA (3/16). This alternative does not convert NR-R into an experimental failure. CachePrune's joint R7--R9 binding remains a scoped positive example, not evidence of adaptive robustness.
+For R5, the applicable denominator is 11, with 2 B (2/11), 2 P and 7 U. Under the narrower interpretation that only explicitly learned/calibrated adaptive-attack experiments call for this matched contrast, Shape and Substance may be recoded inapplicable: 2/10, with 2 P and 6 U among the remaining entries. This is a denominator sensitivity, not a correction to the matrix. For R8, the broad item is task \emph{or} component utility: 4 B, 2 P, 11 U, 3 inapplicable (4/17). If the estimand is restricted to deployment-task utility, TDXRay's vocabulary-coverage/lookup result is out of scope, yielding 3 B, 2 P, 11 U and 4 inapplicable (3/16). This alternative does not convert U into an experimental failure. CachePrune's joint R7--R9 binding remains a scoped positive example, not evidence of adaptive robustness.
 
-Across the 20 audited families, the R1--R9 column distributions (Bound/Partial/NR-R/NR-V/NA) are: R1 20/0/0/0/0; R2 17/3/0/0/0; R3 17/3/0/0/0; R4 4/1/1/5/9; R5 2/2/1/6/9; R6 18/2/0/0/0; R7 17/1/2/0/0; R8 4/2/11/0/3; R9 11/3/5/0/1. Each column sums to 20. Machine-readable family mapping and rationale are in \path{provenance/r19-evidence-closure/family-status-overlay.json}; the earlier overlay remains archived.
+Across the 20 audited families, the R1--R9 column distributions (B/P/U/?/inapplicable) are: R1 20/0/0/0/0; R2 17/3/0/0/0; R3 17/3/0/0/0; R4 4/5/2/0/9; R5 2/2/7/0/9; R6 18/2/0/0/0; R7 17/1/2/0/0; R8 4/2/11/0/3; R9 11/3/5/0/1. Each column sums to 20. The current source-linked changes are in S34 and the artifact's source-reconciliation overlay; historical mappings remain archived.

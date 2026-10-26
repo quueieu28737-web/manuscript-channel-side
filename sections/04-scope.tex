@@ -1,5 +1,5 @@
 \section{Result Records and Comparability Rules}\label{sec:scope}
-The atomic unit of our systematization is one \emph{evaluated result record}, rather than a whole paper or a single headline score. A result record binds a source version and locator to seven structured fields: Source, Target (and threat polarity Types~I--IV), Receiver projection, Intervention boundary, Attacker training/calibration ($D_0$: clean-condition fit; $D_2$: protected-condition fit), Workload/holdout, and Outcomes (inference metric, task/component utility, and cost object; Table~\ref{tab:result-record}). A study family contributes multiple records whenever it evaluates distinct execution modes (e.g., stored capture vs.\ live loopback in Dangol \cite{dangol2026workflow}), distinct mechanisms (e.g., $K$-prefix KV simulation vs.\ GPTCache semantic de-identification in Early Bird \cite{earlybird2025}), or separately scoped performance benchmarks (e.g., SafeKV \cite{chu2025safekv} and OTRO \cite{lee2026otro}).
+The atomic unit of our systematization is one \emph{evaluated result record}, rather than a whole paper or a single headline score. A result record binds a source version and locator to seven structured fields: Source, Target (and threat polarity Types~I--IV), Receiver projection, Intervention boundary, Attacker training/calibration ($D_0$: clean-condition fit; $D_2$: protected-condition fit), Workload/holdout, and Outcomes (inference metric, task/component utility, and cost object; Table~\ref{tab:result-record}). A record is a comparison unit with a source-indexed parameter grid, not an independent trial. We split when a change of primitive, execution mode, target/receiver contract or separately measured cost object would alter what a result can support. We retain models, datasets, parameter values and repetitions as coordinates within that unit; numerical joins must preserve those coordinates. Source versions are reconciled within a family before extraction.
 \input{tables/result-record-schema}
 
 \paragraph{Indexing schema and comparison contracts}
@@ -7,6 +7,17 @@ The mnemonic \scope{} (Secret/target, Channel, Observer, Pipeline, Exploitation 
 \input{tables/comparison-contracts}
 \input{tables/result-lineage-example}
 
+
+\paragraph{Record boundaries and coverage}
+The extraction frame comprises the evaluated-mitigation sections and their linked methods, figures and cost/utility analyses for the 20 mitigation families, plus six explicitly named contextual controls. A defense discussion without a scoped evaluated result stays in the map. The 39-record ledger inventories these comparison units, rather than every plotted number in the 82-family corpus. S34 publishes all record scopes and split decisions. Three examples fix the granularity:
+\begin{itemize}
+\item \textbf{Split:} Early Bird's $K$-prefix recovery oracle and semantic-cache processing benchmark change both primitive and measured object; their numbers cannot form one protection--cost point.
+\item \textbf{Retain coordinates:} SparLeak's model-by-replacement-intensity ASR/ROUGE grid remains one mitigation record. Each intensity's inference/quality pair must be retained together; selecting the lowest ASR and highest ROUGE from different rows is disallowed.
+\item \textbf{Split outcome, share package:} CachePrune's direct recovery and contextual guessing require two target contracts. They reference one shared default quality/cost package, counted once when joining configurations.
+\end{itemize}
+
+\paragraph{Question cohorts precede compatibility judgments}
+Records enter one declared comparison question by the intervention and receiving object, not by score or verdict: delivered traffic, service-cache reuse, local memory/resource behavior, behavioral humanization, generator fingerprinting or fixed instructions. Three contextual singletons concern access gates, contention and filter-created views. S34 lists operational membership rules and all 39 assignments. When a mechanism spans several questions, retain the primary extracted question and document the alternative; a new cross-cohort question requires a new inventory. A shared cohort admits a pair for inspection; it does not make different targets or costs compatible. These retrospective grouping rules define the reported census, rather than a preregistered universal taxonomy.
 
 \paragraph{From contracts to an audit}
 Section~\ref{sec:defenses} operationalizes these contracts as nine reuse items with a shared evidence-status alphabet (Table~\ref{tab:audit-rules}) and applies them to every mitigation family (Table~\ref{tab:family-audit}).
