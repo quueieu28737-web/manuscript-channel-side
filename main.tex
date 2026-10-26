@@ -7,7 +7,6 @@
 \usepackage{tabularx}
 \usepackage{array}
 \usepackage{graphicx}
-\usepackage{placeins}
 \usepackage{amsmath}
 \usepackage[dvipsnames,table]{xcolor}
 \usepackage{tikz}
@@ -43,7 +42,7 @@
 \maketitle
 
 \begin{abstract}
-Side-channel defenses for LLM serving and agent systems are evaluated at one operating point and reused at another. This SoK systematizes the evidence required to carry a defense result across deployment boundaries. Our unit is the evaluated result record: one outcome bound to its target, receiver, intervention, attacker fit, workload and cost object. Across 82 study families and 39 records, eight of 15 same-family pairs concern different primitives, targets or costs; only 17 of 133 related pairs support a source-qualified descriptive comparison. Record-local joins identify one configuration-linked inference--utility--cost package, supplied by two CachePrune records. A six-axis holdout map distinguishes evidence for input, model, topology, hardware, network and temporal changes. Four controlled studies support the synthesis with costed examples of emitter, execution-state, calibration and observation changes. Their results expose distinct re-evaluation needs: timing can recover signal missed by length-only attacks, while 100 training-customer resamples put local GLM return accuracy at 50.0--67.9\%, preventing a model-source interpretation of an unstable calibration contrast. We integrate the literature audit and these scoped measurements into a deployment decision table: identify the changed boundary, retain applicable evidence, and measure the missing binding before reusing a defense claim.
+Side-channel defenses for LLM serving and agent systems are evaluated at one operating point and reused at another. This SoK systematizes the evidence required to carry a defense result across deployment boundaries. Our unit is the evaluated result record: one outcome bound to its target, receiver, intervention, attacker fit, workload and cost object. We organize 82 study families by signal generation, receiving view and threat polarity, and audit 39 result records from 26 families. Across all 741 record pairs, 133 address related mechanism questions; only 17 support a source-qualified descriptive comparison. Eight of 15 same-family pairs concern different primitives, targets or costs, showing why paper-level summaries can substitute evidence across operating points. Configuration-linked joins identify one inference--utility--cost package, supplied by two CachePrune records sharing one configuration. A six-axis holdout matrix distinguishes reported evidence for input, model, topology, hardware, network and temporal changes. These findings yield a claim-conditioned reuse procedure: establish the comparison object, join outcomes at their evaluated configuration, identify the changed deployment axis, and request the missing evidence. The resulting decision table specifies what can be retained and what must be measured before a defense claim is reused.
 \end{abstract}
 
 \input{sections/01-introduction}
@@ -53,8 +52,6 @@ Side-channel defenses for LLM serving and agent systems are evaluated at one ope
 \input{sections/27-intervention-contracts}
 \input{sections/28-fingerprint-dependencies}
 \input{sections/11-discussion}
-\input{sections/37-transfer-tests}
-\FloatBarrier
 \input{sections/10-open-challenges}
 \input{sections/12-conclusion}
 
@@ -67,6 +64,6 @@ Side-channel defenses for LLM serving and agent systems are evaluated at one ope
 \input{sections/30-reproducibility-guide}
 \input{sections/49-r9-record-index}
 \input{sections/50-r9-experiment-index}
-\input{sections/51-r9-extensions}
 \input{sections/59-holdout-compact}
+\input{sections/62-appendix-case-study}
 \end{document}

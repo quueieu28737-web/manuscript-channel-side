@@ -1,12 +1,4 @@
-\section{Audit Trail and Logical Equivalence}\label{app:equivalence}
-\paragraph{Evidence organization}
-The package separates the 82-family source map, 39-result ledger, 180-cell audit, transport tests, dispatch tests and real-agent studies. Each source record has a version and section/table/figure/paragraph locator. The supplement supplies detailed algorithms, full result grids and archived coding decisions; the main paper contains the comparison rules, complete family matrix and record index needed to follow the synthesis.
+\section{Audit Trail}\label{app:audit-trail}
+The package separates the 82-family source map, 39-result ledger, 180 family--item cells and 351 record--item cells from the optional case-study data. Each source record has a version and section/table/figure/paragraph locator. The main paper supplies the comparison contracts, complete family matrix, joint-binding summaries, record index and holdout map; the supplement provides full source annotations and judgments.
 
-\paragraph{Logical equivalence}
-For deterministic tools, a real action gives $(s_{t+1},o_t)=T(s_t,a_t)$. The defended dispatcher forwards that action unchanged, runs cover on a disjoint state $s_t^{\rm sh}$ and suppresses cover responses. With equal initial states and realized real actions, induction gives
-\[
-s_t^D=s_t,\qquad \pi_{\rm plan}(D(H_t))=H_t.
-\]
-Here $H_t$ is the logical message/action/response history, excluding wall-clock time. Payload-preserving framing and terminal shadow flush maintain the invariant, provided timeouts, shared-state side effects and timing-dependent tool behavior are absent. Checks compare every real-call projection and scoring field across all 690 trajectories and four program conditions. These establish implementation conformance to isolation. The utility boundary in \S\ref{sec:validity} explains the further live-planner measurements.
-
-The reproducibility index resolves each archived experiment in Appendix~\ref{app:experiments} to protocol, inputs, predictions and checksums. Saved-output verification reproduces the reported metrics without new model calls, while measured captures and analytic reconstructions retain their separate provenance.
+Appendix~\ref{app:experiments} resolves the case-study components to stable artifact keys, protocols, saved predictions and verification commands. Appendix~\ref{app:case-study} gives one compact application of the reuse procedure. Archived observations and uncertainty calculations retain their original provenance and cohort definitions.

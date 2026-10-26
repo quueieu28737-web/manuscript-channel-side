@@ -40,23 +40,23 @@ The contextual record IDs are SIG-common-guardrail (SIGLEAK), AGENTTELL-fixed-in
 The other 32 core families remain in the map: AgentPrint~\cite{agentprint2025}, AgentProv~\cite{wang2026agentprov}, ArchSnoop~\cite{weng2026archsnoop}, Cache contention~\cite{abubakar2026contention}, Campaign attribution~\cite{park2026crosscampaign}, ClawGuard~\cite{gan2026clawguard}, Cycle detection~\cite{george2025cycles}, Detokenization Leaks~\cite{weiss2026detokenization}, Edge EM leakage~\cite{alhalawani2026physicaledge}, Energon~\cite{chaudhuri2025energon}, InputSnatch~\cite{inputsnatch2024}, Leaky Language Models~\cite{majidi2026leakylms}, Lidar~\cite{wang2026lidar}, LLM-serving RCA~\cite{scheinert2026rca}, LLM-WFIN~\cite{jiao2025llmwfin}, LumiMAS~\cite{solomon2026lumimas}, MIRAGE~\cite{revankar2026mirage}, MoE prompt stealing~\cite{yona2024stealing}, MoEcho~\cite{ding2025moecho}, PAGE404~\cite{nazaraliyev2026page404}, PersonaFingerprint~\cite{song2026personafingerprint}, ProcGrep~\cite{oderinwale2026procgrep}, Prompt Echo~\cite{prompt_echo2026}, Prompt-cache audit~\cite{gu2025promptcaching}, PromptPeek~\cite{promptpeek2025}, Remote keylogging~\cite{weiss2024prompt}, Routing metadata~\cite{chen2026routingmetadata}, SparSEEty~\cite{jo2026sparseety}, Spill the Beans~\cite{spillbeans2025}, SplitDecoy~\cite{politis2026splitdecoy}, Web-agent unmasking~\cite{fayolle2026webagents}, Whose Agent?~\cite{kang2026whoseagent}. Their dispositions comprise 22 without a mitigation evaluation in the inspected scope, five authorized diagnostics, four unbound quantitative assertions, and SplitDecoy's distinct split-training boundary case. Thus absence from the result ledger does not imply exclusion from the SoK or that the family has no empirical evaluation. The artifact's family--record concordance gives the group, record IDs, source version and locators for every one of the 82 families.
 
 \subsection{Experiment identifiers and manuscript locations}
-The archived identifiers resolve protocols, predictions and verifiers. The main paper organizes these records into four demonstrations; the table maps each key to its current location.
+The archived identifiers resolve protocols, predictions and verifiers. The appendix combines these components into one case study; the table maps the archived keys to their detailed accounts.
 \begin{table}[!ht]\centering\footnotesize
 \caption{Experiment concordance. Historical names are retained in code and data.}\label{tab:experiment-concordance}
 \begin{tabularx}{\columnwidth}{@{}lYY@{}}\toprule
 ID & Evidence / question & Current account\\\midrule
-E1 & Two-link buffered transport; terminal caps & Main 8.1; S9/S11\\
-E2 & Saved finite-state tool plans; cover/state effects & S9; retail extension in 8.2/S11\\
-E3 & Clean versus defended fitting on buffered traces & Main 8.1; S9/S11\\
-E5 & Token-stream emitters & Main 8.1; S12\\
-E6 & Randomized dispatch cover & Main 8.2; S12\\
-E7 & Agent--tool TLS composition & Main 8.2; S12\\
+E1 & Two-link buffered transport; terminal caps & App. E; S9/S11\\
+E2 & Saved finite-state tool plans; cover/state effects & S9; retail extension in S11\\
+E3 & Clean versus defended fitting on buffered traces & App. E; S9/S11\\
+E5 & Token-stream emitters & App. E; S12\\
+E6 & Randomized dispatch cover & App. E; S12\\
+E7 & Agent--tool TLS composition & App. E; S12\\
 E8 & Scripted/noisy stand-in planners & S13; pipeline check\\
-E9 & Real agents; pretest-frozen calibration & Main 8.3; S14\\
-E10/E12 & Cross-fitting and oracle localization & Main 8.3; original suite S15, expanded suite S21\\
+E9 & Real agents; pretest-frozen calibration & App. E; S14\\
+E10/E12 & Cross-fitting and oracle localization & App. E; original suite S15, expanded suite S21\\
 E11 & Retrospective operating-point selection & Main Appendix C; S15\\
-E13 & Live tool timing, latency and complete tunnels & Main 8.4; S19\\
-E14 & Expanded attacks and classical WF adaptations & Main 8.4; S20\\
+E13 & Live tool timing, latency and complete tunnels & App. E; S19\\
+E14 & Expanded attacks and classical WF adaptations & App. E; S20\\
 E15 & Additional same-provider Luna trajectories & Main Appendix C; S22\\
 E16 & Same-operation attribute diagnostic & Main Appendix C; S23.6\\
 \bottomrule\end{tabularx}\end{table}
@@ -64,7 +64,7 @@ E16 & Same-operation attribute diagnostic & Main Appendix C; S23.6\\
 \subsection{Absolute thresholds and relative reductions}
 The E9 suite criterion remains BA upper 95\% bound $<0.60$ and maximum AUROC $<0.65$. Joint shaping under the standard prompt has BA 50.0\%/50.0\%, with upper bounds 60.6\%/65.5\%; the absolute claim is inconclusive. The post hoc paired intervals support a reduction relative to undefended transport, not certification of this absolute target. With 24 held-out customers and only 5/7 positive customers, finite-cluster resampling and reselection of the suite maximum affect uncertainty. This is not a demonstrated universal bootstrap resolution floor or proof that the width is caused only by sample size. More repeats of the same customers do not supply new independent clusters.
 
-The original-suite E10 bucketed standard-prompt upper bounds (60.5\%/60.2\%) do not meet the two-target absolute criterion; S21 reports the larger expanded-suite maxima and intervals used in the current main paper. Customer-grouped fitting avoids training/test mixing within a fold but remains retrospective reuse of the same cohort. E11's training-fold point-estimate selection rule is distinct from the E9 interval criterion; choosing a configuration under the former does not imply passing the latter. A future confirmatory cohort should freeze the defended policy, attacker suite, timing projection and cluster analysis before collection. Sample planning should vary independent positive and negative customers using explicit assumptions about heterogeneity and refitting, rather than infer guaranteed power from a near-chance point estimate.
+The original-suite E10 bucketed standard-prompt upper bounds (60.5\%/60.2\%) do not meet the two-target absolute criterion; S21 reports the larger expanded-suite maxima and intervals retained in the case-study archive. Customer-grouped fitting avoids training/test mixing within a fold but remains retrospective reuse of the same cohort. E11's training-fold point-estimate selection rule is distinct from the E9 interval criterion; choosing a configuration under the former does not imply passing the latter. A future confirmatory cohort should freeze the defended policy, attacker suite, timing projection and cluster analysis before collection. Sample planning should vary independent positive and negative customers using explicit assumptions about heterogeneity and refitting, rather than infer guaranteed power from a near-chance point estimate.
 
 \subsection{Timing evaluation: protocol and E13 coverage}
 E7 and E9--E12 evaluate record sizes, directions and sequence order. They omit inter-arrival times, elapsed session duration and request service times. The end flush may form a detectable suffix; serial cover may delay responses, whereas concurrent cover may produce bursts. Logical planner-history equivalence excludes clocks, resource contention and timeout-dependent behavior. The observed byte/call ratios therefore cannot be read as measured interactive latency or timing-channel suppression.
