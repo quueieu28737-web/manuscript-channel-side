@@ -862,4 +862,26 @@ E.~Stefanov, M.~van Dijk, E.~Shi, C.~Fletcher, L.~Ren, X.~Yu, and S.~Devadas,
   299--310. [Online]. Available: \url{https://doi.org/10.1145/2508859.2516660}
 \BIBentrySTDinterwordspacing
 
+\bibitem{juarez2014critical}
+M.~Juarez, S.~Afroz, G.~Acar, C.~Diaz, and R.~Greenstadt, ``A critical
+  evaluation of website fingerprinting attacks,'' in \emph{Proceedings of the
+  ACM SIGSAC Conference on Computer and Communications Security}, 2014, pp.
+  263--274.
+
+\bibitem{tramer2020adaptive}
+\BIBentryALTinterwordspacing
+F.~Tram{\`e}r, N.~Carlini, W.~Brendel, and A.~Madry, ``On adaptive attacks to
+  adversarial example defenses,'' in \emph{Advances in Neural Information
+  Processing Systems}, vol.~33, 2020. [Online]. Available:
+  \url{https://arxiv.org/abs/2002.08347v2}
+\BIBentrySTDinterwordspacing
+
+\bibitem{carlini2019evaluating}
+\BIBentryALTinterwordspacing
+N.~Carlini, A.~Athalye, N.~Papernot, W.~Brendel, J.~Rauber, D.~Tsipras,
+  I.~Goodfellow, A.~Madry, and A.~Kurakin, ``On evaluating adversarial
+  robustness,'' \emph{arXiv preprint arXiv:1902.06705}, 2019. [Online].
+  Available: \url{https://arxiv.org/abs/1902.06705v2}
+\BIBentrySTDinterwordspacing
+
 \end{thebibliography}

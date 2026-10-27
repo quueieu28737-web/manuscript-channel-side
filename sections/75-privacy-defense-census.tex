@@ -1,0 +1,10 @@
+\section{Privacy and Attribution Defense Census}\label{sec:r35-census}
+The Type I/II union contains 52 core families, including 19 with a qualifying mitigation record and 33 without one linked in this extraction. The archive preserves 39 records: 31 Type I/II mitigation records, two Type III evasion records and six contextual records. The R34 tables retain the earlier, explicitly broader 20-family/33-record inventory; this section projects the unchanged source judgments onto the narrower cohort.
+
+\input{tables/r35-removal-sensitivity}
+For the 13 families eligible for inference, utility and cost, explicit bindings are 12, two and six, respectively; accepting P gives 13, four and ten. Expanding R4/R5 applicability to all 19 families gives 4/19 and 2/19 explicit, or 8/19 and 2/19 with P. The removal checks in Table~\ref{tab:r35-census} expose dependence on CachePrune and the final-search records. Every included and excluded record and family is listed in \path{data/r35-privacy-census.json}; the generator records hashes of the frozen inputs.
+
+The five record-level queries give inference/utility 3/20, inference/cost 5/21, matched adaptation/inference 2/15, the three-way query 2/19 and all five items 0/13. Accepting P yields five, 11, two, two and zero bound records, respectively. The two three-way records are CachePrune outcomes for one configuration. Removing that family leaves 0/17; removing final-search records leaves 0/15. These numbers describe bindings at the inspected source scope.
+
+The 31 records comprise 13 executed, five transformed, five simulated/estimated, six component/calibration and two unresolved records. The broader 33-record R34 inventory additionally contains AHB's executed and transformed evasion records. Table~\ref{tab:r35-guarantee-examples} presents representative interventions, their source-scoped measured outcomes and residual observations. A measurement result is not automatically a formal guarantee; formal proof status for the full matrix remains unaudited.
+\input{tables/r35-guarantee-examples}

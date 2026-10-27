@@ -1,0 +1,14 @@
+\begin{table*}[t]\centering\footnotesize
+\caption{Privacy and attribution interventions indexed by mechanism and signal-generation layer. A cell names families with a qualifying mitigation record in the inspected corpus; multiple mechanisms may occur in one family. Letters denote the evidence present in the indexed record, not a universal security guarantee: E = empirical protected-view or simulated attack outcome; C = component cost or proposal/estimate without a bound attack outcome in that indexed record. The table does not adjudicate whether each source also proves a formal guarantee.}\label{tab:r35-defense-coverage}
+\setlength{\tabcolsep}{3pt}
+\begin{tabularx}{\textwidth}{@{}p{.16\textwidth}p{.11\textwidth}p{.15\textwidth}p{.25\textwidth}p{.15\textwidth}Y@{}}\toprule
+Mechanism & P1 only & P1/P2 & P2 only & Workflow & Other cross-layer\\\midrule
+Traffic framing / rate & -- & -- & NetEcho, Whisper, SPEC, Remote, Time~\cite{netecho2025,whisperleak2025,wei2024speculation,carlini2024remote,timewilltell2024} (E/C) & Dangol~\cite{dangol2026workflow} (E) & --\\
+Cache isolation, policy or timing & -- & -- & Early Bird, SpliceLeak, SafeKV, KVGov, CachePrune~\cite{earlybird2025,spliceleak2026,chu2025safekv,addagada2026kvgov,wu2026cacheprune} (E/C) & -- & --\\
+Memory access / isolation & Gao~\cite{gao2025iknow} (C) & TDXRay, OTRO~\cite{hornetz2026tdxray,lee2026otro} (C/E) & -- & -- & --\\
+Model computation or output shaping & -- & SparLeak, Shape~\cite{chen2026sparleak,hadad2026shape} (E/C) & -- & -- & --\\
+Decoys, timing edits, or input changes & -- & -- & -- & WRA, UI Traces~\cite{jeong2026wra,uitraces2026} (E) & Cloud benchmark~\cite{pouryousef2026traffic} (E)\\\bottomrule
+\end{tabularx}
+\par\smallskip\raggedright\footnotesize
+Cells concern the mapped generating layer, not necessarily the intervention layer. Residual observations are receiver-specific: grouped or re-emitted traffic can remain after framing; timing can remain after a cache-policy change; access counts can remain after address hiding; and action types/order can remain after timestamp edits. A dash means no matching indexed record in this collection, not that the mechanism cannot apply or that no external defense exists. Type III evasion and Type IV authorized diagnostics are boundary cases, not privacy-protection results.
+\end{table*}

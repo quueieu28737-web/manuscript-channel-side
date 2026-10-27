@@ -1,0 +1,4349 @@
+{
+  "revision": "R35-privacy-census",
+  "source_sha256": {
+    "tables/r19-record-audit.tex": "786f8e20228839707c76b1d0943b0d925868654ad22dbdeb30084ab0da0645eb",
+    "tables/r9-record-index.tex": "bc0de37f365afa417e56fcd1ef754f6edc3925268b3d76a55e5ef99872e6ceaf",
+    "tables/core-family-map.tex": "7b9169feca6cb3f1b881abe16c4dc8161c48953acba6bae53417fe12595ef23d",
+    "data/record-scopes.csv": "6068a3af229abf9f74c95daa4dffed9212cd9c21cdfaaa4bc3a001da43ee225d",
+    "tables/family-audit-matrix.tex": "3b9b64de6cc1b9a0529022198e1bfc9db1f16d8f3a73291c88d885b5ea13888d"
+  },
+  "scope": "Frozen core Type I/II union; 6 contextual and 2 AHB records excluded; no recoding",
+  "core_ids": [
+    "abubakar2026contention",
+    "addagada2026kvgov",
+    "agentprint2025",
+    "alhalawani2026physicaledge",
+    "alhazbi2025rhythm",
+    "carlini2024remote",
+    "chaudhuri2025energon",
+    "chen2026routingmetadata",
+    "chen2026sparleak",
+    "chu2025safekv",
+    "dangol2026workflow",
+    "debenedetti2024privacy",
+    "ding2025moecho",
+    "earlybird2025",
+    "fayolle2026webagents",
+    "gao2025iknow",
+    "geng2026sigleak",
+    "gu2025promptcaching",
+    "gu2026behindbars",
+    "hadad2026shape",
+    "hornetz2026tdxray",
+    "inputsnatch2024",
+    "jeong2026wra",
+    "jiao2025llmwfin",
+    "jo2026sparseety",
+    "kang2026whoseagent",
+    "lee2026otro",
+    "majidi2026leakylms",
+    "nazaraliyev2026page404",
+    "netecho2025",
+    "oderinwale2026procgrep",
+    "park2026crosscampaign",
+    "politis2026splitdecoy",
+    "pouryousef2026traffic",
+    "prompt_echo2026",
+    "promptpeek2025",
+    "shahriar2026agenttell",
+    "song2026personafingerprint",
+    "spillbeans2025",
+    "spliceleak2026",
+    "timewilltell2024",
+    "uitraces2026",
+    "wang2026agentprov",
+    "wang2026fpagent",
+    "wang2026lidar",
+    "wei2024speculation",
+    "weiss2024prompt",
+    "weiss2026detokenization",
+    "weng2026archsnoop",
+    "whisperleak2025",
+    "wu2026cacheprune",
+    "yona2024stealing"
+  ],
+  "no_linked_qualifying_record_ids": [
+    "abubakar2026contention",
+    "agentprint2025",
+    "alhalawani2026physicaledge",
+    "alhazbi2025rhythm",
+    "chaudhuri2025energon",
+    "chen2026routingmetadata",
+    "debenedetti2024privacy",
+    "ding2025moecho",
+    "fayolle2026webagents",
+    "geng2026sigleak",
+    "gu2025promptcaching",
+    "gu2026behindbars",
+    "inputsnatch2024",
+    "jiao2025llmwfin",
+    "jo2026sparseety",
+    "kang2026whoseagent",
+    "majidi2026leakylms",
+    "nazaraliyev2026page404",
+    "oderinwale2026procgrep",
+    "park2026crosscampaign",
+    "politis2026splitdecoy",
+    "prompt_echo2026",
+    "promptpeek2025",
+    "shahriar2026agenttell",
+    "song2026personafingerprint",
+    "spillbeans2025",
+    "wang2026agentprov",
+    "wang2026fpagent",
+    "wang2026lidar",
+    "weiss2024prompt",
+    "weiss2026detokenization",
+    "weng2026archsnoop",
+    "yona2024stealing"
+  ],
+  "variants": {
+    "all": {
+      "record_ids": [
+        "CACHEPRUNE-context",
+        "CACHEPRUNE-selective",
+        "CARLINI-fixed-rate",
+        "DANGOL-capture",
+        "DANGOL-livebinding",
+        "EARLY-K-calibration-oracle",
+        "EARLY-semantic-deidentification",
+        "GAO-zero-copy-off",
+        "KVGOV-HMAC-cost",
+        "KVGOV-hardware-gap",
+        "KVGOV-partialflush-sim",
+        "NET-dummy-padding-simulation",
+        "NET-upstream-local",
+        "OTRO-epochpad",
+        "OTRO-unpadded",
+        "SAFE-post-trigger",
+        "SHAPE-padding-estimate",
+        "SPARLEAK-replacement",
+        "SPEC-padding-REST",
+        "SPLICE-CTBF-signal",
+        "SPLICE-QCP-cost",
+        "TDXRAY-oblivious-map",
+        "TIME-length-instruction",
+        "TIME-padding-estimate",
+        "TRAFFIC-prompt-reformulation",
+        "TRAFFIC-temperature",
+        "UI-delay-offline",
+        "WHISPER-batching-replay",
+        "WHISPER-injection-replay",
+        "WHISPER-randompadding-capture",
+        "WRA-decoy-execution"
+      ],
+      "family_ids": [
+        "addagada2026kvgov",
+        "carlini2024remote",
+        "chen2026sparleak",
+        "chu2025safekv",
+        "dangol2026workflow",
+        "earlybird2025",
+        "gao2025iknow",
+        "hadad2026shape",
+        "hornetz2026tdxray",
+        "jeong2026wra",
+        "lee2026otro",
+        "netecho2025",
+        "pouryousef2026traffic",
+        "spliceleak2026",
+        "timewilltell2024",
+        "uitraces2026",
+        "wei2024speculation",
+        "whisperleak2025",
+        "wu2026cacheprune"
+      ],
+      "projected_cells": {
+        "addagada2026kvgov": [
+          "B",
+          "B",
+          "B",
+          "--",
+          "--",
+          "B",
+          "B",
+          "U",
+          "B"
+        ],
+        "carlini2024remote": [
+          "B",
+          "B",
+          "P",
+          "--",
+          "--",
+          "B",
+          "--",
+          "U",
+          "B"
+        ],
+        "chen2026sparleak": [
+          "B",
+          "B",
+          "B",
+          "P",
+          "U",
+          "B",
+          "B",
+          "B",
+          "U"
+        ],
+        "chu2025safekv": [
+          "B",
+          "B",
+          "B",
+          "--",
+          "--",
+          "B",
+          "B",
+          "U",
+          "P"
+        ],
+        "dangol2026workflow": [
+          "B",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B",
+          "U",
+          "B"
+        ],
+        "earlybird2025": [
+          "B",
+          "B",
+          "B",
+          "B",
+          "?",
+          "B",
+          "B",
+          "U",
+          "B"
+        ],
+        "gao2025iknow": [
+          "B",
+          "B",
+          "B",
+          "--",
+          "--",
+          "P",
+          "--",
+          "--",
+          "B"
+        ],
+        "hadad2026shape": [
+          "B",
+          "B",
+          "P",
+          "U",
+          "U",
+          "B",
+          "P",
+          "U",
+          "P"
+        ],
+        "hornetz2026tdxray": [
+          "B",
+          "B",
+          "B",
+          "--",
+          "--",
+          "B",
+          "--",
+          "B",
+          "B"
+        ],
+        "jeong2026wra": [
+          "B",
+          "P",
+          "B",
+          "--",
+          "--",
+          "P",
+          "B",
+          "P",
+          "U"
+        ],
+        "lee2026otro": [
+          "B",
+          "B",
+          "B",
+          "--",
+          "--",
+          "B",
+          "B",
+          "--",
+          "B"
+        ],
+        "netecho2025": [
+          "B",
+          "B",
+          "B",
+          "B",
+          "?",
+          "B",
+          "B",
+          "U",
+          "P"
+        ],
+        "pouryousef2026traffic": [
+          "B",
+          "P",
+          "B",
+          "U",
+          "U",
+          "P",
+          "B",
+          "P",
+          "U"
+        ],
+        "spliceleak2026": [
+          "B",
+          "B",
+          "B",
+          "--",
+          "--",
+          "B",
+          "B",
+          "U",
+          "B"
+        ],
+        "timewilltell2024": [
+          "B",
+          "B",
+          "B",
+          "P",
+          "U",
+          "B",
+          "B",
+          "U",
+          "B"
+        ],
+        "uitraces2026": [
+          "B",
+          "P",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B",
+          "U",
+          "--"
+        ],
+        "wei2024speculation": [
+          "B",
+          "B",
+          "P",
+          "P",
+          "U",
+          "B",
+          "B",
+          "--",
+          "B"
+        ],
+        "whisperleak2025": [
+          "B",
+          "B",
+          "B",
+          "P",
+          "U",
+          "B",
+          "B",
+          "U",
+          "P"
+        ],
+        "wu2026cacheprune": [
+          "B",
+          "B",
+          "B",
+          "--",
+          "--",
+          "B",
+          "B",
+          "B",
+          "B"
+        ]
+      },
+      "fields": {
+        "R4": {
+          "strict": {
+            "eligible": 10,
+            "bound": 4,
+            "eligible_ids": [
+              "chen2026sparleak",
+              "dangol2026workflow",
+              "earlybird2025",
+              "hadad2026shape",
+              "netecho2025",
+              "pouryousef2026traffic",
+              "timewilltell2024",
+              "uitraces2026",
+              "wei2024speculation",
+              "whisperleak2025"
+            ],
+            "bound_ids": [
+              "dangol2026workflow",
+              "earlybird2025",
+              "netecho2025",
+              "uitraces2026"
+            ],
+            "states": {
+              "P": 4,
+              "B": 4,
+              "U": 2
+            }
+          },
+          "partial_accepted": {
+            "eligible": 10,
+            "bound": 8,
+            "eligible_ids": [
+              "chen2026sparleak",
+              "dangol2026workflow",
+              "earlybird2025",
+              "hadad2026shape",
+              "netecho2025",
+              "pouryousef2026traffic",
+              "timewilltell2024",
+              "uitraces2026",
+              "wei2024speculation",
+              "whisperleak2025"
+            ],
+            "bound_ids": [
+              "chen2026sparleak",
+              "dangol2026workflow",
+              "earlybird2025",
+              "netecho2025",
+              "timewilltell2024",
+              "uitraces2026",
+              "wei2024speculation",
+              "whisperleak2025"
+            ],
+            "states": {
+              "P": 4,
+              "B": 4,
+              "U": 2
+            }
+          }
+        },
+        "R5": {
+          "strict": {
+            "eligible": 10,
+            "bound": 2,
+            "eligible_ids": [
+              "chen2026sparleak",
+              "dangol2026workflow",
+              "earlybird2025",
+              "hadad2026shape",
+              "netecho2025",
+              "pouryousef2026traffic",
+              "timewilltell2024",
+              "uitraces2026",
+              "wei2024speculation",
+              "whisperleak2025"
+            ],
+            "bound_ids": [
+              "dangol2026workflow",
+              "uitraces2026"
+            ],
+            "states": {
+              "U": 6,
+              "B": 2,
+              "?": 2
+            }
+          },
+          "partial_accepted": {
+            "eligible": 10,
+            "bound": 2,
+            "eligible_ids": [
+              "chen2026sparleak",
+              "dangol2026workflow",
+              "earlybird2025",
+              "hadad2026shape",
+              "netecho2025",
+              "pouryousef2026traffic",
+              "timewilltell2024",
+              "uitraces2026",
+              "wei2024speculation",
+              "whisperleak2025"
+            ],
+            "bound_ids": [
+              "dangol2026workflow",
+              "uitraces2026"
+            ],
+            "states": {
+              "U": 6,
+              "B": 2,
+              "?": 2
+            }
+          }
+        },
+        "R7": {
+          "strict": {
+            "eligible": 16,
+            "bound": 15,
+            "eligible_ids": [
+              "addagada2026kvgov",
+              "chen2026sparleak",
+              "chu2025safekv",
+              "dangol2026workflow",
+              "earlybird2025",
+              "hadad2026shape",
+              "jeong2026wra",
+              "lee2026otro",
+              "netecho2025",
+              "pouryousef2026traffic",
+              "spliceleak2026",
+              "timewilltell2024",
+              "uitraces2026",
+              "wei2024speculation",
+              "whisperleak2025",
+              "wu2026cacheprune"
+            ],
+            "bound_ids": [
+              "addagada2026kvgov",
+              "chen2026sparleak",
+              "chu2025safekv",
+              "dangol2026workflow",
+              "earlybird2025",
+              "jeong2026wra",
+              "lee2026otro",
+              "netecho2025",
+              "pouryousef2026traffic",
+              "spliceleak2026",
+              "timewilltell2024",
+              "uitraces2026",
+              "wei2024speculation",
+              "whisperleak2025",
+              "wu2026cacheprune"
+            ],
+            "states": {
+              "B": 15,
+              "P": 1
+            }
+          },
+          "partial_accepted": {
+            "eligible": 16,
+            "bound": 16,
+            "eligible_ids": [
+              "addagada2026kvgov",
+              "chen2026sparleak",
+              "chu2025safekv",
+              "dangol2026workflow",
+              "earlybird2025",
+              "hadad2026shape",
+              "jeong2026wra",
+              "lee2026otro",
+              "netecho2025",
+              "pouryousef2026traffic",
+              "spliceleak2026",
+              "timewilltell2024",
+              "uitraces2026",
+              "wei2024speculation",
+              "whisperleak2025",
+              "wu2026cacheprune"
+            ],
+            "bound_ids": [
+              "addagada2026kvgov",
+              "chen2026sparleak",
+              "chu2025safekv",
+              "dangol2026workflow",
+              "earlybird2025",
+              "hadad2026shape",
+              "jeong2026wra",
+              "lee2026otro",
+              "netecho2025",
+              "pouryousef2026traffic",
+              "spliceleak2026",
+              "timewilltell2024",
+              "uitraces2026",
+              "wei2024speculation",
+              "whisperleak2025",
+              "wu2026cacheprune"
+            ],
+            "states": {
+              "B": 15,
+              "P": 1
+            }
+          }
+        },
+        "R8": {
+          "strict": {
+            "eligible": 16,
+            "bound": 3,
+            "eligible_ids": [
+              "addagada2026kvgov",
+              "carlini2024remote",
+              "chen2026sparleak",
+              "chu2025safekv",
+              "dangol2026workflow",
+              "earlybird2025",
+              "hadad2026shape",
+              "hornetz2026tdxray",
+              "jeong2026wra",
+              "netecho2025",
+              "pouryousef2026traffic",
+              "spliceleak2026",
+              "timewilltell2024",
+              "uitraces2026",
+              "whisperleak2025",
+              "wu2026cacheprune"
+            ],
+            "bound_ids": [
+              "chen2026sparleak",
+              "hornetz2026tdxray",
+              "wu2026cacheprune"
+            ],
+            "states": {
+              "U": 11,
+              "B": 3,
+              "P": 2
+            }
+          },
+          "partial_accepted": {
+            "eligible": 16,
+            "bound": 5,
+            "eligible_ids": [
+              "addagada2026kvgov",
+              "carlini2024remote",
+              "chen2026sparleak",
+              "chu2025safekv",
+              "dangol2026workflow",
+              "earlybird2025",
+              "hadad2026shape",
+              "hornetz2026tdxray",
+              "jeong2026wra",
+              "netecho2025",
+              "pouryousef2026traffic",
+              "spliceleak2026",
+              "timewilltell2024",
+              "uitraces2026",
+              "whisperleak2025",
+              "wu2026cacheprune"
+            ],
+            "bound_ids": [
+              "chen2026sparleak",
+              "hornetz2026tdxray",
+              "jeong2026wra",
+              "pouryousef2026traffic",
+              "wu2026cacheprune"
+            ],
+            "states": {
+              "U": 11,
+              "B": 3,
+              "P": 2
+            }
+          }
+        },
+        "R9": {
+          "strict": {
+            "eligible": 18,
+            "bound": 11,
+            "eligible_ids": [
+              "addagada2026kvgov",
+              "carlini2024remote",
+              "chen2026sparleak",
+              "chu2025safekv",
+              "dangol2026workflow",
+              "earlybird2025",
+              "gao2025iknow",
+              "hadad2026shape",
+              "hornetz2026tdxray",
+              "jeong2026wra",
+              "lee2026otro",
+              "netecho2025",
+              "pouryousef2026traffic",
+              "spliceleak2026",
+              "timewilltell2024",
+              "wei2024speculation",
+              "whisperleak2025",
+              "wu2026cacheprune"
+            ],
+            "bound_ids": [
+              "addagada2026kvgov",
+              "carlini2024remote",
+              "dangol2026workflow",
+              "earlybird2025",
+              "gao2025iknow",
+              "hornetz2026tdxray",
+              "lee2026otro",
+              "spliceleak2026",
+              "timewilltell2024",
+              "wei2024speculation",
+              "wu2026cacheprune"
+            ],
+            "states": {
+              "B": 11,
+              "U": 3,
+              "P": 4
+            }
+          },
+          "partial_accepted": {
+            "eligible": 18,
+            "bound": 15,
+            "eligible_ids": [
+              "addagada2026kvgov",
+              "carlini2024remote",
+              "chen2026sparleak",
+              "chu2025safekv",
+              "dangol2026workflow",
+              "earlybird2025",
+              "gao2025iknow",
+              "hadad2026shape",
+              "hornetz2026tdxray",
+              "jeong2026wra",
+              "lee2026otro",
+              "netecho2025",
+              "pouryousef2026traffic",
+              "spliceleak2026",
+              "timewilltell2024",
+              "wei2024speculation",
+              "whisperleak2025",
+              "wu2026cacheprune"
+            ],
+            "bound_ids": [
+              "addagada2026kvgov",
+              "carlini2024remote",
+              "chu2025safekv",
+              "dangol2026workflow",
+              "earlybird2025",
+              "gao2025iknow",
+              "hadad2026shape",
+              "hornetz2026tdxray",
+              "lee2026otro",
+              "netecho2025",
+              "spliceleak2026",
+              "timewilltell2024",
+              "wei2024speculation",
+              "whisperleak2025",
+              "wu2026cacheprune"
+            ],
+            "states": {
+              "B": 11,
+              "U": 3,
+              "P": 4
+            }
+          }
+        }
+      },
+      "common_R7_R8_R9": {
+        "family_ids": [
+          "addagada2026kvgov",
+          "chen2026sparleak",
+          "chu2025safekv",
+          "dangol2026workflow",
+          "earlybird2025",
+          "hadad2026shape",
+          "jeong2026wra",
+          "netecho2025",
+          "pouryousef2026traffic",
+          "spliceleak2026",
+          "timewilltell2024",
+          "whisperleak2025",
+          "wu2026cacheprune"
+        ],
+        "fields": {
+          "R7": {
+            "strict": {
+              "eligible": 13,
+              "bound": 12,
+              "eligible_ids": [
+                "addagada2026kvgov",
+                "chen2026sparleak",
+                "chu2025safekv",
+                "dangol2026workflow",
+                "earlybird2025",
+                "hadad2026shape",
+                "jeong2026wra",
+                "netecho2025",
+                "pouryousef2026traffic",
+                "spliceleak2026",
+                "timewilltell2024",
+                "whisperleak2025",
+                "wu2026cacheprune"
+              ],
+              "bound_ids": [
+                "addagada2026kvgov",
+                "chen2026sparleak",
+                "chu2025safekv",
+                "dangol2026workflow",
+                "earlybird2025",
+                "jeong2026wra",
+                "netecho2025",
+                "pouryousef2026traffic",
+                "spliceleak2026",
+                "timewilltell2024",
+                "whisperleak2025",
+                "wu2026cacheprune"
+              ],
+              "states": {
+                "B": 12,
+                "P": 1
+              }
+            },
+            "partial_accepted": {
+              "eligible": 13,
+              "bound": 13,
+              "eligible_ids": [
+                "addagada2026kvgov",
+                "chen2026sparleak",
+                "chu2025safekv",
+                "dangol2026workflow",
+                "earlybird2025",
+                "hadad2026shape",
+                "jeong2026wra",
+                "netecho2025",
+                "pouryousef2026traffic",
+                "spliceleak2026",
+                "timewilltell2024",
+                "whisperleak2025",
+                "wu2026cacheprune"
+              ],
+              "bound_ids": [
+                "addagada2026kvgov",
+                "chen2026sparleak",
+                "chu2025safekv",
+                "dangol2026workflow",
+                "earlybird2025",
+                "hadad2026shape",
+                "jeong2026wra",
+                "netecho2025",
+                "pouryousef2026traffic",
+                "spliceleak2026",
+                "timewilltell2024",
+                "whisperleak2025",
+                "wu2026cacheprune"
+              ],
+              "states": {
+                "B": 12,
+                "P": 1
+              }
+            }
+          },
+          "R8": {
+            "strict": {
+              "eligible": 13,
+              "bound": 2,
+              "eligible_ids": [
+                "addagada2026kvgov",
+                "chen2026sparleak",
+                "chu2025safekv",
+                "dangol2026workflow",
+                "earlybird2025",
+                "hadad2026shape",
+                "jeong2026wra",
+                "netecho2025",
+                "pouryousef2026traffic",
+                "spliceleak2026",
+                "timewilltell2024",
+                "whisperleak2025",
+                "wu2026cacheprune"
+              ],
+              "bound_ids": [
+                "chen2026sparleak",
+                "wu2026cacheprune"
+              ],
+              "states": {
+                "U": 9,
+                "B": 2,
+                "P": 2
+              }
+            },
+            "partial_accepted": {
+              "eligible": 13,
+              "bound": 4,
+              "eligible_ids": [
+                "addagada2026kvgov",
+                "chen2026sparleak",
+                "chu2025safekv",
+                "dangol2026workflow",
+                "earlybird2025",
+                "hadad2026shape",
+                "jeong2026wra",
+                "netecho2025",
+                "pouryousef2026traffic",
+                "spliceleak2026",
+                "timewilltell2024",
+                "whisperleak2025",
+                "wu2026cacheprune"
+              ],
+              "bound_ids": [
+                "chen2026sparleak",
+                "jeong2026wra",
+                "pouryousef2026traffic",
+                "wu2026cacheprune"
+              ],
+              "states": {
+                "U": 9,
+                "B": 2,
+                "P": 2
+              }
+            }
+          },
+          "R9": {
+            "strict": {
+              "eligible": 13,
+              "bound": 6,
+              "eligible_ids": [
+                "addagada2026kvgov",
+                "chen2026sparleak",
+                "chu2025safekv",
+                "dangol2026workflow",
+                "earlybird2025",
+                "hadad2026shape",
+                "jeong2026wra",
+                "netecho2025",
+                "pouryousef2026traffic",
+                "spliceleak2026",
+                "timewilltell2024",
+                "whisperleak2025",
+                "wu2026cacheprune"
+              ],
+              "bound_ids": [
+                "addagada2026kvgov",
+                "dangol2026workflow",
+                "earlybird2025",
+                "spliceleak2026",
+                "timewilltell2024",
+                "wu2026cacheprune"
+              ],
+              "states": {
+                "B": 6,
+                "U": 3,
+                "P": 4
+              }
+            },
+            "partial_accepted": {
+              "eligible": 13,
+              "bound": 10,
+              "eligible_ids": [
+                "addagada2026kvgov",
+                "chen2026sparleak",
+                "chu2025safekv",
+                "dangol2026workflow",
+                "earlybird2025",
+                "hadad2026shape",
+                "jeong2026wra",
+                "netecho2025",
+                "pouryousef2026traffic",
+                "spliceleak2026",
+                "timewilltell2024",
+                "whisperleak2025",
+                "wu2026cacheprune"
+              ],
+              "bound_ids": [
+                "addagada2026kvgov",
+                "chu2025safekv",
+                "dangol2026workflow",
+                "earlybird2025",
+                "hadad2026shape",
+                "netecho2025",
+                "spliceleak2026",
+                "timewilltell2024",
+                "whisperleak2025",
+                "wu2026cacheprune"
+              ],
+              "states": {
+                "B": 6,
+                "U": 3,
+                "P": 4
+              }
+            }
+          }
+        }
+      },
+      "joint_queries": {
+        "Inference + utility": {
+          "eligible": 20,
+          "bound": 3,
+          "partial_accepted": 5,
+          "eligible_ids": [
+            "CACHEPRUNE-context",
+            "CACHEPRUNE-selective",
+            "DANGOL-capture",
+            "DANGOL-livebinding",
+            "EARLY-K-calibration-oracle",
+            "KVGOV-partialflush-sim",
+            "NET-dummy-padding-simulation",
+            "NET-upstream-local",
+            "SAFE-post-trigger",
+            "SHAPE-padding-estimate",
+            "SPARLEAK-replacement",
+            "SPLICE-CTBF-signal",
+            "TIME-length-instruction",
+            "TRAFFIC-prompt-reformulation",
+            "TRAFFIC-temperature",
+            "UI-delay-offline",
+            "WHISPER-batching-replay",
+            "WHISPER-injection-replay",
+            "WHISPER-randompadding-capture",
+            "WRA-decoy-execution"
+          ],
+          "bound_ids": [
+            "CACHEPRUNE-context",
+            "CACHEPRUNE-selective",
+            "SPARLEAK-replacement"
+          ],
+          "partial_accepted_ids": [
+            "CACHEPRUNE-context",
+            "CACHEPRUNE-selective",
+            "SPARLEAK-replacement",
+            "TRAFFIC-prompt-reformulation",
+            "WRA-decoy-execution"
+          ],
+          "bound_family_ids": [
+            "chen2026sparleak",
+            "wu2026cacheprune"
+          ],
+          "bound_configurations": [
+            "CACHEPRUNE-default",
+            "SPARLEAK-replacement"
+          ],
+          "excluded_ids": [
+            "CARLINI-fixed-rate",
+            "EARLY-semantic-deidentification",
+            "GAO-zero-copy-off",
+            "KVGOV-HMAC-cost",
+            "KVGOV-hardware-gap",
+            "OTRO-epochpad",
+            "OTRO-unpadded",
+            "SPEC-padding-REST",
+            "SPLICE-QCP-cost",
+            "TDXRAY-oblivious-map",
+            "TIME-padding-estimate"
+          ]
+        },
+        "Inference + cost": {
+          "eligible": 21,
+          "bound": 5,
+          "partial_accepted": 11,
+          "eligible_ids": [
+            "CACHEPRUNE-context",
+            "CACHEPRUNE-selective",
+            "DANGOL-capture",
+            "DANGOL-livebinding",
+            "EARLY-K-calibration-oracle",
+            "KVGOV-partialflush-sim",
+            "NET-dummy-padding-simulation",
+            "NET-upstream-local",
+            "OTRO-epochpad",
+            "SAFE-post-trigger",
+            "SHAPE-padding-estimate",
+            "SPARLEAK-replacement",
+            "SPEC-padding-REST",
+            "SPLICE-CTBF-signal",
+            "TIME-length-instruction",
+            "TRAFFIC-prompt-reformulation",
+            "TRAFFIC-temperature",
+            "WHISPER-batching-replay",
+            "WHISPER-injection-replay",
+            "WHISPER-randompadding-capture",
+            "WRA-decoy-execution"
+          ],
+          "bound_ids": [
+            "CACHEPRUNE-context",
+            "CACHEPRUNE-selective",
+            "DANGOL-capture",
+            "DANGOL-livebinding",
+            "SPEC-padding-REST"
+          ],
+          "partial_accepted_ids": [
+            "CACHEPRUNE-context",
+            "CACHEPRUNE-selective",
+            "DANGOL-capture",
+            "DANGOL-livebinding",
+            "EARLY-K-calibration-oracle",
+            "NET-dummy-padding-simulation",
+            "OTRO-epochpad",
+            "SAFE-post-trigger",
+            "SHAPE-padding-estimate",
+            "SPEC-padding-REST",
+            "WHISPER-injection-replay"
+          ],
+          "bound_family_ids": [
+            "dangol2026workflow",
+            "wei2024speculation",
+            "wu2026cacheprune"
+          ],
+          "bound_configurations": [
+            "CACHEPRUNE-default",
+            "DANGOL-capture",
+            "DANGOL-livebinding",
+            "SPEC-padding-REST"
+          ],
+          "excluded_ids": [
+            "CARLINI-fixed-rate",
+            "EARLY-semantic-deidentification",
+            "GAO-zero-copy-off",
+            "KVGOV-HMAC-cost",
+            "KVGOV-hardware-gap",
+            "OTRO-unpadded",
+            "SPLICE-QCP-cost",
+            "TDXRAY-oblivious-map",
+            "TIME-padding-estimate",
+            "UI-delay-offline"
+          ]
+        },
+        "Matched adaptation + inference": {
+          "eligible": 15,
+          "bound": 2,
+          "partial_accepted": 2,
+          "eligible_ids": [
+            "DANGOL-capture",
+            "DANGOL-livebinding",
+            "EARLY-K-calibration-oracle",
+            "NET-dummy-padding-simulation",
+            "NET-upstream-local",
+            "SHAPE-padding-estimate",
+            "SPARLEAK-replacement",
+            "SPEC-padding-REST",
+            "TIME-length-instruction",
+            "TRAFFIC-prompt-reformulation",
+            "TRAFFIC-temperature",
+            "UI-delay-offline",
+            "WHISPER-batching-replay",
+            "WHISPER-injection-replay",
+            "WHISPER-randompadding-capture"
+          ],
+          "bound_ids": [
+            "DANGOL-capture",
+            "UI-delay-offline"
+          ],
+          "partial_accepted_ids": [
+            "DANGOL-capture",
+            "UI-delay-offline"
+          ],
+          "bound_family_ids": [
+            "dangol2026workflow",
+            "uitraces2026"
+          ],
+          "bound_configurations": [
+            "DANGOL-capture",
+            "UI-delay-offline"
+          ],
+          "excluded_ids": [
+            "CACHEPRUNE-context",
+            "CACHEPRUNE-selective",
+            "CARLINI-fixed-rate",
+            "EARLY-semantic-deidentification",
+            "GAO-zero-copy-off",
+            "KVGOV-HMAC-cost",
+            "KVGOV-hardware-gap",
+            "KVGOV-partialflush-sim",
+            "OTRO-epochpad",
+            "OTRO-unpadded",
+            "SAFE-post-trigger",
+            "SPLICE-CTBF-signal",
+            "SPLICE-QCP-cost",
+            "TDXRAY-oblivious-map",
+            "TIME-padding-estimate",
+            "WRA-decoy-execution"
+          ]
+        },
+        "Inference + utility + cost": {
+          "eligible": 19,
+          "bound": 2,
+          "partial_accepted": 2,
+          "eligible_ids": [
+            "CACHEPRUNE-context",
+            "CACHEPRUNE-selective",
+            "DANGOL-capture",
+            "DANGOL-livebinding",
+            "EARLY-K-calibration-oracle",
+            "KVGOV-partialflush-sim",
+            "NET-dummy-padding-simulation",
+            "NET-upstream-local",
+            "SAFE-post-trigger",
+            "SHAPE-padding-estimate",
+            "SPARLEAK-replacement",
+            "SPLICE-CTBF-signal",
+            "TIME-length-instruction",
+            "TRAFFIC-prompt-reformulation",
+            "TRAFFIC-temperature",
+            "WHISPER-batching-replay",
+            "WHISPER-injection-replay",
+            "WHISPER-randompadding-capture",
+            "WRA-decoy-execution"
+          ],
+          "bound_ids": [
+            "CACHEPRUNE-context",
+            "CACHEPRUNE-selective"
+          ],
+          "partial_accepted_ids": [
+            "CACHEPRUNE-context",
+            "CACHEPRUNE-selective"
+          ],
+          "bound_family_ids": [
+            "wu2026cacheprune"
+          ],
+          "bound_configurations": [
+            "CACHEPRUNE-default"
+          ],
+          "excluded_ids": [
+            "CARLINI-fixed-rate",
+            "EARLY-semantic-deidentification",
+            "GAO-zero-copy-off",
+            "KVGOV-HMAC-cost",
+            "KVGOV-hardware-gap",
+            "OTRO-epochpad",
+            "OTRO-unpadded",
+            "SPEC-padding-REST",
+            "SPLICE-QCP-cost",
+            "TDXRAY-oblivious-map",
+            "TIME-padding-estimate",
+            "UI-delay-offline"
+          ]
+        },
+        "All five bindings": {
+          "eligible": 13,
+          "bound": 0,
+          "partial_accepted": 0,
+          "eligible_ids": [
+            "DANGOL-capture",
+            "DANGOL-livebinding",
+            "EARLY-K-calibration-oracle",
+            "NET-dummy-padding-simulation",
+            "NET-upstream-local",
+            "SHAPE-padding-estimate",
+            "SPARLEAK-replacement",
+            "TIME-length-instruction",
+            "TRAFFIC-prompt-reformulation",
+            "TRAFFIC-temperature",
+            "WHISPER-batching-replay",
+            "WHISPER-injection-replay",
+            "WHISPER-randompadding-capture"
+          ],
+          "bound_ids": [],
+          "partial_accepted_ids": [],
+          "bound_family_ids": [],
+          "bound_configurations": [],
+          "excluded_ids": [
+            "CACHEPRUNE-context",
+            "CACHEPRUNE-selective",
+            "CARLINI-fixed-rate",
+            "EARLY-semantic-deidentification",
+            "GAO-zero-copy-off",
+            "KVGOV-HMAC-cost",
+            "KVGOV-hardware-gap",
+            "KVGOV-partialflush-sim",
+            "OTRO-epochpad",
+            "OTRO-unpadded",
+            "SAFE-post-trigger",
+            "SPEC-padding-REST",
+            "SPLICE-CTBF-signal",
+            "SPLICE-QCP-cost",
+            "TDXRAY-oblivious-map",
+            "TIME-padding-estimate",
+            "UI-delay-offline",
+            "WRA-decoy-execution"
+          ]
+        }
+      },
+      "modes": {
+        "Ex": [
+          "CACHEPRUNE-context",
+          "CACHEPRUNE-selective",
+          "DANGOL-livebinding",
+          "EARLY-semantic-deidentification",
+          "NET-upstream-local",
+          "SAFE-post-trigger",
+          "SPARLEAK-replacement",
+          "SPLICE-CTBF-signal",
+          "TIME-length-instruction",
+          "TRAFFIC-prompt-reformulation",
+          "TRAFFIC-temperature",
+          "WHISPER-randompadding-capture",
+          "WRA-decoy-execution"
+        ],
+        "Tr": [
+          "DANGOL-capture",
+          "NET-dummy-padding-simulation",
+          "UI-delay-offline",
+          "WHISPER-batching-replay",
+          "WHISPER-injection-replay"
+        ],
+        "Si": [
+          "EARLY-K-calibration-oracle",
+          "KVGOV-partialflush-sim",
+          "OTRO-epochpad",
+          "SHAPE-padding-estimate",
+          "TIME-padding-estimate"
+        ],
+        "Co": [
+          "GAO-zero-copy-off",
+          "KVGOV-HMAC-cost",
+          "KVGOV-hardware-gap",
+          "OTRO-unpadded",
+          "SPLICE-QCP-cost",
+          "TDXRAY-oblivious-map"
+        ],
+        "Un": [
+          "CARLINI-fixed-rate",
+          "SPEC-padding-REST"
+        ]
+      }
+    },
+    "without_CachePrune": {
+      "record_ids": [
+        "CARLINI-fixed-rate",
+        "DANGOL-capture",
+        "DANGOL-livebinding",
+        "EARLY-K-calibration-oracle",
+        "EARLY-semantic-deidentification",
+        "GAO-zero-copy-off",
+        "KVGOV-HMAC-cost",
+        "KVGOV-hardware-gap",
+        "KVGOV-partialflush-sim",
+        "NET-dummy-padding-simulation",
+        "NET-upstream-local",
+        "OTRO-epochpad",
+        "OTRO-unpadded",
+        "SAFE-post-trigger",
+        "SHAPE-padding-estimate",
+        "SPARLEAK-replacement",
+        "SPEC-padding-REST",
+        "SPLICE-CTBF-signal",
+        "SPLICE-QCP-cost",
+        "TDXRAY-oblivious-map",
+        "TIME-length-instruction",
+        "TIME-padding-estimate",
+        "TRAFFIC-prompt-reformulation",
+        "TRAFFIC-temperature",
+        "UI-delay-offline",
+        "WHISPER-batching-replay",
+        "WHISPER-injection-replay",
+        "WHISPER-randompadding-capture",
+        "WRA-decoy-execution"
+      ],
+      "family_ids": [
+        "addagada2026kvgov",
+        "carlini2024remote",
+        "chen2026sparleak",
+        "chu2025safekv",
+        "dangol2026workflow",
+        "earlybird2025",
+        "gao2025iknow",
+        "hadad2026shape",
+        "hornetz2026tdxray",
+        "jeong2026wra",
+        "lee2026otro",
+        "netecho2025",
+        "pouryousef2026traffic",
+        "spliceleak2026",
+        "timewilltell2024",
+        "uitraces2026",
+        "wei2024speculation",
+        "whisperleak2025"
+      ],
+      "projected_cells": {
+        "addagada2026kvgov": [
+          "B",
+          "B",
+          "B",
+          "--",
+          "--",
+          "B",
+          "B",
+          "U",
+          "B"
+        ],
+        "carlini2024remote": [
+          "B",
+          "B",
+          "P",
+          "--",
+          "--",
+          "B",
+          "--",
+          "U",
+          "B"
+        ],
+        "chen2026sparleak": [
+          "B",
+          "B",
+          "B",
+          "P",
+          "U",
+          "B",
+          "B",
+          "B",
+          "U"
+        ],
+        "chu2025safekv": [
+          "B",
+          "B",
+          "B",
+          "--",
+          "--",
+          "B",
+          "B",
+          "U",
+          "P"
+        ],
+        "dangol2026workflow": [
+          "B",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B",
+          "U",
+          "B"
+        ],
+        "earlybird2025": [
+          "B",
+          "B",
+          "B",
+          "B",
+          "?",
+          "B",
+          "B",
+          "U",
+          "B"
+        ],
+        "gao2025iknow": [
+          "B",
+          "B",
+          "B",
+          "--",
+          "--",
+          "P",
+          "--",
+          "--",
+          "B"
+        ],
+        "hadad2026shape": [
+          "B",
+          "B",
+          "P",
+          "U",
+          "U",
+          "B",
+          "P",
+          "U",
+          "P"
+        ],
+        "hornetz2026tdxray": [
+          "B",
+          "B",
+          "B",
+          "--",
+          "--",
+          "B",
+          "--",
+          "B",
+          "B"
+        ],
+        "jeong2026wra": [
+          "B",
+          "P",
+          "B",
+          "--",
+          "--",
+          "P",
+          "B",
+          "P",
+          "U"
+        ],
+        "lee2026otro": [
+          "B",
+          "B",
+          "B",
+          "--",
+          "--",
+          "B",
+          "B",
+          "--",
+          "B"
+        ],
+        "netecho2025": [
+          "B",
+          "B",
+          "B",
+          "B",
+          "?",
+          "B",
+          "B",
+          "U",
+          "P"
+        ],
+        "pouryousef2026traffic": [
+          "B",
+          "P",
+          "B",
+          "U",
+          "U",
+          "P",
+          "B",
+          "P",
+          "U"
+        ],
+        "spliceleak2026": [
+          "B",
+          "B",
+          "B",
+          "--",
+          "--",
+          "B",
+          "B",
+          "U",
+          "B"
+        ],
+        "timewilltell2024": [
+          "B",
+          "B",
+          "B",
+          "P",
+          "U",
+          "B",
+          "B",
+          "U",
+          "B"
+        ],
+        "uitraces2026": [
+          "B",
+          "P",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B",
+          "U",
+          "--"
+        ],
+        "wei2024speculation": [
+          "B",
+          "B",
+          "P",
+          "P",
+          "U",
+          "B",
+          "B",
+          "--",
+          "B"
+        ],
+        "whisperleak2025": [
+          "B",
+          "B",
+          "B",
+          "P",
+          "U",
+          "B",
+          "B",
+          "U",
+          "P"
+        ]
+      },
+      "fields": {
+        "R4": {
+          "strict": {
+            "eligible": 10,
+            "bound": 4,
+            "eligible_ids": [
+              "chen2026sparleak",
+              "dangol2026workflow",
+              "earlybird2025",
+              "hadad2026shape",
+              "netecho2025",
+              "pouryousef2026traffic",
+              "timewilltell2024",
+              "uitraces2026",
+              "wei2024speculation",
+              "whisperleak2025"
+            ],
+            "bound_ids": [
+              "dangol2026workflow",
+              "earlybird2025",
+              "netecho2025",
+              "uitraces2026"
+            ],
+            "states": {
+              "P": 4,
+              "B": 4,
+              "U": 2
+            }
+          },
+          "partial_accepted": {
+            "eligible": 10,
+            "bound": 8,
+            "eligible_ids": [
+              "chen2026sparleak",
+              "dangol2026workflow",
+              "earlybird2025",
+              "hadad2026shape",
+              "netecho2025",
+              "pouryousef2026traffic",
+              "timewilltell2024",
+              "uitraces2026",
+              "wei2024speculation",
+              "whisperleak2025"
+            ],
+            "bound_ids": [
+              "chen2026sparleak",
+              "dangol2026workflow",
+              "earlybird2025",
+              "netecho2025",
+              "timewilltell2024",
+              "uitraces2026",
+              "wei2024speculation",
+              "whisperleak2025"
+            ],
+            "states": {
+              "P": 4,
+              "B": 4,
+              "U": 2
+            }
+          }
+        },
+        "R5": {
+          "strict": {
+            "eligible": 10,
+            "bound": 2,
+            "eligible_ids": [
+              "chen2026sparleak",
+              "dangol2026workflow",
+              "earlybird2025",
+              "hadad2026shape",
+              "netecho2025",
+              "pouryousef2026traffic",
+              "timewilltell2024",
+              "uitraces2026",
+              "wei2024speculation",
+              "whisperleak2025"
+            ],
+            "bound_ids": [
+              "dangol2026workflow",
+              "uitraces2026"
+            ],
+            "states": {
+              "U": 6,
+              "B": 2,
+              "?": 2
+            }
+          },
+          "partial_accepted": {
+            "eligible": 10,
+            "bound": 2,
+            "eligible_ids": [
+              "chen2026sparleak",
+              "dangol2026workflow",
+              "earlybird2025",
+              "hadad2026shape",
+              "netecho2025",
+              "pouryousef2026traffic",
+              "timewilltell2024",
+              "uitraces2026",
+              "wei2024speculation",
+              "whisperleak2025"
+            ],
+            "bound_ids": [
+              "dangol2026workflow",
+              "uitraces2026"
+            ],
+            "states": {
+              "U": 6,
+              "B": 2,
+              "?": 2
+            }
+          }
+        },
+        "R7": {
+          "strict": {
+            "eligible": 15,
+            "bound": 14,
+            "eligible_ids": [
+              "addagada2026kvgov",
+              "chen2026sparleak",
+              "chu2025safekv",
+              "dangol2026workflow",
+              "earlybird2025",
+              "hadad2026shape",
+              "jeong2026wra",
+              "lee2026otro",
+              "netecho2025",
+              "pouryousef2026traffic",
+              "spliceleak2026",
+              "timewilltell2024",
+              "uitraces2026",
+              "wei2024speculation",
+              "whisperleak2025"
+            ],
+            "bound_ids": [
+              "addagada2026kvgov",
+              "chen2026sparleak",
+              "chu2025safekv",
+              "dangol2026workflow",
+              "earlybird2025",
+              "jeong2026wra",
+              "lee2026otro",
+              "netecho2025",
+              "pouryousef2026traffic",
+              "spliceleak2026",
+              "timewilltell2024",
+              "uitraces2026",
+              "wei2024speculation",
+              "whisperleak2025"
+            ],
+            "states": {
+              "B": 14,
+              "P": 1
+            }
+          },
+          "partial_accepted": {
+            "eligible": 15,
+            "bound": 15,
+            "eligible_ids": [
+              "addagada2026kvgov",
+              "chen2026sparleak",
+              "chu2025safekv",
+              "dangol2026workflow",
+              "earlybird2025",
+              "hadad2026shape",
+              "jeong2026wra",
+              "lee2026otro",
+              "netecho2025",
+              "pouryousef2026traffic",
+              "spliceleak2026",
+              "timewilltell2024",
+              "uitraces2026",
+              "wei2024speculation",
+              "whisperleak2025"
+            ],
+            "bound_ids": [
+              "addagada2026kvgov",
+              "chen2026sparleak",
+              "chu2025safekv",
+              "dangol2026workflow",
+              "earlybird2025",
+              "hadad2026shape",
+              "jeong2026wra",
+              "lee2026otro",
+              "netecho2025",
+              "pouryousef2026traffic",
+              "spliceleak2026",
+              "timewilltell2024",
+              "uitraces2026",
+              "wei2024speculation",
+              "whisperleak2025"
+            ],
+            "states": {
+              "B": 14,
+              "P": 1
+            }
+          }
+        },
+        "R8": {
+          "strict": {
+            "eligible": 15,
+            "bound": 2,
+            "eligible_ids": [
+              "addagada2026kvgov",
+              "carlini2024remote",
+              "chen2026sparleak",
+              "chu2025safekv",
+              "dangol2026workflow",
+              "earlybird2025",
+              "hadad2026shape",
+              "hornetz2026tdxray",
+              "jeong2026wra",
+              "netecho2025",
+              "pouryousef2026traffic",
+              "spliceleak2026",
+              "timewilltell2024",
+              "uitraces2026",
+              "whisperleak2025"
+            ],
+            "bound_ids": [
+              "chen2026sparleak",
+              "hornetz2026tdxray"
+            ],
+            "states": {
+              "U": 11,
+              "B": 2,
+              "P": 2
+            }
+          },
+          "partial_accepted": {
+            "eligible": 15,
+            "bound": 4,
+            "eligible_ids": [
+              "addagada2026kvgov",
+              "carlini2024remote",
+              "chen2026sparleak",
+              "chu2025safekv",
+              "dangol2026workflow",
+              "earlybird2025",
+              "hadad2026shape",
+              "hornetz2026tdxray",
+              "jeong2026wra",
+              "netecho2025",
+              "pouryousef2026traffic",
+              "spliceleak2026",
+              "timewilltell2024",
+              "uitraces2026",
+              "whisperleak2025"
+            ],
+            "bound_ids": [
+              "chen2026sparleak",
+              "hornetz2026tdxray",
+              "jeong2026wra",
+              "pouryousef2026traffic"
+            ],
+            "states": {
+              "U": 11,
+              "B": 2,
+              "P": 2
+            }
+          }
+        },
+        "R9": {
+          "strict": {
+            "eligible": 17,
+            "bound": 10,
+            "eligible_ids": [
+              "addagada2026kvgov",
+              "carlini2024remote",
+              "chen2026sparleak",
+              "chu2025safekv",
+              "dangol2026workflow",
+              "earlybird2025",
+              "gao2025iknow",
+              "hadad2026shape",
+              "hornetz2026tdxray",
+              "jeong2026wra",
+              "lee2026otro",
+              "netecho2025",
+              "pouryousef2026traffic",
+              "spliceleak2026",
+              "timewilltell2024",
+              "wei2024speculation",
+              "whisperleak2025"
+            ],
+            "bound_ids": [
+              "addagada2026kvgov",
+              "carlini2024remote",
+              "dangol2026workflow",
+              "earlybird2025",
+              "gao2025iknow",
+              "hornetz2026tdxray",
+              "lee2026otro",
+              "spliceleak2026",
+              "timewilltell2024",
+              "wei2024speculation"
+            ],
+            "states": {
+              "B": 10,
+              "U": 3,
+              "P": 4
+            }
+          },
+          "partial_accepted": {
+            "eligible": 17,
+            "bound": 14,
+            "eligible_ids": [
+              "addagada2026kvgov",
+              "carlini2024remote",
+              "chen2026sparleak",
+              "chu2025safekv",
+              "dangol2026workflow",
+              "earlybird2025",
+              "gao2025iknow",
+              "hadad2026shape",
+              "hornetz2026tdxray",
+              "jeong2026wra",
+              "lee2026otro",
+              "netecho2025",
+              "pouryousef2026traffic",
+              "spliceleak2026",
+              "timewilltell2024",
+              "wei2024speculation",
+              "whisperleak2025"
+            ],
+            "bound_ids": [
+              "addagada2026kvgov",
+              "carlini2024remote",
+              "chu2025safekv",
+              "dangol2026workflow",
+              "earlybird2025",
+              "gao2025iknow",
+              "hadad2026shape",
+              "hornetz2026tdxray",
+              "lee2026otro",
+              "netecho2025",
+              "spliceleak2026",
+              "timewilltell2024",
+              "wei2024speculation",
+              "whisperleak2025"
+            ],
+            "states": {
+              "B": 10,
+              "U": 3,
+              "P": 4
+            }
+          }
+        }
+      },
+      "common_R7_R8_R9": {
+        "family_ids": [
+          "addagada2026kvgov",
+          "chen2026sparleak",
+          "chu2025safekv",
+          "dangol2026workflow",
+          "earlybird2025",
+          "hadad2026shape",
+          "jeong2026wra",
+          "netecho2025",
+          "pouryousef2026traffic",
+          "spliceleak2026",
+          "timewilltell2024",
+          "whisperleak2025"
+        ],
+        "fields": {
+          "R7": {
+            "strict": {
+              "eligible": 12,
+              "bound": 11,
+              "eligible_ids": [
+                "addagada2026kvgov",
+                "chen2026sparleak",
+                "chu2025safekv",
+                "dangol2026workflow",
+                "earlybird2025",
+                "hadad2026shape",
+                "jeong2026wra",
+                "netecho2025",
+                "pouryousef2026traffic",
+                "spliceleak2026",
+                "timewilltell2024",
+                "whisperleak2025"
+              ],
+              "bound_ids": [
+                "addagada2026kvgov",
+                "chen2026sparleak",
+                "chu2025safekv",
+                "dangol2026workflow",
+                "earlybird2025",
+                "jeong2026wra",
+                "netecho2025",
+                "pouryousef2026traffic",
+                "spliceleak2026",
+                "timewilltell2024",
+                "whisperleak2025"
+              ],
+              "states": {
+                "B": 11,
+                "P": 1
+              }
+            },
+            "partial_accepted": {
+              "eligible": 12,
+              "bound": 12,
+              "eligible_ids": [
+                "addagada2026kvgov",
+                "chen2026sparleak",
+                "chu2025safekv",
+                "dangol2026workflow",
+                "earlybird2025",
+                "hadad2026shape",
+                "jeong2026wra",
+                "netecho2025",
+                "pouryousef2026traffic",
+                "spliceleak2026",
+                "timewilltell2024",
+                "whisperleak2025"
+              ],
+              "bound_ids": [
+                "addagada2026kvgov",
+                "chen2026sparleak",
+                "chu2025safekv",
+                "dangol2026workflow",
+                "earlybird2025",
+                "hadad2026shape",
+                "jeong2026wra",
+                "netecho2025",
+                "pouryousef2026traffic",
+                "spliceleak2026",
+                "timewilltell2024",
+                "whisperleak2025"
+              ],
+              "states": {
+                "B": 11,
+                "P": 1
+              }
+            }
+          },
+          "R8": {
+            "strict": {
+              "eligible": 12,
+              "bound": 1,
+              "eligible_ids": [
+                "addagada2026kvgov",
+                "chen2026sparleak",
+                "chu2025safekv",
+                "dangol2026workflow",
+                "earlybird2025",
+                "hadad2026shape",
+                "jeong2026wra",
+                "netecho2025",
+                "pouryousef2026traffic",
+                "spliceleak2026",
+                "timewilltell2024",
+                "whisperleak2025"
+              ],
+              "bound_ids": [
+                "chen2026sparleak"
+              ],
+              "states": {
+                "U": 9,
+                "B": 1,
+                "P": 2
+              }
+            },
+            "partial_accepted": {
+              "eligible": 12,
+              "bound": 3,
+              "eligible_ids": [
+                "addagada2026kvgov",
+                "chen2026sparleak",
+                "chu2025safekv",
+                "dangol2026workflow",
+                "earlybird2025",
+                "hadad2026shape",
+                "jeong2026wra",
+                "netecho2025",
+                "pouryousef2026traffic",
+                "spliceleak2026",
+                "timewilltell2024",
+                "whisperleak2025"
+              ],
+              "bound_ids": [
+                "chen2026sparleak",
+                "jeong2026wra",
+                "pouryousef2026traffic"
+              ],
+              "states": {
+                "U": 9,
+                "B": 1,
+                "P": 2
+              }
+            }
+          },
+          "R9": {
+            "strict": {
+              "eligible": 12,
+              "bound": 5,
+              "eligible_ids": [
+                "addagada2026kvgov",
+                "chen2026sparleak",
+                "chu2025safekv",
+                "dangol2026workflow",
+                "earlybird2025",
+                "hadad2026shape",
+                "jeong2026wra",
+                "netecho2025",
+                "pouryousef2026traffic",
+                "spliceleak2026",
+                "timewilltell2024",
+                "whisperleak2025"
+              ],
+              "bound_ids": [
+                "addagada2026kvgov",
+                "dangol2026workflow",
+                "earlybird2025",
+                "spliceleak2026",
+                "timewilltell2024"
+              ],
+              "states": {
+                "B": 5,
+                "U": 3,
+                "P": 4
+              }
+            },
+            "partial_accepted": {
+              "eligible": 12,
+              "bound": 9,
+              "eligible_ids": [
+                "addagada2026kvgov",
+                "chen2026sparleak",
+                "chu2025safekv",
+                "dangol2026workflow",
+                "earlybird2025",
+                "hadad2026shape",
+                "jeong2026wra",
+                "netecho2025",
+                "pouryousef2026traffic",
+                "spliceleak2026",
+                "timewilltell2024",
+                "whisperleak2025"
+              ],
+              "bound_ids": [
+                "addagada2026kvgov",
+                "chu2025safekv",
+                "dangol2026workflow",
+                "earlybird2025",
+                "hadad2026shape",
+                "netecho2025",
+                "spliceleak2026",
+                "timewilltell2024",
+                "whisperleak2025"
+              ],
+              "states": {
+                "B": 5,
+                "U": 3,
+                "P": 4
+              }
+            }
+          }
+        }
+      },
+      "joint_queries": {
+        "Inference + utility": {
+          "eligible": 18,
+          "bound": 1,
+          "partial_accepted": 3,
+          "eligible_ids": [
+            "DANGOL-capture",
+            "DANGOL-livebinding",
+            "EARLY-K-calibration-oracle",
+            "KVGOV-partialflush-sim",
+            "NET-dummy-padding-simulation",
+            "NET-upstream-local",
+            "SAFE-post-trigger",
+            "SHAPE-padding-estimate",
+            "SPARLEAK-replacement",
+            "SPLICE-CTBF-signal",
+            "TIME-length-instruction",
+            "TRAFFIC-prompt-reformulation",
+            "TRAFFIC-temperature",
+            "UI-delay-offline",
+            "WHISPER-batching-replay",
+            "WHISPER-injection-replay",
+            "WHISPER-randompadding-capture",
+            "WRA-decoy-execution"
+          ],
+          "bound_ids": [
+            "SPARLEAK-replacement"
+          ],
+          "partial_accepted_ids": [
+            "SPARLEAK-replacement",
+            "TRAFFIC-prompt-reformulation",
+            "WRA-decoy-execution"
+          ],
+          "bound_family_ids": [
+            "chen2026sparleak"
+          ],
+          "bound_configurations": [
+            "SPARLEAK-replacement"
+          ],
+          "excluded_ids": [
+            "CARLINI-fixed-rate",
+            "EARLY-semantic-deidentification",
+            "GAO-zero-copy-off",
+            "KVGOV-HMAC-cost",
+            "KVGOV-hardware-gap",
+            "OTRO-epochpad",
+            "OTRO-unpadded",
+            "SPEC-padding-REST",
+            "SPLICE-QCP-cost",
+            "TDXRAY-oblivious-map",
+            "TIME-padding-estimate"
+          ]
+        },
+        "Inference + cost": {
+          "eligible": 19,
+          "bound": 3,
+          "partial_accepted": 9,
+          "eligible_ids": [
+            "DANGOL-capture",
+            "DANGOL-livebinding",
+            "EARLY-K-calibration-oracle",
+            "KVGOV-partialflush-sim",
+            "NET-dummy-padding-simulation",
+            "NET-upstream-local",
+            "OTRO-epochpad",
+            "SAFE-post-trigger",
+            "SHAPE-padding-estimate",
+            "SPARLEAK-replacement",
+            "SPEC-padding-REST",
+            "SPLICE-CTBF-signal",
+            "TIME-length-instruction",
+            "TRAFFIC-prompt-reformulation",
+            "TRAFFIC-temperature",
+            "WHISPER-batching-replay",
+            "WHISPER-injection-replay",
+            "WHISPER-randompadding-capture",
+            "WRA-decoy-execution"
+          ],
+          "bound_ids": [
+            "DANGOL-capture",
+            "DANGOL-livebinding",
+            "SPEC-padding-REST"
+          ],
+          "partial_accepted_ids": [
+            "DANGOL-capture",
+            "DANGOL-livebinding",
+            "EARLY-K-calibration-oracle",
+            "NET-dummy-padding-simulation",
+            "OTRO-epochpad",
+            "SAFE-post-trigger",
+            "SHAPE-padding-estimate",
+            "SPEC-padding-REST",
+            "WHISPER-injection-replay"
+          ],
+          "bound_family_ids": [
+            "dangol2026workflow",
+            "wei2024speculation"
+          ],
+          "bound_configurations": [
+            "DANGOL-capture",
+            "DANGOL-livebinding",
+            "SPEC-padding-REST"
+          ],
+          "excluded_ids": [
+            "CARLINI-fixed-rate",
+            "EARLY-semantic-deidentification",
+            "GAO-zero-copy-off",
+            "KVGOV-HMAC-cost",
+            "KVGOV-hardware-gap",
+            "OTRO-unpadded",
+            "SPLICE-QCP-cost",
+            "TDXRAY-oblivious-map",
+            "TIME-padding-estimate",
+            "UI-delay-offline"
+          ]
+        },
+        "Matched adaptation + inference": {
+          "eligible": 15,
+          "bound": 2,
+          "partial_accepted": 2,
+          "eligible_ids": [
+            "DANGOL-capture",
+            "DANGOL-livebinding",
+            "EARLY-K-calibration-oracle",
+            "NET-dummy-padding-simulation",
+            "NET-upstream-local",
+            "SHAPE-padding-estimate",
+            "SPARLEAK-replacement",
+            "SPEC-padding-REST",
+            "TIME-length-instruction",
+            "TRAFFIC-prompt-reformulation",
+            "TRAFFIC-temperature",
+            "UI-delay-offline",
+            "WHISPER-batching-replay",
+            "WHISPER-injection-replay",
+            "WHISPER-randompadding-capture"
+          ],
+          "bound_ids": [
+            "DANGOL-capture",
+            "UI-delay-offline"
+          ],
+          "partial_accepted_ids": [
+            "DANGOL-capture",
+            "UI-delay-offline"
+          ],
+          "bound_family_ids": [
+            "dangol2026workflow",
+            "uitraces2026"
+          ],
+          "bound_configurations": [
+            "DANGOL-capture",
+            "UI-delay-offline"
+          ],
+          "excluded_ids": [
+            "CARLINI-fixed-rate",
+            "EARLY-semantic-deidentification",
+            "GAO-zero-copy-off",
+            "KVGOV-HMAC-cost",
+            "KVGOV-hardware-gap",
+            "KVGOV-partialflush-sim",
+            "OTRO-epochpad",
+            "OTRO-unpadded",
+            "SAFE-post-trigger",
+            "SPLICE-CTBF-signal",
+            "SPLICE-QCP-cost",
+            "TDXRAY-oblivious-map",
+            "TIME-padding-estimate",
+            "WRA-decoy-execution"
+          ]
+        },
+        "Inference + utility + cost": {
+          "eligible": 17,
+          "bound": 0,
+          "partial_accepted": 0,
+          "eligible_ids": [
+            "DANGOL-capture",
+            "DANGOL-livebinding",
+            "EARLY-K-calibration-oracle",
+            "KVGOV-partialflush-sim",
+            "NET-dummy-padding-simulation",
+            "NET-upstream-local",
+            "SAFE-post-trigger",
+            "SHAPE-padding-estimate",
+            "SPARLEAK-replacement",
+            "SPLICE-CTBF-signal",
+            "TIME-length-instruction",
+            "TRAFFIC-prompt-reformulation",
+            "TRAFFIC-temperature",
+            "WHISPER-batching-replay",
+            "WHISPER-injection-replay",
+            "WHISPER-randompadding-capture",
+            "WRA-decoy-execution"
+          ],
+          "bound_ids": [],
+          "partial_accepted_ids": [],
+          "bound_family_ids": [],
+          "bound_configurations": [],
+          "excluded_ids": [
+            "CARLINI-fixed-rate",
+            "EARLY-semantic-deidentification",
+            "GAO-zero-copy-off",
+            "KVGOV-HMAC-cost",
+            "KVGOV-hardware-gap",
+            "OTRO-epochpad",
+            "OTRO-unpadded",
+            "SPEC-padding-REST",
+            "SPLICE-QCP-cost",
+            "TDXRAY-oblivious-map",
+            "TIME-padding-estimate",
+            "UI-delay-offline"
+          ]
+        },
+        "All five bindings": {
+          "eligible": 13,
+          "bound": 0,
+          "partial_accepted": 0,
+          "eligible_ids": [
+            "DANGOL-capture",
+            "DANGOL-livebinding",
+            "EARLY-K-calibration-oracle",
+            "NET-dummy-padding-simulation",
+            "NET-upstream-local",
+            "SHAPE-padding-estimate",
+            "SPARLEAK-replacement",
+            "TIME-length-instruction",
+            "TRAFFIC-prompt-reformulation",
+            "TRAFFIC-temperature",
+            "WHISPER-batching-replay",
+            "WHISPER-injection-replay",
+            "WHISPER-randompadding-capture"
+          ],
+          "bound_ids": [],
+          "partial_accepted_ids": [],
+          "bound_family_ids": [],
+          "bound_configurations": [],
+          "excluded_ids": [
+            "CARLINI-fixed-rate",
+            "EARLY-semantic-deidentification",
+            "GAO-zero-copy-off",
+            "KVGOV-HMAC-cost",
+            "KVGOV-hardware-gap",
+            "KVGOV-partialflush-sim",
+            "OTRO-epochpad",
+            "OTRO-unpadded",
+            "SAFE-post-trigger",
+            "SPEC-padding-REST",
+            "SPLICE-CTBF-signal",
+            "SPLICE-QCP-cost",
+            "TDXRAY-oblivious-map",
+            "TIME-padding-estimate",
+            "UI-delay-offline",
+            "WRA-decoy-execution"
+          ]
+        }
+      },
+      "modes": {
+        "Ex": [
+          "DANGOL-livebinding",
+          "EARLY-semantic-deidentification",
+          "NET-upstream-local",
+          "SAFE-post-trigger",
+          "SPARLEAK-replacement",
+          "SPLICE-CTBF-signal",
+          "TIME-length-instruction",
+          "TRAFFIC-prompt-reformulation",
+          "TRAFFIC-temperature",
+          "WHISPER-randompadding-capture",
+          "WRA-decoy-execution"
+        ],
+        "Tr": [
+          "DANGOL-capture",
+          "NET-dummy-padding-simulation",
+          "UI-delay-offline",
+          "WHISPER-batching-replay",
+          "WHISPER-injection-replay"
+        ],
+        "Si": [
+          "EARLY-K-calibration-oracle",
+          "KVGOV-partialflush-sim",
+          "OTRO-epochpad",
+          "SHAPE-padding-estimate",
+          "TIME-padding-estimate"
+        ],
+        "Co": [
+          "GAO-zero-copy-off",
+          "KVGOV-HMAC-cost",
+          "KVGOV-hardware-gap",
+          "OTRO-unpadded",
+          "SPLICE-QCP-cost",
+          "TDXRAY-oblivious-map"
+        ],
+        "Un": [
+          "CARLINI-fixed-rate",
+          "SPEC-padding-REST"
+        ]
+      }
+    },
+    "without_final_search": {
+      "record_ids": [
+        "CARLINI-fixed-rate",
+        "DANGOL-capture",
+        "DANGOL-livebinding",
+        "EARLY-K-calibration-oracle",
+        "EARLY-semantic-deidentification",
+        "GAO-zero-copy-off",
+        "KVGOV-HMAC-cost",
+        "KVGOV-hardware-gap",
+        "KVGOV-partialflush-sim",
+        "NET-dummy-padding-simulation",
+        "NET-upstream-local",
+        "SAFE-post-trigger",
+        "SPEC-padding-REST",
+        "SPLICE-CTBF-signal",
+        "SPLICE-QCP-cost",
+        "TDXRAY-oblivious-map",
+        "TIME-length-instruction",
+        "TIME-padding-estimate",
+        "TRAFFIC-prompt-reformulation",
+        "TRAFFIC-temperature",
+        "UI-delay-offline",
+        "WHISPER-batching-replay",
+        "WHISPER-injection-replay",
+        "WHISPER-randompadding-capture",
+        "WRA-decoy-execution"
+      ],
+      "family_ids": [
+        "addagada2026kvgov",
+        "carlini2024remote",
+        "chu2025safekv",
+        "dangol2026workflow",
+        "earlybird2025",
+        "gao2025iknow",
+        "hornetz2026tdxray",
+        "jeong2026wra",
+        "netecho2025",
+        "pouryousef2026traffic",
+        "spliceleak2026",
+        "timewilltell2024",
+        "uitraces2026",
+        "wei2024speculation",
+        "whisperleak2025"
+      ],
+      "projected_cells": {
+        "addagada2026kvgov": [
+          "B",
+          "B",
+          "B",
+          "--",
+          "--",
+          "B",
+          "B",
+          "U",
+          "B"
+        ],
+        "carlini2024remote": [
+          "B",
+          "B",
+          "P",
+          "--",
+          "--",
+          "B",
+          "--",
+          "U",
+          "B"
+        ],
+        "chu2025safekv": [
+          "B",
+          "B",
+          "B",
+          "--",
+          "--",
+          "B",
+          "B",
+          "U",
+          "P"
+        ],
+        "dangol2026workflow": [
+          "B",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B",
+          "U",
+          "B"
+        ],
+        "earlybird2025": [
+          "B",
+          "B",
+          "B",
+          "B",
+          "?",
+          "B",
+          "B",
+          "U",
+          "B"
+        ],
+        "gao2025iknow": [
+          "B",
+          "B",
+          "B",
+          "--",
+          "--",
+          "P",
+          "--",
+          "--",
+          "B"
+        ],
+        "hornetz2026tdxray": [
+          "B",
+          "B",
+          "B",
+          "--",
+          "--",
+          "B",
+          "--",
+          "B",
+          "B"
+        ],
+        "jeong2026wra": [
+          "B",
+          "P",
+          "B",
+          "--",
+          "--",
+          "P",
+          "B",
+          "P",
+          "U"
+        ],
+        "netecho2025": [
+          "B",
+          "B",
+          "B",
+          "B",
+          "?",
+          "B",
+          "B",
+          "U",
+          "P"
+        ],
+        "pouryousef2026traffic": [
+          "B",
+          "P",
+          "B",
+          "U",
+          "U",
+          "P",
+          "B",
+          "P",
+          "U"
+        ],
+        "spliceleak2026": [
+          "B",
+          "B",
+          "B",
+          "--",
+          "--",
+          "B",
+          "B",
+          "U",
+          "B"
+        ],
+        "timewilltell2024": [
+          "B",
+          "B",
+          "B",
+          "P",
+          "U",
+          "B",
+          "B",
+          "U",
+          "B"
+        ],
+        "uitraces2026": [
+          "B",
+          "P",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B",
+          "U",
+          "--"
+        ],
+        "wei2024speculation": [
+          "B",
+          "B",
+          "P",
+          "P",
+          "U",
+          "B",
+          "B",
+          "--",
+          "B"
+        ],
+        "whisperleak2025": [
+          "B",
+          "B",
+          "B",
+          "P",
+          "U",
+          "B",
+          "B",
+          "U",
+          "P"
+        ]
+      },
+      "fields": {
+        "R4": {
+          "strict": {
+            "eligible": 8,
+            "bound": 4,
+            "eligible_ids": [
+              "dangol2026workflow",
+              "earlybird2025",
+              "netecho2025",
+              "pouryousef2026traffic",
+              "timewilltell2024",
+              "uitraces2026",
+              "wei2024speculation",
+              "whisperleak2025"
+            ],
+            "bound_ids": [
+              "dangol2026workflow",
+              "earlybird2025",
+              "netecho2025",
+              "uitraces2026"
+            ],
+            "states": {
+              "B": 4,
+              "U": 1,
+              "P": 3
+            }
+          },
+          "partial_accepted": {
+            "eligible": 8,
+            "bound": 7,
+            "eligible_ids": [
+              "dangol2026workflow",
+              "earlybird2025",
+              "netecho2025",
+              "pouryousef2026traffic",
+              "timewilltell2024",
+              "uitraces2026",
+              "wei2024speculation",
+              "whisperleak2025"
+            ],
+            "bound_ids": [
+              "dangol2026workflow",
+              "earlybird2025",
+              "netecho2025",
+              "timewilltell2024",
+              "uitraces2026",
+              "wei2024speculation",
+              "whisperleak2025"
+            ],
+            "states": {
+              "B": 4,
+              "U": 1,
+              "P": 3
+            }
+          }
+        },
+        "R5": {
+          "strict": {
+            "eligible": 8,
+            "bound": 2,
+            "eligible_ids": [
+              "dangol2026workflow",
+              "earlybird2025",
+              "netecho2025",
+              "pouryousef2026traffic",
+              "timewilltell2024",
+              "uitraces2026",
+              "wei2024speculation",
+              "whisperleak2025"
+            ],
+            "bound_ids": [
+              "dangol2026workflow",
+              "uitraces2026"
+            ],
+            "states": {
+              "B": 2,
+              "?": 2,
+              "U": 4
+            }
+          },
+          "partial_accepted": {
+            "eligible": 8,
+            "bound": 2,
+            "eligible_ids": [
+              "dangol2026workflow",
+              "earlybird2025",
+              "netecho2025",
+              "pouryousef2026traffic",
+              "timewilltell2024",
+              "uitraces2026",
+              "wei2024speculation",
+              "whisperleak2025"
+            ],
+            "bound_ids": [
+              "dangol2026workflow",
+              "uitraces2026"
+            ],
+            "states": {
+              "B": 2,
+              "?": 2,
+              "U": 4
+            }
+          }
+        },
+        "R7": {
+          "strict": {
+            "eligible": 12,
+            "bound": 12,
+            "eligible_ids": [
+              "addagada2026kvgov",
+              "chu2025safekv",
+              "dangol2026workflow",
+              "earlybird2025",
+              "jeong2026wra",
+              "netecho2025",
+              "pouryousef2026traffic",
+              "spliceleak2026",
+              "timewilltell2024",
+              "uitraces2026",
+              "wei2024speculation",
+              "whisperleak2025"
+            ],
+            "bound_ids": [
+              "addagada2026kvgov",
+              "chu2025safekv",
+              "dangol2026workflow",
+              "earlybird2025",
+              "jeong2026wra",
+              "netecho2025",
+              "pouryousef2026traffic",
+              "spliceleak2026",
+              "timewilltell2024",
+              "uitraces2026",
+              "wei2024speculation",
+              "whisperleak2025"
+            ],
+            "states": {
+              "B": 12
+            }
+          },
+          "partial_accepted": {
+            "eligible": 12,
+            "bound": 12,
+            "eligible_ids": [
+              "addagada2026kvgov",
+              "chu2025safekv",
+              "dangol2026workflow",
+              "earlybird2025",
+              "jeong2026wra",
+              "netecho2025",
+              "pouryousef2026traffic",
+              "spliceleak2026",
+              "timewilltell2024",
+              "uitraces2026",
+              "wei2024speculation",
+              "whisperleak2025"
+            ],
+            "bound_ids": [
+              "addagada2026kvgov",
+              "chu2025safekv",
+              "dangol2026workflow",
+              "earlybird2025",
+              "jeong2026wra",
+              "netecho2025",
+              "pouryousef2026traffic",
+              "spliceleak2026",
+              "timewilltell2024",
+              "uitraces2026",
+              "wei2024speculation",
+              "whisperleak2025"
+            ],
+            "states": {
+              "B": 12
+            }
+          }
+        },
+        "R8": {
+          "strict": {
+            "eligible": 13,
+            "bound": 1,
+            "eligible_ids": [
+              "addagada2026kvgov",
+              "carlini2024remote",
+              "chu2025safekv",
+              "dangol2026workflow",
+              "earlybird2025",
+              "hornetz2026tdxray",
+              "jeong2026wra",
+              "netecho2025",
+              "pouryousef2026traffic",
+              "spliceleak2026",
+              "timewilltell2024",
+              "uitraces2026",
+              "whisperleak2025"
+            ],
+            "bound_ids": [
+              "hornetz2026tdxray"
+            ],
+            "states": {
+              "U": 10,
+              "B": 1,
+              "P": 2
+            }
+          },
+          "partial_accepted": {
+            "eligible": 13,
+            "bound": 3,
+            "eligible_ids": [
+              "addagada2026kvgov",
+              "carlini2024remote",
+              "chu2025safekv",
+              "dangol2026workflow",
+              "earlybird2025",
+              "hornetz2026tdxray",
+              "jeong2026wra",
+              "netecho2025",
+              "pouryousef2026traffic",
+              "spliceleak2026",
+              "timewilltell2024",
+              "uitraces2026",
+              "whisperleak2025"
+            ],
+            "bound_ids": [
+              "hornetz2026tdxray",
+              "jeong2026wra",
+              "pouryousef2026traffic"
+            ],
+            "states": {
+              "U": 10,
+              "B": 1,
+              "P": 2
+            }
+          }
+        },
+        "R9": {
+          "strict": {
+            "eligible": 14,
+            "bound": 9,
+            "eligible_ids": [
+              "addagada2026kvgov",
+              "carlini2024remote",
+              "chu2025safekv",
+              "dangol2026workflow",
+              "earlybird2025",
+              "gao2025iknow",
+              "hornetz2026tdxray",
+              "jeong2026wra",
+              "netecho2025",
+              "pouryousef2026traffic",
+              "spliceleak2026",
+              "timewilltell2024",
+              "wei2024speculation",
+              "whisperleak2025"
+            ],
+            "bound_ids": [
+              "addagada2026kvgov",
+              "carlini2024remote",
+              "dangol2026workflow",
+              "earlybird2025",
+              "gao2025iknow",
+              "hornetz2026tdxray",
+              "spliceleak2026",
+              "timewilltell2024",
+              "wei2024speculation"
+            ],
+            "states": {
+              "B": 9,
+              "P": 3,
+              "U": 2
+            }
+          },
+          "partial_accepted": {
+            "eligible": 14,
+            "bound": 12,
+            "eligible_ids": [
+              "addagada2026kvgov",
+              "carlini2024remote",
+              "chu2025safekv",
+              "dangol2026workflow",
+              "earlybird2025",
+              "gao2025iknow",
+              "hornetz2026tdxray",
+              "jeong2026wra",
+              "netecho2025",
+              "pouryousef2026traffic",
+              "spliceleak2026",
+              "timewilltell2024",
+              "wei2024speculation",
+              "whisperleak2025"
+            ],
+            "bound_ids": [
+              "addagada2026kvgov",
+              "carlini2024remote",
+              "chu2025safekv",
+              "dangol2026workflow",
+              "earlybird2025",
+              "gao2025iknow",
+              "hornetz2026tdxray",
+              "netecho2025",
+              "spliceleak2026",
+              "timewilltell2024",
+              "wei2024speculation",
+              "whisperleak2025"
+            ],
+            "states": {
+              "B": 9,
+              "P": 3,
+              "U": 2
+            }
+          }
+        }
+      },
+      "common_R7_R8_R9": {
+        "family_ids": [
+          "addagada2026kvgov",
+          "chu2025safekv",
+          "dangol2026workflow",
+          "earlybird2025",
+          "jeong2026wra",
+          "netecho2025",
+          "pouryousef2026traffic",
+          "spliceleak2026",
+          "timewilltell2024",
+          "whisperleak2025"
+        ],
+        "fields": {
+          "R7": {
+            "strict": {
+              "eligible": 10,
+              "bound": 10,
+              "eligible_ids": [
+                "addagada2026kvgov",
+                "chu2025safekv",
+                "dangol2026workflow",
+                "earlybird2025",
+                "jeong2026wra",
+                "netecho2025",
+                "pouryousef2026traffic",
+                "spliceleak2026",
+                "timewilltell2024",
+                "whisperleak2025"
+              ],
+              "bound_ids": [
+                "addagada2026kvgov",
+                "chu2025safekv",
+                "dangol2026workflow",
+                "earlybird2025",
+                "jeong2026wra",
+                "netecho2025",
+                "pouryousef2026traffic",
+                "spliceleak2026",
+                "timewilltell2024",
+                "whisperleak2025"
+              ],
+              "states": {
+                "B": 10
+              }
+            },
+            "partial_accepted": {
+              "eligible": 10,
+              "bound": 10,
+              "eligible_ids": [
+                "addagada2026kvgov",
+                "chu2025safekv",
+                "dangol2026workflow",
+                "earlybird2025",
+                "jeong2026wra",
+                "netecho2025",
+                "pouryousef2026traffic",
+                "spliceleak2026",
+                "timewilltell2024",
+                "whisperleak2025"
+              ],
+              "bound_ids": [
+                "addagada2026kvgov",
+                "chu2025safekv",
+                "dangol2026workflow",
+                "earlybird2025",
+                "jeong2026wra",
+                "netecho2025",
+                "pouryousef2026traffic",
+                "spliceleak2026",
+                "timewilltell2024",
+                "whisperleak2025"
+              ],
+              "states": {
+                "B": 10
+              }
+            }
+          },
+          "R8": {
+            "strict": {
+              "eligible": 10,
+              "bound": 0,
+              "eligible_ids": [
+                "addagada2026kvgov",
+                "chu2025safekv",
+                "dangol2026workflow",
+                "earlybird2025",
+                "jeong2026wra",
+                "netecho2025",
+                "pouryousef2026traffic",
+                "spliceleak2026",
+                "timewilltell2024",
+                "whisperleak2025"
+              ],
+              "bound_ids": [],
+              "states": {
+                "U": 8,
+                "P": 2
+              }
+            },
+            "partial_accepted": {
+              "eligible": 10,
+              "bound": 2,
+              "eligible_ids": [
+                "addagada2026kvgov",
+                "chu2025safekv",
+                "dangol2026workflow",
+                "earlybird2025",
+                "jeong2026wra",
+                "netecho2025",
+                "pouryousef2026traffic",
+                "spliceleak2026",
+                "timewilltell2024",
+                "whisperleak2025"
+              ],
+              "bound_ids": [
+                "jeong2026wra",
+                "pouryousef2026traffic"
+              ],
+              "states": {
+                "U": 8,
+                "P": 2
+              }
+            }
+          },
+          "R9": {
+            "strict": {
+              "eligible": 10,
+              "bound": 5,
+              "eligible_ids": [
+                "addagada2026kvgov",
+                "chu2025safekv",
+                "dangol2026workflow",
+                "earlybird2025",
+                "jeong2026wra",
+                "netecho2025",
+                "pouryousef2026traffic",
+                "spliceleak2026",
+                "timewilltell2024",
+                "whisperleak2025"
+              ],
+              "bound_ids": [
+                "addagada2026kvgov",
+                "dangol2026workflow",
+                "earlybird2025",
+                "spliceleak2026",
+                "timewilltell2024"
+              ],
+              "states": {
+                "B": 5,
+                "P": 3,
+                "U": 2
+              }
+            },
+            "partial_accepted": {
+              "eligible": 10,
+              "bound": 8,
+              "eligible_ids": [
+                "addagada2026kvgov",
+                "chu2025safekv",
+                "dangol2026workflow",
+                "earlybird2025",
+                "jeong2026wra",
+                "netecho2025",
+                "pouryousef2026traffic",
+                "spliceleak2026",
+                "timewilltell2024",
+                "whisperleak2025"
+              ],
+              "bound_ids": [
+                "addagada2026kvgov",
+                "chu2025safekv",
+                "dangol2026workflow",
+                "earlybird2025",
+                "netecho2025",
+                "spliceleak2026",
+                "timewilltell2024",
+                "whisperleak2025"
+              ],
+              "states": {
+                "B": 5,
+                "P": 3,
+                "U": 2
+              }
+            }
+          }
+        }
+      },
+      "joint_queries": {
+        "Inference + utility": {
+          "eligible": 16,
+          "bound": 0,
+          "partial_accepted": 2,
+          "eligible_ids": [
+            "DANGOL-capture",
+            "DANGOL-livebinding",
+            "EARLY-K-calibration-oracle",
+            "KVGOV-partialflush-sim",
+            "NET-dummy-padding-simulation",
+            "NET-upstream-local",
+            "SAFE-post-trigger",
+            "SPLICE-CTBF-signal",
+            "TIME-length-instruction",
+            "TRAFFIC-prompt-reformulation",
+            "TRAFFIC-temperature",
+            "UI-delay-offline",
+            "WHISPER-batching-replay",
+            "WHISPER-injection-replay",
+            "WHISPER-randompadding-capture",
+            "WRA-decoy-execution"
+          ],
+          "bound_ids": [],
+          "partial_accepted_ids": [
+            "TRAFFIC-prompt-reformulation",
+            "WRA-decoy-execution"
+          ],
+          "bound_family_ids": [],
+          "bound_configurations": [],
+          "excluded_ids": [
+            "CARLINI-fixed-rate",
+            "EARLY-semantic-deidentification",
+            "GAO-zero-copy-off",
+            "KVGOV-HMAC-cost",
+            "KVGOV-hardware-gap",
+            "SPEC-padding-REST",
+            "SPLICE-QCP-cost",
+            "TDXRAY-oblivious-map",
+            "TIME-padding-estimate"
+          ]
+        },
+        "Inference + cost": {
+          "eligible": 16,
+          "bound": 3,
+          "partial_accepted": 7,
+          "eligible_ids": [
+            "DANGOL-capture",
+            "DANGOL-livebinding",
+            "EARLY-K-calibration-oracle",
+            "KVGOV-partialflush-sim",
+            "NET-dummy-padding-simulation",
+            "NET-upstream-local",
+            "SAFE-post-trigger",
+            "SPEC-padding-REST",
+            "SPLICE-CTBF-signal",
+            "TIME-length-instruction",
+            "TRAFFIC-prompt-reformulation",
+            "TRAFFIC-temperature",
+            "WHISPER-batching-replay",
+            "WHISPER-injection-replay",
+            "WHISPER-randompadding-capture",
+            "WRA-decoy-execution"
+          ],
+          "bound_ids": [
+            "DANGOL-capture",
+            "DANGOL-livebinding",
+            "SPEC-padding-REST"
+          ],
+          "partial_accepted_ids": [
+            "DANGOL-capture",
+            "DANGOL-livebinding",
+            "EARLY-K-calibration-oracle",
+            "NET-dummy-padding-simulation",
+            "SAFE-post-trigger",
+            "SPEC-padding-REST",
+            "WHISPER-injection-replay"
+          ],
+          "bound_family_ids": [
+            "dangol2026workflow",
+            "wei2024speculation"
+          ],
+          "bound_configurations": [
+            "DANGOL-capture",
+            "DANGOL-livebinding",
+            "SPEC-padding-REST"
+          ],
+          "excluded_ids": [
+            "CARLINI-fixed-rate",
+            "EARLY-semantic-deidentification",
+            "GAO-zero-copy-off",
+            "KVGOV-HMAC-cost",
+            "KVGOV-hardware-gap",
+            "SPLICE-QCP-cost",
+            "TDXRAY-oblivious-map",
+            "TIME-padding-estimate",
+            "UI-delay-offline"
+          ]
+        },
+        "Matched adaptation + inference": {
+          "eligible": 13,
+          "bound": 2,
+          "partial_accepted": 2,
+          "eligible_ids": [
+            "DANGOL-capture",
+            "DANGOL-livebinding",
+            "EARLY-K-calibration-oracle",
+            "NET-dummy-padding-simulation",
+            "NET-upstream-local",
+            "SPEC-padding-REST",
+            "TIME-length-instruction",
+            "TRAFFIC-prompt-reformulation",
+            "TRAFFIC-temperature",
+            "UI-delay-offline",
+            "WHISPER-batching-replay",
+            "WHISPER-injection-replay",
+            "WHISPER-randompadding-capture"
+          ],
+          "bound_ids": [
+            "DANGOL-capture",
+            "UI-delay-offline"
+          ],
+          "partial_accepted_ids": [
+            "DANGOL-capture",
+            "UI-delay-offline"
+          ],
+          "bound_family_ids": [
+            "dangol2026workflow",
+            "uitraces2026"
+          ],
+          "bound_configurations": [
+            "DANGOL-capture",
+            "UI-delay-offline"
+          ],
+          "excluded_ids": [
+            "CARLINI-fixed-rate",
+            "EARLY-semantic-deidentification",
+            "GAO-zero-copy-off",
+            "KVGOV-HMAC-cost",
+            "KVGOV-hardware-gap",
+            "KVGOV-partialflush-sim",
+            "SAFE-post-trigger",
+            "SPLICE-CTBF-signal",
+            "SPLICE-QCP-cost",
+            "TDXRAY-oblivious-map",
+            "TIME-padding-estimate",
+            "WRA-decoy-execution"
+          ]
+        },
+        "Inference + utility + cost": {
+          "eligible": 15,
+          "bound": 0,
+          "partial_accepted": 0,
+          "eligible_ids": [
+            "DANGOL-capture",
+            "DANGOL-livebinding",
+            "EARLY-K-calibration-oracle",
+            "KVGOV-partialflush-sim",
+            "NET-dummy-padding-simulation",
+            "NET-upstream-local",
+            "SAFE-post-trigger",
+            "SPLICE-CTBF-signal",
+            "TIME-length-instruction",
+            "TRAFFIC-prompt-reformulation",
+            "TRAFFIC-temperature",
+            "WHISPER-batching-replay",
+            "WHISPER-injection-replay",
+            "WHISPER-randompadding-capture",
+            "WRA-decoy-execution"
+          ],
+          "bound_ids": [],
+          "partial_accepted_ids": [],
+          "bound_family_ids": [],
+          "bound_configurations": [],
+          "excluded_ids": [
+            "CARLINI-fixed-rate",
+            "EARLY-semantic-deidentification",
+            "GAO-zero-copy-off",
+            "KVGOV-HMAC-cost",
+            "KVGOV-hardware-gap",
+            "SPEC-padding-REST",
+            "SPLICE-QCP-cost",
+            "TDXRAY-oblivious-map",
+            "TIME-padding-estimate",
+            "UI-delay-offline"
+          ]
+        },
+        "All five bindings": {
+          "eligible": 11,
+          "bound": 0,
+          "partial_accepted": 0,
+          "eligible_ids": [
+            "DANGOL-capture",
+            "DANGOL-livebinding",
+            "EARLY-K-calibration-oracle",
+            "NET-dummy-padding-simulation",
+            "NET-upstream-local",
+            "TIME-length-instruction",
+            "TRAFFIC-prompt-reformulation",
+            "TRAFFIC-temperature",
+            "WHISPER-batching-replay",
+            "WHISPER-injection-replay",
+            "WHISPER-randompadding-capture"
+          ],
+          "bound_ids": [],
+          "partial_accepted_ids": [],
+          "bound_family_ids": [],
+          "bound_configurations": [],
+          "excluded_ids": [
+            "CARLINI-fixed-rate",
+            "EARLY-semantic-deidentification",
+            "GAO-zero-copy-off",
+            "KVGOV-HMAC-cost",
+            "KVGOV-hardware-gap",
+            "KVGOV-partialflush-sim",
+            "SAFE-post-trigger",
+            "SPEC-padding-REST",
+            "SPLICE-CTBF-signal",
+            "SPLICE-QCP-cost",
+            "TDXRAY-oblivious-map",
+            "TIME-padding-estimate",
+            "UI-delay-offline",
+            "WRA-decoy-execution"
+          ]
+        }
+      },
+      "modes": {
+        "Ex": [
+          "DANGOL-livebinding",
+          "EARLY-semantic-deidentification",
+          "NET-upstream-local",
+          "SAFE-post-trigger",
+          "SPLICE-CTBF-signal",
+          "TIME-length-instruction",
+          "TRAFFIC-prompt-reformulation",
+          "TRAFFIC-temperature",
+          "WHISPER-randompadding-capture",
+          "WRA-decoy-execution"
+        ],
+        "Tr": [
+          "DANGOL-capture",
+          "NET-dummy-padding-simulation",
+          "UI-delay-offline",
+          "WHISPER-batching-replay",
+          "WHISPER-injection-replay"
+        ],
+        "Si": [
+          "EARLY-K-calibration-oracle",
+          "KVGOV-partialflush-sim",
+          "TIME-padding-estimate"
+        ],
+        "Co": [
+          "GAO-zero-copy-off",
+          "KVGOV-HMAC-cost",
+          "KVGOV-hardware-gap",
+          "SPLICE-QCP-cost",
+          "TDXRAY-oblivious-map"
+        ],
+        "Un": [
+          "CARLINI-fixed-rate",
+          "SPEC-padding-REST"
+        ]
+      }
+    },
+    "without_CachePrune_or_final_search": {
+      "record_ids": [
+        "CARLINI-fixed-rate",
+        "DANGOL-capture",
+        "DANGOL-livebinding",
+        "EARLY-K-calibration-oracle",
+        "EARLY-semantic-deidentification",
+        "GAO-zero-copy-off",
+        "KVGOV-HMAC-cost",
+        "KVGOV-hardware-gap",
+        "KVGOV-partialflush-sim",
+        "NET-dummy-padding-simulation",
+        "NET-upstream-local",
+        "SAFE-post-trigger",
+        "SPEC-padding-REST",
+        "SPLICE-CTBF-signal",
+        "SPLICE-QCP-cost",
+        "TDXRAY-oblivious-map",
+        "TIME-length-instruction",
+        "TIME-padding-estimate",
+        "TRAFFIC-prompt-reformulation",
+        "TRAFFIC-temperature",
+        "UI-delay-offline",
+        "WHISPER-batching-replay",
+        "WHISPER-injection-replay",
+        "WHISPER-randompadding-capture",
+        "WRA-decoy-execution"
+      ],
+      "family_ids": [
+        "addagada2026kvgov",
+        "carlini2024remote",
+        "chu2025safekv",
+        "dangol2026workflow",
+        "earlybird2025",
+        "gao2025iknow",
+        "hornetz2026tdxray",
+        "jeong2026wra",
+        "netecho2025",
+        "pouryousef2026traffic",
+        "spliceleak2026",
+        "timewilltell2024",
+        "uitraces2026",
+        "wei2024speculation",
+        "whisperleak2025"
+      ],
+      "projected_cells": {
+        "addagada2026kvgov": [
+          "B",
+          "B",
+          "B",
+          "--",
+          "--",
+          "B",
+          "B",
+          "U",
+          "B"
+        ],
+        "carlini2024remote": [
+          "B",
+          "B",
+          "P",
+          "--",
+          "--",
+          "B",
+          "--",
+          "U",
+          "B"
+        ],
+        "chu2025safekv": [
+          "B",
+          "B",
+          "B",
+          "--",
+          "--",
+          "B",
+          "B",
+          "U",
+          "P"
+        ],
+        "dangol2026workflow": [
+          "B",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B",
+          "U",
+          "B"
+        ],
+        "earlybird2025": [
+          "B",
+          "B",
+          "B",
+          "B",
+          "?",
+          "B",
+          "B",
+          "U",
+          "B"
+        ],
+        "gao2025iknow": [
+          "B",
+          "B",
+          "B",
+          "--",
+          "--",
+          "P",
+          "--",
+          "--",
+          "B"
+        ],
+        "hornetz2026tdxray": [
+          "B",
+          "B",
+          "B",
+          "--",
+          "--",
+          "B",
+          "--",
+          "B",
+          "B"
+        ],
+        "jeong2026wra": [
+          "B",
+          "P",
+          "B",
+          "--",
+          "--",
+          "P",
+          "B",
+          "P",
+          "U"
+        ],
+        "netecho2025": [
+          "B",
+          "B",
+          "B",
+          "B",
+          "?",
+          "B",
+          "B",
+          "U",
+          "P"
+        ],
+        "pouryousef2026traffic": [
+          "B",
+          "P",
+          "B",
+          "U",
+          "U",
+          "P",
+          "B",
+          "P",
+          "U"
+        ],
+        "spliceleak2026": [
+          "B",
+          "B",
+          "B",
+          "--",
+          "--",
+          "B",
+          "B",
+          "U",
+          "B"
+        ],
+        "timewilltell2024": [
+          "B",
+          "B",
+          "B",
+          "P",
+          "U",
+          "B",
+          "B",
+          "U",
+          "B"
+        ],
+        "uitraces2026": [
+          "B",
+          "P",
+          "B",
+          "B",
+          "B",
+          "B",
+          "B",
+          "U",
+          "--"
+        ],
+        "wei2024speculation": [
+          "B",
+          "B",
+          "P",
+          "P",
+          "U",
+          "B",
+          "B",
+          "--",
+          "B"
+        ],
+        "whisperleak2025": [
+          "B",
+          "B",
+          "B",
+          "P",
+          "U",
+          "B",
+          "B",
+          "U",
+          "P"
+        ]
+      },
+      "fields": {
+        "R4": {
+          "strict": {
+            "eligible": 8,
+            "bound": 4,
+            "eligible_ids": [
+              "dangol2026workflow",
+              "earlybird2025",
+              "netecho2025",
+              "pouryousef2026traffic",
+              "timewilltell2024",
+              "uitraces2026",
+              "wei2024speculation",
+              "whisperleak2025"
+            ],
+            "bound_ids": [
+              "dangol2026workflow",
+              "earlybird2025",
+              "netecho2025",
+              "uitraces2026"
+            ],
+            "states": {
+              "B": 4,
+              "U": 1,
+              "P": 3
+            }
+          },
+          "partial_accepted": {
+            "eligible": 8,
+            "bound": 7,
+            "eligible_ids": [
+              "dangol2026workflow",
+              "earlybird2025",
+              "netecho2025",
+              "pouryousef2026traffic",
+              "timewilltell2024",
+              "uitraces2026",
+              "wei2024speculation",
+              "whisperleak2025"
+            ],
+            "bound_ids": [
+              "dangol2026workflow",
+              "earlybird2025",
+              "netecho2025",
+              "timewilltell2024",
+              "uitraces2026",
+              "wei2024speculation",
+              "whisperleak2025"
+            ],
+            "states": {
+              "B": 4,
+              "U": 1,
+              "P": 3
+            }
+          }
+        },
+        "R5": {
+          "strict": {
+            "eligible": 8,
+            "bound": 2,
+            "eligible_ids": [
+              "dangol2026workflow",
+              "earlybird2025",
+              "netecho2025",
+              "pouryousef2026traffic",
+              "timewilltell2024",
+              "uitraces2026",
+              "wei2024speculation",
+              "whisperleak2025"
+            ],
+            "bound_ids": [
+              "dangol2026workflow",
+              "uitraces2026"
+            ],
+            "states": {
+              "B": 2,
+              "?": 2,
+              "U": 4
+            }
+          },
+          "partial_accepted": {
+            "eligible": 8,
+            "bound": 2,
+            "eligible_ids": [
+              "dangol2026workflow",
+              "earlybird2025",
+              "netecho2025",
+              "pouryousef2026traffic",
+              "timewilltell2024",
+              "uitraces2026",
+              "wei2024speculation",
+              "whisperleak2025"
+            ],
+            "bound_ids": [
+              "dangol2026workflow",
+              "uitraces2026"
+            ],
+            "states": {
+              "B": 2,
+              "?": 2,
+              "U": 4
+            }
+          }
+        },
+        "R7": {
+          "strict": {
+            "eligible": 12,
+            "bound": 12,
+            "eligible_ids": [
+              "addagada2026kvgov",
+              "chu2025safekv",
+              "dangol2026workflow",
+              "earlybird2025",
+              "jeong2026wra",
+              "netecho2025",
+              "pouryousef2026traffic",
+              "spliceleak2026",
+              "timewilltell2024",
+              "uitraces2026",
+              "wei2024speculation",
+              "whisperleak2025"
+            ],
+            "bound_ids": [
+              "addagada2026kvgov",
+              "chu2025safekv",
+              "dangol2026workflow",
+              "earlybird2025",
+              "jeong2026wra",
+              "netecho2025",
+              "pouryousef2026traffic",
+              "spliceleak2026",
+              "timewilltell2024",
+              "uitraces2026",
+              "wei2024speculation",
+              "whisperleak2025"
+            ],
+            "states": {
+              "B": 12
+            }
+          },
+          "partial_accepted": {
+            "eligible": 12,
+            "bound": 12,
+            "eligible_ids": [
+              "addagada2026kvgov",
+              "chu2025safekv",
+              "dangol2026workflow",
+              "earlybird2025",
+              "jeong2026wra",
+              "netecho2025",
+              "pouryousef2026traffic",
+              "spliceleak2026",
+              "timewilltell2024",
+              "uitraces2026",
+              "wei2024speculation",
+              "whisperleak2025"
+            ],
+            "bound_ids": [
+              "addagada2026kvgov",
+              "chu2025safekv",
+              "dangol2026workflow",
+              "earlybird2025",
+              "jeong2026wra",
+              "netecho2025",
+              "pouryousef2026traffic",
+              "spliceleak2026",
+              "timewilltell2024",
+              "uitraces2026",
+              "wei2024speculation",
+              "whisperleak2025"
+            ],
+            "states": {
+              "B": 12
+            }
+          }
+        },
+        "R8": {
+          "strict": {
+            "eligible": 13,
+            "bound": 1,
+            "eligible_ids": [
+              "addagada2026kvgov",
+              "carlini2024remote",
+              "chu2025safekv",
+              "dangol2026workflow",
+              "earlybird2025",
+              "hornetz2026tdxray",
+              "jeong2026wra",
+              "netecho2025",
+              "pouryousef2026traffic",
+              "spliceleak2026",
+              "timewilltell2024",
+              "uitraces2026",
+              "whisperleak2025"
+            ],
+            "bound_ids": [
+              "hornetz2026tdxray"
+            ],
+            "states": {
+              "U": 10,
+              "B": 1,
+              "P": 2
+            }
+          },
+          "partial_accepted": {
+            "eligible": 13,
+            "bound": 3,
+            "eligible_ids": [
+              "addagada2026kvgov",
+              "carlini2024remote",
+              "chu2025safekv",
+              "dangol2026workflow",
+              "earlybird2025",
+              "hornetz2026tdxray",
+              "jeong2026wra",
+              "netecho2025",
+              "pouryousef2026traffic",
+              "spliceleak2026",
+              "timewilltell2024",
+              "uitraces2026",
+              "whisperleak2025"
+            ],
+            "bound_ids": [
+              "hornetz2026tdxray",
+              "jeong2026wra",
+              "pouryousef2026traffic"
+            ],
+            "states": {
+              "U": 10,
+              "B": 1,
+              "P": 2
+            }
+          }
+        },
+        "R9": {
+          "strict": {
+            "eligible": 14,
+            "bound": 9,
+            "eligible_ids": [
+              "addagada2026kvgov",
+              "carlini2024remote",
+              "chu2025safekv",
+              "dangol2026workflow",
+              "earlybird2025",
+              "gao2025iknow",
+              "hornetz2026tdxray",
+              "jeong2026wra",
+              "netecho2025",
+              "pouryousef2026traffic",
+              "spliceleak2026",
+              "timewilltell2024",
+              "wei2024speculation",
+              "whisperleak2025"
+            ],
+            "bound_ids": [
+              "addagada2026kvgov",
+              "carlini2024remote",
+              "dangol2026workflow",
+              "earlybird2025",
+              "gao2025iknow",
+              "hornetz2026tdxray",
+              "spliceleak2026",
+              "timewilltell2024",
+              "wei2024speculation"
+            ],
+            "states": {
+              "B": 9,
+              "P": 3,
+              "U": 2
+            }
+          },
+          "partial_accepted": {
+            "eligible": 14,
+            "bound": 12,
+            "eligible_ids": [
+              "addagada2026kvgov",
+              "carlini2024remote",
+              "chu2025safekv",
+              "dangol2026workflow",
+              "earlybird2025",
+              "gao2025iknow",
+              "hornetz2026tdxray",
+              "jeong2026wra",
+              "netecho2025",
+              "pouryousef2026traffic",
+              "spliceleak2026",
+              "timewilltell2024",
+              "wei2024speculation",
+              "whisperleak2025"
+            ],
+            "bound_ids": [
+              "addagada2026kvgov",
+              "carlini2024remote",
+              "chu2025safekv",
+              "dangol2026workflow",
+              "earlybird2025",
+              "gao2025iknow",
+              "hornetz2026tdxray",
+              "netecho2025",
+              "spliceleak2026",
+              "timewilltell2024",
+              "wei2024speculation",
+              "whisperleak2025"
+            ],
+            "states": {
+              "B": 9,
+              "P": 3,
+              "U": 2
+            }
+          }
+        }
+      },
+      "common_R7_R8_R9": {
+        "family_ids": [
+          "addagada2026kvgov",
+          "chu2025safekv",
+          "dangol2026workflow",
+          "earlybird2025",
+          "jeong2026wra",
+          "netecho2025",
+          "pouryousef2026traffic",
+          "spliceleak2026",
+          "timewilltell2024",
+          "whisperleak2025"
+        ],
+        "fields": {
+          "R7": {
+            "strict": {
+              "eligible": 10,
+              "bound": 10,
+              "eligible_ids": [
+                "addagada2026kvgov",
+                "chu2025safekv",
+                "dangol2026workflow",
+                "earlybird2025",
+                "jeong2026wra",
+                "netecho2025",
+                "pouryousef2026traffic",
+                "spliceleak2026",
+                "timewilltell2024",
+                "whisperleak2025"
+              ],
+              "bound_ids": [
+                "addagada2026kvgov",
+                "chu2025safekv",
+                "dangol2026workflow",
+                "earlybird2025",
+                "jeong2026wra",
+                "netecho2025",
+                "pouryousef2026traffic",
+                "spliceleak2026",
+                "timewilltell2024",
+                "whisperleak2025"
+              ],
+              "states": {
+                "B": 10
+              }
+            },
+            "partial_accepted": {
+              "eligible": 10,
+              "bound": 10,
+              "eligible_ids": [
+                "addagada2026kvgov",
+                "chu2025safekv",
+                "dangol2026workflow",
+                "earlybird2025",
+                "jeong2026wra",
+                "netecho2025",
+                "pouryousef2026traffic",
+                "spliceleak2026",
+                "timewilltell2024",
+                "whisperleak2025"
+              ],
+              "bound_ids": [
+                "addagada2026kvgov",
+                "chu2025safekv",
+                "dangol2026workflow",
+                "earlybird2025",
+                "jeong2026wra",
+                "netecho2025",
+                "pouryousef2026traffic",
+                "spliceleak2026",
+                "timewilltell2024",
+                "whisperleak2025"
+              ],
+              "states": {
+                "B": 10
+              }
+            }
+          },
+          "R8": {
+            "strict": {
+              "eligible": 10,
+              "bound": 0,
+              "eligible_ids": [
+                "addagada2026kvgov",
+                "chu2025safekv",
+                "dangol2026workflow",
+                "earlybird2025",
+                "jeong2026wra",
+                "netecho2025",
+                "pouryousef2026traffic",
+                "spliceleak2026",
+                "timewilltell2024",
+                "whisperleak2025"
+              ],
+              "bound_ids": [],
+              "states": {
+                "U": 8,
+                "P": 2
+              }
+            },
+            "partial_accepted": {
+              "eligible": 10,
+              "bound": 2,
+              "eligible_ids": [
+                "addagada2026kvgov",
+                "chu2025safekv",
+                "dangol2026workflow",
+                "earlybird2025",
+                "jeong2026wra",
+                "netecho2025",
+                "pouryousef2026traffic",
+                "spliceleak2026",
+                "timewilltell2024",
+                "whisperleak2025"
+              ],
+              "bound_ids": [
+                "jeong2026wra",
+                "pouryousef2026traffic"
+              ],
+              "states": {
+                "U": 8,
+                "P": 2
+              }
+            }
+          },
+          "R9": {
+            "strict": {
+              "eligible": 10,
+              "bound": 5,
+              "eligible_ids": [
+                "addagada2026kvgov",
+                "chu2025safekv",
+                "dangol2026workflow",
+                "earlybird2025",
+                "jeong2026wra",
+                "netecho2025",
+                "pouryousef2026traffic",
+                "spliceleak2026",
+                "timewilltell2024",
+                "whisperleak2025"
+              ],
+              "bound_ids": [
+                "addagada2026kvgov",
+                "dangol2026workflow",
+                "earlybird2025",
+                "spliceleak2026",
+                "timewilltell2024"
+              ],
+              "states": {
+                "B": 5,
+                "P": 3,
+                "U": 2
+              }
+            },
+            "partial_accepted": {
+              "eligible": 10,
+              "bound": 8,
+              "eligible_ids": [
+                "addagada2026kvgov",
+                "chu2025safekv",
+                "dangol2026workflow",
+                "earlybird2025",
+                "jeong2026wra",
+                "netecho2025",
+                "pouryousef2026traffic",
+                "spliceleak2026",
+                "timewilltell2024",
+                "whisperleak2025"
+              ],
+              "bound_ids": [
+                "addagada2026kvgov",
+                "chu2025safekv",
+                "dangol2026workflow",
+                "earlybird2025",
+                "netecho2025",
+                "spliceleak2026",
+                "timewilltell2024",
+                "whisperleak2025"
+              ],
+              "states": {
+                "B": 5,
+                "P": 3,
+                "U": 2
+              }
+            }
+          }
+        }
+      },
+      "joint_queries": {
+        "Inference + utility": {
+          "eligible": 16,
+          "bound": 0,
+          "partial_accepted": 2,
+          "eligible_ids": [
+            "DANGOL-capture",
+            "DANGOL-livebinding",
+            "EARLY-K-calibration-oracle",
+            "KVGOV-partialflush-sim",
+            "NET-dummy-padding-simulation",
+            "NET-upstream-local",
+            "SAFE-post-trigger",
+            "SPLICE-CTBF-signal",
+            "TIME-length-instruction",
+            "TRAFFIC-prompt-reformulation",
+            "TRAFFIC-temperature",
+            "UI-delay-offline",
+            "WHISPER-batching-replay",
+            "WHISPER-injection-replay",
+            "WHISPER-randompadding-capture",
+            "WRA-decoy-execution"
+          ],
+          "bound_ids": [],
+          "partial_accepted_ids": [
+            "TRAFFIC-prompt-reformulation",
+            "WRA-decoy-execution"
+          ],
+          "bound_family_ids": [],
+          "bound_configurations": [],
+          "excluded_ids": [
+            "CARLINI-fixed-rate",
+            "EARLY-semantic-deidentification",
+            "GAO-zero-copy-off",
+            "KVGOV-HMAC-cost",
+            "KVGOV-hardware-gap",
+            "SPEC-padding-REST",
+            "SPLICE-QCP-cost",
+            "TDXRAY-oblivious-map",
+            "TIME-padding-estimate"
+          ]
+        },
+        "Inference + cost": {
+          "eligible": 16,
+          "bound": 3,
+          "partial_accepted": 7,
+          "eligible_ids": [
+            "DANGOL-capture",
+            "DANGOL-livebinding",
+            "EARLY-K-calibration-oracle",
+            "KVGOV-partialflush-sim",
+            "NET-dummy-padding-simulation",
+            "NET-upstream-local",
+            "SAFE-post-trigger",
+            "SPEC-padding-REST",
+            "SPLICE-CTBF-signal",
+            "TIME-length-instruction",
+            "TRAFFIC-prompt-reformulation",
+            "TRAFFIC-temperature",
+            "WHISPER-batching-replay",
+            "WHISPER-injection-replay",
+            "WHISPER-randompadding-capture",
+            "WRA-decoy-execution"
+          ],
+          "bound_ids": [
+            "DANGOL-capture",
+            "DANGOL-livebinding",
+            "SPEC-padding-REST"
+          ],
+          "partial_accepted_ids": [
+            "DANGOL-capture",
+            "DANGOL-livebinding",
+            "EARLY-K-calibration-oracle",
+            "NET-dummy-padding-simulation",
+            "SAFE-post-trigger",
+            "SPEC-padding-REST",
+            "WHISPER-injection-replay"
+          ],
+          "bound_family_ids": [
+            "dangol2026workflow",
+            "wei2024speculation"
+          ],
+          "bound_configurations": [
+            "DANGOL-capture",
+            "DANGOL-livebinding",
+            "SPEC-padding-REST"
+          ],
+          "excluded_ids": [
+            "CARLINI-fixed-rate",
+            "EARLY-semantic-deidentification",
+            "GAO-zero-copy-off",
+            "KVGOV-HMAC-cost",
+            "KVGOV-hardware-gap",
+            "SPLICE-QCP-cost",
+            "TDXRAY-oblivious-map",
+            "TIME-padding-estimate",
+            "UI-delay-offline"
+          ]
+        },
+        "Matched adaptation + inference": {
+          "eligible": 13,
+          "bound": 2,
+          "partial_accepted": 2,
+          "eligible_ids": [
+            "DANGOL-capture",
+            "DANGOL-livebinding",
+            "EARLY-K-calibration-oracle",
+            "NET-dummy-padding-simulation",
+            "NET-upstream-local",
+            "SPEC-padding-REST",
+            "TIME-length-instruction",
+            "TRAFFIC-prompt-reformulation",
+            "TRAFFIC-temperature",
+            "UI-delay-offline",
+            "WHISPER-batching-replay",
+            "WHISPER-injection-replay",
+            "WHISPER-randompadding-capture"
+          ],
+          "bound_ids": [
+            "DANGOL-capture",
+            "UI-delay-offline"
+          ],
+          "partial_accepted_ids": [
+            "DANGOL-capture",
+            "UI-delay-offline"
+          ],
+          "bound_family_ids": [
+            "dangol2026workflow",
+            "uitraces2026"
+          ],
+          "bound_configurations": [
+            "DANGOL-capture",
+            "UI-delay-offline"
+          ],
+          "excluded_ids": [
+            "CARLINI-fixed-rate",
+            "EARLY-semantic-deidentification",
+            "GAO-zero-copy-off",
+            "KVGOV-HMAC-cost",
+            "KVGOV-hardware-gap",
+            "KVGOV-partialflush-sim",
+            "SAFE-post-trigger",
+            "SPLICE-CTBF-signal",
+            "SPLICE-QCP-cost",
+            "TDXRAY-oblivious-map",
+            "TIME-padding-estimate",
+            "WRA-decoy-execution"
+          ]
+        },
+        "Inference + utility + cost": {
+          "eligible": 15,
+          "bound": 0,
+          "partial_accepted": 0,
+          "eligible_ids": [
+            "DANGOL-capture",
+            "DANGOL-livebinding",
+            "EARLY-K-calibration-oracle",
+            "KVGOV-partialflush-sim",
+            "NET-dummy-padding-simulation",
+            "NET-upstream-local",
+            "SAFE-post-trigger",
+            "SPLICE-CTBF-signal",
+            "TIME-length-instruction",
+            "TRAFFIC-prompt-reformulation",
+            "TRAFFIC-temperature",
+            "WHISPER-batching-replay",
+            "WHISPER-injection-replay",
+            "WHISPER-randompadding-capture",
+            "WRA-decoy-execution"
+          ],
+          "bound_ids": [],
+          "partial_accepted_ids": [],
+          "bound_family_ids": [],
+          "bound_configurations": [],
+          "excluded_ids": [
+            "CARLINI-fixed-rate",
+            "EARLY-semantic-deidentification",
+            "GAO-zero-copy-off",
+            "KVGOV-HMAC-cost",
+            "KVGOV-hardware-gap",
+            "SPEC-padding-REST",
+            "SPLICE-QCP-cost",
+            "TDXRAY-oblivious-map",
+            "TIME-padding-estimate",
+            "UI-delay-offline"
+          ]
+        },
+        "All five bindings": {
+          "eligible": 11,
+          "bound": 0,
+          "partial_accepted": 0,
+          "eligible_ids": [
+            "DANGOL-capture",
+            "DANGOL-livebinding",
+            "EARLY-K-calibration-oracle",
+            "NET-dummy-padding-simulation",
+            "NET-upstream-local",
+            "TIME-length-instruction",
+            "TRAFFIC-prompt-reformulation",
+            "TRAFFIC-temperature",
+            "WHISPER-batching-replay",
+            "WHISPER-injection-replay",
+            "WHISPER-randompadding-capture"
+          ],
+          "bound_ids": [],
+          "partial_accepted_ids": [],
+          "bound_family_ids": [],
+          "bound_configurations": [],
+          "excluded_ids": [
+            "CARLINI-fixed-rate",
+            "EARLY-semantic-deidentification",
+            "GAO-zero-copy-off",
+            "KVGOV-HMAC-cost",
+            "KVGOV-hardware-gap",
+            "KVGOV-partialflush-sim",
+            "SAFE-post-trigger",
+            "SPEC-padding-REST",
+            "SPLICE-CTBF-signal",
+            "SPLICE-QCP-cost",
+            "TDXRAY-oblivious-map",
+            "TIME-padding-estimate",
+            "UI-delay-offline",
+            "WRA-decoy-execution"
+          ]
+        }
+      },
+      "modes": {
+        "Ex": [
+          "DANGOL-livebinding",
+          "EARLY-semantic-deidentification",
+          "NET-upstream-local",
+          "SAFE-post-trigger",
+          "SPLICE-CTBF-signal",
+          "TIME-length-instruction",
+          "TRAFFIC-prompt-reformulation",
+          "TRAFFIC-temperature",
+          "WHISPER-randompadding-capture",
+          "WRA-decoy-execution"
+        ],
+        "Tr": [
+          "DANGOL-capture",
+          "NET-dummy-padding-simulation",
+          "UI-delay-offline",
+          "WHISPER-batching-replay",
+          "WHISPER-injection-replay"
+        ],
+        "Si": [
+          "EARLY-K-calibration-oracle",
+          "KVGOV-partialflush-sim",
+          "TIME-padding-estimate"
+        ],
+        "Co": [
+          "GAO-zero-copy-off",
+          "KVGOV-HMAC-cost",
+          "KVGOV-hardware-gap",
+          "SPLICE-QCP-cost",
+          "TDXRAY-oblivious-map"
+        ],
+        "Un": [
+          "CARLINI-fixed-rate",
+          "SPEC-padding-REST"
+        ]
+      }
+    }
+  }
+}

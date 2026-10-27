@@ -1,0 +1,827 @@
+{
+  "retrieved_utc": "2026-10-27T00:32:21.643316+00:00",
+  "seeds": [
+    {
+      "doi_requested": "10.1109/TIFS.2025.3622954",
+      "work_query": "https://api.openalex.org/works/https://doi.org/10.1109/TIFS.2025.3622954",
+      "work": {
+        "id": "https://openalex.org/W4415284287",
+        "doi": "https://doi.org/10.1109/tifs.2025.3622954",
+        "display_name": "The Early Bird Catches the Leak: Unveiling Timing Side Channels in LLM Serving Systems",
+        "cited_by_count": 7,
+        "cited_by_api_url": null,
+        "ids": {
+          "openalex": "https://openalex.org/W4415284287",
+          "doi": "https://doi.org/10.1109/tifs.2025.3622954"
+        }
+      },
+      "citing_query": "https://api.openalex.org/works?filter=cites%3AW4415284287&per-page=200&select=id%2Cdoi%2Cdisplay_name%2Cpublication_date%2Cprimary_location%2Cids",
+      "meta": {
+        "notice": "No API key, so this request shares one free daily budget ($0.10) with everyone on your network's IP address. Get a free key with its own $1/day at https://openalex.org/settings/api and add api_key=YOUR_KEY to your requests. An AI agent can get one for its user in one call: POST https://api.openalex.org/api-keys with {\"email\": \"<your user's email>\"}; we email them a link, and the key works once they click it. Docs for agents: https://help.openalex.org/llms.txt",
+        "count": 7,
+        "db_response_time_ms": 27,
+        "page": 1,
+        "per_page": 200,
+        "groups_count": null,
+        "x_query": {
+          "oql": "get works citing (W4415284287)",
+          "x_new_oql": "get works citing (W4415284287)",
+          "oqo": {
+            "get_rows": "works",
+            "filter_rows": [
+              {
+                "column_id": "referenced_works",
+                "value": "W4415284287"
+              }
+            ]
+          },
+          "url": "/works?filter=referenced_works:W4415284287&per_page=200",
+          "order": "most cited (age-adjusted) first",
+          "order_default": true
+        },
+        "cost_usd": 0.0001
+      },
+      "results": [
+        {
+          "id": "https://openalex.org/W7151473412",
+          "doi": "https://doi.org/10.1145/3807455",
+          "display_name": "Foundation Models for Autonomous Driving Systems: An Initial Roadmap",
+          "publication_date": "2026-04-07",
+          "primary_location": {
+            "id": "doi:10.1145/3807455",
+            "doi": "https://doi.org/10.1145/3807455",
+            "is_oa": true,
+            "landing_page_url": "https://doi.org/10.1145/3807455",
+            "pdf_url": null,
+            "source": {
+              "id": "https://openalex.org/S142627899",
+              "display_name": "ACM Transactions on Software Engineering and Methodology",
+              "issn_l": "1049-331X",
+              "issn": [
+                "1049-331X",
+                "1557-7392"
+              ],
+              "is_oa": false,
+              "is_in_doaj": false,
+              "is_core": true,
+              "listed_in": [
+                "ccf-a",
+                "cwts-core",
+                "dongbi-a",
+                "jufo-3",
+                "norway-2",
+                "poland-100",
+                "russia-white-list-1"
+              ],
+              "host_organization": "https://openalex.org/P4310319798",
+              "host_organization_name": "Association for Computing Machinery",
+              "host_organization_lineage": [
+                "https://openalex.org/P4310319798"
+              ],
+              "host_organization_lineage_names": [
+                "Association for Computing Machinery"
+              ],
+              "type": "journal"
+            },
+            "license": "cc-by",
+            "license_id": "https://openalex.org/licenses/cc-by",
+            "version": "publishedVersion",
+            "is_accepted": true,
+            "is_published": true,
+            "raw_source_name": "ACM Transactions on Software Engineering and Methodology",
+            "raw_type": "journal-article"
+          },
+          "ids": {
+            "openalex": "https://openalex.org/W7151473412",
+            "doi": "https://doi.org/10.1145/3807455"
+          }
+        },
+        {
+          "id": "https://openalex.org/W7163509412",
+          "doi": "https://doi.org/10.1145/3779208.3804883",
+          "display_name": "POSTER: Abuse Potential of Shared LLM Caches in Educational Environments through SniffLlama Timing Attack",
+          "publication_date": "2026-06-01",
+          "primary_location": {
+            "id": "doi:10.1145/3779208.3804883",
+            "doi": "https://doi.org/10.1145/3779208.3804883",
+            "is_oa": true,
+            "landing_page_url": "https://doi.org/10.1145/3779208.3804883",
+            "pdf_url": null,
+            "source": {
+              "id": "https://openalex.org/S4363609011",
+              "display_name": "ACM Asia Conference on Computer and Communications Security (ASIA CCS)",
+              "issn_l": null,
+              "issn": null,
+              "is_oa": false,
+              "is_in_doaj": false,
+              "is_core": false,
+              "listed_in": [],
+              "host_organization": null,
+              "host_organization_name": null,
+              "host_organization_lineage": [],
+              "host_organization_lineage_names": [],
+              "type": "conference"
+            },
+            "license": "cc-by",
+            "license_id": "https://openalex.org/licenses/cc-by",
+            "version": "publishedVersion",
+            "is_accepted": true,
+            "is_published": true,
+            "raw_source_name": "Proceedings of the ACM Asia Conference on Computer and Communications Security",
+            "raw_type": "proceedings-article"
+          },
+          "ids": {
+            "openalex": "https://openalex.org/W7163509412",
+            "doi": "https://doi.org/10.1145/3779208.3804883"
+          }
+        },
+        {
+          "id": "https://openalex.org/W7171393655",
+          "doi": "https://doi.org/10.1016/j.comnet.2026.112609",
+          "display_name": "Profit-aware deployment of large language model-enabled inference chains in data centers",
+          "publication_date": "2026-07-27",
+          "primary_location": {
+            "id": "doi:10.1016/j.comnet.2026.112609",
+            "doi": "https://doi.org/10.1016/j.comnet.2026.112609",
+            "is_oa": false,
+            "landing_page_url": "https://doi.org/10.1016/j.comnet.2026.112609",
+            "pdf_url": null,
+            "source": {
+              "id": "https://openalex.org/S63392143",
+              "display_name": "Computer Networks",
+              "issn_l": "1389-1286",
+              "issn": [
+                "1389-1286",
+                "1872-7069"
+              ],
+              "is_oa": false,
+              "is_in_doaj": false,
+              "is_core": true,
+              "listed_in": [
+                "anvur-scientific",
+                "ccf-b",
+                "cwts-core",
+                "dongbi-b",
+                "jufo-2",
+                "norway-2",
+                "poland-100",
+                "russia-white-list-1",
+                "vabb-shw"
+              ],
+              "host_organization": "https://openalex.org/P4310320990",
+              "host_organization_name": "Elsevier BV",
+              "host_organization_lineage": [
+                "https://openalex.org/P4310320990"
+              ],
+              "host_organization_lineage_names": [
+                "Elsevier BV"
+              ],
+              "type": "journal"
+            },
+            "license": null,
+            "license_id": null,
+            "version": "publishedVersion",
+            "is_accepted": true,
+            "is_published": true,
+            "raw_source_name": "Computer Networks",
+            "raw_type": "journal-article"
+          },
+          "ids": {
+            "openalex": "https://openalex.org/W7171393655",
+            "doi": "https://doi.org/10.1016/j.comnet.2026.112609"
+          }
+        },
+        {
+          "id": "https://openalex.org/W7204041244",
+          "doi": "https://doi.org/10.1007/978-981-92-4805-6_32",
+          "display_name": "InputSnatch: Stealing Input in LLM Services via Cache-Sharing Timing Side-Channel Attacks",
+          "publication_date": "2026-08-23",
+          "primary_location": {
+            "id": "doi:10.1007/978-981-92-4805-6_32",
+            "doi": "https://doi.org/10.1007/978-981-92-4805-6_32",
+            "is_oa": false,
+            "landing_page_url": "https://doi.org/10.1007/978-981-92-4805-6_32",
+            "pdf_url": null,
+            "source": {
+              "id": "https://openalex.org/S106296714",
+              "display_name": "Lecture notes in computer science",
+              "issn_l": "0302-9743",
+              "issn": [
+                "0302-9743",
+                "1611-3349"
+              ],
+              "is_oa": false,
+              "is_in_doaj": false,
+              "is_core": true,
+              "listed_in": [
+                "cwts-core",
+                "jufo-1",
+                "ki-jl-1",
+                "norway-1",
+                "vabb-shw"
+              ],
+              "host_organization": "https://openalex.org/P4310319900",
+              "host_organization_name": "Springer Science+Business Media",
+              "host_organization_lineage": [
+                "https://openalex.org/P4310319900",
+                "https://openalex.org/P4310319965"
+              ],
+              "host_organization_lineage_names": [
+                "Springer Science+Business Media",
+                "Springer Nature"
+              ],
+              "type": "book series"
+            },
+            "license": null,
+            "license_id": null,
+            "version": "publishedVersion",
+            "is_accepted": true,
+            "is_published": true,
+            "raw_source_name": "Lecture Notes in Computer Science",
+            "raw_type": "book-chapter"
+          },
+          "ids": {
+            "openalex": "https://openalex.org/W7204041244",
+            "doi": "https://doi.org/10.1007/978-981-92-4805-6_32"
+          }
+        },
+        {
+          "id": "https://openalex.org/W7206187976",
+          "doi": "https://doi.org/10.1016/j.hcc.2026.100428",
+          "display_name": "SoK: Towards a user-centric, privacy-preserving, and reliable AI agent via on-device LLM personalization",
+          "publication_date": "2026-09-01",
+          "primary_location": {
+            "id": "doi:10.1016/j.hcc.2026.100428",
+            "doi": "https://doi.org/10.1016/j.hcc.2026.100428",
+            "is_oa": true,
+            "landing_page_url": "https://doi.org/10.1016/j.hcc.2026.100428",
+            "pdf_url": "https://www.sciencedirect.com/science/article/pii/S2667295226000474/pdf",
+            "source": {
+              "id": "https://openalex.org/S4210186527",
+              "display_name": "High-Confidence Computing",
+              "issn_l": "2667-2952",
+              "issn": [
+                "2667-2952"
+              ],
+              "is_oa": true,
+              "is_in_doaj": true,
+              "is_core": true,
+              "listed_in": [
+                "ccf-c",
+                "cwts-core",
+                "doaj",
+                "dongbi-c",
+                "norway-1",
+                "poland-20"
+              ],
+              "host_organization": "https://openalex.org/P4310320990",
+              "host_organization_name": "Elsevier BV",
+              "host_organization_lineage": [
+                "https://openalex.org/P4310320990"
+              ],
+              "host_organization_lineage_names": [
+                "Elsevier BV"
+              ],
+              "type": "journal"
+            },
+            "license": "cc-by-nc-nd",
+            "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+            "version": "publishedVersion",
+            "is_accepted": true,
+            "is_published": true,
+            "raw_source_name": "High-Confidence Computing",
+            "raw_type": "journal-article"
+          },
+          "ids": {
+            "openalex": "https://openalex.org/W7206187976",
+            "doi": "https://doi.org/10.1016/j.hcc.2026.100428"
+          }
+        },
+        {
+          "id": "https://openalex.org/W7223136190",
+          "doi": "https://doi.org/10.5753/sbseg.2026.29354",
+          "display_name": "Mitigação de Ataques de Canal Lateral Temporal em Sistemas de Serving de LLMs por Meio da Equalização de Latência",
+          "publication_date": "2026-09-01",
+          "primary_location": {
+            "id": "doi:10.5753/sbseg.2026.29354",
+            "doi": "https://doi.org/10.5753/sbseg.2026.29354",
+            "is_oa": true,
+            "landing_page_url": "https://doi.org/10.5753/sbseg.2026.29354",
+            "pdf_url": "https://sol.sbc.org.br/index.php/sbseg/article/download/44324/44087",
+            "source": {
+              "id": "https://openalex.org/S7407096610",
+              "display_name": "Simpósio Brasileiro de Cibersegurança (SBSeg)",
+              "issn_l": null,
+              "issn": null,
+              "is_oa": false,
+              "is_in_doaj": false,
+              "is_core": false,
+              "listed_in": [],
+              "host_organization": null,
+              "host_organization_name": null,
+              "host_organization_lineage": [],
+              "host_organization_lineage_names": [],
+              "type": "conference"
+            },
+            "license": null,
+            "license_id": null,
+            "version": "publishedVersion",
+            "is_accepted": true,
+            "is_published": true,
+            "raw_source_name": "Anais do XXVI Simpósio Brasileiro de Cibersegurança (SBSeg 2026)",
+            "raw_type": "proceedings-article"
+          },
+          "ids": {
+            "openalex": "https://openalex.org/W7223136190",
+            "doi": "https://doi.org/10.5753/sbseg.2026.29354"
+          }
+        },
+        {
+          "id": "https://openalex.org/W7223287912",
+          "doi": "https://doi.org/10.1016/j.cosrev.2026.101080",
+          "display_name": "Machine unlearning as a security problem: Threats, defenses, and privacy-security-utility trilemma",
+          "publication_date": "2026-10-23",
+          "primary_location": {
+            "id": "doi:10.1016/j.cosrev.2026.101080",
+            "doi": "https://doi.org/10.1016/j.cosrev.2026.101080",
+            "is_oa": false,
+            "landing_page_url": "https://doi.org/10.1016/j.cosrev.2026.101080",
+            "pdf_url": null,
+            "source": {
+              "id": "https://openalex.org/S73121659",
+              "display_name": "Computer Science Review",
+              "issn_l": "1574-0137",
+              "issn": [
+                "1574-0137",
+                "1876-7745"
+              ],
+              "is_oa": false,
+              "is_in_doaj": false,
+              "is_core": true,
+              "listed_in": [
+                "cwts-core",
+                "dongbi-d",
+                "jufo-1",
+                "norway-1",
+                "poland-140",
+                "russia-white-list-1"
+              ],
+              "host_organization": "https://openalex.org/P4310320990",
+              "host_organization_name": "Elsevier BV",
+              "host_organization_lineage": [
+                "https://openalex.org/P4310320990"
+              ],
+              "host_organization_lineage_names": [
+                "Elsevier BV"
+              ],
+              "type": "journal"
+            },
+            "license": null,
+            "license_id": null,
+            "version": "publishedVersion",
+            "is_accepted": true,
+            "is_published": true,
+            "raw_source_name": "Computer Science Review",
+            "raw_type": "journal-article"
+          },
+          "ids": {
+            "openalex": "https://openalex.org/W7223287912",
+            "doi": "https://doi.org/10.1016/j.cosrev.2026.101080"
+          }
+        }
+      ]
+    },
+    {
+      "doi_requested": "10.48550/arXiv.2409.20002",
+      "work_query": "https://api.openalex.org/works/https://doi.org/10.48550/arXiv.2409.20002",
+      "work": {
+        "id": "https://openalex.org/W4415284287",
+        "doi": "https://doi.org/10.1109/tifs.2025.3622954",
+        "display_name": "The Early Bird Catches the Leak: Unveiling Timing Side Channels in LLM Serving Systems",
+        "cited_by_count": 7,
+        "cited_by_api_url": null,
+        "ids": {
+          "openalex": "https://openalex.org/W4415284287",
+          "doi": "https://doi.org/10.1109/tifs.2025.3622954"
+        }
+      },
+      "citing_query": "https://api.openalex.org/works?filter=cites%3AW4415284287&per-page=200&select=id%2Cdoi%2Cdisplay_name%2Cpublication_date%2Cprimary_location%2Cids",
+      "meta": {
+        "notice": "No API key, so this request shares one free daily budget ($0.10) with everyone on your network's IP address. Get a free key with its own $1/day at https://openalex.org/settings/api and add api_key=YOUR_KEY to your requests. An AI agent can get one for its user in one call: POST https://api.openalex.org/api-keys with {\"email\": \"<your user's email>\"}; we email them a link, and the key works once they click it. Docs for agents: https://help.openalex.org/llms.txt",
+        "count": 7,
+        "db_response_time_ms": 17,
+        "page": 1,
+        "per_page": 200,
+        "groups_count": null,
+        "x_query": {
+          "oql": "get works citing (W4415284287)",
+          "x_new_oql": "get works citing (W4415284287)",
+          "oqo": {
+            "get_rows": "works",
+            "filter_rows": [
+              {
+                "column_id": "referenced_works",
+                "value": "W4415284287"
+              }
+            ]
+          },
+          "url": "/works?filter=referenced_works:W4415284287&per_page=200",
+          "order": "most cited (age-adjusted) first",
+          "order_default": true
+        },
+        "cost_usd": 0.0001
+      },
+      "results": [
+        {
+          "id": "https://openalex.org/W7151473412",
+          "doi": "https://doi.org/10.1145/3807455",
+          "display_name": "Foundation Models for Autonomous Driving Systems: An Initial Roadmap",
+          "publication_date": "2026-04-07",
+          "primary_location": {
+            "id": "doi:10.1145/3807455",
+            "doi": "https://doi.org/10.1145/3807455",
+            "is_oa": true,
+            "landing_page_url": "https://doi.org/10.1145/3807455",
+            "pdf_url": null,
+            "source": {
+              "id": "https://openalex.org/S142627899",
+              "display_name": "ACM Transactions on Software Engineering and Methodology",
+              "issn_l": "1049-331X",
+              "issn": [
+                "1049-331X",
+                "1557-7392"
+              ],
+              "is_oa": false,
+              "is_in_doaj": false,
+              "is_core": true,
+              "listed_in": [
+                "ccf-a",
+                "cwts-core",
+                "dongbi-a",
+                "jufo-3",
+                "norway-2",
+                "poland-100",
+                "russia-white-list-1"
+              ],
+              "host_organization": "https://openalex.org/P4310319798",
+              "host_organization_name": "Association for Computing Machinery",
+              "host_organization_lineage": [
+                "https://openalex.org/P4310319798"
+              ],
+              "host_organization_lineage_names": [
+                "Association for Computing Machinery"
+              ],
+              "type": "journal"
+            },
+            "license": "cc-by",
+            "license_id": "https://openalex.org/licenses/cc-by",
+            "version": "publishedVersion",
+            "is_accepted": true,
+            "is_published": true,
+            "raw_source_name": "ACM Transactions on Software Engineering and Methodology",
+            "raw_type": "journal-article"
+          },
+          "ids": {
+            "openalex": "https://openalex.org/W7151473412",
+            "doi": "https://doi.org/10.1145/3807455"
+          }
+        },
+        {
+          "id": "https://openalex.org/W7163509412",
+          "doi": "https://doi.org/10.1145/3779208.3804883",
+          "display_name": "POSTER: Abuse Potential of Shared LLM Caches in Educational Environments through SniffLlama Timing Attack",
+          "publication_date": "2026-06-01",
+          "primary_location": {
+            "id": "doi:10.1145/3779208.3804883",
+            "doi": "https://doi.org/10.1145/3779208.3804883",
+            "is_oa": true,
+            "landing_page_url": "https://doi.org/10.1145/3779208.3804883",
+            "pdf_url": null,
+            "source": {
+              "id": "https://openalex.org/S4363609011",
+              "display_name": "ACM Asia Conference on Computer and Communications Security (ASIA CCS)",
+              "issn_l": null,
+              "issn": null,
+              "is_oa": false,
+              "is_in_doaj": false,
+              "is_core": false,
+              "listed_in": [],
+              "host_organization": null,
+              "host_organization_name": null,
+              "host_organization_lineage": [],
+              "host_organization_lineage_names": [],
+              "type": "conference"
+            },
+            "license": "cc-by",
+            "license_id": "https://openalex.org/licenses/cc-by",
+            "version": "publishedVersion",
+            "is_accepted": true,
+            "is_published": true,
+            "raw_source_name": "Proceedings of the ACM Asia Conference on Computer and Communications Security",
+            "raw_type": "proceedings-article"
+          },
+          "ids": {
+            "openalex": "https://openalex.org/W7163509412",
+            "doi": "https://doi.org/10.1145/3779208.3804883"
+          }
+        },
+        {
+          "id": "https://openalex.org/W7171393655",
+          "doi": "https://doi.org/10.1016/j.comnet.2026.112609",
+          "display_name": "Profit-aware deployment of large language model-enabled inference chains in data centers",
+          "publication_date": "2026-07-27",
+          "primary_location": {
+            "id": "doi:10.1016/j.comnet.2026.112609",
+            "doi": "https://doi.org/10.1016/j.comnet.2026.112609",
+            "is_oa": false,
+            "landing_page_url": "https://doi.org/10.1016/j.comnet.2026.112609",
+            "pdf_url": null,
+            "source": {
+              "id": "https://openalex.org/S63392143",
+              "display_name": "Computer Networks",
+              "issn_l": "1389-1286",
+              "issn": [
+                "1389-1286",
+                "1872-7069"
+              ],
+              "is_oa": false,
+              "is_in_doaj": false,
+              "is_core": true,
+              "listed_in": [
+                "anvur-scientific",
+                "ccf-b",
+                "cwts-core",
+                "dongbi-b",
+                "jufo-2",
+                "norway-2",
+                "poland-100",
+                "russia-white-list-1",
+                "vabb-shw"
+              ],
+              "host_organization": "https://openalex.org/P4310320990",
+              "host_organization_name": "Elsevier BV",
+              "host_organization_lineage": [
+                "https://openalex.org/P4310320990"
+              ],
+              "host_organization_lineage_names": [
+                "Elsevier BV"
+              ],
+              "type": "journal"
+            },
+            "license": null,
+            "license_id": null,
+            "version": "publishedVersion",
+            "is_accepted": true,
+            "is_published": true,
+            "raw_source_name": "Computer Networks",
+            "raw_type": "journal-article"
+          },
+          "ids": {
+            "openalex": "https://openalex.org/W7171393655",
+            "doi": "https://doi.org/10.1016/j.comnet.2026.112609"
+          }
+        },
+        {
+          "id": "https://openalex.org/W7204041244",
+          "doi": "https://doi.org/10.1007/978-981-92-4805-6_32",
+          "display_name": "InputSnatch: Stealing Input in LLM Services via Cache-Sharing Timing Side-Channel Attacks",
+          "publication_date": "2026-08-23",
+          "primary_location": {
+            "id": "doi:10.1007/978-981-92-4805-6_32",
+            "doi": "https://doi.org/10.1007/978-981-92-4805-6_32",
+            "is_oa": false,
+            "landing_page_url": "https://doi.org/10.1007/978-981-92-4805-6_32",
+            "pdf_url": null,
+            "source": {
+              "id": "https://openalex.org/S106296714",
+              "display_name": "Lecture notes in computer science",
+              "issn_l": "0302-9743",
+              "issn": [
+                "0302-9743",
+                "1611-3349"
+              ],
+              "is_oa": false,
+              "is_in_doaj": false,
+              "is_core": true,
+              "listed_in": [
+                "cwts-core",
+                "jufo-1",
+                "ki-jl-1",
+                "norway-1",
+                "vabb-shw"
+              ],
+              "host_organization": "https://openalex.org/P4310319900",
+              "host_organization_name": "Springer Science+Business Media",
+              "host_organization_lineage": [
+                "https://openalex.org/P4310319900",
+                "https://openalex.org/P4310319965"
+              ],
+              "host_organization_lineage_names": [
+                "Springer Science+Business Media",
+                "Springer Nature"
+              ],
+              "type": "book series"
+            },
+            "license": null,
+            "license_id": null,
+            "version": "publishedVersion",
+            "is_accepted": true,
+            "is_published": true,
+            "raw_source_name": "Lecture Notes in Computer Science",
+            "raw_type": "book-chapter"
+          },
+          "ids": {
+            "openalex": "https://openalex.org/W7204041244",
+            "doi": "https://doi.org/10.1007/978-981-92-4805-6_32"
+          }
+        },
+        {
+          "id": "https://openalex.org/W7206187976",
+          "doi": "https://doi.org/10.1016/j.hcc.2026.100428",
+          "display_name": "SoK: Towards a user-centric, privacy-preserving, and reliable AI agent via on-device LLM personalization",
+          "publication_date": "2026-09-01",
+          "primary_location": {
+            "id": "doi:10.1016/j.hcc.2026.100428",
+            "doi": "https://doi.org/10.1016/j.hcc.2026.100428",
+            "is_oa": true,
+            "landing_page_url": "https://doi.org/10.1016/j.hcc.2026.100428",
+            "pdf_url": "https://www.sciencedirect.com/science/article/pii/S2667295226000474/pdf",
+            "source": {
+              "id": "https://openalex.org/S4210186527",
+              "display_name": "High-Confidence Computing",
+              "issn_l": "2667-2952",
+              "issn": [
+                "2667-2952"
+              ],
+              "is_oa": true,
+              "is_in_doaj": true,
+              "is_core": true,
+              "listed_in": [
+                "ccf-c",
+                "cwts-core",
+                "doaj",
+                "dongbi-c",
+                "norway-1",
+                "poland-20"
+              ],
+              "host_organization": "https://openalex.org/P4310320990",
+              "host_organization_name": "Elsevier BV",
+              "host_organization_lineage": [
+                "https://openalex.org/P4310320990"
+              ],
+              "host_organization_lineage_names": [
+                "Elsevier BV"
+              ],
+              "type": "journal"
+            },
+            "license": "cc-by-nc-nd",
+            "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+            "version": "publishedVersion",
+            "is_accepted": true,
+            "is_published": true,
+            "raw_source_name": "High-Confidence Computing",
+            "raw_type": "journal-article"
+          },
+          "ids": {
+            "openalex": "https://openalex.org/W7206187976",
+            "doi": "https://doi.org/10.1016/j.hcc.2026.100428"
+          }
+        },
+        {
+          "id": "https://openalex.org/W7223136190",
+          "doi": "https://doi.org/10.5753/sbseg.2026.29354",
+          "display_name": "Mitigação de Ataques de Canal Lateral Temporal em Sistemas de Serving de LLMs por Meio da Equalização de Latência",
+          "publication_date": "2026-09-01",
+          "primary_location": {
+            "id": "doi:10.5753/sbseg.2026.29354",
+            "doi": "https://doi.org/10.5753/sbseg.2026.29354",
+            "is_oa": true,
+            "landing_page_url": "https://doi.org/10.5753/sbseg.2026.29354",
+            "pdf_url": "https://sol.sbc.org.br/index.php/sbseg/article/download/44324/44087",
+            "source": {
+              "id": "https://openalex.org/S7407096610",
+              "display_name": "Simpósio Brasileiro de Cibersegurança (SBSeg)",
+              "issn_l": null,
+              "issn": null,
+              "is_oa": false,
+              "is_in_doaj": false,
+              "is_core": false,
+              "listed_in": [],
+              "host_organization": null,
+              "host_organization_name": null,
+              "host_organization_lineage": [],
+              "host_organization_lineage_names": [],
+              "type": "conference"
+            },
+            "license": null,
+            "license_id": null,
+            "version": "publishedVersion",
+            "is_accepted": true,
+            "is_published": true,
+            "raw_source_name": "Anais do XXVI Simpósio Brasileiro de Cibersegurança (SBSeg 2026)",
+            "raw_type": "proceedings-article"
+          },
+          "ids": {
+            "openalex": "https://openalex.org/W7223136190",
+            "doi": "https://doi.org/10.5753/sbseg.2026.29354"
+          }
+        },
+        {
+          "id": "https://openalex.org/W7223287912",
+          "doi": "https://doi.org/10.1016/j.cosrev.2026.101080",
+          "display_name": "Machine unlearning as a security problem: Threats, defenses, and privacy-security-utility trilemma",
+          "publication_date": "2026-10-23",
+          "primary_location": {
+            "id": "doi:10.1016/j.cosrev.2026.101080",
+            "doi": "https://doi.org/10.1016/j.cosrev.2026.101080",
+            "is_oa": false,
+            "landing_page_url": "https://doi.org/10.1016/j.cosrev.2026.101080",
+            "pdf_url": null,
+            "source": {
+              "id": "https://openalex.org/S73121659",
+              "display_name": "Computer Science Review",
+              "issn_l": "1574-0137",
+              "issn": [
+                "1574-0137",
+                "1876-7745"
+              ],
+              "is_oa": false,
+              "is_in_doaj": false,
+              "is_core": true,
+              "listed_in": [
+                "cwts-core",
+                "dongbi-d",
+                "jufo-1",
+                "norway-1",
+                "poland-140",
+                "russia-white-list-1"
+              ],
+              "host_organization": "https://openalex.org/P4310320990",
+              "host_organization_name": "Elsevier BV",
+              "host_organization_lineage": [
+                "https://openalex.org/P4310320990"
+              ],
+              "host_organization_lineage_names": [
+                "Elsevier BV"
+              ],
+              "type": "journal"
+            },
+            "license": null,
+            "license_id": null,
+            "version": "publishedVersion",
+            "is_accepted": true,
+            "is_published": true,
+            "raw_source_name": "Computer Science Review",
+            "raw_type": "journal-article"
+          },
+          "ids": {
+            "openalex": "https://openalex.org/W7223287912",
+            "doi": "https://doi.org/10.1016/j.cosrev.2026.101080"
+          }
+        }
+      ]
+    },
+    {
+      "doi_requested": "10.48550/arXiv.2608.09225",
+      "work_query": "https://api.openalex.org/works/https://doi.org/10.48550/arXiv.2608.09225",
+      "work": {
+        "id": "https://openalex.org/W7202173108",
+        "doi": "https://doi.org/10.48550/arxiv.2608.09225",
+        "display_name": "Governing the KV Cache: Preventing Timing Side-Channel Leakage in Multi-Tenant LLM Inference",
+        "cited_by_count": 0,
+        "cited_by_api_url": null,
+        "ids": {
+          "openalex": "https://openalex.org/W7202173108",
+          "doi": "https://doi.org/10.48550/arxiv.2608.09225"
+        }
+      },
+      "citing_query": "https://api.openalex.org/works?filter=cites%3AW7202173108&per-page=200&select=id%2Cdoi%2Cdisplay_name%2Cpublication_date%2Cprimary_location%2Cids",
+      "meta": {
+        "notice": "No API key, so this request shares one free daily budget ($0.10) with everyone on your network's IP address. Get a free key with its own $1/day at https://openalex.org/settings/api and add api_key=YOUR_KEY to your requests. An AI agent can get one for its user in one call: POST https://api.openalex.org/api-keys with {\"email\": \"<your user's email>\"}; we email them a link, and the key works once they click it. Docs for agents: https://help.openalex.org/llms.txt",
+        "count": 0,
+        "db_response_time_ms": 8,
+        "page": 1,
+        "per_page": 200,
+        "groups_count": null,
+        "x_query": {
+          "oql": "get works citing (W7202173108)",
+          "x_new_oql": "get works citing (W7202173108)",
+          "oqo": {
+            "get_rows": "works",
+            "filter_rows": [
+              {
+                "column_id": "referenced_works",
+                "value": "W7202173108"
+              }
+            ]
+          },
+          "url": "/works?filter=referenced_works:W7202173108&per_page=200",
+          "order": "most cited (age-adjusted) first",
+          "order_default": true
+        },
+        "cost_usd": 0.0001
+      },
+      "results": []
+    }
+  ]
+}

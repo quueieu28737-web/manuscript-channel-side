@@ -1,0 +1,1283 @@
+{
+  "retrieved_utc": "2026-10-27T00:42:54.785542+00:00",
+  "source": "OpenAlex; index incompleteness demonstrated by the prior pilot",
+  "entries": [
+    {
+      "family": "addagada2026kvgov",
+      "frozen_source": "https://arxiv.org/html/2608.09225v1",
+      "doi_requested": "10.48550/arXiv.2608.09225",
+      "work_query": "https://api.openalex.org/works/https://doi.org/10.48550/arXiv.2608.09225",
+      "work": {
+        "id": "https://openalex.org/W7202173108",
+        "doi": "https://doi.org/10.48550/arxiv.2608.09225",
+        "display_name": "Governing the KV Cache: Preventing Timing Side-Channel Leakage in Multi-Tenant LLM Inference",
+        "cited_by_count": 0,
+        "ids": {
+          "openalex": "https://openalex.org/W7202173108",
+          "doi": "https://doi.org/10.48550/arxiv.2608.09225"
+        }
+      },
+      "citing_query": "https://api.openalex.org/works?filter=cites%3AW7202173108&per-page=200&select=id%2Cdoi%2Cdisplay_name%2Cpublication_date%2Cprimary_location%2Cids",
+      "meta": {
+        "notice": "No API key, so this request shares one free daily budget ($0.10) with everyone on your network's IP address. Get a free key with its own $1/day at https://openalex.org/settings/api and add api_key=YOUR_KEY to your requests. An AI agent can get one for its user in one call: POST https://api.openalex.org/api-keys with {\"email\": \"<your user's email>\"}; we email them a link, and the key works once they click it. Docs for agents: https://help.openalex.org/llms.txt",
+        "count": 0,
+        "db_response_time_ms": 17,
+        "page": 1,
+        "per_page": 200,
+        "groups_count": null,
+        "x_query": {
+          "oql": "get works citing (W7202173108)",
+          "x_new_oql": "get works citing (W7202173108)",
+          "oqo": {
+            "get_rows": "works",
+            "filter_rows": [
+              {
+                "column_id": "referenced_works",
+                "value": "W7202173108"
+              }
+            ]
+          },
+          "url": "/works?filter=referenced_works:W7202173108&per_page=200",
+          "order": "most cited (age-adjusted) first",
+          "order_default": true
+        },
+        "cost_usd": 0.0001
+      },
+      "results": [],
+      "truncated": false
+    },
+    {
+      "family": "carlini2024remote",
+      "frozen_source": "https://arxiv.org/html/2410.17175v1",
+      "doi_requested": "10.48550/arXiv.2410.17175",
+      "work_query": "https://api.openalex.org/works/https://doi.org/10.48550/arXiv.2410.17175",
+      "work": {
+        "id": "https://openalex.org/W4404261774",
+        "doi": "https://doi.org/10.48550/arxiv.2410.17175",
+        "display_name": "Remote Timing Attacks on Efficient Language Model Inference",
+        "cited_by_count": 1,
+        "ids": {
+          "openalex": "https://openalex.org/W4404261774",
+          "doi": "https://doi.org/10.48550/arxiv.2410.17175"
+        }
+      },
+      "citing_query": "https://api.openalex.org/works?filter=cites%3AW4404261774&per-page=200&select=id%2Cdoi%2Cdisplay_name%2Cpublication_date%2Cprimary_location%2Cids",
+      "meta": {
+        "notice": "No API key, so this request shares one free daily budget ($0.10) with everyone on your network's IP address. Get a free key with its own $1/day at https://openalex.org/settings/api and add api_key=YOUR_KEY to your requests. An AI agent can get one for its user in one call: POST https://api.openalex.org/api-keys with {\"email\": \"<your user's email>\"}; we email them a link, and the key works once they click it. Docs for agents: https://help.openalex.org/llms.txt",
+        "count": 1,
+        "db_response_time_ms": 10,
+        "page": 1,
+        "per_page": 200,
+        "groups_count": null,
+        "x_query": {
+          "oql": "get works citing (W4404261774)",
+          "x_new_oql": "get works citing (W4404261774)",
+          "oqo": {
+            "get_rows": "works",
+            "filter_rows": [
+              {
+                "column_id": "referenced_works",
+                "value": "W4404261774"
+              }
+            ]
+          },
+          "url": "/works?filter=referenced_works:W4404261774&per_page=200",
+          "order": "most cited (age-adjusted) first",
+          "order_default": true
+        },
+        "cost_usd": 0.0001
+      },
+      "results": [
+        {
+          "id": "https://openalex.org/W7172223942",
+          "doi": "https://doi.org/10.1007/978-3-032-25267-8_18",
+          "display_name": "PANShield: Paraconsistent Analysis Networks for Defense Against Adversarial Attacks in Cybersecurity Systems",
+          "publication_date": "2026-01-01",
+          "primary_location": {
+            "id": "doi:10.1007/978-3-032-25267-8_18",
+            "doi": "https://doi.org/10.1007/978-3-032-25267-8_18",
+            "is_oa": false,
+            "landing_page_url": "https://doi.org/10.1007/978-3-032-25267-8_18",
+            "pdf_url": null,
+            "source": {
+              "id": "https://openalex.org/S4210235298",
+              "display_name": "Advances in sustainability science and technology",
+              "issn_l": "2662-6829",
+              "issn": [
+                "2662-6829",
+                "2662-6837"
+              ],
+              "is_oa": false,
+              "is_in_doaj": false,
+              "is_core": true,
+              "listed_in": [
+                "cwts-core"
+              ],
+              "host_organization": "https://openalex.org/P4310319965",
+              "host_organization_name": "Springer Nature",
+              "host_organization_lineage": [
+                "https://openalex.org/P4310319965"
+              ],
+              "host_organization_lineage_names": [
+                "Springer Nature"
+              ],
+              "type": "book series"
+            },
+            "license": null,
+            "license_id": null,
+            "version": "publishedVersion",
+            "is_accepted": true,
+            "is_published": true,
+            "raw_source_name": "Advances in Sustainability Science and Technology",
+            "raw_type": "book-chapter"
+          },
+          "ids": {
+            "openalex": "https://openalex.org/W7172223942",
+            "doi": "https://doi.org/10.1007/978-3-032-25267-8_18"
+          }
+        }
+      ],
+      "truncated": false
+    },
+    {
+      "family": "chen2026sparleak",
+      "frozen_source": "https://arxiv.org/html/2609.38830v1",
+      "doi_requested": "10.48550/arXiv.2609.38830",
+      "work_query": "https://api.openalex.org/works/https://doi.org/10.48550/arXiv.2609.38830",
+      "work": {
+        "id": "https://openalex.org/W7215117480",
+        "doi": "https://doi.org/10.48550/arxiv.2609.38830",
+        "display_name": "SparLeak: Privacy Leakage from Sparse Attention in LLM Inference on Shared GPUs",
+        "cited_by_count": 0,
+        "ids": {
+          "openalex": "https://openalex.org/W7215117480",
+          "doi": "https://doi.org/10.48550/arxiv.2609.38830"
+        }
+      },
+      "citing_query": "https://api.openalex.org/works?filter=cites%3AW7215117480&per-page=200&select=id%2Cdoi%2Cdisplay_name%2Cpublication_date%2Cprimary_location%2Cids",
+      "meta": {
+        "notice": "No API key, so this request shares one free daily budget ($0.10) with everyone on your network's IP address. Get a free key with its own $1/day at https://openalex.org/settings/api and add api_key=YOUR_KEY to your requests. An AI agent can get one for its user in one call: POST https://api.openalex.org/api-keys with {\"email\": \"<your user's email>\"}; we email them a link, and the key works once they click it. Docs for agents: https://help.openalex.org/llms.txt",
+        "count": 0,
+        "db_response_time_ms": 56,
+        "page": 1,
+        "per_page": 200,
+        "groups_count": null,
+        "x_query": {
+          "oql": "get works citing (W7215117480)",
+          "x_new_oql": "get works citing (W7215117480)",
+          "oqo": {
+            "get_rows": "works",
+            "filter_rows": [
+              {
+                "column_id": "referenced_works",
+                "value": "W7215117480"
+              }
+            ]
+          },
+          "url": "/works?filter=referenced_works:W7215117480&per_page=200",
+          "order": "most cited (age-adjusted) first",
+          "order_default": true
+        },
+        "cost_usd": 0.0001
+      },
+      "results": [],
+      "truncated": false
+    },
+    {
+      "family": "chu2025safekv",
+      "frozen_source": "https://arxiv.org/html/2508.08438v2",
+      "doi_requested": "10.48550/arXiv.2508.08438",
+      "work_query": "https://api.openalex.org/works/https://doi.org/10.48550/arXiv.2508.08438",
+      "work": {
+        "id": "https://openalex.org/W4416858267",
+        "doi": "https://doi.org/10.48550/arxiv.2508.08438",
+        "display_name": "Selective KV-Cache Sharing to Mitigate Timing Side-Channels in LLM Inference",
+        "cited_by_count": 0,
+        "ids": {
+          "openalex": "https://openalex.org/W4416858267",
+          "doi": "https://doi.org/10.48550/arxiv.2508.08438"
+        }
+      },
+      "citing_query": "https://api.openalex.org/works?filter=cites%3AW4416858267&per-page=200&select=id%2Cdoi%2Cdisplay_name%2Cpublication_date%2Cprimary_location%2Cids",
+      "meta": {
+        "notice": "No API key, so this request shares one free daily budget ($0.10) with everyone on your network's IP address. Get a free key with its own $1/day at https://openalex.org/settings/api and add api_key=YOUR_KEY to your requests. An AI agent can get one for its user in one call: POST https://api.openalex.org/api-keys with {\"email\": \"<your user's email>\"}; we email them a link, and the key works once they click it. Docs for agents: https://help.openalex.org/llms.txt",
+        "count": 0,
+        "db_response_time_ms": 11,
+        "page": 1,
+        "per_page": 200,
+        "groups_count": null,
+        "x_query": {
+          "oql": "get works citing (W4416858267)",
+          "x_new_oql": "get works citing (W4416858267)",
+          "oqo": {
+            "get_rows": "works",
+            "filter_rows": [
+              {
+                "column_id": "referenced_works",
+                "value": "W4416858267"
+              }
+            ]
+          },
+          "url": "/works?filter=referenced_works:W4416858267&per_page=200",
+          "order": "most cited (age-adjusted) first",
+          "order_default": true
+        },
+        "cost_usd": 0.0001
+      },
+      "results": [],
+      "truncated": false
+    },
+    {
+      "family": "dangol2026workflow",
+      "frozen_source": "https://arxiv.org/html/2606.07150v3",
+      "doi_requested": "10.48550/arXiv.2606.07150",
+      "work_query": "https://api.openalex.org/works/https://doi.org/10.48550/arXiv.2606.07150",
+      "work": {
+        "id": "https://openalex.org/W7163886269",
+        "doi": "https://doi.org/10.48550/arxiv.2606.07150",
+        "display_name": "From Privacy to Workflow Integrity: Communication-Graph Metadata in Autonomous Agent Interoperability",
+        "cited_by_count": 0,
+        "ids": {
+          "openalex": "https://openalex.org/W7163886269",
+          "doi": "https://doi.org/10.48550/arxiv.2606.07150"
+        }
+      },
+      "citing_query": "https://api.openalex.org/works?filter=cites%3AW7163886269&per-page=200&select=id%2Cdoi%2Cdisplay_name%2Cpublication_date%2Cprimary_location%2Cids",
+      "meta": {
+        "notice": "No API key, so this request shares one free daily budget ($0.10) with everyone on your network's IP address. Get a free key with its own $1/day at https://openalex.org/settings/api and add api_key=YOUR_KEY to your requests. An AI agent can get one for its user in one call: POST https://api.openalex.org/api-keys with {\"email\": \"<your user's email>\"}; we email them a link, and the key works once they click it. Docs for agents: https://help.openalex.org/llms.txt",
+        "count": 0,
+        "db_response_time_ms": 33,
+        "page": 1,
+        "per_page": 200,
+        "groups_count": null,
+        "x_query": {
+          "oql": "get works citing (W7163886269)",
+          "x_new_oql": "get works citing (W7163886269)",
+          "oqo": {
+            "get_rows": "works",
+            "filter_rows": [
+              {
+                "column_id": "referenced_works",
+                "value": "W7163886269"
+              }
+            ]
+          },
+          "url": "/works?filter=referenced_works:W7163886269&per_page=200",
+          "order": "most cited (age-adjusted) first",
+          "order_default": true
+        },
+        "cost_usd": 0.0001
+      },
+      "results": [],
+      "truncated": false
+    },
+    {
+      "family": "earlybird2025",
+      "frozen_source": "https://ieeexplore.ieee.org/document/11206380/",
+      "doi_requested": "10.1109/TIFS.2025.3622954",
+      "work_query": "https://api.openalex.org/works/https://doi.org/10.1109/TIFS.2025.3622954",
+      "work": {
+        "id": "https://openalex.org/W4415284287",
+        "doi": "https://doi.org/10.1109/tifs.2025.3622954",
+        "display_name": "The Early Bird Catches the Leak: Unveiling Timing Side Channels in LLM Serving Systems",
+        "cited_by_count": 7,
+        "ids": {
+          "openalex": "https://openalex.org/W4415284287",
+          "doi": "https://doi.org/10.1109/tifs.2025.3622954"
+        }
+      },
+      "citing_query": "https://api.openalex.org/works?filter=cites%3AW4415284287&per-page=200&select=id%2Cdoi%2Cdisplay_name%2Cpublication_date%2Cprimary_location%2Cids",
+      "meta": {
+        "notice": "No API key, so this request shares one free daily budget ($0.10) with everyone on your network's IP address. Get a free key with its own $1/day at https://openalex.org/settings/api and add api_key=YOUR_KEY to your requests. An AI agent can get one for its user in one call: POST https://api.openalex.org/api-keys with {\"email\": \"<your user's email>\"}; we email them a link, and the key works once they click it. Docs for agents: https://help.openalex.org/llms.txt",
+        "count": 7,
+        "db_response_time_ms": 13,
+        "page": 1,
+        "per_page": 200,
+        "groups_count": null,
+        "x_query": {
+          "oql": "get works citing (W4415284287)",
+          "x_new_oql": "get works citing (W4415284287)",
+          "oqo": {
+            "get_rows": "works",
+            "filter_rows": [
+              {
+                "column_id": "referenced_works",
+                "value": "W4415284287"
+              }
+            ]
+          },
+          "url": "/works?filter=referenced_works:W4415284287&per_page=200",
+          "order": "most cited (age-adjusted) first",
+          "order_default": true
+        },
+        "cost_usd": 0.0001
+      },
+      "results": [
+        {
+          "id": "https://openalex.org/W7151473412",
+          "doi": "https://doi.org/10.1145/3807455",
+          "display_name": "Foundation Models for Autonomous Driving Systems: An Initial Roadmap",
+          "publication_date": "2026-04-07",
+          "primary_location": {
+            "id": "doi:10.1145/3807455",
+            "doi": "https://doi.org/10.1145/3807455",
+            "is_oa": true,
+            "landing_page_url": "https://doi.org/10.1145/3807455",
+            "pdf_url": null,
+            "source": {
+              "id": "https://openalex.org/S142627899",
+              "display_name": "ACM Transactions on Software Engineering and Methodology",
+              "issn_l": "1049-331X",
+              "issn": [
+                "1049-331X",
+                "1557-7392"
+              ],
+              "is_oa": false,
+              "is_in_doaj": false,
+              "is_core": true,
+              "listed_in": [
+                "ccf-a",
+                "cwts-core",
+                "dongbi-a",
+                "jufo-3",
+                "norway-2",
+                "poland-100",
+                "russia-white-list-1"
+              ],
+              "host_organization": "https://openalex.org/P4310319798",
+              "host_organization_name": "Association for Computing Machinery",
+              "host_organization_lineage": [
+                "https://openalex.org/P4310319798"
+              ],
+              "host_organization_lineage_names": [
+                "Association for Computing Machinery"
+              ],
+              "type": "journal"
+            },
+            "license": "cc-by",
+            "license_id": "https://openalex.org/licenses/cc-by",
+            "version": "publishedVersion",
+            "is_accepted": true,
+            "is_published": true,
+            "raw_source_name": "ACM Transactions on Software Engineering and Methodology",
+            "raw_type": "journal-article"
+          },
+          "ids": {
+            "openalex": "https://openalex.org/W7151473412",
+            "doi": "https://doi.org/10.1145/3807455"
+          }
+        },
+        {
+          "id": "https://openalex.org/W7163509412",
+          "doi": "https://doi.org/10.1145/3779208.3804883",
+          "display_name": "POSTER: Abuse Potential of Shared LLM Caches in Educational Environments through SniffLlama Timing Attack",
+          "publication_date": "2026-06-01",
+          "primary_location": {
+            "id": "doi:10.1145/3779208.3804883",
+            "doi": "https://doi.org/10.1145/3779208.3804883",
+            "is_oa": true,
+            "landing_page_url": "https://doi.org/10.1145/3779208.3804883",
+            "pdf_url": null,
+            "source": {
+              "id": "https://openalex.org/S4363609011",
+              "display_name": "ACM Asia Conference on Computer and Communications Security (ASIA CCS)",
+              "issn_l": null,
+              "issn": null,
+              "is_oa": false,
+              "is_in_doaj": false,
+              "is_core": false,
+              "listed_in": [],
+              "host_organization": null,
+              "host_organization_name": null,
+              "host_organization_lineage": [],
+              "host_organization_lineage_names": [],
+              "type": "conference"
+            },
+            "license": "cc-by",
+            "license_id": "https://openalex.org/licenses/cc-by",
+            "version": "publishedVersion",
+            "is_accepted": true,
+            "is_published": true,
+            "raw_source_name": "Proceedings of the ACM Asia Conference on Computer and Communications Security",
+            "raw_type": "proceedings-article"
+          },
+          "ids": {
+            "openalex": "https://openalex.org/W7163509412",
+            "doi": "https://doi.org/10.1145/3779208.3804883"
+          }
+        },
+        {
+          "id": "https://openalex.org/W7171393655",
+          "doi": "https://doi.org/10.1016/j.comnet.2026.112609",
+          "display_name": "Profit-aware deployment of large language model-enabled inference chains in data centers",
+          "publication_date": "2026-07-27",
+          "primary_location": {
+            "id": "doi:10.1016/j.comnet.2026.112609",
+            "doi": "https://doi.org/10.1016/j.comnet.2026.112609",
+            "is_oa": false,
+            "landing_page_url": "https://doi.org/10.1016/j.comnet.2026.112609",
+            "pdf_url": null,
+            "source": {
+              "id": "https://openalex.org/S63392143",
+              "display_name": "Computer Networks",
+              "issn_l": "1389-1286",
+              "issn": [
+                "1389-1286",
+                "1872-7069"
+              ],
+              "is_oa": false,
+              "is_in_doaj": false,
+              "is_core": true,
+              "listed_in": [
+                "anvur-scientific",
+                "ccf-b",
+                "cwts-core",
+                "dongbi-b",
+                "jufo-2",
+                "norway-2",
+                "poland-100",
+                "russia-white-list-1",
+                "vabb-shw"
+              ],
+              "host_organization": "https://openalex.org/P4310320990",
+              "host_organization_name": "Elsevier BV",
+              "host_organization_lineage": [
+                "https://openalex.org/P4310320990"
+              ],
+              "host_organization_lineage_names": [
+                "Elsevier BV"
+              ],
+              "type": "journal"
+            },
+            "license": null,
+            "license_id": null,
+            "version": "publishedVersion",
+            "is_accepted": true,
+            "is_published": true,
+            "raw_source_name": "Computer Networks",
+            "raw_type": "journal-article"
+          },
+          "ids": {
+            "openalex": "https://openalex.org/W7171393655",
+            "doi": "https://doi.org/10.1016/j.comnet.2026.112609"
+          }
+        },
+        {
+          "id": "https://openalex.org/W7204041244",
+          "doi": "https://doi.org/10.1007/978-981-92-4805-6_32",
+          "display_name": "InputSnatch: Stealing Input in LLM Services via Cache-Sharing Timing Side-Channel Attacks",
+          "publication_date": "2026-08-23",
+          "primary_location": {
+            "id": "doi:10.1007/978-981-92-4805-6_32",
+            "doi": "https://doi.org/10.1007/978-981-92-4805-6_32",
+            "is_oa": false,
+            "landing_page_url": "https://doi.org/10.1007/978-981-92-4805-6_32",
+            "pdf_url": null,
+            "source": {
+              "id": "https://openalex.org/S106296714",
+              "display_name": "Lecture notes in computer science",
+              "issn_l": "0302-9743",
+              "issn": [
+                "0302-9743",
+                "1611-3349"
+              ],
+              "is_oa": false,
+              "is_in_doaj": false,
+              "is_core": true,
+              "listed_in": [
+                "cwts-core",
+                "jufo-1",
+                "ki-jl-1",
+                "norway-1",
+                "vabb-shw"
+              ],
+              "host_organization": "https://openalex.org/P4310319900",
+              "host_organization_name": "Springer Science+Business Media",
+              "host_organization_lineage": [
+                "https://openalex.org/P4310319900",
+                "https://openalex.org/P4310319965"
+              ],
+              "host_organization_lineage_names": [
+                "Springer Science+Business Media",
+                "Springer Nature"
+              ],
+              "type": "book series"
+            },
+            "license": null,
+            "license_id": null,
+            "version": "publishedVersion",
+            "is_accepted": true,
+            "is_published": true,
+            "raw_source_name": "Lecture Notes in Computer Science",
+            "raw_type": "book-chapter"
+          },
+          "ids": {
+            "openalex": "https://openalex.org/W7204041244",
+            "doi": "https://doi.org/10.1007/978-981-92-4805-6_32"
+          }
+        },
+        {
+          "id": "https://openalex.org/W7206187976",
+          "doi": "https://doi.org/10.1016/j.hcc.2026.100428",
+          "display_name": "SoK: Towards a user-centric, privacy-preserving, and reliable AI agent via on-device LLM personalization",
+          "publication_date": "2026-09-01",
+          "primary_location": {
+            "id": "doi:10.1016/j.hcc.2026.100428",
+            "doi": "https://doi.org/10.1016/j.hcc.2026.100428",
+            "is_oa": true,
+            "landing_page_url": "https://doi.org/10.1016/j.hcc.2026.100428",
+            "pdf_url": "https://www.sciencedirect.com/science/article/pii/S2667295226000474/pdf",
+            "source": {
+              "id": "https://openalex.org/S4210186527",
+              "display_name": "High-Confidence Computing",
+              "issn_l": "2667-2952",
+              "issn": [
+                "2667-2952"
+              ],
+              "is_oa": true,
+              "is_in_doaj": true,
+              "is_core": true,
+              "listed_in": [
+                "ccf-c",
+                "cwts-core",
+                "doaj",
+                "dongbi-c",
+                "norway-1",
+                "poland-20"
+              ],
+              "host_organization": "https://openalex.org/P4310320990",
+              "host_organization_name": "Elsevier BV",
+              "host_organization_lineage": [
+                "https://openalex.org/P4310320990"
+              ],
+              "host_organization_lineage_names": [
+                "Elsevier BV"
+              ],
+              "type": "journal"
+            },
+            "license": "cc-by-nc-nd",
+            "license_id": "https://openalex.org/licenses/cc-by-nc-nd",
+            "version": "publishedVersion",
+            "is_accepted": true,
+            "is_published": true,
+            "raw_source_name": "High-Confidence Computing",
+            "raw_type": "journal-article"
+          },
+          "ids": {
+            "openalex": "https://openalex.org/W7206187976",
+            "doi": "https://doi.org/10.1016/j.hcc.2026.100428"
+          }
+        },
+        {
+          "id": "https://openalex.org/W7223136190",
+          "doi": "https://doi.org/10.5753/sbseg.2026.29354",
+          "display_name": "Mitigação de Ataques de Canal Lateral Temporal em Sistemas de Serving de LLMs por Meio da Equalização de Latência",
+          "publication_date": "2026-09-01",
+          "primary_location": {
+            "id": "doi:10.5753/sbseg.2026.29354",
+            "doi": "https://doi.org/10.5753/sbseg.2026.29354",
+            "is_oa": true,
+            "landing_page_url": "https://doi.org/10.5753/sbseg.2026.29354",
+            "pdf_url": "https://sol.sbc.org.br/index.php/sbseg/article/download/44324/44087",
+            "source": {
+              "id": "https://openalex.org/S7407096610",
+              "display_name": "Simpósio Brasileiro de Cibersegurança (SBSeg)",
+              "issn_l": null,
+              "issn": null,
+              "is_oa": false,
+              "is_in_doaj": false,
+              "is_core": false,
+              "listed_in": [],
+              "host_organization": null,
+              "host_organization_name": null,
+              "host_organization_lineage": [],
+              "host_organization_lineage_names": [],
+              "type": "conference"
+            },
+            "license": null,
+            "license_id": null,
+            "version": "publishedVersion",
+            "is_accepted": true,
+            "is_published": true,
+            "raw_source_name": "Anais do XXVI Simpósio Brasileiro de Cibersegurança (SBSeg 2026)",
+            "raw_type": "proceedings-article"
+          },
+          "ids": {
+            "openalex": "https://openalex.org/W7223136190",
+            "doi": "https://doi.org/10.5753/sbseg.2026.29354"
+          }
+        },
+        {
+          "id": "https://openalex.org/W7223287912",
+          "doi": "https://doi.org/10.1016/j.cosrev.2026.101080",
+          "display_name": "Machine unlearning as a security problem: Threats, defenses, and privacy-security-utility trilemma",
+          "publication_date": "2026-10-23",
+          "primary_location": {
+            "id": "doi:10.1016/j.cosrev.2026.101080",
+            "doi": "https://doi.org/10.1016/j.cosrev.2026.101080",
+            "is_oa": false,
+            "landing_page_url": "https://doi.org/10.1016/j.cosrev.2026.101080",
+            "pdf_url": null,
+            "source": {
+              "id": "https://openalex.org/S73121659",
+              "display_name": "Computer Science Review",
+              "issn_l": "1574-0137",
+              "issn": [
+                "1574-0137",
+                "1876-7745"
+              ],
+              "is_oa": false,
+              "is_in_doaj": false,
+              "is_core": true,
+              "listed_in": [
+                "cwts-core",
+                "dongbi-d",
+                "jufo-1",
+                "norway-1",
+                "poland-140",
+                "russia-white-list-1"
+              ],
+              "host_organization": "https://openalex.org/P4310320990",
+              "host_organization_name": "Elsevier BV",
+              "host_organization_lineage": [
+                "https://openalex.org/P4310320990"
+              ],
+              "host_organization_lineage_names": [
+                "Elsevier BV"
+              ],
+              "type": "journal"
+            },
+            "license": null,
+            "license_id": null,
+            "version": "publishedVersion",
+            "is_accepted": true,
+            "is_published": true,
+            "raw_source_name": "Computer Science Review",
+            "raw_type": "journal-article"
+          },
+          "ids": {
+            "openalex": "https://openalex.org/W7223287912",
+            "doi": "https://doi.org/10.1016/j.cosrev.2026.101080"
+          }
+        }
+      ],
+      "truncated": false
+    },
+    {
+      "family": "gao2025iknow",
+      "frozen_source": "https://www.usenix.org/conference/usenixsecurity25/presentation/gao-zibo",
+      "doi_requested": "10.48550/arXiv.2505.06738",
+      "work_query": "https://api.openalex.org/works/https://doi.org/10.48550/arXiv.2505.06738",
+      "work": {
+        "id": "https://openalex.org/W4415110284",
+        "doi": "https://doi.org/10.48550/arxiv.2505.06738",
+        "display_name": "I Know What You Said: Unveiling Hardware Cache Side-Channels in Local Large Language Model Inference",
+        "cited_by_count": 0,
+        "ids": {
+          "openalex": "https://openalex.org/W4415110284",
+          "doi": "https://doi.org/10.48550/arxiv.2505.06738"
+        }
+      },
+      "citing_query": "https://api.openalex.org/works?filter=cites%3AW4415110284&per-page=200&select=id%2Cdoi%2Cdisplay_name%2Cpublication_date%2Cprimary_location%2Cids",
+      "meta": {
+        "notice": "No API key, so this request shares one free daily budget ($0.10) with everyone on your network's IP address. Get a free key with its own $1/day at https://openalex.org/settings/api and add api_key=YOUR_KEY to your requests. An AI agent can get one for its user in one call: POST https://api.openalex.org/api-keys with {\"email\": \"<your user's email>\"}; we email them a link, and the key works once they click it. Docs for agents: https://help.openalex.org/llms.txt",
+        "count": 0,
+        "db_response_time_ms": 12,
+        "page": 1,
+        "per_page": 200,
+        "groups_count": null,
+        "x_query": {
+          "oql": "get works citing (W4415110284)",
+          "x_new_oql": "get works citing (W4415110284)",
+          "oqo": {
+            "get_rows": "works",
+            "filter_rows": [
+              {
+                "column_id": "referenced_works",
+                "value": "W4415110284"
+              }
+            ]
+          },
+          "url": "/works?filter=referenced_works:W4415110284&per_page=200",
+          "order": "most cited (age-adjusted) first",
+          "order_default": true
+        },
+        "cost_usd": 0.0001
+      },
+      "results": [],
+      "truncated": false
+    },
+    {
+      "family": "hadad2026shape",
+      "frozen_source": "https://arxiv.org/html/2603.25403v1",
+      "doi_requested": "10.48550/arXiv.2603.25403",
+      "work_query": "https://api.openalex.org/works/https://doi.org/10.48550/arXiv.2603.25403",
+      "work": {
+        "id": "https://openalex.org/W7141170122",
+        "doi": "https://doi.org/10.48550/arxiv.2603.25403",
+        "display_name": "Shape and Substance: Dual-Layer Side-Channel Attacks on Local Vision-Language Models",
+        "cited_by_count": 0,
+        "ids": {
+          "openalex": "https://openalex.org/W7141170122",
+          "doi": "https://doi.org/10.48550/arxiv.2603.25403"
+        }
+      },
+      "citing_query": "https://api.openalex.org/works?filter=cites%3AW7141170122&per-page=200&select=id%2Cdoi%2Cdisplay_name%2Cpublication_date%2Cprimary_location%2Cids",
+      "meta": {
+        "notice": "No API key, so this request shares one free daily budget ($0.10) with everyone on your network's IP address. Get a free key with its own $1/day at https://openalex.org/settings/api and add api_key=YOUR_KEY to your requests. An AI agent can get one for its user in one call: POST https://api.openalex.org/api-keys with {\"email\": \"<your user's email>\"}; we email them a link, and the key works once they click it. Docs for agents: https://help.openalex.org/llms.txt",
+        "count": 0,
+        "db_response_time_ms": 16,
+        "page": 1,
+        "per_page": 200,
+        "groups_count": null,
+        "x_query": {
+          "oql": "get works citing (W7141170122)",
+          "x_new_oql": "get works citing (W7141170122)",
+          "oqo": {
+            "get_rows": "works",
+            "filter_rows": [
+              {
+                "column_id": "referenced_works",
+                "value": "W7141170122"
+              }
+            ]
+          },
+          "url": "/works?filter=referenced_works:W7141170122&per_page=200",
+          "order": "most cited (age-adjusted) first",
+          "order_default": true
+        },
+        "cost_usd": 0.0001
+      },
+      "results": [],
+      "truncated": false
+    },
+    {
+      "family": "hornetz2026tdxray",
+      "frozen_source": "https://tdxray.cpusec.org/assets/tdxray_sp26.pdf",
+      "doi_requested": "10.1109/SP63933.2026.00170",
+      "work_query": "https://api.openalex.org/works/https://doi.org/10.1109/SP63933.2026.00170",
+      "work": {
+        "id": "https://openalex.org/W7166823931",
+        "doi": "https://doi.org/10.1109/sp63933.2026.00170",
+        "display_name": "TDXRay: Microarchitectural Side-Channel Analysis of Intel TDX for Real-World Workloads",
+        "cited_by_count": 0,
+        "ids": {
+          "openalex": "https://openalex.org/W7166823931",
+          "doi": "https://doi.org/10.1109/sp63933.2026.00170"
+        }
+      },
+      "citing_query": "https://api.openalex.org/works?filter=cites%3AW7166823931&per-page=200&select=id%2Cdoi%2Cdisplay_name%2Cpublication_date%2Cprimary_location%2Cids",
+      "meta": {
+        "notice": "No API key, so this request shares one free daily budget ($0.10) with everyone on your network's IP address. Get a free key with its own $1/day at https://openalex.org/settings/api and add api_key=YOUR_KEY to your requests. An AI agent can get one for its user in one call: POST https://api.openalex.org/api-keys with {\"email\": \"<your user's email>\"}; we email them a link, and the key works once they click it. Docs for agents: https://help.openalex.org/llms.txt",
+        "count": 0,
+        "db_response_time_ms": 74,
+        "page": 1,
+        "per_page": 200,
+        "groups_count": null,
+        "x_query": {
+          "oql": "get works citing (W7166823931)",
+          "x_new_oql": "get works citing (W7166823931)",
+          "oqo": {
+            "get_rows": "works",
+            "filter_rows": [
+              {
+                "column_id": "referenced_works",
+                "value": "W7166823931"
+              }
+            ]
+          },
+          "url": "/works?filter=referenced_works:W7166823931&per_page=200",
+          "order": "most cited (age-adjusted) first",
+          "order_default": true
+        },
+        "cost_usd": 0.0001
+      },
+      "results": [],
+      "truncated": false
+    },
+    {
+      "family": "jeong2026wra",
+      "frozen_source": "https://www.usenix.org/conference/usenixsecurity26/presentation/jeong",
+      "doi_requested": "10.48550/arXiv.2508.20282",
+      "work_query": "https://api.openalex.org/works/https://doi.org/10.48550/arXiv.2508.20282",
+      "work": {
+        "id": "https://openalex.org/W4416712246",
+        "doi": "https://doi.org/10.48550/arxiv.2508.20282",
+        "display_name": "Network-Level Prompt and Trait Leakage in Local Research Agents",
+        "cited_by_count": 0,
+        "ids": {
+          "openalex": "https://openalex.org/W4416712246",
+          "doi": "https://doi.org/10.48550/arxiv.2508.20282"
+        }
+      },
+      "citing_query": "https://api.openalex.org/works?filter=cites%3AW4416712246&per-page=200&select=id%2Cdoi%2Cdisplay_name%2Cpublication_date%2Cprimary_location%2Cids",
+      "meta": {
+        "notice": "No API key, so this request shares one free daily budget ($0.10) with everyone on your network's IP address. Get a free key with its own $1/day at https://openalex.org/settings/api and add api_key=YOUR_KEY to your requests. An AI agent can get one for its user in one call: POST https://api.openalex.org/api-keys with {\"email\": \"<your user's email>\"}; we email them a link, and the key works once they click it. Docs for agents: https://help.openalex.org/llms.txt",
+        "count": 0,
+        "db_response_time_ms": 11,
+        "page": 1,
+        "per_page": 200,
+        "groups_count": null,
+        "x_query": {
+          "oql": "get works citing (W4416712246)",
+          "x_new_oql": "get works citing (W4416712246)",
+          "oqo": {
+            "get_rows": "works",
+            "filter_rows": [
+              {
+                "column_id": "referenced_works",
+                "value": "W4416712246"
+              }
+            ]
+          },
+          "url": "/works?filter=referenced_works:W4416712246&per_page=200",
+          "order": "most cited (age-adjusted) first",
+          "order_default": true
+        },
+        "cost_usd": 0.0001
+      },
+      "results": [],
+      "truncated": false
+    },
+    {
+      "family": "lee2026otro",
+      "frozen_source": "https://arxiv.org/html/2606.17358v1",
+      "doi_requested": "10.48550/arXiv.2606.17358",
+      "work_query": "https://api.openalex.org/works/https://doi.org/10.48550/arXiv.2606.17358",
+      "work": {
+        "id": "https://openalex.org/W7165053408",
+        "doi": "https://doi.org/10.48550/arxiv.2606.17358",
+        "display_name": "OTRO: Oblivious Tokenization Path with Square-Root ORAM",
+        "cited_by_count": 0,
+        "ids": {
+          "openalex": "https://openalex.org/W7165053408",
+          "doi": "https://doi.org/10.48550/arxiv.2606.17358"
+        }
+      },
+      "citing_query": "https://api.openalex.org/works?filter=cites%3AW7165053408&per-page=200&select=id%2Cdoi%2Cdisplay_name%2Cpublication_date%2Cprimary_location%2Cids",
+      "meta": {
+        "notice": "No API key, so this request shares one free daily budget ($0.10) with everyone on your network's IP address. Get a free key with its own $1/day at https://openalex.org/settings/api and add api_key=YOUR_KEY to your requests. An AI agent can get one for its user in one call: POST https://api.openalex.org/api-keys with {\"email\": \"<your user's email>\"}; we email them a link, and the key works once they click it. Docs for agents: https://help.openalex.org/llms.txt",
+        "count": 0,
+        "db_response_time_ms": 9,
+        "page": 1,
+        "per_page": 200,
+        "groups_count": null,
+        "x_query": {
+          "oql": "get works citing (W7165053408)",
+          "x_new_oql": "get works citing (W7165053408)",
+          "oqo": {
+            "get_rows": "works",
+            "filter_rows": [
+              {
+                "column_id": "referenced_works",
+                "value": "W7165053408"
+              }
+            ]
+          },
+          "url": "/works?filter=referenced_works:W7165053408&per_page=200",
+          "order": "most cited (age-adjusted) first",
+          "order_default": true
+        },
+        "cost_usd": 0.0001
+      },
+      "results": [],
+      "truncated": false
+    },
+    {
+      "family": "netecho2025",
+      "frozen_source": "https://arxiv.org/abs/2510.25472",
+      "doi_requested": "10.48550/arXiv.2510.25472",
+      "work_query": "https://api.openalex.org/works/https://doi.org/10.48550/arXiv.2510.25472",
+      "work": {
+        "id": "https://openalex.org/W7102666194",
+        "doi": "https://doi.org/10.48550/arxiv.2510.25472",
+        "display_name": "NetEcho: From Real-World Streaming Side-Channels to Full LLM Conversation Recovery",
+        "cited_by_count": 0,
+        "ids": {
+          "openalex": "https://openalex.org/W7102666194",
+          "doi": "https://doi.org/10.48550/arxiv.2510.25472"
+        }
+      },
+      "citing_query": "https://api.openalex.org/works?filter=cites%3AW7102666194&per-page=200&select=id%2Cdoi%2Cdisplay_name%2Cpublication_date%2Cprimary_location%2Cids",
+      "meta": {
+        "notice": "No API key, so this request shares one free daily budget ($0.10) with everyone on your network's IP address. Get a free key with its own $1/day at https://openalex.org/settings/api and add api_key=YOUR_KEY to your requests. An AI agent can get one for its user in one call: POST https://api.openalex.org/api-keys with {\"email\": \"<your user's email>\"}; we email them a link, and the key works once they click it. Docs for agents: https://help.openalex.org/llms.txt",
+        "count": 0,
+        "db_response_time_ms": 9,
+        "page": 1,
+        "per_page": 200,
+        "groups_count": null,
+        "x_query": {
+          "oql": "get works citing (W7102666194)",
+          "x_new_oql": "get works citing (W7102666194)",
+          "oqo": {
+            "get_rows": "works",
+            "filter_rows": [
+              {
+                "column_id": "referenced_works",
+                "value": "W7102666194"
+              }
+            ]
+          },
+          "url": "/works?filter=referenced_works:W7102666194&per_page=200",
+          "order": "most cited (age-adjusted) first",
+          "order_default": true
+        },
+        "cost_usd": 0.0001
+      },
+      "results": [],
+      "truncated": false
+    },
+    {
+      "family": "pouryousef2026traffic",
+      "frozen_source": "https://arxiv.org/html/2609.31877v1",
+      "doi_requested": "10.48550/arXiv.2609.31877",
+      "work_query": "https://api.openalex.org/works/https://doi.org/10.48550/arXiv.2609.31877",
+      "work": {
+        "id": "https://openalex.org/W7214803269",
+        "doi": "https://doi.org/10.48550/arxiv.2609.31877",
+        "display_name": "A Large-Scale Benchmark and Risk Assessment of Traffic Analysis Attacks on Cloud LLM Services",
+        "cited_by_count": 0,
+        "ids": {
+          "openalex": "https://openalex.org/W7214803269",
+          "doi": "https://doi.org/10.48550/arxiv.2609.31877"
+        }
+      },
+      "citing_query": "https://api.openalex.org/works?filter=cites%3AW7214803269&per-page=200&select=id%2Cdoi%2Cdisplay_name%2Cpublication_date%2Cprimary_location%2Cids",
+      "meta": {
+        "notice": "No API key, so this request shares one free daily budget ($0.10) with everyone on your network's IP address. Get a free key with its own $1/day at https://openalex.org/settings/api and add api_key=YOUR_KEY to your requests. An AI agent can get one for its user in one call: POST https://api.openalex.org/api-keys with {\"email\": \"<your user's email>\"}; we email them a link, and the key works once they click it. Docs for agents: https://help.openalex.org/llms.txt",
+        "count": 0,
+        "db_response_time_ms": 6,
+        "page": 1,
+        "per_page": 200,
+        "groups_count": null,
+        "x_query": {
+          "oql": "get works citing (W7214803269)",
+          "x_new_oql": "get works citing (W7214803269)",
+          "oqo": {
+            "get_rows": "works",
+            "filter_rows": [
+              {
+                "column_id": "referenced_works",
+                "value": "W7214803269"
+              }
+            ]
+          },
+          "url": "/works?filter=referenced_works:W7214803269&per_page=200",
+          "order": "most cited (age-adjusted) first",
+          "order_default": true
+        },
+        "cost_usd": 0.0001
+      },
+      "results": [],
+      "truncated": false
+    },
+    {
+      "family": "spliceleak2026",
+      "frozen_source": "https://arxiv.org/abs/2606.21842",
+      "doi_requested": "10.48550/arXiv.2606.21842",
+      "work_query": "https://api.openalex.org/works/https://doi.org/10.48550/arXiv.2606.21842",
+      "work": {
+        "id": "https://openalex.org/W7165618382",
+        "doi": "https://doi.org/10.48550/arxiv.2606.21842",
+        "display_name": "Agent-Assisted Side-Channel Attacks on Non-Prefix KV Cache in RAG",
+        "cited_by_count": 0,
+        "ids": {
+          "openalex": "https://openalex.org/W7165618382",
+          "doi": "https://doi.org/10.48550/arxiv.2606.21842"
+        }
+      },
+      "citing_query": "https://api.openalex.org/works?filter=cites%3AW7165618382&per-page=200&select=id%2Cdoi%2Cdisplay_name%2Cpublication_date%2Cprimary_location%2Cids",
+      "meta": {
+        "notice": "No API key, so this request shares one free daily budget ($0.10) with everyone on your network's IP address. Get a free key with its own $1/day at https://openalex.org/settings/api and add api_key=YOUR_KEY to your requests. An AI agent can get one for its user in one call: POST https://api.openalex.org/api-keys with {\"email\": \"<your user's email>\"}; we email them a link, and the key works once they click it. Docs for agents: https://help.openalex.org/llms.txt",
+        "count": 0,
+        "db_response_time_ms": 8,
+        "page": 1,
+        "per_page": 200,
+        "groups_count": null,
+        "x_query": {
+          "oql": "get works citing (W7165618382)",
+          "x_new_oql": "get works citing (W7165618382)",
+          "oqo": {
+            "get_rows": "works",
+            "filter_rows": [
+              {
+                "column_id": "referenced_works",
+                "value": "W7165618382"
+              }
+            ]
+          },
+          "url": "/works?filter=referenced_works:W7165618382&per_page=200",
+          "order": "most cited (age-adjusted) first",
+          "order_default": true
+        },
+        "cost_usd": 0.0001
+      },
+      "results": [],
+      "truncated": false
+    },
+    {
+      "family": "timewilltell2024",
+      "frozen_source": "https://arxiv.org/abs/2412.15431",
+      "doi_requested": "10.48550/arXiv.2412.15431",
+      "work_query": "https://api.openalex.org/works/https://doi.org/10.48550/arXiv.2412.15431",
+      "work": {
+        "id": "https://openalex.org/W4405714365",
+        "doi": "https://doi.org/10.48550/arxiv.2412.15431",
+        "display_name": "Time Will Tell: Timing Side Channels via Output Token Count in Large Language Models",
+        "cited_by_count": 0,
+        "ids": {
+          "openalex": "https://openalex.org/W4405714365",
+          "doi": "https://doi.org/10.48550/arxiv.2412.15431"
+        }
+      },
+      "citing_query": "https://api.openalex.org/works?filter=cites%3AW4405714365&per-page=200&select=id%2Cdoi%2Cdisplay_name%2Cpublication_date%2Cprimary_location%2Cids",
+      "meta": {
+        "notice": "No API key, so this request shares one free daily budget ($0.10) with everyone on your network's IP address. Get a free key with its own $1/day at https://openalex.org/settings/api and add api_key=YOUR_KEY to your requests. An AI agent can get one for its user in one call: POST https://api.openalex.org/api-keys with {\"email\": \"<your user's email>\"}; we email them a link, and the key works once they click it. Docs for agents: https://help.openalex.org/llms.txt",
+        "count": 0,
+        "db_response_time_ms": 56,
+        "page": 1,
+        "per_page": 200,
+        "groups_count": null,
+        "x_query": {
+          "oql": "get works citing (W4405714365)",
+          "x_new_oql": "get works citing (W4405714365)",
+          "oqo": {
+            "get_rows": "works",
+            "filter_rows": [
+              {
+                "column_id": "referenced_works",
+                "value": "W4405714365"
+              }
+            ]
+          },
+          "url": "/works?filter=referenced_works:W4405714365&per_page=200",
+          "order": "most cited (age-adjusted) first",
+          "order_default": true
+        },
+        "cost_usd": 0.0001
+      },
+      "results": [],
+      "truncated": false
+    },
+    {
+      "family": "uitraces2026",
+      "frozen_source": "https://arxiv.org/abs/2605.14786",
+      "doi_requested": "10.48550/arXiv.2605.14786",
+      "work_query": "https://api.openalex.org/works/https://doi.org/10.48550/arXiv.2605.14786",
+      "work": {
+        "id": "https://openalex.org/W7161240930",
+        "doi": "https://doi.org/10.48550/arxiv.2605.14786",
+        "display_name": "Known By Their Actions: Fingerprinting LLM Browser Agents via UI Traces",
+        "cited_by_count": 0,
+        "ids": {
+          "openalex": "https://openalex.org/W7161240930",
+          "doi": "https://doi.org/10.48550/arxiv.2605.14786"
+        }
+      },
+      "citing_query": "https://api.openalex.org/works?filter=cites%3AW7161240930&per-page=200&select=id%2Cdoi%2Cdisplay_name%2Cpublication_date%2Cprimary_location%2Cids",
+      "meta": {
+        "notice": "No API key, so this request shares one free daily budget ($0.10) with everyone on your network's IP address. Get a free key with its own $1/day at https://openalex.org/settings/api and add api_key=YOUR_KEY to your requests. An AI agent can get one for its user in one call: POST https://api.openalex.org/api-keys with {\"email\": \"<your user's email>\"}; we email them a link, and the key works once they click it. Docs for agents: https://help.openalex.org/llms.txt",
+        "count": 0,
+        "db_response_time_ms": 25,
+        "page": 1,
+        "per_page": 200,
+        "groups_count": null,
+        "x_query": {
+          "oql": "get works citing (W7161240930)",
+          "x_new_oql": "get works citing (W7161240930)",
+          "oqo": {
+            "get_rows": "works",
+            "filter_rows": [
+              {
+                "column_id": "referenced_works",
+                "value": "W7161240930"
+              }
+            ]
+          },
+          "url": "/works?filter=referenced_works:W7161240930&per_page=200",
+          "order": "most cited (age-adjusted) first",
+          "order_default": true
+        },
+        "cost_usd": 0.0001
+      },
+      "results": [],
+      "truncated": false
+    },
+    {
+      "family": "wei2024speculation",
+      "frozen_source": "https://arxiv.org/abs/2411.01076v4",
+      "doi_requested": "10.48550/arXiv.2411.01076",
+      "work_query": "https://api.openalex.org/works/https://doi.org/10.48550/arXiv.2411.01076",
+      "work": {
+        "id": "https://openalex.org/W4404355769",
+        "doi": "https://doi.org/10.48550/arxiv.2411.01076",
+        "display_name": "When Speculation Spills Secrets: Side Channels via Speculative Decoding In LLMs",
+        "cited_by_count": 0,
+        "ids": {
+          "openalex": "https://openalex.org/W4404355769",
+          "doi": "https://doi.org/10.48550/arxiv.2411.01076"
+        }
+      },
+      "citing_query": "https://api.openalex.org/works?filter=cites%3AW4404355769&per-page=200&select=id%2Cdoi%2Cdisplay_name%2Cpublication_date%2Cprimary_location%2Cids",
+      "meta": {
+        "notice": "No API key, so this request shares one free daily budget ($0.10) with everyone on your network's IP address. Get a free key with its own $1/day at https://openalex.org/settings/api and add api_key=YOUR_KEY to your requests. An AI agent can get one for its user in one call: POST https://api.openalex.org/api-keys with {\"email\": \"<your user's email>\"}; we email them a link, and the key works once they click it. Docs for agents: https://help.openalex.org/llms.txt",
+        "count": 0,
+        "db_response_time_ms": 35,
+        "page": 1,
+        "per_page": 200,
+        "groups_count": null,
+        "x_query": {
+          "oql": "get works citing (W4404355769)",
+          "x_new_oql": "get works citing (W4404355769)",
+          "oqo": {
+            "get_rows": "works",
+            "filter_rows": [
+              {
+                "column_id": "referenced_works",
+                "value": "W4404355769"
+              }
+            ]
+          },
+          "url": "/works?filter=referenced_works:W4404355769&per_page=200",
+          "order": "most cited (age-adjusted) first",
+          "order_default": true
+        },
+        "cost_usd": 0.0001
+      },
+      "results": [],
+      "truncated": false
+    },
+    {
+      "family": "whisperleak2025",
+      "frozen_source": "https://arxiv.org/abs/2511.03675",
+      "doi_requested": "10.48550/arXiv.2511.03675",
+      "work_query": "https://api.openalex.org/works/https://doi.org/10.48550/arXiv.2511.03675",
+      "work": {
+        "id": "https://openalex.org/W4416020692",
+        "doi": "https://doi.org/10.48550/arxiv.2511.03675",
+        "display_name": "Whisper Leak: a side-channel attack on Large Language Models",
+        "cited_by_count": 0,
+        "ids": {
+          "openalex": "https://openalex.org/W4416020692",
+          "doi": "https://doi.org/10.48550/arxiv.2511.03675"
+        }
+      },
+      "citing_query": "https://api.openalex.org/works?filter=cites%3AW4416020692&per-page=200&select=id%2Cdoi%2Cdisplay_name%2Cpublication_date%2Cprimary_location%2Cids",
+      "meta": {
+        "notice": "No API key, so this request shares one free daily budget ($0.10) with everyone on your network's IP address. Get a free key with its own $1/day at https://openalex.org/settings/api and add api_key=YOUR_KEY to your requests. An AI agent can get one for its user in one call: POST https://api.openalex.org/api-keys with {\"email\": \"<your user's email>\"}; we email them a link, and the key works once they click it. Docs for agents: https://help.openalex.org/llms.txt",
+        "count": 0,
+        "db_response_time_ms": 13,
+        "page": 1,
+        "per_page": 200,
+        "groups_count": null,
+        "x_query": {
+          "oql": "get works citing (W4416020692)",
+          "x_new_oql": "get works citing (W4416020692)",
+          "oqo": {
+            "get_rows": "works",
+            "filter_rows": [
+              {
+                "column_id": "referenced_works",
+                "value": "W4416020692"
+              }
+            ]
+          },
+          "url": "/works?filter=referenced_works:W4416020692&per_page=200",
+          "order": "most cited (age-adjusted) first",
+          "order_default": true
+        },
+        "cost_usd": 0.0001
+      },
+      "results": [],
+      "truncated": false
+    },
+    {
+      "family": "wu2026cacheprune",
+      "frozen_source": "https://arxiv.org/html/2605.23640v1",
+      "doi_requested": "10.48550/arXiv.2605.23640",
+      "work_query": "https://api.openalex.org/works/https://doi.org/10.48550/arXiv.2605.23640",
+      "work": {
+        "id": "https://openalex.org/W7162302835",
+        "doi": "https://doi.org/10.48550/arxiv.2605.23640",
+        "display_name": "CachePrune: Privacy-Aware and Fine-Grained KV Cache Sharing for Efficient LLM Inference",
+        "cited_by_count": 0,
+        "ids": {
+          "openalex": "https://openalex.org/W7162302835",
+          "doi": "https://doi.org/10.48550/arxiv.2605.23640"
+        }
+      },
+      "citing_query": "https://api.openalex.org/works?filter=cites%3AW7162302835&per-page=200&select=id%2Cdoi%2Cdisplay_name%2Cpublication_date%2Cprimary_location%2Cids",
+      "meta": {
+        "notice": "No API key, so this request shares one free daily budget ($0.10) with everyone on your network's IP address. Get a free key with its own $1/day at https://openalex.org/settings/api and add api_key=YOUR_KEY to your requests. An AI agent can get one for its user in one call: POST https://api.openalex.org/api-keys with {\"email\": \"<your user's email>\"}; we email them a link, and the key works once they click it. Docs for agents: https://help.openalex.org/llms.txt",
+        "count": 0,
+        "db_response_time_ms": 52,
+        "page": 1,
+        "per_page": 200,
+        "groups_count": null,
+        "x_query": {
+          "oql": "get works citing (W7162302835)",
+          "x_new_oql": "get works citing (W7162302835)",
+          "oqo": {
+            "get_rows": "works",
+            "filter_rows": [
+              {
+                "column_id": "referenced_works",
+                "value": "W7162302835"
+              }
+            ]
+          },
+          "url": "/works?filter=referenced_works:W7162302835&per_page=200",
+          "order": "most cited (age-adjusted) first",
+          "order_default": true
+        },
+        "cost_usd": 0.0001
+      },
+      "results": [],
+      "truncated": false
+    },
+    {
+      "family": "zhu2026turing",
+      "frozen_source": "https://arxiv.org/html/2604.09574v1",
+      "doi_requested": "10.48550/arXiv.2604.09574",
+      "work_query": "https://api.openalex.org/works/https://doi.org/10.48550/arXiv.2604.09574",
+      "work": {
+        "id": "https://openalex.org/W7154268333",
+        "doi": "https://doi.org/10.48550/arxiv.2604.09574",
+        "display_name": "Turing Test on Screen: A Benchmark for Mobile GUI Agent Humanization",
+        "cited_by_count": 0,
+        "ids": {
+          "openalex": "https://openalex.org/W7154268333",
+          "doi": "https://doi.org/10.48550/arxiv.2604.09574"
+        }
+      },
+      "citing_query": "https://api.openalex.org/works?filter=cites%3AW7154268333&per-page=200&select=id%2Cdoi%2Cdisplay_name%2Cpublication_date%2Cprimary_location%2Cids",
+      "meta": {
+        "notice": "No API key, so this request shares one free daily budget ($0.10) with everyone on your network's IP address. Get a free key with its own $1/day at https://openalex.org/settings/api and add api_key=YOUR_KEY to your requests. An AI agent can get one for its user in one call: POST https://api.openalex.org/api-keys with {\"email\": \"<your user's email>\"}; we email them a link, and the key works once they click it. Docs for agents: https://help.openalex.org/llms.txt",
+        "count": 0,
+        "db_response_time_ms": 11,
+        "page": 1,
+        "per_page": 200,
+        "groups_count": null,
+        "x_query": {
+          "oql": "get works citing (W7154268333)",
+          "x_new_oql": "get works citing (W7154268333)",
+          "oqo": {
+            "get_rows": "works",
+            "filter_rows": [
+              {
+                "column_id": "referenced_works",
+                "value": "W7154268333"
+              }
+            ]
+          },
+          "url": "/works?filter=referenced_works:W7154268333&per_page=200",
+          "order": "most cited (age-adjusted) first",
+          "order_default": true
+        },
+        "cost_usd": 0.0001
+      },
+      "results": [],
+      "truncated": false
+    }
+  ]
+}
