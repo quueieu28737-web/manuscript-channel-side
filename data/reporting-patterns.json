@@ -1,0 +1,3623 @@
+{
+  "revision": "R34-reporting-patterns",
+  "source_sha256": {
+    "tables/r19-record-audit.tex": "786f8e20228839707c76b1d0943b0d925868654ad22dbdeb30084ab0da0645eb",
+    "tables/r9-record-index.tex": "bc0de37f365afa417e56fcd1ef754f6edc3925268b3d76a55e5ef99872e6ceaf",
+    "tables/core-family-map.tex": "7b9169feca6cb3f1b881abe16c4dc8161c48953acba6bae53417fe12595ef23d",
+    "data/family-index.csv": "a200712be5d07cfe929c3a7dc5589a8f42dc0c1bb456309d7d7e6871811ed000",
+    "data/record-scopes.csv": "6068a3af229abf9f74c95daa4dffed9212cd9c21cdfaaa4bc3a001da43ee225d",
+    "tables/r26-h-objects.tex": "82510058dc4cb1d056d16b191d567c7ea164cb464ea06beff66dfcb953c70f71"
+  },
+  "definitions": {
+    "unit": "Family availability unless explicitly record mode or record conjunction",
+    "B": "Explicit source-scoped binding",
+    "P": "Partial binding; permissive sensitivity only",
+    "denominator": "All applicable families for the requested item; U/?/P stay eligible",
+    "dagger": "Six final-search records in record index; double dagger marks six contextual records, already excluded",
+    "scope": "Inspected sources in frozen corpus; descriptive reporting census, not effectiveness or population prevalence"
+  },
+  "field_patterns": {
+    "all": {
+      "R4": {
+        "strict": {
+          "bound": 4,
+          "eligible": 11,
+          "bound_ids": [
+            "dangol2026workflow",
+            "earlybird2025",
+            "netecho2025",
+            "uitraces2026"
+          ],
+          "eligible_ids": [
+            "chen2026sparleak",
+            "dangol2026workflow",
+            "earlybird2025",
+            "hadad2026shape",
+            "netecho2025",
+            "pouryousef2026traffic",
+            "timewilltell2024",
+            "uitraces2026",
+            "wei2024speculation",
+            "whisperleak2025",
+            "zhu2026turing"
+          ],
+          "states": {
+            "P": 5,
+            "B": 4,
+            "U": 2
+          }
+        },
+        "partial_accepted": {
+          "bound": 9,
+          "eligible": 11,
+          "bound_ids": [
+            "chen2026sparleak",
+            "dangol2026workflow",
+            "earlybird2025",
+            "netecho2025",
+            "timewilltell2024",
+            "uitraces2026",
+            "wei2024speculation",
+            "whisperleak2025",
+            "zhu2026turing"
+          ],
+          "eligible_ids": [
+            "chen2026sparleak",
+            "dangol2026workflow",
+            "earlybird2025",
+            "hadad2026shape",
+            "netecho2025",
+            "pouryousef2026traffic",
+            "timewilltell2024",
+            "uitraces2026",
+            "wei2024speculation",
+            "whisperleak2025",
+            "zhu2026turing"
+          ],
+          "states": {
+            "P": 5,
+            "B": 4,
+            "U": 2
+          }
+        }
+      },
+      "R5": {
+        "strict": {
+          "bound": 2,
+          "eligible": 11,
+          "bound_ids": [
+            "dangol2026workflow",
+            "uitraces2026"
+          ],
+          "eligible_ids": [
+            "chen2026sparleak",
+            "dangol2026workflow",
+            "earlybird2025",
+            "hadad2026shape",
+            "netecho2025",
+            "pouryousef2026traffic",
+            "timewilltell2024",
+            "uitraces2026",
+            "wei2024speculation",
+            "whisperleak2025",
+            "zhu2026turing"
+          ],
+          "states": {
+            "U": 7,
+            "B": 2,
+            "?": 2
+          }
+        },
+        "partial_accepted": {
+          "bound": 2,
+          "eligible": 11,
+          "bound_ids": [
+            "dangol2026workflow",
+            "uitraces2026"
+          ],
+          "eligible_ids": [
+            "chen2026sparleak",
+            "dangol2026workflow",
+            "earlybird2025",
+            "hadad2026shape",
+            "netecho2025",
+            "pouryousef2026traffic",
+            "timewilltell2024",
+            "uitraces2026",
+            "wei2024speculation",
+            "whisperleak2025",
+            "zhu2026turing"
+          ],
+          "states": {
+            "U": 7,
+            "B": 2,
+            "?": 2
+          }
+        }
+      },
+      "R7": {
+        "strict": {
+          "bound": 16,
+          "eligible": 17,
+          "bound_ids": [
+            "addagada2026kvgov",
+            "chen2026sparleak",
+            "chu2025safekv",
+            "dangol2026workflow",
+            "earlybird2025",
+            "jeong2026wra",
+            "lee2026otro",
+            "netecho2025",
+            "pouryousef2026traffic",
+            "spliceleak2026",
+            "timewilltell2024",
+            "uitraces2026",
+            "wei2024speculation",
+            "whisperleak2025",
+            "wu2026cacheprune",
+            "zhu2026turing"
+          ],
+          "eligible_ids": [
+            "addagada2026kvgov",
+            "chen2026sparleak",
+            "chu2025safekv",
+            "dangol2026workflow",
+            "earlybird2025",
+            "hadad2026shape",
+            "jeong2026wra",
+            "lee2026otro",
+            "netecho2025",
+            "pouryousef2026traffic",
+            "spliceleak2026",
+            "timewilltell2024",
+            "uitraces2026",
+            "wei2024speculation",
+            "whisperleak2025",
+            "wu2026cacheprune",
+            "zhu2026turing"
+          ],
+          "states": {
+            "B": 16,
+            "P": 1
+          }
+        },
+        "partial_accepted": {
+          "bound": 17,
+          "eligible": 17,
+          "bound_ids": [
+            "addagada2026kvgov",
+            "chen2026sparleak",
+            "chu2025safekv",
+            "dangol2026workflow",
+            "earlybird2025",
+            "hadad2026shape",
+            "jeong2026wra",
+            "lee2026otro",
+            "netecho2025",
+            "pouryousef2026traffic",
+            "spliceleak2026",
+            "timewilltell2024",
+            "uitraces2026",
+            "wei2024speculation",
+            "whisperleak2025",
+            "wu2026cacheprune",
+            "zhu2026turing"
+          ],
+          "eligible_ids": [
+            "addagada2026kvgov",
+            "chen2026sparleak",
+            "chu2025safekv",
+            "dangol2026workflow",
+            "earlybird2025",
+            "hadad2026shape",
+            "jeong2026wra",
+            "lee2026otro",
+            "netecho2025",
+            "pouryousef2026traffic",
+            "spliceleak2026",
+            "timewilltell2024",
+            "uitraces2026",
+            "wei2024speculation",
+            "whisperleak2025",
+            "wu2026cacheprune",
+            "zhu2026turing"
+          ],
+          "states": {
+            "B": 16,
+            "P": 1
+          }
+        }
+      },
+      "R8": {
+        "strict": {
+          "bound": 4,
+          "eligible": 17,
+          "bound_ids": [
+            "chen2026sparleak",
+            "hornetz2026tdxray",
+            "wu2026cacheprune",
+            "zhu2026turing"
+          ],
+          "eligible_ids": [
+            "addagada2026kvgov",
+            "carlini2024remote",
+            "chen2026sparleak",
+            "chu2025safekv",
+            "dangol2026workflow",
+            "earlybird2025",
+            "hadad2026shape",
+            "hornetz2026tdxray",
+            "jeong2026wra",
+            "netecho2025",
+            "pouryousef2026traffic",
+            "spliceleak2026",
+            "timewilltell2024",
+            "uitraces2026",
+            "whisperleak2025",
+            "wu2026cacheprune",
+            "zhu2026turing"
+          ],
+          "states": {
+            "U": 11,
+            "B": 4,
+            "P": 2
+          }
+        },
+        "partial_accepted": {
+          "bound": 6,
+          "eligible": 17,
+          "bound_ids": [
+            "chen2026sparleak",
+            "hornetz2026tdxray",
+            "jeong2026wra",
+            "pouryousef2026traffic",
+            "wu2026cacheprune",
+            "zhu2026turing"
+          ],
+          "eligible_ids": [
+            "addagada2026kvgov",
+            "carlini2024remote",
+            "chen2026sparleak",
+            "chu2025safekv",
+            "dangol2026workflow",
+            "earlybird2025",
+            "hadad2026shape",
+            "hornetz2026tdxray",
+            "jeong2026wra",
+            "netecho2025",
+            "pouryousef2026traffic",
+            "spliceleak2026",
+            "timewilltell2024",
+            "uitraces2026",
+            "whisperleak2025",
+            "wu2026cacheprune",
+            "zhu2026turing"
+          ],
+          "states": {
+            "U": 11,
+            "B": 4,
+            "P": 2
+          }
+        }
+      },
+      "R9": {
+        "strict": {
+          "bound": 11,
+          "eligible": 19,
+          "bound_ids": [
+            "addagada2026kvgov",
+            "carlini2024remote",
+            "dangol2026workflow",
+            "earlybird2025",
+            "gao2025iknow",
+            "hornetz2026tdxray",
+            "lee2026otro",
+            "spliceleak2026",
+            "timewilltell2024",
+            "wei2024speculation",
+            "wu2026cacheprune"
+          ],
+          "eligible_ids": [
+            "addagada2026kvgov",
+            "carlini2024remote",
+            "chen2026sparleak",
+            "chu2025safekv",
+            "dangol2026workflow",
+            "earlybird2025",
+            "gao2025iknow",
+            "hadad2026shape",
+            "hornetz2026tdxray",
+            "jeong2026wra",
+            "lee2026otro",
+            "netecho2025",
+            "pouryousef2026traffic",
+            "spliceleak2026",
+            "timewilltell2024",
+            "wei2024speculation",
+            "whisperleak2025",
+            "wu2026cacheprune",
+            "zhu2026turing"
+          ],
+          "states": {
+            "B": 11,
+            "U": 4,
+            "P": 4
+          }
+        },
+        "partial_accepted": {
+          "bound": 15,
+          "eligible": 19,
+          "bound_ids": [
+            "addagada2026kvgov",
+            "carlini2024remote",
+            "chu2025safekv",
+            "dangol2026workflow",
+            "earlybird2025",
+            "gao2025iknow",
+            "hadad2026shape",
+            "hornetz2026tdxray",
+            "lee2026otro",
+            "netecho2025",
+            "spliceleak2026",
+            "timewilltell2024",
+            "wei2024speculation",
+            "whisperleak2025",
+            "wu2026cacheprune"
+          ],
+          "eligible_ids": [
+            "addagada2026kvgov",
+            "carlini2024remote",
+            "chen2026sparleak",
+            "chu2025safekv",
+            "dangol2026workflow",
+            "earlybird2025",
+            "gao2025iknow",
+            "hadad2026shape",
+            "hornetz2026tdxray",
+            "jeong2026wra",
+            "lee2026otro",
+            "netecho2025",
+            "pouryousef2026traffic",
+            "spliceleak2026",
+            "timewilltell2024",
+            "wei2024speculation",
+            "whisperleak2025",
+            "wu2026cacheprune",
+            "zhu2026turing"
+          ],
+          "states": {
+            "B": 11,
+            "U": 4,
+            "P": 4
+          }
+        }
+      }
+    },
+    "without_CachePrune": {
+      "R4": {
+        "strict": {
+          "bound": 4,
+          "eligible": 11,
+          "bound_ids": [
+            "dangol2026workflow",
+            "earlybird2025",
+            "netecho2025",
+            "uitraces2026"
+          ],
+          "eligible_ids": [
+            "chen2026sparleak",
+            "dangol2026workflow",
+            "earlybird2025",
+            "hadad2026shape",
+            "netecho2025",
+            "pouryousef2026traffic",
+            "timewilltell2024",
+            "uitraces2026",
+            "wei2024speculation",
+            "whisperleak2025",
+            "zhu2026turing"
+          ],
+          "states": {
+            "P": 5,
+            "B": 4,
+            "U": 2
+          }
+        },
+        "partial_accepted": {
+          "bound": 9,
+          "eligible": 11,
+          "bound_ids": [
+            "chen2026sparleak",
+            "dangol2026workflow",
+            "earlybird2025",
+            "netecho2025",
+            "timewilltell2024",
+            "uitraces2026",
+            "wei2024speculation",
+            "whisperleak2025",
+            "zhu2026turing"
+          ],
+          "eligible_ids": [
+            "chen2026sparleak",
+            "dangol2026workflow",
+            "earlybird2025",
+            "hadad2026shape",
+            "netecho2025",
+            "pouryousef2026traffic",
+            "timewilltell2024",
+            "uitraces2026",
+            "wei2024speculation",
+            "whisperleak2025",
+            "zhu2026turing"
+          ],
+          "states": {
+            "P": 5,
+            "B": 4,
+            "U": 2
+          }
+        }
+      },
+      "R5": {
+        "strict": {
+          "bound": 2,
+          "eligible": 11,
+          "bound_ids": [
+            "dangol2026workflow",
+            "uitraces2026"
+          ],
+          "eligible_ids": [
+            "chen2026sparleak",
+            "dangol2026workflow",
+            "earlybird2025",
+            "hadad2026shape",
+            "netecho2025",
+            "pouryousef2026traffic",
+            "timewilltell2024",
+            "uitraces2026",
+            "wei2024speculation",
+            "whisperleak2025",
+            "zhu2026turing"
+          ],
+          "states": {
+            "U": 7,
+            "B": 2,
+            "?": 2
+          }
+        },
+        "partial_accepted": {
+          "bound": 2,
+          "eligible": 11,
+          "bound_ids": [
+            "dangol2026workflow",
+            "uitraces2026"
+          ],
+          "eligible_ids": [
+            "chen2026sparleak",
+            "dangol2026workflow",
+            "earlybird2025",
+            "hadad2026shape",
+            "netecho2025",
+            "pouryousef2026traffic",
+            "timewilltell2024",
+            "uitraces2026",
+            "wei2024speculation",
+            "whisperleak2025",
+            "zhu2026turing"
+          ],
+          "states": {
+            "U": 7,
+            "B": 2,
+            "?": 2
+          }
+        }
+      },
+      "R7": {
+        "strict": {
+          "bound": 15,
+          "eligible": 16,
+          "bound_ids": [
+            "addagada2026kvgov",
+            "chen2026sparleak",
+            "chu2025safekv",
+            "dangol2026workflow",
+            "earlybird2025",
+            "jeong2026wra",
+            "lee2026otro",
+            "netecho2025",
+            "pouryousef2026traffic",
+            "spliceleak2026",
+            "timewilltell2024",
+            "uitraces2026",
+            "wei2024speculation",
+            "whisperleak2025",
+            "zhu2026turing"
+          ],
+          "eligible_ids": [
+            "addagada2026kvgov",
+            "chen2026sparleak",
+            "chu2025safekv",
+            "dangol2026workflow",
+            "earlybird2025",
+            "hadad2026shape",
+            "jeong2026wra",
+            "lee2026otro",
+            "netecho2025",
+            "pouryousef2026traffic",
+            "spliceleak2026",
+            "timewilltell2024",
+            "uitraces2026",
+            "wei2024speculation",
+            "whisperleak2025",
+            "zhu2026turing"
+          ],
+          "states": {
+            "B": 15,
+            "P": 1
+          }
+        },
+        "partial_accepted": {
+          "bound": 16,
+          "eligible": 16,
+          "bound_ids": [
+            "addagada2026kvgov",
+            "chen2026sparleak",
+            "chu2025safekv",
+            "dangol2026workflow",
+            "earlybird2025",
+            "hadad2026shape",
+            "jeong2026wra",
+            "lee2026otro",
+            "netecho2025",
+            "pouryousef2026traffic",
+            "spliceleak2026",
+            "timewilltell2024",
+            "uitraces2026",
+            "wei2024speculation",
+            "whisperleak2025",
+            "zhu2026turing"
+          ],
+          "eligible_ids": [
+            "addagada2026kvgov",
+            "chen2026sparleak",
+            "chu2025safekv",
+            "dangol2026workflow",
+            "earlybird2025",
+            "hadad2026shape",
+            "jeong2026wra",
+            "lee2026otro",
+            "netecho2025",
+            "pouryousef2026traffic",
+            "spliceleak2026",
+            "timewilltell2024",
+            "uitraces2026",
+            "wei2024speculation",
+            "whisperleak2025",
+            "zhu2026turing"
+          ],
+          "states": {
+            "B": 15,
+            "P": 1
+          }
+        }
+      },
+      "R8": {
+        "strict": {
+          "bound": 3,
+          "eligible": 16,
+          "bound_ids": [
+            "chen2026sparleak",
+            "hornetz2026tdxray",
+            "zhu2026turing"
+          ],
+          "eligible_ids": [
+            "addagada2026kvgov",
+            "carlini2024remote",
+            "chen2026sparleak",
+            "chu2025safekv",
+            "dangol2026workflow",
+            "earlybird2025",
+            "hadad2026shape",
+            "hornetz2026tdxray",
+            "jeong2026wra",
+            "netecho2025",
+            "pouryousef2026traffic",
+            "spliceleak2026",
+            "timewilltell2024",
+            "uitraces2026",
+            "whisperleak2025",
+            "zhu2026turing"
+          ],
+          "states": {
+            "U": 11,
+            "B": 3,
+            "P": 2
+          }
+        },
+        "partial_accepted": {
+          "bound": 5,
+          "eligible": 16,
+          "bound_ids": [
+            "chen2026sparleak",
+            "hornetz2026tdxray",
+            "jeong2026wra",
+            "pouryousef2026traffic",
+            "zhu2026turing"
+          ],
+          "eligible_ids": [
+            "addagada2026kvgov",
+            "carlini2024remote",
+            "chen2026sparleak",
+            "chu2025safekv",
+            "dangol2026workflow",
+            "earlybird2025",
+            "hadad2026shape",
+            "hornetz2026tdxray",
+            "jeong2026wra",
+            "netecho2025",
+            "pouryousef2026traffic",
+            "spliceleak2026",
+            "timewilltell2024",
+            "uitraces2026",
+            "whisperleak2025",
+            "zhu2026turing"
+          ],
+          "states": {
+            "U": 11,
+            "B": 3,
+            "P": 2
+          }
+        }
+      },
+      "R9": {
+        "strict": {
+          "bound": 10,
+          "eligible": 18,
+          "bound_ids": [
+            "addagada2026kvgov",
+            "carlini2024remote",
+            "dangol2026workflow",
+            "earlybird2025",
+            "gao2025iknow",
+            "hornetz2026tdxray",
+            "lee2026otro",
+            "spliceleak2026",
+            "timewilltell2024",
+            "wei2024speculation"
+          ],
+          "eligible_ids": [
+            "addagada2026kvgov",
+            "carlini2024remote",
+            "chen2026sparleak",
+            "chu2025safekv",
+            "dangol2026workflow",
+            "earlybird2025",
+            "gao2025iknow",
+            "hadad2026shape",
+            "hornetz2026tdxray",
+            "jeong2026wra",
+            "lee2026otro",
+            "netecho2025",
+            "pouryousef2026traffic",
+            "spliceleak2026",
+            "timewilltell2024",
+            "wei2024speculation",
+            "whisperleak2025",
+            "zhu2026turing"
+          ],
+          "states": {
+            "B": 10,
+            "U": 4,
+            "P": 4
+          }
+        },
+        "partial_accepted": {
+          "bound": 14,
+          "eligible": 18,
+          "bound_ids": [
+            "addagada2026kvgov",
+            "carlini2024remote",
+            "chu2025safekv",
+            "dangol2026workflow",
+            "earlybird2025",
+            "gao2025iknow",
+            "hadad2026shape",
+            "hornetz2026tdxray",
+            "lee2026otro",
+            "netecho2025",
+            "spliceleak2026",
+            "timewilltell2024",
+            "wei2024speculation",
+            "whisperleak2025"
+          ],
+          "eligible_ids": [
+            "addagada2026kvgov",
+            "carlini2024remote",
+            "chen2026sparleak",
+            "chu2025safekv",
+            "dangol2026workflow",
+            "earlybird2025",
+            "gao2025iknow",
+            "hadad2026shape",
+            "hornetz2026tdxray",
+            "jeong2026wra",
+            "lee2026otro",
+            "netecho2025",
+            "pouryousef2026traffic",
+            "spliceleak2026",
+            "timewilltell2024",
+            "wei2024speculation",
+            "whisperleak2025",
+            "zhu2026turing"
+          ],
+          "states": {
+            "B": 10,
+            "U": 4,
+            "P": 4
+          }
+        }
+      }
+    },
+    "without_final_search": {
+      "R4": {
+        "strict": {
+          "bound": 4,
+          "eligible": 9,
+          "bound_ids": [
+            "dangol2026workflow",
+            "earlybird2025",
+            "netecho2025",
+            "uitraces2026"
+          ],
+          "eligible_ids": [
+            "dangol2026workflow",
+            "earlybird2025",
+            "netecho2025",
+            "pouryousef2026traffic",
+            "timewilltell2024",
+            "uitraces2026",
+            "wei2024speculation",
+            "whisperleak2025",
+            "zhu2026turing"
+          ],
+          "states": {
+            "B": 4,
+            "U": 1,
+            "P": 4
+          }
+        },
+        "partial_accepted": {
+          "bound": 8,
+          "eligible": 9,
+          "bound_ids": [
+            "dangol2026workflow",
+            "earlybird2025",
+            "netecho2025",
+            "timewilltell2024",
+            "uitraces2026",
+            "wei2024speculation",
+            "whisperleak2025",
+            "zhu2026turing"
+          ],
+          "eligible_ids": [
+            "dangol2026workflow",
+            "earlybird2025",
+            "netecho2025",
+            "pouryousef2026traffic",
+            "timewilltell2024",
+            "uitraces2026",
+            "wei2024speculation",
+            "whisperleak2025",
+            "zhu2026turing"
+          ],
+          "states": {
+            "B": 4,
+            "U": 1,
+            "P": 4
+          }
+        }
+      },
+      "R5": {
+        "strict": {
+          "bound": 2,
+          "eligible": 9,
+          "bound_ids": [
+            "dangol2026workflow",
+            "uitraces2026"
+          ],
+          "eligible_ids": [
+            "dangol2026workflow",
+            "earlybird2025",
+            "netecho2025",
+            "pouryousef2026traffic",
+            "timewilltell2024",
+            "uitraces2026",
+            "wei2024speculation",
+            "whisperleak2025",
+            "zhu2026turing"
+          ],
+          "states": {
+            "B": 2,
+            "?": 2,
+            "U": 5
+          }
+        },
+        "partial_accepted": {
+          "bound": 2,
+          "eligible": 9,
+          "bound_ids": [
+            "dangol2026workflow",
+            "uitraces2026"
+          ],
+          "eligible_ids": [
+            "dangol2026workflow",
+            "earlybird2025",
+            "netecho2025",
+            "pouryousef2026traffic",
+            "timewilltell2024",
+            "uitraces2026",
+            "wei2024speculation",
+            "whisperleak2025",
+            "zhu2026turing"
+          ],
+          "states": {
+            "B": 2,
+            "?": 2,
+            "U": 5
+          }
+        }
+      },
+      "R7": {
+        "strict": {
+          "bound": 13,
+          "eligible": 13,
+          "bound_ids": [
+            "addagada2026kvgov",
+            "chu2025safekv",
+            "dangol2026workflow",
+            "earlybird2025",
+            "jeong2026wra",
+            "netecho2025",
+            "pouryousef2026traffic",
+            "spliceleak2026",
+            "timewilltell2024",
+            "uitraces2026",
+            "wei2024speculation",
+            "whisperleak2025",
+            "zhu2026turing"
+          ],
+          "eligible_ids": [
+            "addagada2026kvgov",
+            "chu2025safekv",
+            "dangol2026workflow",
+            "earlybird2025",
+            "jeong2026wra",
+            "netecho2025",
+            "pouryousef2026traffic",
+            "spliceleak2026",
+            "timewilltell2024",
+            "uitraces2026",
+            "wei2024speculation",
+            "whisperleak2025",
+            "zhu2026turing"
+          ],
+          "states": {
+            "B": 13
+          }
+        },
+        "partial_accepted": {
+          "bound": 13,
+          "eligible": 13,
+          "bound_ids": [
+            "addagada2026kvgov",
+            "chu2025safekv",
+            "dangol2026workflow",
+            "earlybird2025",
+            "jeong2026wra",
+            "netecho2025",
+            "pouryousef2026traffic",
+            "spliceleak2026",
+            "timewilltell2024",
+            "uitraces2026",
+            "wei2024speculation",
+            "whisperleak2025",
+            "zhu2026turing"
+          ],
+          "eligible_ids": [
+            "addagada2026kvgov",
+            "chu2025safekv",
+            "dangol2026workflow",
+            "earlybird2025",
+            "jeong2026wra",
+            "netecho2025",
+            "pouryousef2026traffic",
+            "spliceleak2026",
+            "timewilltell2024",
+            "uitraces2026",
+            "wei2024speculation",
+            "whisperleak2025",
+            "zhu2026turing"
+          ],
+          "states": {
+            "B": 13
+          }
+        }
+      },
+      "R8": {
+        "strict": {
+          "bound": 2,
+          "eligible": 14,
+          "bound_ids": [
+            "hornetz2026tdxray",
+            "zhu2026turing"
+          ],
+          "eligible_ids": [
+            "addagada2026kvgov",
+            "carlini2024remote",
+            "chu2025safekv",
+            "dangol2026workflow",
+            "earlybird2025",
+            "hornetz2026tdxray",
+            "jeong2026wra",
+            "netecho2025",
+            "pouryousef2026traffic",
+            "spliceleak2026",
+            "timewilltell2024",
+            "uitraces2026",
+            "whisperleak2025",
+            "zhu2026turing"
+          ],
+          "states": {
+            "U": 10,
+            "B": 2,
+            "P": 2
+          }
+        },
+        "partial_accepted": {
+          "bound": 4,
+          "eligible": 14,
+          "bound_ids": [
+            "hornetz2026tdxray",
+            "jeong2026wra",
+            "pouryousef2026traffic",
+            "zhu2026turing"
+          ],
+          "eligible_ids": [
+            "addagada2026kvgov",
+            "carlini2024remote",
+            "chu2025safekv",
+            "dangol2026workflow",
+            "earlybird2025",
+            "hornetz2026tdxray",
+            "jeong2026wra",
+            "netecho2025",
+            "pouryousef2026traffic",
+            "spliceleak2026",
+            "timewilltell2024",
+            "uitraces2026",
+            "whisperleak2025",
+            "zhu2026turing"
+          ],
+          "states": {
+            "U": 10,
+            "B": 2,
+            "P": 2
+          }
+        }
+      },
+      "R9": {
+        "strict": {
+          "bound": 9,
+          "eligible": 15,
+          "bound_ids": [
+            "addagada2026kvgov",
+            "carlini2024remote",
+            "dangol2026workflow",
+            "earlybird2025",
+            "gao2025iknow",
+            "hornetz2026tdxray",
+            "spliceleak2026",
+            "timewilltell2024",
+            "wei2024speculation"
+          ],
+          "eligible_ids": [
+            "addagada2026kvgov",
+            "carlini2024remote",
+            "chu2025safekv",
+            "dangol2026workflow",
+            "earlybird2025",
+            "gao2025iknow",
+            "hornetz2026tdxray",
+            "jeong2026wra",
+            "netecho2025",
+            "pouryousef2026traffic",
+            "spliceleak2026",
+            "timewilltell2024",
+            "wei2024speculation",
+            "whisperleak2025",
+            "zhu2026turing"
+          ],
+          "states": {
+            "B": 9,
+            "P": 3,
+            "U": 3
+          }
+        },
+        "partial_accepted": {
+          "bound": 12,
+          "eligible": 15,
+          "bound_ids": [
+            "addagada2026kvgov",
+            "carlini2024remote",
+            "chu2025safekv",
+            "dangol2026workflow",
+            "earlybird2025",
+            "gao2025iknow",
+            "hornetz2026tdxray",
+            "netecho2025",
+            "spliceleak2026",
+            "timewilltell2024",
+            "wei2024speculation",
+            "whisperleak2025"
+          ],
+          "eligible_ids": [
+            "addagada2026kvgov",
+            "carlini2024remote",
+            "chu2025safekv",
+            "dangol2026workflow",
+            "earlybird2025",
+            "gao2025iknow",
+            "hornetz2026tdxray",
+            "jeong2026wra",
+            "netecho2025",
+            "pouryousef2026traffic",
+            "spliceleak2026",
+            "timewilltell2024",
+            "wei2024speculation",
+            "whisperleak2025",
+            "zhu2026turing"
+          ],
+          "states": {
+            "B": 9,
+            "P": 3,
+            "U": 3
+          }
+        }
+      }
+    },
+    "without_CachePrune_or_final_search": {
+      "R4": {
+        "strict": {
+          "bound": 4,
+          "eligible": 9,
+          "bound_ids": [
+            "dangol2026workflow",
+            "earlybird2025",
+            "netecho2025",
+            "uitraces2026"
+          ],
+          "eligible_ids": [
+            "dangol2026workflow",
+            "earlybird2025",
+            "netecho2025",
+            "pouryousef2026traffic",
+            "timewilltell2024",
+            "uitraces2026",
+            "wei2024speculation",
+            "whisperleak2025",
+            "zhu2026turing"
+          ],
+          "states": {
+            "B": 4,
+            "U": 1,
+            "P": 4
+          }
+        },
+        "partial_accepted": {
+          "bound": 8,
+          "eligible": 9,
+          "bound_ids": [
+            "dangol2026workflow",
+            "earlybird2025",
+            "netecho2025",
+            "timewilltell2024",
+            "uitraces2026",
+            "wei2024speculation",
+            "whisperleak2025",
+            "zhu2026turing"
+          ],
+          "eligible_ids": [
+            "dangol2026workflow",
+            "earlybird2025",
+            "netecho2025",
+            "pouryousef2026traffic",
+            "timewilltell2024",
+            "uitraces2026",
+            "wei2024speculation",
+            "whisperleak2025",
+            "zhu2026turing"
+          ],
+          "states": {
+            "B": 4,
+            "U": 1,
+            "P": 4
+          }
+        }
+      },
+      "R5": {
+        "strict": {
+          "bound": 2,
+          "eligible": 9,
+          "bound_ids": [
+            "dangol2026workflow",
+            "uitraces2026"
+          ],
+          "eligible_ids": [
+            "dangol2026workflow",
+            "earlybird2025",
+            "netecho2025",
+            "pouryousef2026traffic",
+            "timewilltell2024",
+            "uitraces2026",
+            "wei2024speculation",
+            "whisperleak2025",
+            "zhu2026turing"
+          ],
+          "states": {
+            "B": 2,
+            "?": 2,
+            "U": 5
+          }
+        },
+        "partial_accepted": {
+          "bound": 2,
+          "eligible": 9,
+          "bound_ids": [
+            "dangol2026workflow",
+            "uitraces2026"
+          ],
+          "eligible_ids": [
+            "dangol2026workflow",
+            "earlybird2025",
+            "netecho2025",
+            "pouryousef2026traffic",
+            "timewilltell2024",
+            "uitraces2026",
+            "wei2024speculation",
+            "whisperleak2025",
+            "zhu2026turing"
+          ],
+          "states": {
+            "B": 2,
+            "?": 2,
+            "U": 5
+          }
+        }
+      },
+      "R7": {
+        "strict": {
+          "bound": 13,
+          "eligible": 13,
+          "bound_ids": [
+            "addagada2026kvgov",
+            "chu2025safekv",
+            "dangol2026workflow",
+            "earlybird2025",
+            "jeong2026wra",
+            "netecho2025",
+            "pouryousef2026traffic",
+            "spliceleak2026",
+            "timewilltell2024",
+            "uitraces2026",
+            "wei2024speculation",
+            "whisperleak2025",
+            "zhu2026turing"
+          ],
+          "eligible_ids": [
+            "addagada2026kvgov",
+            "chu2025safekv",
+            "dangol2026workflow",
+            "earlybird2025",
+            "jeong2026wra",
+            "netecho2025",
+            "pouryousef2026traffic",
+            "spliceleak2026",
+            "timewilltell2024",
+            "uitraces2026",
+            "wei2024speculation",
+            "whisperleak2025",
+            "zhu2026turing"
+          ],
+          "states": {
+            "B": 13
+          }
+        },
+        "partial_accepted": {
+          "bound": 13,
+          "eligible": 13,
+          "bound_ids": [
+            "addagada2026kvgov",
+            "chu2025safekv",
+            "dangol2026workflow",
+            "earlybird2025",
+            "jeong2026wra",
+            "netecho2025",
+            "pouryousef2026traffic",
+            "spliceleak2026",
+            "timewilltell2024",
+            "uitraces2026",
+            "wei2024speculation",
+            "whisperleak2025",
+            "zhu2026turing"
+          ],
+          "eligible_ids": [
+            "addagada2026kvgov",
+            "chu2025safekv",
+            "dangol2026workflow",
+            "earlybird2025",
+            "jeong2026wra",
+            "netecho2025",
+            "pouryousef2026traffic",
+            "spliceleak2026",
+            "timewilltell2024",
+            "uitraces2026",
+            "wei2024speculation",
+            "whisperleak2025",
+            "zhu2026turing"
+          ],
+          "states": {
+            "B": 13
+          }
+        }
+      },
+      "R8": {
+        "strict": {
+          "bound": 2,
+          "eligible": 14,
+          "bound_ids": [
+            "hornetz2026tdxray",
+            "zhu2026turing"
+          ],
+          "eligible_ids": [
+            "addagada2026kvgov",
+            "carlini2024remote",
+            "chu2025safekv",
+            "dangol2026workflow",
+            "earlybird2025",
+            "hornetz2026tdxray",
+            "jeong2026wra",
+            "netecho2025",
+            "pouryousef2026traffic",
+            "spliceleak2026",
+            "timewilltell2024",
+            "uitraces2026",
+            "whisperleak2025",
+            "zhu2026turing"
+          ],
+          "states": {
+            "U": 10,
+            "B": 2,
+            "P": 2
+          }
+        },
+        "partial_accepted": {
+          "bound": 4,
+          "eligible": 14,
+          "bound_ids": [
+            "hornetz2026tdxray",
+            "jeong2026wra",
+            "pouryousef2026traffic",
+            "zhu2026turing"
+          ],
+          "eligible_ids": [
+            "addagada2026kvgov",
+            "carlini2024remote",
+            "chu2025safekv",
+            "dangol2026workflow",
+            "earlybird2025",
+            "hornetz2026tdxray",
+            "jeong2026wra",
+            "netecho2025",
+            "pouryousef2026traffic",
+            "spliceleak2026",
+            "timewilltell2024",
+            "uitraces2026",
+            "whisperleak2025",
+            "zhu2026turing"
+          ],
+          "states": {
+            "U": 10,
+            "B": 2,
+            "P": 2
+          }
+        }
+      },
+      "R9": {
+        "strict": {
+          "bound": 9,
+          "eligible": 15,
+          "bound_ids": [
+            "addagada2026kvgov",
+            "carlini2024remote",
+            "dangol2026workflow",
+            "earlybird2025",
+            "gao2025iknow",
+            "hornetz2026tdxray",
+            "spliceleak2026",
+            "timewilltell2024",
+            "wei2024speculation"
+          ],
+          "eligible_ids": [
+            "addagada2026kvgov",
+            "carlini2024remote",
+            "chu2025safekv",
+            "dangol2026workflow",
+            "earlybird2025",
+            "gao2025iknow",
+            "hornetz2026tdxray",
+            "jeong2026wra",
+            "netecho2025",
+            "pouryousef2026traffic",
+            "spliceleak2026",
+            "timewilltell2024",
+            "wei2024speculation",
+            "whisperleak2025",
+            "zhu2026turing"
+          ],
+          "states": {
+            "B": 9,
+            "P": 3,
+            "U": 3
+          }
+        },
+        "partial_accepted": {
+          "bound": 12,
+          "eligible": 15,
+          "bound_ids": [
+            "addagada2026kvgov",
+            "carlini2024remote",
+            "chu2025safekv",
+            "dangol2026workflow",
+            "earlybird2025",
+            "gao2025iknow",
+            "hornetz2026tdxray",
+            "netecho2025",
+            "spliceleak2026",
+            "timewilltell2024",
+            "wei2024speculation",
+            "whisperleak2025"
+          ],
+          "eligible_ids": [
+            "addagada2026kvgov",
+            "carlini2024remote",
+            "chu2025safekv",
+            "dangol2026workflow",
+            "earlybird2025",
+            "gao2025iknow",
+            "hornetz2026tdxray",
+            "jeong2026wra",
+            "netecho2025",
+            "pouryousef2026traffic",
+            "spliceleak2026",
+            "timewilltell2024",
+            "wei2024speculation",
+            "whisperleak2025",
+            "zhu2026turing"
+          ],
+          "states": {
+            "B": 9,
+            "P": 3,
+            "U": 3
+          }
+        }
+      }
+    }
+  },
+  "common_R7_R8_R9_families": {
+    "R7": {
+      "strict": {
+        "bound": 13,
+        "eligible": 14,
+        "bound_ids": [
+          "addagada2026kvgov",
+          "chen2026sparleak",
+          "chu2025safekv",
+          "dangol2026workflow",
+          "earlybird2025",
+          "jeong2026wra",
+          "netecho2025",
+          "pouryousef2026traffic",
+          "spliceleak2026",
+          "timewilltell2024",
+          "whisperleak2025",
+          "wu2026cacheprune",
+          "zhu2026turing"
+        ],
+        "eligible_ids": [
+          "addagada2026kvgov",
+          "chen2026sparleak",
+          "chu2025safekv",
+          "dangol2026workflow",
+          "earlybird2025",
+          "hadad2026shape",
+          "jeong2026wra",
+          "netecho2025",
+          "pouryousef2026traffic",
+          "spliceleak2026",
+          "timewilltell2024",
+          "whisperleak2025",
+          "wu2026cacheprune",
+          "zhu2026turing"
+        ],
+        "states": {
+          "B": 13,
+          "P": 1
+        }
+      },
+      "partial_accepted": {
+        "bound": 14,
+        "eligible": 14,
+        "bound_ids": [
+          "addagada2026kvgov",
+          "chen2026sparleak",
+          "chu2025safekv",
+          "dangol2026workflow",
+          "earlybird2025",
+          "hadad2026shape",
+          "jeong2026wra",
+          "netecho2025",
+          "pouryousef2026traffic",
+          "spliceleak2026",
+          "timewilltell2024",
+          "whisperleak2025",
+          "wu2026cacheprune",
+          "zhu2026turing"
+        ],
+        "eligible_ids": [
+          "addagada2026kvgov",
+          "chen2026sparleak",
+          "chu2025safekv",
+          "dangol2026workflow",
+          "earlybird2025",
+          "hadad2026shape",
+          "jeong2026wra",
+          "netecho2025",
+          "pouryousef2026traffic",
+          "spliceleak2026",
+          "timewilltell2024",
+          "whisperleak2025",
+          "wu2026cacheprune",
+          "zhu2026turing"
+        ],
+        "states": {
+          "B": 13,
+          "P": 1
+        }
+      }
+    },
+    "R8": {
+      "strict": {
+        "bound": 3,
+        "eligible": 14,
+        "bound_ids": [
+          "chen2026sparleak",
+          "wu2026cacheprune",
+          "zhu2026turing"
+        ],
+        "eligible_ids": [
+          "addagada2026kvgov",
+          "chen2026sparleak",
+          "chu2025safekv",
+          "dangol2026workflow",
+          "earlybird2025",
+          "hadad2026shape",
+          "jeong2026wra",
+          "netecho2025",
+          "pouryousef2026traffic",
+          "spliceleak2026",
+          "timewilltell2024",
+          "whisperleak2025",
+          "wu2026cacheprune",
+          "zhu2026turing"
+        ],
+        "states": {
+          "U": 9,
+          "B": 3,
+          "P": 2
+        }
+      },
+      "partial_accepted": {
+        "bound": 5,
+        "eligible": 14,
+        "bound_ids": [
+          "chen2026sparleak",
+          "jeong2026wra",
+          "pouryousef2026traffic",
+          "wu2026cacheprune",
+          "zhu2026turing"
+        ],
+        "eligible_ids": [
+          "addagada2026kvgov",
+          "chen2026sparleak",
+          "chu2025safekv",
+          "dangol2026workflow",
+          "earlybird2025",
+          "hadad2026shape",
+          "jeong2026wra",
+          "netecho2025",
+          "pouryousef2026traffic",
+          "spliceleak2026",
+          "timewilltell2024",
+          "whisperleak2025",
+          "wu2026cacheprune",
+          "zhu2026turing"
+        ],
+        "states": {
+          "U": 9,
+          "B": 3,
+          "P": 2
+        }
+      }
+    },
+    "R9": {
+      "strict": {
+        "bound": 6,
+        "eligible": 14,
+        "bound_ids": [
+          "addagada2026kvgov",
+          "dangol2026workflow",
+          "earlybird2025",
+          "spliceleak2026",
+          "timewilltell2024",
+          "wu2026cacheprune"
+        ],
+        "eligible_ids": [
+          "addagada2026kvgov",
+          "chen2026sparleak",
+          "chu2025safekv",
+          "dangol2026workflow",
+          "earlybird2025",
+          "hadad2026shape",
+          "jeong2026wra",
+          "netecho2025",
+          "pouryousef2026traffic",
+          "spliceleak2026",
+          "timewilltell2024",
+          "whisperleak2025",
+          "wu2026cacheprune",
+          "zhu2026turing"
+        ],
+        "states": {
+          "B": 6,
+          "U": 4,
+          "P": 4
+        }
+      },
+      "partial_accepted": {
+        "bound": 10,
+        "eligible": 14,
+        "bound_ids": [
+          "addagada2026kvgov",
+          "chu2025safekv",
+          "dangol2026workflow",
+          "earlybird2025",
+          "hadad2026shape",
+          "netecho2025",
+          "spliceleak2026",
+          "timewilltell2024",
+          "whisperleak2025",
+          "wu2026cacheprune"
+        ],
+        "eligible_ids": [
+          "addagada2026kvgov",
+          "chen2026sparleak",
+          "chu2025safekv",
+          "dangol2026workflow",
+          "earlybird2025",
+          "hadad2026shape",
+          "jeong2026wra",
+          "netecho2025",
+          "pouryousef2026traffic",
+          "spliceleak2026",
+          "timewilltell2024",
+          "whisperleak2025",
+          "wu2026cacheprune",
+          "zhu2026turing"
+        ],
+        "states": {
+          "B": 6,
+          "U": 4,
+          "P": 4
+        }
+      }
+    }
+  },
+  "broad_adaptation_applicability": {
+    "R4": {
+      "strict": {
+        "bound": 4,
+        "eligible": 20,
+        "bound_ids": [
+          "dangol2026workflow",
+          "earlybird2025",
+          "netecho2025",
+          "uitraces2026"
+        ],
+        "eligible_ids": [
+          "addagada2026kvgov",
+          "carlini2024remote",
+          "chen2026sparleak",
+          "chu2025safekv",
+          "dangol2026workflow",
+          "earlybird2025",
+          "gao2025iknow",
+          "hadad2026shape",
+          "hornetz2026tdxray",
+          "jeong2026wra",
+          "lee2026otro",
+          "netecho2025",
+          "pouryousef2026traffic",
+          "spliceleak2026",
+          "timewilltell2024",
+          "uitraces2026",
+          "wei2024speculation",
+          "whisperleak2025",
+          "wu2026cacheprune",
+          "zhu2026turing"
+        ],
+        "states": {
+          "U": 11,
+          "P": 5,
+          "B": 4
+        }
+      },
+      "partial_accepted": {
+        "bound": 9,
+        "eligible": 20,
+        "bound_ids": [
+          "chen2026sparleak",
+          "dangol2026workflow",
+          "earlybird2025",
+          "netecho2025",
+          "timewilltell2024",
+          "uitraces2026",
+          "wei2024speculation",
+          "whisperleak2025",
+          "zhu2026turing"
+        ],
+        "eligible_ids": [
+          "addagada2026kvgov",
+          "carlini2024remote",
+          "chen2026sparleak",
+          "chu2025safekv",
+          "dangol2026workflow",
+          "earlybird2025",
+          "gao2025iknow",
+          "hadad2026shape",
+          "hornetz2026tdxray",
+          "jeong2026wra",
+          "lee2026otro",
+          "netecho2025",
+          "pouryousef2026traffic",
+          "spliceleak2026",
+          "timewilltell2024",
+          "uitraces2026",
+          "wei2024speculation",
+          "whisperleak2025",
+          "wu2026cacheprune",
+          "zhu2026turing"
+        ],
+        "states": {
+          "U": 11,
+          "P": 5,
+          "B": 4
+        }
+      }
+    },
+    "R5": {
+      "strict": {
+        "bound": 2,
+        "eligible": 20,
+        "bound_ids": [
+          "dangol2026workflow",
+          "uitraces2026"
+        ],
+        "eligible_ids": [
+          "addagada2026kvgov",
+          "carlini2024remote",
+          "chen2026sparleak",
+          "chu2025safekv",
+          "dangol2026workflow",
+          "earlybird2025",
+          "gao2025iknow",
+          "hadad2026shape",
+          "hornetz2026tdxray",
+          "jeong2026wra",
+          "lee2026otro",
+          "netecho2025",
+          "pouryousef2026traffic",
+          "spliceleak2026",
+          "timewilltell2024",
+          "uitraces2026",
+          "wei2024speculation",
+          "whisperleak2025",
+          "wu2026cacheprune",
+          "zhu2026turing"
+        ],
+        "states": {
+          "U": 16,
+          "B": 2,
+          "?": 2
+        }
+      },
+      "partial_accepted": {
+        "bound": 2,
+        "eligible": 20,
+        "bound_ids": [
+          "dangol2026workflow",
+          "uitraces2026"
+        ],
+        "eligible_ids": [
+          "addagada2026kvgov",
+          "carlini2024remote",
+          "chen2026sparleak",
+          "chu2025safekv",
+          "dangol2026workflow",
+          "earlybird2025",
+          "gao2025iknow",
+          "hadad2026shape",
+          "hornetz2026tdxray",
+          "jeong2026wra",
+          "lee2026otro",
+          "netecho2025",
+          "pouryousef2026traffic",
+          "spliceleak2026",
+          "timewilltell2024",
+          "uitraces2026",
+          "wei2024speculation",
+          "whisperleak2025",
+          "wu2026cacheprune",
+          "zhu2026turing"
+        ],
+        "states": {
+          "U": 16,
+          "B": 2,
+          "?": 2
+        }
+      }
+    }
+  },
+  "agent_privacy_attribution_utility": {
+    "dangol2026workflow": {
+      "R8": "U",
+      "record_ids": [
+        "DANGOL-capture",
+        "DANGOL-livebinding"
+      ],
+      "G": [
+        5,
+        6,
+        8
+      ],
+      "O": [
+        3,
+        6,
+        8
+      ],
+      "types": [
+        "I"
+      ]
+    },
+    "jeong2026wra": {
+      "R8": "P",
+      "record_ids": [
+        "WRA-decoy-execution"
+      ],
+      "G": [
+        5,
+        7
+      ],
+      "O": [
+        3
+      ],
+      "types": [
+        "I"
+      ]
+    },
+    "pouryousef2026traffic": {
+      "R8": "P",
+      "record_ids": [
+        "TRAFFIC-prompt-reformulation",
+        "TRAFFIC-temperature"
+      ],
+      "G": [
+        2,
+        5,
+        8
+      ],
+      "O": [
+        3
+      ],
+      "types": [
+        "I",
+        "II"
+      ]
+    },
+    "uitraces2026": {
+      "R8": "U",
+      "record_ids": [
+        "UI-delay-offline"
+      ],
+      "G": [
+        5,
+        7
+      ],
+      "O": [
+        7
+      ],
+      "types": [
+        "II"
+      ]
+    }
+  },
+  "agent_sensitivity": {
+    "all": {
+      "families": [
+        "dangol2026workflow",
+        "jeong2026wra",
+        "pouryousef2026traffic",
+        "uitraces2026"
+      ],
+      "strict": {
+        "bound": 0,
+        "eligible": 4,
+        "bound_ids": [],
+        "eligible_ids": [
+          "dangol2026workflow",
+          "jeong2026wra",
+          "pouryousef2026traffic",
+          "uitraces2026"
+        ],
+        "states": {
+          "U": 2,
+          "P": 2
+        }
+      },
+      "partial_accepted": {
+        "bound": 2,
+        "eligible": 4,
+        "bound_ids": [
+          "jeong2026wra",
+          "pouryousef2026traffic"
+        ],
+        "eligible_ids": [
+          "dangol2026workflow",
+          "jeong2026wra",
+          "pouryousef2026traffic",
+          "uitraces2026"
+        ],
+        "states": {
+          "U": 2,
+          "P": 2
+        }
+      }
+    },
+    "without_CachePrune": {
+      "families": [
+        "dangol2026workflow",
+        "jeong2026wra",
+        "pouryousef2026traffic",
+        "uitraces2026"
+      ],
+      "strict": {
+        "bound": 0,
+        "eligible": 4,
+        "bound_ids": [],
+        "eligible_ids": [
+          "dangol2026workflow",
+          "jeong2026wra",
+          "pouryousef2026traffic",
+          "uitraces2026"
+        ],
+        "states": {
+          "U": 2,
+          "P": 2
+        }
+      },
+      "partial_accepted": {
+        "bound": 2,
+        "eligible": 4,
+        "bound_ids": [
+          "jeong2026wra",
+          "pouryousef2026traffic"
+        ],
+        "eligible_ids": [
+          "dangol2026workflow",
+          "jeong2026wra",
+          "pouryousef2026traffic",
+          "uitraces2026"
+        ],
+        "states": {
+          "U": 2,
+          "P": 2
+        }
+      }
+    },
+    "without_final_search": {
+      "families": [
+        "dangol2026workflow",
+        "jeong2026wra",
+        "pouryousef2026traffic",
+        "uitraces2026"
+      ],
+      "strict": {
+        "bound": 0,
+        "eligible": 4,
+        "bound_ids": [],
+        "eligible_ids": [
+          "dangol2026workflow",
+          "jeong2026wra",
+          "pouryousef2026traffic",
+          "uitraces2026"
+        ],
+        "states": {
+          "U": 2,
+          "P": 2
+        }
+      },
+      "partial_accepted": {
+        "bound": 2,
+        "eligible": 4,
+        "bound_ids": [
+          "jeong2026wra",
+          "pouryousef2026traffic"
+        ],
+        "eligible_ids": [
+          "dangol2026workflow",
+          "jeong2026wra",
+          "pouryousef2026traffic",
+          "uitraces2026"
+        ],
+        "states": {
+          "U": 2,
+          "P": 2
+        }
+      }
+    },
+    "without_CachePrune_or_final_search": {
+      "families": [
+        "dangol2026workflow",
+        "jeong2026wra",
+        "pouryousef2026traffic",
+        "uitraces2026"
+      ],
+      "strict": {
+        "bound": 0,
+        "eligible": 4,
+        "bound_ids": [],
+        "eligible_ids": [
+          "dangol2026workflow",
+          "jeong2026wra",
+          "pouryousef2026traffic",
+          "uitraces2026"
+        ],
+        "states": {
+          "U": 2,
+          "P": 2
+        }
+      },
+      "partial_accepted": {
+        "bound": 2,
+        "eligible": 4,
+        "bound_ids": [
+          "jeong2026wra",
+          "pouryousef2026traffic"
+        ],
+        "eligible_ids": [
+          "dangol2026workflow",
+          "jeong2026wra",
+          "pouryousef2026traffic",
+          "uitraces2026"
+        ],
+        "states": {
+          "U": 2,
+          "P": 2
+        }
+      }
+    }
+  },
+  "inference_cost_conjunction": {
+    "all": {
+      "strict": {
+        "families": 8,
+        "separate_only": 5,
+        "rows": [
+          {
+            "family": "addagada2026kvgov",
+            "inference": [
+              "KVGOV-partialflush-sim"
+            ],
+            "cost": [
+              "KVGOV-HMAC-cost"
+            ],
+            "joint": []
+          },
+          {
+            "family": "dangol2026workflow",
+            "inference": [
+              "DANGOL-capture",
+              "DANGOL-livebinding"
+            ],
+            "cost": [
+              "DANGOL-capture",
+              "DANGOL-livebinding"
+            ],
+            "joint": [
+              "DANGOL-capture",
+              "DANGOL-livebinding"
+            ]
+          },
+          {
+            "family": "earlybird2025",
+            "inference": [
+              "EARLY-K-calibration-oracle"
+            ],
+            "cost": [
+              "EARLY-semantic-deidentification"
+            ],
+            "joint": []
+          },
+          {
+            "family": "lee2026otro",
+            "inference": [
+              "OTRO-epochpad"
+            ],
+            "cost": [
+              "OTRO-unpadded"
+            ],
+            "joint": []
+          },
+          {
+            "family": "spliceleak2026",
+            "inference": [
+              "SPLICE-CTBF-signal"
+            ],
+            "cost": [
+              "SPLICE-QCP-cost"
+            ],
+            "joint": []
+          },
+          {
+            "family": "timewilltell2024",
+            "inference": [
+              "TIME-length-instruction"
+            ],
+            "cost": [
+              "TIME-padding-estimate"
+            ],
+            "joint": []
+          },
+          {
+            "family": "wei2024speculation",
+            "inference": [
+              "SPEC-padding-REST"
+            ],
+            "cost": [
+              "SPEC-padding-REST"
+            ],
+            "joint": [
+              "SPEC-padding-REST"
+            ]
+          },
+          {
+            "family": "wu2026cacheprune",
+            "inference": [
+              "CACHEPRUNE-selective",
+              "CACHEPRUNE-context"
+            ],
+            "cost": [
+              "CACHEPRUNE-selective",
+              "CACHEPRUNE-context"
+            ],
+            "joint": [
+              "CACHEPRUNE-context",
+              "CACHEPRUNE-selective"
+            ]
+          }
+        ]
+      },
+      "partial_accepted": {
+        "families": 12,
+        "separate_only": 3,
+        "rows": [
+          {
+            "family": "addagada2026kvgov",
+            "inference": [
+              "KVGOV-partialflush-sim"
+            ],
+            "cost": [
+              "KVGOV-HMAC-cost"
+            ],
+            "joint": []
+          },
+          {
+            "family": "chu2025safekv",
+            "inference": [
+              "SAFE-post-trigger"
+            ],
+            "cost": [
+              "SAFE-post-trigger"
+            ],
+            "joint": [
+              "SAFE-post-trigger"
+            ]
+          },
+          {
+            "family": "dangol2026workflow",
+            "inference": [
+              "DANGOL-capture",
+              "DANGOL-livebinding"
+            ],
+            "cost": [
+              "DANGOL-capture",
+              "DANGOL-livebinding"
+            ],
+            "joint": [
+              "DANGOL-capture",
+              "DANGOL-livebinding"
+            ]
+          },
+          {
+            "family": "earlybird2025",
+            "inference": [
+              "EARLY-K-calibration-oracle"
+            ],
+            "cost": [
+              "EARLY-K-calibration-oracle",
+              "EARLY-semantic-deidentification"
+            ],
+            "joint": [
+              "EARLY-K-calibration-oracle"
+            ]
+          },
+          {
+            "family": "hadad2026shape",
+            "inference": [
+              "SHAPE-padding-estimate"
+            ],
+            "cost": [
+              "SHAPE-padding-estimate"
+            ],
+            "joint": [
+              "SHAPE-padding-estimate"
+            ]
+          },
+          {
+            "family": "lee2026otro",
+            "inference": [
+              "OTRO-epochpad"
+            ],
+            "cost": [
+              "OTRO-unpadded",
+              "OTRO-epochpad"
+            ],
+            "joint": [
+              "OTRO-epochpad"
+            ]
+          },
+          {
+            "family": "netecho2025",
+            "inference": [
+              "NET-upstream-local",
+              "NET-dummy-padding-simulation"
+            ],
+            "cost": [
+              "NET-dummy-padding-simulation"
+            ],
+            "joint": [
+              "NET-dummy-padding-simulation"
+            ]
+          },
+          {
+            "family": "spliceleak2026",
+            "inference": [
+              "SPLICE-CTBF-signal"
+            ],
+            "cost": [
+              "SPLICE-QCP-cost"
+            ],
+            "joint": []
+          },
+          {
+            "family": "timewilltell2024",
+            "inference": [
+              "TIME-length-instruction"
+            ],
+            "cost": [
+              "TIME-padding-estimate"
+            ],
+            "joint": []
+          },
+          {
+            "family": "wei2024speculation",
+            "inference": [
+              "SPEC-padding-REST"
+            ],
+            "cost": [
+              "SPEC-padding-REST"
+            ],
+            "joint": [
+              "SPEC-padding-REST"
+            ]
+          },
+          {
+            "family": "whisperleak2025",
+            "inference": [
+              "WHISPER-randompadding-capture",
+              "WHISPER-batching-replay",
+              "WHISPER-injection-replay"
+            ],
+            "cost": [
+              "WHISPER-injection-replay"
+            ],
+            "joint": [
+              "WHISPER-injection-replay"
+            ]
+          },
+          {
+            "family": "wu2026cacheprune",
+            "inference": [
+              "CACHEPRUNE-selective",
+              "CACHEPRUNE-context"
+            ],
+            "cost": [
+              "CACHEPRUNE-selective",
+              "CACHEPRUNE-context"
+            ],
+            "joint": [
+              "CACHEPRUNE-context",
+              "CACHEPRUNE-selective"
+            ]
+          }
+        ]
+      }
+    },
+    "without_CachePrune": {
+      "strict": {
+        "families": 7,
+        "separate_only": 5,
+        "rows": [
+          {
+            "family": "addagada2026kvgov",
+            "inference": [
+              "KVGOV-partialflush-sim"
+            ],
+            "cost": [
+              "KVGOV-HMAC-cost"
+            ],
+            "joint": []
+          },
+          {
+            "family": "dangol2026workflow",
+            "inference": [
+              "DANGOL-capture",
+              "DANGOL-livebinding"
+            ],
+            "cost": [
+              "DANGOL-capture",
+              "DANGOL-livebinding"
+            ],
+            "joint": [
+              "DANGOL-capture",
+              "DANGOL-livebinding"
+            ]
+          },
+          {
+            "family": "earlybird2025",
+            "inference": [
+              "EARLY-K-calibration-oracle"
+            ],
+            "cost": [
+              "EARLY-semantic-deidentification"
+            ],
+            "joint": []
+          },
+          {
+            "family": "lee2026otro",
+            "inference": [
+              "OTRO-epochpad"
+            ],
+            "cost": [
+              "OTRO-unpadded"
+            ],
+            "joint": []
+          },
+          {
+            "family": "spliceleak2026",
+            "inference": [
+              "SPLICE-CTBF-signal"
+            ],
+            "cost": [
+              "SPLICE-QCP-cost"
+            ],
+            "joint": []
+          },
+          {
+            "family": "timewilltell2024",
+            "inference": [
+              "TIME-length-instruction"
+            ],
+            "cost": [
+              "TIME-padding-estimate"
+            ],
+            "joint": []
+          },
+          {
+            "family": "wei2024speculation",
+            "inference": [
+              "SPEC-padding-REST"
+            ],
+            "cost": [
+              "SPEC-padding-REST"
+            ],
+            "joint": [
+              "SPEC-padding-REST"
+            ]
+          }
+        ]
+      },
+      "partial_accepted": {
+        "families": 11,
+        "separate_only": 3,
+        "rows": [
+          {
+            "family": "addagada2026kvgov",
+            "inference": [
+              "KVGOV-partialflush-sim"
+            ],
+            "cost": [
+              "KVGOV-HMAC-cost"
+            ],
+            "joint": []
+          },
+          {
+            "family": "chu2025safekv",
+            "inference": [
+              "SAFE-post-trigger"
+            ],
+            "cost": [
+              "SAFE-post-trigger"
+            ],
+            "joint": [
+              "SAFE-post-trigger"
+            ]
+          },
+          {
+            "family": "dangol2026workflow",
+            "inference": [
+              "DANGOL-capture",
+              "DANGOL-livebinding"
+            ],
+            "cost": [
+              "DANGOL-capture",
+              "DANGOL-livebinding"
+            ],
+            "joint": [
+              "DANGOL-capture",
+              "DANGOL-livebinding"
+            ]
+          },
+          {
+            "family": "earlybird2025",
+            "inference": [
+              "EARLY-K-calibration-oracle"
+            ],
+            "cost": [
+              "EARLY-K-calibration-oracle",
+              "EARLY-semantic-deidentification"
+            ],
+            "joint": [
+              "EARLY-K-calibration-oracle"
+            ]
+          },
+          {
+            "family": "hadad2026shape",
+            "inference": [
+              "SHAPE-padding-estimate"
+            ],
+            "cost": [
+              "SHAPE-padding-estimate"
+            ],
+            "joint": [
+              "SHAPE-padding-estimate"
+            ]
+          },
+          {
+            "family": "lee2026otro",
+            "inference": [
+              "OTRO-epochpad"
+            ],
+            "cost": [
+              "OTRO-unpadded",
+              "OTRO-epochpad"
+            ],
+            "joint": [
+              "OTRO-epochpad"
+            ]
+          },
+          {
+            "family": "netecho2025",
+            "inference": [
+              "NET-upstream-local",
+              "NET-dummy-padding-simulation"
+            ],
+            "cost": [
+              "NET-dummy-padding-simulation"
+            ],
+            "joint": [
+              "NET-dummy-padding-simulation"
+            ]
+          },
+          {
+            "family": "spliceleak2026",
+            "inference": [
+              "SPLICE-CTBF-signal"
+            ],
+            "cost": [
+              "SPLICE-QCP-cost"
+            ],
+            "joint": []
+          },
+          {
+            "family": "timewilltell2024",
+            "inference": [
+              "TIME-length-instruction"
+            ],
+            "cost": [
+              "TIME-padding-estimate"
+            ],
+            "joint": []
+          },
+          {
+            "family": "wei2024speculation",
+            "inference": [
+              "SPEC-padding-REST"
+            ],
+            "cost": [
+              "SPEC-padding-REST"
+            ],
+            "joint": [
+              "SPEC-padding-REST"
+            ]
+          },
+          {
+            "family": "whisperleak2025",
+            "inference": [
+              "WHISPER-randompadding-capture",
+              "WHISPER-batching-replay",
+              "WHISPER-injection-replay"
+            ],
+            "cost": [
+              "WHISPER-injection-replay"
+            ],
+            "joint": [
+              "WHISPER-injection-replay"
+            ]
+          }
+        ]
+      }
+    },
+    "without_final_search": {
+      "strict": {
+        "families": 6,
+        "separate_only": 4,
+        "rows": [
+          {
+            "family": "addagada2026kvgov",
+            "inference": [
+              "KVGOV-partialflush-sim"
+            ],
+            "cost": [
+              "KVGOV-HMAC-cost"
+            ],
+            "joint": []
+          },
+          {
+            "family": "dangol2026workflow",
+            "inference": [
+              "DANGOL-capture",
+              "DANGOL-livebinding"
+            ],
+            "cost": [
+              "DANGOL-capture",
+              "DANGOL-livebinding"
+            ],
+            "joint": [
+              "DANGOL-capture",
+              "DANGOL-livebinding"
+            ]
+          },
+          {
+            "family": "earlybird2025",
+            "inference": [
+              "EARLY-K-calibration-oracle"
+            ],
+            "cost": [
+              "EARLY-semantic-deidentification"
+            ],
+            "joint": []
+          },
+          {
+            "family": "spliceleak2026",
+            "inference": [
+              "SPLICE-CTBF-signal"
+            ],
+            "cost": [
+              "SPLICE-QCP-cost"
+            ],
+            "joint": []
+          },
+          {
+            "family": "timewilltell2024",
+            "inference": [
+              "TIME-length-instruction"
+            ],
+            "cost": [
+              "TIME-padding-estimate"
+            ],
+            "joint": []
+          },
+          {
+            "family": "wei2024speculation",
+            "inference": [
+              "SPEC-padding-REST"
+            ],
+            "cost": [
+              "SPEC-padding-REST"
+            ],
+            "joint": [
+              "SPEC-padding-REST"
+            ]
+          }
+        ]
+      },
+      "partial_accepted": {
+        "families": 9,
+        "separate_only": 3,
+        "rows": [
+          {
+            "family": "addagada2026kvgov",
+            "inference": [
+              "KVGOV-partialflush-sim"
+            ],
+            "cost": [
+              "KVGOV-HMAC-cost"
+            ],
+            "joint": []
+          },
+          {
+            "family": "chu2025safekv",
+            "inference": [
+              "SAFE-post-trigger"
+            ],
+            "cost": [
+              "SAFE-post-trigger"
+            ],
+            "joint": [
+              "SAFE-post-trigger"
+            ]
+          },
+          {
+            "family": "dangol2026workflow",
+            "inference": [
+              "DANGOL-capture",
+              "DANGOL-livebinding"
+            ],
+            "cost": [
+              "DANGOL-capture",
+              "DANGOL-livebinding"
+            ],
+            "joint": [
+              "DANGOL-capture",
+              "DANGOL-livebinding"
+            ]
+          },
+          {
+            "family": "earlybird2025",
+            "inference": [
+              "EARLY-K-calibration-oracle"
+            ],
+            "cost": [
+              "EARLY-K-calibration-oracle",
+              "EARLY-semantic-deidentification"
+            ],
+            "joint": [
+              "EARLY-K-calibration-oracle"
+            ]
+          },
+          {
+            "family": "netecho2025",
+            "inference": [
+              "NET-upstream-local",
+              "NET-dummy-padding-simulation"
+            ],
+            "cost": [
+              "NET-dummy-padding-simulation"
+            ],
+            "joint": [
+              "NET-dummy-padding-simulation"
+            ]
+          },
+          {
+            "family": "spliceleak2026",
+            "inference": [
+              "SPLICE-CTBF-signal"
+            ],
+            "cost": [
+              "SPLICE-QCP-cost"
+            ],
+            "joint": []
+          },
+          {
+            "family": "timewilltell2024",
+            "inference": [
+              "TIME-length-instruction"
+            ],
+            "cost": [
+              "TIME-padding-estimate"
+            ],
+            "joint": []
+          },
+          {
+            "family": "wei2024speculation",
+            "inference": [
+              "SPEC-padding-REST"
+            ],
+            "cost": [
+              "SPEC-padding-REST"
+            ],
+            "joint": [
+              "SPEC-padding-REST"
+            ]
+          },
+          {
+            "family": "whisperleak2025",
+            "inference": [
+              "WHISPER-randompadding-capture",
+              "WHISPER-batching-replay",
+              "WHISPER-injection-replay"
+            ],
+            "cost": [
+              "WHISPER-injection-replay"
+            ],
+            "joint": [
+              "WHISPER-injection-replay"
+            ]
+          }
+        ]
+      }
+    },
+    "without_CachePrune_or_final_search": {
+      "strict": {
+        "families": 6,
+        "separate_only": 4,
+        "rows": [
+          {
+            "family": "addagada2026kvgov",
+            "inference": [
+              "KVGOV-partialflush-sim"
+            ],
+            "cost": [
+              "KVGOV-HMAC-cost"
+            ],
+            "joint": []
+          },
+          {
+            "family": "dangol2026workflow",
+            "inference": [
+              "DANGOL-capture",
+              "DANGOL-livebinding"
+            ],
+            "cost": [
+              "DANGOL-capture",
+              "DANGOL-livebinding"
+            ],
+            "joint": [
+              "DANGOL-capture",
+              "DANGOL-livebinding"
+            ]
+          },
+          {
+            "family": "earlybird2025",
+            "inference": [
+              "EARLY-K-calibration-oracle"
+            ],
+            "cost": [
+              "EARLY-semantic-deidentification"
+            ],
+            "joint": []
+          },
+          {
+            "family": "spliceleak2026",
+            "inference": [
+              "SPLICE-CTBF-signal"
+            ],
+            "cost": [
+              "SPLICE-QCP-cost"
+            ],
+            "joint": []
+          },
+          {
+            "family": "timewilltell2024",
+            "inference": [
+              "TIME-length-instruction"
+            ],
+            "cost": [
+              "TIME-padding-estimate"
+            ],
+            "joint": []
+          },
+          {
+            "family": "wei2024speculation",
+            "inference": [
+              "SPEC-padding-REST"
+            ],
+            "cost": [
+              "SPEC-padding-REST"
+            ],
+            "joint": [
+              "SPEC-padding-REST"
+            ]
+          }
+        ]
+      },
+      "partial_accepted": {
+        "families": 9,
+        "separate_only": 3,
+        "rows": [
+          {
+            "family": "addagada2026kvgov",
+            "inference": [
+              "KVGOV-partialflush-sim"
+            ],
+            "cost": [
+              "KVGOV-HMAC-cost"
+            ],
+            "joint": []
+          },
+          {
+            "family": "chu2025safekv",
+            "inference": [
+              "SAFE-post-trigger"
+            ],
+            "cost": [
+              "SAFE-post-trigger"
+            ],
+            "joint": [
+              "SAFE-post-trigger"
+            ]
+          },
+          {
+            "family": "dangol2026workflow",
+            "inference": [
+              "DANGOL-capture",
+              "DANGOL-livebinding"
+            ],
+            "cost": [
+              "DANGOL-capture",
+              "DANGOL-livebinding"
+            ],
+            "joint": [
+              "DANGOL-capture",
+              "DANGOL-livebinding"
+            ]
+          },
+          {
+            "family": "earlybird2025",
+            "inference": [
+              "EARLY-K-calibration-oracle"
+            ],
+            "cost": [
+              "EARLY-K-calibration-oracle",
+              "EARLY-semantic-deidentification"
+            ],
+            "joint": [
+              "EARLY-K-calibration-oracle"
+            ]
+          },
+          {
+            "family": "netecho2025",
+            "inference": [
+              "NET-upstream-local",
+              "NET-dummy-padding-simulation"
+            ],
+            "cost": [
+              "NET-dummy-padding-simulation"
+            ],
+            "joint": [
+              "NET-dummy-padding-simulation"
+            ]
+          },
+          {
+            "family": "spliceleak2026",
+            "inference": [
+              "SPLICE-CTBF-signal"
+            ],
+            "cost": [
+              "SPLICE-QCP-cost"
+            ],
+            "joint": []
+          },
+          {
+            "family": "timewilltell2024",
+            "inference": [
+              "TIME-length-instruction"
+            ],
+            "cost": [
+              "TIME-padding-estimate"
+            ],
+            "joint": []
+          },
+          {
+            "family": "wei2024speculation",
+            "inference": [
+              "SPEC-padding-REST"
+            ],
+            "cost": [
+              "SPEC-padding-REST"
+            ],
+            "joint": [
+              "SPEC-padding-REST"
+            ]
+          },
+          {
+            "family": "whisperleak2025",
+            "inference": [
+              "WHISPER-randompadding-capture",
+              "WHISPER-batching-replay",
+              "WHISPER-injection-replay"
+            ],
+            "cost": [
+              "WHISPER-injection-replay"
+            ],
+            "joint": [
+              "WHISPER-injection-replay"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "source_layer_coverage": {
+    "P1 only": {
+      "core": 8,
+      "mitigation": 1,
+      "core_ids": [
+        "alhalawani2026physicaledge",
+        "chaudhuri2025energon",
+        "ding2025moecho",
+        "gao2025iknow",
+        "gu2026behindbars",
+        "nazaraliyev2026page404",
+        "spillbeans2025",
+        "weng2026archsnoop"
+      ],
+      "mitigation_ids": [
+        "gao2025iknow"
+      ]
+    },
+    "P1/P2": {
+      "core": 8,
+      "mitigation": 4,
+      "core_ids": [
+        "chen2026sparleak",
+        "hadad2026shape",
+        "hornetz2026tdxray",
+        "jo2026sparseety",
+        "lee2026otro",
+        "weiss2026detokenization",
+        "jiao2025llmwfin",
+        "scheinert2026rca"
+      ],
+      "mitigation_ids": [
+        "chen2026sparleak",
+        "hadad2026shape",
+        "hornetz2026tdxray",
+        "lee2026otro"
+      ]
+    },
+    "P2 only": {
+      "core": 22,
+      "mitigation": 10,
+      "core_ids": [
+        "politis2026splitdecoy",
+        "addagada2026kvgov",
+        "alhazbi2025rhythm",
+        "carlini2024remote",
+        "netecho2025",
+        "prompt_echo2026",
+        "wei2024speculation",
+        "weiss2024prompt",
+        "whisperleak2025",
+        "abubakar2026contention",
+        "chen2026routingmetadata",
+        "chu2025safekv",
+        "debenedetti2024privacy",
+        "earlybird2025",
+        "gu2025promptcaching",
+        "inputsnatch2024",
+        "majidi2026leakylms",
+        "promptpeek2025",
+        "spliceleak2026",
+        "timewilltell2024",
+        "wu2026cacheprune",
+        "yona2024stealing"
+      ],
+      "mitigation_ids": [
+        "addagada2026kvgov",
+        "carlini2024remote",
+        "netecho2025",
+        "wei2024speculation",
+        "whisperleak2025",
+        "chu2025safekv",
+        "earlybird2025",
+        "spliceleak2026",
+        "timewilltell2024",
+        "wu2026cacheprune"
+      ]
+    },
+    "Orchestration/workflow": {
+      "core": 15,
+      "mitigation": 4,
+      "core_ids": [
+        "agentprint2025",
+        "george2025cycles",
+        "geng2026sigleak",
+        "oderinwale2026procgrep",
+        "wang2026agentprov",
+        "wang2026lidar",
+        "dangol2026workflow",
+        "park2026crosscampaign",
+        "jeong2026wra",
+        "song2026personafingerprint",
+        "kang2026whoseagent",
+        "shahriar2026agenttell",
+        "uitraces2026",
+        "wang2026fpagent",
+        "zhu2026turing"
+      ],
+      "mitigation_ids": [
+        "dangol2026workflow",
+        "jeong2026wra",
+        "uitraces2026",
+        "zhu2026turing"
+      ]
+    },
+    "Other cross-layer": {
+      "core": 5,
+      "mitigation": 1,
+      "core_ids": [
+        "gan2026clawguard",
+        "revankar2026mirage",
+        "pouryousef2026traffic",
+        "fayolle2026webagents",
+        "solomon2026lumimas"
+      ],
+      "mitigation_ids": [
+        "pouryousef2026traffic"
+      ]
+    }
+  },
+  "coverage_sensitivity": {
+    "all": {
+      "P1 only": {
+        "mitigation_ids": [
+          "gao2025iknow"
+        ],
+        "fixed_core_denominator": 8
+      },
+      "P1/P2": {
+        "mitigation_ids": [
+          "chen2026sparleak",
+          "hadad2026shape",
+          "hornetz2026tdxray",
+          "lee2026otro"
+        ],
+        "fixed_core_denominator": 8
+      },
+      "P2 only": {
+        "mitigation_ids": [
+          "addagada2026kvgov",
+          "carlini2024remote",
+          "netecho2025",
+          "wei2024speculation",
+          "whisperleak2025",
+          "chu2025safekv",
+          "earlybird2025",
+          "spliceleak2026",
+          "timewilltell2024",
+          "wu2026cacheprune"
+        ],
+        "fixed_core_denominator": 22
+      },
+      "Orchestration/workflow": {
+        "mitigation_ids": [
+          "dangol2026workflow",
+          "jeong2026wra",
+          "uitraces2026",
+          "zhu2026turing"
+        ],
+        "fixed_core_denominator": 15
+      },
+      "Other cross-layer": {
+        "mitigation_ids": [
+          "pouryousef2026traffic"
+        ],
+        "fixed_core_denominator": 5
+      }
+    },
+    "without_CachePrune": {
+      "P1 only": {
+        "mitigation_ids": [
+          "gao2025iknow"
+        ],
+        "fixed_core_denominator": 8
+      },
+      "P1/P2": {
+        "mitigation_ids": [
+          "chen2026sparleak",
+          "hadad2026shape",
+          "hornetz2026tdxray",
+          "lee2026otro"
+        ],
+        "fixed_core_denominator": 8
+      },
+      "P2 only": {
+        "mitigation_ids": [
+          "addagada2026kvgov",
+          "carlini2024remote",
+          "netecho2025",
+          "wei2024speculation",
+          "whisperleak2025",
+          "chu2025safekv",
+          "earlybird2025",
+          "spliceleak2026",
+          "timewilltell2024"
+        ],
+        "fixed_core_denominator": 22
+      },
+      "Orchestration/workflow": {
+        "mitigation_ids": [
+          "dangol2026workflow",
+          "jeong2026wra",
+          "uitraces2026",
+          "zhu2026turing"
+        ],
+        "fixed_core_denominator": 15
+      },
+      "Other cross-layer": {
+        "mitigation_ids": [
+          "pouryousef2026traffic"
+        ],
+        "fixed_core_denominator": 5
+      }
+    },
+    "without_final_search": {
+      "P1 only": {
+        "mitigation_ids": [
+          "gao2025iknow"
+        ],
+        "fixed_core_denominator": 8
+      },
+      "P1/P2": {
+        "mitigation_ids": [
+          "hornetz2026tdxray"
+        ],
+        "fixed_core_denominator": 8
+      },
+      "P2 only": {
+        "mitigation_ids": [
+          "addagada2026kvgov",
+          "carlini2024remote",
+          "netecho2025",
+          "wei2024speculation",
+          "whisperleak2025",
+          "chu2025safekv",
+          "earlybird2025",
+          "spliceleak2026",
+          "timewilltell2024"
+        ],
+        "fixed_core_denominator": 22
+      },
+      "Orchestration/workflow": {
+        "mitigation_ids": [
+          "dangol2026workflow",
+          "jeong2026wra",
+          "uitraces2026",
+          "zhu2026turing"
+        ],
+        "fixed_core_denominator": 15
+      },
+      "Other cross-layer": {
+        "mitigation_ids": [
+          "pouryousef2026traffic"
+        ],
+        "fixed_core_denominator": 5
+      }
+    },
+    "without_CachePrune_or_final_search": {
+      "P1 only": {
+        "mitigation_ids": [
+          "gao2025iknow"
+        ],
+        "fixed_core_denominator": 8
+      },
+      "P1/P2": {
+        "mitigation_ids": [
+          "hornetz2026tdxray"
+        ],
+        "fixed_core_denominator": 8
+      },
+      "P2 only": {
+        "mitigation_ids": [
+          "addagada2026kvgov",
+          "carlini2024remote",
+          "netecho2025",
+          "wei2024speculation",
+          "whisperleak2025",
+          "chu2025safekv",
+          "earlybird2025",
+          "spliceleak2026",
+          "timewilltell2024"
+        ],
+        "fixed_core_denominator": 22
+      },
+      "Orchestration/workflow": {
+        "mitigation_ids": [
+          "dangol2026workflow",
+          "jeong2026wra",
+          "uitraces2026",
+          "zhu2026turing"
+        ],
+        "fixed_core_denominator": 15
+      },
+      "Other cross-layer": {
+        "mitigation_ids": [
+          "pouryousef2026traffic"
+        ],
+        "fixed_core_denominator": 5
+      }
+    }
+  },
+  "threat_type_coverage": {
+    "I": {
+      "core_ids": [
+        "alhalawani2026physicaledge",
+        "ding2025moecho",
+        "gao2025iknow",
+        "gu2026behindbars",
+        "nazaraliyev2026page404",
+        "spillbeans2025",
+        "chen2026sparleak",
+        "hadad2026shape",
+        "hornetz2026tdxray",
+        "jo2026sparseety",
+        "lee2026otro",
+        "weiss2026detokenization",
+        "jiao2025llmwfin",
+        "politis2026splitdecoy",
+        "addagada2026kvgov",
+        "carlini2024remote",
+        "netecho2025",
+        "prompt_echo2026",
+        "wei2024speculation",
+        "weiss2024prompt",
+        "whisperleak2025",
+        "abubakar2026contention",
+        "chen2026routingmetadata",
+        "chu2025safekv",
+        "debenedetti2024privacy",
+        "earlybird2025",
+        "gu2025promptcaching",
+        "inputsnatch2024",
+        "majidi2026leakylms",
+        "promptpeek2025",
+        "spliceleak2026",
+        "timewilltell2024",
+        "wu2026cacheprune",
+        "yona2024stealing",
+        "pouryousef2026traffic",
+        "agentprint2025",
+        "geng2026sigleak",
+        "dangol2026workflow",
+        "jeong2026wra",
+        "song2026personafingerprint",
+        "shahriar2026agenttell"
+      ],
+      "mitigation_ids": [
+        "gao2025iknow",
+        "chen2026sparleak",
+        "hadad2026shape",
+        "hornetz2026tdxray",
+        "lee2026otro",
+        "addagada2026kvgov",
+        "carlini2024remote",
+        "netecho2025",
+        "wei2024speculation",
+        "whisperleak2025",
+        "chu2025safekv",
+        "earlybird2025",
+        "spliceleak2026",
+        "timewilltell2024",
+        "wu2026cacheprune",
+        "pouryousef2026traffic",
+        "dangol2026workflow",
+        "jeong2026wra"
+      ]
+    },
+    "II": {
+      "core_ids": [
+        "chaudhuri2025energon",
+        "weng2026archsnoop",
+        "alhazbi2025rhythm",
+        "pouryousef2026traffic",
+        "fayolle2026webagents",
+        "agentprint2025",
+        "oderinwale2026procgrep",
+        "wang2026agentprov",
+        "wang2026lidar",
+        "park2026crosscampaign",
+        "kang2026whoseagent",
+        "uitraces2026",
+        "wang2026fpagent"
+      ],
+      "mitigation_ids": [
+        "pouryousef2026traffic",
+        "uitraces2026"
+      ]
+    },
+    "III": {
+      "core_ids": [
+        "fayolle2026webagents",
+        "zhu2026turing"
+      ],
+      "mitigation_ids": [
+        "zhu2026turing"
+      ]
+    },
+    "IV": {
+      "core_ids": [
+        "scheinert2026rca",
+        "gan2026clawguard",
+        "revankar2026mirage",
+        "solomon2026lumimas",
+        "george2025cycles"
+      ],
+      "mitigation_ids": []
+    }
+  },
+  "measurement_modes": {
+    "all_records": {
+      "records": 39,
+      "counts": {
+        "Tr": 6,
+        "Ex": 20,
+        "Si": 5,
+        "Co": 6,
+        "Un": 2
+      },
+      "ids": {
+        "Ex": [
+          "WRA-decoy-execution",
+          "NET-upstream-local",
+          "EARLY-semantic-deidentification",
+          "WHISPER-randompadding-capture",
+          "SPLICE-CTBF-signal",
+          "TIME-length-instruction",
+          "DANGOL-livebinding",
+          "SIG-common-guardrail",
+          "SAFE-post-trigger",
+          "AHB-online-executed",
+          "TRAFFIC-prompt-reformulation",
+          "TRAFFIC-temperature",
+          "AGENTTELL-fixed-instruction",
+          "FP-CLOUDFLARE",
+          "BAR-co-running-noise",
+          "RHYTHM-VPN",
+          "DEB-filter-origin",
+          "CACHEPRUNE-selective",
+          "CACHEPRUNE-context",
+          "SPARLEAK-replacement"
+        ],
+        "Tr": [
+          "UI-delay-offline",
+          "NET-dummy-padding-simulation",
+          "WHISPER-batching-replay",
+          "WHISPER-injection-replay",
+          "DANGOL-capture",
+          "AHB-offline"
+        ],
+        "Si": [
+          "EARLY-K-calibration-oracle",
+          "TIME-padding-estimate",
+          "KVGOV-partialflush-sim",
+          "OTRO-epochpad",
+          "SHAPE-padding-estimate"
+        ],
+        "Co": [
+          "SPLICE-QCP-cost",
+          "KVGOV-hardware-gap",
+          "KVGOV-HMAC-cost",
+          "GAO-zero-copy-off",
+          "TDXRAY-oblivious-map",
+          "OTRO-unpadded"
+        ],
+        "Un": [
+          "SPEC-padding-REST",
+          "CARLINI-fixed-rate"
+        ]
+      }
+    },
+    "mitigation": {
+      "records": 33,
+      "counts": {
+        "Tr": 6,
+        "Ex": 14,
+        "Si": 5,
+        "Co": 6,
+        "Un": 2
+      },
+      "ids": {
+        "Ex": [
+          "WRA-decoy-execution",
+          "NET-upstream-local",
+          "EARLY-semantic-deidentification",
+          "WHISPER-randompadding-capture",
+          "SPLICE-CTBF-signal",
+          "TIME-length-instruction",
+          "DANGOL-livebinding",
+          "SAFE-post-trigger",
+          "AHB-online-executed",
+          "TRAFFIC-prompt-reformulation",
+          "TRAFFIC-temperature",
+          "CACHEPRUNE-selective",
+          "CACHEPRUNE-context",
+          "SPARLEAK-replacement"
+        ],
+        "Tr": [
+          "UI-delay-offline",
+          "NET-dummy-padding-simulation",
+          "WHISPER-batching-replay",
+          "WHISPER-injection-replay",
+          "DANGOL-capture",
+          "AHB-offline"
+        ],
+        "Si": [
+          "EARLY-K-calibration-oracle",
+          "TIME-padding-estimate",
+          "KVGOV-partialflush-sim",
+          "OTRO-epochpad",
+          "SHAPE-padding-estimate"
+        ],
+        "Co": [
+          "SPLICE-QCP-cost",
+          "KVGOV-hardware-gap",
+          "KVGOV-HMAC-cost",
+          "GAO-zero-copy-off",
+          "TDXRAY-oblivious-map",
+          "OTRO-unpadded"
+        ],
+        "Un": [
+          "SPEC-padding-REST",
+          "CARLINI-fixed-rate"
+        ]
+      }
+    },
+    "network_receiver_mitigation": {
+      "records": 12,
+      "counts": {
+        "Ex": 6,
+        "Tr": 4,
+        "Un": 2
+      },
+      "ids": {
+        "Ex": [
+          "WRA-decoy-execution",
+          "NET-upstream-local",
+          "WHISPER-randompadding-capture",
+          "DANGOL-livebinding",
+          "TRAFFIC-prompt-reformulation",
+          "TRAFFIC-temperature"
+        ],
+        "Tr": [
+          "NET-dummy-padding-simulation",
+          "WHISPER-batching-replay",
+          "WHISPER-injection-replay",
+          "DANGOL-capture"
+        ],
+        "Si": [],
+        "Co": [],
+        "Un": [
+          "SPEC-padding-REST",
+          "CARLINI-fixed-rate"
+        ]
+      }
+    },
+    "without_final_search": {
+      "records": 27,
+      "counts": {
+        "Tr": 6,
+        "Ex": 11,
+        "Si": 3,
+        "Co": 5,
+        "Un": 2
+      },
+      "ids": {
+        "Ex": [
+          "WRA-decoy-execution",
+          "NET-upstream-local",
+          "EARLY-semantic-deidentification",
+          "WHISPER-randompadding-capture",
+          "SPLICE-CTBF-signal",
+          "TIME-length-instruction",
+          "DANGOL-livebinding",
+          "SAFE-post-trigger",
+          "AHB-online-executed",
+          "TRAFFIC-prompt-reformulation",
+          "TRAFFIC-temperature"
+        ],
+        "Tr": [
+          "UI-delay-offline",
+          "NET-dummy-padding-simulation",
+          "WHISPER-batching-replay",
+          "WHISPER-injection-replay",
+          "DANGOL-capture",
+          "AHB-offline"
+        ],
+        "Si": [
+          "EARLY-K-calibration-oracle",
+          "TIME-padding-estimate",
+          "KVGOV-partialflush-sim"
+        ],
+        "Co": [
+          "SPLICE-QCP-cost",
+          "KVGOV-hardware-gap",
+          "KVGOV-HMAC-cost",
+          "GAO-zero-copy-off",
+          "TDXRAY-oblivious-map"
+        ],
+        "Un": [
+          "SPEC-padding-REST",
+          "CARLINI-fixed-rate"
+        ]
+      }
+    }
+  },
+  "holdout_entries": {
+    "task_input_user": [
+      {
+        "family": "jeong2026wra",
+        "mitigation_family": true,
+        "locator": "3.1; 6.1; 8–9; Tables 1/8/10/11; Appendix C.1–C.3",
+        "interpretation": "Prompt tests and synthetic persona split; version reconciliation open"
+      },
+      {
+        "family": "wang2026fpagent",
+        "mitigation_family": false,
+        "locator": "4.1–4.7; Tables 2/4; 6.1–6.2; Appendix E/Table 8",
+        "interpretation": "Separate task holdout; visitor/host separation unresolved"
+      },
+      {
+        "family": "weiss2024prompt",
+        "mitigation_family": false,
+        "locator": "5.1–5.3; Fig. 4; Tables 2–3",
+        "interpretation": "OOD inputs; browser/API and day/night buffering controls"
+      },
+      {
+        "family": "inputsnatch2024",
+        "mitigation_family": false,
+        "locator": "arXiv 2411.18191: 3.2; 4.3–4.4; Tables 2/4",
+        "interpretation": "Held-out and generated target prompts; candidate-prior dependence"
+      },
+      {
+        "family": "whisperleak2025",
+        "mitigation_family": true,
+        "locator": "3.1; 3 classifier/split discussion; 4.1–4.2; Table 1; 6",
+        "interpretation": "Unique target-prompt holdout; model/provider comparisons"
+      },
+      {
+        "family": "prompt_echo2026",
+        "mitigation_family": false,
+        "locator": "3.1; 5.1–5.3; Tables 2–3",
+        "interpretation": "Overlap-filtered prompts; models evaluated separately"
+      },
+      {
+        "family": "gao2025iknow",
+        "mitigation_family": true,
+        "locator": "Abstract; Introduction; 3.1; 5; 6.1/Table1 (printed1658/PDF11); 6.4–6.5 scope; 12; Appendices A/B/F",
+        "interpretation": "Prompt overlap filtering; model/hardware/framework comparisons"
+      },
+      {
+        "family": "wei2024speculation",
+        "mitigation_family": true,
+        "locator": "v4: 4.3–4.8; Table 1; 6.1",
+        "interpretation": "New traces and OOD paraphrases; remote/load conditions"
+      },
+      {
+        "family": "oderinwale2026procgrep",
+        "mitigation_family": false,
+        "locator": "4–5,Tables7–8",
+        "interpretation": "Task-grouped attribution under scaffold regimes"
+      },
+      {
+        "family": "ding2025moecho",
+        "mitigation_family": false,
+        "locator": "3.1;4;6.2–6.6;Tables3,5–10;7.2;8.1–8.2",
+        "interpretation": "Cross-template/dataset tests; contention/context conditions"
+      },
+      {
+        "family": "wang2026dialogue",
+        "mitigation_family": false,
+        "locator": "2.3; 4.1-4.3; 5.3-5.5; 6.1-6.2; Tables 1-3; Appendix D/Table4",
+        "interpretation": "User-disjoint cross-topic split; no verified cross-service test"
+      },
+      {
+        "family": "zhu2026stepfinder",
+        "mitigation_family": false,
+        "locator": "Header;Sections4,5.1-5.4,6;Tables4-5",
+        "interpretation": "Task-disjoint subsets; denominator reconciliation unresolved"
+      },
+      {
+        "family": "alhalawani2026physicaledge",
+        "mitigation_family": false,
+        "locator": "IV;V;VI",
+        "interpretation": "Unseen-word test separate from profiled vocabulary recovery"
+      }
+    ],
+    "model": [
+      {
+        "family": "nazari2024llmfin",
+        "mitigation_family": false,
+        "locator": "[\"III\",\"IV-B/C; Tables II–III\",\"IV-C/D; V-A\",\"V-A versus Introduction/Fig.2\",\"Table IV\"]",
+        "interpretation": "Unseen variants within known architecture families"
+      },
+      {
+        "family": "weng2026archsnoop",
+        "mitigation_family": false,
+        "locator": "[\"3.2;6.1\",\"6.1\",\"Fig9, paperp58, visually checked\",\"6.2.3;6.3.1\",\"4.1;7.1-7.2\"]",
+        "interpretation": "Random-weight training to official/fine-tuned models; power modes"
+      },
+      {
+        "family": "majidi2026leakylms",
+        "mitigation_family": false,
+        "locator": "3;4.4-4.5 Tables1-2;5.4-5.5 Tables3-6/Fig6;6;A.1;B.4-B.7",
+        "interpretation": "Held-out architecture configurations; known-GPU calibration"
+      }
+    ],
+    "harness_topology": [
+      {
+        "family": "dangol2026workflow",
+        "mitigation_family": true,
+        "locator": "3,9.1,9.7–9.14;Table6",
+        "interpretation": "Leave-composition-out; stored and live populations separated"
+      },
+      {
+        "family": "pouryousef2026traffic",
+        "mitigation_family": true,
+        "locator": "III,IV-A–C,V-A TablesI–III,V-B Fig8,VI",
+        "interpretation": "Topology shift distinct from feature-view restriction"
+      }
+    ],
+    "hardware": [],
+    "network_load": [
+      {
+        "family": "alhazbi2025rhythm",
+        "mitigation_family": false,
+        "locator": "III-IV; V-C–G; VI-A/B; Table I; Figs10–16; VII",
+        "interpretation": "New captures and cross-network tests; overlapping windows caveat"
+      }
+    ],
+    "time": []
+  },
+  "new_source_judgments": 0,
+  "new_model_calls": 0
+}
