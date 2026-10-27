@@ -7,6 +7,7 @@
 \usepackage{tabularx}
 \usepackage{array}
 \usepackage{graphicx}
+\usepackage{placeins}
 \usepackage{amsmath}
 \usepackage[dvipsnames,table]{xcolor}
 \usepackage{tikz}
@@ -42,7 +43,7 @@
 \maketitle
 
 \begin{abstract}
-Side-channel defenses for LLM serving and agents intervene in caches, traffic and tool actions. This SoK organizes 19 privacy or attribution mitigation families within a source-linked map of 52 core families. Its central question is which protection, function and cost results describe the same deployment. We identify three changes that alter this decision: a new receiving view, an intervention that acts on different state, and a workload or attacker different from the evaluated one. In the inspected sources, inference outcomes are explicitly bound in 15 of 16 applicable families and task/component outcomes in 3 of 16; accepting partial task/component evidence raises the latter to 5 of 16. Structural preservation can support a narrower function claim when established. A cache-defense example shows how to retain one measured quality/cost package while separating the cost of a different primitive. A decision procedure translates the three changes into evidence to retain and measurements to obtain.
+Side-channel defenses for LLM serving and agents intervene in caches, traffic and tool actions. This SoK organizes 19 privacy or attribution mitigation families within a source-linked map of 52 core families. Its central question is which protection, function and cost results describe the same deployment. We identify three changes that alter this decision: a new receiving view, an intervention that acts on different state, and a workload or attacker different from the evaluated one. In the inspected sources, inference outcomes are explicitly bound in 15 of 16 applicable families and task/component outcomes in 3 of 16; accepting partial task/component evidence raises the latter to 5 of 16. Structural preservation can support a narrower function claim when established. A cache-defense example shows how to retain one measured quality/cost package while separating the cost of a different primitive. A decision procedure identifies reusable evidence and required measurements; controlled examples show how attacker adaptation can restore signal after an apparent reduction.
 \end{abstract}
 
 \input{sections/01-introduction}
@@ -56,6 +57,7 @@ Side-channel defenses for LLM serving and agents intervene in caches, traffic an
 \input{sections/12-conclusion}
 
 
+\FloatBarrier
 \bibliographystyle{IEEEtran}
 \bibliography{refs,refs-final-additions,refs-deployment,refs-search-completion,refs-methodology}
 \appendices

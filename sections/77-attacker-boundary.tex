@@ -1,0 +1,35 @@
+\section{Attacker Capability as an Evidence-Reuse Boundary}\label{sec:r40-attacker-boundary}
+\paragraph{Matched evidence from the controlled transport examples}
+The question is whether a protection estimate transfers from the evaluated attacker to one fitted on defended data. The clean-trained attacker ($D_0$) and defended-trained attacker ($D_2$) receive identical defended test outputs. Table~\ref{tab:r40-adaptation} extracts existing rows from S11/S12; no new captures or model requests were made for this revision. Accuracy is brief-versus-expanded classification, rather than the retail study's balanced accuracy. There are 24 held-out outputs from 12 topics; topic repetition and padding draws do not add independent topics.
+
+\begin{table}[ht]\centering\small
+\caption{Existing paired attacker comparisons on a fixed defended view. Percent accuracy.}
+\label{tab:r40-adaptation}
+\begin{tabularx}{\linewidth}{@{}YrrY@{}}\toprule
+Defended configuration & $D_0$ & $D_2$ & Location\\\midrule
+Buffered, 1024-byte buckets & 50.0 & 70.8 & S11, matched fitting\\
+Streaming, constant eight-token batches & 50.0 & 100.0 & S12, E5\\
+Streaming, constant events and count cap & 50.0 & 50.0 & S12, E5\\\bottomrule
+\end{tabularx}
+\end{table}
+
+The buffered adapted-accuracy interval is 58.3--83.3\%; the streaming table reports point estimates. These examples support a specific reuse decision: retain the tested attacker and configuration with a protection estimate. Training on defended data recovers signal for the bucket and batch schemes; the count cap retains the measured reduction in this projection. The comparison illustrates the established adaptive-evaluation principle in emitter-specific settings. It establishes neither universal recovery nor a model-independent privacy guarantee.
+
+\paragraph{WRA-motivated GLM pilot: residual identification with incomplete outputs}
+WRA evaluates decoy research activity against prompt and trait inference \cite{jeong2026wra}. An exploratory adaptation used 20 previously inspected public topics, five GLM-generated decoys per topic and 120 saved search-result responses. A trace here is a list of result-link hostnames: the real query's saved response is reused across the no-decoy and five-decoy conditions, and the latter appends the five decoy result lists before seeded shuffling. These hostnames describe returned search results, not a live research agent's visited destinations or timed packets.
+
+The attacker uses the served \texttt{glm-5.3-flash} alias and sees all 20 candidate topics, including the true one without its answer label. It is told that some hosts may be unrelated decoys. No attacker training or matched weaker-attacker condition was collected. Accordingly, this pilot estimates residual identification under this candidate-list attack, not an adaptation gain. Generation, search and identification records remain separate from the author's archived WRA experiments and from the retail cohort.
+
+\begin{table}[ht]\centering\small
+\caption{Two separately recorded GLM attack rounds. Fractions count correct guesses over valid outputs; missing predictions remain in the planned 20 per condition.}
+\label{tab:r40-wra-pilot}
+\begin{tabularx}{\linewidth}{@{}YrrrY@{}}\toprule
+Output budget & Clean & Five decoys & Missing & Missing IDs\\\midrule
+16,384 & 19/20 & 17/18 & 2 & 1, 10; defended\\
+32,768, post hoc & 18/20 & 15/18 & 2 & 10, 18; defended\\\bottomrule
+\end{tabularx}
+\end{table}
+
+Both rounds are incomplete under their complete-pair analysis rules. Missing outputs exhaust the output budget without a valid tool call. The higher-budget sensitivity reruns every condition and preserves the first round. Assigning all missing guesses as incorrect or correct gives full-cohort defended-accuracy bounds of 85--95\% and 75--85\%, respectively; these are missing-value bounds, not confidence intervals. The two rounds do not provide an attack-adaptation comparison. They do show residual topic recoverability among valid responses in this restricted view, motivating the requirement to bind a protection estimate to its observation and attacker.
+
+Each topic issued one real query and five decoy queries. This accounting does not measure bytes, agent delay, task completion or answer quality. \path{data/r40-wra-glm-summary.json} publishes derived outcomes, failure types and source hashes without redistributing third-party prompts or response content. The paper's attacker-recovery example uses the complete matched transport comparisons above; it does not infer recovery or online WRA effectiveness from this incomplete pilot.

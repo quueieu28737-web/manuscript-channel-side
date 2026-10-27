@@ -1,0 +1,1553 @@
+{
+  "scope": "Exploratory WRA-motivated search-result-host pilot; known candidate topics, not live agent visits.",
+  "topics": 20,
+  "decoys_per_topic": 5,
+  "search_queries": 120,
+  "new_model_requests_this_revision": 0,
+  "source_commit": "bb4fccf43243e363264ebbce5413bbde1d547cc6",
+  "rounds": [
+    {
+      "name": "initial",
+      "max_tokens": 16384,
+      "rows": [
+        {
+          "id": "013-defended",
+          "topic": 13,
+          "condition": "defended",
+          "status": "completed",
+          "guess": 13,
+          "returned_model": "glm-5.3-flash",
+          "finish_reason": "tool_calls",
+          "elapsed_seconds": 57.391,
+          "usage": {
+            "prompt_tokens": 1658,
+            "total_tokens": 3017,
+            "completion_tokens": 1359,
+            "prompt_tokens_details": null,
+            "reasoning_tokens": 1336
+          },
+          "result_sha256": "b3f5f55fe93432a0aaa8c5104c96e4e7945d722419f0981e7dae7f46659f9f67",
+          "request_sha256": "ed309b6538cf779aa615c475a595bda75b0ce6f4e377ab6581c66673a96f60de"
+        },
+        {
+          "id": "003-clean",
+          "topic": 3,
+          "condition": "clean",
+          "status": "completed",
+          "guess": 3,
+          "returned_model": "glm-5.3-flash",
+          "finish_reason": "tool_calls",
+          "elapsed_seconds": 17.125,
+          "usage": {
+            "prompt_tokens": 1329,
+            "total_tokens": 1622,
+            "completion_tokens": 293,
+            "prompt_tokens_details": null,
+            "reasoning_tokens": 273
+          },
+          "result_sha256": "1aad2dec0a0e36c90b37288f9823fdc5443840b9573bd2fae532842cddbc2fa2",
+          "request_sha256": "83024d0f2ff1eab3ebd141e7734f33acb50f7bea602dcc6c06dc8e2684545952"
+        },
+        {
+          "id": "011-clean",
+          "topic": 11,
+          "condition": "clean",
+          "status": "completed",
+          "guess": 11,
+          "returned_model": "glm-5.3-flash",
+          "finish_reason": "tool_calls",
+          "elapsed_seconds": 16.64,
+          "usage": {
+            "prompt_tokens": 1343,
+            "total_tokens": 1643,
+            "completion_tokens": 300,
+            "prompt_tokens_details": null,
+            "reasoning_tokens": 280
+          },
+          "result_sha256": "9d48e587174af3b33d1aaaef592cfcd3ed0e48485eba5e01f403c4ffeda43154",
+          "request_sha256": "795bb4addc00daa8210ba49eb4ea1f7f4da2723acc0a7d8aa0fd22df900a9383"
+        },
+        {
+          "id": "018-clean",
+          "topic": 18,
+          "condition": "clean",
+          "status": "completed",
+          "guess": 18,
+          "returned_model": "glm-5.3-flash",
+          "finish_reason": "tool_calls",
+          "elapsed_seconds": 36.547,
+          "usage": {
+            "prompt_tokens": 1337,
+            "total_tokens": 2057,
+            "completion_tokens": 720,
+            "prompt_tokens_details": null,
+            "reasoning_tokens": 700
+          },
+          "result_sha256": "5a9406667154d4f1d572454de09691ec8b567512b7460f650dccda3d518b4111",
+          "request_sha256": "e8d93fc20214f194ac99bd9dee51f0e208c648f0f1b61948e9834dbb04741061"
+        },
+        {
+          "id": "015-defended",
+          "topic": 15,
+          "condition": "defended",
+          "status": "completed",
+          "guess": 15,
+          "returned_model": "glm-5.3-flash",
+          "finish_reason": "tool_calls",
+          "elapsed_seconds": 66.157,
+          "usage": {
+            "prompt_tokens": 1603,
+            "total_tokens": 3134,
+            "completion_tokens": 1531,
+            "prompt_tokens_details": null,
+            "reasoning_tokens": 1511
+          },
+          "result_sha256": "03ec245e9bdff6b1759a3629a76564066daa8c6eff16ea04448eeda812fa0831",
+          "request_sha256": "2873edc4a4915965cd0e9935a56dd43bf97552bd3821d38f63c6db3390ef41f9"
+        },
+        {
+          "id": "005-clean",
+          "topic": 5,
+          "condition": "clean",
+          "status": "completed",
+          "guess": 5,
+          "returned_model": "glm-5.3-flash",
+          "finish_reason": "tool_calls",
+          "elapsed_seconds": 13.688,
+          "usage": {
+            "prompt_tokens": 1340,
+            "total_tokens": 1563,
+            "completion_tokens": 223,
+            "prompt_tokens_details": null,
+            "reasoning_tokens": 203
+          },
+          "result_sha256": "3588b3ff7558692ab268dfa0b4f82d5334a9f6a69385fc35d1eb2cee713996c9",
+          "request_sha256": "f7b0f5f9f5043b89a38c1f288806b228fe1e2e163216943ca69b85463cf17a22"
+        },
+        {
+          "id": "013-clean",
+          "topic": 13,
+          "condition": "clean",
+          "status": "completed",
+          "guess": 13,
+          "returned_model": "glm-5.3-flash",
+          "finish_reason": "tool_calls",
+          "elapsed_seconds": 16.812,
+          "usage": {
+            "prompt_tokens": 1333,
+            "total_tokens": 1650,
+            "completion_tokens": 317,
+            "prompt_tokens_details": null,
+            "reasoning_tokens": 297
+          },
+          "result_sha256": "265bcc90248fec34382bd3e88f21757e22cd36877ad48bc25cd537c5a63424c9",
+          "request_sha256": "16537ff52942ed71da633ea69e94962bfa8110ddaddd3a298f1871bd3745009c"
+        },
+        {
+          "id": "016-defended",
+          "topic": 16,
+          "condition": "defended",
+          "status": "completed",
+          "guess": 16,
+          "returned_model": "glm-5.3-flash",
+          "finish_reason": "tool_calls",
+          "elapsed_seconds": 60.813,
+          "usage": {
+            "prompt_tokens": 1653,
+            "total_tokens": 3027,
+            "completion_tokens": 1374,
+            "prompt_tokens_details": null,
+            "reasoning_tokens": 1351
+          },
+          "result_sha256": "fac479edd14668c78dc04dc7d5ead7690cdd24e1ecc5f5f062fbe2e11da89344",
+          "request_sha256": "bcd06809911b9e0d1f526d39d80ff499cab6e4495c0cfa353183d9f24fb1083f"
+        },
+        {
+          "id": "016-clean",
+          "topic": 16,
+          "condition": "clean",
+          "status": "completed",
+          "guess": 16,
+          "returned_model": "glm-5.3-flash",
+          "finish_reason": "tool_calls",
+          "elapsed_seconds": 15.313,
+          "usage": {
+            "prompt_tokens": 1338,
+            "total_tokens": 1603,
+            "completion_tokens": 265,
+            "prompt_tokens_details": null,
+            "reasoning_tokens": 243
+          },
+          "result_sha256": "620aa3b5d9dc9eeeaa6e6fb829e9ce84d53f4a3dd25c1afe326113ecb6a117e7",
+          "request_sha256": "9edc5f9134a1db260c1c422fb22f5aaf1666917acfecc41c43b6337b3f1857be"
+        },
+        {
+          "id": "004-clean",
+          "topic": 4,
+          "condition": "clean",
+          "status": "completed",
+          "guess": 4,
+          "returned_model": "glm-5.3-flash",
+          "finish_reason": "tool_calls",
+          "elapsed_seconds": 11.281,
+          "usage": {
+            "prompt_tokens": 1322,
+            "total_tokens": 1510,
+            "completion_tokens": 188,
+            "prompt_tokens_details": null,
+            "reasoning_tokens": 168
+          },
+          "result_sha256": "e7539945ab9149115be928a1f567968a4458c0c8eb4fc7e09ed5bfc6c068a0a5",
+          "request_sha256": "e542b04b108bdbdad8831564d406b5267bf5935b9f205271e453a8f499286200"
+        },
+        {
+          "id": "004-defended",
+          "topic": 4,
+          "condition": "defended",
+          "status": "completed",
+          "guess": 4,
+          "returned_model": "glm-5.3-flash",
+          "finish_reason": "tool_calls",
+          "elapsed_seconds": 34.547,
+          "usage": {
+            "prompt_tokens": 1661,
+            "total_tokens": 2503,
+            "completion_tokens": 842,
+            "prompt_tokens_details": null,
+            "reasoning_tokens": 822
+          },
+          "result_sha256": "9cd46a5150e0fde829c469ef3bad9d23e81b5e73036be079594fcb0b4a1b26d6",
+          "request_sha256": "47d7a493848ebd23671eaaa13ca4e8dd004e48ff786e8022943bea1be26ad124"
+        },
+        {
+          "id": "006-clean",
+          "topic": 6,
+          "condition": "clean",
+          "status": "completed",
+          "guess": 6,
+          "returned_model": "glm-5.3-flash",
+          "finish_reason": "tool_calls",
+          "elapsed_seconds": 43.015,
+          "usage": {
+            "prompt_tokens": 1341,
+            "total_tokens": 2241,
+            "completion_tokens": 900,
+            "prompt_tokens_details": null,
+            "reasoning_tokens": 880
+          },
+          "result_sha256": "d34df803b3f291bb4efb5ff2ae5abe5489a29fe8569bcc7204f53542485cd9a1",
+          "request_sha256": "d96d6f2045222c4ca7e2fce6ce1a9f9fd0fcba9c28ea9afefbfb13afd5a91481"
+        },
+        {
+          "id": "007-defended",
+          "topic": 7,
+          "condition": "defended",
+          "status": "completed",
+          "guess": 7,
+          "returned_model": "glm-5.3-flash",
+          "finish_reason": "tool_calls",
+          "elapsed_seconds": 418.375,
+          "usage": {
+            "prompt_tokens": 1659,
+            "total_tokens": 13451,
+            "completion_tokens": 11792,
+            "prompt_tokens_details": null,
+            "reasoning_tokens": 11770
+          },
+          "result_sha256": "cb8fe85fd8bf96c7ec0a56401c73080e6cd6a463dfea8682c9f94edfaa031ef1",
+          "request_sha256": "5498be8593a4777cc265f36f183e65e822e23512ac94a53e1f250cc278f7b1b7"
+        },
+        {
+          "id": "012-defended",
+          "topic": 12,
+          "condition": "defended",
+          "status": "completed",
+          "guess": 12,
+          "returned_model": "glm-5.3-flash",
+          "finish_reason": "tool_calls",
+          "elapsed_seconds": 42.297,
+          "usage": {
+            "prompt_tokens": 1667,
+            "total_tokens": 2781,
+            "completion_tokens": 1114,
+            "prompt_tokens_details": null,
+            "reasoning_tokens": 1093
+          },
+          "result_sha256": "0d0e528acb945c0fc79937a3563175639673bd9dec8ce0653f9c39c7f6a9aa72",
+          "request_sha256": "7217cf5f874e0bb88f4af6169ef00e9dc591a805323261fcaf42bc419a4e45cb"
+        },
+        {
+          "id": "009-clean",
+          "topic": 9,
+          "condition": "clean",
+          "status": "completed",
+          "guess": 9,
+          "returned_model": "glm-5.3-flash",
+          "finish_reason": "tool_calls",
+          "elapsed_seconds": 9.938,
+          "usage": {
+            "prompt_tokens": 1333,
+            "total_tokens": 1538,
+            "completion_tokens": 205,
+            "prompt_tokens_details": null,
+            "reasoning_tokens": 185
+          },
+          "result_sha256": "2fbf0c96e5e57a00ccb462bba59ac83519f50dcefd3b3bcc3d6024192fc9816e",
+          "request_sha256": "229ae3bb661f784ed4c7b9b4c4accf92115ed166ba395b16232e6cb61170634e"
+        },
+        {
+          "id": "010-clean",
+          "topic": 10,
+          "condition": "clean",
+          "status": "completed",
+          "guess": 10,
+          "returned_model": "glm-5.3-flash",
+          "finish_reason": "tool_calls",
+          "elapsed_seconds": 19.235,
+          "usage": {
+            "prompt_tokens": 1345,
+            "total_tokens": 1815,
+            "completion_tokens": 470,
+            "prompt_tokens_details": null,
+            "reasoning_tokens": 447
+          },
+          "result_sha256": "12bc88c43c910f07c6c27cfb41a4588772ee0d935b4b470313e4530ebe78508c",
+          "request_sha256": "f3a2060d8c93a2af824758249d461b563b2a9560b546ea5cea5000d678bb9554"
+        },
+        {
+          "id": "003-defended",
+          "topic": 3,
+          "condition": "defended",
+          "status": "completed",
+          "guess": 3,
+          "returned_model": "glm-5.3-flash",
+          "finish_reason": "tool_calls",
+          "elapsed_seconds": 47.406,
+          "usage": {
+            "prompt_tokens": 1636,
+            "total_tokens": 2739,
+            "completion_tokens": 1103,
+            "prompt_tokens_details": null,
+            "reasoning_tokens": 1083
+          },
+          "result_sha256": "7f6de3014819dd5660f3c3990bbbdb486ac8ab8f8b3d2baa593f5cacff0c3554",
+          "request_sha256": "b3ea4e3eb175ecb73bf5396d11024bd7e1b7554929abd19c6a67b057a62738e5"
+        },
+        {
+          "id": "018-defended",
+          "topic": 18,
+          "condition": "defended",
+          "status": "completed",
+          "guess": 18,
+          "returned_model": "glm-5.3-flash",
+          "finish_reason": "tool_calls",
+          "elapsed_seconds": 402.969,
+          "usage": {
+            "prompt_tokens": 1667,
+            "total_tokens": 13408,
+            "completion_tokens": 11741,
+            "prompt_tokens_details": null,
+            "reasoning_tokens": 11719
+          },
+          "result_sha256": "cfab6d04a48ac5e23874a7e4eb2b09606935f55ca85f03dcac63d6a2a3e685bf",
+          "request_sha256": "e627d39e78039c0c4e9103815dec2a192bccb569b97f73af984a2e63f3e05515"
+        },
+        {
+          "id": "002-defended",
+          "topic": 2,
+          "condition": "defended",
+          "status": "completed",
+          "guess": 2,
+          "returned_model": "glm-5.3-flash",
+          "finish_reason": "tool_calls",
+          "elapsed_seconds": 60.859,
+          "usage": {
+            "prompt_tokens": 1643,
+            "total_tokens": 3104,
+            "completion_tokens": 1461,
+            "prompt_tokens_details": null,
+            "reasoning_tokens": 1441
+          },
+          "result_sha256": "58528adb4f8f014a5b2e2512a9dd3831736780004da92ca81497c72974aa04a5",
+          "request_sha256": "1c3ccbf2057d6a53bf71c6e7ad853c7412dff838b92ebf9422d79acf619612a1"
+        },
+        {
+          "id": "007-clean",
+          "topic": 7,
+          "condition": "clean",
+          "status": "completed",
+          "guess": 7,
+          "returned_model": "glm-5.3-flash",
+          "finish_reason": "tool_calls",
+          "elapsed_seconds": 31.046,
+          "usage": {
+            "prompt_tokens": 1331,
+            "total_tokens": 2036,
+            "completion_tokens": 705,
+            "prompt_tokens_details": null,
+            "reasoning_tokens": 682
+          },
+          "result_sha256": "b41d965e9f9c472001e08fb5511508b4d9ed6d01e0690d9fd282521995759186",
+          "request_sha256": "5fe69054c2a73321cb6204061d62920e30c2662a4ad74215a6155e183f7d5723"
+        },
+        {
+          "id": "008-defended",
+          "topic": 8,
+          "condition": "defended",
+          "status": "completed",
+          "guess": 8,
+          "returned_model": "glm-5.3-flash",
+          "finish_reason": "tool_calls",
+          "elapsed_seconds": 122.922,
+          "usage": {
+            "prompt_tokens": 1639,
+            "total_tokens": 4599,
+            "completion_tokens": 2960,
+            "prompt_tokens_details": null,
+            "reasoning_tokens": 2937
+          },
+          "result_sha256": "373ba6ee8a0bd0d7db99d8efda6f549d68328cd8574cc4ee185f12d7ca59532f",
+          "request_sha256": "edfdf1dc23abfa7187ce78f00a82d59952532f69f543dc6c3873bc784a6a01f3"
+        },
+        {
+          "id": "008-clean",
+          "topic": 8,
+          "condition": "clean",
+          "status": "completed",
+          "guess": 8,
+          "returned_model": "glm-5.3-flash",
+          "finish_reason": "tool_calls",
+          "elapsed_seconds": 168.516,
+          "usage": {
+            "prompt_tokens": 1326,
+            "total_tokens": 5326,
+            "completion_tokens": 4000,
+            "prompt_tokens_details": null,
+            "reasoning_tokens": 3980
+          },
+          "result_sha256": "cea069b4ccca8909ff699a211b7ce2cf63793f4f707bb94811c119ed6942b702",
+          "request_sha256": "13d619beeea6ed991ca202be6f7fdb2df7c2177b581f6a94774e6d5aceda4dbf"
+        },
+        {
+          "id": "019-defended",
+          "topic": 19,
+          "condition": "defended",
+          "status": "completed",
+          "guess": 19,
+          "returned_model": "glm-5.3-flash",
+          "finish_reason": "tool_calls",
+          "elapsed_seconds": 21.532,
+          "usage": {
+            "prompt_tokens": 1646,
+            "total_tokens": 2146,
+            "completion_tokens": 500,
+            "prompt_tokens_details": null,
+            "reasoning_tokens": 480
+          },
+          "result_sha256": "540817a9a83ab21d74b1d82901787f25ba45718be7061c3002b11461a66ad6a5",
+          "request_sha256": "abfdb14a101d8667c3056e8e17f8f0a74a254edeb8439aaa25b90297404546d5"
+        },
+        {
+          "id": "010-defended",
+          "topic": 10,
+          "condition": "defended",
+          "status": "protocol_error",
+          "guess": null,
+          "returned_model": "glm-5.3-flash",
+          "finish_reason": "length",
+          "elapsed_seconds": 484.984,
+          "usage": {
+            "prompt_tokens": 1654,
+            "total_tokens": 18038,
+            "completion_tokens": 16384,
+            "prompt_tokens_details": null,
+            "reasoning_tokens": 16385
+          },
+          "result_sha256": "a8355c930fc5caa2d2aecbde878e4c26087168ed12356336fbb24aaf55eadec8",
+          "request_sha256": "bfe2cfd44f146739619ce599b38cce0ec0f28f3734723d33d265c42fc8e09eb8"
+        },
+        {
+          "id": "006-defended",
+          "topic": 6,
+          "condition": "defended",
+          "status": "completed",
+          "guess": 1,
+          "returned_model": "glm-5.3-flash",
+          "finish_reason": "tool_calls",
+          "elapsed_seconds": 412.344,
+          "usage": {
+            "prompt_tokens": 1643,
+            "total_tokens": 14813,
+            "completion_tokens": 13170,
+            "prompt_tokens_details": null,
+            "reasoning_tokens": 13148
+          },
+          "result_sha256": "c465521898b66852915d220476e8e97c5acdbccfe2e1d240c130dab175d26ca2",
+          "request_sha256": "2e096676f3400475f393d189386b93b2fd3dd608fc01d5684e51b406777ac361"
+        },
+        {
+          "id": "015-clean",
+          "topic": 15,
+          "condition": "clean",
+          "status": "completed",
+          "guess": 15,
+          "returned_model": "glm-5.3-flash",
+          "finish_reason": "tool_calls",
+          "elapsed_seconds": 14.125,
+          "usage": {
+            "prompt_tokens": 1324,
+            "total_tokens": 1610,
+            "completion_tokens": 286,
+            "prompt_tokens_details": null,
+            "reasoning_tokens": 266
+          },
+          "result_sha256": "ee9caff61c61795f6330c6e1711093d4eb42448c8d6e586605ee41ebb49d4bad",
+          "request_sha256": "4c6d16210a487281896073e688ba695f9eb6c1535a211c16acc7b7478149aa1f"
+        },
+        {
+          "id": "020-clean",
+          "topic": 20,
+          "condition": "clean",
+          "status": "completed",
+          "guess": 20,
+          "returned_model": "glm-5.3-flash",
+          "finish_reason": "tool_calls",
+          "elapsed_seconds": 14.922,
+          "usage": {
+            "prompt_tokens": 1338,
+            "total_tokens": 1711,
+            "completion_tokens": 373,
+            "prompt_tokens_details": null,
+            "reasoning_tokens": 353
+          },
+          "result_sha256": "bbd5ae87878ceb5c72b3a50f9e95bd02c76c6ff94d5e22c795fa2f454cb00edb",
+          "request_sha256": "fba9fadb51fb818f1ab8dca7ccf6774ee0156aa6c736fa9ab625a719e6b23c68"
+        },
+        {
+          "id": "009-defended",
+          "topic": 9,
+          "condition": "defended",
+          "status": "completed",
+          "guess": 9,
+          "returned_model": "glm-5.3-flash",
+          "finish_reason": "tool_calls",
+          "elapsed_seconds": 37.875,
+          "usage": {
+            "prompt_tokens": 1641,
+            "total_tokens": 2689,
+            "completion_tokens": 1048,
+            "prompt_tokens_details": null,
+            "reasoning_tokens": 1025
+          },
+          "result_sha256": "f1a863e1d9be8b4531cf888280db10ca9e02c86550931ad818885d3db2d64165",
+          "request_sha256": "8da87a271218f580007ff09bc193c25a78dc326d66a547b74ee8c665ab0c7353"
+        },
+        {
+          "id": "020-defended",
+          "topic": 20,
+          "condition": "defended",
+          "status": "completed",
+          "guess": 20,
+          "returned_model": "glm-5.3-flash",
+          "finish_reason": "tool_calls",
+          "elapsed_seconds": 29.578,
+          "usage": {
+            "prompt_tokens": 1638,
+            "total_tokens": 2451,
+            "completion_tokens": 813,
+            "prompt_tokens_details": null,
+            "reasoning_tokens": 793
+          },
+          "result_sha256": "7fc2c1e53962ca14af766c922d700609ce692ec7cd2ca302aed4176bfde85736",
+          "request_sha256": "4251de0e3a829c3c3aa3641c46b828de2b0018a9622453f5cdfb50901c577539"
+        },
+        {
+          "id": "002-clean",
+          "topic": 2,
+          "condition": "clean",
+          "status": "completed",
+          "guess": 2,
+          "returned_model": "glm-5.3-flash",
+          "finish_reason": "tool_calls",
+          "elapsed_seconds": 12.516,
+          "usage": {
+            "prompt_tokens": 1338,
+            "total_tokens": 1629,
+            "completion_tokens": 291,
+            "prompt_tokens_details": null,
+            "reasoning_tokens": 271
+          },
+          "result_sha256": "121498f5faf7dcbaa9f603d15e96bdbde1ecf94d582b4409b40113b43b9f8021",
+          "request_sha256": "5a8e5171963bcf92a25621894a00c92d068a4edf0a300bc7f11c9eadd8e87de1"
+        },
+        {
+          "id": "014-clean",
+          "topic": 14,
+          "condition": "clean",
+          "status": "completed",
+          "guess": 14,
+          "returned_model": "glm-5.3-flash",
+          "finish_reason": "tool_calls",
+          "elapsed_seconds": 14.25,
+          "usage": {
+            "prompt_tokens": 1329,
+            "total_tokens": 1714,
+            "completion_tokens": 385,
+            "prompt_tokens_details": null,
+            "reasoning_tokens": 365
+          },
+          "result_sha256": "f426ead7b49f87cf9e14f1927b346de17ef52c0780292b76ef250a35ad521f73",
+          "request_sha256": "b59091490ba9ca215c5e3561cdca68fa3df8c8d58bc4fb6a6b5b53dd05fd3b71"
+        },
+        {
+          "id": "017-defended",
+          "topic": 17,
+          "condition": "defended",
+          "status": "completed",
+          "guess": 17,
+          "returned_model": "glm-5.3-flash",
+          "finish_reason": "tool_calls",
+          "elapsed_seconds": 259.063,
+          "usage": {
+            "prompt_tokens": 1670,
+            "total_tokens": 9540,
+            "completion_tokens": 7870,
+            "prompt_tokens_details": null,
+            "reasoning_tokens": 7846
+          },
+          "result_sha256": "0dfd8e576e889a88641016ee2789100ae6bd8f13a66f1b07d4ab73e7877c1bac",
+          "request_sha256": "f7e215e9d1684076b798da4fcc0e252ebd7982391d78a45a781b63f51977c5bc"
+        },
+        {
+          "id": "014-defended",
+          "topic": 14,
+          "condition": "defended",
+          "status": "completed",
+          "guess": 14,
+          "returned_model": "glm-5.3-flash",
+          "finish_reason": "tool_calls",
+          "elapsed_seconds": 38.36,
+          "usage": {
+            "prompt_tokens": 1623,
+            "total_tokens": 2710,
+            "completion_tokens": 1087,
+            "prompt_tokens_details": null,
+            "reasoning_tokens": 1064
+          },
+          "result_sha256": "79c7cdd34ab085ae76422ec8e86118e512f69b4a0176733b476c2cc5ba428470",
+          "request_sha256": "798694518deacafa78664ea251479aba6cbbb93b088be4b715fee20952058eea"
+        },
+        {
+          "id": "001-clean",
+          "topic": 1,
+          "condition": "clean",
+          "status": "completed",
+          "guess": 6,
+          "returned_model": "glm-5.3-flash",
+          "finish_reason": "tool_calls",
+          "elapsed_seconds": 77.781,
+          "usage": {
+            "prompt_tokens": 1336,
+            "total_tokens": 3315,
+            "completion_tokens": 1979,
+            "prompt_tokens_details": null,
+            "reasoning_tokens": 1956
+          },
+          "result_sha256": "a1174cdbd0593a715b7d2a2571e34bc4d3eaa075321a0ae51b33286714c84918",
+          "request_sha256": "9cee7d55e75115638e7aa450843bd59b3aa43fa64fc73519dd2a808cdc4717be"
+        },
+        {
+          "id": "011-defended",
+          "topic": 11,
+          "condition": "defended",
+          "status": "completed",
+          "guess": 11,
+          "returned_model": "glm-5.3-flash",
+          "finish_reason": "tool_calls",
+          "elapsed_seconds": 41.25,
+          "usage": {
+            "prompt_tokens": 1619,
+            "total_tokens": 2753,
+            "completion_tokens": 1134,
+            "prompt_tokens_details": null,
+            "reasoning_tokens": 1114
+          },
+          "result_sha256": "26abed3f1557e5197599366da6d3b8eab1b3545365a9309476c2b85b5eaa0465",
+          "request_sha256": "0538c06f64c46e97aa12431c5a85c361be83806f9f3dfbafa18cee52a001dc46"
+        },
+        {
+          "id": "019-clean",
+          "topic": 19,
+          "condition": "clean",
+          "status": "completed",
+          "guess": 19,
+          "returned_model": "glm-5.3-flash",
+          "finish_reason": "tool_calls",
+          "elapsed_seconds": 6.656,
+          "usage": {
+            "prompt_tokens": 1342,
+            "total_tokens": 1510,
+            "completion_tokens": 168,
+            "prompt_tokens_details": null,
+            "reasoning_tokens": 145
+          },
+          "result_sha256": "cb8acfac895f20078b35f4a296f9803bde7491b1ba29151c8ff344fda1ae7b51",
+          "request_sha256": "1c762a89e39fb6d13e42060b0332d3a8714b2fe1e1c762606e65b6c8aaac6628"
+        },
+        {
+          "id": "001-defended",
+          "topic": 1,
+          "condition": "defended",
+          "status": "protocol_error",
+          "guess": null,
+          "returned_model": "glm-5.3-flash",
+          "finish_reason": "length",
+          "elapsed_seconds": 428.796,
+          "usage": {
+            "prompt_tokens": 1583,
+            "total_tokens": 17967,
+            "completion_tokens": 16384,
+            "prompt_tokens_details": null,
+            "reasoning_tokens": 16387
+          },
+          "result_sha256": "3e1eace3256b6414f4fa55951c178b71e00a392b9f59702d46c0585413bde519",
+          "request_sha256": "818ae136887f735f59c63ffae82e601c40d7b94dac0d6c0f91c08e9bbd54d6b7"
+        },
+        {
+          "id": "017-clean",
+          "topic": 17,
+          "condition": "clean",
+          "status": "completed",
+          "guess": 17,
+          "returned_model": "glm-5.3-flash",
+          "finish_reason": "tool_calls",
+          "elapsed_seconds": 10.562,
+          "usage": {
+            "prompt_tokens": 1330,
+            "total_tokens": 1592,
+            "completion_tokens": 262,
+            "prompt_tokens_details": null,
+            "reasoning_tokens": 242
+          },
+          "result_sha256": "1cb63560f96217d33d5b7c39357f45af31cec9cc1e6cf8d4afe1cb71d8beae48",
+          "request_sha256": "3cf0e860d612171ebc445b7f3a0259c6ffb8c4a5ab004adecd411a63651f4a80"
+        },
+        {
+          "id": "005-defended",
+          "topic": 5,
+          "condition": "defended",
+          "status": "completed",
+          "guess": 5,
+          "returned_model": "glm-5.3-flash",
+          "finish_reason": "tool_calls",
+          "elapsed_seconds": 58.031,
+          "usage": {
+            "prompt_tokens": 1675,
+            "total_tokens": 3413,
+            "completion_tokens": 1738,
+            "prompt_tokens_details": null,
+            "reasoning_tokens": 1714
+          },
+          "result_sha256": "e2bd53aaaf3025701248b12f41dc93d1bf0cb0a31c7cf2bd078f558bb0862069",
+          "request_sha256": "d98e27579a67a0b64a4bdb745068000feaf7dc7d9109aedfa3612ac1ebcd4f9b"
+        },
+        {
+          "id": "012-clean",
+          "topic": 12,
+          "condition": "clean",
+          "status": "completed",
+          "guess": 12,
+          "returned_model": "glm-5.3-flash",
+          "finish_reason": "tool_calls",
+          "elapsed_seconds": 13.797,
+          "usage": {
+            "prompt_tokens": 1335,
+            "total_tokens": 1696,
+            "completion_tokens": 361,
+            "prompt_tokens_details": null,
+            "reasoning_tokens": 341
+          },
+          "result_sha256": "3273c885c4e31645f1b8eecbebcd669fe262464521bab7e4f9874cd11e8926ae",
+          "request_sha256": "8a0a84f12abaf53574496946aad32116457347c3003e628bb3654f3d76c5bad3"
+        }
+      ],
+      "collector_sha256": "3465657a370ad7dc65df8568e107b07394d1aabccae0f5474bb8571b923ffd34",
+      "protocol_sha256": "5b29ebfc87fb7c3b18fc2701932b4b9d641979edfdd6b1251f64248ff08259fd",
+      "analysis_sha256": "da25086005e43883f34518a23b7ea5c72ab702599e6e587d3ccf5c7ee2ddde98"
+    },
+    {
+      "name": "post_hoc_budget_sensitivity",
+      "max_tokens": 32768,
+      "rows": [
+        {
+          "id": "013-defended",
+          "topic": 13,
+          "condition": "defended",
+          "status": "completed",
+          "guess": 13,
+          "returned_model": "glm-5.3-flash",
+          "finish_reason": "tool_calls",
+          "elapsed_seconds": 48.891,
+          "usage": {
+            "prompt_tokens": 1658,
+            "total_tokens": 2774,
+            "completion_tokens": 1116,
+            "prompt_tokens_details": null,
+            "reasoning_tokens": 1094
+          },
+          "result_sha256": "8bdfb578edbc689f52f75c7a4c8f07a6a57c9ea4a44a2450fd5fa7040814058c",
+          "request_sha256": "b55b33ed55007e2a6f71357d5497238dc3dad1a9230ee996e85fa6f1caa930a8"
+        },
+        {
+          "id": "003-clean",
+          "topic": 3,
+          "condition": "clean",
+          "status": "completed",
+          "guess": 3,
+          "returned_model": "glm-5.3-flash",
+          "finish_reason": "tool_calls",
+          "elapsed_seconds": 16.625,
+          "usage": {
+            "prompt_tokens": 1329,
+            "total_tokens": 1611,
+            "completion_tokens": 282,
+            "prompt_tokens_details": null,
+            "reasoning_tokens": 259
+          },
+          "result_sha256": "2ebe75d4b93b520937a2f4cc128f5aa95bc4c9edc5faedb3b6d80f0d018f4425",
+          "request_sha256": "1448ae08248530377ede2d262a11bdb7adb6978eed85dadf4b07896f6fc6a839"
+        },
+        {
+          "id": "011-clean",
+          "topic": 11,
+          "condition": "clean",
+          "status": "completed",
+          "guess": 11,
+          "returned_model": "glm-5.3-flash",
+          "finish_reason": "tool_calls",
+          "elapsed_seconds": 18.719,
+          "usage": {
+            "prompt_tokens": 1343,
+            "total_tokens": 1644,
+            "completion_tokens": 301,
+            "prompt_tokens_details": null,
+            "reasoning_tokens": 281
+          },
+          "result_sha256": "ed4e5d5f7ca12eed4c5d16269cfd046459ba27b4c13cc71100df719fe85c8ad1",
+          "request_sha256": "de79eeaf4e9dbcf464d4eaf56981acd077375f30f1f8821792f03e988ff8e17a"
+        },
+        {
+          "id": "018-clean",
+          "topic": 18,
+          "condition": "clean",
+          "status": "completed",
+          "guess": 18,
+          "returned_model": "glm-5.3-flash",
+          "finish_reason": "tool_calls",
+          "elapsed_seconds": 119.031,
+          "usage": {
+            "prompt_tokens": 1337,
+            "total_tokens": 3836,
+            "completion_tokens": 2499,
+            "prompt_tokens_details": null,
+            "reasoning_tokens": 2479
+          },
+          "result_sha256": "4e3e0ab0b5a16625e0a8695696345b53b261be9dcab69587ee5331d2ceea276b",
+          "request_sha256": "8f6ae10e339e1dd69cafcdfdb1ee1ca5b55a264ce30a67a5e69eb3fb4b45fd7d"
+        },
+        {
+          "id": "015-defended",
+          "topic": 15,
+          "condition": "defended",
+          "status": "completed",
+          "guess": 15,
+          "returned_model": "glm-5.3-flash",
+          "finish_reason": "tool_calls",
+          "elapsed_seconds": 47.297,
+          "usage": {
+            "prompt_tokens": 1603,
+            "total_tokens": 2739,
+            "completion_tokens": 1136,
+            "prompt_tokens_details": null,
+            "reasoning_tokens": 1116
+          },
+          "result_sha256": "4a32d29fb5468c14dc87fc23339df73bfb4b55b4b7b2fbcac6f9ac6352d33fa8",
+          "request_sha256": "dd84a0d2870d51a61e3b60bdf6882c5097509ac7fb805b3e2b327721dddbefc7"
+        },
+        {
+          "id": "005-clean",
+          "topic": 5,
+          "condition": "clean",
+          "status": "completed",
+          "guess": 5,
+          "returned_model": "glm-5.3-flash",
+          "finish_reason": "tool_calls",
+          "elapsed_seconds": 14.906,
+          "usage": {
+            "prompt_tokens": 1340,
+            "total_tokens": 1576,
+            "completion_tokens": 236,
+            "prompt_tokens_details": null,
+            "reasoning_tokens": 216
+          },
+          "result_sha256": "f97fa884683510d8e6a99e365bdbbc4e56e9397ec82d1e4d52d7318ecf230e25",
+          "request_sha256": "a12257aefbc507b82b5a7b56b4287d9dad9a0f7733c9b846853578360084c130"
+        },
+        {
+          "id": "013-clean",
+          "topic": 13,
+          "condition": "clean",
+          "status": "completed",
+          "guess": 13,
+          "returned_model": "glm-5.3-flash",
+          "finish_reason": "tool_calls",
+          "elapsed_seconds": 17.141,
+          "usage": {
+            "prompt_tokens": 1333,
+            "total_tokens": 1651,
+            "completion_tokens": 318,
+            "prompt_tokens_details": null,
+            "reasoning_tokens": 298
+          },
+          "result_sha256": "5b58ee6c6b85b362a1b6f41f0a1286e40b9dc89e009dd812db8840cc6b88da0d",
+          "request_sha256": "fe6a44a8d77c542c37493f10eef395c0c7963a06c4bb6253634c40160a505364"
+        },
+        {
+          "id": "016-defended",
+          "topic": 16,
+          "condition": "defended",
+          "status": "completed",
+          "guess": 16,
+          "returned_model": "glm-5.3-flash",
+          "finish_reason": "tool_calls",
+          "elapsed_seconds": 52.734,
+          "usage": {
+            "prompt_tokens": 1653,
+            "total_tokens": 2893,
+            "completion_tokens": 1240,
+            "prompt_tokens_details": null,
+            "reasoning_tokens": 1220
+          },
+          "result_sha256": "f36f3535cad4288cf1ba5886236eacb42dfe409c1ebb10cb74245efe693ee069",
+          "request_sha256": "58ee4d171a8565d52d442b913e4158452d80ade36e37be35b6513088e3563f67"
+        },
+        {
+          "id": "016-clean",
+          "topic": 16,
+          "condition": "clean",
+          "status": "completed",
+          "guess": 16,
+          "returned_model": "glm-5.3-flash",
+          "finish_reason": "tool_calls",
+          "elapsed_seconds": 22.406,
+          "usage": {
+            "prompt_tokens": 1338,
+            "total_tokens": 1730,
+            "completion_tokens": 392,
+            "prompt_tokens_details": null,
+            "reasoning_tokens": 370
+          },
+          "result_sha256": "12bf215637a9dd450fba0c383cdcbf78973cebfbee5676d7179bca88f2e9ddcb",
+          "request_sha256": "71711709aa3090203a2e53715700f7d7fde3c532755155641bdffd50cfbe06b5"
+        },
+        {
+          "id": "004-clean",
+          "topic": 4,
+          "condition": "clean",
+          "status": "completed",
+          "guess": 4,
+          "returned_model": "glm-5.3-flash",
+          "finish_reason": "tool_calls",
+          "elapsed_seconds": 9.781,
+          "usage": {
+            "prompt_tokens": 1322,
+            "total_tokens": 1472,
+            "completion_tokens": 150,
+            "prompt_tokens_details": null,
+            "reasoning_tokens": 130
+          },
+          "result_sha256": "12f45ee08b58acd9988ed3d67a4a61078a598cca02123fd020f0dd1cf170a245",
+          "request_sha256": "9864fe8c07440bf9aa4c8938a3a15f8e36666a46503d8364167acb98891a4dfc"
+        },
+        {
+          "id": "004-defended",
+          "topic": 4,
+          "condition": "defended",
+          "status": "completed",
+          "guess": 4,
+          "returned_model": "glm-5.3-flash",
+          "finish_reason": "tool_calls",
+          "elapsed_seconds": 86.594,
+          "usage": {
+            "prompt_tokens": 1661,
+            "total_tokens": 3853,
+            "completion_tokens": 2192,
+            "prompt_tokens_details": null,
+            "reasoning_tokens": 2169
+          },
+          "result_sha256": "fd0055cfbec83bb42ac30aeddedef0c762d743bb50aef0d414ac4a71c6d72c13",
+          "request_sha256": "bed110a8d4e30594bc0ea634ff4e1be5bab733918a76b26f01fc77c324dffbf0"
+        },
+        {
+          "id": "006-clean",
+          "topic": 6,
+          "condition": "clean",
+          "status": "completed",
+          "guess": 6,
+          "returned_model": "glm-5.3-flash",
+          "finish_reason": "tool_calls",
+          "elapsed_seconds": 78.219,
+          "usage": {
+            "prompt_tokens": 1341,
+            "total_tokens": 3193,
+            "completion_tokens": 1852,
+            "prompt_tokens_details": null,
+            "reasoning_tokens": 1829
+          },
+          "result_sha256": "da587565582b6fa9b029539655858dbb62891ccc698b3d8ef80d835efa15ab38",
+          "request_sha256": "95949f7fc8f88774b95ce1d8c06059f4e372391d53638ac5424a5a09cc7853a4"
+        },
+        {
+          "id": "007-defended",
+          "topic": 7,
+          "condition": "defended",
+          "status": "completed",
+          "guess": 8,
+          "returned_model": "glm-5.3-flash",
+          "finish_reason": "tool_calls",
+          "elapsed_seconds": 74.0,
+          "usage": {
+            "prompt_tokens": 1659,
+            "total_tokens": 3369,
+            "completion_tokens": 1710,
+            "prompt_tokens_details": null,
+            "reasoning_tokens": 1690
+          },
+          "result_sha256": "1fec487d797cb7c665f793a1e6bb1ee345333c839b0d7c2afc04df2b0cacba3f",
+          "request_sha256": "df13fa54aa5bac97b69d8feddb543964431496f53f4d59fcee1fe2c7210ce229"
+        },
+        {
+          "id": "012-defended",
+          "topic": 12,
+          "condition": "defended",
+          "status": "completed",
+          "guess": 12,
+          "returned_model": "glm-5.3-flash",
+          "finish_reason": "tool_calls",
+          "elapsed_seconds": 34.063,
+          "usage": {
+            "prompt_tokens": 1667,
+            "total_tokens": 2634,
+            "completion_tokens": 967,
+            "prompt_tokens_details": null,
+            "reasoning_tokens": 947
+          },
+          "result_sha256": "42c60ccbb32ac6fa9a1470a46aa70185f82edf3ddc87cc359f39b35aef017d5d",
+          "request_sha256": "2d54d66b4e5850a776300deb759f5294d75fe611e1a381a3ce9150ad14a1f300"
+        },
+        {
+          "id": "009-clean",
+          "topic": 9,
+          "condition": "clean",
+          "status": "completed",
+          "guess": 9,
+          "returned_model": "glm-5.3-flash",
+          "finish_reason": "tool_calls",
+          "elapsed_seconds": 8.844,
+          "usage": {
+            "prompt_tokens": 1333,
+            "total_tokens": 1536,
+            "completion_tokens": 203,
+            "prompt_tokens_details": null,
+            "reasoning_tokens": 183
+          },
+          "result_sha256": "332a59368ebbec5c75798dc18da762709a18367906691fa2567ed62106ce6719",
+          "request_sha256": "13827567bab6c65497b77595e15509641a90ae6bbd440baca4df5e65a5923ec9"
+        },
+        {
+          "id": "010-clean",
+          "topic": 10,
+          "condition": "clean",
+          "status": "completed",
+          "guess": 10,
+          "returned_model": "glm-5.3-flash",
+          "finish_reason": "tool_calls",
+          "elapsed_seconds": 16.391,
+          "usage": {
+            "prompt_tokens": 1345,
+            "total_tokens": 1760,
+            "completion_tokens": 415,
+            "prompt_tokens_details": null,
+            "reasoning_tokens": 395
+          },
+          "result_sha256": "3853a23959eb64e40de76ebbe503ffbebe4617a1d5f857b1f990e8acfd1142f8",
+          "request_sha256": "0bfa28fe60ae1a943ea1d4496aac02fb16b44f1bd65d2291f43269404653bc58"
+        },
+        {
+          "id": "003-defended",
+          "topic": 3,
+          "condition": "defended",
+          "status": "completed",
+          "guess": 3,
+          "returned_model": "glm-5.3-flash",
+          "finish_reason": "tool_calls",
+          "elapsed_seconds": 59.609,
+          "usage": {
+            "prompt_tokens": 1636,
+            "total_tokens": 3186,
+            "completion_tokens": 1550,
+            "prompt_tokens_details": null,
+            "reasoning_tokens": 1530
+          },
+          "result_sha256": "6b80c9d17863398aab7218ca85de438a7ee3c40b87a48f1f319091ba5c0244c2",
+          "request_sha256": "26b46909679601a1abd5a1150b195ccbc3f9091e489a571139e9b027d94b29dc"
+        },
+        {
+          "id": "018-defended",
+          "topic": 18,
+          "condition": "defended",
+          "status": "protocol_error",
+          "guess": null,
+          "returned_model": "glm-5.3-flash",
+          "finish_reason": "length",
+          "elapsed_seconds": 893.313,
+          "usage": {
+            "prompt_tokens": 1667,
+            "total_tokens": 34435,
+            "completion_tokens": 32768,
+            "prompt_tokens_details": null,
+            "reasoning_tokens": 32770
+          },
+          "result_sha256": "e49a98fd598adf46ae313914e0a32ac30cc04175d5b42fd5e27f455eb20bbd8e",
+          "request_sha256": "821bb8a57b7fe0510705706dad322037acc828a6261d463f606dd16c926618f6"
+        },
+        {
+          "id": "002-defended",
+          "topic": 2,
+          "condition": "defended",
+          "status": "completed",
+          "guess": 2,
+          "returned_model": "glm-5.3-flash",
+          "finish_reason": "tool_calls",
+          "elapsed_seconds": 37.907,
+          "usage": {
+            "prompt_tokens": 1643,
+            "total_tokens": 2682,
+            "completion_tokens": 1039,
+            "prompt_tokens_details": null,
+            "reasoning_tokens": 1019
+          },
+          "result_sha256": "da7e6b5eb44d9d6962d7decef64b0c1baa02a9bd08d58a5dca31e813ba08c30c",
+          "request_sha256": "0c3c3099265eb321bb9075dc7675695f04981cc560921fe0ee5406c05601afdf"
+        },
+        {
+          "id": "007-clean",
+          "topic": 7,
+          "condition": "clean",
+          "status": "completed",
+          "guess": 7,
+          "returned_model": "glm-5.3-flash",
+          "finish_reason": "tool_calls",
+          "elapsed_seconds": 37.953,
+          "usage": {
+            "prompt_tokens": 1331,
+            "total_tokens": 2233,
+            "completion_tokens": 902,
+            "prompt_tokens_details": null,
+            "reasoning_tokens": 879
+          },
+          "result_sha256": "21d80ed71924a6a6d7d595123c9a10662be409eed0a905fb66cfabf7c47aa5b7",
+          "request_sha256": "a62cf81919dd2b839c00a15e5661d37ab87bbb1263569517f1e12f39139dba2c"
+        },
+        {
+          "id": "008-defended",
+          "topic": 8,
+          "condition": "defended",
+          "status": "completed",
+          "guess": 8,
+          "returned_model": "glm-5.3-flash",
+          "finish_reason": "tool_calls",
+          "elapsed_seconds": 211.0,
+          "usage": {
+            "prompt_tokens": 1639,
+            "total_tokens": 7206,
+            "completion_tokens": 5567,
+            "prompt_tokens_details": null,
+            "reasoning_tokens": 5544
+          },
+          "result_sha256": "883487b6f55e1b28750e424f4dbb1f435b6b24e74aab9019a70ed9e1d295bdb5",
+          "request_sha256": "0a09d81091e136808b02007a5ae683fb5f5dd0cfa69a3d1024210bd55482abbb"
+        },
+        {
+          "id": "008-clean",
+          "topic": 8,
+          "condition": "clean",
+          "status": "completed",
+          "guess": 7,
+          "returned_model": "glm-5.3-flash",
+          "finish_reason": "tool_calls",
+          "elapsed_seconds": 137.234,
+          "usage": {
+            "prompt_tokens": 1326,
+            "total_tokens": 4463,
+            "completion_tokens": 3137,
+            "prompt_tokens_details": null,
+            "reasoning_tokens": 3113
+          },
+          "result_sha256": "d7ec8c9751019652b49ca7a817685613cacbbe2650ddf2c3a85721fb02f03548",
+          "request_sha256": "979ad39c896a652b231ed65fb86b61b1842c847fc59c50b978ce103f0c357d79"
+        },
+        {
+          "id": "019-defended",
+          "topic": 19,
+          "condition": "defended",
+          "status": "completed",
+          "guess": 20,
+          "returned_model": "glm-5.3-flash",
+          "finish_reason": "tool_calls",
+          "elapsed_seconds": 15.75,
+          "usage": {
+            "prompt_tokens": 1646,
+            "total_tokens": 1960,
+            "completion_tokens": 314,
+            "prompt_tokens_details": null,
+            "reasoning_tokens": 294
+          },
+          "result_sha256": "1d6a3b759cb18a5ddc7bccce8e5edf2c4918be9b9bfddfa3c397d2173c28ba67",
+          "request_sha256": "4c9f8c40dacf511642df337f7fa54037d6c2f4cf8afd0c39bf9e3e1db44da855"
+        },
+        {
+          "id": "010-defended",
+          "topic": 10,
+          "condition": "defended",
+          "status": "protocol_error",
+          "guess": null,
+          "returned_model": "glm-5.3-flash",
+          "finish_reason": "length",
+          "elapsed_seconds": 845.032,
+          "usage": {
+            "prompt_tokens": 1654,
+            "total_tokens": 34422,
+            "completion_tokens": 32768,
+            "prompt_tokens_details": null,
+            "reasoning_tokens": 32770
+          },
+          "result_sha256": "c895a8a56093bb51f3cfdd559453ab1dde22324ea8c304b7ce26d7144b6324c7",
+          "request_sha256": "a231ffc430cecb71326030c693087555458731c07bb6ba39569c7c6f361a587e"
+        },
+        {
+          "id": "006-defended",
+          "topic": 6,
+          "condition": "defended",
+          "status": "completed",
+          "guess": 1,
+          "returned_model": "glm-5.3-flash",
+          "finish_reason": "tool_calls",
+          "elapsed_seconds": 696.984,
+          "usage": {
+            "prompt_tokens": 1643,
+            "total_tokens": 27080,
+            "completion_tokens": 25437,
+            "prompt_tokens_details": null,
+            "reasoning_tokens": 25415
+          },
+          "result_sha256": "f4431dd8a61e9951f606b270c091692f5e05302bcb56e845468cd27686589ea6",
+          "request_sha256": "9ed90e413289088c98bb890ebeb362837217aac4fa0bdaf26980b8b0ae6f6b2f"
+        },
+        {
+          "id": "015-clean",
+          "topic": 15,
+          "condition": "clean",
+          "status": "completed",
+          "guess": 15,
+          "returned_model": "glm-5.3-flash",
+          "finish_reason": "tool_calls",
+          "elapsed_seconds": 14.297,
+          "usage": {
+            "prompt_tokens": 1324,
+            "total_tokens": 1581,
+            "completion_tokens": 257,
+            "prompt_tokens_details": null,
+            "reasoning_tokens": 234
+          },
+          "result_sha256": "7e09d08ead11f3e1de7176c3991721987e187d0b5cb17176acede585f7c803a2",
+          "request_sha256": "19afc3ff9a811033f20753e4044457c948025cb4c1b694f1f556facd74075e93"
+        },
+        {
+          "id": "020-clean",
+          "topic": 20,
+          "condition": "clean",
+          "status": "completed",
+          "guess": 20,
+          "returned_model": "glm-5.3-flash",
+          "finish_reason": "tool_calls",
+          "elapsed_seconds": 15.5,
+          "usage": {
+            "prompt_tokens": 1338,
+            "total_tokens": 1683,
+            "completion_tokens": 345,
+            "prompt_tokens_details": null,
+            "reasoning_tokens": 325
+          },
+          "result_sha256": "378977a511b4c44a904ea1aad235bfaa2d6fa9f2ac52de9b446ad2929c607ea9",
+          "request_sha256": "40fd4d48955f3b7379f96a3632457a4db873594a24e2a199094bdc8ce579cab8"
+        },
+        {
+          "id": "009-defended",
+          "topic": 9,
+          "condition": "defended",
+          "status": "completed",
+          "guess": 9,
+          "returned_model": "glm-5.3-flash",
+          "finish_reason": "tool_calls",
+          "elapsed_seconds": 67.328,
+          "usage": {
+            "prompt_tokens": 1641,
+            "total_tokens": 3402,
+            "completion_tokens": 1761,
+            "prompt_tokens_details": null,
+            "reasoning_tokens": 1740
+          },
+          "result_sha256": "07f80acb055fc10b6ac6d3ebcb19b478a2df7ab263245e997a08e49a5196c2f0",
+          "request_sha256": "2b0480b3a47b5696d781d5b8b8682d47f2859b8ab1817fe1e304b5faa4f13611"
+        },
+        {
+          "id": "020-defended",
+          "topic": 20,
+          "condition": "defended",
+          "status": "completed",
+          "guess": 20,
+          "returned_model": "glm-5.3-flash",
+          "finish_reason": "tool_calls",
+          "elapsed_seconds": 29.86,
+          "usage": {
+            "prompt_tokens": 1638,
+            "total_tokens": 2413,
+            "completion_tokens": 775,
+            "prompt_tokens_details": null,
+            "reasoning_tokens": 755
+          },
+          "result_sha256": "cb3cc436130464fd3777edee76936fa3ed984e1bf54d2d08744c838aa73c53b5",
+          "request_sha256": "e6158cd97eb1781f594d1b0bbdc648ed3324ffe2acb6bd7a90a63dddcbc8a4d5"
+        },
+        {
+          "id": "002-clean",
+          "topic": 2,
+          "condition": "clean",
+          "status": "completed",
+          "guess": 2,
+          "returned_model": "glm-5.3-flash",
+          "finish_reason": "tool_calls",
+          "elapsed_seconds": 10.578,
+          "usage": {
+            "prompt_tokens": 1338,
+            "total_tokens": 1578,
+            "completion_tokens": 240,
+            "prompt_tokens_details": null,
+            "reasoning_tokens": 220
+          },
+          "result_sha256": "9b694eceb45cfeb787fb116264e975243957b7a0778b3d382fdf30027459d5f4",
+          "request_sha256": "b84ec23f06c88f6c29c3631c3693a73f691e8b42baaa9e750244535055d4d557"
+        },
+        {
+          "id": "014-clean",
+          "topic": 14,
+          "condition": "clean",
+          "status": "completed",
+          "guess": 14,
+          "returned_model": "glm-5.3-flash",
+          "finish_reason": "tool_calls",
+          "elapsed_seconds": 13.656,
+          "usage": {
+            "prompt_tokens": 1329,
+            "total_tokens": 1658,
+            "completion_tokens": 329,
+            "prompt_tokens_details": null,
+            "reasoning_tokens": 309
+          },
+          "result_sha256": "7cff444f8fe615fed887fa56dddb48f7f5471858bffdaa4b183e767f28292963",
+          "request_sha256": "93bd718857bd9eed1209c636ab99226c07035364ced7be664eebc821b3d46a1f"
+        },
+        {
+          "id": "017-defended",
+          "topic": 17,
+          "condition": "defended",
+          "status": "completed",
+          "guess": 17,
+          "returned_model": "glm-5.3-flash",
+          "finish_reason": "tool_calls",
+          "elapsed_seconds": 324.438,
+          "usage": {
+            "prompt_tokens": 1670,
+            "total_tokens": 12392,
+            "completion_tokens": 10722,
+            "prompt_tokens_details": null,
+            "reasoning_tokens": 10702
+          },
+          "result_sha256": "4b545168763de1d278ca1edce0620d0382bfdc1f60640443f5943b529c355301",
+          "request_sha256": "295a4dfce1c044958090e196567d43a144ccb45b501e97a74e15e88256802f4e"
+        },
+        {
+          "id": "014-defended",
+          "topic": 14,
+          "condition": "defended",
+          "status": "completed",
+          "guess": 14,
+          "returned_model": "glm-5.3-flash",
+          "finish_reason": "tool_calls",
+          "elapsed_seconds": 34.015,
+          "usage": {
+            "prompt_tokens": 1623,
+            "total_tokens": 2610,
+            "completion_tokens": 987,
+            "prompt_tokens_details": null,
+            "reasoning_tokens": 967
+          },
+          "result_sha256": "c0eb7247176f6892b59ac801951c08017695782d1a2ac9dfbfda65b2130d2823",
+          "request_sha256": "8cc67fc0e54592528b73990fa26d43b824bffa474ce2ca306952b0a3c4e8e5c4"
+        },
+        {
+          "id": "001-clean",
+          "topic": 1,
+          "condition": "clean",
+          "status": "completed",
+          "guess": 6,
+          "returned_model": "glm-5.3-flash",
+          "finish_reason": "tool_calls",
+          "elapsed_seconds": 73.547,
+          "usage": {
+            "prompt_tokens": 1336,
+            "total_tokens": 3260,
+            "completion_tokens": 1924,
+            "prompt_tokens_details": null,
+            "reasoning_tokens": 1901
+          },
+          "result_sha256": "1ba3a89df6ddbbc7967c05449a673059cb3ee1672ce7d36da64ca37bf683810b",
+          "request_sha256": "97c4b37aedb7e2099a400137712c86ec50789d3e38aba3e7fd09eee7da3def6d"
+        },
+        {
+          "id": "011-defended",
+          "topic": 11,
+          "condition": "defended",
+          "status": "completed",
+          "guess": 11,
+          "returned_model": "glm-5.3-flash",
+          "finish_reason": "tool_calls",
+          "elapsed_seconds": 52.953,
+          "usage": {
+            "prompt_tokens": 1619,
+            "total_tokens": 3066,
+            "completion_tokens": 1447,
+            "prompt_tokens_details": null,
+            "reasoning_tokens": 1427
+          },
+          "result_sha256": "b198303fe554cd7be394e3d73a4905ba259cb87f8b743e3e8a3130c3e4bbb703",
+          "request_sha256": "9ef031255f0e33d67c5fa6c9c5b456f56402d4c5dee5592f72a8d74e49052654"
+        },
+        {
+          "id": "019-clean",
+          "topic": 19,
+          "condition": "clean",
+          "status": "completed",
+          "guess": 19,
+          "returned_model": "glm-5.3-flash",
+          "finish_reason": "tool_calls",
+          "elapsed_seconds": 6.719,
+          "usage": {
+            "prompt_tokens": 1342,
+            "total_tokens": 1510,
+            "completion_tokens": 168,
+            "prompt_tokens_details": null,
+            "reasoning_tokens": 146
+          },
+          "result_sha256": "522adc3fe47ebaa1227b7f06906653da53eb1d32e6ab1b666bfc4970b6207429",
+          "request_sha256": "3758ca9b131e17fa9db083d664371e5847a58556ac30ea63af508f426e229ad2"
+        },
+        {
+          "id": "001-defended",
+          "topic": 1,
+          "condition": "defended",
+          "status": "completed",
+          "guess": 1,
+          "returned_model": "glm-5.3-flash",
+          "finish_reason": "tool_calls",
+          "elapsed_seconds": 56.109,
+          "usage": {
+            "prompt_tokens": 1583,
+            "total_tokens": 3231,
+            "completion_tokens": 1648,
+            "prompt_tokens_details": null,
+            "reasoning_tokens": 1628
+          },
+          "result_sha256": "cb74c08899b3e292a3b6b1bcd1d372fe31c7752b7aeb578e5ea4f550e9b0b18f",
+          "request_sha256": "b41570429a6b0ed6f75aa38421c967cffa8a58097866cb7c63bdf6462f5eef79"
+        },
+        {
+          "id": "017-clean",
+          "topic": 17,
+          "condition": "clean",
+          "status": "completed",
+          "guess": 17,
+          "returned_model": "glm-5.3-flash",
+          "finish_reason": "tool_calls",
+          "elapsed_seconds": 10.719,
+          "usage": {
+            "prompt_tokens": 1330,
+            "total_tokens": 1585,
+            "completion_tokens": 255,
+            "prompt_tokens_details": null,
+            "reasoning_tokens": 232
+          },
+          "result_sha256": "0b57b3dbc42624afb482c1979296b2288d6b1228d2957d70adc7edff746dbbdf",
+          "request_sha256": "4b218e3ee5319975deddbe6148ebd1892ce0a0f7b45199f0cf72ad6f9add36a4"
+        },
+        {
+          "id": "005-defended",
+          "topic": 5,
+          "condition": "defended",
+          "status": "completed",
+          "guess": 5,
+          "returned_model": "glm-5.3-flash",
+          "finish_reason": "tool_calls",
+          "elapsed_seconds": 87.609,
+          "usage": {
+            "prompt_tokens": 1675,
+            "total_tokens": 4531,
+            "completion_tokens": 2856,
+            "prompt_tokens_details": null,
+            "reasoning_tokens": 2833
+          },
+          "result_sha256": "802eea67a73c01e5ad80b44de6b1c1cbba15f7b67bd17d8d7c386f93631bb4af",
+          "request_sha256": "741ee085e75236a86e573bcce73f3d3a2266928879324c868f1b38e8e5d3af23"
+        },
+        {
+          "id": "012-clean",
+          "topic": 12,
+          "condition": "clean",
+          "status": "completed",
+          "guess": 12,
+          "returned_model": "glm-5.3-flash",
+          "finish_reason": "tool_calls",
+          "elapsed_seconds": 13.594,
+          "usage": {
+            "prompt_tokens": 1335,
+            "total_tokens": 1713,
+            "completion_tokens": 378,
+            "prompt_tokens_details": null,
+            "reasoning_tokens": 358
+          },
+          "result_sha256": "af8d0c16119f5f021e19f5e8f1f132d9a9acd6fd1fb2296c965c5e88ab5ac16e",
+          "request_sha256": "cb21b58283107310e6555ac16942bd527578f42832d489d638e3a64a5803fb80"
+        }
+      ],
+      "collector_sha256": "1480d4d5e96c71541ba5838a79c654a48457fcf57ce79e1dd821a010466cd00c",
+      "protocol_sha256": "900f72c5ec50305caf79712bf986b9b4dde7e07ec2fb8826b571b2ccfe13a751",
+      "analysis_sha256": "87549ea26cb14aadc6e7d5cf14419831b3400d06fab15691daedca96e83f012a"
+    }
+  ],
+  "adaptation_gain_estimated": false,
+  "transport_source_sha256": {
+    "experiments/revision-m1-m8/m5_e3_tls_adaptive.json": "42cc7ca1330fbf5e5657cf255b9808ee1d88e733f5e9e08d53e55bc75caa5417",
+    "experiments/sp2027-r2/e5_streaming_results.json": "c7fb0227fb2c89357b46efc921d64d8f86577b8916880abab16ace5cfb8a1635"
+  }
+}
