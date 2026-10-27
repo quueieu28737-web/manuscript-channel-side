@@ -63,7 +63,7 @@ for key in ('Matched adaptation + inference','All five bindings'):
 table+=r'''\midrule
 Inference + cost & 5/21 & 4/21$^{\dagger}$\\
 \bottomrule\end{tabularx}
-\par\smallskip\raggedright $^{\dagger}$ Requires explicit R3 placement as well as R7/R9, or treats SPEC's payload-only cost as P for a wire-level query. The same four records remain, with distinct cost objects. Source cells and historical query labels remain unchanged.
+\par\smallskip\raggedright $^{\dagger}$ Requires explicit R3 placement as well as R7/R9, or treats SPEC's payload-only cost as P for a wire-level query. The same four records remain, with distinct cost objects. Source cells and original query labels remain unchanged.
 \end{table}
 '''
 (M/'tables/r36-sensitivity.tex').write_text(table,encoding='utf8',newline='\n')

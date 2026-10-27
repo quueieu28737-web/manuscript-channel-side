@@ -2,9 +2,9 @@
   "version": "R36-sensitivity",
   "source_sha256": {
     "tables/r19-record-audit.tex": "786f8e20228839707c76b1d0943b0d925868654ad22dbdeb30084ab0da0645eb",
-    "tables/r9-record-index.tex": "bc0de37f365afa417e56fcd1ef754f6edc3925268b3d76a55e5ef99872e6ceaf",
-    "tables/core-family-map.tex": "7b9169feca6cb3f1b881abe16c4dc8161c48953acba6bae53417fe12595ef23d",
-    "data/r35-privacy-census.json": "eb4487227043cf5b2a0ea49dfee57469de6edf6a56d672f77928a67515b775d6"
+    "tables/r9-record-index.tex": "dafdf27d7e12f276f4c4add217002fda6a573fedb803c3d87c262653cda1a8c8",
+    "tables/core-family-map.tex": "1be2cf1a1ed18ee5e21470fc84391caefd834810319a75d7741611ecf21d8dbd",
+    "data/r35-privacy-census.json": "1353ae13ca8d8c41296520dec4eaa1777225f949f97bb0ce7a3d1af8d927de8e"
   },
   "rule": "Historical R4/R5 ask about protected-data fits and a matched clean/protected fit. Broader adaptive strategies require a source review; former -- becomes ? in sensitivity only.",
   "variants": {

@@ -1,0 +1,18 @@
+\begin{table*}[t]\centering\footnotesize
+\caption{Complete record-cell and pair index. Numbers follow Appendix~\ref{app:records}, reading the left block (01--20) then the right block (21--39). Each nine-character string gives R1--R9 in order; B/P/U/A/?/-- use Table~\ref{tab:audit-rules}. The single hyphen in a string means inapplicable. Cohorts T traffic, C cache, L local memory, B behavioral, G generator, F fixed instruction, A access gate, N contention, V filter-created view.}\label{tab:r37-reconstruction}
+\begin{tabular}{@{}rcl@{\hspace{12pt}}rcl@{\hspace{12pt}}rcl@{\hspace{12pt}}rcl@{}}\toprule
+No. & Group & R1--R9 & No. & Group & R1--R9 & No. & Group & R1--R9 & No. & Group & R1--R9\\\midrule
+01 & B & \texttt{BPBBBBBU-} & 11 & C & \texttt{BBB--B-UB} & 21 & C & \texttt{BBB--BBUU} & 31 & N & \texttt{BBB--BBUU}\\
+02 & T & \texttt{BPB--PBPU} & 12 & T & \texttt{BBBPUBBUU} & 22 & C & \texttt{BBB--B-U-} & 32 & G & \texttt{BBBUUBBUU}\\
+03 & T & \texttt{BBBB?BBUU} & 13 & T & \texttt{BBP--B-UB} & 23 & C & \texttt{BBB--B-UB} & 33 & V & \texttt{BBB--BBUU}\\
+04 & T & \texttt{BBB??BBUP} & 14 & T & \texttt{BBPPUBB-B} & 24 & G & \texttt{BPBUUPBPU} & 34 & C & \texttt{BBB--BBBB}\\
+05 & C & \texttt{BBBB?BBUP} & 15 & T & \texttt{BBBBBBBUB} & 25 & G & \texttt{BPBUUPBUU} & 35 & C & \texttt{BBB--BBBB}\\
+06 & C & \texttt{BBB--B-UB} & 16 & T & \texttt{BBB??BBUB} & 26 & T & \texttt{BBP--B-UB} & 36 & L & \texttt{BBB--B--B}\\
+07 & T & \texttt{BBBPUBBUU} & 17 & F & \texttt{BBB--BBPU} & 27 & L & \texttt{BBB--P--B} & 37 & L & \texttt{BBB--BB-P}\\
+08 & T & \texttt{BBBPUBBUU} & 18 & C & \texttt{BBB--BBUP} & 28 & L & \texttt{BBB--B-BB} & 38 & L & \texttt{BBBPUBBBU}\\
+09 & T & \texttt{BBBPUBBUP} & 19 & B & \texttt{BBBPUBBBU} & 29 & F & \texttt{BBB--BBPU} & 39 & L & \texttt{BBPUUBPUP}\\
+10 & C & \texttt{BBB--BBUU} & 20 & B & \texttt{BBBPUBBU-} & 30 & A & \texttt{BBB--BBBU} &  & & \\
+\bottomrule\end{tabular}
+\par\smallskip\raggedright R1 target, R2 receiver, R3 intervention, R4 protected fitting, R5 matched fitting, R6 workload, R7 inference, R8 utility, R9 cost; B bound, P partial, U unreported, A unavailable, ? unverified, - inapplicable.\par Within each nonsingleton group, every unordered pair is included. The 17 scoped-match pairs are: \mbox{03/04}, \mbox{03/07}, \mbox{03/08}, \mbox{03/09}, \mbox{04/07}, \mbox{04/08}, \mbox{04/09}, \mbox{05/34}, \mbox{07/08}, \mbox{07/09}, \mbox{08/09}, \mbox{15/16}, \mbox{18/21}, \mbox{19/20}, \mbox{24/25}, \mbox{24/32}, \mbox{25/32}. The 11 unresolved pairs are: \mbox{02/12}, \mbox{02/14}, \mbox{05/18}, \mbox{05/21}, \mbox{12/14}, \mbox{17/29}, \mbox{18/34}, \mbox{18/35}, \mbox{21/34}, \mbox{21/35}, \mbox{37/38}. The remaining 105 within-group pairs have a different-object witness; the three singleton groups yield no pairs. Match refers to the specified object, not universal equality of costs, populations or contracts.
+\par The eight different-object pairs within a family are: \mbox{05/06}, \mbox{10/11}, \mbox{12/13}, \mbox{21/22}, \mbox{21/23}, \mbox{22/23}, \mbox{34/35}, \mbox{36/37}. All 351 cells and 133 within-group labels are recoverable here; individual source rationales remain in Supplement S29 and S34.
+\end{table*}

@@ -44,9 +44,9 @@ variants=[coarsen('Scoped result records',lambda x:x),
  coarsen('Family only',lambda x:idx[x]['family'])]
 save(D/'granularity-sensitivity.json',{'method':'Project fixed pair judgments onto coarser groups. A mixed edge retains conflicting statuses; internal edges become hidden, not corrected. Not a recoding, sampling CI or alternative full-paper evaluation.','input_hashes':{f:hashlib.sha256((D/f).read_bytes()).hexdigest() for f in ['pair-inventory.csv','record-scopes.csv']},'variants':variants})
 tab=r'''\begin{table}[t]\centering\footnotesize
-\caption{Sensitivity to the comparison unit. C/M/U: unanimous descriptive match/object mismatch/unresolved; Mix: constituent judgments differ. Hidden: original within-question pairs absorbed inside a unit. No new pair is adjudicated.}\label{tab:r33-granularity}
+\caption{Sensitivity to the comparison unit. M/D/U: unanimous scoped match/different object/unresolved; Mix: constituent judgments differ. Hidden: original within-question pairs absorbed inside a unit. No new pair is adjudicated.}\label{tab:r33-granularity}
 \begin{tabularx}{\columnwidth}{@{}Yrrrrrr@{}}\toprule
-Unit & Units & C & M & U & Mix & Hidden\\\midrule
+Unit & Units & M & D & U & Mix & Hidden\\\midrule
 '''
 for v in variants:
  c=v['counts']; tab+=v['rule']+' & '+str(v['units'])+' & '+' & '.join(str(c.get(k,0)) for k in ['COMPATIBLE','INCOMPATIBLE','UNRESOLVED','MIXED'])+' & '+str(len(v['hidden_within_unit_pairs']))+r'\\'+'\n'
@@ -55,9 +55,9 @@ tab+=r'\bottomrule\end{tabularx}\end{table}'+'\n';write(T/'r33-granularity.tex',
 bycohort=defaultdict(Counter)
 for p in related: bycohort[p['cohort']][p['descriptive']]+=1
 tab=r'''\begin{table}[t]\centering\footnotesize
-\caption{All 133 within-question decisions; 608 other pairs have no declared comparison. Counts describe this inventory and its grouping rules.}\label{tab:r33-pairs}
+\caption{The 133 within-question index labels; 608 other pairs have no declared comparison. A different-object witness limits a specified comparison, not all comparisons between the studies.}\label{tab:r33-pairs}
 \begin{tabularx}{\columnwidth}{@{}Yrrr@{}}\toprule
-Question & Match & Different object & Unresolved\\\midrule
+Question & Scoped match & Different object & Unresolved\\\midrule
 '''
 for k,v in sorted(bycohort.items()): tab+=k.replace('-',' ')+' & '+' & '.join(str(v.get(s,0)) for s in ['COMPATIBLE','INCOMPATIBLE','UNRESOLVED'])+r'\\'+'\n'
 tab+=r'\midrule Total & 17 & 105 & 11\\\bottomrule\end{tabularx}\end{table}'+'\n';write(T/'r33-pair-summary.tex',tab)
@@ -83,7 +83,7 @@ All five items (0/14) & None in this extraction & A specified query has no bound
 \bottomrule\end{tabularx}\end{table*}
 ''';write(T/'r33-positive-joins.tex',tab)
 tab=r'''\begin{table*}[t]\centering\scriptsize
-\caption{All 33 mitigation records: query membership. B: eligible and bound; E: eligible with at least one incomplete binding; x: required item inapplicable. IU=inference/utility; IC=inference/cost; AI=adaptation/inference; IUC=triple; All=R4/R5/R7/R8/R9. Full R1--R9 source rationales remain in S28.}\label{tab:r33-membership}
+\caption{All 33 mitigation records: query membership. B: eligible and bound; E: eligible with at least one incomplete binding; x: required item inapplicable. IU=inference/utility; IC=inference/cost; AI=adaptation/inference; IUC=triple; All=R4/R5/R7/R8/R9. Full R1--R9 source rationales remain in S29.}\label{tab:r33-membership}
 \begin{tabularx}{\textwidth}{@{}Yccccc@{}}\toprule
 Record / cited family & IU & IC & AI & IUC & All\\\midrule
 '''

@@ -2,8 +2,8 @@
   "revision": "R35-privacy-census",
   "source_sha256": {
     "tables/r19-record-audit.tex": "786f8e20228839707c76b1d0943b0d925868654ad22dbdeb30084ab0da0645eb",
-    "tables/r9-record-index.tex": "bc0de37f365afa417e56fcd1ef754f6edc3925268b3d76a55e5ef99872e6ceaf",
-    "tables/core-family-map.tex": "7b9169feca6cb3f1b881abe16c4dc8161c48953acba6bae53417fe12595ef23d",
+    "tables/r9-record-index.tex": "dafdf27d7e12f276f4c4add217002fda6a573fedb803c3d87c262653cda1a8c8",
+    "tables/core-family-map.tex": "1be2cf1a1ed18ee5e21470fc84391caefd834810319a75d7741611ecf21d8dbd",
     "data/record-scopes.csv": "6068a3af229abf9f74c95daa4dffed9212cd9c21cdfaaa4bc3a001da43ee225d",
     "tables/family-audit-matrix.tex": "3b9b64de6cc1b9a0529022198e1bfc9db1f16d8f3a73291c88d885b5ea13888d"
   },
