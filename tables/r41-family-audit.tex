@@ -1,0 +1,29 @@
+\begin{table}[t]\centering\footnotesize
+\caption{Mitigation-source bindings in the attack-evaluation frame. R8 exempts scoped preservation; columns can refer to different records.}\label{tab:family-audit}
+\setlength{\tabcolsep}{2.2pt}
+\begin{tabularx}{\columnwidth}{@{}Y*{9}{c}@{}}\toprule
+Family & R1 & R2 & R3 & R4 & R5 & R6 & R7 & R8 & R9\\\midrule
+UI Traces~\cite{uitraces2026} & \textbf{B} & \textbf{P} & \textbf{B} & \textbf{B} & \textbf{B} & \textbf{B} & \textbf{B} & -- & --\\
+WRA~\cite{jeong2026wra} & \textbf{B} & \textbf{P} & \textbf{B} & -- & -- & \textbf{P} & \textbf{B} & -- & U\\
+NetEcho~\cite{netecho2025} & \textbf{B} & \textbf{B} & \textbf{B} & \textbf{B} & ? & \textbf{B} & \textbf{B} & -- & \textbf{P}\\
+Early Bird~\cite{earlybird2025} & \textbf{B} & \textbf{B} & \textbf{B} & \textbf{B} & ? & \textbf{B} & \textbf{B} & U & \textbf{B}\\
+Whisper Leak~\cite{whisperleak2025} & \textbf{B} & \textbf{B} & \textbf{B} & \textbf{P} & U & \textbf{B} & \textbf{B} & -- & \textbf{P}\\
+SpliceLeak~\cite{spliceleak2026} & \textbf{B} & \textbf{B} & \textbf{B} & -- & -- & \textbf{B} & \textbf{B} & U & \textbf{B}\\
+Time Will Tell~\cite{timewilltell2024} & \textbf{B} & \textbf{B} & \textbf{B} & \textbf{P} & U & \textbf{B} & \textbf{B} & U & \textbf{B}\\
+I Know What You Said~\cite{gao2025iknow} & \textbf{B} & \textbf{B} & \textbf{B} & -- & -- & \textbf{P} & -- & -- & \textbf{B}\\
+Speculative decoding~\cite{wei2024speculation} & \textbf{B} & \textbf{B} & \textbf{P} & \textbf{P} & U & \textbf{B} & \textbf{B} & -- & \textbf{B}\\
+Dangol workflow~\cite{dangol2026workflow} & \textbf{B} & \textbf{B} & \textbf{B} & \textbf{B} & \textbf{B} & \textbf{B} & \textbf{B} & -- & \textbf{B}\\
+Cloud traffic benchmark~\cite{pouryousef2026traffic} & \textbf{B} & \textbf{P} & \textbf{B} & U & U & \textbf{P} & \textbf{B} & \textbf{P} & U\\
+Remote timing~\cite{carlini2024remote} & \textbf{B} & \textbf{B} & \textbf{P} & -- & -- & \textbf{B} & -- & -- & \textbf{B}\\
+TDXRay~\cite{hornetz2026tdxray} & \textbf{B} & \textbf{B} & \textbf{B} & -- & -- & \textbf{B} & -- & \textbf{B} & \textbf{B}\\
+SafeKV~\cite{chu2025safekv} & \textbf{B} & \textbf{B} & \textbf{B} & -- & -- & \textbf{B} & \textbf{B} & -- & \textbf{P}\\
+KVGov~\cite{addagada2026kvgov} & \textbf{B} & \textbf{B} & \textbf{B} & -- & -- & \textbf{B} & \textbf{B} & -- & \textbf{B}\\
+CachePrune~\cite{wu2026cacheprune} & \textbf{B} & \textbf{B} & \textbf{B} & -- & -- & \textbf{B} & \textbf{B} & \textbf{B} & \textbf{B}\\
+OTRO~\cite{lee2026otro} & \textbf{B} & \textbf{B} & \textbf{B} & -- & -- & \textbf{B} & \textbf{B} & -- & \textbf{B}\\
+SparLeak~\cite{chen2026sparleak} & \textbf{B} & \textbf{B} & \textbf{B} & \textbf{P} & U & \textbf{B} & \textbf{B} & \textbf{B} & U\\
+Shape and Substance~\cite{hadad2026shape} & \textbf{B} & \textbf{B} & \textbf{P} & U & U & \textbf{B} & \textbf{P} & U & \textbf{P}\\
+\midrule Bound & 19 & 16 & 16 & 4 & 2 & 16 & 15 & 3 & 11\\
+Applicable & 19 & 19 & 19 & 10 & 10 & 19 & 16 & 8 & 18\\
+\bottomrule\end{tabularx}
+\par\smallskip\raggedright B: bound; P: partial; U: unreported; ?: unverified; --: inapplicable to the named outcome. For R8, -- supports only the stated functional object, not timeliness or task completion. Current record codes: Appendix~\ref{app:reconstruction}; source rationales: S44.
+\end{table}

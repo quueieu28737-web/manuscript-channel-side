@@ -1,0 +1,752 @@
+{
+  "revision": "R41",
+  "selection_scope": "Mitigation results in studies admitted through C1-C5, including an empirical attack-inference evaluation; not all defense literature.",
+  "input_sha256": {
+    "data/r41-utility-scopes.json": "926356ececb464111049a3f6f59a83d6ac4253ce2f9d344f24142d55062a0b38"
+  },
+  "families": {
+    "addagada2026kvgov": [
+      "B",
+      "B",
+      "B",
+      "--",
+      "--",
+      "B",
+      "B",
+      "--",
+      "B"
+    ],
+    "carlini2024remote": [
+      "B",
+      "B",
+      "P",
+      "--",
+      "--",
+      "B",
+      "--",
+      "--",
+      "B"
+    ],
+    "chen2026sparleak": [
+      "B",
+      "B",
+      "B",
+      "P",
+      "U",
+      "B",
+      "B",
+      "B",
+      "U"
+    ],
+    "chu2025safekv": [
+      "B",
+      "B",
+      "B",
+      "--",
+      "--",
+      "B",
+      "B",
+      "--",
+      "P"
+    ],
+    "dangol2026workflow": [
+      "B",
+      "B",
+      "B",
+      "B",
+      "B",
+      "B",
+      "B",
+      "--",
+      "B"
+    ],
+    "earlybird2025": [
+      "B",
+      "B",
+      "B",
+      "B",
+      "?",
+      "B",
+      "B",
+      "U",
+      "B"
+    ],
+    "gao2025iknow": [
+      "B",
+      "B",
+      "B",
+      "--",
+      "--",
+      "P",
+      "--",
+      "--",
+      "B"
+    ],
+    "hadad2026shape": [
+      "B",
+      "B",
+      "P",
+      "U",
+      "U",
+      "B",
+      "P",
+      "U",
+      "P"
+    ],
+    "hornetz2026tdxray": [
+      "B",
+      "B",
+      "B",
+      "--",
+      "--",
+      "B",
+      "--",
+      "B",
+      "B"
+    ],
+    "jeong2026wra": [
+      "B",
+      "P",
+      "B",
+      "--",
+      "--",
+      "P",
+      "B",
+      "--",
+      "U"
+    ],
+    "lee2026otro": [
+      "B",
+      "B",
+      "B",
+      "--",
+      "--",
+      "B",
+      "B",
+      "--",
+      "B"
+    ],
+    "netecho2025": [
+      "B",
+      "B",
+      "B",
+      "B",
+      "?",
+      "B",
+      "B",
+      "--",
+      "P"
+    ],
+    "pouryousef2026traffic": [
+      "B",
+      "P",
+      "B",
+      "U",
+      "U",
+      "P",
+      "B",
+      "P",
+      "U"
+    ],
+    "spliceleak2026": [
+      "B",
+      "B",
+      "B",
+      "--",
+      "--",
+      "B",
+      "B",
+      "U",
+      "B"
+    ],
+    "timewilltell2024": [
+      "B",
+      "B",
+      "B",
+      "P",
+      "U",
+      "B",
+      "B",
+      "U",
+      "B"
+    ],
+    "uitraces2026": [
+      "B",
+      "P",
+      "B",
+      "B",
+      "B",
+      "B",
+      "B",
+      "--",
+      "--"
+    ],
+    "wei2024speculation": [
+      "B",
+      "B",
+      "P",
+      "P",
+      "U",
+      "B",
+      "B",
+      "--",
+      "B"
+    ],
+    "whisperleak2025": [
+      "B",
+      "B",
+      "B",
+      "P",
+      "U",
+      "B",
+      "B",
+      "--",
+      "P"
+    ],
+    "wu2026cacheprune": [
+      "B",
+      "B",
+      "B",
+      "--",
+      "--",
+      "B",
+      "B",
+      "B",
+      "B"
+    ]
+  },
+  "fields": {
+    "R4": {
+      "eligible": 10,
+      "eligible_ids": [
+        "chen2026sparleak",
+        "dangol2026workflow",
+        "earlybird2025",
+        "hadad2026shape",
+        "netecho2025",
+        "pouryousef2026traffic",
+        "timewilltell2024",
+        "uitraces2026",
+        "wei2024speculation",
+        "whisperleak2025"
+      ],
+      "bound_ids": [
+        "dangol2026workflow",
+        "earlybird2025",
+        "netecho2025",
+        "uitraces2026"
+      ],
+      "partial_accepted_ids": [
+        "chen2026sparleak",
+        "dangol2026workflow",
+        "earlybird2025",
+        "netecho2025",
+        "timewilltell2024",
+        "uitraces2026",
+        "wei2024speculation",
+        "whisperleak2025"
+      ]
+    },
+    "R5": {
+      "eligible": 10,
+      "eligible_ids": [
+        "chen2026sparleak",
+        "dangol2026workflow",
+        "earlybird2025",
+        "hadad2026shape",
+        "netecho2025",
+        "pouryousef2026traffic",
+        "timewilltell2024",
+        "uitraces2026",
+        "wei2024speculation",
+        "whisperleak2025"
+      ],
+      "bound_ids": [
+        "dangol2026workflow",
+        "uitraces2026"
+      ],
+      "partial_accepted_ids": [
+        "dangol2026workflow",
+        "uitraces2026"
+      ]
+    },
+    "R7": {
+      "eligible": 16,
+      "eligible_ids": [
+        "addagada2026kvgov",
+        "chen2026sparleak",
+        "chu2025safekv",
+        "dangol2026workflow",
+        "earlybird2025",
+        "hadad2026shape",
+        "jeong2026wra",
+        "lee2026otro",
+        "netecho2025",
+        "pouryousef2026traffic",
+        "spliceleak2026",
+        "timewilltell2024",
+        "uitraces2026",
+        "wei2024speculation",
+        "whisperleak2025",
+        "wu2026cacheprune"
+      ],
+      "bound_ids": [
+        "addagada2026kvgov",
+        "chen2026sparleak",
+        "chu2025safekv",
+        "dangol2026workflow",
+        "earlybird2025",
+        "jeong2026wra",
+        "lee2026otro",
+        "netecho2025",
+        "pouryousef2026traffic",
+        "spliceleak2026",
+        "timewilltell2024",
+        "uitraces2026",
+        "wei2024speculation",
+        "whisperleak2025",
+        "wu2026cacheprune"
+      ],
+      "partial_accepted_ids": [
+        "addagada2026kvgov",
+        "chen2026sparleak",
+        "chu2025safekv",
+        "dangol2026workflow",
+        "earlybird2025",
+        "hadad2026shape",
+        "jeong2026wra",
+        "lee2026otro",
+        "netecho2025",
+        "pouryousef2026traffic",
+        "spliceleak2026",
+        "timewilltell2024",
+        "uitraces2026",
+        "wei2024speculation",
+        "whisperleak2025",
+        "wu2026cacheprune"
+      ]
+    },
+    "R8": {
+      "eligible": 8,
+      "eligible_ids": [
+        "chen2026sparleak",
+        "earlybird2025",
+        "hadad2026shape",
+        "hornetz2026tdxray",
+        "pouryousef2026traffic",
+        "spliceleak2026",
+        "timewilltell2024",
+        "wu2026cacheprune"
+      ],
+      "bound_ids": [
+        "chen2026sparleak",
+        "hornetz2026tdxray",
+        "wu2026cacheprune"
+      ],
+      "partial_accepted_ids": [
+        "chen2026sparleak",
+        "hornetz2026tdxray",
+        "pouryousef2026traffic",
+        "wu2026cacheprune"
+      ]
+    },
+    "R9": {
+      "eligible": 18,
+      "eligible_ids": [
+        "addagada2026kvgov",
+        "carlini2024remote",
+        "chen2026sparleak",
+        "chu2025safekv",
+        "dangol2026workflow",
+        "earlybird2025",
+        "gao2025iknow",
+        "hadad2026shape",
+        "hornetz2026tdxray",
+        "jeong2026wra",
+        "lee2026otro",
+        "netecho2025",
+        "pouryousef2026traffic",
+        "spliceleak2026",
+        "timewilltell2024",
+        "wei2024speculation",
+        "whisperleak2025",
+        "wu2026cacheprune"
+      ],
+      "bound_ids": [
+        "addagada2026kvgov",
+        "carlini2024remote",
+        "dangol2026workflow",
+        "earlybird2025",
+        "gao2025iknow",
+        "hornetz2026tdxray",
+        "lee2026otro",
+        "spliceleak2026",
+        "timewilltell2024",
+        "wei2024speculation",
+        "wu2026cacheprune"
+      ],
+      "partial_accepted_ids": [
+        "addagada2026kvgov",
+        "carlini2024remote",
+        "chu2025safekv",
+        "dangol2026workflow",
+        "earlybird2025",
+        "gao2025iknow",
+        "hadad2026shape",
+        "hornetz2026tdxray",
+        "lee2026otro",
+        "netecho2025",
+        "spliceleak2026",
+        "timewilltell2024",
+        "wei2024speculation",
+        "whisperleak2025",
+        "wu2026cacheprune"
+      ]
+    }
+  },
+  "joint_queries": {
+    "Inference + utility": {
+      "eligible": 8,
+      "eligible_ids": [
+        "CACHEPRUNE-context",
+        "CACHEPRUNE-selective",
+        "SHAPE-padding-estimate",
+        "SPARLEAK-replacement",
+        "SPLICE-CTBF-signal",
+        "TIME-length-instruction",
+        "TRAFFIC-prompt-reformulation",
+        "TRAFFIC-temperature"
+      ],
+      "bound_ids": [
+        "CACHEPRUNE-context",
+        "CACHEPRUNE-selective",
+        "SPARLEAK-replacement"
+      ],
+      "partial_accepted_ids": [
+        "CACHEPRUNE-context",
+        "CACHEPRUNE-selective",
+        "SPARLEAK-replacement",
+        "TRAFFIC-prompt-reformulation"
+      ]
+    },
+    "Inference + cost": {
+      "eligible": 21,
+      "eligible_ids": [
+        "CACHEPRUNE-context",
+        "CACHEPRUNE-selective",
+        "DANGOL-capture",
+        "DANGOL-livebinding",
+        "EARLY-K-calibration-oracle",
+        "KVGOV-partialflush-sim",
+        "NET-dummy-padding-simulation",
+        "NET-upstream-local",
+        "OTRO-epochpad",
+        "SAFE-post-trigger",
+        "SHAPE-padding-estimate",
+        "SPARLEAK-replacement",
+        "SPEC-padding-REST",
+        "SPLICE-CTBF-signal",
+        "TIME-length-instruction",
+        "TRAFFIC-prompt-reformulation",
+        "TRAFFIC-temperature",
+        "WHISPER-batching-replay",
+        "WHISPER-injection-replay",
+        "WHISPER-randompadding-capture",
+        "WRA-decoy-execution"
+      ],
+      "bound_ids": [
+        "CACHEPRUNE-context",
+        "CACHEPRUNE-selective",
+        "DANGOL-capture",
+        "DANGOL-livebinding",
+        "SPEC-padding-REST"
+      ],
+      "partial_accepted_ids": [
+        "CACHEPRUNE-context",
+        "CACHEPRUNE-selective",
+        "DANGOL-capture",
+        "DANGOL-livebinding",
+        "EARLY-K-calibration-oracle",
+        "NET-dummy-padding-simulation",
+        "OTRO-epochpad",
+        "SAFE-post-trigger",
+        "SHAPE-padding-estimate",
+        "SPEC-padding-REST",
+        "WHISPER-injection-replay"
+      ]
+    },
+    "Matched adaptation + inference": {
+      "eligible": 15,
+      "eligible_ids": [
+        "DANGOL-capture",
+        "DANGOL-livebinding",
+        "EARLY-K-calibration-oracle",
+        "NET-dummy-padding-simulation",
+        "NET-upstream-local",
+        "SHAPE-padding-estimate",
+        "SPARLEAK-replacement",
+        "SPEC-padding-REST",
+        "TIME-length-instruction",
+        "TRAFFIC-prompt-reformulation",
+        "TRAFFIC-temperature",
+        "UI-delay-offline",
+        "WHISPER-batching-replay",
+        "WHISPER-injection-replay",
+        "WHISPER-randompadding-capture"
+      ],
+      "bound_ids": [
+        "DANGOL-capture",
+        "UI-delay-offline"
+      ],
+      "partial_accepted_ids": [
+        "DANGOL-capture",
+        "UI-delay-offline"
+      ]
+    },
+    "Inference + utility + cost": {
+      "eligible": 8,
+      "eligible_ids": [
+        "CACHEPRUNE-context",
+        "CACHEPRUNE-selective",
+        "SHAPE-padding-estimate",
+        "SPARLEAK-replacement",
+        "SPLICE-CTBF-signal",
+        "TIME-length-instruction",
+        "TRAFFIC-prompt-reformulation",
+        "TRAFFIC-temperature"
+      ],
+      "bound_ids": [
+        "CACHEPRUNE-context",
+        "CACHEPRUNE-selective"
+      ],
+      "partial_accepted_ids": [
+        "CACHEPRUNE-context",
+        "CACHEPRUNE-selective"
+      ]
+    },
+    "All five bindings": {
+      "eligible": 5,
+      "eligible_ids": [
+        "SHAPE-padding-estimate",
+        "SPARLEAK-replacement",
+        "TIME-length-instruction",
+        "TRAFFIC-prompt-reformulation",
+        "TRAFFIC-temperature"
+      ],
+      "bound_ids": [],
+      "partial_accepted_ids": []
+    }
+  },
+  "category_record_ids": {
+    "may_change_function": [
+      "CACHEPRUNE-context",
+      "CACHEPRUNE-selective",
+      "EARLY-semantic-deidentification",
+      "SHAPE-padding-estimate",
+      "SPARLEAK-replacement",
+      "SPLICE-CTBF-signal",
+      "SPLICE-QCP-cost",
+      "TDXRAY-oblivious-map",
+      "TIME-length-instruction",
+      "TRAFFIC-prompt-reformulation",
+      "TRAFFIC-temperature"
+    ],
+    "preserves_scoped_object": [
+      "CARLINI-fixed-rate",
+      "DANGOL-capture",
+      "DANGOL-livebinding",
+      "EARLY-K-calibration-oracle",
+      "GAO-zero-copy-off",
+      "KVGOV-partialflush-sim",
+      "NET-dummy-padding-simulation",
+      "NET-upstream-local",
+      "OTRO-epochpad",
+      "OTRO-unpadded",
+      "SAFE-post-trigger",
+      "SPEC-padding-REST",
+      "TIME-padding-estimate",
+      "UI-delay-offline",
+      "WHISPER-batching-replay",
+      "WHISPER-injection-replay",
+      "WHISPER-randompadding-capture",
+      "WRA-decoy-execution"
+    ],
+    "component_only": [
+      "KVGOV-HMAC-cost",
+      "KVGOV-hardware-gap"
+    ]
+  },
+  "quality_exempt_family_ids": [
+    "addagada2026kvgov",
+    "carlini2024remote",
+    "chu2025safekv",
+    "dangol2026workflow",
+    "gao2025iknow",
+    "jeong2026wra",
+    "lee2026otro",
+    "netecho2025",
+    "uitraces2026",
+    "wei2024speculation",
+    "whisperleak2025"
+  ],
+  "preservation_function_packages": [
+    "DANGOL-capture",
+    "DANGOL-livebinding",
+    "SPEC-padding-REST"
+  ],
+  "agent_subset": {
+    "uitraces2026": {
+      "record_ids": [
+        "UI-delay-offline"
+      ],
+      "quality_record_ids": [],
+      "current_R8": "--"
+    },
+    "jeong2026wra": {
+      "record_ids": [
+        "WRA-decoy-execution"
+      ],
+      "quality_record_ids": [],
+      "current_R8": "--"
+    },
+    "dangol2026workflow": {
+      "record_ids": [
+        "DANGOL-capture",
+        "DANGOL-livebinding"
+      ],
+      "quality_record_ids": [],
+      "current_R8": "--"
+    },
+    "pouryousef2026traffic": {
+      "record_ids": [
+        "TRAFFIC-prompt-reformulation",
+        "TRAFFIC-temperature"
+      ],
+      "quality_record_ids": [
+        "TRAFFIC-prompt-reformulation",
+        "TRAFFIC-temperature"
+      ],
+      "current_R8": "P"
+    }
+  },
+  "agent_task_score": "No explicit same-condition end-to-end task score in the inspected scope of these four mapped families; only WRA clearly adds executed decoy research calls.",
+  "removal_sensitivity": {
+    "All source families": {
+      "family_ids": [
+        "addagada2026kvgov",
+        "carlini2024remote",
+        "chen2026sparleak",
+        "chu2025safekv",
+        "dangol2026workflow",
+        "earlybird2025",
+        "gao2025iknow",
+        "hadad2026shape",
+        "hornetz2026tdxray",
+        "jeong2026wra",
+        "lee2026otro",
+        "netecho2025",
+        "pouryousef2026traffic",
+        "spliceleak2026",
+        "timewilltell2024",
+        "uitraces2026",
+        "wei2024speculation",
+        "whisperleak2025",
+        "wu2026cacheprune"
+      ],
+      "quality_eligible_ids": [
+        "chen2026sparleak",
+        "earlybird2025",
+        "hadad2026shape",
+        "hornetz2026tdxray",
+        "pouryousef2026traffic",
+        "spliceleak2026",
+        "timewilltell2024",
+        "wu2026cacheprune"
+      ],
+      "bound_ids": [
+        "chen2026sparleak",
+        "hornetz2026tdxray",
+        "wu2026cacheprune"
+      ],
+      "partial_accepted_ids": [
+        "chen2026sparleak",
+        "hornetz2026tdxray",
+        "pouryousef2026traffic",
+        "wu2026cacheprune"
+      ]
+    },
+    "Without CachePrune": {
+      "family_ids": [
+        "addagada2026kvgov",
+        "carlini2024remote",
+        "chen2026sparleak",
+        "chu2025safekv",
+        "dangol2026workflow",
+        "earlybird2025",
+        "gao2025iknow",
+        "hadad2026shape",
+        "hornetz2026tdxray",
+        "jeong2026wra",
+        "lee2026otro",
+        "netecho2025",
+        "pouryousef2026traffic",
+        "spliceleak2026",
+        "timewilltell2024",
+        "uitraces2026",
+        "wei2024speculation",
+        "whisperleak2025"
+      ],
+      "quality_eligible_ids": [
+        "chen2026sparleak",
+        "earlybird2025",
+        "hadad2026shape",
+        "hornetz2026tdxray",
+        "pouryousef2026traffic",
+        "spliceleak2026",
+        "timewilltell2024"
+      ],
+      "bound_ids": [
+        "chen2026sparleak",
+        "hornetz2026tdxray"
+      ],
+      "partial_accepted_ids": [
+        "chen2026sparleak",
+        "hornetz2026tdxray",
+        "pouryousef2026traffic"
+      ]
+    },
+    "Without final-search records": {
+      "family_ids": [
+        "addagada2026kvgov",
+        "carlini2024remote",
+        "chu2025safekv",
+        "dangol2026workflow",
+        "earlybird2025",
+        "gao2025iknow",
+        "hornetz2026tdxray",
+        "jeong2026wra",
+        "netecho2025",
+        "pouryousef2026traffic",
+        "spliceleak2026",
+        "timewilltell2024",
+        "uitraces2026",
+        "wei2024speculation",
+        "whisperleak2025"
+      ],
+      "quality_eligible_ids": [
+        "earlybird2025",
+        "hornetz2026tdxray",
+        "pouryousef2026traffic",
+        "spliceleak2026",
+        "timewilltell2024"
+      ],
+      "bound_ids": [
+        "hornetz2026tdxray"
+      ],
+      "partial_accepted_ids": [
+        "hornetz2026tdxray",
+        "pouryousef2026traffic"
+      ]
+    }
+  }
+}
