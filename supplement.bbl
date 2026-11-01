@@ -761,8 +761,8 @@ O.~Kotevska, S.~Jha, A.~Bellet, R.~Hu, N.~D. Bastian, R.~F. da~Silva,
 
 \bibitem{dpmemview2026}
 \BIBentryALTinterwordspacing
-J.~W. Kim, B.~Min, K.~Edemacu, Y.~Choi, S.-H. Cho, and B.~Jang, ``Dp-memview: A
-  memory interface for attribute-level transcript privacy in long-term {LLM}
+J.~W. Kim, B.~Min, K.~Edemacu, Y.~Choi, S.-H. Cho, and B.~Jang, ``{DP-MemView}:
+  A memory interface for attribute-level transcript privacy in long-term {LLM}
   agents,'' \emph{arXiv preprint arXiv:2608.03130v1}, 2026, consulted
   2608.03130v1; source-scoped access 21 October 2026. [Online]. Available:
   \url{https://arxiv.org/html/2608.03130v1}
@@ -789,10 +789,11 @@ Z.~Liu, S.~van Hoek, P.~Horváth, D.~Lauret, X.~Xu, and L.~Batina, ``Real-world
 \bibitem{pennas2026cachesolidarity}
 \BIBentryALTinterwordspacing
 P.~G. Pennas, K.~Papaioannou, M.~Guarnieri, and T.~D. Doudali,
-  ``Cachesolidarity: Preventing prefix caching side channels in multi-tenant
+  ``{CacheSolidarity}: Preventing prefix caching side channels in multi-tenant
   {LLM} serving systems,'' \emph{arXiv preprint arXiv:2603.10726v1}, 2026,
-  consulted 2603.10726v1; source-scoped access 21 October 2026. [Online].
-  Available: \url{https://arxiv.org/html/2603.10726v1}
+  original map inspected v1 on 21 October 2026; defense-first extension also
+  inspected v2, retitled PrefixWall, on 27 October 2026. [Online]. Available:
+  \url{https://arxiv.org/html/2603.10726v1}
 \BIBentrySTDinterwordspacing
 
 \bibitem{zhou2026visionencoder}
@@ -882,6 +883,24 @@ N.~Carlini, A.~Athalye, N.~Papernot, W.~Brendel, J.~Rauber, D.~Tsipras,
   I.~Goodfellow, A.~Madry, and A.~Kurakin, ``On evaluating adversarial
   robustness,'' \emph{arXiv preprint arXiv:1902.06705}, 2019. [Online].
   Available: \url{https://arxiv.org/abs/1902.06705v2}
+\BIBentrySTDinterwordspacing
+
+\bibitem{xie2026ocelot}
+\BIBentryALTinterwordspacing
+J.~Xie and S.~Li, ``{OCELOT}: Inference-leakage budgets for privacy-preserving
+  {LLM} agents,'' \emph{arXiv preprint arXiv:2606.12341v1}, 2026, consulted
+  primary v1 on 27 October 2026. [Online]. Available:
+  \url{https://arxiv.org/abs/2606.12341v1}
+\BIBentrySTDinterwordspacing
+
+\bibitem{bagdasarian2024airgap}
+\BIBentryALTinterwordspacing
+E.~Bagdasarian, R.~Yi, S.~Ghalebikesabi, P.~Kairouz, M.~Gruteser, S.~Oh,
+  B.~Balle, and D.~Ramage, ``{AirGapAgent}: Protecting privacy-conscious
+  conversational agents,'' \emph{arXiv preprint arXiv:2405.05175v2}, 2024,
+  consulted primary v2; arXiv metadata identifies CCS 2024; exact publisher
+  version not compared. [Online]. Available:
+  \url{https://arxiv.org/abs/2405.05175v2}
 \BIBentrySTDinterwordspacing
 
 \end{thebibliography}

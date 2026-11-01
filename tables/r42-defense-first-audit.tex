@@ -1,0 +1,74 @@
+\begin{longtable}{@{}p{.19\textwidth}p{.06\textwidth}p{.07\textwidth}p{.60\textwidth}@{}}
+\caption{Complete source-scoped R1--R9 coding for the six defense-first cards (54 cells) and the separately scoped DP-MemView auxiliary-score diagnostic (nine cells). B = explicit binding, P = partial, U = unreported in inspected scope, ? = unverified, -- = inapplicable to the named outcome.}\label{tab:r42-defense-first-audit}\\
+\toprule Card / source & Item & Code & Source locator / required scope\\\midrule\endfirsthead
+\toprule Card / source & Item & Code & Source locator / required scope\\\midrule\endhead
+DF01 CacheSolidarity / PrefixWall~\cite{pennas2026cachesolidarity} & R1 & B & 2.3;4\\
+ & R2 & B & 2.2-2.3\\
+ & R3 & B & 3.2-3.3;5.1\\
+ & R4 & -- & 5.2.3:non-learned demonstration\\
+ & R5 & -- & 5.2.3:no fit contrast\\
+ & R6 & B & 5.1/Table2\\
+ & R7 & P & 5.2.3/Fig9:timing trace, not scored recovery\\
+ & R8 & -- & 3.2:narrow logical preservation\\
+ & R9 & B & 5.2.4/Table3:component cost; retain object\\
+\addlinespace[1pt]
+DF02 PlanTwin~\cite{yu2026plantwin} & R1 & B & 3.2\\
+ & R2 & B & 3.1-3.2\\
+ & R3 & B & 4.1-4.4\\
+ & R4 & -- & 5.6:field-overlap matcher\\
+ & R5 & -- & 5.6:no fitted-attack contrast\\
+ & R6 & B & 5.1\\
+ & R7 & P & 5.2:exposure metric;5.6:unbudgeted inference\\
+ & R8 & B & 5.2/Table5:planning quality only\\
+ & R9 & P & 5.1 default heuristic versus5.4 SLM timing\\
+\addlinespace[1pt]
+DF03 SICC~\cite{xu2026sicc} & R1 & B & Task and Threat Model\\
+ & R2 & B & Task and Threat Model\\
+ & R3 & B & Operational Compiler\\
+ & R4 & P & Setup:train/test stated; defended-fit allocation unclear\\
+ & R5 & U & Setup/Adaptive Attacks:no matched clean/protected fit contrast\\
+ & R6 & B & Setup;Tables7-9\\
+ & R7 & B & Tables3,5,6,8\\
+ & R8 & B & Tables7-9:condition-matched completion\\
+ & R9 & P & Operational cost:operation description only\\
+\addlinespace[1pt]
+DF04 DP-MemView~\cite{dpmemview2026} & R1 & B & Problem Definition\\
+ & R2 & B & Problem Definition/interface contract\\
+ & R3 & B & DP-MemView;Table1\\
+ & R4 & P & C.5:fit/calibration split; per-interface fitting unclear\\
+ & R5 & U & Experiments/C.5:no clean/protected fit contrast\\
+ & R6 & B & C.1-C.3/Table5\\
+ & R7 & B & Table2;C.5:empirical transcript AUC\\
+ & R8 & B & Table2;C.5:matched model-judged quality\\
+ & R9 & U & Experiments/C.5:no operational cost measurement\\
+\addlinespace[1pt]
+DF05 OCELOT~\cite{xie2026ocelot} & R1 & B & III-C-D\\
+ & R2 & B & III-B-C\\
+ & R3 & B & IV;Algorithm1\\
+ & R4 & -- & V-A:fixed LLM proxy pools;defense calibration separate\\
+ & R5 & -- & V-A,V-E:no clean/protected fitted-attacker comparison\\
+ & R6 & B & V-A;AppendixD\\
+ & R7 & B & V-B/TableII;V-E/TableV\\
+ & R8 & B & V-B/TableII;V-F/TableVI\\
+ & R9 & B & V-F/TableVII\\
+\addlinespace[1pt]
+DF06 AirGapAgent~\cite{bagdasarian2024airgap} & R1 & B & 2.2-2.3\\
+ & R2 & B & 2.3\\
+ & R3 & B & 4.1-4.2\\
+ & R4 & -- & 6.1:prompted models,not learned attacker fitting\\
+ & R5 & -- & 5.3;6:no clean/protected fitted-attacker comparison\\
+ & R6 & B & 6.1\\
+ & R7 & B & 5.3;Tables3-6:explicit-disclosure protection\\
+ & R8 & B & Tables3-5:matched answer utility\\
+ & R9 & U & 6:cost not located\\
+\addlinespace[1pt]
+DF04-score~\cite{dpmemview2026} & R1 & B & RQ2 Interface Safeguards, after Table4;B.5\\
+ & R2 & B & RQ2 Interface Safeguards, after Table4;B.5\\
+ & R3 & B & RQ2 Interface Safeguards, after Table4;B.5\\
+ & R4 & -- & RQ2 Interface Safeguards, after Table4;B.5\\
+ & R5 & -- & RQ2 Interface Safeguards, after Table4;B.5\\
+ & R6 & P & RQ2 Interface Safeguards, after Table4;B.5; exact diagnostic denominator is partial\\
+ & R7 & B & RQ2 Interface Safeguards, after Table4;B.5; exposed top-score AUC 0.976\\
+ & R8 & -- & RQ2 Interface Safeguards, after Table4;B.5; compliant response paths fixed; narrow preservation only\\
+ & R9 & U & RQ2 Interface Safeguards, after Table4;B.5\\
+\bottomrule\end{longtable}

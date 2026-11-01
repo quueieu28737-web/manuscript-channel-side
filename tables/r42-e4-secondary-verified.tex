@@ -1,0 +1,22 @@
+\begin{table*}[t]\centering\fontsize{8}{9.5}\selectfont
+\setlength{\tabcolsep}{3pt}
+\caption{Post-interruption recovery. Four controls, known-topic, held-out-template100way. Cells: Full9 BA and frozen paired imported-minus-local percentage-point difference. Source rows/target columns; local identity diagonal. Bucket, batch and fixed-cell defaults have identical parameters across sources; their zero differences do not test transfer. Complete absolute/paired intervals and all contrasts retained in accompanying tables/CSV/JSON. Qwen 8B fixed-cell point 2 uses a separately repeated arm; the original session is missing.}
+\begin{tabular}{lllll}\toprule
+Control & Source calibration & qwen3:8b & qwen3:0.6b & llama3.2:1b\\\midrule
+Buckets & qwen3:8b & 2.4 (local) & 1.8 (+0.0) & 1.6 (+0.0)\\
+Buckets & qwen3:0.6b & 2.4 (+0.0) & 1.8 (local) & 1.6 (+0.0)\\
+Buckets & llama3.2:1b & 2.4 (+0.0) & 1.8 (+0.0) & 1.6 (local)\\
+\midrule
+Chunk batches & qwen3:8b & 14.0 (local) & 9.4 (+0.0) & 7.8 (+0.0)\\
+Chunk batches & qwen3:0.6b & 14.0 (+0.0) & 9.4 (local) & 7.8 (+0.0)\\
+Chunk batches & llama3.2:1b & 14.0 (+0.0) & 9.4 (+0.0) & 7.8 (local)\\
+\midrule
+Fixed cells* & qwen3:8b & 1.6 (local) & 2.0 (+0.0) & 1.8 (+0.0)\\
+Fixed cells* & qwen3:0.6b & 1.6 (+0.0) & 2.0 (local) & 1.8 (+0.0)\\
+Fixed cells* & llama3.2:1b & 1.6 (+0.0) & 2.0 (+0.0) & 1.8 (local)\\
+\midrule
+True hard cap & qwen3:8b & 68.4 (local) & 50.4 (+1.0) & 35.4 (+1.6)\\
+True hard cap & qwen3:0.6b & 66.8 (-1.6) & 49.4 (local) & 34.0 (+0.2)\\
+True hard cap & llama3.2:1b & 67.8 (-0.6) & 46.8 (-2.6) & 33.8 (local)\\
+\bottomrule\end{tabular}
+\end{table*}
