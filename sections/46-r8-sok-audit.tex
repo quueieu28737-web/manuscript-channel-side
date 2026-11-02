@@ -3,31 +3,31 @@
 \subsection{What the nine items mean}
 R1--R9 are checks on whether an observation can be reused for a specified comparison. They are not a quality score for a paper, a safety grade, or a judgment that an original study ought to have performed every possible experiment. Bound means that at least one result record in a family supplies the requested binding; Partial retains both supported and unbound parts; NR-R means the inspected source scope does not report the requested item; NR-V means the source/run/version binding could not be verified; NA means the requested inference is outside the scoped claim. The 20-family matrix is a family-level summary, while result-level records remain distinct where mechanisms or test populations differ.
 
-R4 concerns fitting/calibrating an attacker on protected data when adaptation is part of the reuse question. R5 concerns a matched clean/adapted contrast on the same defended test. Thus R5 does not demand a learned-attacker refit for fixed-rate analytical costs, deterministic namespace controls, or non-learning mechanism benchmarks. Each item has 11 applicable families. In the record-derived projection, R4 has 4 B, 5 P, 2 U and 9 inapplicable; R5 has 2 B, 2 ?, 7 U and 9 inapplicable. U denotes an unreported binding within the inspected scope, not a failed experiment.
+R4 concerns fitting/calibrating an attacker on protected data when adaptation is part of the reuse question. R5 concerns a matched clean/adapted contrast on the same defended test. Thus R5 does not demand a learned-attacker refit for fixed-rate analytical costs, deterministic namespace controls, or non-learning mechanism benchmarks. Each item has 11 applicable families. In the record-derived projection, R4 has 4 B, 5 P, 2 U and 9 inapplicable; R5 has 2 B, 2 ?, 7 U and 9 inapplicable. U denotes a binding unreported in the inspected source scope, not a failed experiment.
 
 \begin{table*}[t]\centering\footnotesize
 \caption{R4, R5 and R8 family dispositions. Reasons are scoped to the item, not judgments of overall study quality.}\label{tab:r8-family-reasons}
 \begin{tabularx}{\textwidth}{@{}lcccX@{}}\toprule
 Family & R4 & R5 & R8 & Scope note\\\midrule
-UI Traces & B & B & U & Offline attribution does not report objective task utility.\\
+UI Traces & B & B & U & Objective task utility was not located in the inspected source sections.\\
 WRA & -- & -- & P & Proxy visibility and executable-decoy utility are not fully joined.\\
 NetEcho & B & ? & U & Topic prediction is not downstream task utility.\\
 Early Bird & B & ? & U & Semantic-cache timing is not end-to-end task utility.\\
-Whisper Leak & P & U & U & Global fitting and defended results are described; condition-specific mapping is incomplete and matched adaptation unreported.\\
+Whisper Leak & P & U & U & Global fitting and defended results are described; condition-specific mapping is incomplete and matched adaptation unreported in the inspected source sections.\\
 SpliceLeak & -- & -- & U & QCP component cost; no task-utility outcome.\\
-Time Will Tell & P & U & U & Input-length threshold profiling is specified; instruction-specific reprofiling is unbound and matched adaptation unreported.\\
+Time Will Tell & P & U & U & Input-length threshold profiling is specified; instruction-specific reprofiling is unbound and matched adaptation unreported in the inspected source sections.\\
 I Know What You Said & -- & -- & -- & Zero-copy component control; family-level utility item inapplicable.\\
-Speculative decoding & P & U & -- & Profiling and mitigation outcomes are described; protected-profile mapping is incomplete and matched adaptation unreported.\\
-Dangol workflow & B & B & U & Matched result is capture-scoped; objective workflow utility is unreported.\\
-Cloud traffic benchmark & U & U & P & Fixed-configuration fingerprints under changed prompts/temperatures; protected refitting and matched adaptation unreported.\\
+Speculative decoding & P & U & -- & Profiling and mitigation outcomes are described; protected-profile mapping is incomplete and matched adaptation unreported in the inspected source sections.\\
+Dangol workflow & B & B & U & Matched result is capture-scoped; objective workflow utility is unreported in the inspected source sections.\\
+Cloud traffic benchmark & U & U & P & Fixed-configuration fingerprints under changed prompts/temperatures; protected refitting and matched adaptation unreported in the inspected source sections.\\
 Remote timing & -- & -- & U & Fixed-rate analysis does not bind task utility.\\
 TDXRay & -- & -- & B & Vocabulary coverage is component utility, not deployment-task utility.\\
 SafeKV & -- & -- & U & Detection and serving performance use separate conditions.\\
-AHB/Turing & P & U & B & Online task accuracy is bound; condition-specific code is partial run evidence; matched adaptation is unreported.\\
+AHB/Turing & P & U & B & Online task accuracy is bound; condition-specific code is partial run evidence; matched adaptation is unreported in the inspected source sections.\\
 KV-Gov & -- & -- & U & Simulation, hardware gap and HMAC costs are distinct outcomes.\\
 CachePrune & -- & -- & B & QA/summarization outcomes bind selective cache sharing.\\
 OTRO & -- & -- & -- & Mechanism microbenchmark has no scoped task-utility outcome.\\
-SparLeak & P & U & B & \S7.5/Table~4 pairs ASR/ROUGE; profiling-to-intensity mapping is incomplete and matched adaptation unreported.\\
+SparLeak & P & U & B & \S7.5/Table~4 pairs ASR/ROUGE; profiling-to-intensity mapping is incomplete and matched adaptation unreported in the inspected source sections.\\
 Shape and Substance & U & U & U & Inspected scope reports analytic padding, not protected-fit/matched-test or task utility.\\\bottomrule
 \end{tabularx}\end{table*}
 \noindent\footnotesize B=Bound, P=Partial, U=NR-R, ?=NR-V, --=NA.

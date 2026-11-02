@@ -36,7 +36,7 @@
 \newcommand{\auditpartial}{\textbf{P}}
 \input{tables/final-counts}
 
-\title{SoK: Reusing Defense Evidence in LLM and Agent Side Channels}
+\title{Reusing Defense Evidence in LLM and Agent Side Channels: A Reporting Framework and Case Studies}
 \author{}
 
 \makeatletter
@@ -48,7 +48,11 @@
 \maketitle
 
 \begin{abstract}
-Deploying an LLM or agent defense requires deciding which protection, function and cost evidence survives a change of context. This SoK organizes that decision around three boundaries: the receiving view, the affected execution state, and the attacker and workload. Source-linked evidence cards record supported observations, incompatible measurement objects and unresolved reuse questions; analyst benefit and coding reliability are not established. An attack-evaluated map of 19 mitigation families and a purposive six-source defense-first challenge set supply case material, not estimates of reporting prevalence. A frozen retrospective source map also admits formal and design evidence without requiring an empirical attack score. Selected cache and hardware examples distinguish configuration associations from paired measurements and conditional guarantees from empirical results. Coverage, source identity and eligibility remain incomplete. A finite synthetic replay study on three pinned local model artifacts illustrates why a clean-trained attack, an adapted attack and a calibration comparison require separate interpretation; its default identical-parameter controls provide no transfer evidence. The calibration comparisons do not establish a robust transfer effect. Fresh retail-sandbox interactions quantify a deliberately state-changing write condition in a nonrandom, mutable-service-alias cohort. These are bounded applications of established evaluation principles, not a validation of the reporting procedure or a general estimate of deployment harm.
+We propose a reporting framework for deciding which defense evidence can be reused when an LLM or agent deployment changes. It organizes the decision around the receiving view, affected execution state, and attacker and workload, and records source-linked protection, function and cost in a reporting card.
+
+Two bounded cases show how the card separates evidence objects. In E4's post hoc synthetic replay, for one Qwen~8B four-chunk configuration, a fixed logistic attacker fitted to each condition has balanced accuracy/AUROC 0.744/0.800 on raw traffic and 0.732/0.773 after batching, on matched topic-held-out native outputs. These are point estimates and residual signal remains. A clean-trained attacker tested after batching scores 0.500/0.678, illustrating why a single threshold can obscure score ranking. In these local replays, response application TLS bytes are 0.381 times the raw value, excluding requests and handshakes. Calibration comparisons are exploratory, with Holm correction limited to two imports per target. R44 separately illustrates task-utility risks of a state-changing cover action in an original retail-sandbox convenience sample. Purposefully selected literature examples provide context.
+
+This is a methodological position paper: the card is a proposal grounded in existing evaluation principles. Its usefulness, reliability and effect on analyst decisions remain to be evaluated; the cases are illustrations rather than validation. Source identities and eligibility remain unresolved in parts of the frozen material, and the examples do not establish field-wide prevalence or deployment effects.
 \end{abstract}
 
 \input{sections/01-introduction}

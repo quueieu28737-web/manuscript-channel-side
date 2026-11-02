@@ -201,8 +201,9 @@ R.~H. Anwar, J.~O. Weiss, T.~Alves, S.~Kundu, and M.~T. Raza, ``{InferNet}:
 \BIBentryALTinterwordspacing
 B.~Dangol, ``From privacy to workflow integrity: Communication-graph metadata
   in autonomous agent interoperability,'' \emph{arXiv preprint
-  arXiv:2606.07150v3}, 2026, consulted arXiv:2606.07150v3; archived access 18
-  October 2026. [Online]. Available: \url{https://arxiv.org/abs/2606.07150v3}
+  arXiv:2606.07150v3}, 2026, consulted arXiv:2606.07150v3; access date recorded
+  as 18 October 2026; archived snapshot not verified. [Online]. Available:
+  \url{https://arxiv.org/abs/2606.07150v3}
 \BIBentrySTDinterwordspacing
 
 \bibitem{banerjee2024compound}
@@ -243,8 +244,9 @@ E.~Debenedetti, G.~Severi, N.~Carlini, C.~A. Choquette-Choo, M.~Jagielski,
 \BIBentryALTinterwordspacing
 N.~Lahjouji and A.~G. Colaco, ``Agents that know too much: A data-centric
   survey of privacy in {LLM} agents,'' \emph{arXiv preprint arXiv:2606.26627},
-  2026, consulted arXiv:2606.26627v1; archived access 19 October 2026.
-  [Online]. Available: \url{https://arxiv.org/abs/2606.26627v1}
+  2026, consulted arXiv:2606.26627v1; access date recorded as 19 October 2026;
+  archived snapshot not verified. [Online]. Available:
+  \url{https://arxiv.org/abs/2606.26627v1}
 \BIBentrySTDinterwordspacing
 
 \bibitem{kim2026agenticsok}
@@ -302,8 +304,9 @@ S.~Li, T.~Cui, M.~Chen, X.~Lin, Z.~Gu, X.~Deng, K.~Xu, and Q.~Li, ``From length
 S.~Pouryousef, J.~Lopez, S.~R. Nowmi, M.~M. Kamol, M.~Hossain, M.~Tran, and
   M.~S. Rahman, ``A large-scale benchmark and risk assessment of traffic
   analysis attacks on cloud {LLM} services,'' \emph{arXiv preprint
-  arXiv:2609.31877v1}, 2026, consulted arXiv:2609.31877v1; archived access 18
-  October 2026. [Online]. Available: \url{https://arxiv.org/abs/2609.31877v1}
+  arXiv:2609.31877v1}, 2026, consulted arXiv:2609.31877v1; access date recorded
+  as 18 October 2026; archived snapshot not verified. [Online]. Available:
+  \url{https://arxiv.org/abs/2609.31877v1}
 \BIBentrySTDinterwordspacing
 
 \bibitem{hadad2026shape}
@@ -373,7 +376,8 @@ H.~Jeong, M.~Teymoorianfard, A.~Kumar, A.~Houmansadr, and E.~Bagdasarian,
 J.~Zhu, L.~Yang, R.~Shan, C.~Zheng, Z.~Zheng, W.~Liu, Y.~Yu, W.~Zhang, and
   J.~Lin, ``Turing test on screen: A benchmark for mobile {GUI} agent
   humanization,'' \emph{arXiv preprint arXiv:2604.09574v1}, 2026, consulted
-  arXiv:2604.09574v1; archived access 18 October 2026. [Online]. Available:
+  arXiv:2604.09574v1; access date recorded as 18 October 2026; archived
+  snapshot not verified. [Online]. Available:
   \url{https://arxiv.org/html/2604.09574v1}
 \BIBentrySTDinterwordspacing
 
@@ -392,7 +396,8 @@ L.~Song, Z.~Pang, W.~Wang, Z.~Wang, X.~Wang, H.~Chen, W.~Song, Y.~Jin, D.~Meng,
   and R.~Hou, ``The early bird catches the leak: Unveiling timing side channels
   in {LLM} serving systems,'' \emph{IEEE Transactions on Information Forensics
   and Security}, vol.~20, pp. 11\,431--11\,446, 2025, consulted
-  arXiv:2409.20002v5; archived access 18 October 2026. [Online]. Available:
+  arXiv:2409.20002v5; access date recorded as 18 October 2026; archived
+  snapshot not verified. [Online]. Available:
   \url{https://ieeexplore.ieee.org/document/11206380/}
 \BIBentrySTDinterwordspacing
 
@@ -409,17 +414,18 @@ Z.~Gao, J.~Hu, F.~Guo, Y.~Zhang, Y.~Han, S.~Liu, H.~Li, and Z.~Lv, ``I know
 \BIBentryALTinterwordspacing
 T.~C. Addagada, ``Governing the {KV} cache: Preventing timing side-channel
   leakage in multi-tenant {LLM} inference,'' \emph{arXiv preprint
-  arXiv:2608.09225}, 2026, consulted arXiv:2608.09225v1; archived access 19
-  October 2026. [Online]. Available: \url{https://arxiv.org/abs/2608.09225v1}
+  arXiv:2608.09225}, 2026, consulted arXiv:2608.09225v1; access date recorded
+  as 19 October 2026; archived snapshot not verified. [Online]. Available:
+  \url{https://arxiv.org/abs/2608.09225v1}
 \BIBentrySTDinterwordspacing
 
 \bibitem{netecho2025}
 \BIBentryALTinterwordspacing
 Z.~Zhang, G.~Wu, S.~Deng, S.~Wang, and Y.~Zhang, ``Netecho: From real-world
   streaming side-channels to full {LLM} conversation recovery,'' \emph{arXiv
-  preprint arXiv:2510.25472}, 2025, consulted arXiv:2510.25472v1; archived
-  access 18 October 2026. [Online]. Available:
-  \url{https://arxiv.org/abs/2510.25472v1}
+  preprint arXiv:2510.25472}, 2025, consulted arXiv:2510.25472v1; access date
+  recorded as 18 October 2026; archived snapshot not verified. [Online].
+  Available: \url{https://arxiv.org/abs/2510.25472v1}
 \BIBentrySTDinterwordspacing
 
 \bibitem{lee2026otro}
@@ -435,7 +441,8 @@ J.~Lee, Y.~Wang, R.~Rajat, D.~Wong, M.~Li, and M.~Annavaram, ``Otro: Oblivious
 K.~Chu, Z.~Lin, D.~Xiang, Z.~Shen, J.~Su, C.~Chu, Y.~Yang, W.~Zhang, W.~Wu, and
   W.~Zhang, ``Selective {KV}-cache sharing to mitigate timing side-channels in
   {LLM} inference,'' \emph{arXiv preprint arXiv:2508.08438v2}, 2026, consulted
-  arXiv:2508.08438v2; archived access 18 October 2026. [Online]. Available:
+  arXiv:2508.08438v2; access date recorded as 18 October 2026; archived
+  snapshot not verified. [Online]. Available:
   \url{https://arxiv.org/abs/2508.08438v2}
 \BIBentrySTDinterwordspacing
 
@@ -444,16 +451,17 @@ K.~Chu, Z.~Lin, D.~Xiang, Z.~Shen, J.~Su, C.~Chu, Y.~Yang, W.~Zhang, W.~Wu, and
 J.~Wei, A.~Abdulrazzag, T.~Zhang, A.~Muursepp, and G.~Saileshwar, ``When
   speculation spills secrets: Side channels via speculative decoding in llms,''
   \emph{arXiv preprint arXiv:2411.01076}, 2024, consulted arXiv:2411.01076v4;
-  archived access 18 October 2026. [Online]. Available:
-  \url{https://arxiv.org/abs/2411.01076v4}
+  access date recorded as 18 October 2026; archived snapshot not verified.
+  [Online]. Available: \url{https://arxiv.org/abs/2411.01076v4}
 \BIBentrySTDinterwordspacing
 
 \bibitem{spliceleak2026}
 \BIBentryALTinterwordspacing
 H.~Sun, S.~Liu, S.~Ma, J.~Li, M.~Xiao, and W.~Jiang, ``Agent-assisted
   side-channel attacks on non-prefix {KV} cache in rag,'' \emph{arXiv preprint
-  arXiv:2606.21842}, 2026, consulted arXiv:2606.21842v1; archived access 18
-  October 2026. [Online]. Available: \url{https://arxiv.org/abs/2606.21842v1}
+  arXiv:2606.21842}, 2026, consulted arXiv:2606.21842v1; access date recorded
+  as 18 October 2026; archived snapshot not verified. [Online]. Available:
+  \url{https://arxiv.org/abs/2606.21842v1}
 \BIBentrySTDinterwordspacing
 
 \bibitem{hornetz2026tdxray}
@@ -469,8 +477,9 @@ T.~Hornetz, H.~Yavarzadeh, A.~Cheu, A.~Gascon, L.~Gerlach, D.~Moghimi,
 \BIBentryALTinterwordspacing
 T.~Zhang, G.~Saileshwar, and D.~Lie, ``Time will tell: Timing side channels via
   output token count in large language models,'' \emph{arXiv preprint
-  arXiv:2412.15431}, 2024, consulted arXiv:2412.15431v1; archived access 18
-  October 2026. [Online]. Available: \url{https://arxiv.org/abs/2412.15431v1}
+  arXiv:2412.15431}, 2024, consulted arXiv:2412.15431v1; access date recorded
+  as 18 October 2026; archived snapshot not verified. [Online]. Available:
+  \url{https://arxiv.org/abs/2412.15431v1}
 \BIBentrySTDinterwordspacing
 
 \bibitem{uitraces2026}
@@ -478,15 +487,16 @@ T.~Zhang, G.~Saileshwar, and D.~Lie, ``Time will tell: Timing side channels via
 W.~Lugoloobi, S.~Marro, J.~Magomere, J.~Wright, and C.~Russell, ``Known by
   their actions: Fingerprinting {LLM} browser agents via {UI} traces,''
   \emph{arXiv preprint arXiv:2605.14786}, 2026, consulted arXiv:2605.14786v1;
-  archived access 18 October 2026. [Online]. Available:
-  \url{https://arxiv.org/abs/2605.14786v1}
+  access date recorded as 18 October 2026; archived snapshot not verified.
+  [Online]. Available: \url{https://arxiv.org/abs/2605.14786v1}
 \BIBentrySTDinterwordspacing
 
 \bibitem{whisperleak2025}
 \BIBentryALTinterwordspacing
 G.~McDonald and J.~B. Or, ``Whisper leak: a side-channel attack on large
   language models,'' \emph{arXiv preprint arXiv:2511.03675}, 2025, consulted
-  arXiv:2511.03675v1; archived access 18 October 2026. [Online]. Available:
+  arXiv:2511.03675v1; access date recorded as 18 October 2026; archived
+  snapshot not verified. [Online]. Available:
   \url{https://arxiv.org/abs/2511.03675v1}
 \BIBentrySTDinterwordspacing
 
@@ -495,8 +505,8 @@ G.~McDonald and J.~B. Or, ``Whisper leak: a side-channel attack on large
 A.~Shahriar, M.~N. Rahman, S.~Ahmed, F.~Sadeque, and M.~R. Parvez,
   ``{AgentTell}: Behavioural side-channel leakage in browser-use agents,''
   \emph{arXiv preprint arXiv:2609.32915v1}, 2026, consulted arXiv:2609.32915v1;
-  archived access 18 October 2026. [Online]. Available:
-  \url{https://arxiv.org/abs/2609.32915v1}
+  access date recorded as 18 October 2026; archived snapshot not verified.
+  [Online]. Available: \url{https://arxiv.org/abs/2609.32915v1}
 \BIBentrySTDinterwordspacing
 
 \bibitem{gu2026behindbars}
@@ -513,7 +523,8 @@ C.~Gu, R.~Levine, Z.~Zhang, T.~Sorensen, and Y.~Guo, ``Behind bars: A
 \BIBentryALTinterwordspacing
 E.~Wang, Z.~Shafiq, and Y.~Vekaria, ``Fp-agent: Fingerprinting {AI} browsing
   agents,'' \emph{arXiv preprint arXiv:2605.01247}, 2026, consulted
-  arXiv:2605.01247v1; archived access 18 October 2026. [Online]. Available:
+  arXiv:2605.01247v1; access date recorded as 18 October 2026; archived
+  snapshot not verified. [Online]. Available:
   \url{https://arxiv.org/abs/2605.01247v1}
 \BIBentrySTDinterwordspacing
 
@@ -522,7 +533,8 @@ E.~Wang, Z.~Shafiq, and Y.~Vekaria, ``Fp-agent: Fingerprinting {AI} browsing
 J.~Geng, R.~He, Z.~Fei, B.~Yi, R.~Wang, Z.~Liu, X.~Hu, X.~Wu, and Q.~Zeng,
   ``Agent skills matter: Inferring proprietary skills from execution
   trajectories,'' \emph{arXiv preprint arXiv:2607.25560v1}, 2026, consulted
-  arXiv:2607.25560v1; archived access 18 October 2026. [Online]. Available:
+  arXiv:2607.25560v1; access date recorded as 18 October 2026; archived
+  snapshot not verified. [Online]. Available:
   \url{https://arxiv.org/abs/2607.25560v1}
 \BIBentrySTDinterwordspacing
 
@@ -557,9 +569,9 @@ N.~Alhalawani, G.~Acar, Z.~Liu, and L.~Batina, ``Physical side-channel attacks
 \BIBentryALTinterwordspacing
 S.~Majidi, N.~Mireshghallah, and K.~Taram, ``Leaky language models: Stealing
   architecture and inference optimizations via per-token timing,'' \emph{arXiv
-  preprint arXiv:2607.20723}, 2026, consulted arXiv:2607.20723v1; archived
-  access 19 October 2026. [Online]. Available:
-  \url{https://arxiv.org/abs/2607.20723v1}
+  preprint arXiv:2607.20723}, 2026, consulted arXiv:2607.20723v1; access date
+  recorded as 19 October 2026; archived snapshot not verified. [Online].
+  Available: \url{https://arxiv.org/abs/2607.20723v1}
 \BIBentrySTDinterwordspacing
 
 \bibitem{wang2026lidar}
@@ -706,9 +718,9 @@ J.~Xu, L.~Fan, Z.~Wang, X.~Li, and H.~Liu, ``Selection-invariant communication
 \bibitem{ghaleb2026codingfingerprint}
 \BIBentryALTinterwordspacing
 T.~A. Ghaleb, ``Fingerprinting {AI} coding agents on {GitHub},'' \emph{arXiv
-  preprint arXiv:2601.17406v1}, 2026, consulted arXiv:2601.17406v1; archived
-  access 18 October 2026. [Online]. Available:
-  \url{https://arxiv.org/abs/2601.17406v1}
+  preprint arXiv:2601.17406v1}, 2026, consulted arXiv:2601.17406v1; access date
+  recorded as 18 October 2026; archived snapshot not verified. [Online].
+  Available: \url{https://arxiv.org/abs/2601.17406v1}
 \BIBentrySTDinterwordspacing
 
 \bibitem{wang2026dialogue}
@@ -724,8 +736,9 @@ W.~Wang, Z.~Liu, H.~Kou, X.~Liu, and J.~Shen, ``The chatbot knows it's you:
 W.~Cui, H.~Zhang, Y.~Huang, Q.~Li \emph{et~al.}, ``{SymDiag}: Explainable
   diagnosis for {LLM} reasoning via neuro-symbolic verification,'' in
   \emph{Proceedings of the 32nd ACM SIGKDD Conference on Knowledge Discovery
-  and Data Mining V.2}, 2026, consulted arXiv:2608.08786v1; archived access 18
-  October 2026. [Online]. Available: \url{https://arxiv.org/abs/2608.08786v1}
+  and Data Mining V.2}, 2026, consulted arXiv:2608.08786v1; access date
+  recorded as 18 October 2026; archived snapshot not verified. [Online].
+  Available: \url{https://arxiv.org/abs/2608.08786v1}
 \BIBentrySTDinterwordspacing
 
 \bibitem{shao2026zeroprint}
