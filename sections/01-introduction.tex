@@ -1,5 +1,5 @@
 \section{Introduction}\label{sec:introduction}
-Encryption conceals content while serving caches, packet streams and tool executions expose other observations \cite{earlybird2025,netecho2025,jeong2026wra}. A deployment can keep the name of a defense while changing what an observer sees, which state its cover affects, or how the attacker is trained. Choosing a mechanism is therefore only the start of a deployment decision. The next question is: \emph{which protection, function and cost evidence can be retained across the proposed change?}
+Encryption conceals content while serving caches, packet streams and tool executions expose other observations \cite{earlybird2025,netecho2025,jeong2026wra}. A deployment can keep the name of a defense while changing what an observer sees, which state its cover affects, or how the attacker is trained. Choosing a mechanism is therefore only the start of a deployment decision. The next question is: \emph{which protection, function and cost evidence can be retained across the proposed change?} Answering it requires comparing what was measured with what the new receiver and execution actually expose.
 
 \paragraph{One defense name can refer to different evidence}
 CachePrune's selective-sharing results can inform a configuration-specific feasibility assessment \cite[5.1--5.6]{wu2026cacheprune}. Early Bird's prefix policy and semantic-cache prototype require separate cost decisions \cite[V-A--B]{earlybird2025}. These distinctions follow from the observer, primitive, operating point and measurement object. A shared mechanism or dataset name does not establish paired observations. The useful outcome is a scoped candidate and a measurement decision.
@@ -15,8 +15,8 @@ This is a methodological position paper, not a comprehensive literature review. 
 \paragraph{Contributions}
 \begin{itemize}
 \item We organize evidence reuse around three boundaries: receiving view, affected execution state, and attacker and workload.
-\item We propose a source-linked reporting card (Table~\ref{tab:r33-card}) that records the protection, function, cost and measurement links needed for a reuse decision.
-\item We apply these distinctions to two bounded cases: E4 is a finite synthetic TLS replay study of attacker fitting and calibration; R44 is a retail-sandbox study of extra tool actions and task utility. They illustrate the reporting choices, rather than validate the card.
+\item We propose a source-linked reporting card (Table~\ref{tab:r33-card}) that connects protection, function and cost to the measured view, action and attacker, and identifies a supported comparison, a mismatch or a missing measurement.
+\item We apply these distinctions to two bounded cases: E4 compares attacker fitting in a synthetic TLS replay; R44 measures task utility under extra actions in a retail sandbox. Together they illustrate why fitting and state effects belong in a reuse decision; they do not validate the card.
 \end{itemize}
 The case material is selected purposefully. Its provenance, nested counts and outstanding identity and eligibility questions are retained in the supplement. Existing website-fingerprinting and adversarial-evaluation guidance supplies essential precedents; Section~\ref{sec:corpus-map} compares the proposed card with those traditions.
 \input{tables/r9-rq-findings}

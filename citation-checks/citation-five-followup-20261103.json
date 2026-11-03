@@ -1,0 +1,72 @@
+{
+  "checked_utc": "2026-11-03T02:11:25.186381+00:00",
+  "scope": "Targeted bibliographic metadata for the five previously unresolved references; no new literature search.",
+  "sources": [
+    {
+      "key": "lee2026otro",
+      "id": "2606.17358v1",
+      "url": "https://arxiv.org/abs/2606.17358v1",
+      "title": "OTRO: Oblivious Tokenization Path with Square-Root ORAM",
+      "authors": "Jonghyun Lee; Yongqin Wang; Rachit Rajat; Daniel Wong; Mengyuan Li; Murali Annavaram",
+      "version_date": "2026-06-15",
+      "source_type": "arXiv abstract page",
+      "title_and_identifier_match_bib": true,
+      "author_initials_match_bib": true
+    },
+    {
+      "key": "netecho2025",
+      "id": "2510.25472v1",
+      "url": "https://arxiv.org/abs/2510.25472v1",
+      "title": "NetEcho: From Real-World Streaming Side-Channels to Full LLM Conversation Recovery",
+      "authors": "Zheng Zhang; Guanlong Wu; Sen Deng; Shuai Wang; Yinqian Zhang",
+      "version_date": "2025-10-29",
+      "source_type": "arXiv abstract page",
+      "title_and_identifier_match_bib": true,
+      "author_initials_match_bib": true
+    },
+    {
+      "key": "pennas2026cachesolidarity",
+      "id": "2603.10726v1",
+      "url": "https://arxiv.org/abs/2603.10726v1",
+      "title": "CacheSolidarity: Preventing Prefix Caching Side Channels in Multi-tenant LLM Serving Systems",
+      "authors": "Panagiotis Georgios Pennas; Konstantinos Papaioannou; Marco Guarnieri; Thaleia Dimitra Doudali",
+      "version_date": "2026-03-11",
+      "source_type": "arXiv abstract page",
+      "additional_version": "https://arxiv.org/abs/2603.10726v2 is titled PrefixWall; v1 and v2 are not treated as byte-identical",
+      "title_and_identifier_match_bib": true,
+      "author_initials_match_bib": true
+    },
+    {
+      "key": "hadad2026shape",
+      "id": "2603.25403v1",
+      "url": "https://arxiv.org/html/2603.25403v1",
+      "title": "Shape and Substance: Dual-Layer Side-Channel Attacks on Local Vision-Language Models",
+      "authors": "Eyal Hadad; Mordechai Guri",
+      "version_date": "2026-03-26 (HTML header)",
+      "source_type": "arXiv HTML",
+      "issue": "HTML manuscript-received note says 2026-08-24, later than its displayed v1 header; origin unresolved",
+      "title_and_identifier_match_bib": true,
+      "author_initials_match_bib": true
+    },
+    {
+      "key": "politis2026gradients",
+      "id": "2610.04128v1",
+      "url": "https://arxiv.org/html/2610.04128v1",
+      "title": "What Gradients Add to Text Leakage in Split Language Models, Counted per Token and per Document",
+      "authors": "Georgios Politis; Evangelos Pappas",
+      "version_date": "2026-10-02 (HTML header)",
+      "source_type": "arXiv HTML",
+      "title_and_identifier_match_bib": true,
+      "author_initials_match_bib": true
+    }
+  ],
+  "attempts": [
+    "Versioned abs pages for 2603.25403v1 and 2610.04128v1 returned tool cache misses; their versioned HTML renderings succeeded.",
+    "The export.arxiv.org batch API URL was not accessible through the browsing tool."
+  ],
+  "limits": [
+    "Metadata comparison is not a verification of full source semantics, historical snapshots, access dates or publisher-version equivalence.",
+    "Earlier discarded outputs and tool errors remain historical unknowns.",
+    "SICC and Turing Test on Screen previously recorded date inconsistencies remain unresolved."
+  ]
+}

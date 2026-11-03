@@ -1,0 +1,43 @@
+{
+  "status": "FIVE_TARGETED_METADATA_MATCHES",
+  "prior_checked": 66,
+  "total_cited_arxiv_entries": 71,
+  "results": [
+    {
+      "key": "lee2026otro",
+      "id": "2606.17358v1",
+      "title_match": true,
+      "author_initials_and_order_match": true,
+      "version_in_inventory": true
+    },
+    {
+      "key": "netecho2025",
+      "id": "2510.25472v1",
+      "title_match": true,
+      "author_initials_and_order_match": true,
+      "version_in_inventory": true
+    },
+    {
+      "key": "pennas2026cachesolidarity",
+      "id": "2603.10726v1",
+      "title_match": true,
+      "author_initials_and_order_match": true,
+      "version_in_inventory": true
+    },
+    {
+      "key": "hadad2026shape",
+      "id": "2603.25403v1",
+      "title_match": true,
+      "author_initials_and_order_match": true,
+      "version_in_inventory": true
+    },
+    {
+      "key": "politis2026gradients",
+      "id": "2610.04128v1",
+      "title_match": true,
+      "author_initials_and_order_match": true,
+      "version_in_inventory": true
+    }
+  ],
+  "limits": "Metadata checks do not authenticate source semantics, earlier snapshots, or publisher versions."
+}
