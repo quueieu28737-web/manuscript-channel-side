@@ -1,0 +1,46 @@
+\section{Case A Details}\label{app:case-a}\label{app:boundary-experiments}
+\paragraph{Defenses and attackers}
+The transport controls are fixed-size buckets, chunk batching, variable-stop fixed cells and a hard cap on application events; overflow-retaining minimum-count padding is a separate ablation. Observations are response application-record lengths and timing, excluding request and handshake traffic. The original attacker suite separately maximized out-of-fold BA over logistic regression, random forest and gradient boosting for each of the raw, $D_0$ and $D_2$ conditions. Selecting and reporting each winner on the same out-of-fold predictions can be optimistic, which is why Section~\ref{sec:case-a} reports one fixed learner instead. That learner was chosen retrospectively; its paired bootstrap (2,000 draws, 50 topics per class, all templates of each sampled topic) holds fitted predictors fixed. The five additional splits use seeds 11, 29, 47, 71 and 101 with no topic shared between training and evaluation within a split.
+
+\paragraph{Calibration transfer: a negative result}
+We asked whether a defense parameter calibrated on one model could be imported to another. For the default bucket, batching and fixed-cell controls the question is empty: all 45 source--target--fold combinations use the same parameters (32-byte bucket quantum, four chunks per batch, 32-byte cells at 50\,ms ticks), so imported-minus-local differences are zero by construction and carry no evidence. The hard-cap control does differ across sources in some folds. Table~\ref{tab:r46-hardcap-conditional} reports all six imported-minus-local contrasts. Five intervals include or touch zero; the one that excludes it (Llama~1B cap imported to Qwen~8B, $+3.4$ BA points, $[0.8, 5.4]$) means worse protection, and its Holm-adjusted $p$ covers only the two imports per target. A later resampling of the 80 local training topics (500 draws per target and fold) shows how much the fitted cap itself varies: for Qwen~8B fold~0 the local cap is 87 events with a 2.5th--97.5th percentile range of 83--89, against imported caps of 90 (Qwen~0.6B) and 128 (Llama~1B). The resampling did not rerun attacks. We draw no conclusion about calibration transfer from these data beyond the design lesson in Table~\ref{tab:r26-transfer-objects}: a transfer comparison needs parameters that actually differ and a control for local fitting variability.
+
+\input{tables/r46-e4-hardcap-conditional}
+
+\paragraph{Run provenance}
+The original queue retained 34,440 successful captures, one unknown outcome and 559 jobs that never started. Recovery collected the latter and a post hoc 500-session Qwen~8B fixed-cell repeat with the same TLS implementation in a new runtime. Among 495 matched sessions, bytes and record counts agree and the median topic-mean completion difference is $-0.461$\,ms; this does not rule out batch effects. The original unknown outcome remains unknown.
+
+\section{Case B Details}\label{app:case-b}
+An earlier run with a served GLM planner stopped after 347 of 900 planned episodes because of transport failures. Its 187 incomplete task--repeat blocks, selected by terminal-file existence rather than measured utility, were rerun in all three arms with a \texttt{qwen3.8-flash-next} planner and simulated user on independently cloned states, giving the 561 episodes over 98 tasks and 46 customers in Section~\ref{sec:case-b}. The 113 blocks that were complete at interruption (80 tasks) are reported separately and never paired with Qwen arms. Extra calls are chosen without access to gold actions, and episodes in which the cover was never triggered remain included. Task-bootstrap intervals condition on the selected cohort; sign-flip tests assume task-level sign symmetry, and the read-cover interval is not an equivalence bound. Earlier shadow checks with reference programs are separate and do not substitute for a fresh-planner side-effect-free control. Recovery changed concurrency from 10 to 2 and the transport path; recorded time excludes the ten interrupted waits and is not a complete cost.
+
+\section{Source Material}\label{app:sources}
+\paragraph{How examples were collected}
+The original source map was assembled from seed papers, venue screening, citation tracing, Semantic Scholar and arXiv queries, and closed on 21 October 2026. A core source had to (C1) involve LLM or agent execution, (C2) target a hidden property, (C3) use an auxiliary observable that depends on execution, (C4) specify observer permissions and (C5) evaluate inference empirically. Because C5 requires a scored attack, the map under-represents defense papers and formal or hardware guarantees. A defense-first search on 27 October added six sources (Table~\ref{tab:r42-defense-first}): four named seeds (CacheSolidarity, PlanTwin, SICC, DP-MemView) and two additions (OCELOT, AirGapAgent) from nine logged queries. Hardware and formal examples (SecEmb, Palermo, OTRO, Opal, TDXRay) illustrate evidence that C5 omits; architecture venues such as ISCA, MICRO, HPCA, ASPLOS and CHES were not systematically searched. Table~\ref{tab:source-ledger} summarizes the material. Its counts index ledgers for reconstruction; they are not samples of the literature, and the paper draws no frequency conclusions from them.
+
+\begin{table}[h]
+\caption{Source material and its role. Full indices are in the supplement.}\label{tab:source-ledger}
+\centering\footnotesize
+\begin{tabularx}{\columnwidth}{@{}lY@{}}\toprule
+Material & Content and role \\ \midrule
+Original map & 82 source families (58 meet C1--C5, 24 adjacent); supplies most boundary examples. \\
+Defense-first set & Six defense papers; Table~\ref{tab:r42-defense-first}. \\
+Hardware/formal & Selected examples of evidence that C5 excludes. \\
+External WF & 15 records from published WF defenses, used to check that the card reproduces decisions the source papers already support. \\
+\bottomrule\end{tabularx}
+\end{table}
+
+\paragraph{External WF check}
+As a sanity check, the card was applied to published WF defenses with their outcomes visible. It reproduces distinctions that the source papers already draw: WFDefProxy's FRONT comparison reports DF true-positive rate 72.06\% versus 42.79\% at different false-positive rates and overheads, so the observed tuples are retained rather than ranked \cite[6.2, Table~10]{gong2021wfdefproxy}; DynaFlow's 379\% live time overhead in Mathews et al.\ is not a matched simulation-versus-live effect because URLs and crawler changed \cite[IV-F, Table~II]{mathews2023critical}. The check shows that the card is consistent with established practice, not that it finds errors that practice misses.
+
+\paragraph{Version questions}
+Table~\ref{tab:version-status} lists the version issues that affect interpretation; claims are scoped to the inspected version.
+
+\begin{table}[h]\centering\footnotesize
+\caption{Version questions retained for source-specific interpretation.}\label{tab:version-status}
+\begin{tabularx}{\columnwidth}{@{}lY@{}}\toprule
+Source & Status \\ \midrule
+CacheSolidarity & v1 inspected; v2 is retitled PrefixWall (latest v3). Version-specific results are not merged. \\
+SICC v1 & arXiv lists submission on 4 August 2026 under a September identifier; claims scoped to v1. \\
+Palermo v1 & Preprint inspected; equivalence with the published version not checked. \\
+Turing Test v1 & arXiv lists submission in February 2026 under an April identifier; claims scoped to v1. \\
+\bottomrule\end{tabularx}\end{table}

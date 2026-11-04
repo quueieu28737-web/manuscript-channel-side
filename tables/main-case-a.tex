@@ -1,0 +1,10 @@
+\begin{table}[t]\centering\footnotesize
+\caption{Case~A at Qwen~8B, four-chunk batching: one fixed logistic-regression attacker, 500 topic-held-out outputs. Brackets: paired topic-stratified bootstrap 95\% intervals, holding fitted predictors fixed. The raw row uses the same learner; its differences from the defended-fit row ($-0.012$ BA, $-0.027$ AUROC) have no interval.}\label{tab:case-a}
+\begin{tabular}{@{}lll@{}}\toprule
+Condition & BA & AUROC\\\midrule
+No defense (raw stream) & 0.744 & 0.800\\
+Batched; attacker fit on clean ($D_0$) & 0.500 & 0.678\\
+Batched; attacker fit on batched ($D_2$) & 0.732 & 0.773\\\midrule
+$D_2-D_0$ & $+0.232$ & $+0.094$\\
+ & {[0.168, 0.286]} & {[0.005, 0.189]}\\
+\bottomrule\end{tabular}\end{table}

@@ -1,0 +1,38 @@
+\section{The Reporting Card}\label{sec:card}\label{sec:methodology}
+The three rules become usable only if a reader can apply them to a specific paper and a specific deployment. The reporting card (Table~\ref{tab:r33-card}) records, for one source configuration, the evidence for each boundary together with the function and cost measured under it.
+
+\input{tables/r33-reporting-card}
+
+\subsection{From fields to a decision}
+A reuse decision starts from a \emph{claim}, not from a paper: ``this defense protects my deployment's TTFT channel'', ``its quality loss is negligible on my model'', ``its overhead is 6\,ms''. Each claim depends on a subset of the fields. A protection claim needs Receiver, Intervention, Attacker and Extension; a cost claim needs Intervention, Cost and Extension; a function claim for executed cover needs Intervention and Function at the task level. The decision rule is:
+\begin{itemize}
+\item \textbf{Supported} if every required field is \textbf{B} and the deployment matches it.
+\item \textbf{Incompatible} if a required field shows a demonstrated mismatch, for example a cost measured with the protection disabled.
+\item \textbf{Unresolved} otherwise. The output names the fields that are \textbf{P}, \textbf{U} or \textbf{?}, and therefore the measurement still needed.
+\end{itemize}
+Figure~\ref{fig:main-decision} shows the procedure. Three outcomes may seem coarse, but the information lies in their combination. One paper rarely yields a single verdict; it yields different outcomes for different claims, and an unresolved outcome is actionable because it specifies what to measure.
+
+\begin{figure*}[t]\centering
+\input{figures/defense-decision-procedure}
+\caption{Decision procedure for reusing a defense result. Each step binds one boundary; the output is per claim.}\label{fig:main-decision}
+\end{figure*}
+
+\subsection{A complete example}
+Table~\ref{tab:worked-card} fills every field for CachePrune \cite{wu2026cacheprune}, which excludes detector-marked sensitive spans from cross-user KV-cache sharing. The hypothetical deployment runs a different model and its tenants can time responses remotely. The card separates three conclusions that a summary such as ``CachePrune protects prompts at little cost'' would merge. The recovery results support protection against binary hit/miss leakage, because the source's abstract oracle is at least as strong as a remote timer for that signal. The fixed-chunk comparison in \S5.7 cannot price protection, because it disables privacy filtering. Quality, latency and detector recall must be measured again on the target. Filling the card required CachePrune's \S3.1, \S5.1--5.7 and Tables~1--2.
+
+\input{tables/main-worked-card}
+
+\subsection{Applying the card to defense papers}
+Table~\ref{tab:r42-defense-first} applies the card to six defense papers. All five for which output quality applies report a functional score, and the sixth (CacheSolidarity) supports exact-prefix preservation, so the card's role is not to find missing measurements. It shows which measurements may be joined. OCELOT binds protection, task success and an 18.3\% wall-clock overhead at the same release boundary \cite{xie2026ocelot}, so the three can be reused together. PlanTwin's re-identification diagnostic uses unrestricted fields, so it cannot be joined to planning quality under the privacy budget \cite{yu2026plantwin}. DP-MemView's AUC of 0.976 applies to the exposed-score view only (Rule~1). SICC and OCELOT evaluate adaptive attacks beyond the clean-versus-defended fitting contrast; recording them under Attacker/test keeps that evidence visible rather than reducing it to a single adaptive/non-adaptive flag.
+
+\input{tables/main-defense-first}
+
+\subsection{Filling, disagreement and adoption}
+\paragraph{Procedure}
+(1) State the claim and the deployment change. (2) For each required field, quote the source with a locator, or write ``not located''. (3) Assign a status code. (4) Derive the outcome and, if it is unresolved, the missing measurement. Inspected sections are recorded, so a \textbf{U} means ``not located in these sections'', which another reader can check.
+
+\paragraph{Disagreement}
+When two readers fill the same card, we propose that each cell take the weaker code (\textbf{B} $>$ \textbf{P} $>$ \textbf{U}) until one reader produces a locator that settles it; a disagreement that remains is reported in the card rather than resolved by authority. This rule is a proposal; its effect on agreement has not been measured (Section~\ref{sec:validation}).
+
+\paragraph{Who uses the card}
+Defense authors can include a filled card as an appendix, stating which receiver, execution mode and attacker fit each number belongs to. Reviewers can ask three questions---which emitter's trace was measured, does cover execute, and was the attacker fitted on defended outputs---that correspond to Rules~1--3. Benchmark designers can log the same fields with every result, so that later reuse does not depend on reconstructing them from prose. An editable template accompanies the artifact.

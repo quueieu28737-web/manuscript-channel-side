@@ -1,0 +1,999 @@
+{
+ "date": "2026-11-04",
+ "method": "arXiv export API (title, first-author surname, latest version) and Crossref works API (title) queried for every bib entry with an arXiv identifier or DOI in refs*.bib",
+ "arxiv": {
+  "checked": 75,
+  "title_and_first_author_match": 75,
+  "entries": [
+   {
+    "file": "refs-defense-first.bib",
+    "key": "xie2026ocelot",
+    "id": "2606.12341",
+    "cited_versions": "['v1']",
+    "latest_version": "v1",
+    "title_similarity": 1.0,
+    "first_author_match": true,
+    "arxiv_v1_date": "2026-06-10"
+   },
+   {
+    "file": "refs-defense-first.bib",
+    "key": "bagdasarian2024airgap",
+    "id": "2405.05175",
+    "cited_versions": "['v2']",
+    "latest_version": "v2",
+    "title_similarity": 1.0,
+    "first_author_match": true,
+    "arxiv_v1_date": "2024-05-08"
+   },
+   {
+    "file": "refs-final-additions.bib",
+    "key": "newsham2025personadecisions",
+    "id": "2504.00727",
+    "cited_versions": "['v1']",
+    "latest_version": "v1",
+    "title_similarity": 1.0,
+    "first_author_match": true,
+    "arxiv_v1_date": "2025-04-01"
+   },
+   {
+    "file": "refs-final-additions.bib",
+    "key": "zhu2026turing",
+    "id": "2604.09574",
+    "cited_versions": "['v1']",
+    "latest_version": "v1",
+    "title_similarity": 1.0,
+    "first_author_match": true,
+    "arxiv_v1_date": "2026-02-24"
+   },
+   {
+    "file": "refs-final-additions.bib",
+    "key": "ye2024palermo",
+    "id": "2411.05400",
+    "cited_versions": "['v1']",
+    "latest_version": "v1",
+    "title_similarity": 1.0,
+    "first_author_match": true,
+    "arxiv_v1_date": "2024-11-08"
+   },
+   {
+    "file": "refs-final-additions.bib",
+    "key": "geng2026sigleak",
+    "id": "2607.25560",
+    "cited_versions": "['v1']",
+    "latest_version": "v2",
+    "title_similarity": 1.0,
+    "first_author_match": true,
+    "arxiv_v1_date": "2026-07-28"
+   },
+   {
+    "file": "refs-final-additions.bib",
+    "key": "oderinwale2026procgrep",
+    "id": "2606.16988",
+    "cited_versions": "['v1']",
+    "latest_version": "v2",
+    "title_similarity": 1.0,
+    "first_author_match": true,
+    "arxiv_v1_date": "2026-06-15"
+   },
+   {
+    "file": "refs-final-additions.bib",
+    "key": "wu2025mobileagents",
+    "id": "2505.12981",
+    "cited_versions": "['v1']",
+    "latest_version": "v2",
+    "title_similarity": 1.0,
+    "first_author_match": true,
+    "arxiv_v1_date": "2025-05-19"
+   },
+   {
+    "file": "refs-final-additions.bib",
+    "key": "mudryi2025hidden",
+    "id": "2505.13076",
+    "cited_versions": "['v1']",
+    "latest_version": "v1",
+    "title_similarity": 1.0,
+    "first_author_match": true,
+    "arxiv_v1_date": "2025-05-19"
+   },
+   {
+    "file": "refs-final-additions.bib",
+    "key": "yona2024stealing",
+    "id": "2410.22884",
+    "cited_versions": "['v1']",
+    "latest_version": "v1",
+    "title_similarity": 1.0,
+    "first_author_match": true,
+    "arxiv_v1_date": "2024-10-30"
+   },
+   {
+    "file": "refs-final-additions.bib",
+    "key": "chu2025safekv",
+    "id": "2508.08438",
+    "cited_versions": "['v2']",
+    "latest_version": "v2",
+    "title_similarity": 1.0,
+    "first_author_match": true,
+    "arxiv_v1_date": "2025-08-11"
+   },
+   {
+    "file": "refs-final-additions.bib",
+    "key": "anwar2026infernet",
+    "id": "2304.03388",
+    "cited_versions": "['v2']",
+    "latest_version": "v2",
+    "title_similarity": 1.0,
+    "first_author_match": true,
+    "arxiv_v1_date": "2023-04-06"
+   },
+   {
+    "file": "refs-final-additions.bib",
+    "key": "ghaleb2026codingfingerprint",
+    "id": "2601.17406",
+    "cited_versions": "['v1']",
+    "latest_version": "v1",
+    "title_similarity": 1.0,
+    "first_author_match": true,
+    "arxiv_v1_date": "2026-01-24"
+   },
+   {
+    "file": "refs-final-additions.bib",
+    "key": "george2025cycles",
+    "id": "2511.10650",
+    "cited_versions": "['v1']",
+    "latest_version": "v1",
+    "title_similarity": 1.0,
+    "first_author_match": true,
+    "arxiv_v1_date": "2025-10-31"
+   },
+   {
+    "file": "refs-final-additions.bib",
+    "key": "solomon2026lumimas",
+    "id": "2508.12412",
+    "cited_versions": "['v2']",
+    "latest_version": "v2",
+    "title_similarity": 1.0,
+    "first_author_match": true,
+    "arxiv_v1_date": "2025-08-17"
+   },
+   {
+    "file": "refs-final-additions.bib",
+    "key": "majidi2026leakylms",
+    "id": "2607.20723",
+    "cited_versions": "['v1']",
+    "latest_version": "v1",
+    "title_similarity": 1.0,
+    "first_author_match": true,
+    "arxiv_v1_date": "2026-07-22"
+   },
+   {
+    "file": "refs-final-additions.bib",
+    "key": "banerjee2024compound",
+    "id": "2411.13459",
+    "cited_versions": "['v1']",
+    "latest_version": "v1",
+    "title_similarity": 1.0,
+    "first_author_match": true,
+    "arxiv_v1_date": "2024-11-20"
+   },
+   {
+    "file": "refs-final-additions.bib",
+    "key": "forough2026secrets",
+    "id": "2605.03213",
+    "cited_versions": "['v2']",
+    "latest_version": "v2",
+    "title_similarity": 1.0,
+    "first_author_match": true,
+    "arxiv_v1_date": "2026-05-04"
+   },
+   {
+    "file": "refs-final-additions.bib",
+    "key": "lahjouji2026datacentric",
+    "id": "2606.26627",
+    "cited_versions": "['v1']",
+    "latest_version": "v1",
+    "title_similarity": 1.0,
+    "first_author_match": true,
+    "arxiv_v1_date": "2026-06-25"
+   },
+   {
+    "file": "refs-final-additions.bib",
+    "key": "scheinert2026rca",
+    "id": "2603.02057",
+    "cited_versions": "['v1']",
+    "latest_version": "v1",
+    "title_similarity": 1.0,
+    "first_author_match": true,
+    "arxiv_v1_date": "2026-03-02"
+   },
+   {
+    "file": "refs-final-additions.bib",
+    "key": "shao2026zeroprint",
+    "id": "2510.06605",
+    "cited_versions": "['v2']",
+    "latest_version": "v2",
+    "title_similarity": 1.0,
+    "first_author_match": true,
+    "arxiv_v1_date": "2025-10-08"
+   },
+   {
+    "file": "refs-final-additions.bib",
+    "key": "leshin2026endpoint",
+    "id": "2603.19022",
+    "cited_versions": "['v1']",
+    "latest_version": "v1",
+    "title_similarity": 1.0,
+    "first_author_match": true,
+    "arxiv_v1_date": "2026-03-19"
+   },
+   {
+    "file": "refs-final-additions.bib",
+    "key": "zhu2026stepfinder",
+    "id": "2606.03467",
+    "cited_versions": "['v1']",
+    "latest_version": "v1",
+    "title_similarity": 1.0,
+    "first_author_match": true,
+    "arxiv_v1_date": "2026-06-02"
+   },
+   {
+    "file": "refs-final-additions.bib",
+    "key": "gong2021wfdefproxy",
+    "id": "2111.12629",
+    "cited_versions": "['v1']",
+    "latest_version": "v1",
+    "title_similarity": 1.0,
+    "first_author_match": true,
+    "arxiv_v1_date": "2021-11-24"
+   },
+   {
+    "file": "refs-methodology.bib",
+    "key": "tramer2020adaptive",
+    "id": "2002.08347",
+    "cited_versions": "['v2']",
+    "latest_version": "v2",
+    "title_similarity": 1.0,
+    "first_author_match": true,
+    "arxiv_v1_date": "2020-02-19"
+   },
+   {
+    "file": "refs-methodology.bib",
+    "key": "carlini2019evaluating",
+    "id": "1902.06705",
+    "cited_versions": "['v2']",
+    "latest_version": "v2",
+    "title_similarity": 1.0,
+    "first_author_match": true,
+    "arxiv_v1_date": "2019-02-18"
+   },
+   {
+    "file": "refs-search-completion.bib",
+    "key": "lee2026otro",
+    "id": "2606.17358",
+    "cited_versions": "['v1']",
+    "latest_version": "v3",
+    "title_similarity": 1.0,
+    "first_author_match": true,
+    "arxiv_v1_date": "2026-06-15"
+   },
+   {
+    "file": "refs-search-completion.bib",
+    "key": "alhalawani2026physicaledge",
+    "id": "2610.14215",
+    "cited_versions": "['v1']",
+    "latest_version": "v1",
+    "title_similarity": 1.0,
+    "first_author_match": true,
+    "arxiv_v1_date": "2026-10-09"
+   },
+   {
+    "file": "refs-search-completion.bib",
+    "key": "nazaraliyev2026page404",
+    "id": "2610.20962",
+    "cited_versions": "['v1']",
+    "latest_version": "v3",
+    "title_similarity": 1.0,
+    "first_author_match": true,
+    "arxiv_v1_date": "2026-10-14"
+   },
+   {
+    "file": "refs-search-completion.bib",
+    "key": "chen2026sparleak",
+    "id": "2609.38830",
+    "cited_versions": "['v1']",
+    "latest_version": "v1",
+    "title_similarity": 1.0,
+    "first_author_match": true,
+    "arxiv_v1_date": "2026-09-30"
+   },
+   {
+    "file": "refs-search-completion.bib",
+    "key": "hadad2026shape",
+    "id": "2603.25403",
+    "cited_versions": "['v1']",
+    "latest_version": "v2",
+    "title_similarity": 1.0,
+    "first_author_match": true,
+    "arxiv_v1_date": "2026-03-26"
+   },
+   {
+    "file": "refs-search-completion.bib",
+    "key": "jo2026sparseety",
+    "id": "2608.02995",
+    "cited_versions": "['v1']",
+    "latest_version": "v1",
+    "title_similarity": 1.0,
+    "first_author_match": true,
+    "arxiv_v1_date": "2026-08-04"
+   },
+   {
+    "file": "refs-search-completion.bib",
+    "key": "politis2026splitdecoy",
+    "id": "2609.04382",
+    "cited_versions": "['v1']",
+    "latest_version": "v1",
+    "title_similarity": 1.0,
+    "first_author_match": true,
+    "arxiv_v1_date": "2026-09-03"
+   },
+   {
+    "file": "refs-search-completion.bib",
+    "key": "chen2026routingmetadata",
+    "id": "2610.09981",
+    "cited_versions": "['v1']",
+    "latest_version": "v1",
+    "title_similarity": 1.0,
+    "first_author_match": true,
+    "arxiv_v1_date": "2026-10-07"
+   },
+   {
+    "file": "refs-search-completion.bib",
+    "key": "wu2026cacheprune",
+    "id": "2605.23640",
+    "cited_versions": "['v1']",
+    "latest_version": "v1",
+    "title_similarity": 1.0,
+    "first_author_match": true,
+    "arxiv_v1_date": "2026-05-22"
+   },
+   {
+    "file": "refs-search-completion.bib",
+    "key": "revankar2026mirage",
+    "id": "2606.10304",
+    "cited_versions": "['v1']",
+    "latest_version": "v1",
+    "title_similarity": 1.0,
+    "first_author_match": true,
+    "arxiv_v1_date": "2026-06-09"
+   },
+   {
+    "file": "refs-search-completion.bib",
+    "key": "fayolle2026webagents",
+    "id": "2606.30119",
+    "cited_versions": "['v1']",
+    "latest_version": "v1",
+    "title_similarity": 1.0,
+    "first_author_match": true,
+    "arxiv_v1_date": "2026-06-29"
+   },
+   {
+    "file": "refs-search-completion.bib",
+    "key": "wang2026agentprov",
+    "id": "2609.00052",
+    "cited_versions": "['v1']",
+    "latest_version": "v1",
+    "title_similarity": 1.0,
+    "first_author_match": true,
+    "arxiv_v1_date": "2026-08-30"
+   },
+   {
+    "file": "refs-search-completion.bib",
+    "key": "wang2026lidar",
+    "id": "2609.28559",
+    "cited_versions": "['v1']",
+    "latest_version": "v1",
+    "title_similarity": 1.0,
+    "first_author_match": true,
+    "arxiv_v1_date": "2026-09-23"
+   },
+   {
+    "file": "refs-search-completion.bib",
+    "key": "park2026crosscampaign",
+    "id": "2607.18826",
+    "cited_versions": "['v1']",
+    "latest_version": "v1",
+    "title_similarity": 1.0,
+    "first_author_match": true,
+    "arxiv_v1_date": "2026-07-21"
+   },
+   {
+    "file": "refs-search-completion.bib",
+    "key": "kotevska2026privacyfoundations",
+    "id": "2609.39787",
+    "cited_versions": "['v1']",
+    "latest_version": "v2",
+    "title_similarity": 1.0,
+    "first_author_match": true,
+    "arxiv_v1_date": "2026-09-30"
+   },
+   {
+    "file": "refs-search-completion.bib",
+    "key": "dpmemview2026",
+    "id": "2608.03130",
+    "cited_versions": "['v1']",
+    "latest_version": "v1",
+    "title_similarity": 1.0,
+    "first_author_match": true,
+    "arxiv_v1_date": "2026-08-04"
+   },
+   {
+    "file": "refs-search-completion.bib",
+    "key": "pricon2026",
+    "id": "2609.32642",
+    "cited_versions": "['v1']",
+    "latest_version": "v1",
+    "title_similarity": 1.0,
+    "first_author_match": true,
+    "arxiv_v1_date": "2026-09-26"
+   },
+   {
+    "file": "refs-search-completion.bib",
+    "key": "mondol2025scaar",
+    "id": "2501.14512",
+    "cited_versions": "['v1']",
+    "latest_version": "v1",
+    "title_similarity": 1.0,
+    "first_author_match": true,
+    "arxiv_v1_date": "2025-01-24"
+   },
+   {
+    "file": "refs-search-completion.bib",
+    "key": "pennas2026cachesolidarity",
+    "id": "2603.10726",
+    "cited_versions": "['v1']",
+    "latest_version": "v3",
+    "title_similarity": 1.0,
+    "first_author_match": true,
+    "arxiv_v1_date": "2026-03-11"
+   },
+   {
+    "file": "refs-search-completion.bib",
+    "key": "zhou2026visionencoder",
+    "id": "2606.14783",
+    "cited_versions": "['v1']",
+    "latest_version": "v1",
+    "title_similarity": 1.0,
+    "first_author_match": true,
+    "arxiv_v1_date": "2026-06-10"
+   },
+   {
+    "file": "refs-search-completion.bib",
+    "key": "politis2026gradients",
+    "id": "2610.04128",
+    "cited_versions": "['v1']",
+    "latest_version": "v1",
+    "title_similarity": 1.0,
+    "first_author_match": true,
+    "arxiv_v1_date": "2026-10-02"
+   },
+   {
+    "file": "refs.bib",
+    "key": "agentprint2025",
+    "id": "2510.07176",
+    "cited_versions": "[]",
+    "latest_version": "v1",
+    "title_similarity": 1.0,
+    "first_author_match": true,
+    "arxiv_v1_date": "2025-10-08"
+   },
+   {
+    "file": "refs.bib",
+    "key": "uitraces2026",
+    "id": "2605.14786",
+    "cited_versions": "['v1']",
+    "latest_version": "v1",
+    "title_similarity": 1.0,
+    "first_author_match": true,
+    "arxiv_v1_date": "2026-05-14"
+   },
+   {
+    "file": "refs.bib",
+    "key": "netecho2025",
+    "id": "2510.25472",
+    "cited_versions": "['v1']",
+    "latest_version": "v1",
+    "title_similarity": 1.0,
+    "first_author_match": true,
+    "arxiv_v1_date": "2025-10-29"
+   },
+   {
+    "file": "refs.bib",
+    "key": "whisperleak2025",
+    "id": "2511.03675",
+    "cited_versions": "['v1']",
+    "latest_version": "v1",
+    "title_similarity": 1.0,
+    "first_author_match": true,
+    "arxiv_v1_date": "2025-11-05"
+   },
+   {
+    "file": "refs.bib",
+    "key": "timewilltell2024",
+    "id": "2412.15431",
+    "cited_versions": "['v1']",
+    "latest_version": "v1",
+    "title_similarity": 1.0,
+    "first_author_match": true,
+    "arxiv_v1_date": "2024-12-19"
+   },
+   {
+    "file": "refs.bib",
+    "key": "spliceleak2026",
+    "id": "2606.21842",
+    "cited_versions": "['v1']",
+    "latest_version": "v1",
+    "title_similarity": 1.0,
+    "first_author_match": true,
+    "arxiv_v1_date": "2026-06-20"
+   },
+   {
+    "file": "refs.bib",
+    "key": "spillbeans2025",
+    "id": "2505.00817",
+    "cited_versions": "[]",
+    "latest_version": "v1",
+    "title_similarity": 1.0,
+    "first_author_match": true,
+    "arxiv_v1_date": "2025-05-01"
+   },
+   {
+    "file": "refs.bib",
+    "key": "juarez2016wtfpad",
+    "id": "1512.00524",
+    "cited_versions": "[]",
+    "latest_version": "v3",
+    "title_similarity": 1.0,
+    "first_author_match": true,
+    "arxiv_v1_date": "2015-12-02"
+   },
+   {
+    "file": "refs.bib",
+    "key": "ukani2025browserprivacy",
+    "id": "2512.07725",
+    "cited_versions": "[]",
+    "latest_version": "v1",
+    "title_similarity": 1.0,
+    "first_author_match": true,
+    "arxiv_v1_date": "2025-12-08"
+   },
+   {
+    "file": "refs.bib",
+    "key": "privacypeek2026",
+    "id": "2606.00152",
+    "cited_versions": "[]",
+    "latest_version": "v2",
+    "title_similarity": 1.0,
+    "first_author_match": true,
+    "arxiv_v1_date": "2026-05-29"
+   },
+   {
+    "file": "refs.bib",
+    "key": "agentscope2026",
+    "id": "2603.04902",
+    "cited_versions": "[]",
+    "latest_version": "v1",
+    "title_similarity": 1.0,
+    "first_author_match": true,
+    "arxiv_v1_date": "2026-03-05"
+   },
+   {
+    "file": "refs.bib",
+    "key": "mcpbench2026",
+    "id": "2510.15994",
+    "cited_versions": "[]",
+    "latest_version": "v2",
+    "title_similarity": 1.0,
+    "first_author_match": true,
+    "arxiv_v1_date": "2025-10-14"
+   },
+   {
+    "file": "refs.bib",
+    "key": "addagada2026kvgov",
+    "id": "2608.09225",
+    "cited_versions": "['v1']",
+    "latest_version": "v1",
+    "title_similarity": 1.0,
+    "first_author_match": true,
+    "arxiv_v1_date": "2026-08-10"
+   },
+   {
+    "file": "refs.bib",
+    "key": "wang2026fpagent",
+    "id": "2605.01247",
+    "cited_versions": "['v1']",
+    "latest_version": "v1",
+    "title_similarity": 1.0,
+    "first_author_match": true,
+    "arxiv_v1_date": "2026-05-02"
+   },
+   {
+    "file": "refs.bib",
+    "key": "song2026personafingerprint",
+    "id": "2605.15962",
+    "cited_versions": "[]",
+    "latest_version": "v1",
+    "title_similarity": 1.0,
+    "first_author_match": true,
+    "arxiv_v1_date": "2026-05-15"
+   },
+   {
+    "file": "refs.bib",
+    "key": "wei2024speculation",
+    "id": "2411.01076",
+    "cited_versions": "['v4']",
+    "latest_version": "v4",
+    "title_similarity": 1.0,
+    "first_author_match": true,
+    "arxiv_v1_date": "2024-11-01"
+   },
+   {
+    "file": "refs.bib",
+    "key": "kang2026whoseagent",
+    "id": "2606.20910",
+    "cited_versions": "['v1']",
+    "latest_version": "v1",
+    "title_similarity": 1.0,
+    "first_author_match": true,
+    "arxiv_v1_date": "2026-06-18"
+   },
+   {
+    "file": "refs.bib",
+    "key": "dangol2026workflow",
+    "id": "2606.07150",
+    "cited_versions": "['v3']",
+    "latest_version": "v3",
+    "title_similarity": 1.0,
+    "first_author_match": true,
+    "arxiv_v1_date": "2026-06-05"
+   },
+   {
+    "file": "refs.bib",
+    "key": "abubakar2026contention",
+    "id": "2609.06853",
+    "cited_versions": "['v1']",
+    "latest_version": "v1",
+    "title_similarity": 1.0,
+    "first_author_match": true,
+    "arxiv_v1_date": "2026-09-06"
+   },
+   {
+    "file": "refs.bib",
+    "key": "carlini2024remote",
+    "id": "2410.17175",
+    "cited_versions": "['v1']",
+    "latest_version": "v1",
+    "title_similarity": 1.0,
+    "first_author_match": true,
+    "arxiv_v1_date": "2024-10-22"
+   },
+   {
+    "file": "refs.bib",
+    "key": "yu2026plantwin",
+    "id": "2603.18377",
+    "cited_versions": "['v2']",
+    "latest_version": "v2",
+    "title_similarity": 1.0,
+    "first_author_match": true,
+    "arxiv_v1_date": "2026-03-19"
+   },
+   {
+    "file": "refs.bib",
+    "key": "shahriar2026agenttell",
+    "id": "2609.32915",
+    "cited_versions": "['v1']",
+    "latest_version": "v1",
+    "title_similarity": 1.0,
+    "first_author_match": true,
+    "arxiv_v1_date": "2026-09-26"
+   },
+   {
+    "file": "refs.bib",
+    "key": "pouryousef2026traffic",
+    "id": "2609.31877",
+    "cited_versions": "['v1']",
+    "latest_version": "v2",
+    "title_similarity": 1.0,
+    "first_author_match": true,
+    "arxiv_v1_date": "2026-09-25"
+   },
+   {
+    "file": "refs.bib",
+    "key": "xu2026sicc",
+    "id": "2609.26076",
+    "cited_versions": "['v1']",
+    "latest_version": "v1",
+    "title_similarity": 1.0,
+    "first_author_match": true,
+    "arxiv_v1_date": "2026-08-04"
+   },
+   {
+    "file": "refs.bib",
+    "key": "roh2026spillage",
+    "id": "2602.13516",
+    "cited_versions": "['v1']",
+    "latest_version": "v1",
+    "title_similarity": 1.0,
+    "first_author_match": true,
+    "arxiv_v1_date": "2026-02-13"
+   },
+   {
+    "file": "refs.bib",
+    "key": "qiao2026topr",
+    "id": "2512.16310",
+    "cited_versions": "['v4']",
+    "latest_version": "v4",
+    "title_similarity": 1.0,
+    "first_author_match": true,
+    "arxiv_v1_date": "2025-12-18"
+   },
+   {
+    "file": "refs.bib",
+    "key": "weiss2026detokenization",
+    "id": "2609.06674",
+    "cited_versions": "['v1']",
+    "latest_version": "v1",
+    "title_similarity": 1.0,
+    "first_author_match": true,
+    "arxiv_v1_date": "2026-09-06"
+   },
+   {
+    "file": "refs.bib",
+    "key": "gan2026clawguard",
+    "id": "2605.06205",
+    "cited_versions": "['v1']",
+    "latest_version": "v1",
+    "title_similarity": 1.0,
+    "first_author_match": true,
+    "arxiv_v1_date": "2026-05-07"
+   }
+  ]
+ },
+ "doi": {
+  "checked": 29,
+  "resolved": 27,
+  "entries": [
+   {
+    "key": "rfc9347",
+    "doi": "10.17487/RFC9347",
+    "title_similarity": 0.86,
+    "crossref_year": 2023,
+    "crossref_title": "Aggregation and Fragmentation Mode for Encapsulating Security Payload ",
+    "status": "resolved"
+   },
+   {
+    "key": "rfc9849",
+    "doi": "10.17487/RFC9849",
+    "title_similarity": 1.0,
+    "crossref_year": 2026,
+    "crossref_title": "TLS Encrypted Client Hello",
+    "status": "resolved"
+   },
+   {
+    "key": "wang2026dialogue",
+    "doi": "10.1145/3774904.3793048",
+    "title_similarity": "ERR",
+    "crossref_year": null,
+    "crossref_title": null,
+    "status": "unresolved (Crossref and doi.org 404)"
+   },
+   {
+    "key": "hornetz2026tdxray",
+    "doi": "10.1109/SP63933.2026.00170",
+    "title_similarity": 1.0,
+    "crossref_year": 2026,
+    "crossref_title": "TDXRay: Microarchitectural Side-Channel Analysis of Intel TDX for Real",
+    "status": "resolved"
+   },
+   {
+    "key": "umar2025secemb",
+    "doi": "10.1109/HPCA61900.2025.00041",
+    "title_similarity": 1.0,
+    "crossref_year": 2025,
+    "crossref_title": "Efficient Memory Side-Channel Protection for Embedding Generation in M",
+    "status": "resolved"
+   },
+   {
+    "key": "alhazbi2025rhythm",
+    "doi": "10.1109/OJCOMS.2025.3577016",
+    "title_similarity": 1.0,
+    "crossref_year": 2025,
+    "crossref_title": "LLMs Have Rhythm: Fingerprinting Large Language Models Using Inter-Tok",
+    "status": "resolved"
+   },
+   {
+    "key": "ding2025moecho",
+    "doi": "10.1145/3719027.3765174",
+    "title_similarity": 1.0,
+    "crossref_year": 2025,
+    "crossref_title": "MoEcho: Exploiting Side-Channel Attacks to Compromise User Privacy in ",
+    "status": "resolved"
+   },
+   {
+    "key": "nazari2024llmfin",
+    "doi": "10.1109/ISQED60706.2024.10528736",
+    "title_similarity": 1.0,
+    "crossref_year": 2024,
+    "crossref_title": "LLM-FIN: Large Language Models Fingerprinting Attack on Edge Devices",
+    "status": "resolved"
+   },
+   {
+    "key": "chaudhuri2025energon",
+    "doi": "10.1109/ICCAD66269.2025.11240793",
+    "title_similarity": 1.0,
+    "crossref_year": 2025,
+    "crossref_title": "\"Energon\": Unveiling Transformers from GPU Power and Thermal Side-Chan",
+    "status": "resolved"
+   },
+   {
+    "key": "anwar2026infernet",
+    "doi": "10.1145/3811923",
+    "title_similarity": "ERR",
+    "crossref_year": null,
+    "crossref_title": null,
+    "status": "unresolved (Crossref and doi.org 404)"
+   },
+   {
+    "key": "weng2026archsnoop",
+    "doi": "10.1145/3765613.3811673",
+    "title_similarity": 1.0,
+    "crossref_year": 2026,
+    "crossref_title": "ArchSnoop: LLM Architecture Snooping via Electromagnetic Side-Channel ",
+    "status": "resolved"
+   },
+   {
+    "key": "cui2026symdiag",
+    "doi": "10.1145/3770855.3818004",
+    "title_similarity": 1.0,
+    "crossref_year": 2026,
+    "crossref_title": "SymDiag: Explainable Diagnosis for LLM Reasoning via Neuro-Symbolic Ve",
+    "status": "resolved"
+   },
+   {
+    "key": "juarez2014critical",
+    "doi": "10.1145/2660267.2660368",
+    "title_similarity": 1.0,
+    "crossref_year": 2014,
+    "crossref_title": "A Critical Evaluation of Website Fingerprinting Attacks",
+    "status": "resolved"
+   },
+   {
+    "key": "mathews2023critical",
+    "doi": "10.1109/SP46215.2023.10179289",
+    "title_similarity": 1.0,
+    "crossref_year": 2023,
+    "crossref_title": "SoK: A Critical Evaluation of Efficient Website Fingerprinting Defense",
+    "status": "resolved"
+   },
+   {
+    "key": "dwork2014foundations",
+    "doi": "10.1561/0400000042",
+    "title_similarity": 1.0,
+    "crossref_year": 2014,
+    "crossref_title": "The Algorithmic Foundations of Differential Privacy",
+    "status": "resolved"
+   },
+   {
+    "key": "smith2009qif",
+    "doi": "10.1007/978-3-642-00596-1_21",
+    "title_similarity": 1.0,
+    "crossref_year": 2009,
+    "crossref_title": "On the Foundations of Quantitative Information Flow",
+    "status": "resolved"
+   },
+   {
+    "key": "stefanov2013pathoram",
+    "doi": "10.1145/2508859.2516660",
+    "title_similarity": 0.3,
+    "crossref_year": 2013,
+    "crossref_title": "Path ORAM",
+    "status": "resolved"
+   },
+   {
+    "key": "promptpeek2025",
+    "doi": "10.14722/ndss.2025.241772",
+    "title_similarity": 1.0,
+    "crossref_year": 2025,
+    "crossref_title": "I Know What You Asked: Prompt Leakage via KV-Cache Sharing in Multi-Te",
+    "status": "resolved"
+   },
+   {
+    "key": "earlybird2025",
+    "doi": "10.1109/TIFS.2025.3622954",
+    "title_similarity": 1.0,
+    "crossref_year": 2025,
+    "crossref_title": "The Early Bird Catches the Leak: Unveiling Timing Side Channels in LLM",
+    "status": "resolved"
+   },
+   {
+    "key": "inputsnatch2024",
+    "doi": "10.1007/978-981-92-4805-6_32",
+    "title_similarity": 1.0,
+    "crossref_year": 2026,
+    "crossref_title": "InputSnatch: Stealing Input in\u00a0LLM Services via\u00a0Cache-Sharing Timing S",
+    "status": "resolved"
+   },
+   {
+    "key": "cai2014systematic",
+    "doi": "10.1145/2660267.2660362",
+    "title_similarity": 1.0,
+    "crossref_year": 2014,
+    "crossref_title": "A Systematic Approach to Developing and Evaluating Website Fingerprint",
+    "status": "resolved"
+   },
+   {
+    "key": "sirinam2018deep",
+    "doi": "10.1145/3243734.3243768",
+    "title_similarity": 0.38,
+    "crossref_year": 2018,
+    "crossref_title": "Deep Fingerprinting",
+    "status": "resolved"
+   },
+   {
+    "key": "juarez2016wtfpad",
+    "doi": "10.1007/978-3-319-45744-4_2",
+    "title_similarity": 1.0,
+    "crossref_year": 2016,
+    "crossref_title": "Toward an Efficient Website Fingerprinting Defense",
+    "status": "resolved"
+   },
+   {
+    "key": "kwon2023pagedattention",
+    "doi": "10.1145/3600006.3613165",
+    "title_similarity": 1.0,
+    "crossref_year": 2023,
+    "crossref_title": "Efficient Memory Management for Large Language Model Serving with Page",
+    "status": "resolved"
+   },
+   {
+    "key": "agentdam2025",
+    "doi": "10.52202/085713-4609",
+    "title_similarity": 1.0,
+    "crossref_year": 2025,
+    "crossref_title": "AgentDAM: Privacy Leakage Evaluation for Autonomous Web Agents",
+    "status": "resolved"
+   },
+   {
+    "key": "msa2025",
+    "doi": "10.1145/3733802.3764057",
+    "title_similarity": 1.0,
+    "crossref_year": 2025,
+    "crossref_title": "MSA: A Cross-MCP Privacy Attack via Memory Exfiltration of Large Langu",
+    "status": "resolved"
+   },
+   {
+    "key": "multiaagentprivacy2025",
+    "doi": "10.1109/BigData66926.2025.11401523",
+    "title_similarity": 1.0,
+    "crossref_year": 2025,
+    "crossref_title": "Quantifying Privacy Leakage in Multi-Agent LLMs: A Unified Theoretical",
+    "status": "resolved"
+   },
+   {
+    "key": "ge2018survey",
+    "doi": "10.1007/s13389-016-0141-6",
+    "title_similarity": 1.0,
+    "crossref_year": 2016,
+    "crossref_title": "A survey of microarchitectural timing attacks and countermeasures on c",
+    "status": "resolved"
+   },
+   {
+    "key": "cover2006elements",
+    "doi": "10.1002/047174882X",
+    "title_similarity": 0.86,
+    "crossref_year": 2005,
+    "crossref_title": "Elements of Information Theory",
+    "status": "resolved"
+   }
+  ],
+  "notes": "Low title similarity for stefanov2013pathoram, sirinam2018deep, rfc9347 and cover2006elements reflects subtitle/edition differences only; the two unresolved DOIs (wang2026dialogue, anwar2026infernet) are cited only in the supplement and need author follow-up."
+ }
+}

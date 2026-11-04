@@ -1,11 +1,12 @@
 \begin{table}[t]\centering\footnotesize
-\caption{Reusable reporting card. Fill each evidence cell with a version and locator or ``unknown''; the final action is conditional on the proposed deployment.}\label{tab:r33-card}
-\begin{tabularx}{\columnwidth}{@{}p{.23\columnwidth}Y@{}}\toprule
+\caption{The reporting card. Fill one card per source configuration and proposed deployment. Every evidence cell carries a source version and section/table locator and one status code.}\label{tab:r33-card}
+\begin{tabularx}{\columnwidth}{@{}p{.21\columnwidth}Y@{}}\toprule
 Field & What to enter\\\midrule
-Receiver/target & Hidden property, accessible signal and permissions.\\
-Intervention & Primitive, execution mode, state and trust boundary.\\
-Attacker/test & Training or calibration condition; defended test population.\\
-Function & Scoped preservation witness, component quality or task outcome; shared configuration.\\
-Cost & Resource, units, denominator, baseline and included operations.\\
-Extension & Changed workload/system axis; available holdout; retain, separate or measure next.\\
+Receiver/target & Hidden property; the signal and fields the observer receives; observer permissions.\\
+Intervention & Mechanism; where it executes (stored trace, wire, tool action); whether cover is discarded, isolated or executed.\\
+Attacker/test & Data the attacker or calibration was fitted on; defended test population; held-out unit.\\
+Function & Preservation witness, output quality or task outcome, at the configuration used for protection.\\
+Cost & Resource, unit, baseline, denominator and included operations.\\
+Extension & What the deployment changes (model, workload, hardware, network); which of these the source held out.\\\midrule
+\multicolumn{2}{@{}p{.96\columnwidth}@{}}{\textbf{Status codes.} \textbf{B} bound: every element the claim needs is stated for this configuration. \textbf{P} partial: some are stated, at least one is not. \textbf{U} not located in the inspected sections. \textbf{?} stated but not verified. \textbf{--} not applicable to the claim.}\\
 \bottomrule\end{tabularx}\end{table}
