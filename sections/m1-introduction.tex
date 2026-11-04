@@ -1,0 +1,28 @@
+\section{Introduction}\label{sec:introduction}
+Encryption hides what an LLM says, but not how it says it. Prefix-cache hits shorten time to first token \cite{earlybird2025,promptpeek2025}, streamed token lengths survive TLS \cite{whisperleak2025,netecho2025}, and the network traffic of a local research agent leaks its user's prompt and traits \cite{jeong2026wra}. Defenses follow: selective cache sharing \cite{wu2026cacheprune}, padding and batching of streamed responses \cite{whisperleak2025,netecho2025}, and cover requests that blur an agent's real actions \cite{jeong2026wra}.
+
+These defenses are evaluated once and reused often. A provider that adopts a published defense changes the model, the serving stack or the agent's tools; a later paper cites the defense's numbers as a baseline. Each reuse silently assumes that the original measurement still describes the new deployment. Often it does not. WRA protects a local research agent by issuing decoy \emph{read} requests and discarding their replies \cite{jeong2026wra}; evidence that this costs little task utility says nothing about cover that \emph{writes}. Early Bird reports an overhead of about 6\,ms, but that figure belongs to its semantic-cache prototype, not to the prefix rule it evaluates for protection \cite[V-A--B]{earlybird2025}. The defense name stays the same; the evidence object changes.
+
+\paragraph{Three reuse boundaries}
+We argue that three boundaries decide whether a defense result can be carried into a new deployment (Figure~\ref{fig:system-model}):
+\begin{itemize}
+\item \textbf{Receiving view.} A result protects one observation. If a later component re-emits the protected content---a content-aware frontend, a tool provider, a logging path---the observer sees a new trace and the result no longer applies.
+\item \textbf{Affected state.} Discarding a cover reply and executing a cover action are different interventions. Once cover actions run through an agent's tools, they can consume quotas, change records and alter what the real task can do next.
+\item \textbf{Attacker and workload.} Protection against a classifier trained on undefended outputs does not imply protection against one trained on defended outputs, and a calibration fitted on one model or population is not automatically valid on another.
+\end{itemize}
+
+\paragraph{What is new and what is inherited}
+Observer specification and adaptive attacks are long-standing principles in website fingerprinting (WF) and adversarial-ML evaluation \cite{juarez2014critical,mathews2023critical,carlini2019evaluating,tramer2020adaptive}; we do not claim them. Two things are specific to LLM and agent deployments. First, the affected-state boundary has no counterpart in those traditions: WF dummy packets and adversarial-example defenses do not change the state of the environment, whereas agent cover actions can. Second, LLM systems routinely insert content-aware components between the protected link and the observer, so the receiving view must be re-established after every emitter. Our contribution is to make these boundaries explicit, operational and measurable for this setting (Section~\ref{sec:positioning}).
+
+\paragraph{Contributions}
+\begin{itemize}
+\item \textbf{A reuse framework} (Section~\ref{sec:boundaries}) that organizes defense evidence by receiving view, affected state, and attacker and workload, illustrated with published LLM and agent defenses.
+\item \textbf{A reporting card and decision rule} (Section~\ref{sec:card}). Six fields link protection, function and cost to the observation, intervention and attacker they were measured under. For each claim the card yields \emph{supported}, \emph{incompatible} or \emph{unresolved}, and an unresolved outcome names the missing measurement. We fill the card completely for CachePrune \cite{wu2026cacheprune} and apply it to six defense papers.
+\item \textbf{Two case studies} (Section~\ref{sec:cases}), each isolating one boundary. \emph{Case~A} (attacker fitting): in a synthetic TLS replay, batching appears to defeat a clean-trained attacker, but an attacker trained on batched outputs recovers almost all undefended leakage. \emph{Case~B} (affected state): in a retail-agent sandbox, read cover produces no detectable change in task success, whereas side-effecting write cover lowers it by 46.9 percentage points.
+\end{itemize}
+
+\paragraph{Scope}
+This is a methodological position paper. It is not a systematic literature review: the source examples were selected to illustrate each boundary and support no frequency claims. We have not measured whether the card improves analysts' decisions or how reliably different analysts fill it; Section~\ref{sec:validation} specifies the study that would test both. All other limitations are collected in Section~\ref{sec:limitations}.
+
+\begin{figure*}[t]\centering\input{figures/fig1-system-model}
+\caption{Where reuse breaks. Top: protection applied on an upstream link does not cover a trace that a later content-aware emitter produces. Bottom: once cover actions are admitted to tool or GUI execution, they can change the state that the real task depends on. A defense result must be bound to the trace that is actually observed and the action that is actually executed.}\label{fig:system-model}\end{figure*}

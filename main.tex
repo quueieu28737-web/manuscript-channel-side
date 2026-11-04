@@ -36,7 +36,7 @@
 \newcommand{\auditpartial}{\textbf{P}}
 \input{tables/final-counts}
 
-\title{Reusing Defense Evidence in LLM and Agent Side Channels: A Reporting Framework and Case Studies}
+\title{Does the Defense Still Hold? Three Boundaries for Reusing Side-Channel Defense Evidence in LLM and Agent Deployments}
 \author{}
 
 \makeatletter
@@ -48,27 +48,22 @@
 \maketitle
 
 \begin{abstract}
-We propose a reporting framework for deciding which defense evidence can be reused when an LLM or agent deployment changes. It links source-versioned protection, function and cost measurements to the receiving view, affected execution state, and attacker and workload, yielding a scope-permitted comparison, an incompatible binding or a specific unresolved measurement.
+Side-channel defenses for LLM serving and agents are evaluated in one setting and then reused in another: a different receiver, a different execution path, a differently trained attacker. We argue that three boundaries decide whether such reuse is sound: the \emph{receiving view} (what the observer sees after the last emitter), the \emph{affected state} (whether the defense only discards outputs or executes actions that change state), and the \emph{attacker and workload} (whether the attacker was fitted on defended outputs, and on which population). Observer specification and adaptive attacks are established principles in website fingerprinting and adversarial-ML evaluation; the affected-state boundary appears once a defense issues cover actions through an agent's tools, and those traditions have no counterpart for it.
 
-Two bounded cases illustrate those decisions. In E4's post hoc synthetic TLS replay, a fixed logistic attacker trained on clean outputs scores balanced accuracy/AUROC 0.500/0.678 on one Qwen~8B four-chunk condition; when trained on defended outputs, it scores 0.732/0.773 on the same 500 topic-held-out outputs. In a separate retail-sandbox convenience sample of 98 tasks (187 three-arm groups), state-changing write cover has task-weighted success 46.9 percentage points below baseline (95\% task-bootstrap interval $[-56.8,-36.9]$). In E4, batched response application TLS bytes are 0.381 times the raw value, excluding requests and handshakes. E4 illustrates attacker fitting; R44 makes the state and utility of an executed action visible.
-
-This is a methodological position paper: the reporting card is a proposal grounded in existing evaluation principles. Its usefulness and reliability remain to be evaluated. The cases are exploratory illustrations, and neither establishes a general defense effect or deployment-wide outcome.
+We turn the boundaries into a six-field reporting card whose output, for each claim, is a supported comparison, an incompatible one, or a named missing measurement, and we fill it completely for a published cache defense. Two case studies show that the attacker boundary and the affected-state boundary can each reverse a conclusion. In a synthetic TLS replay, response batching drives a clean-trained attacker to chance balanced accuracy (0.500, AUROC 0.678), yet an attacker trained on batched outputs reaches 0.732 (AUROC 0.773), close to the undefended 0.744 (0.800). In a retail-agent sandbox, read cover produces no detectable change in task success ($+0.7$ points, 95\% interval $[-4.9, 6.1]$) while side-effecting write cover lowers it by 46.9 points, although both discard the cover response. The card is a proposal: we have not measured whether it improves analysts' decisions, and we specify the study that would.
 \end{abstract}
 
-\input{sections/01-introduction}
-\input{sections/03-methodology}
-\input{sections/04-scope}
-\input{sections/26-corpus-map}
-\input{sections/27-intervention-contracts}
-\input{sections/28-fingerprint-dependencies}
-\input{sections/11-discussion}
-\input{sections/10-open-challenges}
-\input{sections/12-conclusion}
-
+\input{sections/m1-introduction}
+\input{sections/m2-positioning}
+\input{sections/m3-boundaries}
+\input{sections/m4-card}
+\input{sections/m5-cases}
+\input{sections/m6-discussion}
+\input{sections/m7-conclusion}
 
 \FloatBarrier
 \bibliographystyle{IEEEtran}
 \bibliography{refs,refs-final-additions,refs-deployment,refs-search-completion,refs-methodology,refs-defense-first}
 \appendices
-\input{sections/83-boundary-experiments-main}
+\input{sections/m8-appendix}
 \end{document}

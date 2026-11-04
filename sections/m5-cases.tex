@@ -1,0 +1,37 @@
+\section{Two Case Studies}\label{sec:cases}\label{sec:discussion}
+Each case isolates one boundary and asks whether ignoring it would change the conclusion a reader draws from a defense result. Both are demonstrations in a controlled setting, not estimates of a defense's effect in deployment; their limits are stated at the end of each case and in Section~\ref{sec:limitations}. The supplement identifies Case~A as E4 and Case~B as R44.
+
+\subsection{Case A: attacker fitting under response batching}\label{sec:case-a}
+\paragraph{Question}
+Streaming LLM APIs leak token lengths through TLS record sizes and timing \cite{whisperleak2025,netecho2025}. Batching several chunks per record is a natural defense. If it is evaluated against an attacker trained on undefended traffic, how far does the reported protection differ from protection against an attacker trained on batched traffic?
+
+\paragraph{Setup}
+Three pinned local models (qwen3:8b, qwen3:0.6b, llama3.2:1b) answer five prompt templates for each of 100 synthetic topics under a 128-token budget. The hidden property is binary: 50 medical versus 50 nonmedical topics. Saved output chunks are replayed through timed TLS~1.3 loopback with byte-identical decoded content, and the attacker observes response record lengths and timing. Evaluation uses five folds that hold out ten topics of each class with all their templates. For each defended test fold, $D_0$ is fitted on clean (undefended) training traffic and $D_2$ on defended training traffic; both are tested on the same defended outputs. We report the default operating point, Qwen~8B with four chunks per batch, using one fixed logistic-regression attacker.
+
+\input{tables/main-case-a}
+
+\paragraph{Result}
+Table~\ref{tab:case-a} shows the reversal. Evaluated with $D_0$, batching looks like a strong defense: BA falls from 0.744 to chance. Evaluated with $D_2$, it barely helps: BA is 0.732 and AUROC 0.773, against 0.744 and 0.800 without defense. The paired difference between the two attackers is 0.232 BA [0.168, 0.286] and 0.094 AUROC [0.005, 0.189]. The pattern holds under five further topic-level reshuffles ($D_0$ AUROC 0.676--0.751, $D_2$ 0.770--0.785) and on a separate 20-topic holdout (0.758 versus 0.807).
+
+The $D_0$ AUROC of 0.678 shows that the clean-trained attacker still ranks outputs better than chance; its chance BA is a threshold effect. That is part of the lesson. A defense paper that reports BA for a clean-trained attacker would publish ``chance'', and a reader who reused that number would conclude that batching defeats the channel. Both the attacker fit and the metric must travel with the result.
+
+\paragraph{Cost}
+Cost is bound to the same 500 replays. Batched response application bytes total 470,239 versus 1,234,823 for paired raw captures (0.381$\times$), because aggregation removes record framing. Median session completion changes by $+0.152$\,ms (95th percentile $+2.381$\,ms), while the 95th-percentile delay of original chunk endpoints is $+65.730$\,ms. These figures exclude requests and handshakes and describe loopback replay, not online generation or a WAN.
+
+\paragraph{What the case shows and does not}
+The principle that adaptive attackers must be fitted on defended data is well known \cite{tramer2020adaptive,juarez2014critical}. The case shows how much it matters for a natural LLM streaming defense: the clean-trained evaluation would overstate protection by nearly the whole undefended signal. The corpus is synthetic and small, the task is binary, and the fixed-logistic comparison was chosen after earlier results on the same data were visible, so it is exploratory. We also compared calibrations imported across models with locally fitted ones; most such comparisons were degenerate because the parameters were identical, and the rest were inconclusive (Appendix~\ref{app:case-a}).
+
+\subsection{Case B: read cover versus write cover}\label{sec:case-b}
+\paragraph{Question}
+WRA-style cover discards the replies of its decoy reads, so its function evidence is that the user's output is unchanged \cite{jeong2026wra}. Would the same evidence license cover that issues a write whose response is likewise discarded? A content-preservation witness treats the two identically. Rule~2 says it should not.
+
+\paragraph{Setup}
+We ran a three-arm study in a retail-agent sandbox. In each episode an LLM planner serves a simulated user; after the first eligible order lookup, the arms add nothing, one hidden read, or one hidden write that modifies the same item. The cover response is discarded in both cover arms, but the write's effect on the payment ledger and the order's modification eligibility persists. Each arm uses fresh planner and user interactions on a separate clone of the initial state, and the arm order is randomized. The planner is a Qwen model accessed through a service alias whose weights are not pinned. The cohort is 187 three-arm groups (561 episodes) covering 98 tasks: the blocks left incomplete when an earlier run with a different planner (GLM) was interrupted, a nonrandom convenience sample. We weight tasks equally after averaging each task's repeats.
+
+\input{tables/main-case-b}
+
+\paragraph{Result}
+Read cover produces no detectable change: $+0.7$ points, with a 95\% task-bootstrap interval of $[-4.9, 6.1]$, which does not exclude effects of about five points in either direction. Write cover lowers it by 46.9 points $[-56.8, -36.9]$, from 82.7\% to 35.7\% (Table~\ref{tab:case-b}). All 97 executed cover writes consumed the order's modification eligibility. In 28 of the 115 failed write-arm episodes, a later real action on the same order received the sandbox's native ``not pending'' error; the other failures have not been attributed to a cause. The 113 blocks that the interrupted GLM run did complete, over 80 tasks, show the same pattern with a different planner: $+3.1$ points for read cover $[-6.5, 12.7]$ and $-45.6$ for write cover $[-57.9, -32.7]$. These blocks are not a random sample either, and they are not paired with the Qwen arms.
+
+\paragraph{What the case shows and does not}
+The direction of the effect follows from the construction: a write that consumes a one-time modification right will block a later modification. The case is therefore a counterexample, not a measurement of a defense's cost. Its point is the gap between two arms that the same preservation evidence would certify: no detectable loss for read cover and a loss of nearly half of all successes for write cover. It does not estimate the cost of WRA or of write cover in general, and without a side-effect-free write arm it cannot apportion the loss between state effects and the planner's reaction to an extra call. During recovery of the original run, concurrency changed from 10 to 2 and the transport path changed; ten interrupted requests have unknown outcomes (Appendix~\ref{app:case-b}).

@@ -1,0 +1,25 @@
+\section{Setting and Positioning}\label{sec:positioning}\label{sec:background}
+\subsection{What a defense result is}
+An \emph{observer} sees an auxiliary signal---timing, lengths, cache hits, tool traffic---and tries to infer a \emph{hidden property}, such as a prompt topic, a cached prefix or a user trait. A \emph{defense} transforms the signal or adds cover. A published defense result reports up to three outcomes: \emph{protection} (an attack metric under the defense), \emph{function} (output quality or task success) and \emph{cost} (latency, bytes, compute). Each outcome is measured under particular conditions: who receives which signal, where and how the defense executes, how the attacker was trained and tested, and on which workload.
+
+\emph{Reuse} means citing such a result to justify a defense in a deployment that differs in at least one of those conditions. Reuse is sound when the conditions that the claim depends on are unchanged, or when the change has been measured. The rest of this paper is about identifying which conditions a given claim depends on. We use two attack metrics throughout: balanced accuracy (BA), the mean of per-class recall at one decision threshold (chance is 0.5 for two classes), and the area under the ROC curve (AUROC), which measures how well scores rank positives above negatives across all thresholds.
+
+\subsection{Relation to established evaluation guidance}
+Table~\ref{tab:guidance-comparison} places the three boundaries against existing guidance. The comparison is analytical: we state what each tradition addresses, not an empirical finding that its users miss these issues.
+
+WF research has long required explicit observer models, adaptive attackers trained on defended traces, protection/overhead trade-offs and tests under environment shift \cite{cai2014systematic,juarez2014critical,mathews2023critical,gong2021wfdefproxy}. Adversarial-ML guidance requires adaptive attacks tailored to the defense and a clearly specified evaluation interface \cite{carlini2019evaluating,tramer2020adaptive}, and benchmarks fix comparison protocols \cite{croce2021robustbench}. Formal approaches---differential privacy, quantitative information flow, constant-time programming and oblivious RAM---state their observation and leakage models precisely \cite{dwork2014foundations,smith2009qif,almeida2016constanttime,stefanov2013pathoram}. Our attacker-and-workload boundary is the adaptive-attack principle applied to LLM side channels; Case~A quantifies it, but it is not new.
+
+The other two boundaries change character in LLM and agent systems. In WF, the observer's position is usually fixed by the threat model (for example, between client and guard). LLM pipelines instead contain content-aware components---frontends that regroup decoded text, tool providers, output formatters---that consume protected content and emit a fresh signal. A defense on the upstream link then says nothing about the final trace, so the receiving view must be bound after the last emitter rather than assumed once. The affected-state boundary has no WF or adversarial-ML analogue: dummy packets and perturbed inputs do not change the state of a remote system, whereas an agent's cover action can place an order, consume a modification quota or change a ledger. Function evidence for cover that is discarded does not transfer to cover that executes.
+
+What the card adds, then, is not a new evaluation principle but a per-claim join: it requires that protection, function and cost be tied to the same receiving view, executed intervention and attacker fit before they are reused together.
+
+\begin{table*}[t]
+\caption{The three reuse boundaries relative to established evaluation guidance.}\label{tab:guidance-comparison}
+\centering\footnotesize
+\begin{tabularx}{\textwidth}{@{}p{.13\textwidth}YYp{.17\textwidth}@{}}\toprule
+Boundary & Established in & What changes in LLM/agent deployments & Evidence in this paper\\\midrule
+Receiving view & WF observer models \cite{juarez2014critical,mathews2023critical}; formal observation models \cite{almeida2016constanttime,smith2009qif} & Content-aware emitters re-encode protected content after the protected link; authorized semantic content can still leak through form, length or exposed scores & NetEcho, SICC, DP-MemView (\S\ref{sec:receiving-view})\\
+Affected state & No direct counterpart: WF cover and adversarial perturbations do not change remote state & Cover actions executed through tools can change records, quotas and the real task's options & Case~B (\S\ref{sec:case-b}); WRA, AHB (\S\ref{sec:affected-state})\\
+Attacker and workload & Adaptive attacks \cite{tramer2020adaptive,carlini2019evaluating}; WF training on defended traces \cite{juarez2014critical,cai2014systematic} & Defenses are calibrated per model or per workload; a source calibration is not a target calibration & Case~A (\S\ref{sec:case-a}); Time Will Tell, Whisper Leak (\S\ref{sec:attacker})\\
+\bottomrule\end{tabularx}
+\end{table*}
