@@ -1,0 +1,11 @@
+cryptography==46.0.3
+h2==4.4.1
+httpx==0.28.1
+hypercorn==0.17.3
+joblib==1.6.0
+langchain-core==1.7.6
+langgraph==1.0.3
+mcp==1.21.1
+numpy==2.3.3
+scikit-learn==1.9.1
+scipy==1.18.1

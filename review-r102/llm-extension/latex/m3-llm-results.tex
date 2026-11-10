@@ -1,0 +1,36 @@
+\textbf{Task completion hides much of the damage caused by executed cover.}
+With Qwen3:8B, live-state cover completed 102/120 requested tasks, but only
+7/120 final states matched the intended business result. With Llama3.1:8B,
+the corresponding counts were 76/120 and 3/120. Thus 95 and 73 completed
+tasks still had incorrect global state. Relative to no cover, exact state
+integrity fell from 116 to 7 and from 69 to 3; both paired reductions
+survived Holm correction. Goal completion fell from 114 to 102 and from
+82 to 76, with only the Qwen reduction significant after correction.
+These constructed adverse writes make the practical consequence measurable:
+an executed-cover evaluation needs a state-integrity endpoint alongside
+task completion and traffic inference.
+
+\textbf{The state loss bought no distinctive improvement in the measured
+recognition scores.}
+With one or two randomly placed decoys, the validation-selected LR/RF
+attacker scored 61--63/120 across Qwen cover conditions and 72--82/120
+across Llama cover conditions, compared with 118/120 and 113/120 without
+cover. All ten cover-versus-baseline primary comparisons survived the
+predeclared Holm correction. Live writes scored 62/120 and 80/120, within
+the range already observed for proxy-discard, read, and isolated cover.
+Residual exposure remained substantial: a last-destination rule reached
+75--77/120 in Qwen cover conditions and exceeded the selected LR/RF attack.
+These are observed attack results, not equivalence or privacy upper bounds.
+Call-byte costs were 1.28--1.35 times the paired no-cover runs.
+
+\textbf{Aggregate scores hide variation in the visible-response control's
+individual execution paths.}
+The hidden and visible isolated conditions returned identical cover
+responses in all 120 pairs per model. Their honest action sequences
+differed in 16 Qwen pairs and 65 Llama pairs. Mean prompt tokens rose by
+18.1\% and 18.9\%, respectively. The predeclared visible-versus-hidden
+comparisons for recognition, goal completion, and state integrity all had
+Holm-adjusted $p=1$. The paired path differences therefore describe planner
+behavior; they do not establish that exposing marked responses improves
+or degrades average utility. Hidden-arm path variation is also retained
+in the released audit.

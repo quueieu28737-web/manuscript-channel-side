@@ -1,0 +1,27 @@
+\begin{table}[ht]
+\centering\small
+\setlength{\tabcolsep}{8pt}
+\caption{Selected prespecified contrasts. Differences are percentage points (condition minus reference). Each endpoint uses its own 12-comparison Holm family; the full 36 contrasts are released.}
+\label{tab:m3-llm-contrasts}
+\begin{tabular}{lllrll}
+\toprule
+Model & Contrast & Endpoint & Difference & 95\% CI & Holm $p$ \\
+\midrule
+Qwen3:8B & Live--none & Goal & -10.00 & [-15.00, -5.00] & 0.022 \\
+Qwen3:8B & Visible--hidden & Goal & -0.83 & [-4.17, 2.50] & 1.000 \\
+Llama3.1:8B & Live--none & Goal & -5.00 & [-10.83, 0.83] & 1.000 \\
+Llama3.1:8B & Visible--hidden & Goal & 0.00 & [-7.50, 7.50] & 1.000 \\
+Qwen3:8B & Live--none & Recognition & -46.67 & [-55.83, -37.50] & 3.1e-16 \\
+Qwen3:8B & Visible--hidden & Recognition & 1.67 & [-5.00, 8.33] & 1.000 \\
+Llama3.1:8B & Live--none & Recognition & -27.50 & [-35.83, -19.17] & 3.1e-08 \\
+Llama3.1:8B & Visible--hidden & Recognition & -0.83 & [-8.33, 6.67] & 1.000 \\
+Qwen3:8B & Live--none & State & -90.83 & [-95.00, -85.83] & 3.7e-32 \\
+Qwen3:8B & Visible--hidden & State & -0.83 & [-4.17, 2.50] & 1.000 \\
+Llama3.1:8B & Live--none & State & -55.00 & [-62.50, -47.50] & 3e-19 \\
+Llama3.1:8B & Visible--hidden & State & 2.50 & [-5.00, 10.00] & 1.000 \\
+\bottomrule
+\end{tabular}
+\end{table}
+All 182 planned held-out decoys triggered in every cover cell. No held-out response had invalid JSON. Qwen reached no step limits; Llama reached the limit in one no-cover, proxy-discard, read, and hidden-isolated execution, two live-write executions, and no visible-isolated executions. All remain in the denominators.
+The action-path audit records hidden-arm variation as well as the visible contrast. Relative to hidden isolation, proxy-discard and read had different honest choices in 1 and 0 Qwen pairs, and 15 and 15 Llama pairs; the visible arm differed in 16 and 65 pairs. These are descriptive path comparisons, not an additional significance-test family.
+Llama already had imperfect task execution without cover (82/120 goals and 69/120 exact states). Its no-cover traces included 69 episodes with multiple business attempts. The analysis retains that baseline behavior rather than treating every state error as caused by cover.

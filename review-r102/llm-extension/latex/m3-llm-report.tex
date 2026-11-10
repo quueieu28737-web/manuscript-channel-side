@@ -1,0 +1,90 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[margin=18mm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,microtype,booktabs,amsmath,graphicx,hyperref}
+\hypersetup{colorlinks=true,urlcolor=blue,linkcolor=blue,pdftitle={M3: Executed cover with LLM planners}}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\title{M3: Executed cover with LLM planners}
+\author{}
+\date{10 November 2026}
+\begin{document}
+\maketitle
+\vspace{-2em}
+\section{Result and implication}
+\input{latex/m3-llm-results.tex}
+
+\section{Paired design}
+The experiment replaces the reference planner with fixed local Qwen3:8B and
+Llama3.1:8B weights. For each model, all six conditions use the same 300
+synthetic ticket fixtures: 120 training, 60 validation, and 120 test fixtures.
+Each test cell contains 20 fixtures for each of six requested actions.
+The 3,600 formal episodes therefore contain 1,440 held-out executions of 120
+distinct paired test fixtures. Phrasings come from the existing workload;
+the split holds out fixtures, not task templates or deployments.
+
+The conditions are no cover, proxy discard, non-mutating read cover,
+isolated hidden execution, live-state writes, and isolated execution whose
+responses are visible to the planner. One or two decoys and their positions
+are drawn before collection. The visible condition forwards explicitly
+marked background results. The planner chooses checks, business actions,
+target order, recovery, and completion; a controller enforces prerequisite
+checks without selecting the correct business action.
+
+Seven local MCP Streamable HTTP services use actual TLS 1.3/HTTP/2 sockets.
+Request and response bodies use 4,096- and 16,384-byte padding quanta.
+The observer receives service destinations and bidirectional ciphertext
+byte counts within supplied call and episode windows. All endpoints use
+the same \texttt{/mcp} path. This measurement concerns the tool link;
+model-link exposure, physical timing, and WAN behavior require separate
+observations. The proxy-discard condition synthesizes replies on a disposable
+fixture copy, while isolated execution mutates a persistent clone. Business
+services and adverse writes are controlled synthetic mechanisms.
+
+\section{Recognition, outcomes, and costs}
+Recognition targets the requested action, retaining failed executions.
+LR and RF are fitted on training data; validation balanced accuracy chooses
+the primary attack per condition, with LR winning a tie. Both attacks, the
+baseline-trained frozen attack, and fixed position rules remain visible in
+Table~\ref{tab:m3-llm-recognition}. Attained accuracy measures an implemented
+attack, not an upper bound on available information.
+
+Goal completion requires the intended action on the intended object, its
+postcondition, and all prerequisite checks. Exact state integrity compares
+the complete business state with the single intended-action reference.
+Table~\ref{tab:m3-llm-utility} uses the same held-out fixtures for recognition,
+both outcomes, and resource accounting. Call bytes exclude session setup;
+total TLS bytes include all seven MCP session initializations and closing.
+
+\input{latex/m3-llm-recognition.tex}
+\input{latex/m3-llm-utility.tex}
+\clearpage
+\section{Paired comparisons and planner behavior}
+\input{latex/m3-llm-comparisons.tex}
+
+\section{Reproduction and scope}
+The primary analysis fixes 12 paired contrasts per endpoint: each of five
+cover conditions against no cover, plus visible versus hidden isolated
+execution, for both models. Two-sided exact discordant-pair tests use Holm
+correction separately for recognition, goal completion, and state integrity.
+Intervals use 10,000 paired fixture resamples stratified by requested action;
+they condition on fitted attackers and this synthetic workload.
+
+Collection ran on one RTX 4090 Laptop GPU with 16 GB memory, two workers,
+and one model loaded at a time. Per-episode wall time includes MCP setup,
+planner execution, journaling, and worker contention, and ends before session
+teardown; model loading is outside that timer. Resource counts and traffic
+bytes are provided separately from these local timing measurements.
+
+The review bundle contains frozen plans, model identities, synthetic
+request/response and state records, ciphertext-length records, features,
+predictions, and offline checkers. A separately implemented replay checker checks actual
+decisions, decoy execution and visibility, state transitions, and TLS byte
+accounting. Offline checks also refit the specified attackers and reproduce
+validation selection, intervals, and multiplicity corrections.
+
+The original PR replay remains a separate reference-program study. Its
+fixed-position and one-to-four-decoy sweep are not new LLM measurements.
+This extension tests constructed cover policies in the stated observer
+model and retains the original manuscript and reference results.
+\end{document}
