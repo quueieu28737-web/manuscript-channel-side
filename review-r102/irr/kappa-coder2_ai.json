@@ -1,0 +1,226 @@
+{
+ "access_class": {
+  "kappa": 1.0,
+  "ci95": [
+   1.0,
+   1.0
+  ],
+  "observed_agreement": 1.0,
+  "n": 44,
+  "confusion_rows_coder1_cols_coder2": {
+   "active": {
+    "active": 11,
+    "derived_preference": 0,
+    "recipient": 0,
+    "transit": 0
+   },
+   "derived_preference": {
+    "active": 0,
+    "derived_preference": 1,
+    "recipient": 0,
+    "transit": 0
+   },
+   "recipient": {
+    "active": 0,
+    "derived_preference": 0,
+    "recipient": 10,
+    "transit": 0
+   },
+   "transit": {
+    "active": 0,
+    "derived_preference": 0,
+    "recipient": 0,
+    "transit": 22
+   }
+  },
+  "disagreements": []
+ },
+ "protection": {
+  "kappa": 1.0,
+  "ci95": [
+   1.0,
+   1.0
+  ],
+  "observed_agreement": 1.0,
+  "n": 44,
+  "confusion_rows_coder1_cols_coder2": {
+   "N": {
+    "N": 35,
+    "Y": 0
+   },
+   "Y": {
+    "N": 0,
+    "Y": 9
+   }
+  },
+  "disagreements": []
+ },
+ "named_transfer": {
+  "kappa": 1.0,
+  "ci95": [
+   1.0,
+   1.0
+  ],
+  "observed_agreement": 1.0,
+  "n": 44,
+  "confusion_rows_coder1_cols_coder2": {
+   "N": {
+    "N": 40,
+    "Y": 0
+   },
+   "Y": {
+    "N": 0,
+    "Y": 4
+   }
+  },
+  "disagreements": []
+ },
+ "open_world": {
+  "kappa": 1.0,
+  "ci95": [
+   1.0,
+   1.0
+  ],
+  "observed_agreement": 1.0,
+  "n": 44,
+  "confusion_rows_coder1_cols_coder2": {
+   "N": {
+    "N": 42,
+    "Y": 0
+   },
+   "Y": {
+    "N": 0,
+    "Y": 2
+   }
+  },
+  "disagreements": []
+ },
+ "failure_status": {
+  "kappa": 0.459,
+  "ci95": [
+   0.228,
+   0.645
+  ],
+  "observed_agreement": 0.636,
+  "n": 44,
+  "confusion_rows_coder1_cols_coder2": {
+   "not_applicable": {
+    "not_applicable": 1,
+    "not_located": 1,
+    "partly_reported": 0,
+    "reported": 0
+   },
+   "not_located": {
+    "not_applicable": 0,
+    "not_located": 12,
+    "partly_reported": 0,
+    "reported": 0
+   },
+   "partly_reported": {
+    "not_applicable": 0,
+    "not_located": 2,
+    "partly_reported": 3,
+    "reported": 6
+   },
+   "reported": {
+    "not_applicable": 0,
+    "not_located": 1,
+    "partly_reported": 6,
+    "reported": 12
+   }
+  },
+  "disagreements": [
+   "ANT-model-scope",
+   "ANT-risk",
+   "ANT-scenario",
+   "ANT-stage",
+   "AP-behavior",
+   "AP-identity",
+   "ATR-budget",
+   "ATR-main",
+   "ATR-obfuscation",
+   "CG-transform",
+   "CHT-blocking",
+   "HP-calibration",
+   "HTTP-signature",
+   "PT-content",
+   "PT-metadata",
+   "TR-proprietary"
+  ],
+  "kappa_binary_reported_vs_other": 0.394,
+  "ci95_binary": [
+   0.098,
+   0.642
+  ]
+ },
+ "outcome_status": {
+  "kappa": 0.15,
+  "ci95": [
+   -0.021,
+   0.323
+  ],
+  "observed_agreement": 0.364,
+  "n": 44,
+  "confusion_rows_coder1_cols_coder2": {
+   "not_applicable": {
+    "not_applicable": 1,
+    "not_located": 2,
+    "partly_reported": 3,
+    "reported": 0
+   },
+   "not_located": {
+    "not_applicable": 0,
+    "not_located": 7,
+    "partly_reported": 0,
+    "reported": 0
+   },
+   "partly_reported": {
+    "not_applicable": 2,
+    "not_located": 7,
+    "partly_reported": 5,
+    "reported": 4
+   },
+   "reported": {
+    "not_applicable": 3,
+    "not_located": 2,
+    "partly_reported": 5,
+    "reported": 3
+   }
+  },
+  "disagreements": [
+   "ANT-model-scope",
+   "ANT-risk",
+   "ANT-scenario",
+   "ANT-stage",
+   "AP-behavior",
+   "AT-choice",
+   "ATR-budget",
+   "ATR-main",
+   "ATR-obfuscation",
+   "CB-partial",
+   "CB-size-excluded",
+   "CB-task",
+   "CB-topology",
+   "CG-active",
+   "CG-transform",
+   "CHT-password",
+   "FAY-combined",
+   "FAY-network",
+   "HP-calibration",
+   "HP-field",
+   "HTTP-signature",
+   "MARK-combined",
+   "MARK-protocol",
+   "PF-open",
+   "PF-pooled",
+   "PF-session",
+   "PT-content",
+   "PT-metadata"
+  ],
+  "kappa_binary_reported_vs_other": 0.117,
+  "ci95_binary": [
+   -0.161,
+   0.407
+  ]
+ }
+}
