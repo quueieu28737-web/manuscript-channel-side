@@ -1,74 +1,46 @@
-% IEEE S&P 2027 submission format; requires IEEEtran.cls v1.8b.
 \documentclass[conference,compsoc]{IEEEtran}
-
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
-\usepackage{booktabs}
-\usepackage{tabularx}
-\usepackage{array}
-\usepackage{graphicx}
+\usepackage{booktabs,tabularx,array,graphicx,amsmath,amssymb}
 \usepackage{placeins}
-\usepackage{amsmath}
 \usepackage[dvipsnames,table]{xcolor}
 \usepackage{tikz}
-\usetikzlibrary{arrows.meta,positioning,fit,calc,matrix,shapes.geometric}
+\usetikzlibrary{arrows.meta,positioning,fit}
+\usepackage{pgfplots}
+\usepgfplotslibrary{groupplots}
+\pgfplotsset{compat=1.18}
 \usepackage[hyphens]{url}
 \usepackage{hyperref}
-
 \hypersetup{hidelinks,pdfauthor={}}
-\newcommand{\scope}{\textsc{Scope}}
-\newcommand{\NRR}{\textsf{U}}
-\newcommand{\NRA}{\textsf{A}}
-\newcommand{\NRV}{\textsf{?}}
-\newcommand{\NA}{--}
-\newcommand{\evidenceStrong}{\cellcolor{ForestGreen!22}Strong}
-\newcommand{\evidenceLimited}{\cellcolor{Goldenrod!24}Limited}
-\newcommand{\evidenceNone}{\cellcolor{Gray!18}No verified direct evidence}
-\newcommand{\soktakeaway}[2]{%
-  \par\smallskip\noindent
-  \fcolorbox{MidnightBlue!45}{MidnightBlue!5}{%
-    \parbox{\dimexpr\columnwidth-2\fboxsep-2\fboxrule\relax}{%
-      \footnotesize\textbf{\color{MidnightBlue!85!black}#1.} #2%
-    }%
-  }\par\smallskip
-}
+% Avoid synthetic glyphs at math/text boundaries; preserve Unicode mappings.
+\SetSymbolFont{letters}{normal}{OML}{lmm}{m}{it}
+\SetSymbolFont{letters}{bold}{OML}{lmm}{b}{it}
+\input{glyphtounicode}
+\pdfgentounicode=1
+\pdfglyphtounicode{space}{0020}
+\ifdefined\pdfinterwordspaceoff\pdfinterwordspaceoff\fi
 \newcolumntype{Y}{>{\raggedright\arraybackslash}X}
-\newcommand{\auditpartial}{\textbf{P}}
-\input{tables/final-counts}
-
-\title{Reusing Defense Evidence in LLM and Agent Side Channels: A Reporting Framework and Case Studies}
+\newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcommand{\papername}{SoK: Agent Communication Side Channels\\Feedback Paths and Executed Cover}
+\title{\papername}
 \author{}
-
-\makeatletter
-\setlength{\@dblfptop}{0pt}
-\setlength{\@dblfpsep}{12pt}
-\setlength{\@dblfpbot}{0pt plus 1fil}
-\makeatother
 \begin{document}
+\input{bibliography-order}
+\raggedbottom
+\pagestyle{plain}
 \maketitle
-
-\begin{abstract}
-We propose a reporting framework for deciding which defense evidence can be reused when an LLM or agent deployment changes. It links source-versioned protection, function and cost measurements to the receiving view, affected execution state, and attacker and workload, yielding a scope-permitted comparison, an incompatible binding or a specific unresolved measurement.
-
-Two bounded cases illustrate those decisions. In E4's post hoc synthetic TLS replay, a fixed logistic attacker trained on clean outputs scores balanced accuracy/AUROC 0.500/0.678 on one Qwen~8B four-chunk condition; when trained on defended outputs, it scores 0.732/0.773 on the same 500 topic-held-out outputs. In a separate retail-sandbox convenience sample of 98 tasks (187 three-arm groups), state-changing write cover has task-weighted success 46.9 percentage points below baseline (95\% task-bootstrap interval $[-56.8,-36.9]$). In E4, batched response application TLS bytes are 0.381 times the raw value, excluding requests and handshakes. E4 illustrates attacker fitting; R44 makes the state and utility of an executed action visible.
-
-This is a methodological position paper: the reporting card is a proposal grounded in existing evaluation principles. Its usefulness and reliability remain to be evaluated. The cases are exploratory illustrations, and neither establishes a general defense effect or deployment-wide outcome.
-\end{abstract}
-
-\input{sections/01-introduction}
-\input{sections/03-methodology}
-\input{sections/04-scope}
-\input{sections/26-corpus-map}
-\input{sections/27-intervention-contracts}
-\input{sections/28-fingerprint-dependencies}
-\input{sections/11-discussion}
-\input{sections/10-open-challenges}
-\input{sections/12-conclusion}
-
-
+\thispagestyle{plain}
+\input{sections/abstract}
+\input{sections/introduction}
+\input{sections/scope}
+\input{sections/taxonomy}
+\input{sections/correspondence}
+\input{sections/evidence}
+\input{sections/defenses}
+\input{sections/experiment}
+\input{sections/reporting}
+\input{sections/discussion}
 \FloatBarrier
 \bibliographystyle{IEEEtran}
-\bibliography{refs,refs-final-additions,refs-deployment,refs-search-completion,refs-methodology,refs-defense-first}
-\appendices
-\input{sections/83-boundary-experiments-main}
+\bibliography{references}
 \end{document}

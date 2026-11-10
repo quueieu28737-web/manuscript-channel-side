@@ -1,0 +1,12 @@
+\section{Deployment and Defense Source Anchors}\label{supp:deployment}
+The main deployment map separates the observer's rights from the tested source view. Table~\ref{tab:deployment} supplies the protocol layer behind that map. HTTP/2 concurrent streams and DATA framing follow RFC 9113, Sections 4--6; QUIC streams and migration follow RFC 9000, Sections 2 and 9; HTTP/3 maps requests to QUIC streams in RFC 9114, Sections 4 and 6. The MCP reference is the 2025-06-18 Streamable HTTP specification, including POST/GET, optional SSE and local stdio. These specifications do not prescribe a privacy padding or pacing policy.
+
+\input{tables/deployment-map}
+
+The survey comparison uses Yao et al. v3, Sections 3 and 6.1.2; Shahriar et al. v1, Sections 1, 3--5; and Ferrag et al. v1, Sections I, V-A.1 and VI. They contribute scope comparisons, not new direct-Agent measurement rows or new publication-status evidence. Their original versions and locators are recorded in the review package.
+
+\input{tables/survey-position}
+
+\input{tables/defense-map}
+
+Table~\ref{tab:defenses} preserves each source-specific residual, cost and adaptation condition. The design-space table in the main paper instead states enforcement choices and costs to measure. An unmeasured cost in this table is not assigned a value by that design analysis.

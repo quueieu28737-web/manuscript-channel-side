@@ -1,0 +1,3038 @@
+{
+  "scope": "Source dependencies of mapped findings, not independent confirmations, error rates or confidence grades. Workshop short-paper identity alone does not qualify extended-version premises for the publication filter.",
+  "sources": [
+    "agentprint2025",
+    "ayzenshteyn2025cheat",
+    "borysenko2026http",
+    "dangol2026workflow",
+    "duan2026privacytrace",
+    "ediga2026trace",
+    "fayolle2026webagents",
+    "jeong2026wra",
+    "kang2026whoseagent",
+    "li2026ant",
+    "pouryousef2026traffic",
+    "reworr2024honeypot",
+    "shahriar2026agenttell",
+    "song2026personafingerprint",
+    "zhao2026agenttrace"
+  ],
+  "publication_verified": [
+    "ayzenshteyn2025cheat",
+    "jeong2026wra"
+  ],
+  "premises": [
+    {
+      "id": "J1-query",
+      "claim": "J1",
+      "source": "jeong2026wra",
+      "settings": [
+        "WRA-prompt"
+      ],
+      "finding": "Research queries supply prompt-recovery reference labels.",
+      "locator": "3.1; 4.2; 6.2; Table 10"
+    },
+    {
+      "id": "J1-task",
+      "claim": "J1",
+      "source": "pouryousef2026traffic",
+      "settings": [
+        "CB-task"
+      ],
+      "finding": "Assigned collaborative tasks label retained executions.",
+      "locator": "III; IV-B; V-B"
+    },
+    {
+      "id": "J1-capability",
+      "claim": "J1",
+      "source": "agentprint2025",
+      "settings": [
+        "AP-behavior"
+      ],
+      "finding": "Activated capabilities supply behavior labels.",
+      "locator": "III; App D-C"
+    },
+    {
+      "id": "J1-action",
+      "claim": "J1",
+      "source": "li2026ant",
+      "settings": [
+        "ANT-stage"
+      ],
+      "finding": "Logged local actions supply primitive labels.",
+      "locator": "3.2; 4.1; 4.4; App D.2"
+    },
+    {
+      "id": "J2-first",
+      "claim": "J2",
+      "source": "kang2026whoseagent",
+      "settings": [
+        "MARK-combined"
+      ],
+      "finding": "First-pass interaction is retained without retry-until-success.",
+      "locator": "VI-B/C; Table IV"
+    },
+    {
+      "id": "J2-selected-form",
+      "claim": "J2",
+      "source": "fayolle2026webagents",
+      "settings": [
+        "FAY-combined",
+        "FAY-blocking"
+      ],
+      "finding": "Fingerprinting excludes failed visits; blocking separately reports outcomes.",
+      "locator": "3.1.4; 6-7; 3.2; 5"
+    },
+    {
+      "id": "J2-selected-run",
+      "claim": "J2",
+      "source": "pouryousef2026traffic",
+      "settings": [
+        "CB-task"
+      ],
+      "finding": "Classification retains successful runs with valid captures.",
+      "locator": "III; IV-B; V-B"
+    },
+    {
+      "id": "J2-null",
+      "claim": "J2",
+      "source": "shahriar2026agenttell",
+      "settings": [
+        "AT-choice"
+      ],
+      "finding": "Unreached probes are retried; reached-probe nulls remain.",
+      "locator": "3.2; 4.3; 5; App B.4"
+    },
+    {
+      "id": "J2-refusal",
+      "claim": "J2",
+      "source": "li2026ant",
+      "settings": [
+        "ANT-risk"
+      ],
+      "finding": "Attack Code Generation excludes refusal-only episodes.",
+      "locator": "4.1-4.2; Table 3"
+    },
+    {
+      "id": "J3-risk",
+      "claim": "J3",
+      "source": "li2026ant",
+      "settings": [
+        "ANT-risk"
+      ],
+      "finding": "Task-derived risk labels do not supply execution-specific permission ground truth.",
+      "locator": "4.1-4.2; Table 3"
+    },
+    {
+      "id": "J3-disclosure",
+      "claim": "J3",
+      "source": "shahriar2026agenttell",
+      "settings": [
+        "AT-choice"
+      ],
+      "finding": "A fixed non-disclosure instruction and logged choice supply a specific privacy reference.",
+      "locator": "3.2; 4.3; 5; App B.4"
+    },
+    {
+      "id": "J3-submit",
+      "claim": "J3",
+      "source": "fayolle2026webagents",
+      "settings": [
+        "FAY-blocking"
+      ],
+      "finding": "Form, dynamic page ID and cookie define the tested access outcome.",
+      "locator": "3.2; 5"
+    },
+    {
+      "id": "J3-prevention",
+      "claim": "J3",
+      "source": "ayzenshteyn2025cheat",
+      "settings": [
+        "CHT-blocking"
+      ],
+      "finding": "CTF prevention is an explicit outcome distinct from detecting agent presence.",
+      "locator": "6.2; 7"
+    },
+    {
+      "id": "U1",
+      "claim": "units",
+      "source": "agentprint2025",
+      "settings": [
+        "AP-identity"
+      ],
+      "finding": "Supplied browser interactions define the recognition denominator.",
+      "locator": "App B-D; D-D"
+    },
+    {
+      "id": "U2",
+      "claim": "units",
+      "source": "jeong2026wra",
+      "settings": [
+        "WRA-prompt"
+      ],
+      "finding": "Supplied research-task traces define the recognition denominator.",
+      "locator": "3.1; 4.2; 6.2; Table 10"
+    },
+    {
+      "id": "U3",
+      "claim": "units",
+      "source": "dangol2026workflow",
+      "settings": [
+        "CG-workflow"
+      ],
+      "finding": "Supplied workflow records define the recognition denominator.",
+      "locator": "9.1"
+    },
+    {
+      "id": "U4",
+      "claim": "units",
+      "source": "pouryousef2026traffic",
+      "settings": [
+        "CB-task"
+      ],
+      "finding": "Recorded execution timestamps supply the task unit.",
+      "locator": "III; IV-B; V-B"
+    },
+    {
+      "id": "U5",
+      "claim": "units",
+      "source": "li2026ant",
+      "settings": [
+        "ANT-stage"
+      ],
+      "finding": "Runtime-log segments supply stage boundaries.",
+      "locator": "3.2; 4.1; 4.4; App D.2"
+    },
+    {
+      "id": "U6",
+      "claim": "units",
+      "source": "song2026personafingerprint",
+      "settings": [
+        "PF-session"
+      ],
+      "finding": "Fixed packet windows, grouped by session in splitting, are a distinct unit.",
+      "locator": "2; 3.3; 5.1; 5.3"
+    },
+    {
+      "id": "B1",
+      "claim": "units",
+      "source": "li2026ant",
+      "settings": [
+        "ANT-risk"
+      ],
+      "finding": "189 benign of 209 episodes gives a 90.4 percent majority reference.",
+      "locator": "4.1-4.2; Table 3"
+    },
+    {
+      "id": "X1",
+      "claim": "transfer",
+      "source": "dangol2026workflow",
+      "settings": [
+        "CG-composition"
+      ],
+      "finding": "The composition holdout retains known classes; the reported recurring/holdout comparison is about 0.67/0.18.",
+      "locator": "9.12"
+    },
+    {
+      "id": "X2",
+      "claim": "transfer",
+      "source": "pouryousef2026traffic",
+      "settings": [
+        "CB-topology"
+      ],
+      "finding": "The named graph/star topology comparison is about 0.83/0.52 under its own protocol.",
+      "locator": "V-B; Fig 8"
+    },
+    {
+      "id": "D1",
+      "claim": "containment",
+      "source": "dangol2026workflow",
+      "settings": [
+        "CG-live"
+      ],
+      "finding": "The inspected live implementation refits RF within folds of the protected capture.",
+      "locator": "9.7; scripts/eval_ohttp_live.py; src/agentgraph/binding.py, evaluate.py, classify.py"
+    },
+    {
+      "id": "D2",
+      "claim": "containment",
+      "source": "dangol2026workflow",
+      "settings": [
+        "CG-live"
+      ],
+      "finding": "The six-class live result joins 0.30 accuracy to approximately 13-fold bytes and 11-fold latency, without matched task utility.",
+      "locator": "9.7; scripts/eval_ohttp_live.py; src/agentgraph/binding.py, evaluate.py, classify.py"
+    },
+    {
+      "id": "D3",
+      "claim": "containment",
+      "source": "jeong2026wra",
+      "settings": [
+        "WRA-visibility"
+      ],
+      "finding": "Visibility utility 8.55/8.54 cannot be assigned to the five-decoy recovery score 0.565.",
+      "locator": "8.2; Tables 10-11"
+    },
+    {
+      "id": "D4",
+      "claim": "containment",
+      "source": "jeong2026wra",
+      "settings": [
+        "WRA-decoy"
+      ],
+      "finding": "The inspected test-side mixing does not resolve fully matched protected ICL examples/refitting.",
+      "locator": "8.1; Table 8; config_defence.json; utils_ICL_prompt.py"
+    },
+    {
+      "id": "M1",
+      "claim": "containment",
+      "source": "pouryousef2026traffic",
+      "settings": [
+        "CB-task"
+      ],
+      "finding": "Model-link task inference is measured in the original setting, not as residual exposure after tool protection.",
+      "locator": "III; IV-B; V-B"
+    },
+    {
+      "id": "M2",
+      "claim": "containment",
+      "source": "li2026ant",
+      "settings": [
+        "ANT-model-scope"
+      ],
+      "finding": "Model-only inference is measured in the original setting, not as residual exposure after tool protection.",
+      "locator": "4.3; model-call ablation SVG table (same test episodes)"
+    },
+    {
+      "id": "J2-terminal",
+      "claim": "J2",
+      "source": "ediga2026trace",
+      "settings": [
+        "TR-within"
+      ],
+      "finding": "Terminal clean sessions discard crash/no-command runs.",
+      "locator": "3"
+    },
+    {
+      "id": "U-field",
+      "claim": "units",
+      "source": "reworr2024honeypot",
+      "settings": [
+        "HP-field"
+      ],
+      "finding": "Field count is detector-defined candidates over interactions; independent presence labels and recall are unavailable.",
+      "locator": "3.3;4;5"
+    },
+    {
+      "id": "T-scaffold",
+      "claim": "transfer",
+      "source": "ediga2026trace",
+      "settings": [
+        "TR-scaffold"
+      ],
+      "finding": "Model-family attribution is separately tested on a held-out scaffold; macro-F1 .815.",
+      "locator": "4.1"
+    },
+    {
+      "id": "F-selection",
+      "claim": "failure_signal",
+      "source": "ediga2026trace",
+      "settings": [
+        "TR-within"
+      ],
+      "finding": "Crashes/no-command runs are excluded from terminal fingerprint population.",
+      "locator": "3"
+    },
+    {
+      "id": "F-repair",
+      "claim": "failure_signal",
+      "source": "zhao2026agenttrace",
+      "settings": [
+        "ATR-main"
+      ],
+      "finding": "Parser failures and ordered repair transitions support model-identity attribution under designed probes.",
+      "locator": "3.4;4.3;Table4"
+    }
+  ],
+  "requirements": {
+    "J1": [
+      [
+        "J1-query",
+        "J1-task"
+      ],
+      [
+        "J1-capability",
+        "J1-action"
+      ]
+    ],
+    "J2": [
+      [
+        "J2-first",
+        "J2-null",
+        "J2-refusal"
+      ],
+      [
+        "J2-selected-form",
+        "J2-selected-run",
+        "J2-terminal"
+      ]
+    ],
+    "J3": [
+      [
+        "J3-risk"
+      ],
+      [
+        "J3-disclosure"
+      ],
+      [
+        "J3-submit",
+        "J3-prevention"
+      ]
+    ],
+    "failure_signal": [
+      [
+        "F-selection"
+      ],
+      [
+        "F-repair"
+      ]
+    ]
+  },
+  "scenario_count": 20,
+  "rows": [
+    {
+      "scenario": "full",
+      "claim": "J1",
+      "retained_premises": [
+        "J1-action",
+        "J1-capability",
+        "J1-query",
+        "J1-task"
+      ],
+      "withdrawn_premises": [],
+      "supporting_sources": [
+        "agentprint2025",
+        "jeong2026wra",
+        "li2026ant",
+        "pouryousef2026traffic"
+      ],
+      "complete_comparison": true
+    },
+    {
+      "scenario": "full",
+      "claim": "J2",
+      "retained_premises": [
+        "J2-first",
+        "J2-null",
+        "J2-refusal",
+        "J2-selected-form",
+        "J2-selected-run",
+        "J2-terminal"
+      ],
+      "withdrawn_premises": [],
+      "supporting_sources": [
+        "ediga2026trace",
+        "fayolle2026webagents",
+        "kang2026whoseagent",
+        "li2026ant",
+        "pouryousef2026traffic",
+        "shahriar2026agenttell"
+      ],
+      "complete_comparison": true
+    },
+    {
+      "scenario": "full",
+      "claim": "J3",
+      "retained_premises": [
+        "J3-disclosure",
+        "J3-prevention",
+        "J3-risk",
+        "J3-submit"
+      ],
+      "withdrawn_premises": [],
+      "supporting_sources": [
+        "ayzenshteyn2025cheat",
+        "fayolle2026webagents",
+        "li2026ant",
+        "shahriar2026agenttell"
+      ],
+      "complete_comparison": true
+    },
+    {
+      "scenario": "full",
+      "claim": "units",
+      "retained_premises": [
+        "B1",
+        "U-field",
+        "U1",
+        "U2",
+        "U3",
+        "U4",
+        "U5",
+        "U6"
+      ],
+      "withdrawn_premises": [],
+      "supporting_sources": [
+        "agentprint2025",
+        "dangol2026workflow",
+        "jeong2026wra",
+        "li2026ant",
+        "pouryousef2026traffic",
+        "reworr2024honeypot",
+        "song2026personafingerprint"
+      ],
+      "complete_comparison": null
+    },
+    {
+      "scenario": "full",
+      "claim": "transfer",
+      "retained_premises": [
+        "T-scaffold",
+        "X1",
+        "X2"
+      ],
+      "withdrawn_premises": [],
+      "supporting_sources": [
+        "dangol2026workflow",
+        "ediga2026trace",
+        "pouryousef2026traffic"
+      ],
+      "complete_comparison": null
+    },
+    {
+      "scenario": "full",
+      "claim": "containment",
+      "retained_premises": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "M1",
+        "M2"
+      ],
+      "withdrawn_premises": [],
+      "supporting_sources": [
+        "dangol2026workflow",
+        "jeong2026wra",
+        "li2026ant",
+        "pouryousef2026traffic"
+      ],
+      "complete_comparison": null
+    },
+    {
+      "scenario": "full",
+      "claim": "failure_signal",
+      "retained_premises": [
+        "F-repair",
+        "F-selection"
+      ],
+      "withdrawn_premises": [],
+      "supporting_sources": [
+        "ediga2026trace",
+        "zhao2026agenttrace"
+      ],
+      "complete_comparison": true
+    },
+    {
+      "scenario": "without:agentprint2025",
+      "claim": "J1",
+      "retained_premises": [
+        "J1-action",
+        "J1-query",
+        "J1-task"
+      ],
+      "withdrawn_premises": [
+        "J1-capability"
+      ],
+      "supporting_sources": [
+        "jeong2026wra",
+        "li2026ant",
+        "pouryousef2026traffic"
+      ],
+      "complete_comparison": true
+    },
+    {
+      "scenario": "without:agentprint2025",
+      "claim": "J2",
+      "retained_premises": [
+        "J2-first",
+        "J2-null",
+        "J2-refusal",
+        "J2-selected-form",
+        "J2-selected-run",
+        "J2-terminal"
+      ],
+      "withdrawn_premises": [],
+      "supporting_sources": [
+        "ediga2026trace",
+        "fayolle2026webagents",
+        "kang2026whoseagent",
+        "li2026ant",
+        "pouryousef2026traffic",
+        "shahriar2026agenttell"
+      ],
+      "complete_comparison": true
+    },
+    {
+      "scenario": "without:agentprint2025",
+      "claim": "J3",
+      "retained_premises": [
+        "J3-disclosure",
+        "J3-prevention",
+        "J3-risk",
+        "J3-submit"
+      ],
+      "withdrawn_premises": [],
+      "supporting_sources": [
+        "ayzenshteyn2025cheat",
+        "fayolle2026webagents",
+        "li2026ant",
+        "shahriar2026agenttell"
+      ],
+      "complete_comparison": true
+    },
+    {
+      "scenario": "without:agentprint2025",
+      "claim": "units",
+      "retained_premises": [
+        "B1",
+        "U-field",
+        "U2",
+        "U3",
+        "U4",
+        "U5",
+        "U6"
+      ],
+      "withdrawn_premises": [
+        "U1"
+      ],
+      "supporting_sources": [
+        "dangol2026workflow",
+        "jeong2026wra",
+        "li2026ant",
+        "pouryousef2026traffic",
+        "reworr2024honeypot",
+        "song2026personafingerprint"
+      ],
+      "complete_comparison": null
+    },
+    {
+      "scenario": "without:agentprint2025",
+      "claim": "transfer",
+      "retained_premises": [
+        "T-scaffold",
+        "X1",
+        "X2"
+      ],
+      "withdrawn_premises": [],
+      "supporting_sources": [
+        "dangol2026workflow",
+        "ediga2026trace",
+        "pouryousef2026traffic"
+      ],
+      "complete_comparison": null
+    },
+    {
+      "scenario": "without:agentprint2025",
+      "claim": "containment",
+      "retained_premises": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "M1",
+        "M2"
+      ],
+      "withdrawn_premises": [],
+      "supporting_sources": [
+        "dangol2026workflow",
+        "jeong2026wra",
+        "li2026ant",
+        "pouryousef2026traffic"
+      ],
+      "complete_comparison": null
+    },
+    {
+      "scenario": "without:agentprint2025",
+      "claim": "failure_signal",
+      "retained_premises": [
+        "F-repair",
+        "F-selection"
+      ],
+      "withdrawn_premises": [],
+      "supporting_sources": [
+        "ediga2026trace",
+        "zhao2026agenttrace"
+      ],
+      "complete_comparison": true
+    },
+    {
+      "scenario": "without:ayzenshteyn2025cheat",
+      "claim": "J1",
+      "retained_premises": [
+        "J1-action",
+        "J1-capability",
+        "J1-query",
+        "J1-task"
+      ],
+      "withdrawn_premises": [],
+      "supporting_sources": [
+        "agentprint2025",
+        "jeong2026wra",
+        "li2026ant",
+        "pouryousef2026traffic"
+      ],
+      "complete_comparison": true
+    },
+    {
+      "scenario": "without:ayzenshteyn2025cheat",
+      "claim": "J2",
+      "retained_premises": [
+        "J2-first",
+        "J2-null",
+        "J2-refusal",
+        "J2-selected-form",
+        "J2-selected-run",
+        "J2-terminal"
+      ],
+      "withdrawn_premises": [],
+      "supporting_sources": [
+        "ediga2026trace",
+        "fayolle2026webagents",
+        "kang2026whoseagent",
+        "li2026ant",
+        "pouryousef2026traffic",
+        "shahriar2026agenttell"
+      ],
+      "complete_comparison": true
+    },
+    {
+      "scenario": "without:ayzenshteyn2025cheat",
+      "claim": "J3",
+      "retained_premises": [
+        "J3-disclosure",
+        "J3-risk",
+        "J3-submit"
+      ],
+      "withdrawn_premises": [
+        "J3-prevention"
+      ],
+      "supporting_sources": [
+        "fayolle2026webagents",
+        "li2026ant",
+        "shahriar2026agenttell"
+      ],
+      "complete_comparison": true
+    },
+    {
+      "scenario": "without:ayzenshteyn2025cheat",
+      "claim": "units",
+      "retained_premises": [
+        "B1",
+        "U-field",
+        "U1",
+        "U2",
+        "U3",
+        "U4",
+        "U5",
+        "U6"
+      ],
+      "withdrawn_premises": [],
+      "supporting_sources": [
+        "agentprint2025",
+        "dangol2026workflow",
+        "jeong2026wra",
+        "li2026ant",
+        "pouryousef2026traffic",
+        "reworr2024honeypot",
+        "song2026personafingerprint"
+      ],
+      "complete_comparison": null
+    },
+    {
+      "scenario": "without:ayzenshteyn2025cheat",
+      "claim": "transfer",
+      "retained_premises": [
+        "T-scaffold",
+        "X1",
+        "X2"
+      ],
+      "withdrawn_premises": [],
+      "supporting_sources": [
+        "dangol2026workflow",
+        "ediga2026trace",
+        "pouryousef2026traffic"
+      ],
+      "complete_comparison": null
+    },
+    {
+      "scenario": "without:ayzenshteyn2025cheat",
+      "claim": "containment",
+      "retained_premises": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "M1",
+        "M2"
+      ],
+      "withdrawn_premises": [],
+      "supporting_sources": [
+        "dangol2026workflow",
+        "jeong2026wra",
+        "li2026ant",
+        "pouryousef2026traffic"
+      ],
+      "complete_comparison": null
+    },
+    {
+      "scenario": "without:ayzenshteyn2025cheat",
+      "claim": "failure_signal",
+      "retained_premises": [
+        "F-repair",
+        "F-selection"
+      ],
+      "withdrawn_premises": [],
+      "supporting_sources": [
+        "ediga2026trace",
+        "zhao2026agenttrace"
+      ],
+      "complete_comparison": true
+    },
+    {
+      "scenario": "without:borysenko2026http",
+      "claim": "J1",
+      "retained_premises": [
+        "J1-action",
+        "J1-capability",
+        "J1-query",
+        "J1-task"
+      ],
+      "withdrawn_premises": [],
+      "supporting_sources": [
+        "agentprint2025",
+        "jeong2026wra",
+        "li2026ant",
+        "pouryousef2026traffic"
+      ],
+      "complete_comparison": true
+    },
+    {
+      "scenario": "without:borysenko2026http",
+      "claim": "J2",
+      "retained_premises": [
+        "J2-first",
+        "J2-null",
+        "J2-refusal",
+        "J2-selected-form",
+        "J2-selected-run",
+        "J2-terminal"
+      ],
+      "withdrawn_premises": [],
+      "supporting_sources": [
+        "ediga2026trace",
+        "fayolle2026webagents",
+        "kang2026whoseagent",
+        "li2026ant",
+        "pouryousef2026traffic",
+        "shahriar2026agenttell"
+      ],
+      "complete_comparison": true
+    },
+    {
+      "scenario": "without:borysenko2026http",
+      "claim": "J3",
+      "retained_premises": [
+        "J3-disclosure",
+        "J3-prevention",
+        "J3-risk",
+        "J3-submit"
+      ],
+      "withdrawn_premises": [],
+      "supporting_sources": [
+        "ayzenshteyn2025cheat",
+        "fayolle2026webagents",
+        "li2026ant",
+        "shahriar2026agenttell"
+      ],
+      "complete_comparison": true
+    },
+    {
+      "scenario": "without:borysenko2026http",
+      "claim": "units",
+      "retained_premises": [
+        "B1",
+        "U-field",
+        "U1",
+        "U2",
+        "U3",
+        "U4",
+        "U5",
+        "U6"
+      ],
+      "withdrawn_premises": [],
+      "supporting_sources": [
+        "agentprint2025",
+        "dangol2026workflow",
+        "jeong2026wra",
+        "li2026ant",
+        "pouryousef2026traffic",
+        "reworr2024honeypot",
+        "song2026personafingerprint"
+      ],
+      "complete_comparison": null
+    },
+    {
+      "scenario": "without:borysenko2026http",
+      "claim": "transfer",
+      "retained_premises": [
+        "T-scaffold",
+        "X1",
+        "X2"
+      ],
+      "withdrawn_premises": [],
+      "supporting_sources": [
+        "dangol2026workflow",
+        "ediga2026trace",
+        "pouryousef2026traffic"
+      ],
+      "complete_comparison": null
+    },
+    {
+      "scenario": "without:borysenko2026http",
+      "claim": "containment",
+      "retained_premises": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "M1",
+        "M2"
+      ],
+      "withdrawn_premises": [],
+      "supporting_sources": [
+        "dangol2026workflow",
+        "jeong2026wra",
+        "li2026ant",
+        "pouryousef2026traffic"
+      ],
+      "complete_comparison": null
+    },
+    {
+      "scenario": "without:borysenko2026http",
+      "claim": "failure_signal",
+      "retained_premises": [
+        "F-repair",
+        "F-selection"
+      ],
+      "withdrawn_premises": [],
+      "supporting_sources": [
+        "ediga2026trace",
+        "zhao2026agenttrace"
+      ],
+      "complete_comparison": true
+    },
+    {
+      "scenario": "without:dangol2026workflow",
+      "claim": "J1",
+      "retained_premises": [
+        "J1-action",
+        "J1-capability",
+        "J1-query",
+        "J1-task"
+      ],
+      "withdrawn_premises": [],
+      "supporting_sources": [
+        "agentprint2025",
+        "jeong2026wra",
+        "li2026ant",
+        "pouryousef2026traffic"
+      ],
+      "complete_comparison": true
+    },
+    {
+      "scenario": "without:dangol2026workflow",
+      "claim": "J2",
+      "retained_premises": [
+        "J2-first",
+        "J2-null",
+        "J2-refusal",
+        "J2-selected-form",
+        "J2-selected-run",
+        "J2-terminal"
+      ],
+      "withdrawn_premises": [],
+      "supporting_sources": [
+        "ediga2026trace",
+        "fayolle2026webagents",
+        "kang2026whoseagent",
+        "li2026ant",
+        "pouryousef2026traffic",
+        "shahriar2026agenttell"
+      ],
+      "complete_comparison": true
+    },
+    {
+      "scenario": "without:dangol2026workflow",
+      "claim": "J3",
+      "retained_premises": [
+        "J3-disclosure",
+        "J3-prevention",
+        "J3-risk",
+        "J3-submit"
+      ],
+      "withdrawn_premises": [],
+      "supporting_sources": [
+        "ayzenshteyn2025cheat",
+        "fayolle2026webagents",
+        "li2026ant",
+        "shahriar2026agenttell"
+      ],
+      "complete_comparison": true
+    },
+    {
+      "scenario": "without:dangol2026workflow",
+      "claim": "units",
+      "retained_premises": [
+        "B1",
+        "U-field",
+        "U1",
+        "U2",
+        "U4",
+        "U5",
+        "U6"
+      ],
+      "withdrawn_premises": [
+        "U3"
+      ],
+      "supporting_sources": [
+        "agentprint2025",
+        "jeong2026wra",
+        "li2026ant",
+        "pouryousef2026traffic",
+        "reworr2024honeypot",
+        "song2026personafingerprint"
+      ],
+      "complete_comparison": null
+    },
+    {
+      "scenario": "without:dangol2026workflow",
+      "claim": "transfer",
+      "retained_premises": [
+        "T-scaffold",
+        "X2"
+      ],
+      "withdrawn_premises": [
+        "X1"
+      ],
+      "supporting_sources": [
+        "ediga2026trace",
+        "pouryousef2026traffic"
+      ],
+      "complete_comparison": null
+    },
+    {
+      "scenario": "without:dangol2026workflow",
+      "claim": "containment",
+      "retained_premises": [
+        "D3",
+        "D4",
+        "M1",
+        "M2"
+      ],
+      "withdrawn_premises": [
+        "D1",
+        "D2"
+      ],
+      "supporting_sources": [
+        "jeong2026wra",
+        "li2026ant",
+        "pouryousef2026traffic"
+      ],
+      "complete_comparison": null
+    },
+    {
+      "scenario": "without:dangol2026workflow",
+      "claim": "failure_signal",
+      "retained_premises": [
+        "F-repair",
+        "F-selection"
+      ],
+      "withdrawn_premises": [],
+      "supporting_sources": [
+        "ediga2026trace",
+        "zhao2026agenttrace"
+      ],
+      "complete_comparison": true
+    },
+    {
+      "scenario": "without:duan2026privacytrace",
+      "claim": "J1",
+      "retained_premises": [
+        "J1-action",
+        "J1-capability",
+        "J1-query",
+        "J1-task"
+      ],
+      "withdrawn_premises": [],
+      "supporting_sources": [
+        "agentprint2025",
+        "jeong2026wra",
+        "li2026ant",
+        "pouryousef2026traffic"
+      ],
+      "complete_comparison": true
+    },
+    {
+      "scenario": "without:duan2026privacytrace",
+      "claim": "J2",
+      "retained_premises": [
+        "J2-first",
+        "J2-null",
+        "J2-refusal",
+        "J2-selected-form",
+        "J2-selected-run",
+        "J2-terminal"
+      ],
+      "withdrawn_premises": [],
+      "supporting_sources": [
+        "ediga2026trace",
+        "fayolle2026webagents",
+        "kang2026whoseagent",
+        "li2026ant",
+        "pouryousef2026traffic",
+        "shahriar2026agenttell"
+      ],
+      "complete_comparison": true
+    },
+    {
+      "scenario": "without:duan2026privacytrace",
+      "claim": "J3",
+      "retained_premises": [
+        "J3-disclosure",
+        "J3-prevention",
+        "J3-risk",
+        "J3-submit"
+      ],
+      "withdrawn_premises": [],
+      "supporting_sources": [
+        "ayzenshteyn2025cheat",
+        "fayolle2026webagents",
+        "li2026ant",
+        "shahriar2026agenttell"
+      ],
+      "complete_comparison": true
+    },
+    {
+      "scenario": "without:duan2026privacytrace",
+      "claim": "units",
+      "retained_premises": [
+        "B1",
+        "U-field",
+        "U1",
+        "U2",
+        "U3",
+        "U4",
+        "U5",
+        "U6"
+      ],
+      "withdrawn_premises": [],
+      "supporting_sources": [
+        "agentprint2025",
+        "dangol2026workflow",
+        "jeong2026wra",
+        "li2026ant",
+        "pouryousef2026traffic",
+        "reworr2024honeypot",
+        "song2026personafingerprint"
+      ],
+      "complete_comparison": null
+    },
+    {
+      "scenario": "without:duan2026privacytrace",
+      "claim": "transfer",
+      "retained_premises": [
+        "T-scaffold",
+        "X1",
+        "X2"
+      ],
+      "withdrawn_premises": [],
+      "supporting_sources": [
+        "dangol2026workflow",
+        "ediga2026trace",
+        "pouryousef2026traffic"
+      ],
+      "complete_comparison": null
+    },
+    {
+      "scenario": "without:duan2026privacytrace",
+      "claim": "containment",
+      "retained_premises": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "M1",
+        "M2"
+      ],
+      "withdrawn_premises": [],
+      "supporting_sources": [
+        "dangol2026workflow",
+        "jeong2026wra",
+        "li2026ant",
+        "pouryousef2026traffic"
+      ],
+      "complete_comparison": null
+    },
+    {
+      "scenario": "without:duan2026privacytrace",
+      "claim": "failure_signal",
+      "retained_premises": [
+        "F-repair",
+        "F-selection"
+      ],
+      "withdrawn_premises": [],
+      "supporting_sources": [
+        "ediga2026trace",
+        "zhao2026agenttrace"
+      ],
+      "complete_comparison": true
+    },
+    {
+      "scenario": "without:ediga2026trace",
+      "claim": "J1",
+      "retained_premises": [
+        "J1-action",
+        "J1-capability",
+        "J1-query",
+        "J1-task"
+      ],
+      "withdrawn_premises": [],
+      "supporting_sources": [
+        "agentprint2025",
+        "jeong2026wra",
+        "li2026ant",
+        "pouryousef2026traffic"
+      ],
+      "complete_comparison": true
+    },
+    {
+      "scenario": "without:ediga2026trace",
+      "claim": "J2",
+      "retained_premises": [
+        "J2-first",
+        "J2-null",
+        "J2-refusal",
+        "J2-selected-form",
+        "J2-selected-run"
+      ],
+      "withdrawn_premises": [
+        "J2-terminal"
+      ],
+      "supporting_sources": [
+        "fayolle2026webagents",
+        "kang2026whoseagent",
+        "li2026ant",
+        "pouryousef2026traffic",
+        "shahriar2026agenttell"
+      ],
+      "complete_comparison": true
+    },
+    {
+      "scenario": "without:ediga2026trace",
+      "claim": "J3",
+      "retained_premises": [
+        "J3-disclosure",
+        "J3-prevention",
+        "J3-risk",
+        "J3-submit"
+      ],
+      "withdrawn_premises": [],
+      "supporting_sources": [
+        "ayzenshteyn2025cheat",
+        "fayolle2026webagents",
+        "li2026ant",
+        "shahriar2026agenttell"
+      ],
+      "complete_comparison": true
+    },
+    {
+      "scenario": "without:ediga2026trace",
+      "claim": "units",
+      "retained_premises": [
+        "B1",
+        "U-field",
+        "U1",
+        "U2",
+        "U3",
+        "U4",
+        "U5",
+        "U6"
+      ],
+      "withdrawn_premises": [],
+      "supporting_sources": [
+        "agentprint2025",
+        "dangol2026workflow",
+        "jeong2026wra",
+        "li2026ant",
+        "pouryousef2026traffic",
+        "reworr2024honeypot",
+        "song2026personafingerprint"
+      ],
+      "complete_comparison": null
+    },
+    {
+      "scenario": "without:ediga2026trace",
+      "claim": "transfer",
+      "retained_premises": [
+        "X1",
+        "X2"
+      ],
+      "withdrawn_premises": [
+        "T-scaffold"
+      ],
+      "supporting_sources": [
+        "dangol2026workflow",
+        "pouryousef2026traffic"
+      ],
+      "complete_comparison": null
+    },
+    {
+      "scenario": "without:ediga2026trace",
+      "claim": "containment",
+      "retained_premises": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "M1",
+        "M2"
+      ],
+      "withdrawn_premises": [],
+      "supporting_sources": [
+        "dangol2026workflow",
+        "jeong2026wra",
+        "li2026ant",
+        "pouryousef2026traffic"
+      ],
+      "complete_comparison": null
+    },
+    {
+      "scenario": "without:ediga2026trace",
+      "claim": "failure_signal",
+      "retained_premises": [
+        "F-repair"
+      ],
+      "withdrawn_premises": [
+        "F-selection"
+      ],
+      "supporting_sources": [
+        "zhao2026agenttrace"
+      ],
+      "complete_comparison": false
+    },
+    {
+      "scenario": "without:fayolle2026webagents",
+      "claim": "J1",
+      "retained_premises": [
+        "J1-action",
+        "J1-capability",
+        "J1-query",
+        "J1-task"
+      ],
+      "withdrawn_premises": [],
+      "supporting_sources": [
+        "agentprint2025",
+        "jeong2026wra",
+        "li2026ant",
+        "pouryousef2026traffic"
+      ],
+      "complete_comparison": true
+    },
+    {
+      "scenario": "without:fayolle2026webagents",
+      "claim": "J2",
+      "retained_premises": [
+        "J2-first",
+        "J2-null",
+        "J2-refusal",
+        "J2-selected-run",
+        "J2-terminal"
+      ],
+      "withdrawn_premises": [
+        "J2-selected-form"
+      ],
+      "supporting_sources": [
+        "ediga2026trace",
+        "kang2026whoseagent",
+        "li2026ant",
+        "pouryousef2026traffic",
+        "shahriar2026agenttell"
+      ],
+      "complete_comparison": true
+    },
+    {
+      "scenario": "without:fayolle2026webagents",
+      "claim": "J3",
+      "retained_premises": [
+        "J3-disclosure",
+        "J3-prevention",
+        "J3-risk"
+      ],
+      "withdrawn_premises": [
+        "J3-submit"
+      ],
+      "supporting_sources": [
+        "ayzenshteyn2025cheat",
+        "li2026ant",
+        "shahriar2026agenttell"
+      ],
+      "complete_comparison": true
+    },
+    {
+      "scenario": "without:fayolle2026webagents",
+      "claim": "units",
+      "retained_premises": [
+        "B1",
+        "U-field",
+        "U1",
+        "U2",
+        "U3",
+        "U4",
+        "U5",
+        "U6"
+      ],
+      "withdrawn_premises": [],
+      "supporting_sources": [
+        "agentprint2025",
+        "dangol2026workflow",
+        "jeong2026wra",
+        "li2026ant",
+        "pouryousef2026traffic",
+        "reworr2024honeypot",
+        "song2026personafingerprint"
+      ],
+      "complete_comparison": null
+    },
+    {
+      "scenario": "without:fayolle2026webagents",
+      "claim": "transfer",
+      "retained_premises": [
+        "T-scaffold",
+        "X1",
+        "X2"
+      ],
+      "withdrawn_premises": [],
+      "supporting_sources": [
+        "dangol2026workflow",
+        "ediga2026trace",
+        "pouryousef2026traffic"
+      ],
+      "complete_comparison": null
+    },
+    {
+      "scenario": "without:fayolle2026webagents",
+      "claim": "containment",
+      "retained_premises": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "M1",
+        "M2"
+      ],
+      "withdrawn_premises": [],
+      "supporting_sources": [
+        "dangol2026workflow",
+        "jeong2026wra",
+        "li2026ant",
+        "pouryousef2026traffic"
+      ],
+      "complete_comparison": null
+    },
+    {
+      "scenario": "without:fayolle2026webagents",
+      "claim": "failure_signal",
+      "retained_premises": [
+        "F-repair",
+        "F-selection"
+      ],
+      "withdrawn_premises": [],
+      "supporting_sources": [
+        "ediga2026trace",
+        "zhao2026agenttrace"
+      ],
+      "complete_comparison": true
+    },
+    {
+      "scenario": "without:jeong2026wra",
+      "claim": "J1",
+      "retained_premises": [
+        "J1-action",
+        "J1-capability",
+        "J1-task"
+      ],
+      "withdrawn_premises": [
+        "J1-query"
+      ],
+      "supporting_sources": [
+        "agentprint2025",
+        "li2026ant",
+        "pouryousef2026traffic"
+      ],
+      "complete_comparison": true
+    },
+    {
+      "scenario": "without:jeong2026wra",
+      "claim": "J2",
+      "retained_premises": [
+        "J2-first",
+        "J2-null",
+        "J2-refusal",
+        "J2-selected-form",
+        "J2-selected-run",
+        "J2-terminal"
+      ],
+      "withdrawn_premises": [],
+      "supporting_sources": [
+        "ediga2026trace",
+        "fayolle2026webagents",
+        "kang2026whoseagent",
+        "li2026ant",
+        "pouryousef2026traffic",
+        "shahriar2026agenttell"
+      ],
+      "complete_comparison": true
+    },
+    {
+      "scenario": "without:jeong2026wra",
+      "claim": "J3",
+      "retained_premises": [
+        "J3-disclosure",
+        "J3-prevention",
+        "J3-risk",
+        "J3-submit"
+      ],
+      "withdrawn_premises": [],
+      "supporting_sources": [
+        "ayzenshteyn2025cheat",
+        "fayolle2026webagents",
+        "li2026ant",
+        "shahriar2026agenttell"
+      ],
+      "complete_comparison": true
+    },
+    {
+      "scenario": "without:jeong2026wra",
+      "claim": "units",
+      "retained_premises": [
+        "B1",
+        "U-field",
+        "U1",
+        "U3",
+        "U4",
+        "U5",
+        "U6"
+      ],
+      "withdrawn_premises": [
+        "U2"
+      ],
+      "supporting_sources": [
+        "agentprint2025",
+        "dangol2026workflow",
+        "li2026ant",
+        "pouryousef2026traffic",
+        "reworr2024honeypot",
+        "song2026personafingerprint"
+      ],
+      "complete_comparison": null
+    },
+    {
+      "scenario": "without:jeong2026wra",
+      "claim": "transfer",
+      "retained_premises": [
+        "T-scaffold",
+        "X1",
+        "X2"
+      ],
+      "withdrawn_premises": [],
+      "supporting_sources": [
+        "dangol2026workflow",
+        "ediga2026trace",
+        "pouryousef2026traffic"
+      ],
+      "complete_comparison": null
+    },
+    {
+      "scenario": "without:jeong2026wra",
+      "claim": "containment",
+      "retained_premises": [
+        "D1",
+        "D2",
+        "M1",
+        "M2"
+      ],
+      "withdrawn_premises": [
+        "D3",
+        "D4"
+      ],
+      "supporting_sources": [
+        "dangol2026workflow",
+        "li2026ant",
+        "pouryousef2026traffic"
+      ],
+      "complete_comparison": null
+    },
+    {
+      "scenario": "without:jeong2026wra",
+      "claim": "failure_signal",
+      "retained_premises": [
+        "F-repair",
+        "F-selection"
+      ],
+      "withdrawn_premises": [],
+      "supporting_sources": [
+        "ediga2026trace",
+        "zhao2026agenttrace"
+      ],
+      "complete_comparison": true
+    },
+    {
+      "scenario": "without:kang2026whoseagent",
+      "claim": "J1",
+      "retained_premises": [
+        "J1-action",
+        "J1-capability",
+        "J1-query",
+        "J1-task"
+      ],
+      "withdrawn_premises": [],
+      "supporting_sources": [
+        "agentprint2025",
+        "jeong2026wra",
+        "li2026ant",
+        "pouryousef2026traffic"
+      ],
+      "complete_comparison": true
+    },
+    {
+      "scenario": "without:kang2026whoseagent",
+      "claim": "J2",
+      "retained_premises": [
+        "J2-null",
+        "J2-refusal",
+        "J2-selected-form",
+        "J2-selected-run",
+        "J2-terminal"
+      ],
+      "withdrawn_premises": [
+        "J2-first"
+      ],
+      "supporting_sources": [
+        "ediga2026trace",
+        "fayolle2026webagents",
+        "li2026ant",
+        "pouryousef2026traffic",
+        "shahriar2026agenttell"
+      ],
+      "complete_comparison": true
+    },
+    {
+      "scenario": "without:kang2026whoseagent",
+      "claim": "J3",
+      "retained_premises": [
+        "J3-disclosure",
+        "J3-prevention",
+        "J3-risk",
+        "J3-submit"
+      ],
+      "withdrawn_premises": [],
+      "supporting_sources": [
+        "ayzenshteyn2025cheat",
+        "fayolle2026webagents",
+        "li2026ant",
+        "shahriar2026agenttell"
+      ],
+      "complete_comparison": true
+    },
+    {
+      "scenario": "without:kang2026whoseagent",
+      "claim": "units",
+      "retained_premises": [
+        "B1",
+        "U-field",
+        "U1",
+        "U2",
+        "U3",
+        "U4",
+        "U5",
+        "U6"
+      ],
+      "withdrawn_premises": [],
+      "supporting_sources": [
+        "agentprint2025",
+        "dangol2026workflow",
+        "jeong2026wra",
+        "li2026ant",
+        "pouryousef2026traffic",
+        "reworr2024honeypot",
+        "song2026personafingerprint"
+      ],
+      "complete_comparison": null
+    },
+    {
+      "scenario": "without:kang2026whoseagent",
+      "claim": "transfer",
+      "retained_premises": [
+        "T-scaffold",
+        "X1",
+        "X2"
+      ],
+      "withdrawn_premises": [],
+      "supporting_sources": [
+        "dangol2026workflow",
+        "ediga2026trace",
+        "pouryousef2026traffic"
+      ],
+      "complete_comparison": null
+    },
+    {
+      "scenario": "without:kang2026whoseagent",
+      "claim": "containment",
+      "retained_premises": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "M1",
+        "M2"
+      ],
+      "withdrawn_premises": [],
+      "supporting_sources": [
+        "dangol2026workflow",
+        "jeong2026wra",
+        "li2026ant",
+        "pouryousef2026traffic"
+      ],
+      "complete_comparison": null
+    },
+    {
+      "scenario": "without:kang2026whoseagent",
+      "claim": "failure_signal",
+      "retained_premises": [
+        "F-repair",
+        "F-selection"
+      ],
+      "withdrawn_premises": [],
+      "supporting_sources": [
+        "ediga2026trace",
+        "zhao2026agenttrace"
+      ],
+      "complete_comparison": true
+    },
+    {
+      "scenario": "without:li2026ant",
+      "claim": "J1",
+      "retained_premises": [
+        "J1-capability",
+        "J1-query",
+        "J1-task"
+      ],
+      "withdrawn_premises": [
+        "J1-action"
+      ],
+      "supporting_sources": [
+        "agentprint2025",
+        "jeong2026wra",
+        "pouryousef2026traffic"
+      ],
+      "complete_comparison": true
+    },
+    {
+      "scenario": "without:li2026ant",
+      "claim": "J2",
+      "retained_premises": [
+        "J2-first",
+        "J2-null",
+        "J2-selected-form",
+        "J2-selected-run",
+        "J2-terminal"
+      ],
+      "withdrawn_premises": [
+        "J2-refusal"
+      ],
+      "supporting_sources": [
+        "ediga2026trace",
+        "fayolle2026webagents",
+        "kang2026whoseagent",
+        "pouryousef2026traffic",
+        "shahriar2026agenttell"
+      ],
+      "complete_comparison": true
+    },
+    {
+      "scenario": "without:li2026ant",
+      "claim": "J3",
+      "retained_premises": [
+        "J3-disclosure",
+        "J3-prevention",
+        "J3-submit"
+      ],
+      "withdrawn_premises": [
+        "J3-risk"
+      ],
+      "supporting_sources": [
+        "ayzenshteyn2025cheat",
+        "fayolle2026webagents",
+        "shahriar2026agenttell"
+      ],
+      "complete_comparison": false
+    },
+    {
+      "scenario": "without:li2026ant",
+      "claim": "units",
+      "retained_premises": [
+        "U-field",
+        "U1",
+        "U2",
+        "U3",
+        "U4",
+        "U6"
+      ],
+      "withdrawn_premises": [
+        "U5",
+        "B1"
+      ],
+      "supporting_sources": [
+        "agentprint2025",
+        "dangol2026workflow",
+        "jeong2026wra",
+        "pouryousef2026traffic",
+        "reworr2024honeypot",
+        "song2026personafingerprint"
+      ],
+      "complete_comparison": null
+    },
+    {
+      "scenario": "without:li2026ant",
+      "claim": "transfer",
+      "retained_premises": [
+        "T-scaffold",
+        "X1",
+        "X2"
+      ],
+      "withdrawn_premises": [],
+      "supporting_sources": [
+        "dangol2026workflow",
+        "ediga2026trace",
+        "pouryousef2026traffic"
+      ],
+      "complete_comparison": null
+    },
+    {
+      "scenario": "without:li2026ant",
+      "claim": "containment",
+      "retained_premises": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "M1"
+      ],
+      "withdrawn_premises": [
+        "M2"
+      ],
+      "supporting_sources": [
+        "dangol2026workflow",
+        "jeong2026wra",
+        "pouryousef2026traffic"
+      ],
+      "complete_comparison": null
+    },
+    {
+      "scenario": "without:li2026ant",
+      "claim": "failure_signal",
+      "retained_premises": [
+        "F-repair",
+        "F-selection"
+      ],
+      "withdrawn_premises": [],
+      "supporting_sources": [
+        "ediga2026trace",
+        "zhao2026agenttrace"
+      ],
+      "complete_comparison": true
+    },
+    {
+      "scenario": "without:pouryousef2026traffic",
+      "claim": "J1",
+      "retained_premises": [
+        "J1-action",
+        "J1-capability",
+        "J1-query"
+      ],
+      "withdrawn_premises": [
+        "J1-task"
+      ],
+      "supporting_sources": [
+        "agentprint2025",
+        "jeong2026wra",
+        "li2026ant"
+      ],
+      "complete_comparison": true
+    },
+    {
+      "scenario": "without:pouryousef2026traffic",
+      "claim": "J2",
+      "retained_premises": [
+        "J2-first",
+        "J2-null",
+        "J2-refusal",
+        "J2-selected-form",
+        "J2-terminal"
+      ],
+      "withdrawn_premises": [
+        "J2-selected-run"
+      ],
+      "supporting_sources": [
+        "ediga2026trace",
+        "fayolle2026webagents",
+        "kang2026whoseagent",
+        "li2026ant",
+        "shahriar2026agenttell"
+      ],
+      "complete_comparison": true
+    },
+    {
+      "scenario": "without:pouryousef2026traffic",
+      "claim": "J3",
+      "retained_premises": [
+        "J3-disclosure",
+        "J3-prevention",
+        "J3-risk",
+        "J3-submit"
+      ],
+      "withdrawn_premises": [],
+      "supporting_sources": [
+        "ayzenshteyn2025cheat",
+        "fayolle2026webagents",
+        "li2026ant",
+        "shahriar2026agenttell"
+      ],
+      "complete_comparison": true
+    },
+    {
+      "scenario": "without:pouryousef2026traffic",
+      "claim": "units",
+      "retained_premises": [
+        "B1",
+        "U-field",
+        "U1",
+        "U2",
+        "U3",
+        "U5",
+        "U6"
+      ],
+      "withdrawn_premises": [
+        "U4"
+      ],
+      "supporting_sources": [
+        "agentprint2025",
+        "dangol2026workflow",
+        "jeong2026wra",
+        "li2026ant",
+        "reworr2024honeypot",
+        "song2026personafingerprint"
+      ],
+      "complete_comparison": null
+    },
+    {
+      "scenario": "without:pouryousef2026traffic",
+      "claim": "transfer",
+      "retained_premises": [
+        "T-scaffold",
+        "X1"
+      ],
+      "withdrawn_premises": [
+        "X2"
+      ],
+      "supporting_sources": [
+        "dangol2026workflow",
+        "ediga2026trace"
+      ],
+      "complete_comparison": null
+    },
+    {
+      "scenario": "without:pouryousef2026traffic",
+      "claim": "containment",
+      "retained_premises": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "M2"
+      ],
+      "withdrawn_premises": [
+        "M1"
+      ],
+      "supporting_sources": [
+        "dangol2026workflow",
+        "jeong2026wra",
+        "li2026ant"
+      ],
+      "complete_comparison": null
+    },
+    {
+      "scenario": "without:pouryousef2026traffic",
+      "claim": "failure_signal",
+      "retained_premises": [
+        "F-repair",
+        "F-selection"
+      ],
+      "withdrawn_premises": [],
+      "supporting_sources": [
+        "ediga2026trace",
+        "zhao2026agenttrace"
+      ],
+      "complete_comparison": true
+    },
+    {
+      "scenario": "without:reworr2024honeypot",
+      "claim": "J1",
+      "retained_premises": [
+        "J1-action",
+        "J1-capability",
+        "J1-query",
+        "J1-task"
+      ],
+      "withdrawn_premises": [],
+      "supporting_sources": [
+        "agentprint2025",
+        "jeong2026wra",
+        "li2026ant",
+        "pouryousef2026traffic"
+      ],
+      "complete_comparison": true
+    },
+    {
+      "scenario": "without:reworr2024honeypot",
+      "claim": "J2",
+      "retained_premises": [
+        "J2-first",
+        "J2-null",
+        "J2-refusal",
+        "J2-selected-form",
+        "J2-selected-run",
+        "J2-terminal"
+      ],
+      "withdrawn_premises": [],
+      "supporting_sources": [
+        "ediga2026trace",
+        "fayolle2026webagents",
+        "kang2026whoseagent",
+        "li2026ant",
+        "pouryousef2026traffic",
+        "shahriar2026agenttell"
+      ],
+      "complete_comparison": true
+    },
+    {
+      "scenario": "without:reworr2024honeypot",
+      "claim": "J3",
+      "retained_premises": [
+        "J3-disclosure",
+        "J3-prevention",
+        "J3-risk",
+        "J3-submit"
+      ],
+      "withdrawn_premises": [],
+      "supporting_sources": [
+        "ayzenshteyn2025cheat",
+        "fayolle2026webagents",
+        "li2026ant",
+        "shahriar2026agenttell"
+      ],
+      "complete_comparison": true
+    },
+    {
+      "scenario": "without:reworr2024honeypot",
+      "claim": "units",
+      "retained_premises": [
+        "B1",
+        "U1",
+        "U2",
+        "U3",
+        "U4",
+        "U5",
+        "U6"
+      ],
+      "withdrawn_premises": [
+        "U-field"
+      ],
+      "supporting_sources": [
+        "agentprint2025",
+        "dangol2026workflow",
+        "jeong2026wra",
+        "li2026ant",
+        "pouryousef2026traffic",
+        "song2026personafingerprint"
+      ],
+      "complete_comparison": null
+    },
+    {
+      "scenario": "without:reworr2024honeypot",
+      "claim": "transfer",
+      "retained_premises": [
+        "T-scaffold",
+        "X1",
+        "X2"
+      ],
+      "withdrawn_premises": [],
+      "supporting_sources": [
+        "dangol2026workflow",
+        "ediga2026trace",
+        "pouryousef2026traffic"
+      ],
+      "complete_comparison": null
+    },
+    {
+      "scenario": "without:reworr2024honeypot",
+      "claim": "containment",
+      "retained_premises": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "M1",
+        "M2"
+      ],
+      "withdrawn_premises": [],
+      "supporting_sources": [
+        "dangol2026workflow",
+        "jeong2026wra",
+        "li2026ant",
+        "pouryousef2026traffic"
+      ],
+      "complete_comparison": null
+    },
+    {
+      "scenario": "without:reworr2024honeypot",
+      "claim": "failure_signal",
+      "retained_premises": [
+        "F-repair",
+        "F-selection"
+      ],
+      "withdrawn_premises": [],
+      "supporting_sources": [
+        "ediga2026trace",
+        "zhao2026agenttrace"
+      ],
+      "complete_comparison": true
+    },
+    {
+      "scenario": "without:shahriar2026agenttell",
+      "claim": "J1",
+      "retained_premises": [
+        "J1-action",
+        "J1-capability",
+        "J1-query",
+        "J1-task"
+      ],
+      "withdrawn_premises": [],
+      "supporting_sources": [
+        "agentprint2025",
+        "jeong2026wra",
+        "li2026ant",
+        "pouryousef2026traffic"
+      ],
+      "complete_comparison": true
+    },
+    {
+      "scenario": "without:shahriar2026agenttell",
+      "claim": "J2",
+      "retained_premises": [
+        "J2-first",
+        "J2-refusal",
+        "J2-selected-form",
+        "J2-selected-run",
+        "J2-terminal"
+      ],
+      "withdrawn_premises": [
+        "J2-null"
+      ],
+      "supporting_sources": [
+        "ediga2026trace",
+        "fayolle2026webagents",
+        "kang2026whoseagent",
+        "li2026ant",
+        "pouryousef2026traffic"
+      ],
+      "complete_comparison": true
+    },
+    {
+      "scenario": "without:shahriar2026agenttell",
+      "claim": "J3",
+      "retained_premises": [
+        "J3-prevention",
+        "J3-risk",
+        "J3-submit"
+      ],
+      "withdrawn_premises": [
+        "J3-disclosure"
+      ],
+      "supporting_sources": [
+        "ayzenshteyn2025cheat",
+        "fayolle2026webagents",
+        "li2026ant"
+      ],
+      "complete_comparison": false
+    },
+    {
+      "scenario": "without:shahriar2026agenttell",
+      "claim": "units",
+      "retained_premises": [
+        "B1",
+        "U-field",
+        "U1",
+        "U2",
+        "U3",
+        "U4",
+        "U5",
+        "U6"
+      ],
+      "withdrawn_premises": [],
+      "supporting_sources": [
+        "agentprint2025",
+        "dangol2026workflow",
+        "jeong2026wra",
+        "li2026ant",
+        "pouryousef2026traffic",
+        "reworr2024honeypot",
+        "song2026personafingerprint"
+      ],
+      "complete_comparison": null
+    },
+    {
+      "scenario": "without:shahriar2026agenttell",
+      "claim": "transfer",
+      "retained_premises": [
+        "T-scaffold",
+        "X1",
+        "X2"
+      ],
+      "withdrawn_premises": [],
+      "supporting_sources": [
+        "dangol2026workflow",
+        "ediga2026trace",
+        "pouryousef2026traffic"
+      ],
+      "complete_comparison": null
+    },
+    {
+      "scenario": "without:shahriar2026agenttell",
+      "claim": "containment",
+      "retained_premises": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "M1",
+        "M2"
+      ],
+      "withdrawn_premises": [],
+      "supporting_sources": [
+        "dangol2026workflow",
+        "jeong2026wra",
+        "li2026ant",
+        "pouryousef2026traffic"
+      ],
+      "complete_comparison": null
+    },
+    {
+      "scenario": "without:shahriar2026agenttell",
+      "claim": "failure_signal",
+      "retained_premises": [
+        "F-repair",
+        "F-selection"
+      ],
+      "withdrawn_premises": [],
+      "supporting_sources": [
+        "ediga2026trace",
+        "zhao2026agenttrace"
+      ],
+      "complete_comparison": true
+    },
+    {
+      "scenario": "without:song2026personafingerprint",
+      "claim": "J1",
+      "retained_premises": [
+        "J1-action",
+        "J1-capability",
+        "J1-query",
+        "J1-task"
+      ],
+      "withdrawn_premises": [],
+      "supporting_sources": [
+        "agentprint2025",
+        "jeong2026wra",
+        "li2026ant",
+        "pouryousef2026traffic"
+      ],
+      "complete_comparison": true
+    },
+    {
+      "scenario": "without:song2026personafingerprint",
+      "claim": "J2",
+      "retained_premises": [
+        "J2-first",
+        "J2-null",
+        "J2-refusal",
+        "J2-selected-form",
+        "J2-selected-run",
+        "J2-terminal"
+      ],
+      "withdrawn_premises": [],
+      "supporting_sources": [
+        "ediga2026trace",
+        "fayolle2026webagents",
+        "kang2026whoseagent",
+        "li2026ant",
+        "pouryousef2026traffic",
+        "shahriar2026agenttell"
+      ],
+      "complete_comparison": true
+    },
+    {
+      "scenario": "without:song2026personafingerprint",
+      "claim": "J3",
+      "retained_premises": [
+        "J3-disclosure",
+        "J3-prevention",
+        "J3-risk",
+        "J3-submit"
+      ],
+      "withdrawn_premises": [],
+      "supporting_sources": [
+        "ayzenshteyn2025cheat",
+        "fayolle2026webagents",
+        "li2026ant",
+        "shahriar2026agenttell"
+      ],
+      "complete_comparison": true
+    },
+    {
+      "scenario": "without:song2026personafingerprint",
+      "claim": "units",
+      "retained_premises": [
+        "B1",
+        "U-field",
+        "U1",
+        "U2",
+        "U3",
+        "U4",
+        "U5"
+      ],
+      "withdrawn_premises": [
+        "U6"
+      ],
+      "supporting_sources": [
+        "agentprint2025",
+        "dangol2026workflow",
+        "jeong2026wra",
+        "li2026ant",
+        "pouryousef2026traffic",
+        "reworr2024honeypot"
+      ],
+      "complete_comparison": null
+    },
+    {
+      "scenario": "without:song2026personafingerprint",
+      "claim": "transfer",
+      "retained_premises": [
+        "T-scaffold",
+        "X1",
+        "X2"
+      ],
+      "withdrawn_premises": [],
+      "supporting_sources": [
+        "dangol2026workflow",
+        "ediga2026trace",
+        "pouryousef2026traffic"
+      ],
+      "complete_comparison": null
+    },
+    {
+      "scenario": "without:song2026personafingerprint",
+      "claim": "containment",
+      "retained_premises": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "M1",
+        "M2"
+      ],
+      "withdrawn_premises": [],
+      "supporting_sources": [
+        "dangol2026workflow",
+        "jeong2026wra",
+        "li2026ant",
+        "pouryousef2026traffic"
+      ],
+      "complete_comparison": null
+    },
+    {
+      "scenario": "without:song2026personafingerprint",
+      "claim": "failure_signal",
+      "retained_premises": [
+        "F-repair",
+        "F-selection"
+      ],
+      "withdrawn_premises": [],
+      "supporting_sources": [
+        "ediga2026trace",
+        "zhao2026agenttrace"
+      ],
+      "complete_comparison": true
+    },
+    {
+      "scenario": "without:zhao2026agenttrace",
+      "claim": "J1",
+      "retained_premises": [
+        "J1-action",
+        "J1-capability",
+        "J1-query",
+        "J1-task"
+      ],
+      "withdrawn_premises": [],
+      "supporting_sources": [
+        "agentprint2025",
+        "jeong2026wra",
+        "li2026ant",
+        "pouryousef2026traffic"
+      ],
+      "complete_comparison": true
+    },
+    {
+      "scenario": "without:zhao2026agenttrace",
+      "claim": "J2",
+      "retained_premises": [
+        "J2-first",
+        "J2-null",
+        "J2-refusal",
+        "J2-selected-form",
+        "J2-selected-run",
+        "J2-terminal"
+      ],
+      "withdrawn_premises": [],
+      "supporting_sources": [
+        "ediga2026trace",
+        "fayolle2026webagents",
+        "kang2026whoseagent",
+        "li2026ant",
+        "pouryousef2026traffic",
+        "shahriar2026agenttell"
+      ],
+      "complete_comparison": true
+    },
+    {
+      "scenario": "without:zhao2026agenttrace",
+      "claim": "J3",
+      "retained_premises": [
+        "J3-disclosure",
+        "J3-prevention",
+        "J3-risk",
+        "J3-submit"
+      ],
+      "withdrawn_premises": [],
+      "supporting_sources": [
+        "ayzenshteyn2025cheat",
+        "fayolle2026webagents",
+        "li2026ant",
+        "shahriar2026agenttell"
+      ],
+      "complete_comparison": true
+    },
+    {
+      "scenario": "without:zhao2026agenttrace",
+      "claim": "units",
+      "retained_premises": [
+        "B1",
+        "U-field",
+        "U1",
+        "U2",
+        "U3",
+        "U4",
+        "U5",
+        "U6"
+      ],
+      "withdrawn_premises": [],
+      "supporting_sources": [
+        "agentprint2025",
+        "dangol2026workflow",
+        "jeong2026wra",
+        "li2026ant",
+        "pouryousef2026traffic",
+        "reworr2024honeypot",
+        "song2026personafingerprint"
+      ],
+      "complete_comparison": null
+    },
+    {
+      "scenario": "without:zhao2026agenttrace",
+      "claim": "transfer",
+      "retained_premises": [
+        "T-scaffold",
+        "X1",
+        "X2"
+      ],
+      "withdrawn_premises": [],
+      "supporting_sources": [
+        "dangol2026workflow",
+        "ediga2026trace",
+        "pouryousef2026traffic"
+      ],
+      "complete_comparison": null
+    },
+    {
+      "scenario": "without:zhao2026agenttrace",
+      "claim": "containment",
+      "retained_premises": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "M1",
+        "M2"
+      ],
+      "withdrawn_premises": [],
+      "supporting_sources": [
+        "dangol2026workflow",
+        "jeong2026wra",
+        "li2026ant",
+        "pouryousef2026traffic"
+      ],
+      "complete_comparison": null
+    },
+    {
+      "scenario": "without:zhao2026agenttrace",
+      "claim": "failure_signal",
+      "retained_premises": [
+        "F-selection"
+      ],
+      "withdrawn_premises": [
+        "F-repair"
+      ],
+      "supporting_sources": [
+        "ediga2026trace"
+      ],
+      "complete_comparison": false
+    },
+    {
+      "scenario": "publication_verified",
+      "claim": "J1",
+      "retained_premises": [
+        "J1-query"
+      ],
+      "withdrawn_premises": [
+        "J1-task",
+        "J1-capability",
+        "J1-action"
+      ],
+      "supporting_sources": [
+        "jeong2026wra"
+      ],
+      "complete_comparison": false
+    },
+    {
+      "scenario": "publication_verified",
+      "claim": "J2",
+      "retained_premises": [],
+      "withdrawn_premises": [
+        "J2-first",
+        "J2-selected-form",
+        "J2-selected-run",
+        "J2-null",
+        "J2-refusal",
+        "J2-terminal"
+      ],
+      "supporting_sources": [],
+      "complete_comparison": false
+    },
+    {
+      "scenario": "publication_verified",
+      "claim": "J3",
+      "retained_premises": [
+        "J3-prevention"
+      ],
+      "withdrawn_premises": [
+        "J3-risk",
+        "J3-disclosure",
+        "J3-submit"
+      ],
+      "supporting_sources": [
+        "ayzenshteyn2025cheat"
+      ],
+      "complete_comparison": false
+    },
+    {
+      "scenario": "publication_verified",
+      "claim": "units",
+      "retained_premises": [
+        "U2"
+      ],
+      "withdrawn_premises": [
+        "U1",
+        "U3",
+        "U4",
+        "U5",
+        "U6",
+        "B1",
+        "U-field"
+      ],
+      "supporting_sources": [
+        "jeong2026wra"
+      ],
+      "complete_comparison": null
+    },
+    {
+      "scenario": "publication_verified",
+      "claim": "transfer",
+      "retained_premises": [],
+      "withdrawn_premises": [
+        "X1",
+        "X2",
+        "T-scaffold"
+      ],
+      "supporting_sources": [],
+      "complete_comparison": null
+    },
+    {
+      "scenario": "publication_verified",
+      "claim": "containment",
+      "retained_premises": [
+        "D3",
+        "D4"
+      ],
+      "withdrawn_premises": [
+        "D1",
+        "D2",
+        "M1",
+        "M2"
+      ],
+      "supporting_sources": [
+        "jeong2026wra"
+      ],
+      "complete_comparison": null
+    },
+    {
+      "scenario": "publication_verified",
+      "claim": "failure_signal",
+      "retained_premises": [],
+      "withdrawn_premises": [
+        "F-selection",
+        "F-repair"
+      ],
+      "supporting_sources": [],
+      "complete_comparison": false
+    },
+    {
+      "scenario": "without:shared_AP_ANT",
+      "claim": "J1",
+      "retained_premises": [
+        "J1-query",
+        "J1-task"
+      ],
+      "withdrawn_premises": [
+        "J1-capability",
+        "J1-action"
+      ],
+      "supporting_sources": [
+        "jeong2026wra",
+        "pouryousef2026traffic"
+      ],
+      "complete_comparison": false
+    },
+    {
+      "scenario": "without:shared_AP_ANT",
+      "claim": "J2",
+      "retained_premises": [
+        "J2-first",
+        "J2-null",
+        "J2-selected-form",
+        "J2-selected-run",
+        "J2-terminal"
+      ],
+      "withdrawn_premises": [
+        "J2-refusal"
+      ],
+      "supporting_sources": [
+        "ediga2026trace",
+        "fayolle2026webagents",
+        "kang2026whoseagent",
+        "pouryousef2026traffic",
+        "shahriar2026agenttell"
+      ],
+      "complete_comparison": true
+    },
+    {
+      "scenario": "without:shared_AP_ANT",
+      "claim": "J3",
+      "retained_premises": [
+        "J3-disclosure",
+        "J3-prevention",
+        "J3-submit"
+      ],
+      "withdrawn_premises": [
+        "J3-risk"
+      ],
+      "supporting_sources": [
+        "ayzenshteyn2025cheat",
+        "fayolle2026webagents",
+        "shahriar2026agenttell"
+      ],
+      "complete_comparison": false
+    },
+    {
+      "scenario": "without:shared_AP_ANT",
+      "claim": "units",
+      "retained_premises": [
+        "U-field",
+        "U2",
+        "U3",
+        "U4",
+        "U6"
+      ],
+      "withdrawn_premises": [
+        "U1",
+        "U5",
+        "B1"
+      ],
+      "supporting_sources": [
+        "dangol2026workflow",
+        "jeong2026wra",
+        "pouryousef2026traffic",
+        "reworr2024honeypot",
+        "song2026personafingerprint"
+      ],
+      "complete_comparison": null
+    },
+    {
+      "scenario": "without:shared_AP_ANT",
+      "claim": "transfer",
+      "retained_premises": [
+        "T-scaffold",
+        "X1",
+        "X2"
+      ],
+      "withdrawn_premises": [],
+      "supporting_sources": [
+        "dangol2026workflow",
+        "ediga2026trace",
+        "pouryousef2026traffic"
+      ],
+      "complete_comparison": null
+    },
+    {
+      "scenario": "without:shared_AP_ANT",
+      "claim": "containment",
+      "retained_premises": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "M1"
+      ],
+      "withdrawn_premises": [
+        "M2"
+      ],
+      "supporting_sources": [
+        "dangol2026workflow",
+        "jeong2026wra",
+        "pouryousef2026traffic"
+      ],
+      "complete_comparison": null
+    },
+    {
+      "scenario": "without:shared_AP_ANT",
+      "claim": "failure_signal",
+      "retained_premises": [
+        "F-repair",
+        "F-selection"
+      ],
+      "withdrawn_premises": [],
+      "supporting_sources": [
+        "ediga2026trace",
+        "zhao2026agenttrace"
+      ],
+      "complete_comparison": true
+    },
+    {
+      "scenario": "without:shared_WRA_MARK",
+      "claim": "J1",
+      "retained_premises": [
+        "J1-action",
+        "J1-capability",
+        "J1-task"
+      ],
+      "withdrawn_premises": [
+        "J1-query"
+      ],
+      "supporting_sources": [
+        "agentprint2025",
+        "li2026ant",
+        "pouryousef2026traffic"
+      ],
+      "complete_comparison": true
+    },
+    {
+      "scenario": "without:shared_WRA_MARK",
+      "claim": "J2",
+      "retained_premises": [
+        "J2-null",
+        "J2-refusal",
+        "J2-selected-form",
+        "J2-selected-run",
+        "J2-terminal"
+      ],
+      "withdrawn_premises": [
+        "J2-first"
+      ],
+      "supporting_sources": [
+        "ediga2026trace",
+        "fayolle2026webagents",
+        "li2026ant",
+        "pouryousef2026traffic",
+        "shahriar2026agenttell"
+      ],
+      "complete_comparison": true
+    },
+    {
+      "scenario": "without:shared_WRA_MARK",
+      "claim": "J3",
+      "retained_premises": [
+        "J3-disclosure",
+        "J3-prevention",
+        "J3-risk",
+        "J3-submit"
+      ],
+      "withdrawn_premises": [],
+      "supporting_sources": [
+        "ayzenshteyn2025cheat",
+        "fayolle2026webagents",
+        "li2026ant",
+        "shahriar2026agenttell"
+      ],
+      "complete_comparison": true
+    },
+    {
+      "scenario": "without:shared_WRA_MARK",
+      "claim": "units",
+      "retained_premises": [
+        "B1",
+        "U-field",
+        "U1",
+        "U3",
+        "U4",
+        "U5",
+        "U6"
+      ],
+      "withdrawn_premises": [
+        "U2"
+      ],
+      "supporting_sources": [
+        "agentprint2025",
+        "dangol2026workflow",
+        "li2026ant",
+        "pouryousef2026traffic",
+        "reworr2024honeypot",
+        "song2026personafingerprint"
+      ],
+      "complete_comparison": null
+    },
+    {
+      "scenario": "without:shared_WRA_MARK",
+      "claim": "transfer",
+      "retained_premises": [
+        "T-scaffold",
+        "X1",
+        "X2"
+      ],
+      "withdrawn_premises": [],
+      "supporting_sources": [
+        "dangol2026workflow",
+        "ediga2026trace",
+        "pouryousef2026traffic"
+      ],
+      "complete_comparison": null
+    },
+    {
+      "scenario": "without:shared_WRA_MARK",
+      "claim": "containment",
+      "retained_premises": [
+        "D1",
+        "D2",
+        "M1",
+        "M2"
+      ],
+      "withdrawn_premises": [
+        "D3",
+        "D4"
+      ],
+      "supporting_sources": [
+        "dangol2026workflow",
+        "li2026ant",
+        "pouryousef2026traffic"
+      ],
+      "complete_comparison": null
+    },
+    {
+      "scenario": "without:shared_WRA_MARK",
+      "claim": "failure_signal",
+      "retained_premises": [
+        "F-repair",
+        "F-selection"
+      ],
+      "withdrawn_premises": [],
+      "supporting_sources": [
+        "ediga2026trace",
+        "zhao2026agenttrace"
+      ],
+      "complete_comparison": true
+    },
+    {
+      "scenario": "withhold_live_code",
+      "claim": "J1",
+      "retained_premises": [
+        "J1-action",
+        "J1-capability",
+        "J1-query",
+        "J1-task"
+      ],
+      "withdrawn_premises": [],
+      "supporting_sources": [
+        "agentprint2025",
+        "jeong2026wra",
+        "li2026ant",
+        "pouryousef2026traffic"
+      ],
+      "complete_comparison": true
+    },
+    {
+      "scenario": "withhold_live_code",
+      "claim": "J2",
+      "retained_premises": [
+        "J2-first",
+        "J2-null",
+        "J2-refusal",
+        "J2-selected-form",
+        "J2-selected-run",
+        "J2-terminal"
+      ],
+      "withdrawn_premises": [],
+      "supporting_sources": [
+        "ediga2026trace",
+        "fayolle2026webagents",
+        "kang2026whoseagent",
+        "li2026ant",
+        "pouryousef2026traffic",
+        "shahriar2026agenttell"
+      ],
+      "complete_comparison": true
+    },
+    {
+      "scenario": "withhold_live_code",
+      "claim": "J3",
+      "retained_premises": [
+        "J3-disclosure",
+        "J3-prevention",
+        "J3-risk",
+        "J3-submit"
+      ],
+      "withdrawn_premises": [],
+      "supporting_sources": [
+        "ayzenshteyn2025cheat",
+        "fayolle2026webagents",
+        "li2026ant",
+        "shahriar2026agenttell"
+      ],
+      "complete_comparison": true
+    },
+    {
+      "scenario": "withhold_live_code",
+      "claim": "units",
+      "retained_premises": [
+        "B1",
+        "U-field",
+        "U1",
+        "U2",
+        "U3",
+        "U4",
+        "U5",
+        "U6"
+      ],
+      "withdrawn_premises": [],
+      "supporting_sources": [
+        "agentprint2025",
+        "dangol2026workflow",
+        "jeong2026wra",
+        "li2026ant",
+        "pouryousef2026traffic",
+        "reworr2024honeypot",
+        "song2026personafingerprint"
+      ],
+      "complete_comparison": null
+    },
+    {
+      "scenario": "withhold_live_code",
+      "claim": "transfer",
+      "retained_premises": [
+        "T-scaffold",
+        "X1",
+        "X2"
+      ],
+      "withdrawn_premises": [],
+      "supporting_sources": [
+        "dangol2026workflow",
+        "ediga2026trace",
+        "pouryousef2026traffic"
+      ],
+      "complete_comparison": null
+    },
+    {
+      "scenario": "withhold_live_code",
+      "claim": "containment",
+      "retained_premises": [
+        "D2",
+        "D3",
+        "D4",
+        "M1",
+        "M2"
+      ],
+      "withdrawn_premises": [
+        "D1"
+      ],
+      "supporting_sources": [
+        "dangol2026workflow",
+        "jeong2026wra",
+        "li2026ant",
+        "pouryousef2026traffic"
+      ],
+      "complete_comparison": null
+    },
+    {
+      "scenario": "withhold_live_code",
+      "claim": "failure_signal",
+      "retained_premises": [
+        "F-repair",
+        "F-selection"
+      ],
+      "withdrawn_premises": [],
+      "supporting_sources": [
+        "ediga2026trace",
+        "zhao2026agenttrace"
+      ],
+      "complete_comparison": true
+    }
+  ]
+}

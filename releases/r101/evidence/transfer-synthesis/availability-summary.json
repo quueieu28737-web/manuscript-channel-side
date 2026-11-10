@@ -1,0 +1,67 @@
+{
+  "scope": "Descriptive evidence availability in 44 mapped settings from 15 sources; not a quality score, field prevalence or independent coding study.",
+  "input_sha256": "2f98f02412e94de00f0b65633bc9c4f37a8bda2f510b97a86054f9eebf628826",
+  "access": {
+    "active": {
+      "settings": 11,
+      "sources": 6
+    },
+    "derived_preference": {
+      "settings": 1,
+      "sources": 1
+    },
+    "recipient": {
+      "settings": 10,
+      "sources": 5
+    },
+    "transit": {
+      "settings": 22,
+      "sources": 6
+    }
+  },
+  "purposes": {
+    "adversarial_agent_blocking": {
+      "settings": 2,
+      "sources": 2
+    },
+    "identity_obfuscation": {
+      "settings": 3,
+      "sources": 1
+    },
+    "no_protection_comparison": {
+      "settings": 35,
+      "sources": 14
+    },
+    "query_workflow_privacy": {
+      "settings": 4,
+      "sources": 2
+    }
+  },
+  "query_workflow_privacy": {
+    "eligible_settings": [
+      "CG-live",
+      "CG-transform",
+      "WRA-decoy",
+      "WRA-visibility"
+    ],
+    "eligible_sources": [
+      "dangol2026workflow",
+      "jeong2026wra"
+    ],
+    "adaptation_located": [
+      "CG-live",
+      "CG-transform"
+    ],
+    "original_task_utility_located": [
+      "WRA-visibility"
+    ],
+    "both_located": []
+  },
+  "rules": {
+    "access": "Classify the input rights of the evaluated setting: transit metadata, addressed recipient data, active intervention/probing, or a downstream derived preference analysis. Source groups can overlap.",
+    "purpose": "Restrict adaptation/utility counts to intervention comparisons protecting research-query or workflow information. Separate identity obfuscation and blocking adversarial agents.",
+    "adaptation": "Located protected-condition fitting or adaptive comparison for the stated setting; this does not certify optimal attack strength or every possible adaptation.",
+    "utility": "Located original-task quality or goal outcome for the same intervention. Bytes, latency, attacker cost, and extra-query counts alone do not satisfy it.",
+    "not_located": "The retained setting record does not establish the requested item. This is not evidence that it is absent from all artifacts or never measured."
+  }
+}

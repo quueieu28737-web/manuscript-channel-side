@@ -1,165 +1,48 @@
-% Standalone supplement. Original observations and negative results are retained.
 \documentclass[conference,compsoc]{IEEEtran}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
-\usepackage{booktabs,tabularx,array,graphicx,amsmath}
-\usepackage{longtable}
-\usepackage[dvipsnames,table]{xcolor}
-\usepackage{tikz}
-\usetikzlibrary{arrows.meta,positioning,fit,calc,matrix,shapes.geometric}
+\usepackage{booktabs,tabularx,array,graphicx,amsmath,amssymb,longtable}
+\usepackage{placeins}
+\usepackage{etoolbox}
+% Avoid infinite shrink glue when the current LaTeX output routine splits
+% longtable pages to extract marks. Preserve stretch-only bottom spacing.
+\makeatletter
+\patchcmd{\LT@output}{\copy\LT@foot\vss}{\copy\LT@foot\vfil}{}{\PackageError{audit-layout}{Longtable footer patch failed}{Check the installed longtable version.}}
+\patchcmd{\LT@output}{\copy\LT@foot\vss}{\copy\LT@foot\vfil}{}{\PackageError{audit-layout}{Longtable footer patch failed}{Check the installed longtable version.}}
+\makeatother
 \usepackage[hyphens]{url}
 \usepackage{hyperref}
 \hypersetup{hidelinks,pdfauthor={}}
-\newcommand{\scope}{\textsc{Scope}}
-\newcommand{\NRR}{\textsf{U}}
-\newcommand{\NRA}{\textsf{A}}
-\newcommand{\NRV}{\textsf{?}}
-\newcommand{\NA}{--}
-\newcommand{\soktakeaway}[2]{%
-  \par\smallskip\noindent
-  \fcolorbox{MidnightBlue!45}{MidnightBlue!5}{%
-    \parbox{\dimexpr\columnwidth-2\fboxsep-2\fboxrule\relax}{%
-      \footnotesize\textbf{\color{MidnightBlue!85!black}#1.} #2%
-    }%
-  }\par\smallskip
-}
+% Avoid synthetic glyphs at math/text boundaries; preserve Unicode mappings.
+\SetSymbolFont{letters}{normal}{OML}{lmm}{m}{it}
+\SetSymbolFont{letters}{bold}{OML}{lmm}{b}{it}
+\input{glyphtounicode}
+\pdfgentounicode=1
+\pdfglyphtounicode{space}{0020}
+\ifdefined\pdfinterwordspaceoff\pdfinterwordspaceoff\fi
 \newcolumntype{Y}{>{\raggedright\arraybackslash}X}
-\newcommand{\auditpartial}{\textbf{P}}
-\input{tables/final-counts}
+\newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
 \renewcommand{\thesection}{S\arabic{section}}
 \renewcommand{\thesubsection}{\thesection.\arabic{subsection}}
-\renewcommand{\thetable}{S\arabic{table}}
-\title{Supplementary Evidence: Reusing Defense Evidence in LLM and Agent Side Channels}
+\title{Supplementary Material for\\SoK: Agent Communication Side Channels}
 \author{}
 \begin{document}
+\input{bibliography-order}
+\raggedbottom
+\pagestyle{plain}
 \maketitle
-This supplement preserves the sources, accounting and illustrative computations supporting the mitigation evidence atlas within the C1--C5 empirical attack-evaluation frame. S44 supersedes the earlier measured-utility R8 denominator with outcome-specific applicability; earlier numbered tables remain explicitly archived results. S38 retains the historical 20-family inventory; S39--S41 add the forward-citation pilot, object-join examples and the current 19-family privacy/attribution inventory. These are counts within the selected source frame, not a census of defense literature. Pair counts retain their role as a comparison index; external and internal cases illustrate use.
-
-\paragraph{Artifact and data scope} The research artifact distinguishes source references and locators, derived audit labels, experiment protocols, aggregate results and reconstruction scripts from third-party source documents and model traces. Availability of individual inputs and traces depends on data-holder rights, applicable API terms and privacy review. The paper-source archive alone is not the complete experimental artifact. Stored trajectories support replay without new model requests, while mutable model aliases and differing inference budgets limit fresh-run reproducibility.
-
-\paragraph{Reading the reporting inventory} The strict family-level separation of inference and cost is five of eight under the present record boundaries; accepting partial bindings gives three of twelve. These are projections of source-coding and record-splitting rules, not independent findings about the prevalence of reporting defects. Task or component measurements are distinct from structural claims of unchanged outputs or state: an unbound R8 task/component result does not by itself show a loss of function. The retrospective external application uses visible outcomes and illustrates evidence routing; it does not estimate the procedure's accuracy.
-
-Historical Exp~1--4 names and E-keys identify archived case-study components, not four main-text contributions. Emission maps to E1/E3/E5; state/link to E2/E6/E7; agent trajectories to E9/E10/E12 and the model/calibration/planner extensions; timing controls to E13/E14 and the WAN extension. Existing S1--S31 numbers remain stable. S31 retains detailed grids, and S32 collects the cohort, served-model and calibration tables removed from the main text. That reorganization added no experiments or customers; S35 now adds an external documentary check and a provenance audit of the existing seven judgments.
-
-\paragraph{Shared evidence notation}
-B means bound, P partial, U unreported in inspected scope, A source unavailable, ? an unverified binding, and -- inapplicable. Archived machine fields NR-R/NR-A/NR-V map respectively to U/A/?. Source availability and applicability retain distinct meanings. S1--S10 contain search, coding and literature audit details; S11--S17 contain transport/agent mechanisms and initial analyses; S18--S23 contain source reconciliation, timing controls, stronger attacks, the model extension and sensitivity checks.
-\section{Search and Evidence Audit}\label{app:search}
-\input{tables/selection-flow}
-\input{sections/22-search-audit-summary}
-\input{tables/search-reconciliation}
-\input{sections/19-final-ledger}
-\input{tables/result-lineage-example}
-\input{tables/observable-origin-map}
-\input{tables/related-sok-matrix}
-\input{tables/receiver-intervention-matrix}
-\input{tables/dependency-holdouts}
-\input{sections/21-retained-controls-summary}
-\input{sections/17-public-trace-details}
-\input{sections/23-defense-comparison}
-\input{tables/intervention-status}
-\input{sections/24-conclusion-sensitivity}
-\input{tables/conclusion-source-dependencies}
-\input{sections/29-scope-comparison-boundary}
-\input{sections/31-result-audit}
-\input{sections/33-controlled-details}
-\input{sections/34-search-update}
-\input{sections/38-retained-controlled}
-\input{tables/synthesis-decisions}
-\begin{figure*}[t]\centering\input{figures/defense-decision-procedure}\caption{Operational evidence-reuse checks.}\label{fig:defense-decision}\end{figure*}
-\clearpage
-\onecolumn
-\input{tables/r3-supp-transfer}
-\input{tables/transfer-streaming}
-\input{tables/r3-transfer-cover}
-\input{tables/r3-transfer-predictions}
-\clearpage
-\input{tables/r3-supp-e8}
-\par\noindent The preceding E8 rows and availability statement describe the historical stand-in study. S14 reports the subsequent real-model collection and training-only calibration.\par
-\clearpage
-\input{tables/r4-supp}
-
-\clearpage
-\section{Cross-Fitting, Operating Points and Leakage Localization (E10--E12)}\label{sec:r5-supp}
-This section preserves the original-suite results. The expanded 11-attack E10/E12 analyses in S21 supersede those attack maxima in the main paper; the original predictions remain available for direct comparison.
-E10 retrospectively reuses the E9 defense design and attack suite under customer-grouped stratified 5-fold cross-fitting over all 690 completed episodes (115 tasks, 53 customers; 14 cancellation-positive and 18 return-positive customers). In each fold, the count template, donor pools, size caps and all attackers are fit only on the other folds. Out-of-fold predictions are pooled, and intervals use 2,000 customer-cluster bootstrap draws with the suite maximum recomputed per draw. The six analyzed configurations are specified in \path{r5lib.py}. E11 selects among them using inner customer folds of the 69 frozen training tasks only (rule in \path{e11_select.py}), then evaluates it on the 46 original test tasks. These analyses reuse an already analyzed cohort; only the original E9 protocol was frozen before test collection. E12 ablates undefended traces to locate the signal.
-
-Records are computed with an analytic TLS~1.2 AES-GCM model (fragment plus 24 bytes, 16,384-byte fragments). The model is validated against all 2,760 socket captures of the completed cohort and 120 fresh loopback captures of new cross-fitted sessions. \path{verify_r5.py} also checks byte-identical reproduction of the E9 calibration, all sessions, and all 32 result cells of both the 660-run primary grid of the 663-run snapshot and the completed cohort. The same analysis on the 660-episode snapshot grid is retained in \path{snapshot-660/}; there the bucket point gives 50.6\%/51.6\% with upper bounds of 59.2\%/58.3\%. Cross-fitted templates use more training customers than E9 and are therefore larger, which raises call overhead (5.0$\times$ versus 3.8$\times$). A quantile template is a natural next operating point.
-
-\input{tables/r5-supp}
-\clearpage
-\input{tables/conditional-null}
-\clearpage
-\twocolumn
-\input{sections/39-shadow-deployment}
-\clearpage
-\input{sections/40-evidence-concordance}
-\clearpage
-\onecolumn
-\input{sections/41-live-timing}
-\clearpage
-\input{sections/43-robustness}
-\clearpage
-\input{sections/44-strong-crossfit}
-\clearpage
-\input{sections/45-luna-extension}
-
-\clearpage
-\input{sections/47-r8-empirical-audit}
-\input{sections/46-r8-sok-audit}
-\input{sections/48-r8-attributes}
-\clearpage\input{sections/53-endpoint-replication}
-\clearpage\input{sections/54-transfer-boundaries}
-\clearpage\input{sections/55-live-planner-utility}
-\clearpage\input{sections/57-record-mode-synthesis}
-\clearpage\input{sections/56-holdout-matrix}
-\clearpage\input{sections/58-record-joint-audit}
-\clearpage\input{sections/60-calibration-stability}
-\clearpage\onecolumn
-\input{sections/61-synthesis-study-details}
-\clearpage\input{sections/64-case-study-register}
-\clearpage\onecolumn
-\input{sections/65-audit-sensitivity}
-\input{sections/66-source-reconciliation}
-\clearpage\input{sections/68-utility-check-details}
-\clearpage\input{sections/69-audit-reconciliation}
-\clearpage
-\twocolumn
-\input{tables/corpus-citations}
-
-\clearpage\onecolumn
-\input{sections/71-review-closure}
-\clearpage\input{sections/72-reporting-patterns}
-\clearpage\input{sections/74-forward-citation-pilot}
-\input{sections/73-object-join-evidence}
-\clearpage\input{sections/75-privacy-defense-census}
-\clearpage\input{sections/76-r36-reliability}
-\clearpage\onecolumn
-\input{sections/77-attacker-boundary}
-\clearpage\onecolumn
-\input{sections/78-utility-scope}
-\clearpage\twocolumn
-\input{sections/79-defense-first-extension}
-\input{sections/80-sensitivity-and-atlas}
-
-\clearpage
-\input{sections/82-r42-r44-results}
-
-% The following audit indexes were formerly in the main-document appendix.
-% They are appended here to keep the existing supplement section numbers stable.
-\clearpage\twocolumn
-\input{sections/84-supp-reconstruction}
-\input{sections/r35-privacy-gaps}
-\input{sections/85-supp-legacy-cases}
-
-\clearpage\onecolumn
-\input{sections/86-e4-operating-costs}
-
-\clearpage\onecolumn
-\input{sections/87-r47-frozen-source-map}
-
-\clearpage\twocolumn
-\input{sections/r49-analysis-addendum}
-\clearpage\twocolumn
+\thispagestyle{plain}
+\noindent The supplement gives the paired feedback study first (Section~\ref{supp:randomized-feedback}), then the source identities and locators (Sections~\ref{supp:sources}--\ref{supp:mechanisms}), extraction rules (Section~\ref{sec:target-audit}), reporting examples (Section~\ref{supp:reporting-examples}), and design agenda and deployment maps (Sections~\ref{sec:mechanism-agenda}--\ref{supp:deployment}). The review artifact contains machine-readable records and an indexed archive of the earlier experimental populations, including negative results, failures and unknown outcomes. Those populations are separate from the present paired study.
+\input{sections/randomized-feedback-supplement}
+\clearpage\onecolumn\twocolumn
+\input{sections/sources-supplement}
+\input{sections/mechanisms-supplement}
+\input{sections/target-evidence-summary}
+\input{sections/reporting-examples-supplement}
+\input{sections/mechanism-agenda-supplement}
+\input{sections/deployment-supplement}
+% Flush the wide result tables and reset the two-column page height.
+\clearpage\onecolumn\twocolumn
 \bibliographystyle{IEEEtran}
-\bibliography{refs,refs-final-additions,refs-deployment,refs-search-completion,refs-methodology,refs-defense-first}
+\bibliography{references}
 \end{document}

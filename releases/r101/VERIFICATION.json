@@ -1,0 +1,55 @@
+{
+  "revision": "R101",
+  "scope": "Manuscript, compilable source closure and selected extracted evidence tables.",
+  "documents": {
+    "main.pdf": {
+      "sha256": "0f3e3d879277d3784c5bf52e72d1ea163b02c015328b5c0899442c0b564e1ee6",
+      "bytes": 274525,
+      "pages": 15,
+      "references_start_page": 13
+    },
+    "supplement.pdf": {
+      "sha256": "9f7309b3bab77b0954aad290cc6219434a2dcfd116f976a598086dcce31f99fe",
+      "bytes": 316519,
+      "pages": 23
+    }
+  },
+  "source_zip": {
+    "sha256": "c66c792d4b3f1d1d66073055ad0aa571766dc33f4962c1d7bdcff1cec5fae0af",
+    "bytes": 107149,
+    "files": 53
+  },
+  "original_local_delivery_gate_sha256": "aa4f20198317811c37d6d02fb26a7b5eca096a15d85fef81bc8b8ce418373b77",
+  "visual_pages": {
+    "main": 15,
+    "supplement": 23
+  },
+  "independent_rebuild": {
+    "main": {
+      "pages": 15,
+      "text_equal_every_page": true,
+      "rgb_equal_every_page": true,
+      "bibliography_equal": true
+    },
+    "supplement": {
+      "pages": 23,
+      "text_equal_every_page": true,
+      "rgb_equal_every_page": true,
+      "bibliography_equal": true
+    }
+  },
+  "experimental_results": "Unchanged; no new collection, fits or hypothesis tests.",
+  "source_scope": {
+    "direct_sources": 15,
+    "settings": 44,
+    "selected_mechanism_anchors": 22
+  },
+  "excluded": [
+    "Full local review ZIP",
+    "Private logs and raw captures",
+    "Credentials",
+    "Third-party full texts",
+    "Participant answers",
+    "Unreviewed experimental source trees"
+  ]
+}
