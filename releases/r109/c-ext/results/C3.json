@@ -1,0 +1,762 @@
+[
+  {
+    "model": "qwen3:8b",
+    "arm": "transport_drop",
+    "variant": "C3a_gap",
+    "detector": {
+      "name": "LR",
+      "threshold": 0.55,
+      "validation": {
+        "tp": 341,
+        "fp": 290,
+        "fn": 104,
+        "tn": 1214,
+        "precision": 0.5404120443740095,
+        "recall": 0.7662921348314606,
+        "f1": 0.6338289962825279,
+        "auc": null
+      }
+    },
+    "strip": 30,
+    "strip_ci": [
+      25.0,
+      35.0
+    ],
+    "timing_size_selected": 57,
+    "timing_size_learner": "RF",
+    "byte_selected": 62,
+    "b1_strip": 114,
+    "added_latency_mean_s": 1.0701187789440154,
+    "added_latency_pct_of_none_wall": 12.257746751898305,
+    "det_tp": 120,
+    "det_fp": 90,
+    "det_fn": 62,
+    "det_tn": 397,
+    "det_precision": 0.5714285714285714,
+    "det_recall": 0.6593406593406593,
+    "det_f1": 0.6122448979591837,
+    "det_auc": 0.7979330730870772
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "read",
+    "variant": "C3a_gap",
+    "detector": {
+      "name": "LR",
+      "threshold": 0.55,
+      "validation": {
+        "tp": 341,
+        "fp": 290,
+        "fn": 104,
+        "tn": 1214,
+        "precision": 0.5404120443740095,
+        "recall": 0.7662921348314606,
+        "f1": 0.6338289962825279,
+        "auc": null
+      }
+    },
+    "strip": 30,
+    "strip_ci": [
+      25.0,
+      35.0
+    ],
+    "timing_size_selected": 52,
+    "timing_size_learner": "RF",
+    "byte_selected": 62,
+    "b1_strip": 114,
+    "added_latency_mean_s": 1.0513691524664561,
+    "added_latency_pct_of_none_wall": 12.042977907937448,
+    "det_tp": 122,
+    "det_fp": 89,
+    "det_fn": 60,
+    "det_tn": 399,
+    "det_precision": 0.5781990521327014,
+    "det_recall": 0.6703296703296703,
+    "det_f1": 0.6208651399491094,
+    "det_auc": 0.7995631417762565
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "isolated",
+    "variant": "C3a_gap",
+    "detector": {
+      "name": "LR",
+      "threshold": 0.55,
+      "validation": {
+        "tp": 341,
+        "fp": 290,
+        "fn": 104,
+        "tn": 1214,
+        "precision": 0.5404120443740095,
+        "recall": 0.7662921348314606,
+        "f1": 0.6338289962825279,
+        "auc": null
+      }
+    },
+    "strip": 31,
+    "strip_ci": [
+      26.0,
+      36.0
+    ],
+    "timing_size_selected": 47,
+    "timing_size_learner": "LR",
+    "byte_selected": 61,
+    "b1_strip": 112,
+    "added_latency_mean_s": 1.0707456151644388,
+    "added_latency_pct_of_none_wall": 12.264926889090598,
+    "det_tp": 119,
+    "det_fp": 91,
+    "det_fn": 63,
+    "det_tn": 397,
+    "det_precision": 0.5666666666666667,
+    "det_recall": 0.6538461538461539,
+    "det_f1": 0.6071428571428571,
+    "det_auc": 0.7967258151684382
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "live_write",
+    "variant": "C3a_gap",
+    "detector": {
+      "name": "LR",
+      "threshold": 0.55,
+      "validation": {
+        "tp": 341,
+        "fp": 290,
+        "fn": 104,
+        "tn": 1214,
+        "precision": 0.5404120443740095,
+        "recall": 0.7662921348314606,
+        "f1": 0.6338289962825279,
+        "auc": null
+      }
+    },
+    "strip": 30,
+    "strip_ci": [
+      25.0,
+      35.0
+    ],
+    "timing_size_selected": 61,
+    "timing_size_learner": "LR",
+    "byte_selected": 62,
+    "b1_strip": 111,
+    "added_latency_mean_s": 1.0409453948338827,
+    "added_latency_pct_of_none_wall": 11.923578282608627,
+    "det_tp": 121,
+    "det_fp": 93,
+    "det_fn": 61,
+    "det_tn": 397,
+    "det_precision": 0.5654205607476636,
+    "det_recall": 0.6648351648351648,
+    "det_f1": 0.6111111111111112,
+    "det_auc": 0.7927674366449877
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "isolated_visible",
+    "variant": "C3a_gap",
+    "detector": {
+      "name": "LR",
+      "threshold": 0.55,
+      "validation": {
+        "tp": 341,
+        "fp": 290,
+        "fn": 104,
+        "tn": 1214,
+        "precision": 0.5404120443740095,
+        "recall": 0.7662921348314606,
+        "f1": 0.6338289962825279,
+        "auc": null
+      }
+    },
+    "strip": 32,
+    "strip_ci": [
+      27.0,
+      37.0
+    ],
+    "timing_size_selected": 55,
+    "timing_size_learner": "RF",
+    "byte_selected": 63,
+    "b1_strip": 111,
+    "added_latency_mean_s": 1.0361059168974558,
+    "added_latency_pct_of_none_wall": 11.868144160599611,
+    "det_tp": 121,
+    "det_fp": 93,
+    "det_fn": 61,
+    "det_tn": 396,
+    "det_precision": 0.5654205607476636,
+    "det_recall": 0.6648351648351648,
+    "det_f1": 0.6111111111111112,
+    "det_auc": 0.7930852378705139
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "transport_drop",
+    "variant": "C3b_gap_duration",
+    "detector": {
+      "name": "RF",
+      "threshold": 0.45,
+      "validation": {
+        "tp": 368,
+        "fp": 319,
+        "fn": 77,
+        "tn": 1185,
+        "precision": 0.5356622998544396,
+        "recall": 0.8269662921348314,
+        "f1": 0.6501766784452296,
+        "auc": null
+      }
+    },
+    "strip": 43,
+    "strip_ci": [
+      34.0,
+      52.0
+    ],
+    "timing_size_selected": 57,
+    "timing_size_learner": "RF",
+    "byte_selected": 62,
+    "b1_strip": 114,
+    "added_latency_mean_s": 1.0813391566276551,
+    "added_latency_pct_of_none_wall": 12.386271314603789,
+    "det_tp": 144,
+    "det_fp": 122,
+    "det_fn": 38,
+    "det_tn": 365,
+    "det_precision": 0.5413533834586466,
+    "det_recall": 0.7912087912087912,
+    "det_f1": 0.6428571428571429,
+    "det_auc": 0.8630830155470812
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "read",
+    "variant": "C3b_gap_duration",
+    "detector": {
+      "name": "RF",
+      "threshold": 0.45,
+      "validation": {
+        "tp": 368,
+        "fp": 319,
+        "fn": 77,
+        "tn": 1185,
+        "precision": 0.5356622998544396,
+        "recall": 0.8269662921348314,
+        "f1": 0.6501766784452296,
+        "auc": null
+      }
+    },
+    "strip": 50,
+    "strip_ci": [
+      41.0,
+      59.0
+    ],
+    "timing_size_selected": 49,
+    "timing_size_learner": "RF",
+    "byte_selected": 62,
+    "b1_strip": 114,
+    "added_latency_mean_s": 1.0852882544199625,
+    "added_latency_pct_of_none_wall": 12.431506518012098,
+    "det_tp": 144,
+    "det_fp": 119,
+    "det_fn": 38,
+    "det_tn": 369,
+    "det_precision": 0.5475285171102662,
+    "det_recall": 0.7912087912087912,
+    "det_f1": 0.647191011235955,
+    "det_auc": 0.8745777787785984
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "isolated",
+    "variant": "C3b_gap_duration",
+    "detector": {
+      "name": "RF",
+      "threshold": 0.45,
+      "validation": {
+        "tp": 368,
+        "fp": 319,
+        "fn": 77,
+        "tn": 1185,
+        "precision": 0.5356622998544396,
+        "recall": 0.8269662921348314,
+        "f1": 0.6501766784452296,
+        "auc": null
+      }
+    },
+    "strip": 57,
+    "strip_ci": [
+      47.0,
+      67.0
+    ],
+    "timing_size_selected": 41,
+    "timing_size_learner": "RF",
+    "byte_selected": 61,
+    "b1_strip": 112,
+    "added_latency_mean_s": 1.1162713706493377,
+    "added_latency_pct_of_none_wall": 12.786404684269005,
+    "det_tp": 141,
+    "det_fp": 106,
+    "det_fn": 41,
+    "det_tn": 382,
+    "det_precision": 0.5708502024291497,
+    "det_recall": 0.7747252747252747,
+    "det_f1": 0.6573426573426573,
+    "det_auc": 0.8827238335435057
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "live_write",
+    "variant": "C3b_gap_duration",
+    "detector": {
+      "name": "RF",
+      "threshold": 0.45,
+      "validation": {
+        "tp": 368,
+        "fp": 319,
+        "fn": 77,
+        "tn": 1185,
+        "precision": 0.5356622998544396,
+        "recall": 0.8269662921348314,
+        "f1": 0.6501766784452296,
+        "auc": null
+      }
+    },
+    "strip": 54,
+    "strip_ci": [
+      45.0,
+      63.0
+    ],
+    "timing_size_selected": 54,
+    "timing_size_learner": "RF",
+    "byte_selected": 62,
+    "b1_strip": 111,
+    "added_latency_mean_s": 1.1111990650494894,
+    "added_latency_pct_of_none_wall": 12.728303622298549,
+    "det_tp": 147,
+    "det_fp": 115,
+    "det_fn": 35,
+    "det_tn": 375,
+    "det_precision": 0.5610687022900763,
+    "det_recall": 0.8076923076923077,
+    "det_f1": 0.6621621621621622,
+    "det_auc": 0.8739347387306571
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "isolated_visible",
+    "variant": "C3b_gap_duration",
+    "detector": {
+      "name": "RF",
+      "threshold": 0.45,
+      "validation": {
+        "tp": 368,
+        "fp": 319,
+        "fn": 77,
+        "tn": 1185,
+        "precision": 0.5356622998544396,
+        "recall": 0.8269662921348314,
+        "f1": 0.6501766784452296,
+        "auc": null
+      }
+    },
+    "strip": 49,
+    "strip_ci": [
+      39.0,
+      59.0
+    ],
+    "timing_size_selected": 66,
+    "timing_size_learner": "LR",
+    "byte_selected": 63,
+    "b1_strip": 111,
+    "added_latency_mean_s": 1.0756598711013794,
+    "added_latency_pct_of_none_wall": 12.32121756068172,
+    "det_tp": 138,
+    "det_fp": 122,
+    "det_fn": 44,
+    "det_tn": 367,
+    "det_precision": 0.5307692307692308,
+    "det_recall": 0.7582417582417582,
+    "det_f1": 0.6244343891402715,
+    "det_auc": 0.8575192700959573
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "transport_drop",
+    "variant": "C3a_gap",
+    "detector": {
+      "name": "RF",
+      "threshold": 0.35000000000000003,
+      "validation": {
+        "tp": 322,
+        "fp": 636,
+        "fn": 123,
+        "tn": 1299,
+        "precision": 0.33611691022964507,
+        "recall": 0.7235955056179775,
+        "f1": 0.45901639344262296,
+        "auc": null
+      }
+    },
+    "strip": 48,
+    "strip_ci": [
+      39.0,
+      57.0
+    ],
+    "timing_size_selected": 72,
+    "timing_size_learner": "RF",
+    "byte_selected": 79,
+    "b1_strip": 115,
+    "added_latency_mean_s": 1.1964103559652963,
+    "added_latency_pct_of_none_wall": 14.696986635027512,
+    "det_tp": 124,
+    "det_fp": 202,
+    "det_fn": 58,
+    "det_tn": 436,
+    "det_precision": 0.3803680981595092,
+    "det_recall": 0.6813186813186813,
+    "det_f1": 0.4881889763779528,
+    "det_auc": 0.7545084226118708
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "read",
+    "variant": "C3a_gap",
+    "detector": {
+      "name": "RF",
+      "threshold": 0.35000000000000003,
+      "validation": {
+        "tp": 322,
+        "fp": 636,
+        "fn": 123,
+        "tn": 1299,
+        "precision": 0.33611691022964507,
+        "recall": 0.7235955056179775,
+        "f1": 0.45901639344262296,
+        "auc": null
+      }
+    },
+    "strip": 44,
+    "strip_ci": [
+      35.0,
+      53.0
+    ],
+    "timing_size_selected": 69,
+    "timing_size_learner": "RF",
+    "byte_selected": 72,
+    "b1_strip": 112,
+    "added_latency_mean_s": 1.2087895135084787,
+    "added_latency_pct_of_none_wall": 14.849055122280166,
+    "det_tp": 126,
+    "det_fp": 203,
+    "det_fn": 56,
+    "det_tn": 428,
+    "det_precision": 0.3829787234042553,
+    "det_recall": 0.6923076923076923,
+    "det_f1": 0.4931506849315068,
+    "det_auc": 0.7689347102976263
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "isolated",
+    "variant": "C3a_gap",
+    "detector": {
+      "name": "RF",
+      "threshold": 0.35000000000000003,
+      "validation": {
+        "tp": 322,
+        "fp": 636,
+        "fn": 123,
+        "tn": 1299,
+        "precision": 0.33611691022964507,
+        "recall": 0.7235955056179775,
+        "f1": 0.45901639344262296,
+        "auc": null
+      }
+    },
+    "strip": 52,
+    "strip_ci": [
+      43.0,
+      61.0
+    ],
+    "timing_size_selected": 84,
+    "timing_size_learner": "RF",
+    "byte_selected": 82,
+    "b1_strip": 112,
+    "added_latency_mean_s": 1.2151624182860057,
+    "added_latency_pct_of_none_wall": 14.927341385747058,
+    "det_tp": 133,
+    "det_fp": 206,
+    "det_fn": 49,
+    "det_tn": 425,
+    "det_precision": 0.39233038348082594,
+    "det_recall": 0.7307692307692307,
+    "det_f1": 0.510556621880998,
+    "det_auc": 0.7647419933473816
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "live_write",
+    "variant": "C3a_gap",
+    "detector": {
+      "name": "RF",
+      "threshold": 0.35000000000000003,
+      "validation": {
+        "tp": 322,
+        "fp": 636,
+        "fn": 123,
+        "tn": 1299,
+        "precision": 0.33611691022964507,
+        "recall": 0.7235955056179775,
+        "f1": 0.45901639344262296,
+        "auc": null
+      }
+    },
+    "strip": 55,
+    "strip_ci": [
+      45.0,
+      65.0
+    ],
+    "timing_size_selected": 66,
+    "timing_size_learner": "RF",
+    "byte_selected": 80,
+    "b1_strip": 112,
+    "added_latency_mean_s": 1.2085439801216125,
+    "added_latency_pct_of_none_wall": 14.846038932318892,
+    "det_tp": 129,
+    "det_fp": 206,
+    "det_fn": 53,
+    "det_tn": 438,
+    "det_precision": 0.3850746268656716,
+    "det_recall": 0.7087912087912088,
+    "det_f1": 0.4990328820116054,
+    "det_auc": 0.7725197938707256
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "isolated_visible",
+    "variant": "C3a_gap",
+    "detector": {
+      "name": "RF",
+      "threshold": 0.35000000000000003,
+      "validation": {
+        "tp": 322,
+        "fp": 636,
+        "fn": 123,
+        "tn": 1299,
+        "precision": 0.33611691022964507,
+        "recall": 0.7235955056179775,
+        "f1": 0.45901639344262296,
+        "auc": null
+      }
+    },
+    "strip": 48,
+    "strip_ci": [
+      38.0,
+      58.0
+    ],
+    "timing_size_selected": 79,
+    "timing_size_learner": "LR",
+    "byte_selected": 81,
+    "b1_strip": 107,
+    "added_latency_mean_s": 1.2330366233984629,
+    "added_latency_pct_of_none_wall": 15.146912331735377,
+    "det_tp": 111,
+    "det_fp": 206,
+    "det_fn": 71,
+    "det_tn": 433,
+    "det_precision": 0.3501577287066246,
+    "det_recall": 0.6098901098901099,
+    "det_f1": 0.44488977955911824,
+    "det_auc": 0.7359928803590776
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "transport_drop",
+    "variant": "C3b_gap_duration",
+    "detector": {
+      "name": "LR",
+      "threshold": 0.6000000000000001,
+      "validation": {
+        "tp": 340,
+        "fp": 515,
+        "fn": 105,
+        "tn": 1420,
+        "precision": 0.39766081871345027,
+        "recall": 0.7640449438202247,
+        "f1": 0.5230769230769231,
+        "auc": null
+      }
+    },
+    "strip": 59,
+    "strip_ci": [
+      49.0,
+      69.0
+    ],
+    "timing_size_selected": 79,
+    "timing_size_learner": "RF",
+    "byte_selected": 79,
+    "b1_strip": 115,
+    "added_latency_mean_s": 1.3313711325327555,
+    "added_latency_pct_of_none_wall": 16.35487660528318,
+    "det_tp": 118,
+    "det_fp": 136,
+    "det_fn": 64,
+    "det_tn": 502,
+    "det_precision": 0.4645669291338583,
+    "det_recall": 0.6483516483516484,
+    "det_f1": 0.5412844036697247,
+    "det_auc": 0.8166058079851184
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "read",
+    "variant": "C3b_gap_duration",
+    "detector": {
+      "name": "LR",
+      "threshold": 0.6000000000000001,
+      "validation": {
+        "tp": 340,
+        "fp": 515,
+        "fn": 105,
+        "tn": 1420,
+        "precision": 0.39766081871345027,
+        "recall": 0.7640449438202247,
+        "f1": 0.5230769230769231,
+        "auc": null
+      }
+    },
+    "strip": 59,
+    "strip_ci": [
+      50.0,
+      68.0
+    ],
+    "timing_size_selected": 74,
+    "timing_size_learner": "RF",
+    "byte_selected": 72,
+    "b1_strip": 112,
+    "added_latency_mean_s": 1.2850749353567759,
+    "added_latency_pct_of_none_wall": 15.786163213798876,
+    "det_tp": 127,
+    "det_fp": 130,
+    "det_fn": 55,
+    "det_tn": 501,
+    "det_precision": 0.49416342412451364,
+    "det_recall": 0.6978021978021978,
+    "det_f1": 0.5785876993166287,
+    "det_auc": 0.8355392626391043
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "isolated",
+    "variant": "C3b_gap_duration",
+    "detector": {
+      "name": "LR",
+      "threshold": 0.6000000000000001,
+      "validation": {
+        "tp": 340,
+        "fp": 515,
+        "fn": 105,
+        "tn": 1420,
+        "precision": 0.39766081871345027,
+        "recall": 0.7640449438202247,
+        "f1": 0.5230769230769231,
+        "auc": null
+      }
+    },
+    "strip": 55,
+    "strip_ci": [
+      45.0,
+      65.0
+    ],
+    "timing_size_selected": 81,
+    "timing_size_learner": "RF",
+    "byte_selected": 82,
+    "b1_strip": 112,
+    "added_latency_mean_s": 1.2818096240361532,
+    "added_latency_pct_of_none_wall": 15.74605136037073,
+    "det_tp": 119,
+    "det_fp": 138,
+    "det_fn": 63,
+    "det_tn": 493,
+    "det_precision": 0.46303501945525294,
+    "det_recall": 0.6538461538461539,
+    "det_f1": 0.5421412300683371,
+    "det_auc": 0.8273366886679089
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "live_write",
+    "variant": "C3b_gap_duration",
+    "detector": {
+      "name": "LR",
+      "threshold": 0.6000000000000001,
+      "validation": {
+        "tp": 340,
+        "fp": 515,
+        "fn": 105,
+        "tn": 1420,
+        "precision": 0.39766081871345027,
+        "recall": 0.7640449438202247,
+        "f1": 0.5230769230769231,
+        "auc": null
+      }
+    },
+    "strip": 66,
+    "strip_ci": [
+      56.0,
+      76.0
+    ],
+    "timing_size_selected": 65,
+    "timing_size_learner": "RF",
+    "byte_selected": 80,
+    "b1_strip": 112,
+    "added_latency_mean_s": 1.3353314836819967,
+    "added_latency_pct_of_none_wall": 16.403526491687295,
+    "det_tp": 118,
+    "det_fp": 123,
+    "det_fn": 64,
+    "det_tn": 521,
+    "det_precision": 0.4896265560165975,
+    "det_recall": 0.6483516483516484,
+    "det_f1": 0.557919621749409,
+    "det_auc": 0.8234079585011262
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "isolated_visible",
+    "variant": "C3b_gap_duration",
+    "detector": {
+      "name": "LR",
+      "threshold": 0.6000000000000001,
+      "validation": {
+        "tp": 340,
+        "fp": 515,
+        "fn": 105,
+        "tn": 1420,
+        "precision": 0.39766081871345027,
+        "recall": 0.7640449438202247,
+        "f1": 0.5230769230769231,
+        "auc": null
+      }
+    },
+    "strip": 62,
+    "strip_ci": [
+      53.0,
+      72.0
+    ],
+    "timing_size_selected": 79,
+    "timing_size_learner": "LR",
+    "byte_selected": 81,
+    "b1_strip": 107,
+    "added_latency_mean_s": 1.3160804649194082,
+    "added_latency_pct_of_none_wall": 16.167042442503224,
+    "det_tp": 114,
+    "det_fp": 128,
+    "det_fn": 68,
+    "det_tn": 511,
+    "det_precision": 0.47107438016528924,
+    "det_recall": 0.6263736263736264,
+    "det_f1": 0.5377358490566038,
+    "det_auc": 0.817004591652479
+  }
+]

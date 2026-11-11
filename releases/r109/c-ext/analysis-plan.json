@@ -1,0 +1,42 @@
+{
+  "version": "R109-C-v1",
+  "question": "Does the B1 timing-informed cover removal survive (C1) network-like timestamp jitter, (C2) an attacker without cover labels, and (C3) a defender that dispatches decoys with timing matched to honest calls?",
+  "study_type": "Retrospective offline reanalysis of the public M3 cohort, frozen in git before any C1-C3 test evaluation. Not a new collection and not an independent confirmation cohort.",
+  "source": "Public M3 export at commit 21f136e75161651f0ab2c73e6d7d1fb2a32a067f (review-r102/llm-extension), 3,600 episodes, 2 models x 6 arms x 300 fixtures, original 120/60/120 split. SHA-256 of inputs is checked against the M3 manifest.",
+  "exposure": "B1 test results (published in R108) are known: the attack recovers 111-114/120 (Qwen) and 107-115/120 (Llama). Before this freeze, the analyst viewed validation-split gap extremes (cover max 0.040/0.056 s; honest min 0.418/0.573 s) and the B1 validation candidate table, in which fixed gap rules at 0.05-0.10 s reach validation F1 near 1. No C1-C3 test quantity has been computed.",
+  "reproduction_gate": "Refit B1 exactly (same features, estimators, seeds, selection rules). Byte-only held-out LR/RF predictions must equal the original M3 predictions.csv, and refitted B1 strip counts must equal R108 results (Qwen 118,114,114,112,111,111; Llama 113,115,112,112,112,107 for none, proxy, read, isolated, live write, isolated visible). If the gate fails, stop and report the discrepancy before any C test.",
+  "observer": "As B1: destinations, ciphertext up/down bytes, client-receipt call start/end, episode wall duration, supplied episode/call windows; first ticket call known honest. Task label, operation, order, content, cover flag (except as training label where stated), model content and token counts never enter features.",
+  "C1_jitter": {
+    "transform": "Independently add half-normal delay |N(0, sigma)| to every call start and every call end timestamp of every episode (all splits), then recompute durations and gaps; clip negative durations and gaps to 0. Episode wall duration gets the jitter of the last end.",
+    "sigmas_seconds": [0.01, 0.05, 0.1, 0.2],
+    "draws": 5,
+    "seed": 1091111,
+    "attacks": {
+      "frozen": "B1 detector and threshold as fitted on clean train/validation, applied to jittered test.",
+      "adaptive": "Detector refitted on jittered train and selected on jittered validation with the B1 candidate set and tie rules; applied to jittered test."
+    },
+    "classifier": "Unchanged validation-selected no-cover byte classifier (byte features are unaffected by jitter).",
+    "report": "Per model x cover arm x sigma: mean, min and max strip correct/120 over draws; detector precision/recall. Descriptive; no hypothesis test.",
+    "robustness_criterion": "Removal is called jitter-robust at sigma if, for every cover arm of both models, mean adaptive strip recognition exceeds the original byte-view selected score by at least 20 percentage points (24/120)."
+  },
+  "C2_label_free": {
+    "rule": "Fit a 2-component Gaussian mixture (sklearn GaussianMixture, full covariance, random_state 102, n_init 5) to log10 gap seconds of all non-first training calls of the model pooled over cover arms, without labels. Threshold = point between the two component means where posterior responsibilities are equal (bisection). Calls with gap below the threshold are predicted cover; the first call is retained.",
+    "sensitivity": "Also report fixed thresholds 0.1 s and 0.2 s, specified here without test data.",
+    "report": "Per model x cover arm: detector precision/recall, strip correct/120 with the frozen no-cover classifier, and exact paired McNemar versus the original byte-view selected attack in one 10-test Holm family (GMM rule only)."
+  },
+  "C3_timing_matched": {
+    "counterfactual": "Simulate a gateway that delays each decoy so its preceding gap is a draw from the empirical distribution of non-first honest-call gaps of the same model in the no-cover TRAIN split (the defender's own history). The added delay shifts every later timestamp of that episode and the wall duration. Planner behaviour is assumed unchanged: hidden cover does not reach the planner and model inference does not depend on wall-clock time; for isolated-visible the content is unchanged.",
+    "variants": {
+      "C3a_gap": "Match the preceding gap only; durations unchanged.",
+      "C3b_gap_duration": "Additionally replace each decoy duration by a draw from no-cover TRAIN honest durations at the same destination (fallback: all destinations), shifting later timestamps by the difference when positive and not shortening when negative."
+    },
+    "seed": 1091112,
+    "attacker": "Fully adaptive: detector refitted on transformed train and selected on transformed validation with the B1 candidate set; strip with the frozen no-cover classifier. Also refit the B1 direct timing_size LR/RF view on transformed data with validation selection.",
+    "report": "Per model x cover arm x variant: detector precision/recall/AUROC, strip correct/120, timing_size selected correct/120, mean added latency per episode (s) and as a percentage of mean no-cover wall time.",
+    "tests": "Primary C3 family: 10 exact paired McNemar tests, C3b strip minus B1 strip (clean), Holm .05. Secondary: C3b strip minus original byte-view selected, 10 tests, separate Holm family. Non-rejection is not equivalence.",
+    "interpretation_rule": "If C3b strip recognition falls to within 10 points of the byte-view score in every arm, report that timing-matched dispatch removes the measured removal advantage at the stated latency cost. Otherwise report which residual feature carries detection."
+  },
+  "uncertainty": "Conditional 95% intervals by 10,000 paired fixture bootstraps stratified by requested action, holding fitted attacks fixed, seed 1071111 as in B1.",
+  "resources": "Local CPU only; no LLM, API or capture.",
+  "publication": "Results go to releases/r109/c-ext/results with code, freeze receipt and verification; manuscript text is changed only after results are saved."
+}

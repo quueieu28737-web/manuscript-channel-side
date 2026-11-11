@@ -1,4 +1,4 @@
-# Latest manuscript: R108 Agent communication side-channel SoK
+# Latest manuscript: R109 Agent communication side-channel SoK
 
 - [Main PDF](main.pdf) | [Supplement PDF](supplement.pdf)
 - [Compilable LaTeX ZIP](latex-source.zip)

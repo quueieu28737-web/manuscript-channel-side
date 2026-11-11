@@ -1,0 +1,23 @@
+{
+ "C1_robust_by_sigma": {
+  "0.01": true,
+  "0.05": true,
+  "0.1": true,
+  "0.2": true
+ },
+ "C3b_best_attack_minus_byte": {
+  "qwen3:8b/transport_drop": 0,
+  "qwen3:8b/read": 0,
+  "qwen3:8b/isolated": 0,
+  "qwen3:8b/live_write": 0,
+  "qwen3:8b/isolated_visible": 3,
+  "llama3.1:8b/transport_drop": 0,
+  "llama3.1:8b/read": 2,
+  "llama3.1:8b/isolated": 0,
+  "llama3.1:8b/live_write": 0,
+  "llama3.1:8b/isolated_visible": 0
+ },
+ "C3b_within_10_of_byte": 3,
+ "C3b_strip_below_byte": 10
+}
+VERIFIED

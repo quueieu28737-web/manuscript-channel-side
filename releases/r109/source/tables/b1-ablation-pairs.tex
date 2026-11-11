@@ -1,0 +1,16 @@
+\begin{table*}[t]\centering\small
+\caption{All ten paired tests from the separately recorded post-scoring diagnostic, with its own Holm family. The comparison is timing-only versus no-clock contextual removal. These exploratory results reuse the B1 test fixtures.}\label{tab:b1-ablation-pairs}
+\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\textwidth}{@{}lP{.12\textwidth}Yrrrr@{}}\toprule
+Model & Policy & Contrast & $\Delta$ pp & 95\% conditional CI & Raw $p$ & Holm $p$ \\\midrule
+Qwen3:8B & Proxy discard & Time $-$ no-clock & 40.0 & [31.7, 48.3] & $9.059\times10^{-14}$ & $7.248\times10^{-13}$ \\
+Qwen3:8B & Read cover & Time $-$ no-clock & 42.5 & [34.2, 51.7] & $1.199\times10^{-14}$ & $1.199\times10^{-13}$ \\
+Qwen3:8B & Isolated, hidden & Time $-$ no-clock & 40.0 & [31.7, 48.3] & $9.059\times10^{-14}$ & $7.248\times10^{-13}$ \\
+Qwen3:8B & Live write & Time $-$ no-clock & 40.0 & [31.7, 48.3] & $9.059\times10^{-14}$ & $7.248\times10^{-13}$ \\
+Qwen3:8B & Isolated, visible & Time $-$ no-clock & 42.5 & [34.2, 50.8] & $1.199\times10^{-14}$ & $1.199\times10^{-13}$ \\
+Llama3.1:8B & Proxy discard & Time $-$ no-clock & 26.7 & [19.2, 34.2] & $4.657\times10^{-10}$ & $2.328\times10^{-9}$ \\
+Llama3.1:8B & Read cover & Time $-$ no-clock & 26.7 & [19.2, 34.2] & $4.657\times10^{-10}$ & $2.328\times10^{-9}$ \\
+Llama3.1:8B & Isolated, hidden & Time $-$ no-clock & 26.7 & [19.2, 34.2] & $4.657\times10^{-10}$ & $2.328\times10^{-9}$ \\
+Llama3.1:8B & Live write & Time $-$ no-clock & 22.5 & [14.2, 30.8] & $1.401\times10^{-6}$ & $2.802\times10^{-6}$ \\
+Llama3.1:8B & Isolated, visible & Time $-$ no-clock & 20.8 & [13.3, 28.3] & $1.624\times10^{-6}$ & $2.802\times10^{-6}$ \\
+\bottomrule\end{tabularx}\end{table*}
