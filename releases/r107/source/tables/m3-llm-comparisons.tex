@@ -1,0 +1,63 @@
+\begin{table*}[t]\centering\small
+\caption{Goal completion: every prespecified paired contrast. Differences and conditional intervals are percentage points. This endpoint has one twelve-comparison Holm family.}
+\label{tab:m3-llm-paired}
+\setlength{\tabcolsep}{5pt}
+\begin{tabularx}{\textwidth}{@{}lYrrrr@{}}\toprule
+Model & Condition minus reference & Difference & Conditional 95\% CI & Raw $p$ & Holm $p$ \\\midrule
+Qwen3:8B & Proxy -- No cover & 0.00 & [0.00, 0.00] & 1.000 & 1.000 \\
+Qwen3:8B & Read -- No cover & 0.00 & [0.00, 0.00] & 1.000 & 1.000 \\
+Qwen3:8B & Hidden clone -- No cover & 0.00 & [0.00, 0.00] & 1.000 & 1.000 \\
+Qwen3:8B & Live write -- No cover & -10.00 & [-15.00, -5.00] & 0.002 & 0.022 \\
+Qwen3:8B & Visible clone -- No cover & -0.83 & [-4.17, 2.50] & 1.000 & 1.000 \\
+Qwen3:8B & Visible clone -- Hidden clone & -0.83 & [-4.17, 2.50] & 1.000 & 1.000 \\
+\midrule
+Llama3.1:8B & Proxy -- No cover & -1.67 & [-5.00, 1.67] & 0.625 & 1.000 \\
+Llama3.1:8B & Read -- No cover & 1.67 & [-2.50, 5.83] & 0.688 & 1.000 \\
+Llama3.1:8B & Hidden clone -- No cover & 0.83 & [0.00, 2.50] & 1.000 & 1.000 \\
+Llama3.1:8B & Live write -- No cover & -5.00 & [-10.83, 0.83] & 0.210 & 1.000 \\
+Llama3.1:8B & Visible clone -- No cover & 0.83 & [-6.67, 8.33] & 1.000 & 1.000 \\
+Llama3.1:8B & Visible clone -- Hidden clone & 0.00 & [-7.50, 7.50] & 1.000 & 1.000 \\
+\bottomrule\end{tabularx}
+\end{table*}
+\begin{table*}[t]\centering\small
+\caption{Requested-action recognition: every prespecified paired contrast. Differences and conditional intervals are percentage points. This endpoint has one twelve-comparison Holm family.}
+\label{tab:m3-llm-paired-privacy}
+\setlength{\tabcolsep}{5pt}
+\begin{tabularx}{\textwidth}{@{}lYrrrr@{}}\toprule
+Model & Condition minus reference & Difference & Conditional 95\% CI & Raw $p$ & Holm $p$ \\\midrule
+Qwen3:8B & Proxy -- No cover & -46.67 & [-55.83, -37.50] & $2.78\times10^{-17}$ & $3.05\times10^{-16}$ \\
+Qwen3:8B & Read -- No cover & -46.67 & [-55.00, -37.50] & $2.78\times10^{-17}$ & $3.05\times10^{-16}$ \\
+Qwen3:8B & Hidden clone -- No cover & -47.50 & [-56.67, -38.33] & $1.39\times10^{-17}$ & $1.67\times10^{-16}$ \\
+Qwen3:8B & Live write -- No cover & -46.67 & [-55.83, -37.50] & $2.78\times10^{-17}$ & $3.05\times10^{-16}$ \\
+Qwen3:8B & Visible clone -- No cover & -45.83 & [-55.00, -36.67] & $8.05\times10^{-16}$ & $6.44\times10^{-15}$ \\
+Qwen3:8B & Visible clone -- Hidden clone & 1.67 & [-5.00, 8.33] & 0.815 & 1.000 \\
+\midrule
+Llama3.1:8B & Proxy -- No cover & -28.33 & [-35.83, -20.83] & $1.08\times10^{-9}$ & $5.59\times10^{-9}$ \\
+Llama3.1:8B & Read -- No cover & -34.17 & [-42.50, -25.83] & $9.09\times10^{-13}$ & $6.37\times10^{-12}$ \\
+Llama3.1:8B & Hidden clone -- No cover & -25.83 & [-34.17, -18.33] & $9.31\times10^{-10}$ & $5.59\times10^{-9}$ \\
+Llama3.1:8B & Live write -- No cover & -27.50 & [-35.83, -19.17] & $1.02\times10^{-8}$ & $3.07\times10^{-8}$ \\
+Llama3.1:8B & Visible clone -- No cover & -26.67 & [-35.00, -19.17] & $4.07\times10^{-9}$ & $1.63\times10^{-8}$ \\
+Llama3.1:8B & Visible clone -- Hidden clone & -0.83 & [-8.33, 6.67] & 1.000 & 1.000 \\
+\bottomrule\end{tabularx}
+\end{table*}
+\begin{table*}[t]\centering\small
+\caption{Business-state integrity: every prespecified paired contrast. Differences and conditional intervals are percentage points. This endpoint has one twelve-comparison Holm family.}
+\label{tab:m3-llm-paired-state_integrity}
+\setlength{\tabcolsep}{5pt}
+\begin{tabularx}{\textwidth}{@{}lYrrrr@{}}\toprule
+Model & Condition minus reference & Difference & Conditional 95\% CI & Raw $p$ & Holm $p$ \\\midrule
+Qwen3:8B & Proxy -- No cover & 0.00 & [0.00, 0.00] & 1.000 & 1.000 \\
+Qwen3:8B & Read -- No cover & -0.83 & [-2.50, 0.00] & 1.000 & 1.000 \\
+Qwen3:8B & Hidden clone -- No cover & -0.83 & [-2.50, 0.00] & 1.000 & 1.000 \\
+Qwen3:8B & Live write -- No cover & -90.83 & [-95.00, -85.83] & $3.08\times10^{-33}$ & $3.70\times10^{-32}$ \\
+Qwen3:8B & Visible clone -- No cover & -1.67 & [-5.83, 1.67] & 0.688 & 1.000 \\
+Qwen3:8B & Visible clone -- Hidden clone & -0.83 & [-4.17, 2.50] & 1.000 & 1.000 \\
+\midrule
+Llama3.1:8B & Proxy -- No cover & -0.83 & [-4.17, 2.50] & 1.000 & 1.000 \\
+Llama3.1:8B & Read -- No cover & 1.67 & [-2.50, 6.67] & 0.727 & 1.000 \\
+Llama3.1:8B & Hidden clone -- No cover & 0.83 & [-1.67, 3.33] & 1.000 & 1.000 \\
+Llama3.1:8B & Live write -- No cover & -55.00 & [-62.50, -47.50] & $2.71\times10^{-20}$ & $2.98\times10^{-19}$ \\
+Llama3.1:8B & Visible clone -- No cover & 3.33 & [-4.17, 10.83] & 0.523 & 1.000 \\
+Llama3.1:8B & Visible clone -- Hidden clone & 2.50 & [-5.00, 10.00] & 0.664 & 1.000 \\
+\bottomrule\end{tabularx}
+\end{table*}
