@@ -1,0 +1,11 @@
+\begin{table*}[t]\centering\small
+\caption{Deployment and access map. The configurations are analyst-defined; cited settings test the listed view, not every component of the deployment. A gateway's plaintext access requires TLS termination.}\label{tab:deployment-access}
+\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\textwidth}{@{}P{.18\textwidth}P{.25\textwidth}P{.28\textwidth}Y@{}}\toprule
+Deployment & Observer and permitted view & Existing evidence for that view & Protection consequence \\\midrule
+Enterprise egress & A transit monitor sees routed model/tool flows, sizes, times and any exposed destination association. & WRA: supplied research-domain traces; ANT and cloud benchmark: model/combined traffic~\cite{jeong2026wra,li2026ant,pouryousef2026traffic}. & Specify which services cross the monitored egress. A union of flows is available only when the monitor can observe them. \\\addlinespace[3pt]
+Shared gateway or relay & Transit sees multiplexed gateway output. A terminating gateway can additionally read addressed requests. & Live OHTTP: passive-link inference under stated relay trust~\cite{dangol2026workflow}; PrivacyTrace: semantic recipient/gateway access~\cite{duan2026privacytrace}. & Separate relay association protection from content trust. Connection sharing changes the observation unit. \\\addlinespace[3pt]
+Local model, remote tools & An external observer sees remote tool traffic; the local model call has no corresponding external network leg. & WRA's destination-recovery mechanism is relevant to tool egress~\cite{jeong2026wra}; whole-deployment protection is untested in the mapped comparison. & Evaluate tool and downstream calls. Do not import a remote-model attack score into an absent network leg. \\\addlinespace[3pt]
+Cloud model, remote tools & An authorized vantage may see either or both encrypted legs. A contacted tool sees its own arguments. & ANT/cloud benchmark test model traffic~\cite{li2026ant,pouryousef2026traffic}; PrivacyTrace tests recipient-visible representations~\cite{duan2026privacytrace}. & Check permitted model and tool views after the intervention; recipients and passive monitors need different protections. \\\bottomrule
+\end{tabularx}
+\end{table*}

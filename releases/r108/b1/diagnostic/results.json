@@ -1,0 +1,554 @@
+[
+  {
+    "model": "qwen3:8b",
+    "arm": "none",
+    "view": "timing_only",
+    "detector": "LR",
+    "threshold": 0.9500000000000001,
+    "task_correct": 118,
+    "task_n": 120,
+    "task_conditional_ci": [
+      0.9583333333333334,
+      1.0
+    ],
+    "detector_metrics": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "tn": 487,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "auc": null
+    }
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "transport_drop",
+    "view": "timing_only",
+    "detector": "LR",
+    "threshold": 0.9500000000000001,
+    "task_correct": 114,
+    "task_n": 120,
+    "task_conditional_ci": [
+      0.9083333333333333,
+      0.9833333333333333
+    ],
+    "detector_metrics": {
+      "tp": 180,
+      "fp": 0,
+      "fn": 2,
+      "tn": 487,
+      "precision": 1.0,
+      "recall": 0.989010989010989,
+      "f1": 0.994475138121547,
+      "auc": 1.0
+    }
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "read",
+    "view": "timing_only",
+    "detector": "LR",
+    "threshold": 0.9500000000000001,
+    "task_correct": 114,
+    "task_n": 120,
+    "task_conditional_ci": [
+      0.9083333333333333,
+      0.9833333333333333
+    ],
+    "detector_metrics": {
+      "tp": 182,
+      "fp": 0,
+      "fn": 0,
+      "tn": 488,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "auc": 1.0
+    }
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "isolated",
+    "view": "timing_only",
+    "detector": "LR",
+    "threshold": 0.9500000000000001,
+    "task_correct": 113,
+    "task_n": 120,
+    "task_conditional_ci": [
+      0.9,
+      0.975
+    ],
+    "detector_metrics": {
+      "tp": 181,
+      "fp": 0,
+      "fn": 1,
+      "tn": 488,
+      "precision": 1.0,
+      "recall": 0.9945054945054945,
+      "f1": 0.9972451790633609,
+      "auc": 1.0
+    }
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "live_write",
+    "view": "timing_only",
+    "detector": "LR",
+    "threshold": 0.9500000000000001,
+    "task_correct": 112,
+    "task_n": 120,
+    "task_conditional_ci": [
+      0.8833333333333333,
+      0.975
+    ],
+    "detector_metrics": {
+      "tp": 182,
+      "fp": 0,
+      "fn": 0,
+      "tn": 490,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "auc": 1.0
+    }
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "isolated_visible",
+    "view": "timing_only",
+    "detector": "LR",
+    "threshold": 0.9500000000000001,
+    "task_correct": 110,
+    "task_n": 120,
+    "task_conditional_ci": [
+      0.8666666666666667,
+      0.9583333333333334
+    ],
+    "detector_metrics": {
+      "tp": 180,
+      "fp": 0,
+      "fn": 2,
+      "tn": 489,
+      "precision": 1.0,
+      "recall": 0.989010989010989,
+      "f1": 0.994475138121547,
+      "auc": 1.0
+    }
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "none",
+    "view": "no_clock_context",
+    "detector": "LR",
+    "threshold": 0.7000000000000001,
+    "task_correct": 112,
+    "task_n": 120,
+    "task_conditional_ci": [
+      0.8916666666666667,
+      0.975
+    ],
+    "detector_metrics": {
+      "tp": 0,
+      "fp": 10,
+      "fn": 0,
+      "tn": 477,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "auc": null
+    }
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "transport_drop",
+    "view": "no_clock_context",
+    "detector": "LR",
+    "threshold": 0.7000000000000001,
+    "task_correct": 66,
+    "task_n": 120,
+    "task_conditional_ci": [
+      0.4666666666666667,
+      0.6333333333333333
+    ],
+    "detector_metrics": {
+      "tp": 117,
+      "fp": 71,
+      "fn": 65,
+      "tn": 416,
+      "precision": 0.6223404255319149,
+      "recall": 0.6428571428571429,
+      "f1": 0.6324324324324324,
+      "auc": 0.8666651623530474
+    }
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "read",
+    "view": "no_clock_context",
+    "detector": "LR",
+    "threshold": 0.7000000000000001,
+    "task_correct": 63,
+    "task_n": 120,
+    "task_conditional_ci": [
+      0.44166666666666665,
+      0.6083333333333333
+    ],
+    "detector_metrics": {
+      "tp": 120,
+      "fp": 73,
+      "fn": 62,
+      "tn": 415,
+      "precision": 0.6217616580310881,
+      "recall": 0.6593406593406593,
+      "f1": 0.64,
+      "auc": 0.8656773554314539
+    }
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "isolated",
+    "view": "no_clock_context",
+    "detector": "LR",
+    "threshold": 0.7000000000000001,
+    "task_correct": 65,
+    "task_n": 120,
+    "task_conditional_ci": [
+      0.4583333333333333,
+      0.625
+    ],
+    "detector_metrics": {
+      "tp": 119,
+      "fp": 72,
+      "fn": 63,
+      "tn": 416,
+      "precision": 0.6230366492146597,
+      "recall": 0.6538461538461539,
+      "f1": 0.6380697050938338,
+      "auc": 0.8660601693388579
+    }
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "live_write",
+    "view": "no_clock_context",
+    "detector": "LR",
+    "threshold": 0.7000000000000001,
+    "task_correct": 64,
+    "task_n": 120,
+    "task_conditional_ci": [
+      0.45,
+      0.6166666666666667
+    ],
+    "detector_metrics": {
+      "tp": 118,
+      "fp": 74,
+      "fn": 64,
+      "tn": 416,
+      "precision": 0.6145833333333334,
+      "recall": 0.6483516483516484,
+      "f1": 0.6310160427807486,
+      "auc": 0.8651827764072662
+    }
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "isolated_visible",
+    "view": "no_clock_context",
+    "detector": "LR",
+    "threshold": 0.7000000000000001,
+    "task_correct": 59,
+    "task_n": 120,
+    "task_conditional_ci": [
+      0.4083333333333333,
+      0.575
+    ],
+    "detector_metrics": {
+      "tp": 117,
+      "fp": 75,
+      "fn": 65,
+      "tn": 414,
+      "precision": 0.609375,
+      "recall": 0.6428571428571429,
+      "f1": 0.6256684491978609,
+      "auc": 0.8663228387154768
+    }
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "none",
+    "view": "timing_only",
+    "detector": "LR",
+    "threshold": 0.9500000000000001,
+    "task_correct": 113,
+    "task_n": 120,
+    "task_conditional_ci": [
+      0.9,
+      0.975
+    ],
+    "detector_metrics": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "tn": 629,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "auc": null
+    }
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "transport_drop",
+    "view": "timing_only",
+    "detector": "LR",
+    "threshold": 0.9500000000000001,
+    "task_correct": 115,
+    "task_n": 120,
+    "task_conditional_ci": [
+      0.925,
+      0.9916666666666667
+    ],
+    "detector_metrics": {
+      "tp": 181,
+      "fp": 0,
+      "fn": 1,
+      "tn": 638,
+      "precision": 1.0,
+      "recall": 0.9945054945054945,
+      "f1": 0.9972451790633609,
+      "auc": 1.0
+    }
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "read",
+    "view": "timing_only",
+    "detector": "LR",
+    "threshold": 0.9500000000000001,
+    "task_correct": 112,
+    "task_n": 120,
+    "task_conditional_ci": [
+      0.8916666666666667,
+      0.975
+    ],
+    "detector_metrics": {
+      "tp": 182,
+      "fp": 0,
+      "fn": 0,
+      "tn": 631,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "auc": 1.0
+    }
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "isolated",
+    "view": "timing_only",
+    "detector": "LR",
+    "threshold": 0.9500000000000001,
+    "task_correct": 112,
+    "task_n": 120,
+    "task_conditional_ci": [
+      0.8916666666666667,
+      0.975
+    ],
+    "detector_metrics": {
+      "tp": 181,
+      "fp": 0,
+      "fn": 1,
+      "tn": 631,
+      "precision": 1.0,
+      "recall": 0.9945054945054945,
+      "f1": 0.9972451790633609,
+      "auc": 1.0
+    }
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "live_write",
+    "view": "timing_only",
+    "detector": "LR",
+    "threshold": 0.9500000000000001,
+    "task_correct": 112,
+    "task_n": 120,
+    "task_conditional_ci": [
+      0.8916666666666667,
+      0.975
+    ],
+    "detector_metrics": {
+      "tp": 182,
+      "fp": 0,
+      "fn": 0,
+      "tn": 644,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "auc": 1.0
+    }
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "isolated_visible",
+    "view": "timing_only",
+    "detector": "LR",
+    "threshold": 0.9500000000000001,
+    "task_correct": 107,
+    "task_n": 120,
+    "task_conditional_ci": [
+      0.8416666666666667,
+      0.9416666666666667
+    ],
+    "detector_metrics": {
+      "tp": 182,
+      "fp": 0,
+      "fn": 0,
+      "tn": 639,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "auc": 1.0
+    }
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "none",
+    "view": "no_clock_context",
+    "detector": "RF",
+    "threshold": 0.4,
+    "task_correct": 108,
+    "task_n": 120,
+    "task_conditional_ci": [
+      0.8416666666666667,
+      0.95
+    ],
+    "detector_metrics": {
+      "tp": 0,
+      "fp": 24,
+      "fn": 0,
+      "tn": 605,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "auc": null
+    }
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "transport_drop",
+    "view": "no_clock_context",
+    "detector": "RF",
+    "threshold": 0.4,
+    "task_correct": 83,
+    "task_n": 120,
+    "task_conditional_ci": [
+      0.6166666666666667,
+      0.7666666666666667
+    ],
+    "detector_metrics": {
+      "tp": 109,
+      "fp": 28,
+      "fn": 73,
+      "tn": 610,
+      "precision": 0.7956204379562044,
+      "recall": 0.5989010989010989,
+      "f1": 0.6833855799373041,
+      "auc": 0.9026619931792347
+    }
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "read",
+    "view": "no_clock_context",
+    "detector": "RF",
+    "threshold": 0.4,
+    "task_correct": 80,
+    "task_n": 120,
+    "task_conditional_ci": [
+      0.5833333333333334,
+      0.7416666666666667
+    ],
+    "detector_metrics": {
+      "tp": 106,
+      "fp": 31,
+      "fn": 76,
+      "tn": 600,
+      "precision": 0.7737226277372263,
+      "recall": 0.5824175824175825,
+      "f1": 0.664576802507837,
+      "auc": 0.888829870604831
+    }
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "isolated",
+    "view": "no_clock_context",
+    "detector": "RF",
+    "threshold": 0.4,
+    "task_correct": 80,
+    "task_n": 120,
+    "task_conditional_ci": [
+      0.5833333333333334,
+      0.7416666666666667
+    ],
+    "detector_metrics": {
+      "tp": 107,
+      "fp": 31,
+      "fn": 75,
+      "tn": 600,
+      "precision": 0.7753623188405797,
+      "recall": 0.5879120879120879,
+      "f1": 0.66875,
+      "auc": 0.8998014663624806
+    }
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "live_write",
+    "view": "no_clock_context",
+    "detector": "RF",
+    "threshold": 0.4,
+    "task_correct": 85,
+    "task_n": 120,
+    "task_conditional_ci": [
+      0.625,
+      0.7833333333333333
+    ],
+    "detector_metrics": {
+      "tp": 107,
+      "fp": 32,
+      "fn": 75,
+      "tn": 612,
+      "precision": 0.7697841726618705,
+      "recall": 0.5879120879120879,
+      "f1": 0.6666666666666666,
+      "auc": 0.8934373080335813
+    }
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "isolated_visible",
+    "view": "no_clock_context",
+    "detector": "RF",
+    "threshold": 0.4,
+    "task_correct": 82,
+    "task_n": 120,
+    "task_conditional_ci": [
+      0.6083333333333333,
+      0.7666666666666667
+    ],
+    "detector_metrics": {
+      "tp": 107,
+      "fp": 28,
+      "fn": 75,
+      "tn": 611,
+      "precision": 0.7925925925925926,
+      "recall": 0.5879120879120879,
+      "f1": 0.6750788643533123,
+      "auc": 0.9039966293487419
+    }
+  }
+]

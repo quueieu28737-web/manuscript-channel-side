@@ -1,0 +1,178 @@
+[
+  {
+    "model": "qwen3:8b",
+    "arm": "none",
+    "kind": "honest",
+    "calls_excluding_initial": 190,
+    "gap_median_seconds": 0.5931404829025269,
+    "duration_median_seconds": 0.10179436206817627
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "transport_drop",
+    "kind": "honest",
+    "calls_excluding_initial": 190,
+    "gap_median_seconds": 0.5802432298660278,
+    "duration_median_seconds": 0.10733175277709961
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "transport_drop",
+    "kind": "cover",
+    "calls_excluding_initial": 89,
+    "gap_median_seconds": 0.014429092407226562,
+    "duration_median_seconds": 0.09375977516174316
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "read",
+    "kind": "honest",
+    "calls_excluding_initial": 190,
+    "gap_median_seconds": 0.584195613861084,
+    "duration_median_seconds": 0.11530148983001709
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "read",
+    "kind": "cover",
+    "calls_excluding_initial": 89,
+    "gap_median_seconds": 0.015006542205810547,
+    "duration_median_seconds": 0.09406900405883789
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "isolated",
+    "kind": "honest",
+    "calls_excluding_initial": 191,
+    "gap_median_seconds": 0.5816917419433594,
+    "duration_median_seconds": 0.09860038757324219
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "isolated",
+    "kind": "cover",
+    "calls_excluding_initial": 89,
+    "gap_median_seconds": 0.014268636703491211,
+    "duration_median_seconds": 0.10306429862976074
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "live_write",
+    "kind": "honest",
+    "calls_excluding_initial": 192,
+    "gap_median_seconds": 0.5730433464050293,
+    "duration_median_seconds": 0.1096271276473999
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "live_write",
+    "kind": "cover",
+    "calls_excluding_initial": 89,
+    "gap_median_seconds": 0.015347003936767578,
+    "duration_median_seconds": 0.09526848793029785
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "isolated_visible",
+    "kind": "honest",
+    "calls_excluding_initial": 191,
+    "gap_median_seconds": 0.5959370136260986,
+    "duration_median_seconds": 0.10259103775024414
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "isolated_visible",
+    "kind": "cover",
+    "calls_excluding_initial": 89,
+    "gap_median_seconds": 0.014997720718383789,
+    "duration_median_seconds": 0.09758496284484863
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "none",
+    "kind": "honest",
+    "calls_excluding_initial": 265,
+    "gap_median_seconds": 0.8252949714660645,
+    "duration_median_seconds": 0.2527139186859131
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "transport_drop",
+    "kind": "honest",
+    "calls_excluding_initial": 265,
+    "gap_median_seconds": 0.8374764919281006,
+    "duration_median_seconds": 0.2410132884979248
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "transport_drop",
+    "kind": "cover",
+    "calls_excluding_initial": 89,
+    "gap_median_seconds": 0.030790328979492188,
+    "duration_median_seconds": 0.24853110313415527
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "read",
+    "kind": "honest",
+    "calls_excluding_initial": 261,
+    "gap_median_seconds": 0.8235201835632324,
+    "duration_median_seconds": 0.23628640174865723
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "read",
+    "kind": "cover",
+    "calls_excluding_initial": 89,
+    "gap_median_seconds": 0.03066539764404297,
+    "duration_median_seconds": 0.2546546459197998
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "isolated",
+    "kind": "honest",
+    "calls_excluding_initial": 263,
+    "gap_median_seconds": 0.827876091003418,
+    "duration_median_seconds": 0.2235407829284668
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "isolated",
+    "kind": "cover",
+    "calls_excluding_initial": 89,
+    "gap_median_seconds": 0.030631065368652344,
+    "duration_median_seconds": 0.23701977729797363
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "live_write",
+    "kind": "honest",
+    "calls_excluding_initial": 269,
+    "gap_median_seconds": 0.8468267917633057,
+    "duration_median_seconds": 0.23261189460754395
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "live_write",
+    "kind": "cover",
+    "calls_excluding_initial": 89,
+    "gap_median_seconds": 0.030516386032104492,
+    "duration_median_seconds": 0.2440323829650879
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "isolated_visible",
+    "kind": "honest",
+    "calls_excluding_initial": 252,
+    "gap_median_seconds": 0.8502838611602783,
+    "duration_median_seconds": 0.23163068294525146
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "isolated_visible",
+    "kind": "cover",
+    "calls_excluding_initial": 89,
+    "gap_median_seconds": 0.030427932739257812,
+    "duration_median_seconds": 0.24814391136169434
+  }
+]

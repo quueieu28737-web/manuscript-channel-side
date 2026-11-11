@@ -1,0 +1,152 @@
+[
+  {
+    "model": "qwen3:8b",
+    "arm": "transport_drop",
+    "comparison": "timing_only stripping minus no_clock_context stripping",
+    "n_pairs": 120,
+    "condition_only": 49,
+    "reference_only": 1,
+    "difference_pp": 40.0,
+    "conditional_ci_pp": [
+      31.666666666666664,
+      48.333333333333336
+    ],
+    "p_raw": 9.059419880941277e-14,
+    "p_holm": 7.247535904753022e-13
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "read",
+    "comparison": "timing_only stripping minus no_clock_context stripping",
+    "n_pairs": 120,
+    "condition_only": 52,
+    "reference_only": 1,
+    "difference_pp": 42.5,
+    "conditional_ci_pp": [
+      34.166666666666664,
+      51.66666666666667
+    ],
+    "p_raw": 1.199040866595169e-14,
+    "p_holm": 1.199040866595169e-13
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "isolated",
+    "comparison": "timing_only stripping minus no_clock_context stripping",
+    "n_pairs": 120,
+    "condition_only": 49,
+    "reference_only": 1,
+    "difference_pp": 40.0,
+    "conditional_ci_pp": [
+      31.666666666666664,
+      48.333333333333336
+    ],
+    "p_raw": 9.059419880941277e-14,
+    "p_holm": 7.247535904753022e-13
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "live_write",
+    "comparison": "timing_only stripping minus no_clock_context stripping",
+    "n_pairs": 120,
+    "condition_only": 49,
+    "reference_only": 1,
+    "difference_pp": 40.0,
+    "conditional_ci_pp": [
+      31.666666666666664,
+      48.333333333333336
+    ],
+    "p_raw": 9.059419880941277e-14,
+    "p_holm": 7.247535904753022e-13
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "isolated_visible",
+    "comparison": "timing_only stripping minus no_clock_context stripping",
+    "n_pairs": 120,
+    "condition_only": 52,
+    "reference_only": 1,
+    "difference_pp": 42.5,
+    "conditional_ci_pp": [
+      34.166666666666664,
+      50.83333333333333
+    ],
+    "p_raw": 1.199040866595169e-14,
+    "p_holm": 1.199040866595169e-13
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "transport_drop",
+    "comparison": "timing_only stripping minus no_clock_context stripping",
+    "n_pairs": 120,
+    "condition_only": 32,
+    "reference_only": 0,
+    "difference_pp": 26.666666666666668,
+    "conditional_ci_pp": [
+      19.166666666666668,
+      34.166666666666664
+    ],
+    "p_raw": 4.656612873077393e-10,
+    "p_holm": 2.3283064365386963e-09
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "read",
+    "comparison": "timing_only stripping minus no_clock_context stripping",
+    "n_pairs": 120,
+    "condition_only": 32,
+    "reference_only": 0,
+    "difference_pp": 26.666666666666668,
+    "conditional_ci_pp": [
+      19.166666666666668,
+      34.166666666666664
+    ],
+    "p_raw": 4.656612873077393e-10,
+    "p_holm": 2.3283064365386963e-09
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "isolated",
+    "comparison": "timing_only stripping minus no_clock_context stripping",
+    "n_pairs": 120,
+    "condition_only": 32,
+    "reference_only": 0,
+    "difference_pp": 26.666666666666668,
+    "conditional_ci_pp": [
+      19.166666666666668,
+      34.166666666666664
+    ],
+    "p_raw": 4.656612873077393e-10,
+    "p_holm": 2.3283064365386963e-09
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "live_write",
+    "comparison": "timing_only stripping minus no_clock_context stripping",
+    "n_pairs": 120,
+    "condition_only": 30,
+    "reference_only": 3,
+    "difference_pp": 22.5,
+    "conditional_ci_pp": [
+      14.166666666666666,
+      30.833333333333336
+    ],
+    "p_raw": 1.4011748135089874e-06,
+    "p_holm": 2.802349627017975e-06
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "isolated_visible",
+    "comparison": "timing_only stripping minus no_clock_context stripping",
+    "n_pairs": 120,
+    "condition_only": 27,
+    "reference_only": 2,
+    "difference_pp": 20.833333333333336,
+    "conditional_ci_pp": [
+      13.333333333333334,
+      28.333333333333332
+    ],
+    "p_raw": 1.6242265701293945e-06,
+    "p_holm": 2.802349627017975e-06
+  }
+]

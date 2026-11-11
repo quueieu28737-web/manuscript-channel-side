@@ -1,0 +1,246 @@
+{
+ "access_class": {
+  "pairwise": {
+   "C1-C2": {
+    "kappa": 1.0,
+    "ci95": [
+     1.0,
+     1.0
+    ],
+    "agreement": 1.0
+   },
+   "C1-C3": {
+    "kappa": 1.0,
+    "ci95": [
+     1.0,
+     1.0
+    ],
+    "agreement": 1.0
+   },
+   "C2-C3": {
+    "kappa": 1.0,
+    "ci95": [
+     1.0,
+     1.0
+    ],
+    "agreement": 1.0
+   }
+  },
+  "light_kappa": 1.0,
+  "fleiss_kappa": 1.0,
+  "fleiss_ci95": [
+   1.0,
+   1.0
+  ],
+  "all_three_agree": 44,
+  "majority_exists": 44,
+  "coder1_is_minority": []
+ },
+ "protection": {
+  "pairwise": {
+   "C1-C2": {
+    "kappa": 1.0,
+    "ci95": [
+     1.0,
+     1.0
+    ],
+    "agreement": 1.0
+   },
+   "C1-C3": {
+    "kappa": 1.0,
+    "ci95": [
+     1.0,
+     1.0
+    ],
+    "agreement": 1.0
+   },
+   "C2-C3": {
+    "kappa": 1.0,
+    "ci95": [
+     1.0,
+     1.0
+    ],
+    "agreement": 1.0
+   }
+  },
+  "light_kappa": 1.0,
+  "fleiss_kappa": 1.0,
+  "fleiss_ci95": [
+   1.0,
+   1.0
+  ],
+  "all_three_agree": 44,
+  "majority_exists": 44,
+  "coder1_is_minority": []
+ },
+ "named_transfer": {
+  "pairwise": {
+   "C1-C2": {
+    "kappa": 1.0,
+    "ci95": [
+     1.0,
+     1.0
+    ],
+    "agreement": 1.0
+   },
+   "C1-C3": {
+    "kappa": 1.0,
+    "ci95": [
+     1.0,
+     1.0
+    ],
+    "agreement": 1.0
+   },
+   "C2-C3": {
+    "kappa": 1.0,
+    "ci95": [
+     1.0,
+     1.0
+    ],
+    "agreement": 1.0
+   }
+  },
+  "light_kappa": 1.0,
+  "fleiss_kappa": 1.0,
+  "fleiss_ci95": [
+   1.0,
+   1.0
+  ],
+  "all_three_agree": 44,
+  "majority_exists": 44,
+  "coder1_is_minority": []
+ },
+ "open_world": {
+  "pairwise": {
+   "C1-C2": {
+    "kappa": 1.0,
+    "ci95": [
+     1.0,
+     1.0
+    ],
+    "agreement": 1.0
+   },
+   "C1-C3": {
+    "kappa": 1.0,
+    "ci95": [
+     1.0,
+     1.0
+    ],
+    "agreement": 1.0
+   },
+   "C2-C3": {
+    "kappa": 1.0,
+    "ci95": [
+     1.0,
+     1.0
+    ],
+    "agreement": 1.0
+   }
+  },
+  "light_kappa": 1.0,
+  "fleiss_kappa": 1.0,
+  "fleiss_ci95": [
+   1.0,
+   1.0
+  ],
+  "all_three_agree": 44,
+  "majority_exists": 44,
+  "coder1_is_minority": []
+ },
+ "failure_status": {
+  "pairwise": {
+   "C1-C2": {
+    "kappa": 0.459,
+    "ci95": [
+     0.228,
+     0.645
+    ],
+    "agreement": 0.636
+   },
+   "C1-C3": {
+    "kappa": 0.8,
+    "ci95": [
+     0.636,
+     0.931
+    ],
+    "agreement": 0.864
+   },
+   "C2-C3": {
+    "kappa": 0.625,
+    "ci95": [
+     0.422,
+     0.797
+    ],
+    "agreement": 0.75
+   }
+  },
+  "light_kappa": 0.628,
+  "fleiss_kappa": 0.628,
+  "fleiss_ci95": [
+   0.464,
+   0.753
+  ],
+  "all_three_agree": 28,
+  "majority_exists": 43,
+  "coder1_is_minority": [
+   "AP-behavior",
+   "AP-identity",
+   "CG-transform",
+   "HP-calibration",
+   "HTTP-signature"
+  ]
+ },
+ "outcome_status": {
+  "pairwise": {
+   "C1-C2": {
+    "kappa": 0.15,
+    "ci95": [
+     -0.021,
+     0.323
+    ],
+    "agreement": 0.364
+   },
+   "C1-C3": {
+    "kappa": 0.464,
+    "ci95": [
+     0.271,
+     0.644
+    ],
+    "agreement": 0.614
+   },
+   "C2-C3": {
+    "kappa": 0.524,
+    "ci95": [
+     0.341,
+     0.694
+    ],
+    "agreement": 0.659
+   }
+  },
+  "light_kappa": 0.379,
+  "fleiss_kappa": 0.366,
+  "fleiss_ci95": [
+   0.227,
+   0.484
+  ],
+  "all_three_agree": 14,
+  "majority_exists": 44,
+  "coder1_is_minority": [
+   "ANT-model-scope",
+   "ANT-risk",
+   "ANT-scenario",
+   "ANT-stage",
+   "AP-behavior",
+   "CB-partial",
+   "CB-size-excluded",
+   "CB-task",
+   "CB-topology",
+   "CG-active",
+   "CG-transform",
+   "HTTP-signature",
+   "PF-open",
+   "PF-pooled",
+   "PF-session"
+  ]
+ }
+}

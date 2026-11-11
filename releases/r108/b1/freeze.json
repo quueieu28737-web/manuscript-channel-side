@@ -1,0 +1,24 @@
+{
+  "utc": "2026-11-11T05:38:46.351016+00:00",
+  "status": "FROZEN_BEFORE_NEW_TIMING_TEST_EVALUATION",
+  "upstream_commit": "6c832f068a7fb2dfc38feb1bde37c38252250bd5",
+  "code_sha256": "9fd5ee10580f464599f423e61f4351b2a8c980a74823dc5c3840fe4fd6f54e5f",
+  "plan_sha256": "cfb77147d45028c3e2284c75b41116d4269210493ed567ff8bca557812243b00",
+  "inputs": {
+    "revision-preview/r102-llm-executed-cover/review-export/data/episodes.jsonl.gz": "54e90cb6b43d130f2477d3409ed4830957cf5a4c85170bcbea58a571c546e6a1",
+    "revision-preview/r102-llm-executed-cover/review-export/manifest.json": "2a93c853e085317b52f5d63b945d863d6afd66706309e85a8a022d9d32079d62",
+    "revision-preview/r102-llm-executed-cover/review-export/experiment/analyze.py": "beb314b22021158925439f23e3b4c732032bd09d67a19233ed3910c592afb29a",
+    "revision-preview/r102-llm-executed-cover/review-export/experiment/analysis-plan.json": "55be87f6ea663ab07ee5f65a0cc921660851a71b9f9e1d527141d64379ffc8ca",
+    "revision-preview/r102-llm-executed-cover/review-export/experiment/cohort-plan.json": "4f30539e06c1ac810ab5eebac0203e5e9c09e67d9f1093d04fb7cd8a56f8921a",
+    "revision-preview/r102-llm-executed-cover/review-export/analysis/features.npz": "8de1e23d4f78de433bbb4aeea00c20345d6165867d5ac3e5b44390d2b20e4c35",
+    "revision-preview/r102-llm-executed-cover/review-export/analysis/predictions.csv": "acb7f1d7a711526dc92ee2118f18764f8d6d1bbf8a88bdc84511f95ad03b2db8",
+    "revision-preview/r102-llm-executed-cover/review-export/analysis/validation-selection.json": "977e7683308ff99de664ccfb2fdd987d35f4933919f24107fc031f5a7319e68a"
+  },
+  "environment": {
+    "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+    "numpy": "2.3.3",
+    "scipy": "1.18.1",
+    "sklearn": "1.9.1"
+  },
+  "exposure": "Original M3 test byte-only scores and outcomes were previously published and known. Upstream timing hypothesis used validation. This is a retrospective new-observer analysis frozen before new test timing extraction/fitting/scoring, not a new independent confirmation cohort."
+}

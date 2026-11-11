@@ -1,0 +1,40 @@
+{
+  "status": "PASS",
+  "utc": "2026-11-11T07:07:28.374359+00:00",
+  "scope": "New manuscript bytes: evidence/number alignment, scientific scope, citations, privacy, fonts, compilation, all-page layout and isolated source-ZIP rebuild. Not independent human validation, overall experimental completion or venue acceptance.",
+  "documents": {
+    "main.pdf": {
+      "sha256": "a0005341c1af21d3794bf0d2feaf3b9fbe7465b40b8a4ba6f73d48567cf165d3",
+      "bytes": 291301,
+      "pages": 15
+    },
+    "supplement.pdf": {
+      "sha256": "a35060f85996a4c0e523fa1695f06dcdf1f0be9436b5fd1258d3fc55b5bebc82",
+      "bytes": 393919,
+      "pages": 30
+    }
+  },
+  "packages": {
+    "latex-source.zip": {
+      "sha256": "fe7acd54c2f8bbd5e9fa962b686a53adc2e67fff3099b912fb17ad5d5c39662a",
+      "bytes": 128475,
+      "files": 66
+    }
+  },
+  "checks": {
+    "integration-checks.json": "f3442118675c5fd8673b041e3b5765047f3544f45c380ec824ea8135bd2d787b",
+    "privacy.json": "314ec56bfc4fca101e006137f13e53c97cd6308b1b42412045a018fc45984560",
+    "citation-use.json": "d7ba8ac3f8d0ab75def9b76ed3afc492398b8988e1a25f7bf40c9db2c9ee7382",
+    "zip-rebuild.json": "affd65c76b9e3443be5cc2550e5ddb229c7c97313ffe53e5a3d0ccbda5d5b3e1",
+    "visual-review.json": "8268fb634c04db972394819ad1aa806c59e8925fb217e37da8e669711afc1d18",
+    "source-export-files.json": "9d993b9556620b76f8e140c9fe5b390e48d0d98e4fd0066726d4f2cdf0d2c45d",
+    "main-fonts.json": "87e31fe94af3a0c4cc5a8c013608d2570b342b92d222f2de69fb412cc267b674",
+    "supplement-fonts.json": "b4f13933b15f1d358ca7c4f985e838318744658f03c8f9995df610b9662b15f0"
+  },
+  "scientific_review_sha256": "d6248f250870dbeba79104bdcf4acaad5cba09cfcae51b825ee3e946dcc0bd57",
+  "prior_release_gate_reused": false,
+  "preserved_initial_findings": [
+    "Sandboxed MiKTeX registry access failed; identical build succeeded with authorized environment access. Initial logs retained.",
+    "An integration-helper textbf parser failed; helper corrected and initial failure retained. Scientific data and numeric outputs unchanged."
+  ]
+}

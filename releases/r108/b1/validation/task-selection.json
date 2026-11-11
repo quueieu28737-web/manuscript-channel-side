@@ -1,0 +1,362 @@
+[
+  {
+    "model": "qwen3:8b",
+    "arm": "none",
+    "view": "bytes",
+    "selected": "LR",
+    "validation_accuracy": {
+      "LR": 0.9666666666666667,
+      "RF": 0.9666666666666667
+    }
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "none",
+    "view": "timing_size",
+    "selected": "LR",
+    "validation_accuracy": {
+      "LR": 0.9666666666666667,
+      "RF": 0.9666666666666667
+    }
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "none",
+    "view": "timing_only",
+    "selected": "RF",
+    "validation_accuracy": {
+      "LR": 0.15,
+      "RF": 0.16666666666666666
+    }
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "transport_drop",
+    "view": "bytes",
+    "selected": "RF",
+    "validation_accuracy": {
+      "LR": 0.4666666666666667,
+      "RF": 0.5166666666666667
+    }
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "transport_drop",
+    "view": "timing_size",
+    "selected": "RF",
+    "validation_accuracy": {
+      "LR": 0.4,
+      "RF": 0.4666666666666667
+    }
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "transport_drop",
+    "view": "timing_only",
+    "selected": "RF",
+    "validation_accuracy": {
+      "LR": 0.2833333333333333,
+      "RF": 0.31666666666666665
+    }
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "read",
+    "view": "bytes",
+    "selected": "RF",
+    "validation_accuracy": {
+      "LR": 0.4666666666666667,
+      "RF": 0.5333333333333333
+    }
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "read",
+    "view": "timing_size",
+    "selected": "RF",
+    "validation_accuracy": {
+      "LR": 0.45,
+      "RF": 0.6333333333333333
+    }
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "read",
+    "view": "timing_only",
+    "selected": "LR",
+    "validation_accuracy": {
+      "LR": 0.26666666666666666,
+      "RF": 0.25
+    }
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "isolated",
+    "view": "bytes",
+    "selected": "RF",
+    "validation_accuracy": {
+      "LR": 0.48333333333333334,
+      "RF": 0.5166666666666667
+    }
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "isolated",
+    "view": "timing_size",
+    "selected": "RF",
+    "validation_accuracy": {
+      "LR": 0.4666666666666667,
+      "RF": 0.55
+    }
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "isolated",
+    "view": "timing_only",
+    "selected": "LR",
+    "validation_accuracy": {
+      "LR": 0.18333333333333332,
+      "RF": 0.16666666666666666
+    }
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "live_write",
+    "view": "bytes",
+    "selected": "RF",
+    "validation_accuracy": {
+      "LR": 0.45,
+      "RF": 0.6
+    }
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "live_write",
+    "view": "timing_size",
+    "selected": "RF",
+    "validation_accuracy": {
+      "LR": 0.45,
+      "RF": 0.4666666666666667
+    }
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "live_write",
+    "view": "timing_only",
+    "selected": "LR",
+    "validation_accuracy": {
+      "LR": 0.23333333333333334,
+      "RF": 0.15
+    }
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "isolated_visible",
+    "view": "bytes",
+    "selected": "RF",
+    "validation_accuracy": {
+      "LR": 0.45,
+      "RF": 0.5666666666666667
+    }
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "isolated_visible",
+    "view": "timing_size",
+    "selected": "RF",
+    "validation_accuracy": {
+      "LR": 0.43333333333333335,
+      "RF": 0.5333333333333333
+    }
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "isolated_visible",
+    "view": "timing_only",
+    "selected": "RF",
+    "validation_accuracy": {
+      "LR": 0.15,
+      "RF": 0.23333333333333334
+    }
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "none",
+    "view": "bytes",
+    "selected": "LR",
+    "validation_accuracy": {
+      "LR": 0.9666666666666667,
+      "RF": 0.9333333333333333
+    }
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "none",
+    "view": "timing_size",
+    "selected": "LR",
+    "validation_accuracy": {
+      "LR": 0.9666666666666667,
+      "RF": 0.9333333333333333
+    }
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "none",
+    "view": "timing_only",
+    "selected": "LR",
+    "validation_accuracy": {
+      "LR": 0.3333333333333333,
+      "RF": 0.2833333333333333
+    }
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "transport_drop",
+    "view": "bytes",
+    "selected": "RF",
+    "validation_accuracy": {
+      "LR": 0.6166666666666667,
+      "RF": 0.65
+    }
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "transport_drop",
+    "view": "timing_size",
+    "selected": "RF",
+    "validation_accuracy": {
+      "LR": 0.6166666666666667,
+      "RF": 0.6333333333333333
+    }
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "transport_drop",
+    "view": "timing_only",
+    "selected": "RF",
+    "validation_accuracy": {
+      "LR": 0.21666666666666667,
+      "RF": 0.3333333333333333
+    }
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "read",
+    "view": "bytes",
+    "selected": "RF",
+    "validation_accuracy": {
+      "LR": 0.6,
+      "RF": 0.6166666666666667
+    }
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "read",
+    "view": "timing_size",
+    "selected": "RF",
+    "validation_accuracy": {
+      "LR": 0.5833333333333334,
+      "RF": 0.6166666666666667
+    }
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "read",
+    "view": "timing_only",
+    "selected": "RF",
+    "validation_accuracy": {
+      "LR": 0.26666666666666666,
+      "RF": 0.3
+    }
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "isolated",
+    "view": "bytes",
+    "selected": "RF",
+    "validation_accuracy": {
+      "LR": 0.5833333333333334,
+      "RF": 0.6666666666666666
+    }
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "isolated",
+    "view": "timing_size",
+    "selected": "RF",
+    "validation_accuracy": {
+      "LR": 0.5833333333333334,
+      "RF": 0.7
+    }
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "isolated",
+    "view": "timing_only",
+    "selected": "RF",
+    "validation_accuracy": {
+      "LR": 0.23333333333333334,
+      "RF": 0.3
+    }
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "live_write",
+    "view": "bytes",
+    "selected": "LR",
+    "validation_accuracy": {
+      "LR": 0.5833333333333334,
+      "RF": 0.5833333333333334
+    }
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "live_write",
+    "view": "timing_size",
+    "selected": "RF",
+    "validation_accuracy": {
+      "LR": 0.5833333333333334,
+      "RF": 0.6666666666666666
+    }
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "live_write",
+    "view": "timing_only",
+    "selected": "RF",
+    "validation_accuracy": {
+      "LR": 0.35,
+      "RF": 0.38333333333333336
+    }
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "isolated_visible",
+    "view": "bytes",
+    "selected": "RF",
+    "validation_accuracy": {
+      "LR": 0.5833333333333334,
+      "RF": 0.6833333333333333
+    }
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "isolated_visible",
+    "view": "timing_size",
+    "selected": "LR",
+    "validation_accuracy": {
+      "LR": 0.65,
+      "RF": 0.65
+    }
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "isolated_visible",
+    "view": "timing_only",
+    "selected": "RF",
+    "validation_accuracy": {
+      "LR": 0.26666666666666666,
+      "RF": 0.31666666666666665
+    }
+  }
+]

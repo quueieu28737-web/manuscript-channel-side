@@ -1,0 +1,18 @@
+\begin{table*}[t]\centering\small
+\caption{All twelve secondary hidden-policy contrasts for direct timing-concatenated recognition. Non-rejection does not establish policy equivalence. These do not test business-state equivalence.}\label{tab:b1-semantics}
+\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\textwidth}{@{}lP{.12\textwidth}Yrrrr@{}}\toprule
+Model & Policy & Contrast & $\Delta$ pp & 95\% conditional CI & Raw $p$ & Holm $p$ \\\midrule
+Qwen3:8B & Read cover & Read cover $-$ Proxy discard & -1.7 & [-8.3, 5.0] & 0.8145 & 1 \\
+Qwen3:8B & Isolated, hidden & Isolated, hidden $-$ Proxy discard & -10.8 & [-19.2, -2.5] & 0.041 & 0.4915 \\
+Qwen3:8B & Isolated, hidden & Isolated, hidden $-$ Read cover & -9.2 & [-17.5, -0.8] & 0.0708 & 0.6368 \\
+Qwen3:8B & Live write & Live write $-$ Proxy discard & 0.0 & [-8.3, 8.3] & 1 & 1 \\
+Qwen3:8B & Live write & Live write $-$ Read cover & 1.7 & [-5.8, 9.2] & 0.8318 & 1 \\
+Qwen3:8B & Live write & Live write $-$ Isolated, hidden & 10.8 & [1.7, 20.0] & 0.041 & 0.4915 \\
+Llama3.1:8B & Read cover & Read cover $-$ Proxy discard & -4.2 & [-11.7, 3.3] & 0.3833 & 1 \\
+Llama3.1:8B & Isolated, hidden & Isolated, hidden $-$ Proxy discard & 4.2 & [-4.2, 12.5] & 0.4421 & 1 \\
+Llama3.1:8B & Isolated, hidden & Isolated, hidden $-$ Read cover & 8.3 & [0.8, 15.8] & 0.0414 & 0.4915 \\
+Llama3.1:8B & Live write & Live write $-$ Proxy discard & -3.3 & [-11.7, 5.0] & 0.5716 & 1 \\
+Llama3.1:8B & Live write & Live write $-$ Read cover & 0.8 & [-6.7, 8.3] & 1 & 1 \\
+Llama3.1:8B & Live write & Live write $-$ Isolated, hidden & -7.5 & [-15.0, 0.0] & 0.0931 & 0.7451 \\
+\bottomrule\end{tabularx}\end{table*}

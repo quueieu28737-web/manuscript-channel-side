@@ -1,0 +1,1249 @@
+{
+  "purpose": "Planning A/B2 paired recognition equivalence only; no new collected data or test-dependent method selection.",
+  "margin": 0.08,
+  "distribution": "Independent paired fixtures with D in {-1,0,1}; q assumed, not estimated from held-out timing outcomes. Class/fit/workload dependence is omitted.",
+  "method": "Paired t TOST via interval inclusion. .025 is a conservative per-model threshold for two-model familywise .05, not exact joint power.",
+  "interpretation": "Equivalence of an attained attack accuracy within a fixed margin is not semantic equivalence or equality of information available to all attackers.",
+  "seed": 1072026,
+  "analytic": [
+    {
+      "discordance_probability": 0.05,
+      "true_difference": 0.0,
+      "one_sided_alpha": 0.05,
+      "normal_approx_n_for_80pct_marginal_equivalence_power": 67
+    },
+    {
+      "discordance_probability": 0.05,
+      "true_difference": 0.0,
+      "one_sided_alpha": 0.025,
+      "normal_approx_n_for_80pct_marginal_equivalence_power": 83
+    },
+    {
+      "discordance_probability": 0.1,
+      "true_difference": 0.0,
+      "one_sided_alpha": 0.05,
+      "normal_approx_n_for_80pct_marginal_equivalence_power": 134
+    },
+    {
+      "discordance_probability": 0.1,
+      "true_difference": 0.0,
+      "one_sided_alpha": 0.025,
+      "normal_approx_n_for_80pct_marginal_equivalence_power": 165
+    },
+    {
+      "discordance_probability": 0.2,
+      "true_difference": 0.0,
+      "one_sided_alpha": 0.05,
+      "normal_approx_n_for_80pct_marginal_equivalence_power": 268
+    },
+    {
+      "discordance_probability": 0.2,
+      "true_difference": 0.0,
+      "one_sided_alpha": 0.025,
+      "normal_approx_n_for_80pct_marginal_equivalence_power": 329
+    },
+    {
+      "discordance_probability": 0.3,
+      "true_difference": 0.0,
+      "one_sided_alpha": 0.05,
+      "normal_approx_n_for_80pct_marginal_equivalence_power": 402
+    },
+    {
+      "discordance_probability": 0.3,
+      "true_difference": 0.0,
+      "one_sided_alpha": 0.025,
+      "normal_approx_n_for_80pct_marginal_equivalence_power": 493
+    }
+  ],
+  "simulation": [
+    {
+      "discordance_probability": 0.05,
+      "true_difference": 0.0,
+      "paired_test_fixtures": 120,
+      "one_sided_alpha": 0.05,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.9575,
+      "mc_se": 0.0006379165305900137
+    },
+    {
+      "discordance_probability": 0.05,
+      "true_difference": 0.0,
+      "paired_test_fixtures": 120,
+      "one_sided_alpha": 0.025,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.93072,
+      "mc_se": 0.0008029961494303694
+    },
+    {
+      "discordance_probability": 0.05,
+      "true_difference": 0.0,
+      "paired_test_fixtures": 240,
+      "one_sided_alpha": 0.05,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.99933,
+      "mc_se": 8.182610219239021e-05
+    },
+    {
+      "discordance_probability": 0.05,
+      "true_difference": 0.0,
+      "paired_test_fixtures": 240,
+      "one_sided_alpha": 0.025,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.99848,
+      "mc_se": 0.00012319454533379171
+    },
+    {
+      "discordance_probability": 0.05,
+      "true_difference": 0.0,
+      "paired_test_fixtures": 402,
+      "one_sided_alpha": 0.05,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 1.0,
+      "mc_se": 0.0
+    },
+    {
+      "discordance_probability": 0.05,
+      "true_difference": 0.0,
+      "paired_test_fixtures": 402,
+      "one_sided_alpha": 0.025,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 1.0,
+      "mc_se": 0.0
+    },
+    {
+      "discordance_probability": 0.05,
+      "true_difference": 0.0,
+      "paired_test_fixtures": 504,
+      "one_sided_alpha": 0.05,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 1.0,
+      "mc_se": 0.0
+    },
+    {
+      "discordance_probability": 0.05,
+      "true_difference": 0.0,
+      "paired_test_fixtures": 504,
+      "one_sided_alpha": 0.025,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 1.0,
+      "mc_se": 0.0
+    },
+    {
+      "discordance_probability": 0.05,
+      "true_difference": 0.0,
+      "paired_test_fixtures": 612,
+      "one_sided_alpha": 0.05,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 1.0,
+      "mc_se": 0.0
+    },
+    {
+      "discordance_probability": 0.05,
+      "true_difference": 0.0,
+      "paired_test_fixtures": 612,
+      "one_sided_alpha": 0.025,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 1.0,
+      "mc_se": 0.0
+    },
+    {
+      "discordance_probability": 0.05,
+      "true_difference": 0.0,
+      "paired_test_fixtures": 1002,
+      "one_sided_alpha": 0.05,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 1.0,
+      "mc_se": 0.0
+    },
+    {
+      "discordance_probability": 0.05,
+      "true_difference": 0.0,
+      "paired_test_fixtures": 1002,
+      "one_sided_alpha": 0.025,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 1.0,
+      "mc_se": 0.0
+    },
+    {
+      "discordance_probability": 0.05,
+      "true_difference": 0.04,
+      "paired_test_fixtures": 120,
+      "one_sided_alpha": 0.05,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.61956,
+      "mc_se": 0.001535270029669048
+    },
+    {
+      "discordance_probability": 0.05,
+      "true_difference": 0.04,
+      "paired_test_fixtures": 120,
+      "one_sided_alpha": 0.025,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.56549,
+      "mc_se": 0.0015675173361082806
+    },
+    {
+      "discordance_probability": 0.05,
+      "true_difference": 0.04,
+      "paired_test_fixtures": 240,
+      "one_sided_alpha": 0.05,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.83255,
+      "mc_se": 0.0011807222260125367
+    },
+    {
+      "discordance_probability": 0.05,
+      "true_difference": 0.04,
+      "paired_test_fixtures": 240,
+      "one_sided_alpha": 0.025,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.75127,
+      "mc_se": 0.0013669798356230423
+    },
+    {
+      "discordance_probability": 0.05,
+      "true_difference": 0.04,
+      "paired_test_fixtures": 402,
+      "one_sided_alpha": 0.05,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.95355,
+      "mc_se": 0.0006655253376093204
+    },
+    {
+      "discordance_probability": 0.05,
+      "true_difference": 0.04,
+      "paired_test_fixtures": 402,
+      "one_sided_alpha": 0.025,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.91754,
+      "mc_se": 0.0008698295718127775
+    },
+    {
+      "discordance_probability": 0.05,
+      "true_difference": 0.04,
+      "paired_test_fixtures": 504,
+      "one_sided_alpha": 0.05,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.98237,
+      "mc_se": 0.0004161632263908001
+    },
+    {
+      "discordance_probability": 0.05,
+      "true_difference": 0.04,
+      "paired_test_fixtures": 504,
+      "one_sided_alpha": 0.025,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.96393,
+      "mc_se": 0.0005896520592688542
+    },
+    {
+      "discordance_probability": 0.05,
+      "true_difference": 0.04,
+      "paired_test_fixtures": 612,
+      "one_sided_alpha": 0.05,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.99305,
+      "mc_se": 0.00026271082010454025
+    },
+    {
+      "discordance_probability": 0.05,
+      "true_difference": 0.04,
+      "paired_test_fixtures": 612,
+      "one_sided_alpha": 0.025,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.98493,
+      "mc_se": 0.0003852647803783786
+    },
+    {
+      "discordance_probability": 0.05,
+      "true_difference": 0.04,
+      "paired_test_fixtures": 1002,
+      "one_sided_alpha": 0.05,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.9998,
+      "mc_se": 4.4716887190409174e-05
+    },
+    {
+      "discordance_probability": 0.05,
+      "true_difference": 0.04,
+      "paired_test_fixtures": 1002,
+      "one_sided_alpha": 0.025,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.99945,
+      "mc_se": 7.414158752009903e-05
+    },
+    {
+      "discordance_probability": 0.1,
+      "true_difference": 0.0,
+      "paired_test_fixtures": 120,
+      "one_sided_alpha": 0.05,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.72359,
+      "mc_se": 0.001414240120700866
+    },
+    {
+      "discordance_probability": 0.1,
+      "true_difference": 0.0,
+      "paired_test_fixtures": 120,
+      "one_sided_alpha": 0.025,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.59957,
+      "mc_se": 0.0015494702807734002
+    },
+    {
+      "discordance_probability": 0.1,
+      "true_difference": 0.0,
+      "paired_test_fixtures": 240,
+      "one_sided_alpha": 0.05,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.97218,
+      "mc_se": 0.0005200581467489953
+    },
+    {
+      "discordance_probability": 0.1,
+      "true_difference": 0.0,
+      "paired_test_fixtures": 240,
+      "one_sided_alpha": 0.025,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.94499,
+      "mc_se": 0.0007209986123426314
+    },
+    {
+      "discordance_probability": 0.1,
+      "true_difference": 0.0,
+      "paired_test_fixtures": 402,
+      "one_sided_alpha": 0.05,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.99905,
+      "mc_se": 9.742163517412373e-05
+    },
+    {
+      "discordance_probability": 0.1,
+      "true_difference": 0.0,
+      "paired_test_fixtures": 402,
+      "one_sided_alpha": 0.025,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.99735,
+      "mc_se": 0.00016257236850092456
+    },
+    {
+      "discordance_probability": 0.1,
+      "true_difference": 0.0,
+      "paired_test_fixtures": 504,
+      "one_sided_alpha": 0.05,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.99995,
+      "mc_se": 2.2360120751014405e-05
+    },
+    {
+      "discordance_probability": 0.1,
+      "true_difference": 0.0,
+      "paired_test_fixtures": 504,
+      "one_sided_alpha": 0.025,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.99977,
+      "mc_se": 4.79527997097096e-05
+    },
+    {
+      "discordance_probability": 0.1,
+      "true_difference": 0.0,
+      "paired_test_fixtures": 612,
+      "one_sided_alpha": 0.05,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.99999,
+      "mc_se": 9.999949999852244e-06
+    },
+    {
+      "discordance_probability": 0.1,
+      "true_difference": 0.0,
+      "paired_test_fixtures": 612,
+      "one_sided_alpha": 0.025,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.99997,
+      "mc_se": 1.732024826611169e-05
+    },
+    {
+      "discordance_probability": 0.1,
+      "true_difference": 0.0,
+      "paired_test_fixtures": 1002,
+      "one_sided_alpha": 0.05,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 1.0,
+      "mc_se": 0.0
+    },
+    {
+      "discordance_probability": 0.1,
+      "true_difference": 0.0,
+      "paired_test_fixtures": 1002,
+      "one_sided_alpha": 0.025,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 1.0,
+      "mc_se": 0.0
+    },
+    {
+      "discordance_probability": 0.1,
+      "true_difference": 0.04,
+      "paired_test_fixtures": 120,
+      "one_sided_alpha": 0.05,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.4122,
+      "mc_se": 0.0015565704609814487
+    },
+    {
+      "discordance_probability": 0.1,
+      "true_difference": 0.04,
+      "paired_test_fixtures": 120,
+      "one_sided_alpha": 0.025,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.32865,
+      "mc_se": 0.0014853928015848199
+    },
+    {
+      "discordance_probability": 0.1,
+      "true_difference": 0.04,
+      "paired_test_fixtures": 240,
+      "one_sided_alpha": 0.05,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.63392,
+      "mc_se": 0.0015233694023446842
+    },
+    {
+      "discordance_probability": 0.1,
+      "true_difference": 0.04,
+      "paired_test_fixtures": 240,
+      "one_sided_alpha": 0.025,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.52539,
+      "mc_se": 0.0015790989452849368
+    },
+    {
+      "discordance_probability": 0.1,
+      "true_difference": 0.04,
+      "paired_test_fixtures": 402,
+      "one_sided_alpha": 0.05,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.80738,
+      "mc_se": 0.0012470667007020916
+    },
+    {
+      "discordance_probability": 0.1,
+      "true_difference": 0.04,
+      "paired_test_fixtures": 402,
+      "one_sided_alpha": 0.025,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.71823,
+      "mc_se": 0.0014225880187179983
+    },
+    {
+      "discordance_probability": 0.1,
+      "true_difference": 0.04,
+      "paired_test_fixtures": 504,
+      "one_sided_alpha": 0.05,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.87778,
+      "mc_se": 0.0010357715558944453
+    },
+    {
+      "discordance_probability": 0.1,
+      "true_difference": 0.04,
+      "paired_test_fixtures": 504,
+      "one_sided_alpha": 0.025,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.80972,
+      "mc_se": 0.0012412635562200319
+    },
+    {
+      "discordance_probability": 0.1,
+      "true_difference": 0.04,
+      "paired_test_fixtures": 612,
+      "one_sided_alpha": 0.05,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.92675,
+      "mc_se": 0.0008239201265899507
+    },
+    {
+      "discordance_probability": 0.1,
+      "true_difference": 0.04,
+      "paired_test_fixtures": 612,
+      "one_sided_alpha": 0.025,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.87482,
+      "mc_se": 0.001046470102774083
+    },
+    {
+      "discordance_probability": 0.1,
+      "true_difference": 0.04,
+      "paired_test_fixtures": 1002,
+      "one_sided_alpha": 0.05,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.98905,
+      "mc_se": 0.00032909113479399617
+    },
+    {
+      "discordance_probability": 0.1,
+      "true_difference": 0.04,
+      "paired_test_fixtures": 1002,
+      "one_sided_alpha": 0.025,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.97711,
+      "mc_se": 0.0004729275621065024
+    },
+    {
+      "discordance_probability": 0.1,
+      "true_difference": 0.08,
+      "paired_test_fixtures": 120,
+      "one_sided_alpha": 0.05,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.07425,
+      "mc_se": 0.0008290774240081562
+    },
+    {
+      "discordance_probability": 0.1,
+      "true_difference": 0.08,
+      "paired_test_fixtures": 120,
+      "one_sided_alpha": 0.025,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.0534,
+      "mc_se": 0.0007109742611374902
+    },
+    {
+      "discordance_probability": 0.1,
+      "true_difference": 0.08,
+      "paired_test_fixtures": 240,
+      "one_sided_alpha": 0.05,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.06462,
+      "mc_se": 0.0007774590381492777
+    },
+    {
+      "discordance_probability": 0.1,
+      "true_difference": 0.08,
+      "paired_test_fixtures": 240,
+      "one_sided_alpha": 0.025,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.03917,
+      "mc_se": 0.0006134795114753223
+    },
+    {
+      "discordance_probability": 0.1,
+      "true_difference": 0.08,
+      "paired_test_fixtures": 402,
+      "one_sided_alpha": 0.05,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.06138,
+      "mc_se": 0.0007590289559694018
+    },
+    {
+      "discordance_probability": 0.1,
+      "true_difference": 0.08,
+      "paired_test_fixtures": 402,
+      "one_sided_alpha": 0.025,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.0356,
+      "mc_se": 0.0005859406113250728
+    },
+    {
+      "discordance_probability": 0.1,
+      "true_difference": 0.08,
+      "paired_test_fixtures": 504,
+      "one_sided_alpha": 0.05,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.06121,
+      "mc_se": 0.0007580457499386169
+    },
+    {
+      "discordance_probability": 0.1,
+      "true_difference": 0.08,
+      "paired_test_fixtures": 504,
+      "one_sided_alpha": 0.025,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.0339,
+      "mc_se": 0.0005722830593334036
+    },
+    {
+      "discordance_probability": 0.1,
+      "true_difference": 0.08,
+      "paired_test_fixtures": 612,
+      "one_sided_alpha": 0.05,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.05736,
+      "mc_se": 0.0007353219050184756
+    },
+    {
+      "discordance_probability": 0.1,
+      "true_difference": 0.08,
+      "paired_test_fixtures": 612,
+      "one_sided_alpha": 0.025,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.03082,
+      "mc_se": 0.0005465357042316632
+    },
+    {
+      "discordance_probability": 0.1,
+      "true_difference": 0.08,
+      "paired_test_fixtures": 1002,
+      "one_sided_alpha": 0.05,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.05702,
+      "mc_se": 0.000733271570429401
+    },
+    {
+      "discordance_probability": 0.1,
+      "true_difference": 0.08,
+      "paired_test_fixtures": 1002,
+      "one_sided_alpha": 0.025,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.02979,
+      "mc_se": 0.0005376109736603225
+    },
+    {
+      "discordance_probability": 0.2,
+      "true_difference": 0.0,
+      "paired_test_fixtures": 120,
+      "one_sided_alpha": 0.05,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.24039,
+      "mc_se": 0.0013513054721268614
+    },
+    {
+      "discordance_probability": 0.2,
+      "true_difference": 0.0,
+      "paired_test_fixtures": 120,
+      "one_sided_alpha": 0.025,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.05529,
+      "mc_se": 0.0007227241237152667
+    },
+    {
+      "discordance_probability": 0.2,
+      "true_difference": 0.0,
+      "paired_test_fixtures": 240,
+      "one_sided_alpha": 0.05,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.73518,
+      "mc_se": 0.0013953149020919974
+    },
+    {
+      "discordance_probability": 0.2,
+      "true_difference": 0.0,
+      "paired_test_fixtures": 240,
+      "one_sided_alpha": 0.025,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.57548,
+      "mc_se": 0.001563018776598669
+    },
+    {
+      "discordance_probability": 0.2,
+      "true_difference": 0.0,
+      "paired_test_fixtures": 402,
+      "one_sided_alpha": 0.05,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.94619,
+      "mc_se": 0.0007135438591985781
+    },
+    {
+      "discordance_probability": 0.2,
+      "true_difference": 0.0,
+      "paired_test_fixtures": 402,
+      "one_sided_alpha": 0.025,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.8918,
+      "mc_se": 0.0009823072838984752
+    },
+    {
+      "discordance_probability": 0.2,
+      "true_difference": 0.0,
+      "paired_test_fixtures": 504,
+      "one_sided_alpha": 0.05,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.9821,
+      "mc_se": 0.00041928021656166927
+    },
+    {
+      "discordance_probability": 0.2,
+      "true_difference": 0.0,
+      "paired_test_fixtures": 504,
+      "one_sided_alpha": 0.025,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.95806,
+      "mc_se": 0.0006338851347050188
+    },
+    {
+      "discordance_probability": 0.2,
+      "true_difference": 0.0,
+      "paired_test_fixtures": 612,
+      "one_sided_alpha": 0.05,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.99404,
+      "mc_se": 0.0002434025143666344
+    },
+    {
+      "discordance_probability": 0.2,
+      "true_difference": 0.0,
+      "paired_test_fixtures": 612,
+      "one_sided_alpha": 0.025,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.98519,
+      "mc_se": 0.0003819772755020904
+    },
+    {
+      "discordance_probability": 0.2,
+      "true_difference": 0.0,
+      "paired_test_fixtures": 1002,
+      "one_sided_alpha": 0.05,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.99991,
+      "mc_se": 2.999864996962938e-05
+    },
+    {
+      "discordance_probability": 0.2,
+      "true_difference": 0.0,
+      "paired_test_fixtures": 1002,
+      "one_sided_alpha": 0.025,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.99973,
+      "mc_se": 5.195450894773162e-05
+    },
+    {
+      "discordance_probability": 0.2,
+      "true_difference": 0.04,
+      "paired_test_fixtures": 120,
+      "one_sided_alpha": 0.05,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.16014,
+      "mc_se": 0.0011597205715171222
+    },
+    {
+      "discordance_probability": 0.2,
+      "true_difference": 0.04,
+      "paired_test_fixtures": 120,
+      "one_sided_alpha": 0.025,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.03872,
+      "mc_se": 0.0006100882034591391
+    },
+    {
+      "discordance_probability": 0.2,
+      "true_difference": 0.04,
+      "paired_test_fixtures": 240,
+      "one_sided_alpha": 0.05,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.39534,
+      "mc_se": 0.0015461121705749555
+    },
+    {
+      "discordance_probability": 0.2,
+      "true_difference": 0.04,
+      "paired_test_fixtures": 240,
+      "one_sided_alpha": 0.025,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.27227,
+      "mc_se": 0.0014076187235895947
+    },
+    {
+      "discordance_probability": 0.2,
+      "true_difference": 0.04,
+      "paired_test_fixtures": 402,
+      "one_sided_alpha": 0.05,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.56241,
+      "mc_se": 0.0015687733803835403
+    },
+    {
+      "discordance_probability": 0.2,
+      "true_difference": 0.04,
+      "paired_test_fixtures": 402,
+      "one_sided_alpha": 0.025,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.43399,
+      "mc_se": 0.0015672992053210517
+    },
+    {
+      "discordance_probability": 0.2,
+      "true_difference": 0.04,
+      "paired_test_fixtures": 504,
+      "one_sided_alpha": 0.05,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.64306,
+      "mc_se": 0.0015150374133994183
+    },
+    {
+      "discordance_probability": 0.2,
+      "true_difference": 0.04,
+      "paired_test_fixtures": 504,
+      "one_sided_alpha": 0.025,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.52018,
+      "mc_se": 0.0015798505233090882
+    },
+    {
+      "discordance_probability": 0.2,
+      "true_difference": 0.04,
+      "paired_test_fixtures": 612,
+      "one_sided_alpha": 0.05,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.71594,
+      "mc_se": 0.001426078246100122
+    },
+    {
+      "discordance_probability": 0.2,
+      "true_difference": 0.04,
+      "paired_test_fixtures": 612,
+      "one_sided_alpha": 0.025,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.60149,
+      "mc_se": 0.0015482240790660761
+    },
+    {
+      "discordance_probability": 0.2,
+      "true_difference": 0.04,
+      "paired_test_fixtures": 1002,
+      "one_sided_alpha": 0.05,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.88216,
+      "mc_se": 0.0010195770417187704
+    },
+    {
+      "discordance_probability": 0.2,
+      "true_difference": 0.04,
+      "paired_test_fixtures": 1002,
+      "one_sided_alpha": 0.025,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.81083,
+      "mc_se": 0.0012384858138065205
+    },
+    {
+      "discordance_probability": 0.2,
+      "true_difference": 0.08,
+      "paired_test_fixtures": 120,
+      "one_sided_alpha": 0.05,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.04496,
+      "mc_se": 0.0006552755023652265
+    },
+    {
+      "discordance_probability": 0.2,
+      "true_difference": 0.08,
+      "paired_test_fixtures": 120,
+      "one_sided_alpha": 0.025,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.01273,
+      "mc_se": 0.00035451300540318684
+    },
+    {
+      "discordance_probability": 0.2,
+      "true_difference": 0.08,
+      "paired_test_fixtures": 240,
+      "one_sided_alpha": 0.05,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.05284,
+      "mc_se": 0.0007074456473821859
+    },
+    {
+      "discordance_probability": 0.2,
+      "true_difference": 0.08,
+      "paired_test_fixtures": 240,
+      "one_sided_alpha": 0.025,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.02708,
+      "mc_se": 0.0005132901090026964
+    },
+    {
+      "discordance_probability": 0.2,
+      "true_difference": 0.08,
+      "paired_test_fixtures": 402,
+      "one_sided_alpha": 0.05,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.05284,
+      "mc_se": 0.0007074456473821859
+    },
+    {
+      "discordance_probability": 0.2,
+      "true_difference": 0.08,
+      "paired_test_fixtures": 402,
+      "one_sided_alpha": 0.025,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.02632,
+      "mc_se": 0.000506233716775167
+    },
+    {
+      "discordance_probability": 0.2,
+      "true_difference": 0.08,
+      "paired_test_fixtures": 504,
+      "one_sided_alpha": 0.05,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.05219,
+      "mc_se": 0.000703322144539755
+    },
+    {
+      "discordance_probability": 0.2,
+      "true_difference": 0.08,
+      "paired_test_fixtures": 504,
+      "one_sided_alpha": 0.025,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.0263,
+      "mc_se": 0.0005060465393617469
+    },
+    {
+      "discordance_probability": 0.2,
+      "true_difference": 0.08,
+      "paired_test_fixtures": 612,
+      "one_sided_alpha": 0.05,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.05204,
+      "mc_se": 0.0007023662748167796
+    },
+    {
+      "discordance_probability": 0.2,
+      "true_difference": 0.08,
+      "paired_test_fixtures": 612,
+      "one_sided_alpha": 0.025,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.02688,
+      "mc_se": 0.000511443697781095
+    },
+    {
+      "discordance_probability": 0.2,
+      "true_difference": 0.08,
+      "paired_test_fixtures": 1002,
+      "one_sided_alpha": 0.05,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.05211,
+      "mc_se": 0.0007028125489773215
+    },
+    {
+      "discordance_probability": 0.2,
+      "true_difference": 0.08,
+      "paired_test_fixtures": 1002,
+      "one_sided_alpha": 0.025,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.02649,
+      "mc_se": 0.0005078216212411598
+    },
+    {
+      "discordance_probability": 0.3,
+      "true_difference": 0.0,
+      "paired_test_fixtures": 120,
+      "one_sided_alpha": 0.05,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.02394,
+      "mc_se": 0.00048339297057363174
+    },
+    {
+      "discordance_probability": 0.3,
+      "true_difference": 0.0,
+      "paired_test_fixtures": 120,
+      "one_sided_alpha": 0.025,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.00026,
+      "mc_se": 5.098356597963701e-05
+    },
+    {
+      "discordance_probability": 0.3,
+      "true_difference": 0.0,
+      "paired_test_fixtures": 240,
+      "one_sided_alpha": 0.05,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.45972,
+      "mc_se": 0.001575999751269016
+    },
+    {
+      "discordance_probability": 0.3,
+      "true_difference": 0.0,
+      "paired_test_fixtures": 240,
+      "one_sided_alpha": 0.025,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.23121,
+      "mc_se": 0.001333236422769795
+    },
+    {
+      "discordance_probability": 0.3,
+      "true_difference": 0.0,
+      "paired_test_fixtures": 402,
+      "one_sided_alpha": 0.05,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.79636,
+      "mc_se": 0.0012734628003989753
+    },
+    {
+      "discordance_probability": 0.3,
+      "true_difference": 0.0,
+      "paired_test_fixtures": 402,
+      "one_sided_alpha": 0.025,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.6614,
+      "mc_se": 0.00149649604075654
+    },
+    {
+      "discordance_probability": 0.3,
+      "true_difference": 0.0,
+      "paired_test_fixtures": 504,
+      "one_sided_alpha": 0.05,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.89815,
+      "mc_se": 0.0009564338842805603
+    },
+    {
+      "discordance_probability": 0.3,
+      "true_difference": 0.0,
+      "paired_test_fixtures": 504,
+      "one_sided_alpha": 0.025,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.81221,
+      "mc_se": 0.0012350097809329284
+    },
+    {
+      "discordance_probability": 0.3,
+      "true_difference": 0.0,
+      "paired_test_fixtures": 612,
+      "one_sided_alpha": 0.05,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.95025,
+      "mc_se": 0.0006875677239370677
+    },
+    {
+      "discordance_probability": 0.3,
+      "true_difference": 0.0,
+      "paired_test_fixtures": 612,
+      "one_sided_alpha": 0.025,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.90134,
+      "mc_se": 0.0009430069161994517
+    },
+    {
+      "discordance_probability": 0.3,
+      "true_difference": 0.0,
+      "paired_test_fixtures": 1002,
+      "one_sided_alpha": 0.05,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.99695,
+      "mc_se": 0.00017437595877872606
+    },
+    {
+      "discordance_probability": 0.3,
+      "true_difference": 0.0,
+      "paired_test_fixtures": 1002,
+      "one_sided_alpha": 0.025,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.99212,
+      "mc_se": 0.0002796051787789346
+    },
+    {
+      "discordance_probability": 0.3,
+      "true_difference": 0.04,
+      "paired_test_fixtures": 120,
+      "one_sided_alpha": 0.05,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.01805,
+      "mc_se": 0.0004210011579556522
+    },
+    {
+      "discordance_probability": 0.3,
+      "true_difference": 0.04,
+      "paired_test_fixtures": 120,
+      "one_sided_alpha": 0.025,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.00028,
+      "mc_se": 5.290761759898096e-05
+    },
+    {
+      "discordance_probability": 0.3,
+      "true_difference": 0.04,
+      "paired_test_fixtures": 240,
+      "one_sided_alpha": 0.05,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.2639,
+      "mc_se": 0.0013937603452530856
+    },
+    {
+      "discordance_probability": 0.3,
+      "true_difference": 0.04,
+      "paired_test_fixtures": 240,
+      "one_sided_alpha": 0.025,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.12655,
+      "mc_se": 0.0010513567306105003
+    },
+    {
+      "discordance_probability": 0.3,
+      "true_difference": 0.04,
+      "paired_test_fixtures": 402,
+      "one_sided_alpha": 0.05,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.42339,
+      "mc_se": 0.0015624689049705918
+    },
+    {
+      "discordance_probability": 0.3,
+      "true_difference": 0.04,
+      "paired_test_fixtures": 402,
+      "one_sided_alpha": 0.025,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.3027,
+      "mc_se": 0.0014528341612173085
+    },
+    {
+      "discordance_probability": 0.3,
+      "true_difference": 0.04,
+      "paired_test_fixtures": 504,
+      "one_sided_alpha": 0.05,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.50128,
+      "mc_se": 0.0015811336489999826
+    },
+    {
+      "discordance_probability": 0.3,
+      "true_difference": 0.04,
+      "paired_test_fixtures": 504,
+      "one_sided_alpha": 0.025,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.37563,
+      "mc_se": 0.0015314440998613042
+    },
+    {
+      "discordance_probability": 0.3,
+      "true_difference": 0.04,
+      "paired_test_fixtures": 612,
+      "one_sided_alpha": 0.05,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.56674,
+      "mc_se": 0.0015669900203894088
+    },
+    {
+      "discordance_probability": 0.3,
+      "true_difference": 0.04,
+      "paired_test_fixtures": 612,
+      "one_sided_alpha": 0.025,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.4419,
+      "mc_se": 0.001570427935309354
+    },
+    {
+      "discordance_probability": 0.3,
+      "true_difference": 0.04,
+      "paired_test_fixtures": 1002,
+      "one_sided_alpha": 0.05,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.74831,
+      "mc_se": 0.001372378023359453
+    },
+    {
+      "discordance_probability": 0.3,
+      "true_difference": 0.04,
+      "paired_test_fixtures": 1002,
+      "one_sided_alpha": 0.025,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.63514,
+      "mc_se": 0.0015222916290908257
+    },
+    {
+      "discordance_probability": 0.3,
+      "true_difference": 0.08,
+      "paired_test_fixtures": 120,
+      "one_sided_alpha": 0.05,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.00799,
+      "mc_se": 0.0002815343655755013
+    },
+    {
+      "discordance_probability": 0.3,
+      "true_difference": 0.08,
+      "paired_test_fixtures": 120,
+      "one_sided_alpha": 0.025,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.00011,
+      "mc_se": 3.3164423709752596e-05
+    },
+    {
+      "discordance_probability": 0.3,
+      "true_difference": 0.08,
+      "paired_test_fixtures": 240,
+      "one_sided_alpha": 0.05,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.04982,
+      "mc_se": 0.0006880259268370634
+    },
+    {
+      "discordance_probability": 0.3,
+      "true_difference": 0.08,
+      "paired_test_fixtures": 240,
+      "one_sided_alpha": 0.025,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.02198,
+      "mc_se": 0.0004636472754152665
+    },
+    {
+      "discordance_probability": 0.3,
+      "true_difference": 0.08,
+      "paired_test_fixtures": 402,
+      "one_sided_alpha": 0.05,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.05062,
+      "mc_se": 0.000693236003104282
+    },
+    {
+      "discordance_probability": 0.3,
+      "true_difference": 0.08,
+      "paired_test_fixtures": 402,
+      "one_sided_alpha": 0.025,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.02496,
+      "mc_se": 0.0004933254341709943
+    },
+    {
+      "discordance_probability": 0.3,
+      "true_difference": 0.08,
+      "paired_test_fixtures": 504,
+      "one_sided_alpha": 0.05,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.05007,
+      "mc_se": 0.0006896593006695407
+    },
+    {
+      "discordance_probability": 0.3,
+      "true_difference": 0.08,
+      "paired_test_fixtures": 504,
+      "one_sided_alpha": 0.025,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.02496,
+      "mc_se": 0.0004933254341709943
+    },
+    {
+      "discordance_probability": 0.3,
+      "true_difference": 0.08,
+      "paired_test_fixtures": 612,
+      "one_sided_alpha": 0.05,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.05006,
+      "mc_se": 0.000689594057398989
+    },
+    {
+      "discordance_probability": 0.3,
+      "true_difference": 0.08,
+      "paired_test_fixtures": 612,
+      "one_sided_alpha": 0.025,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.02544,
+      "mc_se": 0.0004979237531992222
+    },
+    {
+      "discordance_probability": 0.3,
+      "true_difference": 0.08,
+      "paired_test_fixtures": 1002,
+      "one_sided_alpha": 0.05,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.05006,
+      "mc_se": 0.000689594057398989
+    },
+    {
+      "discordance_probability": 0.3,
+      "true_difference": 0.08,
+      "paired_test_fixtures": 1002,
+      "one_sided_alpha": 0.025,
+      "replicates": 100000,
+      "probability_tost_rejects_both_nulls": 0.02488,
+      "mc_se": 0.0004925544193284636
+    }
+  ],
+  "utc": "2026-11-11T05:45:27.847461+00:00"
+}

@@ -1,0 +1,488 @@
+{
+  "primary_timing_size_vs_bytes": [
+    {
+      "model": "qwen3:8b",
+      "arm": "transport_drop",
+      "comparison": "timing_size/selected minus bytes/selected",
+      "n_pairs": 120,
+      "condition_only": 7,
+      "reference_only": 13,
+      "difference_pp": -5.0,
+      "conditional_ci_pp": [
+        -12.5,
+        1.6666666666666667
+      ],
+      "p_raw": 0.26317596435546875,
+      "p_holm": 1.0
+    },
+    {
+      "model": "qwen3:8b",
+      "arm": "read",
+      "comparison": "timing_size/selected minus bytes/selected",
+      "n_pairs": 120,
+      "condition_only": 9,
+      "reference_only": 17,
+      "difference_pp": -6.666666666666667,
+      "conditional_ci_pp": [
+        -15.0,
+        0.8333333333333334
+      ],
+      "p_raw": 0.16863754391670227,
+      "p_holm": 1.0
+    },
+    {
+      "model": "qwen3:8b",
+      "arm": "isolated",
+      "comparison": "timing_size/selected minus bytes/selected",
+      "n_pairs": 120,
+      "condition_only": 11,
+      "reference_only": 29,
+      "difference_pp": -15.0,
+      "conditional_ci_pp": [
+        -24.166666666666668,
+        -5.833333333333333
+      ],
+      "p_raw": 0.006426576095691416,
+      "p_holm": 0.06426576095691416
+    },
+    {
+      "model": "qwen3:8b",
+      "arm": "live_write",
+      "comparison": "timing_size/selected minus bytes/selected",
+      "n_pairs": 120,
+      "condition_only": 10,
+      "reference_only": 16,
+      "difference_pp": -5.0,
+      "conditional_ci_pp": [
+        -13.333333333333334,
+        2.5
+      ],
+      "p_raw": 0.32693958282470703,
+      "p_holm": 1.0
+    },
+    {
+      "model": "qwen3:8b",
+      "arm": "isolated_visible",
+      "comparison": "timing_size/selected minus bytes/selected",
+      "n_pairs": 120,
+      "condition_only": 10,
+      "reference_only": 13,
+      "difference_pp": -2.5,
+      "conditional_ci_pp": [
+        -10.0,
+        5.0
+      ],
+      "p_raw": 0.6776394844055176,
+      "p_holm": 1.0
+    },
+    {
+      "model": "llama3.1:8b",
+      "arm": "transport_drop",
+      "comparison": "timing_size/selected minus bytes/selected",
+      "n_pairs": 120,
+      "condition_only": 6,
+      "reference_only": 11,
+      "difference_pp": -4.166666666666666,
+      "conditional_ci_pp": [
+        -10.833333333333334,
+        2.5
+      ],
+      "p_raw": 0.332305908203125,
+      "p_holm": 1.0
+    },
+    {
+      "model": "llama3.1:8b",
+      "arm": "read",
+      "comparison": "timing_size/selected minus bytes/selected",
+      "n_pairs": 120,
+      "condition_only": 8,
+      "reference_only": 11,
+      "difference_pp": -2.5,
+      "conditional_ci_pp": [
+        -10.0,
+        4.166666666666666
+      ],
+      "p_raw": 0.6476058959960938,
+      "p_holm": 1.0
+    },
+    {
+      "model": "llama3.1:8b",
+      "arm": "isolated",
+      "comparison": "timing_size/selected minus bytes/selected",
+      "n_pairs": 120,
+      "condition_only": 8,
+      "reference_only": 11,
+      "difference_pp": -2.5,
+      "conditional_ci_pp": [
+        -9.166666666666666,
+        4.166666666666666
+      ],
+      "p_raw": 0.6476058959960938,
+      "p_holm": 1.0
+    },
+    {
+      "model": "llama3.1:8b",
+      "arm": "live_write",
+      "comparison": "timing_size/selected minus bytes/selected",
+      "n_pairs": 120,
+      "condition_only": 9,
+      "reference_only": 19,
+      "difference_pp": -8.333333333333332,
+      "conditional_ci_pp": [
+        -15.833333333333332,
+        0.0
+      ],
+      "p_raw": 0.08715855330228806,
+      "p_holm": 0.7844269797205925
+    },
+    {
+      "model": "llama3.1:8b",
+      "arm": "isolated_visible",
+      "comparison": "timing_size/selected minus bytes/selected",
+      "n_pairs": 120,
+      "condition_only": 11,
+      "reference_only": 11,
+      "difference_pp": 0.0,
+      "conditional_ci_pp": [
+        -7.5,
+        7.5
+      ],
+      "p_raw": 1.0,
+      "p_holm": 1.0
+    }
+  ],
+  "secondary_stripping_vs_bytes": [
+    {
+      "model": "qwen3:8b",
+      "arm": "transport_drop",
+      "comparison": "stripped/frozen_none minus bytes/selected",
+      "n_pairs": 120,
+      "condition_only": 53,
+      "reference_only": 1,
+      "difference_pp": 43.333333333333336,
+      "conditional_ci_pp": [
+        34.166666666666664,
+        52.5
+      ],
+      "p_raw": 6.106226635438361e-15,
+      "p_holm": 6.106226635438361e-14
+    },
+    {
+      "model": "qwen3:8b",
+      "arm": "read",
+      "comparison": "stripped/frozen_none minus bytes/selected",
+      "n_pairs": 120,
+      "condition_only": 53,
+      "reference_only": 1,
+      "difference_pp": 43.333333333333336,
+      "conditional_ci_pp": [
+        34.166666666666664,
+        52.5
+      ],
+      "p_raw": 6.106226635438361e-15,
+      "p_holm": 6.106226635438361e-14
+    },
+    {
+      "model": "qwen3:8b",
+      "arm": "isolated",
+      "comparison": "stripped/frozen_none minus bytes/selected",
+      "n_pairs": 120,
+      "condition_only": 53,
+      "reference_only": 2,
+      "difference_pp": 42.5,
+      "conditional_ci_pp": [
+        33.33333333333333,
+        51.66666666666667
+      ],
+      "p_raw": 8.554268404736831e-14,
+      "p_holm": 6.843414723789465e-13
+    },
+    {
+      "model": "qwen3:8b",
+      "arm": "live_write",
+      "comparison": "stripped/frozen_none minus bytes/selected",
+      "n_pairs": 120,
+      "condition_only": 53,
+      "reference_only": 4,
+      "difference_pp": 40.833333333333336,
+      "conditional_ci_pp": [
+        30.833333333333336,
+        50.83333333333333
+      ],
+      "p_raw": 5.910882894255564e-12,
+      "p_holm": 2.955441447127782e-11
+    },
+    {
+      "model": "qwen3:8b",
+      "arm": "isolated_visible",
+      "comparison": "stripped/frozen_none minus bytes/selected",
+      "n_pairs": 120,
+      "condition_only": 51,
+      "reference_only": 3,
+      "difference_pp": 40.0,
+      "conditional_ci_pp": [
+        30.833333333333336,
+        49.166666666666664
+      ],
+      "p_raw": 2.9187763317395365e-12,
+      "p_holm": 1.751265799043722e-11
+    },
+    {
+      "model": "llama3.1:8b",
+      "arm": "transport_drop",
+      "comparison": "stripped/frozen_none minus bytes/selected",
+      "n_pairs": 120,
+      "condition_only": 37,
+      "reference_only": 1,
+      "difference_pp": 30.0,
+      "conditional_ci_pp": [
+        21.666666666666668,
+        38.333333333333336
+      ],
+      "p_raw": 2.837623469531536e-10,
+      "p_holm": 1.1350493878126144e-09
+    },
+    {
+      "model": "llama3.1:8b",
+      "arm": "read",
+      "comparison": "stripped/frozen_none minus bytes/selected",
+      "n_pairs": 120,
+      "condition_only": 40,
+      "reference_only": 0,
+      "difference_pp": 33.33333333333333,
+      "conditional_ci_pp": [
+        25.0,
+        41.66666666666667
+      ],
+      "p_raw": 1.8189894035458565e-12,
+      "p_holm": 1.2732925824820995e-11
+    },
+    {
+      "model": "llama3.1:8b",
+      "arm": "isolated",
+      "comparison": "stripped/frozen_none minus bytes/selected",
+      "n_pairs": 120,
+      "condition_only": 31,
+      "reference_only": 1,
+      "difference_pp": 25.0,
+      "conditional_ci_pp": [
+        17.5,
+        33.33333333333333
+      ],
+      "p_raw": 1.5366822481155396e-08,
+      "p_holm": 4.6100467443466187e-08
+    },
+    {
+      "model": "llama3.1:8b",
+      "arm": "live_write",
+      "comparison": "stripped/frozen_none minus bytes/selected",
+      "n_pairs": 120,
+      "condition_only": 35,
+      "reference_only": 3,
+      "difference_pp": 26.666666666666668,
+      "conditional_ci_pp": [
+        18.333333333333332,
+        35.833333333333336
+      ],
+      "p_raw": 6.677873898297548e-08,
+      "p_holm": 1.3355747796595097e-07
+    },
+    {
+      "model": "llama3.1:8b",
+      "arm": "isolated_visible",
+      "comparison": "stripped/frozen_none minus bytes/selected",
+      "n_pairs": 120,
+      "condition_only": 30,
+      "reference_only": 4,
+      "difference_pp": 21.666666666666668,
+      "conditional_ci_pp": [
+        13.333333333333334,
+        30.0
+      ],
+      "p_raw": 6.16488978266716e-06,
+      "p_holm": 6.16488978266716e-06
+    }
+  ],
+  "secondary_hidden_semantics": [
+    {
+      "model": "qwen3:8b",
+      "arm": "read",
+      "comparison": "read minus transport_drop",
+      "n_pairs": 120,
+      "condition_only": 8,
+      "reference_only": 10,
+      "difference_pp": -1.6666666666666667,
+      "conditional_ci_pp": [
+        -8.333333333333332,
+        5.0
+      ],
+      "p_raw": 0.8145294189453125,
+      "p_holm": 1.0
+    },
+    {
+      "model": "qwen3:8b",
+      "arm": "isolated",
+      "comparison": "isolated minus transport_drop",
+      "n_pairs": 120,
+      "condition_only": 11,
+      "reference_only": 24,
+      "difference_pp": -10.833333333333334,
+      "conditional_ci_pp": [
+        -19.166666666666668,
+        -2.5
+      ],
+      "p_raw": 0.040959591511636986,
+      "p_holm": 0.49151509813964384
+    },
+    {
+      "model": "qwen3:8b",
+      "arm": "isolated",
+      "comparison": "isolated minus read",
+      "n_pairs": 120,
+      "condition_only": 10,
+      "reference_only": 21,
+      "difference_pp": -9.166666666666666,
+      "conditional_ci_pp": [
+        -17.5,
+        -0.8333333333333334
+      ],
+      "p_raw": 0.07075554598122835,
+      "p_holm": 0.6367999138310552
+    },
+    {
+      "model": "qwen3:8b",
+      "arm": "live_write",
+      "comparison": "live_write minus transport_drop",
+      "n_pairs": 120,
+      "condition_only": 15,
+      "reference_only": 15,
+      "difference_pp": 0.0,
+      "conditional_ci_pp": [
+        -8.333333333333332,
+        8.333333333333332
+      ],
+      "p_raw": 1.0,
+      "p_holm": 1.0
+    },
+    {
+      "model": "qwen3:8b",
+      "arm": "live_write",
+      "comparison": "live_write minus read",
+      "n_pairs": 120,
+      "condition_only": 12,
+      "reference_only": 10,
+      "difference_pp": 1.6666666666666667,
+      "conditional_ci_pp": [
+        -5.833333333333333,
+        9.166666666666666
+      ],
+      "p_raw": 0.8318119049072266,
+      "p_holm": 1.0
+    },
+    {
+      "model": "qwen3:8b",
+      "arm": "live_write",
+      "comparison": "live_write minus isolated",
+      "n_pairs": 120,
+      "condition_only": 24,
+      "reference_only": 11,
+      "difference_pp": 10.833333333333334,
+      "conditional_ci_pp": [
+        1.6666666666666667,
+        20.0
+      ],
+      "p_raw": 0.040959591511636986,
+      "p_holm": 0.49151509813964384
+    },
+    {
+      "model": "llama3.1:8b",
+      "arm": "read",
+      "comparison": "read minus transport_drop",
+      "n_pairs": 120,
+      "condition_only": 8,
+      "reference_only": 13,
+      "difference_pp": -4.166666666666666,
+      "conditional_ci_pp": [
+        -11.666666666666666,
+        3.3333333333333335
+      ],
+      "p_raw": 0.38331031799316406,
+      "p_holm": 1.0
+    },
+    {
+      "model": "llama3.1:8b",
+      "arm": "isolated",
+      "comparison": "isolated minus transport_drop",
+      "n_pairs": 120,
+      "condition_only": 16,
+      "reference_only": 11,
+      "difference_pp": 4.166666666666666,
+      "conditional_ci_pp": [
+        -4.166666666666666,
+        12.5
+      ],
+      "p_raw": 0.44206833839416504,
+      "p_holm": 1.0
+    },
+    {
+      "model": "llama3.1:8b",
+      "arm": "isolated",
+      "comparison": "isolated minus read",
+      "n_pairs": 120,
+      "condition_only": 15,
+      "reference_only": 5,
+      "difference_pp": 8.333333333333332,
+      "conditional_ci_pp": [
+        0.8333333333333334,
+        15.833333333333332
+      ],
+      "p_raw": 0.04138946533203125,
+      "p_holm": 0.49151509813964384
+    },
+    {
+      "model": "llama3.1:8b",
+      "arm": "live_write",
+      "comparison": "live_write minus transport_drop",
+      "n_pairs": 120,
+      "condition_only": 12,
+      "reference_only": 16,
+      "difference_pp": -3.3333333333333335,
+      "conditional_ci_pp": [
+        -11.666666666666666,
+        5.0
+      ],
+      "p_raw": 0.5715881884098053,
+      "p_holm": 1.0
+    },
+    {
+      "model": "llama3.1:8b",
+      "arm": "live_write",
+      "comparison": "live_write minus read",
+      "n_pairs": 120,
+      "condition_only": 13,
+      "reference_only": 12,
+      "difference_pp": 0.8333333333333334,
+      "conditional_ci_pp": [
+        -6.666666666666667,
+        8.333333333333332
+      ],
+      "p_raw": 1.0,
+      "p_holm": 1.0
+    },
+    {
+      "model": "llama3.1:8b",
+      "arm": "live_write",
+      "comparison": "live_write minus isolated",
+      "n_pairs": 120,
+      "condition_only": 7,
+      "reference_only": 16,
+      "difference_pp": -7.5,
+      "conditional_ci_pp": [
+        -15.0,
+        0.0
+      ],
+      "p_raw": 0.0931396484375,
+      "p_holm": 0.7451171875
+    }
+  ]
+}

@@ -1,0 +1,1300 @@
+[
+  {
+    "model": "qwen3:8b",
+    "selected": {
+      "name": "LR",
+      "threshold": 0.9500000000000001,
+      "metric": {
+        "tp": 445,
+        "fp": 0,
+        "fn": 0,
+        "tn": 1504,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "auc": null
+      }
+    },
+    "validation_candidates": [
+      {
+        "name": "LR",
+        "threshold": 0.05,
+        "metric": {
+          "tp": 445,
+          "fp": 0,
+          "fn": 0,
+          "tn": 1504,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "auc": null
+        }
+      },
+      {
+        "name": "LR",
+        "threshold": 0.1,
+        "metric": {
+          "tp": 445,
+          "fp": 0,
+          "fn": 0,
+          "tn": 1504,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "auc": null
+        }
+      },
+      {
+        "name": "LR",
+        "threshold": 0.15000000000000002,
+        "metric": {
+          "tp": 445,
+          "fp": 0,
+          "fn": 0,
+          "tn": 1504,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "auc": null
+        }
+      },
+      {
+        "name": "LR",
+        "threshold": 0.2,
+        "metric": {
+          "tp": 445,
+          "fp": 0,
+          "fn": 0,
+          "tn": 1504,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "auc": null
+        }
+      },
+      {
+        "name": "LR",
+        "threshold": 0.25,
+        "metric": {
+          "tp": 445,
+          "fp": 0,
+          "fn": 0,
+          "tn": 1504,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "auc": null
+        }
+      },
+      {
+        "name": "LR",
+        "threshold": 0.3,
+        "metric": {
+          "tp": 445,
+          "fp": 0,
+          "fn": 0,
+          "tn": 1504,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "auc": null
+        }
+      },
+      {
+        "name": "LR",
+        "threshold": 0.35000000000000003,
+        "metric": {
+          "tp": 445,
+          "fp": 0,
+          "fn": 0,
+          "tn": 1504,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "auc": null
+        }
+      },
+      {
+        "name": "LR",
+        "threshold": 0.4,
+        "metric": {
+          "tp": 445,
+          "fp": 0,
+          "fn": 0,
+          "tn": 1504,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "auc": null
+        }
+      },
+      {
+        "name": "LR",
+        "threshold": 0.45,
+        "metric": {
+          "tp": 445,
+          "fp": 0,
+          "fn": 0,
+          "tn": 1504,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "auc": null
+        }
+      },
+      {
+        "name": "LR",
+        "threshold": 0.5,
+        "metric": {
+          "tp": 445,
+          "fp": 0,
+          "fn": 0,
+          "tn": 1504,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "auc": null
+        }
+      },
+      {
+        "name": "LR",
+        "threshold": 0.55,
+        "metric": {
+          "tp": 445,
+          "fp": 0,
+          "fn": 0,
+          "tn": 1504,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "auc": null
+        }
+      },
+      {
+        "name": "LR",
+        "threshold": 0.6000000000000001,
+        "metric": {
+          "tp": 445,
+          "fp": 0,
+          "fn": 0,
+          "tn": 1504,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "auc": null
+        }
+      },
+      {
+        "name": "LR",
+        "threshold": 0.6500000000000001,
+        "metric": {
+          "tp": 445,
+          "fp": 0,
+          "fn": 0,
+          "tn": 1504,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "auc": null
+        }
+      },
+      {
+        "name": "LR",
+        "threshold": 0.7000000000000001,
+        "metric": {
+          "tp": 445,
+          "fp": 0,
+          "fn": 0,
+          "tn": 1504,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "auc": null
+        }
+      },
+      {
+        "name": "LR",
+        "threshold": 0.7500000000000001,
+        "metric": {
+          "tp": 445,
+          "fp": 0,
+          "fn": 0,
+          "tn": 1504,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "auc": null
+        }
+      },
+      {
+        "name": "LR",
+        "threshold": 0.8,
+        "metric": {
+          "tp": 445,
+          "fp": 0,
+          "fn": 0,
+          "tn": 1504,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "auc": null
+        }
+      },
+      {
+        "name": "LR",
+        "threshold": 0.8500000000000001,
+        "metric": {
+          "tp": 445,
+          "fp": 0,
+          "fn": 0,
+          "tn": 1504,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "auc": null
+        }
+      },
+      {
+        "name": "LR",
+        "threshold": 0.9000000000000001,
+        "metric": {
+          "tp": 445,
+          "fp": 0,
+          "fn": 0,
+          "tn": 1504,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "auc": null
+        }
+      },
+      {
+        "name": "LR",
+        "threshold": 0.9500000000000001,
+        "metric": {
+          "tp": 445,
+          "fp": 0,
+          "fn": 0,
+          "tn": 1504,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "auc": null
+        }
+      },
+      {
+        "name": "RF",
+        "threshold": 0.05,
+        "metric": {
+          "tp": 445,
+          "fp": 0,
+          "fn": 0,
+          "tn": 1504,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "auc": null
+        }
+      },
+      {
+        "name": "RF",
+        "threshold": 0.1,
+        "metric": {
+          "tp": 445,
+          "fp": 0,
+          "fn": 0,
+          "tn": 1504,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "auc": null
+        }
+      },
+      {
+        "name": "RF",
+        "threshold": 0.15000000000000002,
+        "metric": {
+          "tp": 445,
+          "fp": 0,
+          "fn": 0,
+          "tn": 1504,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "auc": null
+        }
+      },
+      {
+        "name": "RF",
+        "threshold": 0.2,
+        "metric": {
+          "tp": 445,
+          "fp": 0,
+          "fn": 0,
+          "tn": 1504,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "auc": null
+        }
+      },
+      {
+        "name": "RF",
+        "threshold": 0.25,
+        "metric": {
+          "tp": 445,
+          "fp": 0,
+          "fn": 0,
+          "tn": 1504,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "auc": null
+        }
+      },
+      {
+        "name": "RF",
+        "threshold": 0.3,
+        "metric": {
+          "tp": 445,
+          "fp": 0,
+          "fn": 0,
+          "tn": 1504,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "auc": null
+        }
+      },
+      {
+        "name": "RF",
+        "threshold": 0.35000000000000003,
+        "metric": {
+          "tp": 445,
+          "fp": 0,
+          "fn": 0,
+          "tn": 1504,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "auc": null
+        }
+      },
+      {
+        "name": "RF",
+        "threshold": 0.4,
+        "metric": {
+          "tp": 445,
+          "fp": 0,
+          "fn": 0,
+          "tn": 1504,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "auc": null
+        }
+      },
+      {
+        "name": "RF",
+        "threshold": 0.45,
+        "metric": {
+          "tp": 445,
+          "fp": 0,
+          "fn": 0,
+          "tn": 1504,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "auc": null
+        }
+      },
+      {
+        "name": "RF",
+        "threshold": 0.5,
+        "metric": {
+          "tp": 445,
+          "fp": 0,
+          "fn": 0,
+          "tn": 1504,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "auc": null
+        }
+      },
+      {
+        "name": "RF",
+        "threshold": 0.55,
+        "metric": {
+          "tp": 445,
+          "fp": 0,
+          "fn": 0,
+          "tn": 1504,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "auc": null
+        }
+      },
+      {
+        "name": "RF",
+        "threshold": 0.6000000000000001,
+        "metric": {
+          "tp": 445,
+          "fp": 0,
+          "fn": 0,
+          "tn": 1504,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "auc": null
+        }
+      },
+      {
+        "name": "RF",
+        "threshold": 0.6500000000000001,
+        "metric": {
+          "tp": 445,
+          "fp": 0,
+          "fn": 0,
+          "tn": 1504,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "auc": null
+        }
+      },
+      {
+        "name": "RF",
+        "threshold": 0.7000000000000001,
+        "metric": {
+          "tp": 445,
+          "fp": 0,
+          "fn": 0,
+          "tn": 1504,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "auc": null
+        }
+      },
+      {
+        "name": "RF",
+        "threshold": 0.7500000000000001,
+        "metric": {
+          "tp": 445,
+          "fp": 0,
+          "fn": 0,
+          "tn": 1504,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "auc": null
+        }
+      },
+      {
+        "name": "RF",
+        "threshold": 0.8,
+        "metric": {
+          "tp": 445,
+          "fp": 0,
+          "fn": 0,
+          "tn": 1504,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "auc": null
+        }
+      },
+      {
+        "name": "RF",
+        "threshold": 0.8500000000000001,
+        "metric": {
+          "tp": 445,
+          "fp": 0,
+          "fn": 0,
+          "tn": 1504,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "auc": null
+        }
+      },
+      {
+        "name": "RF",
+        "threshold": 0.9000000000000001,
+        "metric": {
+          "tp": 445,
+          "fp": 0,
+          "fn": 0,
+          "tn": 1504,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "auc": null
+        }
+      },
+      {
+        "name": "RF",
+        "threshold": 0.9500000000000001,
+        "metric": {
+          "tp": 445,
+          "fp": 0,
+          "fn": 0,
+          "tn": 1504,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "auc": null
+        }
+      },
+      {
+        "name": "gap_rule",
+        "threshold": 0.025,
+        "metric": {
+          "tp": 421,
+          "fp": 0,
+          "fn": 24,
+          "tn": 1504,
+          "precision": 1.0,
+          "recall": 0.946067415730337,
+          "f1": 0.9722863741339491,
+          "auc": null
+        }
+      },
+      {
+        "name": "gap_rule",
+        "threshold": 0.05,
+        "metric": {
+          "tp": 445,
+          "fp": 0,
+          "fn": 0,
+          "tn": 1504,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "auc": null
+        }
+      },
+      {
+        "name": "gap_rule",
+        "threshold": 0.1,
+        "metric": {
+          "tp": 445,
+          "fp": 0,
+          "fn": 0,
+          "tn": 1504,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "auc": null
+        }
+      },
+      {
+        "name": "gap_rule",
+        "threshold": 0.2,
+        "metric": {
+          "tp": 445,
+          "fp": 0,
+          "fn": 0,
+          "tn": 1504,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "auc": null
+        }
+      },
+      {
+        "name": "gap_rule",
+        "threshold": 0.35,
+        "metric": {
+          "tp": 445,
+          "fp": 0,
+          "fn": 0,
+          "tn": 1504,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "auc": null
+        }
+      },
+      {
+        "name": "gap_rule",
+        "threshold": 0.5,
+        "metric": {
+          "tp": 445,
+          "fp": 122,
+          "fn": 0,
+          "tn": 1382,
+          "precision": 0.7848324514991182,
+          "recall": 1.0,
+          "f1": 0.8794466403162056,
+          "auc": null
+        }
+      },
+      {
+        "name": "gap_rule",
+        "threshold": 1.0,
+        "metric": {
+          "tp": 445,
+          "fp": 1136,
+          "fn": 0,
+          "tn": 368,
+          "precision": 0.2814674256799494,
+          "recall": 1.0,
+          "f1": 0.43928923988154,
+          "auc": null
+        }
+      }
+    ]
+  },
+  {
+    "model": "llama3.1:8b",
+    "selected": {
+      "name": "LR",
+      "threshold": 0.9500000000000001,
+      "metric": {
+        "tp": 445,
+        "fp": 0,
+        "fn": 0,
+        "tn": 1935,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "auc": null
+      }
+    },
+    "validation_candidates": [
+      {
+        "name": "LR",
+        "threshold": 0.05,
+        "metric": {
+          "tp": 445,
+          "fp": 0,
+          "fn": 0,
+          "tn": 1935,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "auc": null
+        }
+      },
+      {
+        "name": "LR",
+        "threshold": 0.1,
+        "metric": {
+          "tp": 445,
+          "fp": 0,
+          "fn": 0,
+          "tn": 1935,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "auc": null
+        }
+      },
+      {
+        "name": "LR",
+        "threshold": 0.15000000000000002,
+        "metric": {
+          "tp": 445,
+          "fp": 0,
+          "fn": 0,
+          "tn": 1935,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "auc": null
+        }
+      },
+      {
+        "name": "LR",
+        "threshold": 0.2,
+        "metric": {
+          "tp": 445,
+          "fp": 0,
+          "fn": 0,
+          "tn": 1935,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "auc": null
+        }
+      },
+      {
+        "name": "LR",
+        "threshold": 0.25,
+        "metric": {
+          "tp": 445,
+          "fp": 0,
+          "fn": 0,
+          "tn": 1935,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "auc": null
+        }
+      },
+      {
+        "name": "LR",
+        "threshold": 0.3,
+        "metric": {
+          "tp": 445,
+          "fp": 0,
+          "fn": 0,
+          "tn": 1935,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "auc": null
+        }
+      },
+      {
+        "name": "LR",
+        "threshold": 0.35000000000000003,
+        "metric": {
+          "tp": 445,
+          "fp": 0,
+          "fn": 0,
+          "tn": 1935,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "auc": null
+        }
+      },
+      {
+        "name": "LR",
+        "threshold": 0.4,
+        "metric": {
+          "tp": 445,
+          "fp": 0,
+          "fn": 0,
+          "tn": 1935,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "auc": null
+        }
+      },
+      {
+        "name": "LR",
+        "threshold": 0.45,
+        "metric": {
+          "tp": 445,
+          "fp": 0,
+          "fn": 0,
+          "tn": 1935,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "auc": null
+        }
+      },
+      {
+        "name": "LR",
+        "threshold": 0.5,
+        "metric": {
+          "tp": 445,
+          "fp": 0,
+          "fn": 0,
+          "tn": 1935,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "auc": null
+        }
+      },
+      {
+        "name": "LR",
+        "threshold": 0.55,
+        "metric": {
+          "tp": 445,
+          "fp": 0,
+          "fn": 0,
+          "tn": 1935,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "auc": null
+        }
+      },
+      {
+        "name": "LR",
+        "threshold": 0.6000000000000001,
+        "metric": {
+          "tp": 445,
+          "fp": 0,
+          "fn": 0,
+          "tn": 1935,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "auc": null
+        }
+      },
+      {
+        "name": "LR",
+        "threshold": 0.6500000000000001,
+        "metric": {
+          "tp": 445,
+          "fp": 0,
+          "fn": 0,
+          "tn": 1935,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "auc": null
+        }
+      },
+      {
+        "name": "LR",
+        "threshold": 0.7000000000000001,
+        "metric": {
+          "tp": 445,
+          "fp": 0,
+          "fn": 0,
+          "tn": 1935,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "auc": null
+        }
+      },
+      {
+        "name": "LR",
+        "threshold": 0.7500000000000001,
+        "metric": {
+          "tp": 445,
+          "fp": 0,
+          "fn": 0,
+          "tn": 1935,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "auc": null
+        }
+      },
+      {
+        "name": "LR",
+        "threshold": 0.8,
+        "metric": {
+          "tp": 445,
+          "fp": 0,
+          "fn": 0,
+          "tn": 1935,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "auc": null
+        }
+      },
+      {
+        "name": "LR",
+        "threshold": 0.8500000000000001,
+        "metric": {
+          "tp": 445,
+          "fp": 0,
+          "fn": 0,
+          "tn": 1935,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "auc": null
+        }
+      },
+      {
+        "name": "LR",
+        "threshold": 0.9000000000000001,
+        "metric": {
+          "tp": 445,
+          "fp": 0,
+          "fn": 0,
+          "tn": 1935,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "auc": null
+        }
+      },
+      {
+        "name": "LR",
+        "threshold": 0.9500000000000001,
+        "metric": {
+          "tp": 445,
+          "fp": 0,
+          "fn": 0,
+          "tn": 1935,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "auc": null
+        }
+      },
+      {
+        "name": "RF",
+        "threshold": 0.05,
+        "metric": {
+          "tp": 445,
+          "fp": 0,
+          "fn": 0,
+          "tn": 1935,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "auc": null
+        }
+      },
+      {
+        "name": "RF",
+        "threshold": 0.1,
+        "metric": {
+          "tp": 445,
+          "fp": 0,
+          "fn": 0,
+          "tn": 1935,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "auc": null
+        }
+      },
+      {
+        "name": "RF",
+        "threshold": 0.15000000000000002,
+        "metric": {
+          "tp": 445,
+          "fp": 0,
+          "fn": 0,
+          "tn": 1935,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "auc": null
+        }
+      },
+      {
+        "name": "RF",
+        "threshold": 0.2,
+        "metric": {
+          "tp": 445,
+          "fp": 0,
+          "fn": 0,
+          "tn": 1935,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "auc": null
+        }
+      },
+      {
+        "name": "RF",
+        "threshold": 0.25,
+        "metric": {
+          "tp": 445,
+          "fp": 0,
+          "fn": 0,
+          "tn": 1935,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "auc": null
+        }
+      },
+      {
+        "name": "RF",
+        "threshold": 0.3,
+        "metric": {
+          "tp": 445,
+          "fp": 0,
+          "fn": 0,
+          "tn": 1935,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "auc": null
+        }
+      },
+      {
+        "name": "RF",
+        "threshold": 0.35000000000000003,
+        "metric": {
+          "tp": 445,
+          "fp": 0,
+          "fn": 0,
+          "tn": 1935,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "auc": null
+        }
+      },
+      {
+        "name": "RF",
+        "threshold": 0.4,
+        "metric": {
+          "tp": 445,
+          "fp": 0,
+          "fn": 0,
+          "tn": 1935,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "auc": null
+        }
+      },
+      {
+        "name": "RF",
+        "threshold": 0.45,
+        "metric": {
+          "tp": 445,
+          "fp": 0,
+          "fn": 0,
+          "tn": 1935,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "auc": null
+        }
+      },
+      {
+        "name": "RF",
+        "threshold": 0.5,
+        "metric": {
+          "tp": 445,
+          "fp": 0,
+          "fn": 0,
+          "tn": 1935,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "auc": null
+        }
+      },
+      {
+        "name": "RF",
+        "threshold": 0.55,
+        "metric": {
+          "tp": 445,
+          "fp": 0,
+          "fn": 0,
+          "tn": 1935,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "auc": null
+        }
+      },
+      {
+        "name": "RF",
+        "threshold": 0.6000000000000001,
+        "metric": {
+          "tp": 445,
+          "fp": 0,
+          "fn": 0,
+          "tn": 1935,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "auc": null
+        }
+      },
+      {
+        "name": "RF",
+        "threshold": 0.6500000000000001,
+        "metric": {
+          "tp": 445,
+          "fp": 0,
+          "fn": 0,
+          "tn": 1935,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "auc": null
+        }
+      },
+      {
+        "name": "RF",
+        "threshold": 0.7000000000000001,
+        "metric": {
+          "tp": 445,
+          "fp": 0,
+          "fn": 0,
+          "tn": 1935,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "auc": null
+        }
+      },
+      {
+        "name": "RF",
+        "threshold": 0.7500000000000001,
+        "metric": {
+          "tp": 445,
+          "fp": 0,
+          "fn": 0,
+          "tn": 1935,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "auc": null
+        }
+      },
+      {
+        "name": "RF",
+        "threshold": 0.8,
+        "metric": {
+          "tp": 445,
+          "fp": 0,
+          "fn": 0,
+          "tn": 1935,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "auc": null
+        }
+      },
+      {
+        "name": "RF",
+        "threshold": 0.8500000000000001,
+        "metric": {
+          "tp": 445,
+          "fp": 0,
+          "fn": 0,
+          "tn": 1935,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "auc": null
+        }
+      },
+      {
+        "name": "RF",
+        "threshold": 0.9000000000000001,
+        "metric": {
+          "tp": 445,
+          "fp": 0,
+          "fn": 0,
+          "tn": 1935,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "auc": null
+        }
+      },
+      {
+        "name": "RF",
+        "threshold": 0.9500000000000001,
+        "metric": {
+          "tp": 445,
+          "fp": 0,
+          "fn": 0,
+          "tn": 1935,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "auc": null
+        }
+      },
+      {
+        "name": "gap_rule",
+        "threshold": 0.025,
+        "metric": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 442,
+          "tn": 1935,
+          "precision": 1.0,
+          "recall": 0.006741573033707865,
+          "f1": 0.013392857142857142,
+          "auc": null
+        }
+      },
+      {
+        "name": "gap_rule",
+        "threshold": 0.05,
+        "metric": {
+          "tp": 443,
+          "fp": 0,
+          "fn": 2,
+          "tn": 1935,
+          "precision": 1.0,
+          "recall": 0.9955056179775281,
+          "f1": 0.9977477477477478,
+          "auc": null
+        }
+      },
+      {
+        "name": "gap_rule",
+        "threshold": 0.1,
+        "metric": {
+          "tp": 445,
+          "fp": 0,
+          "fn": 0,
+          "tn": 1935,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "auc": null
+        }
+      },
+      {
+        "name": "gap_rule",
+        "threshold": 0.2,
+        "metric": {
+          "tp": 445,
+          "fp": 0,
+          "fn": 0,
+          "tn": 1935,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "auc": null
+        }
+      },
+      {
+        "name": "gap_rule",
+        "threshold": 0.35,
+        "metric": {
+          "tp": 445,
+          "fp": 0,
+          "fn": 0,
+          "tn": 1935,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "auc": null
+        }
+      },
+      {
+        "name": "gap_rule",
+        "threshold": 0.5,
+        "metric": {
+          "tp": 445,
+          "fp": 0,
+          "fn": 0,
+          "tn": 1935,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "auc": null
+        }
+      },
+      {
+        "name": "gap_rule",
+        "threshold": 1.0,
+        "metric": {
+          "tp": 445,
+          "fp": 1378,
+          "fn": 0,
+          "tn": 557,
+          "precision": 0.24410312671420736,
+          "recall": 1.0,
+          "f1": 0.3924162257495591,
+          "auc": null
+        }
+      }
+    ]
+  }
+]

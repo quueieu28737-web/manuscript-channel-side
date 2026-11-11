@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "documents": {
+    "main": {
+      "pages": 15,
+      "source_pdf_sha256": "a0005341c1af21d3794bf0d2feaf3b9fbe7465b40b8a4ba6f73d48567cf165d3",
+      "rebuilt_pdf_sha256": "e27be8605152bae31357665f45ea9d20908de205ce53efc8395539a0c2229efe",
+      "all_page_text_equal": true,
+      "all_page_pixels_equal": true,
+      "bibliography_equal": true
+    },
+    "supplement": {
+      "pages": 30,
+      "source_pdf_sha256": "a35060f85996a4c0e523fa1695f06dcdf1f0be9436b5fd1258d3fc55b5bebc82",
+      "rebuilt_pdf_sha256": "a5e3a0e5dcee9927f5b4cc13b950f874becd2b72f35804e0dbbaa104528a796f",
+      "all_page_text_equal": true,
+      "all_page_pixels_equal": true,
+      "bibliography_equal": true
+    }
+  }
+}
