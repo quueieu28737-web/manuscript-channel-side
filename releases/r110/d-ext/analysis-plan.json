@@ -1,0 +1,34 @@
+{
+  "version": "R110-D-v1",
+  "question": "Does timing-matched decoy dispatch (R109 C3) withstand attacks that adapt to it, and how should the 'best attack' be defined when position rules are included?",
+  "study_type": "Retrospective offline reanalysis of the public M3 cohort (3,600 episodes; 120/60/120 split), frozen in git before any D test quantity is computed. No new LLM requests, captures or fixtures. Not an independent confirmation cohort.",
+  "source": "Public M3 export, review-r102/llm-extension (input SHA-256 identical to R109 freeze.json). R109 C3 transformations are imported unchanged from releases/r109/c-ext/c_ext.py.",
+  "exposure": "Known before this freeze: all published M3, B1 (R108) and C1-C3 (R109) test summaries, including C3 strip/T+S counts, detector P/R/AUROC and that the position-last rule scores 75-77 (Qwen) and 65-68 (Llama) on unmodified traces. Training-split structure was inspected to design the attacks: cover episodes contain 1 or 2 decoys at call positions 1-6. No per-call C3 test prediction, no D attack test score, and no C3c quantity has been computed.",
+  "reproduction_gate": "Regenerate the C3a and C3b transformed cohorts with the R109 seeds and generation order, refit the R109 detector and timing_size view, and require exact equality with all 20 R109 C3 strip and timing_size_selected counts. Stop and report on any mismatch.",
+  "observer": "As B1/C3: destinations, ciphertext up/down bytes, client-receipt call start/end, wall duration, supplied episode/call windows, first ticket call known honest, labelled training calls (cover flag) and training task labels. No content, operation, order, state or token counts.",
+  "D1_position_rules": "Report position_last and position_penultimate (the M3 rules, unchanged mapping) on C3a, C3b and C3c test traces. These rules depend only on the destination sequence, which timing-matched dispatch does not change.",
+  "D2_adaptive_attacks": {
+    "rationale": "C3 draws decoy gaps i.i.d. from pooled honest history, unconditioned on position or episode context. Honest planner gaps depend on context; an attacker can compare a call with its own episode and position.",
+    "D2a_context_detector": "Per-call features: the 10 B1 inputs plus position one-hot (0-7, capped), log elapsed start, log ratio of gap to the episode's median non-first gap, log previous and next gap, log ratio of duration to the training median honest duration at that destination, log up/down bytes, previous-destination one-hot, last-call flag and call count. LR and RF (as B1, balanced) fit on pooled labelled training calls of all arms; the B1 validation F1 threshold grid and tie rules select one detector. Hard strip with the frozen no-cover classifier.",
+    "D2b_joint_decoding": "For each episode enumerate removal masks of k in {0,1,2} calls among positions 1..min(6, L-1). Score = log prior(k) from pooled training + sum log p over removed + sum log(1-p) over kept candidates, with p from the D2a LR or RF detector (clipped to [1e-4, 1-1e-4]). MAP variant: choose the mask maximising score + lambda * log max-class probability of the frozen no-cover classifier on the stripped trace, lambda in {0, 0.5, 1, 2, 4}; predict that mask's class. Marginal variant: class posterior = sum over masks of softmax(score) * classifier posterior. Detector family, variant and lambda are selected per model on pooled validation recognition accuracy over cover arms (ties: LR, MAP, smaller lambda).",
+    "existing_attacks": "B1-style strip (refitted R109 detector), refitted timing_size LR/RF (validation-selected), byte LR/RF, frozen no-cover classifier, position_last, position_penultimate."
+  },
+  "D3_best_attack": {
+    "size_only_best": "Per model x arm, the validation-selected attack among byte LR, byte RF, frozen, position_last, position_penultimate (validation accuracy on the 60 validation episodes; ties to the earlier entry in this list).",
+    "adaptive_best": "Per model x arm, the validation-selected attack among the size-only candidates followed by timing_size, B1-strip, D2a strip and D2b joint (ties to the earlier entry, so a timing attack must strictly beat size-only on validation).",
+    "descriptive_max": "Also report the maximum test score over all attacks; this is test-selected, descriptive only, and never used for a test or claim of attacker capability."
+  },
+  "D4_context_matched_dispatch": {
+    "C3c": "Defender variant: like C3b, but each decoy gap is drawn from no-cover TRAIN honest gaps at the same call position (pool >= 20, else pooled), duration from the same destination as C3b. Seed 1101113. Every attack in D2-D3 is fully refitted on C3c data.",
+    "purpose": "Tests whether conditioning dispatch on context closes any gap that D2 opens. Reported whatever the D2 outcome."
+  },
+  "tests": {
+    "primary": "C3b: adaptive_best minus size_only_best, 10 exact paired McNemar tests (2 models x 5 cover arms), Holm .05.",
+    "secondary": "C3c: the same contrast, separate 10-test Holm family.",
+    "descriptive": "Each D2 attack minus size_only_best on C3a, C3b, C3c, with conditional intervals and raw p only."
+  },
+  "interpretation_rule": "If adaptive_best exceeds size_only_best by at least 12/120 with Holm p < .05 in at least 5 of the 10 C3b cells, report that unconditioned timing matching does not withstand adaptive attack. If fewer cells meet this, report that C3b withstands the tested adaptive attacks relative to the best size-only attack, without claiming equivalence. Apply the same rule to C3c. In every case, report the size-only best (including position rules) as the protection level of the cover itself.",
+  "uncertainty": "Conditional 95% intervals by 10,000 paired fixture bootstraps stratified by requested action (seed 1071111), holding fitted attacks fixed.",
+  "resources": "Local CPU only.",
+  "publication": "Results go to releases/r110/d-ext/results with code, freeze receipt and an independent verifier; manuscript text changes only after results are saved."
+}
