@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "utc": "2026-11-11T02:37:32.072207+00:00",
+  "scope": "New-byte manuscript/evidence alignment, citation use, privacy, compilation, embedded fonts, all-page layout and isolated ZIP rebuild. This is not empirical validation or venue acceptance.",
+  "documents": {
+    "main.pdf": {
+      "sha256": "06bd8d59649986a0f72b18b6a6be7b47f50c3b4fcb17e19c1f6613ba2d32bc6a",
+      "pages": 15,
+      "bytes": 264168
+    },
+    "supplement.pdf": {
+      "sha256": "28a8a2d4879b93b2ddede65d28e83652436a3ec35b35350631fea35924a46261",
+      "pages": 26,
+      "bytes": 372207
+    }
+  },
+  "packages": {
+    "latex-source.zip": {
+      "sha256": "5670b2ddfe182e47fb5f1a3df9967e9c889e73e7be73f16e4a1da3e83eef5f60",
+      "bytes": 119580,
+      "files": 59
+    },
+    "review-artifact.zip": {
+      "sha256": "b9f7ec658af40c3e6cfa1667fdc7e17b0210f94ca0f74b014ecf14bb545cf503",
+      "bytes": 154832440,
+      "files": 213
+    }
+  },
+  "checks": {
+    "privacy.json": "32dade08651c7500f82068d6f283f02b7f2d7a9e1dfe53ffd03eac1564f2902d",
+    "integration-checks.json": "90591c2d696a799d6d29ee48d9b7a097a310c2c0d977af9a05731b143f2e5902",
+    "citation-use.json": "17f0e28a474c86b968295a0553e28edacb65a41da69817f565ed78a38a767bb2",
+    "zip-rebuild.json": "6e2e4b5619c9960b6bda1a035abb5aff74e17feb0e4b2f54e92fe090cf54f5b9",
+    "visual-review.json": "ed0475b85496282970b24e326d93a81d7e2aa40b625afecaaf200d2d89c454bc",
+    "source-export-files.json": "2238edfe7fb218bba52bb3198f434aeb16f30397b65759734b128e2b5fd6d223",
+    "main-fonts.json": "b84d1851dc7f2ded5c10ce7bad4494162b4c4ccc570780ca242ce11659ed8673",
+    "supplement-fonts.json": "e762e2c47a9917c7de3fee9027f868b2a9a1b5c77718802d7ab0c68e1741eed1"
+  },
+  "scientific_review_sha256": "f53262db8b47e60701101bbd131b8786b5167250be7dd63f09d56a4485d593f2",
+  "preserved_initial_findings": "Initial supplemental page-12 0.50839 pt vertical overflow retained in build-initial-layout; local table row spacing corrected and both final logs clean."
+}

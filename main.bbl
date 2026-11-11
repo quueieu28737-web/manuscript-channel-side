@@ -218,13 +218,6 @@ E.~Rescorla, ``The transport layer security (tls) protocol version 1.3,'' RFC
   \url{https://www.rfc-editor.org/rfc/rfc8446.html}
 \BIBentrySTDinterwordspacing
 
-\bibitem{wang2026fpagent}
-\BIBentryALTinterwordspacing
-E.~Wang, Z.~Shafiq, and Y.~Vekaria, ``{FP-Agent}: Fingerprinting {AI} browsing
-  agents,'' \emph{arXiv preprint arXiv:2605.01247v1}, 2026. [Online].
-  Available: \url{https://arxiv.org/abs/2605.01247v1}
-\BIBentrySTDinterwordspacing
-
 \bibitem{uitraces2026}
 \BIBentryALTinterwordspacing
 W.~Lugoloobi, S.~Marro, J.~Magomere, J.~Wright, and C.~Russell, ``Known by
@@ -238,15 +231,6 @@ W.~Lugoloobi, S.~Marro, J.~Magomere, J.~Wright, and C.~Russell, ``Known by
 J.~Roh, E.~Bagdasarian, H.~Haddadi, and A.~S. Shamsabadi, ``{SPILLage}: Agentic
   oversharing on the web,'' \emph{arXiv preprint arXiv:2602.13516v1}, 2026.
   [Online]. Available: \url{https://arxiv.org/abs/2602.13516v1}
-\BIBentrySTDinterwordspacing
-
-\bibitem{huang2026whispering}
-\BIBentryALTinterwordspacing
-K.~Huang, Y.~Wei, W.~Wu, T.~Zhang, Z.~Yang, and L.~Zhou, ``Whispering agents:
-  An event-driven covert communication protocol for the internet of agents,''
-  \emph{arXiv preprint arXiv:2508.02188v1}, 2025, inspected full-text version;
-  later publication metadata is recorded separately in the source ledger.
-  [Online]. Available: \url{https://arxiv.org/abs/2508.02188v1}
 \BIBentrySTDinterwordspacing
 
 \bibitem{chen2010web}
@@ -362,13 +346,6 @@ C.~Song, D.~D.~M. Mekala, H.~Wang, and R.~P. Martin, ``Redefining website
   \url{https://www.petsymposium.org/popets/2026/popets-2026-0101.php}
 \BIBentrySTDinterwordspacing
 
-\bibitem{xu2026agentness}
-\BIBentryALTinterwordspacing
-Z.~Xu and X.~Li, ``Proof-of-agentness: Towards verifying agents on the web,''
-  \emph{arXiv preprint arXiv:2610.35288v1}, 2026. [Online]. Available:
-  \url{https://arxiv.org/abs/2610.35288v1}
-\BIBentrySTDinterwordspacing
-
 \bibitem{zavrak2026content}
 \BIBentryALTinterwordspacing
 S.~Zavrak, ``Content-aware attack detection in {LLM} agent tool-call traffic:
@@ -472,6 +449,45 @@ M.~A. Ferrag, N.~Tihanyi, D.~Hamouda, L.~Maglaras, and M.~Debbah, ``From prompt
 \BIBentryALTinterwordspacing
 {LangChain}, ``{LangGraph}, version 1.0.3,'' Software release, November 10,
   2025. [Online]. Available: \url{https://pypi.org/project/langgraph/1.0.3/}
+\BIBentrySTDinterwordspacing
+
+\bibitem{debenedetti2025camel}
+\BIBentryALTinterwordspacing
+E.~Debenedetti, I.~Shumailov, T.~Fan, J.~Hayes, N.~Carlini, D.~Fabian, C.~Kern,
+  C.~Shi, A.~Terzis, and F.~Tram{\`e}r, ``Defeating prompt injections by
+  design,'' 2025, version 2. [Online]. Available:
+  \url{https://arxiv.org/abs/2503.18813v2}
+\BIBentrySTDinterwordspacing
+
+\bibitem{costa2025fides}
+\BIBentryALTinterwordspacing
+M.~Costa, B.~K{\"o}pf, A.~Kolluri, A.~Paverd, M.~Russinovich, A.~Salem,
+  S.~Tople, L.~Wutschitz, and S.~Zanella-B{\'e}guelin, ``Securing {AI} agents
+  with information-flow control,'' 2025, version 2. [Online]. Available:
+  \url{https://arxiv.org/abs/2505.23643v2}
+\BIBentrySTDinterwordspacing
+
+\bibitem{shi2025progent}
+\BIBentryALTinterwordspacing
+T.~Shi, J.~He, Z.~Wang, H.~Li, L.~Wu, W.~Guo, and D.~Song, ``Progent:
+  Programmable privilege control for {LLM} agents,'' 2025, version 2. [Online].
+  Available: \url{https://arxiv.org/abs/2504.11703v2}
+\BIBentrySTDinterwordspacing
+
+\bibitem{yao2024taubench}
+\BIBentryALTinterwordspacing
+S.~Yao, N.~Shinn, P.~Razavi, and K.~Narasimhan, ``$\tau$-bench: A benchmark for
+  tool-agent-user interaction in real-world domains,'' 2024, version 1.
+  [Online]. Available: \url{https://arxiv.org/abs/2406.12045v1}
+\BIBentrySTDinterwordspacing
+
+\bibitem{debenedetti2024agentdojo}
+\BIBentryALTinterwordspacing
+E.~Debenedetti, J.~Zhang, M.~Balunovi{\'c}, L.~Beurer-Kellner, M.~Fischer, and
+  F.~Tram{\`e}r, ``{AgentDojo}: A dynamic environment to evaluate prompt
+  injection attacks and defenses for {LLM} agents,'' in \emph{Advances in
+  Neural Information Processing Systems}, vol.~37, 2024. [Online]. Available:
+  \url{https://proceedings.neurips.cc/paper_files/paper/2024/hash/97091a5177d8dc64b1da8bf3e1f6fb54-Abstract-Datasets_and_Benchmarks_Track.html}
 \BIBentrySTDinterwordspacing
 
 \end{thebibliography}

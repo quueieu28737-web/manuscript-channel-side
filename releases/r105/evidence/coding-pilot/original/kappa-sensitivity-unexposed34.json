@@ -1,0 +1,61 @@
+{
+ "excluded_exposed_settings": [
+  "ANT-risk",
+  "AP-identity",
+  "ATR-main",
+  "CB-task",
+  "CHT-blocking",
+  "FAY-network",
+  "HP-field",
+  "MARK-protocol",
+  "PF-session",
+  "PT-metadata"
+ ],
+ "n": 34,
+ "failure_status|C1-C3": {
+  "kappa": 0.785,
+  "ci95": [
+   0.601,
+   0.954
+  ],
+  "agreement": 0.853
+ },
+ "failure_status|C1-C2": {
+  "kappa": 0.522,
+  "ci95": [
+   0.294,
+   0.732
+  ],
+  "agreement": 0.676
+ },
+ "failure_status|C2-C3": {
+  "kappa": 0.687,
+  "ci95": [
+   0.476,
+   0.868
+  ]
+ },
+ "outcome_status|C1-C3": {
+  "kappa": 0.433,
+  "ci95": [
+   0.204,
+   0.632
+  ],
+  "agreement": 0.588
+ },
+ "outcome_status|C1-C2": {
+  "kappa": 0.205,
+  "ci95": [
+   -0.005,
+   0.406
+  ],
+  "agreement": 0.412
+ },
+ "outcome_status|C2-C3": {
+  "kappa": 0.579,
+  "ci95": [
+   0.365,
+   0.779
+  ]
+ }
+}
