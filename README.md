@@ -1,8 +1,8 @@
-# Latest manuscript: R106 Agent communication side-channel SoK
+# Latest manuscript: R107 Agent communication side-channel SoK
 
 - [Main PDF](main.pdf) | [Supplement PDF](supplement.pdf)
 - [Compilable LaTeX ZIP](latex-source.zip)
-- [R106 change summary and source](releases/r106/README.md)
+- [R107 changes](releases/r107/README.md) · [R106 changes](releases/r106/README.md)
 - [44-setting evidence matrix (unchanged since R105)](releases/r105/evidence/field-map/evidence-matrix.csv)
 
 R106 is a main-text revision of R105 that responds to an S&P-style review. It

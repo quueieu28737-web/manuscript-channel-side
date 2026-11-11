@@ -1,0 +1,19 @@
+\begin{table*}[t]\centering\small
+\caption{Business completion and resource accounting. All-run and held-out success use distinct denominators. Remaining columns describe the held-out population. Median and P95 task times start at worker admission and exclude worker queueing. Session seconds/task amortize complete session time, including setup, background and idle margins; they are not per-task response latencies. Bytes count each packet once per session. Local and hosted absolute costs belong to different systems.}\label{tab:randomized-costs}
+\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\textwidth}{@{}lYrrrrrrr@{}}\toprule
+Executor & Condition & \shortstack{All\\success} & \shortstack{Test\\success} & \shortstack{Median\\s} & \shortstack{P95\\s} & \shortstack{Session\\s/task} & \shortstack{T\\KiB/task} & \shortstack{M\\KiB/task} \\\midrule
+Qwen3:8B & Full & 311/312 & 119/120 & 3.20 & 8.06 & 7.14 & 152.4 & 13.1 \\
+Qwen3:8B & Projected & 311/312 & 119/120 & 3.04 & 7.89 & 6.91 & 151.4 & 10.2 \\
+Qwen3:8B & Dedicated & 311/312 & 119/120 & 11.01 & 23.40 & 6.76 & 173.8 & 14.2 \\
+Qwen3:8B & Shared & 311/312 & 119/120 & 9.61 & 31.78 & 6.91 & 144.6 & 12.7 \\
+Qwen3:8B & Joint & 311/312 & 119/120 & 9.22 & 26.73 & 6.82 & 149.0 & 247.6 \\
+Llama3.1:8B & Full & 309/312 & 117/120 & 6.84 & 9.62 & 9.82 & 165.4 & 13.1 \\
+Llama3.1:8B & Projected & 306/312 & 118/120 & 6.82 & 9.74 & 9.94 & 167.4 & 10.3 \\
+Llama3.1:8B & Dedicated & 309/312 & 117/120 & 21.38 & 29.28 & 9.22 & 179.7 & 14.2 \\
+Llama3.1:8B & Shared & 309/312 & 117/120 & 20.94 & 28.99 & 9.04 & 151.3 & 12.7 \\
+Llama3.1:8B & Joint & 309/312 & 117/120 & 23.07 & 32.50 & 9.42 & 161.0 & 286.2 \\
+Hosted alias & Full & 92/96 & 46/48 & 14.49 & 33.24 & 20.76 & 256.1 & 108.5 \\
+Hosted alias & Projected & 95/96 & 47/48 & 13.83 & 28.93 & 20.42 & 253.6 & 101.1 \\
+\bottomrule\end{tabularx}
+\end{table*}
