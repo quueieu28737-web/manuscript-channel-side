@@ -1,0 +1,45 @@
+setting_id,access_class,protection,named_transfer,open_world,failure_status,outcome_status,note
+AP-identity,transit,N,N,Y,partly_reported,partly_reported,Discards text-only traces <500 chars and low-function GPTs; capability trigger is a retention rule not task success
+AP-behavior,transit,N,N,N,partly_reported,partly_reported,Same collection filter; capability label not task correctness
+AP-persona,derived_preference,N,N,N,not_applicable,not_applicable,Preference-data analysis; no execution population
+WRA-prompt,transit,N,N,N,not_located,not_located,No failed-run treatment located; no task outcome for prompt recovery
+WRA-persona,transit,N,N,N,not_located,not_located,As above
+WRA-decoy,transit,Y,N,N,not_located,not_located,Decoy runs; no utility or failure accounting for this condition
+WRA-visibility,transit,Y,N,N,not_located,reported,LLM-rated report utility reported for visibility sweep
+CG-workflow,transit,N,N,N,not_located,not_located,Recorded workflows; no failure treatment located
+CG-composition,transit,N,Y,N,not_located,not_located,As above
+CG-MCP,transit,N,N,N,not_located,not_located,As above
+CG-transform,transit,Y,N,N,not_located,not_located,Capture transformations; no execution outcome
+CG-live,transit,Y,N,N,not_located,not_located,Live OHTTP; bytes/latency only
+CG-active,active,N,N,N,not_located,not_located,Attack budget; no execution outcome
+CB-task,transit,N,N,N,reported,reported,Success rate reported; only successful runs with valid captures retained; capture faults re-executed
+CB-topology,transit,N,Y,N,reported,reported,Same collection
+CB-size-excluded,transit,N,N,N,reported,reported,Same collection
+CB-partial,transit,N,N,N,reported,reported,Same collection
+PF-session,transit,N,N,N,partly_reported,partly_reported,Trailing-segment discard; optional out-of-character discard; persona adherence check only
+PF-pooled,transit,N,N,N,partly_reported,partly_reported,As above
+PF-open,transit,N,N,Y,partly_reported,partly_reported,As above
+MARK-protocol,recipient,N,N,N,reported,not_located,First-pass trials; explicitly no retry; task completion deliberately not measured
+MARK-combined,recipient,N,N,N,reported,not_located,As above
+FAY-network,recipient,N,N,N,reported,partly_reported,Failed visits excluded (1449 initiated -> 1385 associated); visit success via logs
+FAY-combined,recipient,N,N,N,reported,partly_reported,As above
+FAY-blocking,active,Y,N,N,reported,reported,Per-agent success/blocked/timeout outcomes
+AT-choice,active,N,N,N,reported,partly_reported,Failed sessions excluded and re-run; null outcomes defined; task completion not the endpoint
+ANT-scenario,transit,N,N,N,reported,not_located,Refusal-only episodes excluded; no task success measure located
+ANT-model-scope,transit,N,N,N,reported,not_located,As above
+ANT-risk,transit,N,N,N,reported,not_located,As above
+ANT-stage,transit,N,N,N,reported,not_located,Segments without usable packets excluded
+CHT-lure,active,N,N,N,not_located,partly_reported,Lure following shown per model; no failure accounting
+CHT-password,active,N,N,N,not_located,partly_reported,Output comparison only
+CHT-blocking,active,Y,N,N,not_located,reported,DSR judged by PurpleLlama judge
+PT-metadata,recipient,N,N,N,reported,not_located,Rejected draws resampled; failed generations scored incorrect; user-task completion not located
+PT-content,recipient,N,N,N,reported,not_located,As above
+ATR-main,active,Y,N,N,partly_reported,not_applicable,Parser failures are the signal; session-level failure treatment not stated
+ATR-budget,active,Y,N,N,partly_reported,not_applicable,As above
+ATR-obfuscation,active,Y,N,N,partly_reported,not_applicable,As above
+TR-within,recipient,N,N,N,reported,partly_reported,Crashed/no-command sessions discarded; flags/turn limit recorded
+TR-scaffold,recipient,N,Y,N,reported,partly_reported,As above
+TR-proprietary,recipient,N,Y,N,partly_reported,partly_reported,Separate scaffold population; exclusion not restated
+HTTP-signature,recipient,N,N,N,not_located,not_located,Descriptive signatures; retrieval success not measured
+HP-calibration,active,N,N,N,not_located,not_applicable,Detector calibration
+HP-field,active,N,N,N,not_located,not_applicable,Field candidates without labels

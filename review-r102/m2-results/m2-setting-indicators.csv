@@ -1,0 +1,45 @@
+setting,source,publication,link,protection,purpose,named_deployment_transfer,open_world,deployment_prevalence,supplied_boundary,adaptation_located,matched_utility,defense_cost,failure,outcome,policy
+AP-identity,agentprint2025,preprint,C (client link),False,no_protection_comparison,False,True,False,True,False,False,False,reported,partly_reported,not_applicable
+AP-behavior,agentprint2025,preprint,C (client link),False,no_protection_comparison,False,False,False,True,False,False,False,reported,reported,not_applicable
+AP-persona,agentprint2025,preprint,recipient / active endpoint,False,no_protection_comparison,False,False,False,True,False,False,False,not_applicable,not_applicable,not_applicable
+WRA-prompt,jeong2026wra,published,T (tool egress),False,no_protection_comparison,False,False,False,True,False,False,False,not_located,not_located,not_applicable
+WRA-persona,jeong2026wra,published,T (tool egress),False,no_protection_comparison,False,False,False,True,False,False,False,not_located,not_located,not_applicable
+WRA-decoy,jeong2026wra,published,T (tool egress),True,query_workflow_privacy,False,False,False,True,False,False,False,not_located,not_located,not_applicable
+WRA-visibility,jeong2026wra,published,T (tool egress),True,query_workflow_privacy,False,False,False,True,False,True,False,not_located,reported,not_applicable
+CG-workflow,dangol2026workflow,preprint,A (inter-agent),False,no_protection_comparison,False,False,False,True,False,False,False,not_located,not_located,not_applicable
+CG-composition,dangol2026workflow,preprint,A (inter-agent),False,no_protection_comparison,True,False,False,True,False,False,False,not_located,not_located,not_applicable
+CG-MCP,dangol2026workflow,preprint,T (tool egress),False,no_protection_comparison,False,False,False,True,False,False,False,not_located,not_located,not_applicable
+CG-transform,dangol2026workflow,preprint,A (inter-agent),True,query_workflow_privacy,False,False,False,True,True,False,True,not_applicable,not_applicable,not_applicable
+CG-live,dangol2026workflow,preprint,A (inter-agent),True,query_workflow_privacy,False,False,False,True,True,False,True,not_located,not_located,not_applicable
+CG-active,dangol2026workflow,preprint,A (inter-agent),False,no_protection_comparison,False,False,False,True,False,False,False,not_located,reported,reported
+CB-task,pouryousef2026traffic,preprint,M (model link),False,no_protection_comparison,False,False,False,True,False,False,False,reported,partly_reported,not_applicable
+CB-topology,pouryousef2026traffic,preprint,M (model link),False,no_protection_comparison,True,False,False,True,False,False,False,reported,partly_reported,not_applicable
+CB-size-excluded,pouryousef2026traffic,preprint,M (model link),False,no_protection_comparison,False,False,False,True,False,False,False,reported,partly_reported,not_applicable
+CB-partial,pouryousef2026traffic,preprint,M (model link),False,no_protection_comparison,False,False,False,True,False,False,False,reported,partly_reported,not_applicable
+PF-session,song2026personafingerprint,preprint,T (tool egress),False,no_protection_comparison,False,False,False,True,False,False,False,partly_reported,not_applicable,reported
+PF-pooled,song2026personafingerprint,preprint,T (tool egress),False,no_protection_comparison,False,False,False,False,False,False,False,partly_reported,not_applicable,reported
+PF-open,song2026personafingerprint,preprint,T (tool egress),False,no_protection_comparison,False,True,False,True,False,False,False,partly_reported,not_applicable,reported
+MARK-protocol,kang2026whoseagent,preprint,recipient / active endpoint,False,no_protection_comparison,False,False,False,True,False,False,False,reported,partly_reported,not_applicable
+MARK-combined,kang2026whoseagent,preprint,recipient / active endpoint,False,no_protection_comparison,False,False,False,True,False,False,False,reported,partly_reported,not_applicable
+FAY-network,fayolle2026webagents,preprint,recipient / active endpoint,False,no_protection_comparison,False,False,False,True,False,False,False,reported,reported,reported
+FAY-combined,fayolle2026webagents,preprint,recipient / active endpoint,False,no_protection_comparison,False,False,False,True,False,False,False,reported,reported,reported
+FAY-blocking,fayolle2026webagents,preprint,recipient / active endpoint,True,adversarial_agent_blocking,False,False,False,True,True,False,False,reported,reported,reported
+AT-choice,shahriar2026agenttell,preprint,recipient / active endpoint,False,no_protection_comparison,False,False,False,True,False,False,False,reported,reported,reported
+ANT-scenario,li2026ant,preprint,combined egress,False,no_protection_comparison,False,False,False,True,False,False,False,partly_reported,partly_reported,not_located
+ANT-model-scope,li2026ant,preprint,M (model link),False,no_protection_comparison,False,False,False,True,False,False,False,partly_reported,partly_reported,not_located
+ANT-risk,li2026ant,preprint,combined egress,False,no_protection_comparison,False,False,False,True,False,False,False,partly_reported,not_applicable,not_located
+ANT-stage,li2026ant,preprint,combined egress,False,no_protection_comparison,False,False,False,True,False,False,False,partly_reported,reported,not_located
+CHT-lure,ayzenshteyn2025cheat,published,recipient / active endpoint,False,no_protection_comparison,False,False,False,True,False,False,False,not_located,partly_reported,reported
+CHT-password,ayzenshteyn2025cheat,published,recipient / active endpoint,False,no_protection_comparison,False,False,False,True,False,False,False,not_located,reported,reported
+CHT-blocking,ayzenshteyn2025cheat,published,recipient / active endpoint,True,adversarial_agent_blocking,False,False,False,True,True,False,False,reported,reported,reported
+PT-metadata,duan2026privacytrace,preprint,recipient / active endpoint,False,no_protection_comparison,False,False,False,True,False,False,False,partly_reported,partly_reported,reported
+PT-content,duan2026privacytrace,preprint,recipient / active endpoint,False,no_protection_comparison,False,False,False,True,False,False,False,partly_reported,partly_reported,reported
+ATR-main,zhao2026agenttrace,inspected preprint; see corpus identity table,recipient / active endpoint,True,identity_obfuscation,False,False,False,True,False,False,False,reported,reported,not_applicable
+ATR-budget,zhao2026agenttrace,inspected preprint; see corpus identity table,recipient / active endpoint,True,identity_obfuscation,False,False,False,True,False,False,False,reported,reported,not_applicable
+ATR-obfuscation,zhao2026agenttrace,inspected preprint; see corpus identity table,recipient / active endpoint,True,identity_obfuscation,False,False,False,True,False,False,False,reported,reported,not_applicable
+TR-within,ediga2026trace,inspected preprint; see corpus identity table,recipient / active endpoint,False,no_protection_comparison,False,False,False,True,False,False,False,reported,partly_reported,not_applicable
+TR-scaffold,ediga2026trace,inspected preprint; see corpus identity table,recipient / active endpoint,False,no_protection_comparison,True,False,False,True,False,False,False,reported,partly_reported,not_applicable
+TR-proprietary,ediga2026trace,inspected preprint; see corpus identity table,recipient / active endpoint,False,no_protection_comparison,True,False,False,True,False,False,False,reported,partly_reported,not_applicable
+HTTP-signature,borysenko2026http,inspected preprint; see corpus identity table,recipient / active endpoint,False,no_protection_comparison,False,False,False,True,False,False,False,partly_reported,partly_reported,not_applicable
+HP-calibration,reworr2024honeypot,inspected preprint; see corpus identity table,recipient / active endpoint,False,no_protection_comparison,False,False,False,True,False,False,False,partly_reported,partly_reported,not_applicable
+HP-field,reworr2024honeypot,inspected preprint; see corpus identity table,recipient / active endpoint,False,no_protection_comparison,False,False,False,True,False,False,False,not_located,partly_reported,not_applicable

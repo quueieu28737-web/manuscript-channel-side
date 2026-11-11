@@ -1,0 +1,146 @@
+\clearpage\onecolumn
+\small\setlength{\tabcolsep}{3pt}
+\begin{longtable}{@{}P{.14\textwidth}P{.13\textwidth}P{.05\textwidth}P{.21\textwidth}rrrrr@{}}
+\caption{Complete event results at the primary IoU .5. P, R and F1 use one-to-one task-instance matching. Empty FP counts false events in empty test sessions. The artifact additionally provides .3/.7 overlap results, validation choices, per-session counts and uncertainty.}\label{tab:randomized-all-events}\\
+\toprule
+Executor & Condition & View & Detector & P & R & F1 & FP/hour & Empty FP \\\midrule\endfirsthead
+\multicolumn{9}{l}{\textit{Table \thetable{} continued}}\\
+\toprule
+Executor & Condition & View & Detector & P & R & F1 & FP/hour & Empty FP \\\midrule\endhead
+\bottomrule\endfoot
+Qwen3:8B & Dedicated & T & LR & 0.080 & 0.292 & 0.125 & 1788.5 & 15 \\
+Qwen3:8B & Dedicated & T & RF & 0.051 & 0.317 & 0.088 & 3119.8 & 70 \\
+Qwen3:8B & Dedicated & T & gap & 0.060 & 0.058 & 0.059 & 483.7 & 16 \\
+Qwen3:8B & Dedicated & M & LR & 0.028 & 0.250 & 0.051 & 4606.5 & 3 \\
+Qwen3:8B & Dedicated & M & RF & 0.079 & 0.317 & 0.127 & 1961.5 & 6 \\
+Qwen3:8B & Dedicated & M & gap & 0.041 & 0.075 & 0.053 & 923.1 & 4 \\
+Qwen3:8B & Dedicated & T+M & LR & 0.033 & 0.300 & 0.059 & 4726.3 & 3 \\
+Qwen3:8B & Dedicated & T+M & RF & 0.139 & 0.392 & 0.205 & 1291.4 & 0 \\
+Qwen3:8B & Dedicated & T+M & gap & 0.056 & 0.042 & 0.048 & 372.8 & 16 \\
+Qwen3:8B & Full & T & LR & 0.011 & 0.033 & 0.016 & 1563.4 & 2 \\
+Qwen3:8B & Full & T & RF & 0.009 & 0.142 & 0.017 & 7673.9 & 60 \\
+Qwen3:8B & Full & T & gap & 0.006 & 0.025 & 0.010 & 2118.1 & 30 \\
+Qwen3:8B & Full & M & LR & 0.054 & 0.358 & 0.094 & 3168.7 & 0 \\
+Qwen3:8B & Full & M & RF & 0.022 & 0.317 & 0.041 & 7136.0 & 0 \\
+Qwen3:8B & Full & M & gap & 0.005 & 0.008 & 0.006 & 882.5 & 4 \\
+Qwen3:8B & Full & T+M & LR & 0.049 & 0.383 & 0.087 & 3748.7 & 0 \\
+Qwen3:8B & Full & T+M & RF & 0.036 & 0.408 & 0.067 & 5471.7 & 0 \\
+Qwen3:8B & Full & T+M & gap & 0.011 & 0.025 & 0.015 & 1159.9 & 23 \\
+Qwen3:8B & Projected & T & LR & 0.007 & 0.067 & 0.013 & 4986.1 & 56 \\
+Qwen3:8B & Projected & T & RF & 0.010 & 0.117 & 0.018 & 6019.9 & 40 \\
+Qwen3:8B & Projected & T & gap & 0.000 & 0.000 & 0.000 & 1120.6 & 23 \\
+Qwen3:8B & Projected & M & LR & 0.047 & 0.208 & 0.077 & 2189.0 & 0 \\
+Qwen3:8B & Projected & M & RF & 0.003 & 0.033 & 0.006 & 5355.3 & 0 \\
+Qwen3:8B & Projected & M & gap & 0.015 & 0.025 & 0.019 & 833.9 & 4 \\
+Qwen3:8B & Projected & T+M & LR & 0.045 & 0.300 & 0.079 & 3283.6 & 0 \\
+Qwen3:8B & Projected & T+M & RF & 0.020 & 0.192 & 0.036 & 4881.9 & 2 \\
+Qwen3:8B & Projected & T+M & gap & 0.008 & 0.017 & 0.010 & 1133.6 & 23 \\
+Qwen3:8B & Shared & T & LR & 0.037 & 0.217 & 0.064 & 2901.0 & 86 \\
+Qwen3:8B & Shared & T & RF & 0.049 & 0.367 & 0.087 & 3704.4 & 77 \\
+Qwen3:8B & Shared & T & gap & 0.073 & 0.025 & 0.037 & 165.0 & 9 \\
+Qwen3:8B & Shared & M & LR & 0.043 & 0.367 & 0.077 & 4234.2 & 16 \\
+Qwen3:8B & Shared & M & RF & 0.080 & 0.375 & 0.132 & 2245.2 & 0 \\
+Qwen3:8B & Shared & M & gap & 0.056 & 0.092 & 0.069 & 812.1 & 4 \\
+Qwen3:8B & Shared & T+M & LR & 0.072 & 0.350 & 0.119 & 2349.4 & 21 \\
+Qwen3:8B & Shared & T+M & RF & 0.043 & 0.400 & 0.077 & 4668.5 & 2 \\
+Qwen3:8B & Shared & T+M & gap & 0.023 & 0.050 & 0.031 & 1129.1 & 23 \\
+Qwen3:8B & Joint & T & LR & 0.022 & 0.300 & 0.041 & 6978.7 & 138 \\
+Qwen3:8B & Joint & T & RF & 0.037 & 0.333 & 0.067 & 4555.7 & 82 \\
+Qwen3:8B & Joint & T & gap & 0.034 & 0.025 & 0.029 & 373.8 & 16 \\
+Qwen3:8B & Joint & M & LR & 0.121 & 0.375 & 0.183 & 1433.6 & 7 \\
+Qwen3:8B & Joint & M & RF & 0.092 & 0.408 & 0.151 & 2115.2 & 0 \\
+Qwen3:8B & Joint & M & gap & 0.049 & 0.017 & 0.025 & 171.5 & 4 \\
+Qwen3:8B & Joint & T+M & LR & 0.070 & 0.375 & 0.117 & 2642.8 & 0 \\
+Qwen3:8B & Joint & T+M & RF & 0.123 & 0.400 & 0.188 & 1508.3 & 3 \\
+Qwen3:8B & Joint & T+M & gap & 0.015 & 0.033 & 0.021 & 1156.5 & 23 \\
+Qwen3:8B & Dedicated & none & all-active & 0.028 & 0.033 & 0.030 & 621.3 & 24 \\
+Qwen3:8B & Dedicated & none & training-presence-prior & 0.028 & 0.017 & 0.021 & 310.6 & 12 \\
+Qwen3:8B & Full & none & all-active & 0.000 & 0.000 & 0.000 & 605.2 & 24 \\
+Qwen3:8B & Full & none & training-presence-prior & 0.000 & 0.000 & 0.000 & 302.6 & 12 \\
+Qwen3:8B & Projected & none & all-active & 0.000 & 0.000 & 0.000 & 625.4 & 24 \\
+Qwen3:8B & Projected & none & training-presence-prior & 0.000 & 0.000 & 0.000 & 312.7 & 12 \\
+Qwen3:8B & Shared & none & all-active & 0.035 & 0.042 & 0.038 & 603.6 & 24 \\
+Qwen3:8B & Shared & none & training-presence-prior & 0.056 & 0.033 & 0.042 & 295.3 & 12 \\
+Qwen3:8B & Joint & none & all-active & 0.035 & 0.042 & 0.038 & 611.2 & 24 \\
+Qwen3:8B & Joint & none & training-presence-prior & 0.056 & 0.033 & 0.042 & 299.0 & 12 \\
+\pagebreak
+Llama3.1:8B & Dedicated & T & LR & 0.086 & 0.267 & 0.130 & 1105.9 & 61 \\
+Llama3.1:8B & Dedicated & T & RF & 0.061 & 0.425 & 0.106 & 2569.6 & 83 \\
+Llama3.1:8B & Dedicated & T & gap & 0.070 & 0.025 & 0.037 & 130.1 & 9 \\
+Llama3.1:8B & Dedicated & M & LR & 0.194 & 0.358 & 0.251 & 582.2 & 2 \\
+Llama3.1:8B & Dedicated & M & RF & 0.140 & 0.450 & 0.213 & 1079.9 & 0 \\
+Llama3.1:8B & Dedicated & M & gap & 0.143 & 0.050 & 0.074 & 117.1 & 4 \\
+Llama3.1:8B & Dedicated & T+M & LR & 0.169 & 0.425 & 0.242 & 813.2 & 1 \\
+Llama3.1:8B & Dedicated & T+M & RF & 0.144 & 0.400 & 0.212 & 927.0 & 0 \\
+Llama3.1:8B & Dedicated & T+M & gap & 0.055 & 0.050 & 0.052 & 338.3 & 16 \\
+Llama3.1:8B & Full & T & LR & 0.027 & 0.158 & 0.046 & 2080.6 & 60 \\
+Llama3.1:8B & Full & T & RF & 0.008 & 0.142 & 0.015 & 6593.2 & 56 \\
+Llama3.1:8B & Full & T & gap & 0.000 & 0.000 & 0.000 & 2083.7 & 33 \\
+Llama3.1:8B & Full & M & LR & 0.082 & 0.650 & 0.145 & 2676.4 & 0 \\
+Llama3.1:8B & Full & M & RF & 0.035 & 0.492 & 0.066 & 4906.7 & 0 \\
+Llama3.1:8B & Full & M & gap & 0.000 & 0.000 & 0.000 & 128.3 & 4 \\
+Llama3.1:8B & Full & T+M & LR & 0.073 & 0.633 & 0.130 & 2969.7 & 0 \\
+Llama3.1:8B & Full & T+M & RF & 0.037 & 0.492 & 0.069 & 4680.6 & 1 \\
+Llama3.1:8B & Full & T+M & gap & 0.013 & 0.008 & 0.010 & 226.1 & 16 \\
+Llama3.1:8B & Projected & T & LR & 0.022 & 0.142 & 0.038 & 2316.9 & 67 \\
+Llama3.1:8B & Projected & T & RF & 0.007 & 0.125 & 0.013 & 6718.4 & 51 \\
+Llama3.1:8B & Projected & T & gap & 0.000 & 0.000 & 0.000 & 2084.6 & 33 \\
+Llama3.1:8B & Projected & M & LR & 0.040 & 0.142 & 0.062 & 1245.9 & 0 \\
+Llama3.1:8B & Projected & M & RF & 0.009 & 0.167 & 0.017 & 6600.8 & 0 \\
+Llama3.1:8B & Projected & M & gap & 0.000 & 0.000 & 0.000 & 1695.4 & 4 \\
+Llama3.1:8B & Projected & T+M & LR & 0.037 & 0.242 & 0.065 & 2250.5 & 0 \\
+Llama3.1:8B & Projected & T+M & RF & 0.023 & 0.350 & 0.044 & 5285.4 & 0 \\
+Llama3.1:8B & Projected & T+M & gap & 0.000 & 0.000 & 0.000 & 2081.6 & 33 \\
+Llama3.1:8B & Shared & T & LR & 0.114 & 0.350 & 0.171 & 1088.6 & 63 \\
+Llama3.1:8B & Shared & T & RF & 0.059 & 0.433 & 0.103 & 2774.5 & 91 \\
+Llama3.1:8B & Shared & T & gap & 0.071 & 0.083 & 0.077 & 431.4 & 16 \\
+Llama3.1:8B & Shared & M & LR & 0.145 & 0.392 & 0.212 & 919.3 & 20 \\
+Llama3.1:8B & Shared & M & RF & 0.174 & 0.508 & 0.259 & 962.5 & 0 \\
+Llama3.1:8B & Shared & M & gap & 0.102 & 0.042 & 0.059 & 146.0 & 4 \\
+Llama3.1:8B & Shared & T+M & LR & 0.144 & 0.433 & 0.216 & 1025.5 & 17 \\
+Llama3.1:8B & Shared & T+M & RF & 0.186 & 0.375 & 0.249 & 653.8 & 0 \\
+Llama3.1:8B & Shared & T+M & gap & 0.059 & 0.017 & 0.026 & 106.2 & 9 \\
+Llama3.1:8B & Joint & T & LR & 0.107 & 0.250 & 0.150 & 795.8 & 47 \\
+Llama3.1:8B & Joint & T & RF & 0.066 & 0.483 & 0.117 & 2594.2 & 143 \\
+Llama3.1:8B & Joint & T & gap & 0.079 & 0.058 & 0.067 & 261.0 & 16 \\
+Llama3.1:8B & Joint & M & LR & 0.182 & 0.358 & 0.242 & 614.3 & 4 \\
+Llama3.1:8B & Joint & M & RF & 0.175 & 0.467 & 0.255 & 840.3 & 0 \\
+Llama3.1:8B & Joint & M & gap & 0.205 & 0.075 & 0.110 & 111.4 & 4 \\
+Llama3.1:8B & Joint & T+M & LR & 0.186 & 0.383 & 0.251 & 639.8 & 2 \\
+Llama3.1:8B & Joint & T+M & RF & 0.199 & 0.442 & 0.274 & 681.2 & 2 \\
+Llama3.1:8B & Joint & T+M & gap & 0.129 & 0.075 & 0.095 & 194.2 & 16 \\
+Llama3.1:8B & Dedicated & none & all-active & 0.083 & 0.100 & 0.091 & 429.3 & 24 \\
+Llama3.1:8B & Dedicated & none & training-presence-prior & 0.069 & 0.042 & 0.052 & 217.9 & 12 \\
+Llama3.1:8B & Full & none & all-active & 0.000 & 0.000 & 0.000 & 440.0 & 24 \\
+Llama3.1:8B & Full & none & training-presence-prior & 0.000 & 0.000 & 0.000 & 220.0 & 12 \\
+Llama3.1:8B & Projected & none & all-active & 0.000 & 0.000 & 0.000 & 434.4 & 24 \\
+Llama3.1:8B & Projected & none & training-presence-prior & 0.000 & 0.000 & 0.000 & 217.2 & 12 \\
+Llama3.1:8B & Shared & none & all-active & 0.090 & 0.108 & 0.098 & 434.8 & 24 \\
+Llama3.1:8B & Shared & none & training-presence-prior & 0.069 & 0.042 & 0.052 & 222.4 & 12 \\
+Llama3.1:8B & Joint & none & all-active & 0.111 & 0.133 & 0.121 & 407.4 & 24 \\
+Llama3.1:8B & Joint & none & training-presence-prior & 0.111 & 0.067 & 0.083 & 203.7 & 12 \\
+\pagebreak
+Hosted alias & Full & T & LR & 0.023 & 0.292 & 0.042 & 2193.0 & 21 \\
+Hosted alias & Full & T & RF & 0.001 & 0.021 & 0.001 & 4895.3 & 28 \\
+Hosted alias & Full & T & gap & 0.000 & 0.000 & 0.000 & 751.5 & 12 \\
+Hosted alias & Full & M & LR & 0.024 & 0.458 & 0.047 & 3164.8 & 1 \\
+Hosted alias & Full & M & RF & 0.008 & 0.208 & 0.015 & 4497.9 & 0 \\
+Hosted alias & Full & M & gap & 0.008 & 0.042 & 0.013 & 928.5 & 1 \\
+Hosted alias & Full & T+M & LR & 0.016 & 0.375 & 0.031 & 3974.1 & 1 \\
+Hosted alias & Full & T+M & RF & 0.011 & 0.292 & 0.021 & 4519.6 & 0 \\
+Hosted alias & Full & T+M & gap & 0.009 & 0.062 & 0.016 & 1156.1 & 13 \\
+Hosted alias & Projected & T & LR & 0.057 & 0.479 & 0.101 & 1406.8 & 12 \\
+Hosted alias & Projected & T & RF & 0.000 & 0.000 & 0.000 & 0.0 & 0 \\
+Hosted alias & Projected & T & gap & 0.000 & 0.000 & 0.000 & 1792.5 & 13 \\
+Hosted alias & Projected & M & LR & 0.027 & 0.354 & 0.050 & 2244.3 & 0 \\
+Hosted alias & Projected & M & RF & 0.002 & 0.062 & 0.004 & 4969.9 & 0 \\
+Hosted alias & Projected & M & gap & 0.062 & 0.042 & 0.050 & 110.2 & 1 \\
+Hosted alias & Projected & T+M & LR & 0.038 & 0.521 & 0.071 & 2321.5 & 0 \\
+Hosted alias & Projected & T+M & RF & 0.004 & 0.104 & 0.007 & 4712.7 & 1 \\
+Hosted alias & Projected & T+M & gap & 0.019 & 0.042 & 0.026 & 374.7 & 13 \\
+Hosted alias & Full & none & all-active & 0.009 & 0.021 & 0.013 & 386.6 & 12 \\
+Hosted alias & Full & none & training-presence-prior & 0.014 & 0.021 & 0.017 & 256.5 & 8 \\
+Hosted alias & Projected & none & all-active & 0.000 & 0.000 & 0.000 & 396.7 & 12 \\
+Hosted alias & Projected & none & training-presence-prior & 0.000 & 0.000 & 0.000 & 264.5 & 8 \\
+\end{longtable}
+\normalsize\clearpage\twocolumn

@@ -1,0 +1,14 @@
+{
+ "failure_status": {
+  "C1": "19/42",
+  "C2": "18/43",
+  "C3": "16/43",
+  "majority": "16/42 (no majority: 1)"
+ },
+ "outcome_status": {
+  "C1": "13/38",
+  "C2": "7/38",
+  "C3": "15/43",
+  "majority": "14/43 (no majority: 0)"
+ }
+}

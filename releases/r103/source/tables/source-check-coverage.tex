@@ -1,0 +1,51 @@
+\begin{table*}[!tp]\centering\footnotesize
+\caption{Coverage of the original eleven sources, including current publisher-text checks. Text columns name selected passages, not blanket full-paper verification. ``Not checked'' refers to this audit. No source experiment was independently rerun. Exact receipts, hashes and version-specific URLs are in \texttt{source-accountability/}.}
+\label{tab:check-coverage}
+\renewcommand{\arraystretch}{1.12}
+\begin{tabularx}{\textwidth}{@{}P{.19\textwidth}P{.29\textwidth}P{.27\textwidth}Y@{}}\toprule
+Source / inspected text & Text and numerical check & Implementation / episode data & Version check and remaining issue \\\midrule
+AgentPrint [preprint]\newline\href{https://arxiv.org/abs/2510.07176v1}{2510.07176v1}
+& App. B--D; identity F1 located; behavior-F1 and pool-count conflicts retained.
+& Author-bound training code and traffic data not located in the checked surfaces.
+& v1 pinned; no version diff. Occupation preference data are a separate endpoint. \\\addlinespace[4pt]
+WRA [published identity]\newline\href{https://www.usenix.org/system/files/usenixsecurity26-jeong.pdf}{USENIX final PDF}
+& Secs. 3--8; decoy/visibility results distinguished; persona-count conflict retained.
+& Selected ICL/configuration paths checked; full training-folder contents not checked.
+& Final decoy/visibility passages rechecked; no blanket version equivalence. Protected examples unresolved. \\\addlinespace[4pt]
+Communication graphs [preprint]\newline\href{https://arxiv.org/abs/2606.07150v3}{2606.07150v3}
+& Secs. 9.1, 9.3, 9.7--9.8, 9.12--9.13; composition, live scores and costs located.
+& Four live-evaluation files pinned by Git blob; refitting traced. Raw-capture experiment not rerun.
+& v3 pinned; no full v1--v3 diff. Stronger search and task utility not bound to live row. \\\addlinespace[4pt]
+Cloud-LLM benchmark [preprint]\newline\href{https://arxiv.org/abs/2609.31877v2}{2609.31877v2}
+& Secs. III--V; task and topology scores located; capture-total conflict retained.
+& Code and episode-dataset contents not independently checked.
+& Selected v1/v2 passages compared. Different feature protocols remain separate. \\\addlinespace[4pt]
+PersonaFingerprint [preprint]\newline\href{https://arxiv.org/abs/2605.15962v1}{2605.15962v1}
+& Secs. 2, 3.3, 5; session split and site scores checked; pooled-summary issue retained.
+& Code and episode-dataset contents not independently checked.
+& v1 pinned. A different published WFP title is not this paper's venue identity. \\\addlinespace[4pt]
+MARK [preprint]\newline\href{https://arxiv.org/abs/2606.20910v1}{2606.20910v1}
+& Secs. III, VI; Table IV; layer/combined F1 and first-pass selection located.
+& Code and episode-dataset contents not independently checked.
+& v1 pinned; no version diff. Combined browser view is not network-only. \\\addlinespace[4pt]
+Fayolle et al. [preprint]\newline\href{https://arxiv.org/abs/2606.30119v1}{2606.30119v1}
+& Secs. 3--8; visit endpoint and fingerprint/blocking populations distinguished.
+& Code and episode-dataset contents not independently checked.
+& v1 pinned; no version diff. Narrow visit success is not general task correctness. \\\addlinespace[4pt]
+AgentTell [preprint]\newline\href{https://arxiv.org/abs/2609.32915v1}{2609.32915v1}
+& Secs. 3.2, 4.3, 5; App. B.4, D.3; disclosure rule, failure and null outcome checked.
+& Code and episode-dataset contents not independently checked.
+& v1 pinned; no version diff. Loaded/cold is not guardrail-on/off. \\\addlinespace[4pt]
+ANT [preprint]\newline\href{https://arxiv.org/abs/2610.06514v1}{2610.06514v1}
+& Secs. 3--4; eight absolute M scores reconstructed; all thirteen risk-table count pairs reconciled.
+& Repository shell accessed; code/episode files not obtained. This does not show data absence.
+& v1 pinned; no version diff. Rounded display arithmetic is not raw-data reproduction. \\\addlinespace[4pt]
+CHeaT [published identity]\newline\href{https://www.usenix.org/system/files/usenixsecurity25-ayzenshteyn.pdf}{Official PDF excerpts}
+& Final Secs. 5.2, 6.2, 7 and Tables 3--4 rechecked; detection, prevention and adaptation distinguished.
+& Code and episode-dataset contents not independently checked.
+& Official 2025 identity retained; final PDF reacquired and selected sections checked in this audit. \\\addlinespace[4pt]
+PrivacyTrace [preprint]\newline\href{https://arxiv.org/abs/2610.41885v1}{2610.41885v1}
+& Secs. 3.2, 4.2, 5; Fig. 6; App. A.2; metadata/prior/argument scores located.
+& Code and episode-dataset contents not independently checked.
+& v1 pinned; no version diff. Negative metadata comparison retained. \\\bottomrule
+\end{tabularx}\end{table*}

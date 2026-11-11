@@ -1,0 +1,13 @@
+# Integration notes for the pulled draft
+
+The PR is preserved at `d42204c4a6b888c059220f5cf7ac79ee0666fa77`. The R101 release verifier passes. Re-running the submitted M2 rules in a separate output directory reproduces the submitted JSON exactly.
+
+The nine intervention settings combine four query/workflow-privacy comparisons, three identity-obfuscation settings and two adversarial-agent-blocking settings. The five model-link rows are four Cloud Benchmark settings plus ANT's model-view comparison. Their `0/5` is an inspected-setting count from two sources, not five independent studies or a statement about all possible model-link defenses. The base-rate flag is hard-coded in the submitted script; the actual matrix contains deployment priors marked unspecified/unestablished and three other kinds of prior (scenario, benchmark and synthetic-schema). They do not supply a deployment prevalence.
+
+The submitted reference replay encrypts data with TLS in MemoryBIO and reuses one connection per service. It does not send those observations over a network. Its `BA_CI` helper bootstraps mean correctness, whereas its point score is balanced accuracy; its train/test split is not class-stratified. Its strongest score is a maximum over test results, and its utility summaries use all runs while the attack score uses the test split. The LLM extension uses stratified fixtures, validation-only attack selection, balanced-accuracy intervals and matched test denominators. Original results are retained with their actual definitions.
+
+The LLM extension deliberately retains the original adverse state semantics. It is a controlled mechanism test, not evidence that WRA executes the synthetic retail writes, or an estimate of how often production decoys damage state. It tests planner choices and reactions that the reference program cannot supply.
+
+Three proposed `Violated` rows require narrower interpretation before manuscript integration. A single-link observer is one selected threat model, not a universal WF assumption. Transport-terminated and application-executed cover are different mechanisms. Fixed-position cover exposing its role is a weakness of that constructed schedule, not a refutation of a general premise that all cover is indistinguishable. The submitted 19 rows remain available as the proposed matrix; no universal-failure headline has been inserted into the manuscript.
+
+All new measurement statements will be based on the LLM run's own verified outcomes. Differences in protocol, planner, denominator and observation are stated beside the comparison with the reference replay.

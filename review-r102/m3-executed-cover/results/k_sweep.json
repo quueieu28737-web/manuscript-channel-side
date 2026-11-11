@@ -1,0 +1,90 @@
+[
+ {
+  "arm": "transport_drop",
+  "k": 1,
+  "BA_D2_LR": 0.7374942859548771,
+  "BA_D2_RF": 0.7427867247694834,
+  "BA_rule": 0.7617592642715797,
+  "goal_success": 1.0,
+  "state_integrity": 1.0,
+  "byte_ratio_vs_none": 1.2474144544602763,
+  "BA_best": 0.7617592642715797
+ },
+ {
+  "arm": "transport_drop",
+  "k": 2,
+  "BA_D2_LR": 0.5171626157094137,
+  "BA_D2_RF": 0.597698878844199,
+  "BA_rule": 0.606931467547231,
+  "goal_success": 1.0,
+  "state_integrity": 1.0,
+  "byte_ratio_vs_none": 1.494829425951112,
+  "BA_best": 0.606931467547231
+ },
+ {
+  "arm": "transport_drop",
+  "k": 3,
+  "BA_D2_LR": 0.474365906397926,
+  "BA_D2_RF": 0.5186527935665867,
+  "BA_rule": 0.4960708421299555,
+  "goal_success": 1.0,
+  "state_integrity": 1.0,
+  "byte_ratio_vs_none": 1.742244795157762,
+  "BA_best": 0.5186527935665867
+ },
+ {
+  "arm": "transport_drop",
+  "k": 4,
+  "BA_D2_LR": 0.4233041315553631,
+  "BA_D2_RF": 0.416330725924322,
+  "BA_rule": 0.4419296330380074,
+  "goal_success": 1.0,
+  "state_integrity": 1.0,
+  "byte_ratio_vs_none": 1.9896596075622717,
+  "BA_best": 0.4419296330380074
+ },
+ {
+  "arm": "live_write",
+  "k": 1,
+  "BA_D2_LR": 0.7374942859548771,
+  "BA_D2_RF": 0.7427867247694834,
+  "BA_rule": 0.7617592642715797,
+  "goal_success": 0.9116666666666666,
+  "state_integrity": 0.06416666666666666,
+  "byte_ratio_vs_none": 1.2474144544602763,
+  "BA_best": 0.7617592642715797
+ },
+ {
+  "arm": "live_write",
+  "k": 2,
+  "BA_D2_LR": 0.5171626157094137,
+  "BA_D2_RF": 0.597698878844199,
+  "BA_rule": 0.606931467547231,
+  "goal_success": 0.8483333333333334,
+  "state_integrity": 0.005833333333333334,
+  "byte_ratio_vs_none": 1.494829425951112,
+  "BA_best": 0.606931467547231
+ },
+ {
+  "arm": "live_write",
+  "k": 3,
+  "BA_D2_LR": 0.474365906397926,
+  "BA_D2_RF": 0.5186527935665867,
+  "BA_rule": 0.4960708421299555,
+  "goal_success": 0.795,
+  "state_integrity": 0.0,
+  "byte_ratio_vs_none": 1.742244795157762,
+  "BA_best": 0.5186527935665867
+ },
+ {
+  "arm": "live_write",
+  "k": 4,
+  "BA_D2_LR": 0.4233041315553631,
+  "BA_D2_RF": 0.416330725924322,
+  "BA_rule": 0.4419296330380074,
+  "goal_success": 0.7516666666666667,
+  "state_integrity": 0.0,
+  "byte_ratio_vs_none": 1.9896596075622717,
+  "BA_best": 0.4419296330380074
+ }
+]

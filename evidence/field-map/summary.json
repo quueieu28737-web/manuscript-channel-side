@@ -1,0 +1,25 @@
+{
+  "direct_sources": 15,
+  "settings": 44,
+  "new_settings": 9,
+  "premises": 33,
+  "scenarios": 20,
+  "dependence_rows": 140,
+  "source_row_counts": {
+    "agentprint2025": 3,
+    "jeong2026wra": 4,
+    "dangol2026workflow": 6,
+    "pouryousef2026traffic": 4,
+    "song2026personafingerprint": 3,
+    "kang2026whoseagent": 2,
+    "fayolle2026webagents": 3,
+    "shahriar2026agenttell": 1,
+    "li2026ant": 4,
+    "ayzenshteyn2025cheat": 3,
+    "duan2026privacytrace": 2,
+    "zhao2026agenttrace": 3,
+    "ediga2026trace": 3,
+    "borysenko2026http": 1,
+    "reworr2024honeypot": 2
+  }
+}

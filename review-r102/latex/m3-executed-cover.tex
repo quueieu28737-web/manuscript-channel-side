@@ -1,0 +1,18 @@
+\begin{table}[t]\centering\footnotesize\setlength{\tabcolsep}{3pt}
+\caption{Executed-cover replay (paper padding: 4,096/16,384-byte bodies). Same runs supply privacy, task and state outcomes. Observer: destination and TLS~1.3 ciphertext bytes per call. 600 tasks, 2 seeds, task-level 50/50 split; chance BA .167. D0/Best: balanced accuracy of a frozen no-cover attacker / the maximum over refit LR, RF and a position rule. Goal and State in \%; bytes relative to no cover.}\label{tab:m3-cover}
+\begin{tabular}{@{}llrrrrr@{}}\toprule
+Arm & Sched. & D0 & Best & Goal & State & Bytes\\\midrule
+No cover & -- & 1.00 & 1.00 & 100.0 & 100.0 & 1.00\\
+Transport drop & fix.\ after & 0.63 & 1.00 & 100.0 & 100.0 & 1.25\\
+Transport drop & fix.\ before & 0.37 & 1.00 & 100.0 & 100.0 & 1.25\\
+Transport drop & rand.\ 1--2 & 0.38 & 0.68 & 100.0 & 100.0 & 1.37\\
+Read cover & fix.\ after & 0.63 & 1.00 & 100.0 & 100.0 & 1.25\\
+Read cover & fix.\ before & 0.35 & 1.00 & 100.0 & 100.0 & 1.25\\
+Read cover & rand.\ 1--2 & 0.39 & 0.79 & 100.0 & 100.0 & 1.37\\
+Isolated & fix.\ after & 0.63 & 1.00 & 100.0 & 100.0 & 1.25\\
+Isolated & fix.\ before & 0.37 & 1.00 & 100.0 & 100.0 & 1.25\\
+Isolated & rand.\ 1--2 & 0.38 & 0.68 & 100.0 & 100.0 & 1.37\\
+Live write & fix.\ after & 0.63 & 1.00 & 100.0 & 11.2 & 1.25\\
+Live write & fix.\ before & 0.37 & 1.00 & 87.2 & 7.0 & 1.25\\
+Live write & rand.\ 1--2 & 0.38 & 0.68 & 87.8 & 3.2 & 1.37\\
+\bottomrule\end{tabular}\end{table}

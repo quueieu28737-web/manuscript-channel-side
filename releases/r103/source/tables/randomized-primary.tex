@@ -1,0 +1,13 @@
+\begin{table*}[t]\centering\small
+\caption{Paired feedback-path results. All scores are correct intended-action predictions in the model-link view. Models are fitted within each condition. Full minus Projected is a percentage-point difference; LR intervals resample training and test sessions with refitting, while k-FP intervals condition on fitted predictors. The adjusted $p$ columns enumerate the session-sign tests on saved paired predictions exactly; eight local tests and four remote tests form separate Holm families. The declared Monte Carlo approximation is retained beside the exact values in the supplement. Hosted results use a separate cohort and mutable alias.}\label{tab:randomized-primary}
+\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\textwidth}{@{}llrrrYrr@{}}\toprule
+Executor & Attack & Prefix & \shortstack{Full\\post} & \shortstack{Projected\\post} & Full minus Projected [95\% CI] & $p_{post}$ & $p_{proj}$ \\\midrule
+Qwen3:8B & LR & 25/120 & 43/120 & 23/120 & $+16.7\;[+4.0,+29.8]$ & 0.1357 & 0.0778 \\
+Qwen3:8B & kFP & 18/120 & 32/120 & 20/120 & $+10.0\;[-1.6,+20.5]$ & 0.1172 & 0.1989 \\
+Llama3.1:8B & LR & 19/120 & 40/120 & 22/120 & $+15.0\;[+3.1,+32.8]$ & 0.0508 & 0.1172 \\
+Llama3.1:8B & kFP & 14/120 & 31/120 & 20/120 & $+9.2\;[+0.0,+17.4]$ & 0.1357 & 0.1989 \\
+Hosted alias & LR & 5/48 & 15/48 & 10/48 & $+10.4\;[-3.2,+41.5]$ & 0.1562 & 0.9214 \\
+Hosted alias & kFP & 3/48 & 6/48 & 7/48 & $-2.1\;[-17.4,+15.4]$ & 1.0000 & 1.0000 \\
+\bottomrule\end{tabularx}
+\end{table*}

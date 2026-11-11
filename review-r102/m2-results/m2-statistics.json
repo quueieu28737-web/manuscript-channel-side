@@ -1,0 +1,88 @@
+{
+ "rules": {
+  "protection": "intervention != 'none'",
+  "link": "interface mapped by LINK; every other interface is a recipient/active endpoint",
+  "named_deployment_transfer": "transfer_axis names a held-out composition, topology or scaffold",
+  "open_world": "transfer_axis mentions open world / open-world",
+  "deployment_prevalence": "deployment_base_rate gives a deployment prevalence (none do)",
+  "supplied_boundary": "boundary_source is evaluator-supplied (given/supplied/known/recorded/session)",
+  "adaptation_located": "protected_attacker_adaptation reports refitting or an adaptive/stealth adversary and is not marked unresolved/not located",
+  "matched_utility": "setting-availability original_task_utility_status == located",
+  "defense_cost": "utility_cost_link reports defense bytes/latency in the same setting"
+ },
+ "settings": 44,
+ "sources": 15,
+ "published_settings": 7,
+ "protection_settings": 9,
+ "protection_by_purpose": {
+  "query_workflow_privacy": 4,
+  "adversarial_agent_blocking": 2,
+  "identity_obfuscation": 3
+ },
+ "settings_and_protection_by_link": {
+  "C (client link)": {
+   "settings": 2,
+   "with_protection": 0
+  },
+  "recipient / active endpoint": {
+   "settings": 21,
+   "with_protection": 5
+  },
+  "T (tool egress)": {
+   "settings": 8,
+   "with_protection": 2
+  },
+  "A (inter-agent)": {
+   "settings": 5,
+   "with_protection": 2
+  },
+  "M (model link)": {
+   "settings": 5,
+   "with_protection": 0
+  },
+  "combined egress": {
+   "settings": 3,
+   "with_protection": 0
+  }
+ },
+ "named_deployment_transfer": 4,
+ "open_world": 2,
+ "deployment_prevalence": 0,
+ "supplied_boundary": 43,
+ "among_protection": {
+  "adaptation_located": 4,
+  "matched_original_task_utility": 1,
+  "defense_cost_same_setting": 2,
+  "all_three": 0
+ },
+ "failure_handling": {
+  "reported": 19,
+  "partly_reported": 11,
+  "not_located": 12,
+  "applicable": 42
+ },
+ "execution_outcome": {
+  "reported": 13,
+  "partly_reported": 18,
+  "not_located": 7,
+  "applicable": 38
+ },
+ "policy_context": {
+  "reported": 13,
+  "partly_reported": 0,
+  "not_located": 4,
+  "applicable": 17
+ },
+ "sources_with_any_protection": [
+  "ayzenshteyn2025cheat",
+  "dangol2026workflow",
+  "fayolle2026webagents",
+  "jeong2026wra",
+  "zhao2026agenttrace"
+ ],
+ "sources_with_named_transfer": [
+  "dangol2026workflow",
+  "ediga2026trace",
+  "pouryousef2026traffic"
+ ]
+}

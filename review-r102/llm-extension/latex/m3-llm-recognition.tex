@@ -1,0 +1,24 @@
+\begin{table*}[t]
+\centering\small
+\setlength{\tabcolsep}{4pt}
+\caption{LLM-planned executed cover on 120 paired held-out fixtures per cell. The primary LR/RF attacker is selected on validation data. All attack columns count correct predictions out of 120; chance is 20/120. The interval conditions on the fitted attacker and synthetic fixtures.}
+\label{tab:m3-llm-recognition}
+\begin{tabular}{llrrrrrl}
+\toprule
+Model & Cover & Frozen & LR & RF & Last & Penultimate & Selected BA [95\% CI] \\
+\midrule
+Qwen3:8B & No cover & 118 & 118 & 117 & 116 & 14 & 0.983 [0.958, 1.000] (LR) \\
+Qwen3:8B & Proxy discard & 44 & 63 & 62 & 77 & 43 & 0.517 [0.425, 0.608] (RF) \\
+Qwen3:8B & Read cover & 42 & 59 & 62 & 77 & 42 & 0.517 [0.425, 0.608] (RF) \\
+Qwen3:8B & Isolated, hidden & 43 & 62 & 61 & 77 & 42 & 0.508 [0.417, 0.600] (RF) \\
+Qwen3:8B & Live write & 42 & 60 & 62 & 75 & 44 & 0.517 [0.425, 0.608] (RF) \\
+Qwen3:8B & Isolated, visible & 40 & 63 & 63 & 77 & 42 & 0.525 [0.433, 0.617] (RF) \\
+Llama3.1:8B & No cover & 113 & 113 & 110 & 79 & 64 & 0.942 [0.900, 0.975] (LR) \\
+Llama3.1:8B & Proxy discard & 54 & 81 & 79 & 67 & 61 & 0.658 [0.575, 0.733] (RF) \\
+Llama3.1:8B & Read cover & 57 & 78 & 72 & 67 & 62 & 0.600 [0.517, 0.683] (RF) \\
+Llama3.1:8B & Isolated, hidden & 56 & 81 & 82 & 67 & 60 & 0.683 [0.600, 0.758] (RF) \\
+Llama3.1:8B & Live write & 58 & 80 & 75 & 65 & 59 & 0.667 [0.583, 0.750] (LR) \\
+Llama3.1:8B & Isolated, visible & 58 & 79 & 81 & 68 & 64 & 0.675 [0.592, 0.750] (RF) \\
+\bottomrule
+\end{tabular}
+\end{table*}

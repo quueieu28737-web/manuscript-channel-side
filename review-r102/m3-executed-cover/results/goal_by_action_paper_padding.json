@@ -1,0 +1,106 @@
+{
+ "none|none": {
+  "refund": 1.0,
+  "address_update": 1.0,
+  "escalation": 1.0,
+  "replacement": 1.0,
+  "cancellation": 1.0,
+  "receipt": 1.0
+ },
+ "transport_drop|fixed_after": {
+  "refund": 1.0,
+  "address_update": 1.0,
+  "escalation": 1.0,
+  "replacement": 1.0,
+  "cancellation": 1.0,
+  "receipt": 1.0
+ },
+ "transport_drop|fixed_before": {
+  "refund": 1.0,
+  "address_update": 1.0,
+  "escalation": 1.0,
+  "replacement": 1.0,
+  "cancellation": 1.0,
+  "receipt": 1.0
+ },
+ "transport_drop|random": {
+  "refund": 1.0,
+  "address_update": 1.0,
+  "escalation": 1.0,
+  "replacement": 1.0,
+  "cancellation": 1.0,
+  "receipt": 1.0
+ },
+ "read|fixed_after": {
+  "refund": 1.0,
+  "address_update": 1.0,
+  "escalation": 1.0,
+  "replacement": 1.0,
+  "cancellation": 1.0,
+  "receipt": 1.0
+ },
+ "read|fixed_before": {
+  "refund": 1.0,
+  "address_update": 1.0,
+  "escalation": 1.0,
+  "replacement": 1.0,
+  "cancellation": 1.0,
+  "receipt": 1.0
+ },
+ "read|random": {
+  "refund": 1.0,
+  "address_update": 1.0,
+  "escalation": 1.0,
+  "replacement": 1.0,
+  "cancellation": 1.0,
+  "receipt": 1.0
+ },
+ "isolated|fixed_after": {
+  "refund": 1.0,
+  "address_update": 1.0,
+  "escalation": 1.0,
+  "replacement": 1.0,
+  "cancellation": 1.0,
+  "receipt": 1.0
+ },
+ "isolated|fixed_before": {
+  "refund": 1.0,
+  "address_update": 1.0,
+  "escalation": 1.0,
+  "replacement": 1.0,
+  "cancellation": 1.0,
+  "receipt": 1.0
+ },
+ "isolated|random": {
+  "refund": 1.0,
+  "address_update": 1.0,
+  "escalation": 1.0,
+  "replacement": 1.0,
+  "cancellation": 1.0,
+  "receipt": 1.0
+ },
+ "live_write|fixed_after": {
+  "refund": 1.0,
+  "address_update": 1.0,
+  "escalation": 1.0,
+  "replacement": 1.0,
+  "cancellation": 1.0,
+  "receipt": 1.0
+ },
+ "live_write|fixed_before": {
+  "refund": 0.865,
+  "address_update": 1.0,
+  "escalation": 1.0,
+  "replacement": 0.585,
+  "cancellation": 0.785,
+  "receipt": 1.0
+ },
+ "live_write|random": {
+  "refund": 0.895,
+  "address_update": 1.0,
+  "escalation": 1.0,
+  "replacement": 0.57,
+  "cancellation": 0.8,
+  "receipt": 1.0
+ }
+}

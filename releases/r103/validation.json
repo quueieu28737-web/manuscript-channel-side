@@ -1,0 +1,47 @@
+{
+  "status": "PASS",
+  "utc": "2026-11-11T00:13:33.235724+00:00",
+  "scope": "Exact-byte manuscript integration, coding arithmetic, privacy/scope, fonts, compilation, full visual review and isolated source-ZIP rebuild. Not independent peer review, efficacy certification or submission acceptance.",
+  "documents": {
+    "main.pdf": {
+      "sha256": "c4fca487b5540424091e677a666c7274850908e3f5476f416924e32b1f8e8258",
+      "bytes": 258596,
+      "pages": 15
+    },
+    "supplement.pdf": {
+      "sha256": "e3db9559abedb1c31912c2f5ae00f698383a7730cc1e5761ec820070bb345232",
+      "bytes": 368713,
+      "pages": 26
+    }
+  },
+  "packages": {
+    "latex-source.zip": {
+      "sha256": "f45be5ee3963f405f4731841687beffc2b7659738383a1ea90a652dba3289d7d",
+      "bytes": 117175,
+      "files": 59
+    },
+    "review-artifact.zip": {
+      "sha256": "cfe7afb60044fb0f8020ad52d60355f198ae6a7daf62295a199ef5007bd30314",
+      "bytes": 154828240,
+      "files": 211
+    }
+  },
+  "checks": {
+    "integration-checks.json": "8b83062789fd27627729ba903356d327de0951f024d32e58cc17da8c3497032d",
+    "privacy.json": "bdaa2240de4cd778bdd651be47f880183f0da5699faebce76b9c2f79b793c2e2",
+    "visual-review.json": "1d031f8b6ec316754013fac0661d02b4c55cdebb580fa11ed2399edda9425141",
+    "zip-rebuild.json": "7e55c22612b74e0d1c874d3cfebfe4445c99affa6c7114e228ca86ea746680e9",
+    "source-export-files.json": "42715e23204bfa9a61dc422a0bd38c97adb31bdb43d8e8a4297d40772c15fb59",
+    "main-fonts.json": "221e2e141e7bff2e7347c842e11a3953ee9e076a568092e91763a0bfea738514",
+    "supplement-fonts.json": "f7351a0bbabebb8d8ed43e416af4d1167ec39f598b25ab30691a13ad6b47763e"
+  },
+  "scientific_review_sha256": "147ce1604fc0e56e5e43fc6f2c977211c0fd2b24230be0da521b54d98e2c601b",
+  "coding_verification_sha256": "1ec3472353f31e85acc4455c82cec6b9fc564497c98827b94589835e8d44a402",
+  "evidence_manifest_sha256": "ff646fddee96fff9735dfd940b30892e95e449e8dab28ef3f65ab004a675c306",
+  "review_manifest_sha256": "a66370357eede801c6420a9cab419c5b8a940bae299769d8dc3bcc6db1c92cec",
+  "preserved_failures": [
+    "Sandbox MiKTeX configuration access",
+    "MiKTeX pdffonts exit 3221226505; direct embedded-font inspection used",
+    "Generated pyc cache paths detected and excluded from new package; original evidence unchanged"
+  ]
+}
