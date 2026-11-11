@@ -1,0 +1,19 @@
+\begin{table*}[t]\centering\small
+\caption{Condition-matched recognition: correct predictions out of $n$ (six-class reference $n/6$). Prefix is the initial Full model call; Post is its first call after the ticket. Complete spans all requests and responses. RF and CNN are exploratory (E); neither replaces LR/k-FP in the primary family. $p_{proj}$ is the exact Holm-adjusted Full--Projected Post test. Complete-view comparisons are descriptive. Supplement S1 reports all uncertainty and frozen-transfer results.}\label{tab:phase-complete}
+\setlength{\tabcolsep}{3pt}
+\begin{tabularx}{\textwidth}{@{}lYrrrrrrrrr@{}}\toprule
+Executor & Attack & $n$ & Prefix & \multicolumn{2}{c}{Post M} & \multicolumn{2}{c}{Complete M} & \multicolumn{2}{c}{Complete T+M} & $p_{proj}$ \\ & & & & Full & Proj. & Full & Proj. & Full & Proj. & \\\midrule
+Qwen3:8B & LR & 120 & 25 & 43 & 23 & 46 & 44 & 54 & 39 & 0.0778 \\
+Qwen3:8B & kFP & 120 & 18 & 32 & 20 & 43 & 39 & 39 & 30 & 0.1989 \\
+Qwen3:8B & RF (E) & 120 & 25 & 50 & 30 & 61 & 31 & 55 & 30 & --- \\
+Qwen3:8B & CNN (E) & 120 & 20 & 20 & 20 & 22 & 22 & 20 & 22 & --- \\
+Llama3.1:8B & LR & 120 & 19 & 40 & 22 & 62 & 33 & 53 & 29 & 0.1172 \\
+Llama3.1:8B & kFP & 120 & 14 & 31 & 20 & 47 & 34 & 45 & 31 & 0.1989 \\
+Llama3.1:8B & RF (E) & 120 & 24 & 59 & 19 & 73 & 34 & 55 & 30 & --- \\
+Llama3.1:8B & CNN (E) & 120 & 20 & 26 & 20 & 22 & 15 & 19 & 18 & --- \\
+Hosted alias & LR & 48 & 5 & 15 & 10 & 9 & 9 & 12 & 6 & 0.9214 \\
+Hosted alias & kFP & 48 & 3 & 6 & 7 & 9 & 5 & 13 & 11 & 1.0000 \\
+Hosted alias & RF (E) & 48 & 8 & 15 & 9 & 7 & 7 & 13 & 8 & --- \\
+Hosted alias & CNN (E) & 48 & 8 & 11 & 5 & 10 & 8 & 9 & 11 & --- \\
+\bottomrule\end{tabularx}
+\end{table*}

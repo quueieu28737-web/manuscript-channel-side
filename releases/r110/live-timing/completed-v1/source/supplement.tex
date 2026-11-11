@@ -1,0 +1,55 @@
+\documentclass[conference,compsoc]{IEEEtran}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{booktabs,tabularx,array,graphicx,amsmath,amssymb,longtable}
+\usepackage{placeins}
+\usepackage{etoolbox}
+% Avoid infinite shrink glue when the current LaTeX output routine splits
+% longtable pages to extract marks. Preserve stretch-only bottom spacing.
+\makeatletter
+\patchcmd{\LT@output}{\copy\LT@foot\vss}{\copy\LT@foot\vfil}{}{\PackageError{audit-layout}{Longtable footer patch failed}{Check the installed longtable version.}}
+\patchcmd{\LT@output}{\copy\LT@foot\vss}{\copy\LT@foot\vfil}{}{\PackageError{audit-layout}{Longtable footer patch failed}{Check the installed longtable version.}}
+\makeatother
+\usepackage[hyphens]{url}
+\usepackage{hyperref}
+\hypersetup{hidelinks,pdfauthor={}}
+% Avoid synthetic glyphs at math/text boundaries; preserve Unicode mappings.
+\SetSymbolFont{letters}{normal}{OML}{lmm}{m}{it}
+\SetSymbolFont{letters}{bold}{OML}{lmm}{b}{it}
+\input{glyphtounicode}
+\pdfgentounicode=1
+\pdfglyphtounicode{space}{0020}
+\ifdefined\pdfinterwordspaceoff\pdfinterwordspaceoff\fi
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
+\renewcommand{\thesection}{S\arabic{section}}
+\renewcommand{\thesubsection}{\thesection.\arabic{subsection}}
+\renewcommand{\thetable}{S\arabic{table}}
+\renewcommand{\thefigure}{S\arabic{figure}}
+\title{Supplementary Material for\\SoK: Agent Communication Side Channels}
+\author{}
+\begin{document}
+\input{bibliography-order}
+\raggedbottom
+\pagestyle{plain}
+\maketitle
+\thispagestyle{plain}
+\noindent The supplement provides the complete measurements and source basis for the two execution boundaries. Section~\ref{supp:cover-study} gives all executed-cover attacks, task/state outcomes, paired contrasts and a worked evaluation protocol. Section~\ref{supp:randomized-feedback} retains the separate feedback pilot, including its inconclusive primary tests and detector diagnostics. Sections~\ref{supp:sources}--\ref{supp:mechanisms} document sources; Section~\ref{sec:target-audit} gives extraction rules and the AI coding-manual pilot. Reporting examples, the design agenda and deployment maps follow. Sections~\ref{supp:b1-timing}--\ref{supp:d-ext} add timing-informed cover removal on the same executions, its robustness and countermeasure, and attacks that adapt to that countermeasure. Section~\ref{supp:live-timing} adds the five-arm live-record study, all frozen attacks and tests, packet-clock checks and resource costs. The review artifact preserves earlier populations separately, including failures and unknown outcomes.
+\input{sections/randomized-feedback-supplement}
+\clearpage\onecolumn\twocolumn
+\input{sections/sources-supplement}
+\input{sections/mechanisms-supplement}
+\input{sections/target-evidence-summary}
+\input{sections/reporting-examples-supplement}
+\input{sections/mechanism-agenda-supplement}
+\input{sections/deployment-supplement}
+\input{sections/executed-cover-supplement}
+\clearpage\input{sections/b1-timing-supplement}
+\clearpage\input{sections/c-ext-supplement}
+\clearpage\input{sections/d-ext-supplement}
+\clearpage\input{sections/live-timing-supplement}
+% Flush the wide result tables and reset the two-column page height.
+\clearpage\onecolumn\twocolumn
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+\end{document}

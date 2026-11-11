@@ -1,0 +1,365 @@
+{
+  "scope": "PUBLIC SUBSET: revised papers, their LaTeX sources and model/arm aggregate results only. Individual derived metadata remains local pending explicit export approval.",
+  "files": {
+    "main.pdf": {
+      "bytes": 293481,
+      "sha256": "87b18a3cc8cba3a96f035ed87f7d6bb62e9fad82aed43aae51a690a3d954b01d"
+    },
+    "supplement.pdf": {
+      "bytes": 467602,
+      "sha256": "8fedd5b3288e0dbecd67335daef2e6263ff6bd9cc5709a73322fb39d05b5837f"
+    },
+    "source/bibliography-order.tex": {
+      "bytes": 1200,
+      "sha256": "811c6df86537f77d133872683eea087e4ef7e77832fb7ea6dd88b8baa410b30d"
+    },
+    "source/figures/selection-current.tex": {
+      "bytes": 889,
+      "sha256": "cee46b8d338c440211603311fdc9c8a7710a4b55be728420bec6273f231cf567"
+    },
+    "source/figures/ticket-threat-model.tex": {
+      "bytes": 1956,
+      "sha256": "d6d976c17fc47c1d227f1d047834563dd52376939194889b03cda505be1e7774"
+    },
+    "source/main.bbl": {
+      "bytes": 23229,
+      "sha256": "cab5aaf71f591f5c6a6c01771aeaa8e75fadee88b79f6f2c98ad4d85356c36c0"
+    },
+    "source/main.tex": {
+      "bytes": 1498,
+      "sha256": "b21431530eb478c42dd89e5a4ac5cc9163d7c94e8d0eb597609a7bff3365a972"
+    },
+    "source/placeins.sty": {
+      "bytes": 4087,
+      "sha256": "e6c6c01e0c057e360c07238cd765117e5d415c26c2ea1cdf141b7ddfaf151b0c"
+    },
+    "source/README.txt": {
+      "bytes": 907,
+      "sha256": "11dbc2711376211bbbe6fa1a14e9f745e66286866711a2270fd1250d9796aaec"
+    },
+    "source/references.bib": {
+      "bytes": 23059,
+      "sha256": "3c7b2dfe8b1c14302081e7188e4c4e58a472784b65a5de4880b9b422aa8b9b67"
+    },
+    "source/sections/abstract.tex": {
+      "bytes": 1387,
+      "sha256": "a830f30531aa742a901eda6969f10d7b0fb3c516e9ee70be046215d11ce966d3"
+    },
+    "source/sections/b1-timing-supplement.tex": {
+      "bytes": 7612,
+      "sha256": "ddefc5ec97c38ba3891a7e76a8451a924e795f5ee09450477dda3b6629a42360"
+    },
+    "source/sections/c-ext-supplement.tex": {
+      "bytes": 3471,
+      "sha256": "3eaa2d22d95d66c8168ea36b4e49e4efeeed1c05d62d0c4980e9bf574f26207e"
+    },
+    "source/sections/coding-pilot-supplement.tex": {
+      "bytes": 6690,
+      "sha256": "512de1e1949f42624345a50aa33a428cc45c800c80664f0c5760358f17798f6f"
+    },
+    "source/sections/correspondence.tex": {
+      "bytes": 3581,
+      "sha256": "edc347149f37d38e824c3e026d27f39408628e76a0f4b7efc645c2545b7e7b46"
+    },
+    "source/sections/d-ext-supplement.tex": {
+      "bytes": 5817,
+      "sha256": "0d4cf07832142856516dcd8ebc1e555c314df9eb82476978a8358f02c4e3e2a2"
+    },
+    "source/sections/defenses.tex": {
+      "bytes": 3384,
+      "sha256": "8b0aa6739ec0b2590e111f7c3434ea6a241ba245d7ff6af075e83387f52ccdbf"
+    },
+    "source/sections/deployment-supplement.tex": {
+      "bytes": 1408,
+      "sha256": "247e7d34dd5c024044cfdd1fbff727b20d7721d7492b4f3184c10d856c38a1c3"
+    },
+    "source/sections/discussion.tex": {
+      "bytes": 5521,
+      "sha256": "b29ba90aaa6d72efdaae3ea3e0a2fb4bcbfc89dcee9701be01479e4c79525dc3"
+    },
+    "source/sections/evidence.tex": {
+      "bytes": 6640,
+      "sha256": "69d511d9d065f4d1bcccab14572e49fb52e16285e9defd805f67cf0286c94953"
+    },
+    "source/sections/executed-cover-main.tex": {
+      "bytes": 5279,
+      "sha256": "a25a0f365ff3bcf25aeef4dd07b40de77a930af6ff6672f51ee0c1dec08fde23"
+    },
+    "source/sections/executed-cover-supplement.tex": {
+      "bytes": 11723,
+      "sha256": "93d532082cdeedb662e9073d175fb113d3d3c579b43762195b4ff9298e368b0a"
+    },
+    "source/sections/experiment.tex": {
+      "bytes": 427,
+      "sha256": "2f68f36c33e8a8048940c060110a8266678202e3cda1c7607826fad5f498084c"
+    },
+    "source/sections/feedback-compact-main.tex": {
+      "bytes": 1901,
+      "sha256": "9d529296ce21bf9896a799e7810fc789549ed2264ee98bde782e6cd8f2db3206"
+    },
+    "source/sections/introduction.tex": {
+      "bytes": 5715,
+      "sha256": "d0dcf6add4e9379bbb30118696c71e3e928c3524ef7a95382be45c07d1e41f45"
+    },
+    "source/sections/live-timing-supplement.tex": {
+      "bytes": 14931,
+      "sha256": "81f873682a5ab34585961d2dcb660533cefcc7eb91b7903fa241f2724f77a146"
+    },
+    "source/sections/mechanism-agenda-supplement.tex": {
+      "bytes": 5721,
+      "sha256": "d873db980ab37189923f27dda0656012c356a1e2e484787363b36222a2693527"
+    },
+    "source/sections/mechanisms-supplement.tex": {
+      "bytes": 5899,
+      "sha256": "0235f23d7d8a213fb49f63e315f4cfbabf4a801e7c6ff93e2ec22e774cd16607"
+    },
+    "source/sections/randomized-feedback-supplement.tex": {
+      "bytes": 22024,
+      "sha256": "c0dea0028dd93b6706efdee6827d90dd53deb6ce914605dec7558490ebf546eb"
+    },
+    "source/sections/reporting-examples-supplement.tex": {
+      "bytes": 9458,
+      "sha256": "4bfe730f918d9af2b41d87f1cbecb641a876998985f22737b6e4d1f9422c70ca"
+    },
+    "source/sections/reporting.tex": {
+      "bytes": 3379,
+      "sha256": "415681d854e1b2334061ac258fac9ca3ddb8329404410d401acaa3d1142e2321"
+    },
+    "source/sections/scope.tex": {
+      "bytes": 6320,
+      "sha256": "f44c0c8874a97e06e1ca6f7192a4ba651a512d848593702a6b5d72dec0b3c6be"
+    },
+    "source/sections/sources-supplement.tex": {
+      "bytes": 12413,
+      "sha256": "85b0919113387c5a3dd6fb2582d7e0bfbbc14720b9dd8ecd655135a80865394c"
+    },
+    "source/sections/target-evidence-summary.tex": {
+      "bytes": 2136,
+      "sha256": "778a04accabdd811133633bbe8086f4112d14932b3b110e1e33ce6706aa00071"
+    },
+    "source/sections/taxonomy.tex": {
+      "bytes": 4588,
+      "sha256": "d471601851cffcab840bf1cd8aadb87cd6c781c40b79d4f8da618475ef333f4f"
+    },
+    "source/supplement.bbl": {
+      "bytes": 22609,
+      "sha256": "3184a2ae5cd9440b442b3931ec77708331f5212cd99914675c66530f61634f4d"
+    },
+    "source/supplement.tex": {
+      "bytes": 3366,
+      "sha256": "f7f6d032ff13a3d8a64937406556f3000d02ca61d34508353a90ac5089f76ecd"
+    },
+    "source/tables/attack-map.tex": {
+      "bytes": 6015,
+      "sha256": "d15bbfd6ceefe64d6ce49451b476eaf14961ffbefda3b12b7ac35b4e2815bbf6"
+    },
+    "source/tables/b1-ablation-pairs.tex": {
+      "bytes": 1729,
+      "sha256": "66f697f47e9b817bae647e3331c4a2cf4efe46460efb7f9bd444a6e9dc63bd6e"
+    },
+    "source/tables/b1-ablation.tex": {
+      "bytes": 1227,
+      "sha256": "895e64b55b17dd099ee3b46079581a1fe1012819676b484552f7ce1a9220f8f2"
+    },
+    "source/tables/b1-attacks.tex": {
+      "bytes": 1727,
+      "sha256": "2d952e0270c40d0ee9ef5e61a4b29450d4b84f373162ce8dd4cf925d2ed7bbf4"
+    },
+    "source/tables/b1-detector.tex": {
+      "bytes": 1241,
+      "sha256": "e3f68a8017cc2ef336fd29a13cd8d894372acef9cdc18137dcad13fde291bbc3"
+    },
+    "source/tables/b1-primary.tex": {
+      "bytes": 1371,
+      "sha256": "1db13f4ac6d468f63e9406e192be0af7d9f856523fda6d395ae0f1b286e07e40"
+    },
+    "source/tables/b1-removal.tex": {
+      "bytes": 1655,
+      "sha256": "1eb85cac2de99544a15d818610412a45e345564f2f5b5e5402572b8a57109a36"
+    },
+    "source/tables/b1-semantics.tex": {
+      "bytes": 1658,
+      "sha256": "04d1dcd1ee756f91094a2e1381cd85fda2371edab4f02a2a812e6dd1f8300efb"
+    },
+    "source/tables/c-ext-jitter.tex": {
+      "bytes": 1524,
+      "sha256": "97510fe39b429c26798e99d27f93b2a762974903c8e898febb04eacb354ed39e"
+    },
+    "source/tables/c-ext-labelfree.tex": {
+      "bytes": 1531,
+      "sha256": "3e2ef3b9f62f19f564458041dfe370ea9dc79c4e4f89f489640a8b1f9a45cac4"
+    },
+    "source/tables/c-ext-matched.tex": {
+      "bytes": 2897,
+      "sha256": "b98b5243bb66c10a0b12ac15f74baad95d3f6903276645c128719d2eb7699d28"
+    },
+    "source/tables/conditional-risk-map.tex": {
+      "bytes": 3217,
+      "sha256": "42c8dcc85f8bd4e29b52a40672241917db3423221b769be42dbea8460d59307f"
+    },
+    "source/tables/d-ext-ablation.tex": {
+      "bytes": 722,
+      "sha256": "90035234a8f0959d21997bfa926c1b26858de43a4a64a4e89a241d179e0cf0b8"
+    },
+    "source/tables/d-ext-cells.tex": {
+      "bytes": 4573,
+      "sha256": "1e97556342ca716edd3bf7975b49d34741faa35c6cb0d90fade11abadcb94bef"
+    },
+    "source/tables/d-ext-tests.tex": {
+      "bytes": 2810,
+      "sha256": "6926362d24f8796faa65279c767e534af91cdef46f2f8dd873a3d9a3724b5f27"
+    },
+    "source/tables/defense-map.tex": {
+      "bytes": 3438,
+      "sha256": "74acea33e74b6141fb01fd01215e41df2da04cdc172a28a496a9489d2b8b9a2c"
+    },
+    "source/tables/defense-space.tex": {
+      "bytes": 2438,
+      "sha256": "6c7a02b5b395f92fb49197de500fec792b713dac825d9266dd6d6a747afe6187"
+    },
+    "source/tables/deployment-access.tex": {
+      "bytes": 2217,
+      "sha256": "939bb1ad84037655901e22f5fc8ce070a67be9c945a6bb26e942960e3a153e6c"
+    },
+    "source/tables/deployment-map.tex": {
+      "bytes": 3152,
+      "sha256": "7c806d17d096cd6aab2bac2ac02b7a907977bf3bf9b206d44c49b64a82beb0a9"
+    },
+    "source/tables/evidence-availability.tex": {
+      "bytes": 1295,
+      "sha256": "312c588393ad83c7a8088653fadee560ef3ffa67174c62e5978db6a95d230cb2"
+    },
+    "source/tables/executed-cover-main.tex": {
+      "bytes": 2587,
+      "sha256": "a64110a33e3fe4f39a9be7cfb4c3782fffe11acae8478b660d585e663ea71fe9"
+    },
+    "source/tables/guideline-crosswalk.tex": {
+      "bytes": 1944,
+      "sha256": "f79c8c86aad8d162afdcf8cbd8e68fcb1725a0b95b19e160bb05fc9ddebd74b6"
+    },
+    "source/tables/live-attacks-llama.tex": {
+      "bytes": 1135,
+      "sha256": "9515bfc823513c2299ac3c6939f8ba6dbc77e9c5fb02bbf771da9997bd467a55"
+    },
+    "source/tables/live-attacks-qwen.tex": {
+      "bytes": 1127,
+      "sha256": "eb2ee4344e1b347feea45ed82d051e3113e8dd6f9b617160aee2875977c08780"
+    },
+    "source/tables/live-clock.tex": {
+      "bytes": 1284,
+      "sha256": "39f45f63844e6611a9e9ec513ba112d8e9a7621143cc5e8503510d98caaa6d25"
+    },
+    "source/tables/live-costs.tex": {
+      "bytes": 1681,
+      "sha256": "a47f39dc7d504a1e2750fa630d04c496b1850602c047ac59324a806a4e623472"
+    },
+    "source/tables/live-draws.tex": {
+      "bytes": 794,
+      "sha256": "c5631458faf6a32c14e6c8d3d99c896a1d9e4f552d1cbe300dce3376ef448fa6"
+    },
+    "source/tables/live-tests.tex": {
+      "bytes": 2797,
+      "sha256": "78d2ae36fa67b47e5ce97a499ba82b76649c4ff9141c7441b05b0c0778a6c5fa"
+    },
+    "source/tables/live-timing-main.tex": {
+      "bytes": 1624,
+      "sha256": "bb366aa9e88ad498341035f0c5ee1c660858969df0cb02414a37d1b24fd38329"
+    },
+    "source/tables/m3-llm-comparisons.tex": {
+      "bytes": 4725,
+      "sha256": "8f8312dfa6c3011dd7c9cf686815abb44ae3823f2cfc69d395897b4276a942b8"
+    },
+    "source/tables/m3-llm-recognition.tex": {
+      "bytes": 1555,
+      "sha256": "3b7eafba5466da5ea31e75caf04dcbe0f91f05035d4c94a156ea958b9508ac00"
+    },
+    "source/tables/m3-llm-utility.tex": {
+      "bytes": 1543,
+      "sha256": "6514c3e55de2b07c09d4f9143af9256acfab8f08e07a854b6794b11740a0ddc0"
+    },
+    "source/tables/open-questions.tex": {
+      "bytes": 3429,
+      "sha256": "1621924bf909fbd0934d77f320ad3da193b84bdc16e33bd8c3b00f262a1198d9"
+    },
+    "source/tables/paired-path-diagnostics.tex": {
+      "bytes": 783,
+      "sha256": "669a6f8fdaebc11928e0cc68544ff197dc534812a3d280e6b29d030b2ab43e36"
+    },
+    "source/tables/phase-complete.tex": {
+      "bytes": 1713,
+      "sha256": "0045c627628cd690a7acb49f04eb91aeba3f1a79766d22e2f627e5dadabe1be9"
+    },
+    "source/tables/prefix-diagnostics.tex": {
+      "bytes": 895,
+      "sha256": "2d04128e08c24c328e24c4596ab4c060d6727bf4f52d05568228ca6a1a1ffc99"
+    },
+    "source/tables/randomized-all-events.tex": {
+      "bytes": 10672,
+      "sha256": "7678c65ad23dd5629493cffc3c20b2c1fac68b324d00eb9b32de537fe9c7d233"
+    },
+    "source/tables/randomized-all-recognition.tex": {
+      "bytes": 5032,
+      "sha256": "57566bbfc43d271a4c4088799c909d779a95b482343fe398a025a5cca9990228"
+    },
+    "source/tables/randomized-costs.tex": {
+      "bytes": 1877,
+      "sha256": "b37f836f3ebbab91e8225b9c0c0a44656ce052d5dec008111df6b3cd03b7f0dc"
+    },
+    "source/tables/randomized-events.tex": {
+      "bytes": 1665,
+      "sha256": "08a891328123dca743dfd20ced1be438753e2b00b7aec70ddba39cbe3933c969"
+    },
+    "source/tables/randomized-primary.tex": {
+      "bytes": 1516,
+      "sha256": "de310389c45176f544cec1b82204571ce140cd22d5d5b405604e0456e7dec644"
+    },
+    "source/tables/randomized-sign-precision.tex": {
+      "bytes": 1657,
+      "sha256": "9169152f584e2df9efbb98b05bb56039e20eb43eee6c5eafdfa5c261915588a9"
+    },
+    "source/tables/reporting-checklist.tex": {
+      "bytes": 1589,
+      "sha256": "f46531b070f2cc760cb70d8a65fdcce5b6514b92cb5fd1e508abf4cc319b3cce"
+    },
+    "source/tables/source-check-coverage.tex": {
+      "bytes": 3830,
+      "sha256": "348c807f9ab680190afed24c16816493690f99bcd08473f1f0c0b655f029d532"
+    },
+    "source/tables/survey-position.tex": {
+      "bytes": 1245,
+      "sha256": "3479bf4e6246ce160b735cd86049519fc8cef9a148454771297cf58d5090e0a7"
+    },
+    "source/tables/transfer-matrix.tex": {
+      "bytes": 3233,
+      "sha256": "77a4e9683ac92de0fc9865de6ae11f62132218b2c71a5a51bdd31797ffb702c2"
+    },
+    "source/tables/unified-dependence.tex": {
+      "bytes": 1905,
+      "sha256": "a3f9901f9526f582b1156d39bceabce2e5c28ef55cd004661c024f34662076bc"
+    },
+    "aggregate/attacks-and-tests.json": {
+      "bytes": 37639,
+      "sha256": "e5f1c182c8d7aa38e64771e09fee9dc834789e76427e9e7618067a79d665c425"
+    },
+    "aggregate/costs-and-outcomes.json": {
+      "bytes": 10650,
+      "sha256": "0f61e5289133a0e7a628a2b2e13afde3ea80863aa7f237baf73657e9c2ff60ab"
+    },
+    "aggregate/record-timing-check.json": {
+      "bytes": 7984,
+      "sha256": "78a4add156976c75d6bf10e3b8833f97d582506dc5c21681d8dfa6c9f48bda10"
+    },
+    "README.md": {
+      "bytes": 845,
+      "sha256": "b3909fc47c7de366ae00c43fae61ef41bc31fd8bf034b186444e64a8f49f85f4"
+    },
+    "release-review.json": {
+      "bytes": 2850,
+      "sha256": "592835b20931910a897df91aaa8f9cd560aca4da0cf57b9ad4a76ec7282b9029"
+    },
+    "RESULTS.md": {
+      "bytes": 4637,
+      "sha256": "4d91476686999982cd78fea2b2cbaa74f3de68bbe209dc8a5d12190d12687c64"
+    }
+  }
+}

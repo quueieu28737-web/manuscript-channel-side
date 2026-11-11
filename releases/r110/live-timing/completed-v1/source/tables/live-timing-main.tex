@@ -1,0 +1,19 @@
+\begin{table*}[t]\centering\small
+\caption{Live timing on 120 held-out paired fixtures per model and arm (six-class reference 20/120). Size and Adapt.\ are validation-selected attacks. RF is the condition-refitted size/destination forest; GMM removes cover without role labels. Bytes includes complete unique connections, including setup/teardown. Latency is the ratio of mean real-chain admission-to-finish times; phase and cache history remain part of these descriptive costs. Goal/State counts requested-goal success and whole-state correctness. Cover is isolated and hidden from the real planner.}
+\label{tab:live-timing-main}
+\setlength{\tabcolsep}{5pt}
+\begin{tabularx}{\textwidth}{@{}lYrrrrrrr@{}}\toprule
+Model & Policy & Size & Adapt. & RF & GMM & Bytes$\times$ & Latency$\times$ & Goal/State\\\midrule
+Qwen3:8B & No cover & 117 & 117 & 116 & -- & 1.00 & 1.00 & 113/114 \\
+Qwen3:8B & Immediate & 75 & 112 & 59 & 112 & 1.15 & 1.23 & 111/112 \\
+Qwen3:8B & History, sequential & 76 & 93 & 61 & 53 & 1.15 & 1.47 & 112/113 \\
+Qwen3:8B & History, concurrent & 66 & 99 & 52 & 38 & 1.15 & 1.14 & 111/112 \\
+Qwen3:8B & Planner shadow & 54 & 54 & 70 & 34 & 1.31 & 1.65 & 112/113 \\
+\midrule
+Llama3.1:8B & No cover & 110 & 110 & 112 & -- & 1.00 & 1.00 & 82/70 \\
+Llama3.1:8B & Immediate & 80 & 108 & 80 & 108 & 1.13 & 0.88 & 83/67 \\
+Llama3.1:8B & History, sequential & 82 & 104 & 82 & 14 & 1.13 & 1.15 & 84/67 \\
+Llama3.1:8B & History, concurrent & 68 & 106 & 68 & 66 & 1.13 & 0.84 & 82/67 \\
+Llama3.1:8B & Planner shadow & 64 & 64 & 64 & 43 & 1.35 & 1.18 & 82/67 \\
+\bottomrule\end{tabularx}
+\end{table*}

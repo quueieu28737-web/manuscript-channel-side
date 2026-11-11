@@ -1,0 +1,18 @@
+\begin{table*}[t]\centering\small
+\caption{Post-scoring exploratory detector-input diagnostic. Time uses only gap/duration/first-call inputs; no-clock uses 164 size/destination/context inputs. Recognition is correct/120 after removal; FP/FN expose honest removals and missed cover. The downstream classifier is the same frozen no-cover classifier.}\label{tab:b1-ablation}
+\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\textwidth}{@{}lYrrrr@{}}\toprule
+Model & Policy & Time & No-clock & Time FP/FN & No-clock FP/FN \\\midrule
+Qwen3:8B & No cover & 118 & 112 & 0/0 & 10/0 \\
+Qwen3:8B & Proxy discard & 114 & 66 & 0/2 & 71/65 \\
+Qwen3:8B & Read cover & 114 & 63 & 0/0 & 73/62 \\
+Qwen3:8B & Isolated, hidden & 113 & 65 & 0/1 & 72/63 \\
+Qwen3:8B & Live write & 112 & 64 & 0/0 & 74/64 \\
+Qwen3:8B & Isolated, visible & 110 & 59 & 0/2 & 75/65 \\
+Llama3.1:8B & No cover & 113 & 108 & 0/0 & 24/0 \\
+Llama3.1:8B & Proxy discard & 115 & 83 & 0/1 & 28/73 \\
+Llama3.1:8B & Read cover & 112 & 80 & 0/0 & 31/76 \\
+Llama3.1:8B & Isolated, hidden & 112 & 80 & 0/1 & 31/75 \\
+Llama3.1:8B & Live write & 112 & 85 & 0/0 & 32/75 \\
+Llama3.1:8B & Isolated, visible & 107 & 82 & 0/0 & 28/75 \\
+\bottomrule\end{tabularx}\end{table*}

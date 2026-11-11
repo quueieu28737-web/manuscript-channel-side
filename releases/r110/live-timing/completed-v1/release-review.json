@@ -1,0 +1,49 @@
+{
+  "collection_and_analysis": "Fixed layers, record reconstruction, request/state/protocol audit and exact offline primary reproduction passed.",
+  "cover_freeze_sha256": "9c3b86710d593fca1ca6ed3793f71fb0c46f5913add65512c260ce1e9f6bec64",
+  "documents": {
+    "main": {
+      "bbl_sha256": "cab5aaf71f591f5c6a6c01771aeaa8e75fadee88b79f6f2c98ad4d85356c36c0",
+      "bibliography_entries": 64,
+      "bytes": 293481,
+      "log_sha256": "26cde3bbea19d6f9540d16dae341f91421b560070a1647456fe03f7b2f71a6b6",
+      "pages": 15,
+      "sha256": "87b18a3cc8cba3a96f035ed87f7d6bb62e9fad82aed43aae51a690a3d954b01d"
+    },
+    "supplement": {
+      "bbl_sha256": "3184a2ae5cd9440b442b3931ec77708331f5212cd99914675c66530f61634f4d",
+      "bibliography_entries": 62,
+      "bytes": 467602,
+      "log_sha256": "51d7b7bf6262219bb310e2bce73f203e7a37e8708788a091d2e21e88ce2bec19",
+      "pages": 41,
+      "sha256": "8fedd5b3288e0dbecd67335daef2e6263ff6bd9cc5709a73322fb39d05b5837f"
+    }
+  },
+  "episodes": 3000,
+  "interpretation": [
+    "No universal single-link assumption attributed to all WF.",
+    "Live minimum waits distinguished from achieved distributions and earlier counterfactuals.",
+    "Qwen sequential Holm p=.0559 retained as non-rejection.",
+    "Shadow E passes with the identical selected size predictor; not indistinguishability evidence.",
+    "RF70/64, unsuccessful chain separation, persistent cache history and conditional uncertainty disclosed.",
+    "Complete/real-chain, whole-connection/call-window and model-token costs separated."
+  ],
+  "latex_zip_sha256": "43a9577032a54842b07811e500dafdadb187e274c72a1f25f26444031a0c3558",
+  "original_freeze_sha256": "f0d9e0cd7baff2a9dd3d055af477a8080818c1a1986a376bda7352c66ccd02f4",
+  "planned_families": {
+    "C": 8,
+    "E": 6,
+    "P": 6,
+    "R": 2
+  },
+  "privacy_scope": "PUBLIC SUBSET: revised papers, their LaTeX sources and model/arm aggregate results only. Individual derived metadata remains local pending explicit export approval.",
+  "review_manifest_sha256": "a014ead935a7d3ba46831c5638e3097f4b4804d023be2d9d5128f540a4ea9ced",
+  "review_zip_sha256": "63fe1f2a3b01cdb3f945d0953a30edb65f9ba613c897a5dccfbce52737a6972f",
+  "scientific_scope": "New live timing findings and their manuscript integration; not acceptance readiness or revalidation of every source-paper result.",
+  "shadow_chains": 600,
+  "status": "PASS_SCOPED_CURRENT_BYTES",
+  "unknown": 0,
+  "unverified_scope": "No new literature coverage, independent human-coder identity validation, population generalization or universal indistinguishability claim.",
+  "utc": "2026-11-11T17:04:38.238945+00:00",
+  "publication_status": "Individual timing CSV upload rejected by automatic approval; not retried or bypassed. Aggregate/paper alternative awaiting actual upload."
+}

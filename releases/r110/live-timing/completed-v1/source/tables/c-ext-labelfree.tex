@@ -1,0 +1,17 @@
+\begin{table*}[t]\centering\small
+\caption{Label-free removal. The threshold is the equal-responsibility point of a two-component Gaussian mixture fitted to unlabeled training log-gaps. TP/FP/FN count test calls (first ticket call excluded). Difference is Strip minus Byte in percentage points with a conditional 95\% interval; one ten-test Holm family. Fixed 0.1\,s and 0.2\,s thresholds give identical counts.}\label{tab:c2}
+\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\textwidth}{@{}llrrrrYr@{}}\toprule
+Model & Policy & Thr.\ (s) & TP/FP/FN & Byte & Strip & Strip$-$Byte [95\% CI] & Holm $p$\\\midrule
+Qwen3:8B & Proxy discard & 0.189 & 182/0/0 & 62 & 115 & +44.2 [35.0, 53.3] & 3.1e-14 \\
+Qwen3:8B & Read & 0.189 & 182/0/0 & 62 & 114 & +43.3 [34.2, 52.5] & 4.9e-14 \\
+Qwen3:8B & Isolated, hidden & 0.189 & 182/0/0 & 61 & 114 & +44.2 [35.0, 53.3] & 3.1e-14 \\
+Qwen3:8B & Live write & 0.189 & 182/0/0 & 62 & 112 & +41.7 [31.7, 51.7] & 1.8e-11 \\
+Qwen3:8B & Isolated, visible & 0.189 & 182/0/0 & 63 & 111 & +40.0 [30.8, 49.2] & 1.8e-11 \\
+Llama3.1:8B & Proxy discard & 0.142 & 182/0/0 & 79 & 116 & +30.8 [23.3, 39.2] & 5.8e-11 \\
+Llama3.1:8B & Read & 0.142 & 182/0/0 & 72 & 112 & +33.3 [25.0, 41.7] & 1.3e-11 \\
+Llama3.1:8B & Isolated, hidden & 0.142 & 182/0/0 & 82 & 112 & +25.0 [17.5, 33.3] & 4.6e-08 \\
+Llama3.1:8B & Live write & 0.142 & 182/0/0 & 80 & 112 & +26.7 [18.3, 35.8] & 1.3e-07 \\
+Llama3.1:8B & Isolated, visible & 0.142 & 182/0/0 & 81 & 107 & +21.7 [13.3, 30.0] & 6.2e-06 \\
+\bottomrule\end{tabularx}
+\end{table*}
