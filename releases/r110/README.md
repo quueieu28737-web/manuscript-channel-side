@@ -48,11 +48,18 @@ Agreement before discussion is 104/111 decisions:
 The privacy denominator and every Finding 2 decision are reproduced. §2.2, §10 and S4.1 report
 these numbers.
 
-## Still open (needs the author)
+### Author adjudication (final)
 
-- **Adjudication.** Adjudicate the 7 disagreements in
-  [`human-coding/coder-1/ADJUDICATION.md`](human-coding/coder-1/ADJUDICATION.md) and record final
-  codes in `disagreements.csv`. Then update the protection-flag counts (35 / 3 / 4) in §2.2, §8.2,
-  S5.1 and, if T1 changes, Table 2. No combination changes Finding 2's zero.
+The coder's code was adopted for CG-composition (counted with CG-transform), FAY-network,
+FAY-combined, ATR-main, ATR-budget and T1; AU's code was retained for CG-active.
+
+- **Partition of the 44 settings.** 4 privacy (+ CG-composition counted with CG-transform),
+  3 identity obfuscation, 2 blocking, 34 without a protection comparison.
+- **Finding 2.** Unchanged.
+- **Records.** [`ADJUDICATION.md`](human-coding/coder-1/ADJUDICATION.md),
+  `human-coding/coder-1/disagreements.csv`, and `evidence/*-adjudicated.csv`.
+
+## Still open
+
 - **Live cohort.** No live timing-matched cohort, and no planner-sampled cover design, has been
   collected yet.

@@ -36,3 +36,30 @@ If all seven of the coder's codes are adopted, these counts change:
   every combination.
 
 After adjudication, update the counts in §2.2, §8.2, S5.1 and Table 2 (if T1 changes).
+
+## Final author decisions
+
+| # | Item | Decision | Final |
+|---|---|---|---|
+| 1 | CG-composition | Coder adopted; option (a): same intervention as CG-transform, counted with it | yes |
+| 2 | CG-active | AU retained: the contrast concerns an integrity endpoint, not inference | no |
+| 3 | FAY-network | Coder adopted; identity_obfuscation | yes |
+| 4 | FAY-combined | Coder adopted; identity_obfuscation | yes |
+| 5 | ATR-main | Coder adopted: no unspoofed baseline | no |
+| 6 | ATR-budget | Coder adopted: no unspoofed baseline | no |
+| 7 | T1 | Coder adopted | extended |
+
+Resulting partition of the 44 settings:
+
+| Category | Settings |
+|---|---|
+| Query/workflow privacy | 4, plus CG-composition counted with CG-transform |
+| Identity obfuscation | 3: ATR-obfuscation, FAY-network, FAY-combined |
+| Adversarial-Agent blocking | 2 |
+| No protection comparison | 34 |
+
+- **Finding 2.** Unchanged: 2/4 adapted, 1/4 matched utility, 0/4 both.
+- **Records.** `disagreements.csv` records each reason. The adjudicated evidence is in
+  `../../evidence/setting-availability-adjudicated.csv` and `transfer-matrix-adjudicated.csv`.
+- **Manuscript.** Updated in §2.2, §8.2, Table 2 (T1 → Extended), S4.1, S5.1, Table S15 and the
+  defense map (Table S21: the Fayolle identity-obfuscation row).

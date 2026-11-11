@@ -1,8 +1,8 @@
 sheet,id,field,author,coder,resolution,final,reason
-A,CG-composition,A2_has_protection_comparison,no,yes,,,
-A,CG-active,A2_has_protection_comparison,no,yes,,,
-A,FAY-network,A2_has_protection_comparison,no,yes,,,
-A,FAY-combined,A2_has_protection_comparison,no,yes,,,
-A,ATR-main,A2_has_protection_comparison,yes,no,,,
-A,ATR-budget,A2_has_protection_comparison,yes,no,,,
-C,T1,C1_relation,retained,extended,,,
+A,CG-composition,A2_has_protection_comparison,no,yes,adopt coder,yes,"Sec. 9.12 runs the metadata-protection ladder (fresh ids, minimization, composed, cover) on the wire-faithful corpus view; same intervention as CG-transform, counted with that setting (option a). Decided by the author."
+A,CG-active,A2_has_protection_comparison,no,yes,retain AU,no,"The with/without contrast in Secs. 9.4-9.5 concerns an integrity endpoint (front-running success), not inference of a protected fact; not a protection comparison in the codebook sense. Decided by the author."
+A,FAY-network,A2_has_protection_comparison,no,yes,adopt coder,yes,"Secs. 6.1-6.3 contrast stealth/undetected agent configurations with standard ones; purpose identity_obfuscation, outside the privacy denominator. Decided by the author."
+A,FAY-combined,A2_has_protection_comparison,no,yes,adopt coder,yes,"Secs. 6-7 contrast stealth/undetected configurations across network, HTTP and browser layers; purpose identity_obfuscation, outside the privacy denominator. Decided by the author."
+A,ATR-main,A2_has_protection_comparison,yes,no,adopt coder,no,"Sec. 4.1: every substitute model runs under the deceptive system prompt; comparisons are between methods, with no unspoofed baseline. Decided by the author."
+A,ATR-budget,A2_has_protection_comparison,yes,no,adopt coder,no,Sec. 4.2/Table 3: a query-budget sweep under the same spoofing condition; no unspoofed baseline. Decided by the author.
+C,T1,C1_relation,retained,extended,adopt coder,extended,"Agent execution adds tool bursts, model waits and task intervals as observation units that must be evaluated with event errors; codebook definition of extended. Decided by the author."
