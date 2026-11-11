@@ -1,3 +1,17 @@
+# Latest integrated manuscript: R103
+
+[Main PDF](main.pdf) | [Supplement PDF](supplement.pdf) |
+[LaTeX ZIP](latex-source.zip) | [Evidence, coding manual and validation](releases/r103/README.md)
+
+The completed LLM executed-cover study is now integrated into the full SoK.
+Task completion can conceal collateral state damage; nonsignificant contrasts
+remain inconclusive. The coding exercise is an author/AI manual pilot, not
+independent human coding. R101 and all existing R102 files remain preserved.
+
+---
+
+Earlier repository notes follow as historical records.
+
 # Agent communication side-channel SoK — R101
 
 **Feedback Paths and Executed Cover**

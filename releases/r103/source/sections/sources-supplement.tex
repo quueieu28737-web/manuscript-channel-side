@@ -1,0 +1,64 @@
+\section{Selection, Observation Contracts and Source Checks}\label{supp:sources}
+\subsection{Fixed-window coverage protocol}
+The search protocol was recorded before retrieval on 9 November 2026. Eligibility uses first-submission dates from 1 January 2024 through 9 November 2026 and requires feedback-driven Agent execution linked to communication-side inference or an evaluated protection mechanism. Transit metadata, recipient-visible requests and active probes remain separate observers. Whole semantic trajectories, browser instrumentation alone, model-serving-only targets, deliberate covert encoding and generic deception without an identification endpoint have separate dispositions. The purpose is bounded coverage, not a claim of exhaustive recall.
+
+Twelve fixed public-web topic queries cover Agent traffic, tools, MCP, research and browser/terminal fingerprints. Native requests use arXiv, DBLP and Semantic Scholar endpoints; the latter two returned no usable records because of access/rate limits. They are failed acquisition channels, not zero-result searches. The arXiv query returned all 180 reported records with a limit of 200. Its exact expression is:
+\begin{quote}\small\ttfamily\raggedright
+(all:"LLM agent" OR all:"AI agent" OR all:"tool call" OR all:MCP OR all:"web agent" OR all:"research agent" OR all:agentic) AND (all:"side channel" OR all:"side-channel" OR all:"traffic analysis" OR all:fingerprint OR all:"network privacy" OR all:"timing attack") AND submittedDate:[202401010000 TO 202611092359]
+\end{quote}
+All executed strings and receipts are in \path{coverage-2024-2026/}. There were 38 public-web queries including topic, identity and citation follow-ups; these do not constitute 38 independent databases. The twelve topic queries displayed 101 distinct URLs, representing 33 scholarly candidate records after excluding news, tools and unresolved non-paper pages. Deduplication with arXiv gives 209 records. Two additional entered citation leads yield 211 screened records: fourteen direct, forty adjacent, 155 outside and two unresolved paper identities. The retained CHeaT seed gives fifteen included sources over 212 distinct returned/entered/retained records. Search-engine total-hit estimates are not used as denominators. Earlier query results are excluded from this screening denominator.
+
+One-step backward screening inspected 88 reference entries in the Trace, AgentTrace, HTTP-signature and honeypot full texts. Title/citation follow-ups supplied additional identity checks. Trace cites both AgentPrint and the 2024 SSH honeypot; the latter was absent from the native query. Its inspected version is v2 (2025), with first submission in 2024. AgentSnare's inspected abstract describes adaptive deception against known Agent adversaries without a separate communication-identification endpoint; it remains adjacent. The same inclusion rule excludes prompt-injection defenses without a communication-inference endpoint.
+
+Other borderline cases retain explicit access limits. AgentProv's categorical tool-choice probes do not execute a feedback loop; SigLeak uses whole semantic action/observation trajectories, consistent with the existing IntentMiner boundary. LIDAR uses harness instrumentation and repository changes; browser-event fingerprints require DOM/UI access. None is counted as an encrypted-transit replication. The full screening sheets preserve titles, versions, primary URLs and reasons, including unresolved identities.
+
+\subsection{Core identities and actual inspection}
+Table~\ref{tab:versions} fixes all fifteen inspected sources. WRA and CHeaT are verified publications and their selected final-text passages were rechecked. The HTTP work's two-page ACM workshop record is verified by publisher-deposited DOI metadata (10.1145/3843282.3844445); its longer v3 supplies the detailed extraction here. Trace's arXiv API metadata names WAITI 2026, but no matching official paper entry was verified and the December event is after the cutoff. Twelve sources, including Trace, have no additional independently verified publication identity. This is an audit result, not proof of non-publication.
+
+\begin{table*}[t]\centering\small
+\caption{Version-locked direct-source identities and extraction locators. Primary links are in the bibliography and review matrix.}\label{tab:versions}
+\begin{tabularx}{\textwidth}{@{}P{.29\textwidth}P{.32\textwidth}Y@{}}\toprule
+Source & Inspected version & Locations \\\midrule
+AgentPrint~\cite{agentprint2025} & 2510.07176v1 & App. B--D \\
+WRA~\cite{jeong2026wra} & USENIX Security 2026 final & Secs. 3--4, 6, 8; Tables 9--11 \\
+Communication graphs~\cite{dangol2026workflow} & 2606.07150v3 & Secs. 9.1, 9.3, 9.7--9.8, 9.12--9.13 \\
+Cloud benchmark~\cite{pouryousef2026traffic} & 2609.31877v2 & Secs. III--V \\
+PersonaFingerprint~\cite{song2026personafingerprint} & 2605.15962v1 & Secs. 2, 3.3, 5 \\
+MARK~\cite{kang2026whoseagent} & 2606.20910v1 & Secs. III, VI; Table IV \\
+Fayolle et al.~\cite{fayolle2026webagents} & 2606.30119v1 & Secs. 3, 5--8 \\
+AgentTell~\cite{shahriar2026agenttell} & 2609.32915v1 & Secs. 3.2, 4.3, 5; Apps. B.4, D.3 \\
+ANT~\cite{li2026ant} & 2610.06514v1 & Secs. 3--4; Table 3; model-view figure \\
+CHeaT~\cite{ayzenshteyn2025cheat} & USENIX Security 2025 final & Secs. 5.2, 6.2, 7; Tables 3--4 \\
+PrivacyTrace~\cite{duan2026privacytrace} & 2610.41885v1 & Secs. 3--5; Fig. 6 \\
+AgentTrace~\cite{zhao2026agenttrace} & 2610.32092v1 & Secs. 2--4; Tables 1--4; Fig. 3 \\
+Trace~\cite{ediga2026trace} & 2605.01186v1 & Secs. 2--4 \\
+HTTP signatures~\cite{borysenko2026http} & 2604.02544v3 extension & Secs. 3.3--3.6; Tables 1--3 \\
+LLM Agent Honeypot~\cite{reworr2024honeypot} & 2410.13919v2 & Secs. 3--5 \\
+\bottomrule\end{tabularx}\end{table*}
+
+\paragraph{Check coverage} The inspection inventory covers all fifteen sources, including selected final-PDF checks of WRA and CHeaT. Numerical checks locate displayed results; no new source experiment was replicated and no new source dataset was obtained. Original HTML/PDF hashes remain local, with public URLs and selected-check descriptions in the review package. No independent Web-archive snapshot is claimed. Publication identity, actual check method and conclusion dependency remain separate attributes.
+
+\input{tables/source-check-coverage}
+
+\paragraph{Checks of identification protocols} AgentTrace's 50 training/50 test probe split, stochastic trials, query-budget table and repair ablation were read together. At fifty probes, repeated trials reuse the same held-out probe identities. Trace's within-scaffold, held-out-scaffold and proprietary-scaffold results have different units or populations; clean-run rejection and injected-run counts are explicit. The HTTP study provides descriptive request signatures and three trials per service; neither an identification accuracy nor a held-out split is supplied. The honeypot's eight candidates are detector-defined, with unknown field precision and recall. These boundaries remain attached to the respective rows.
+
+\subsection{Setting matrix and interpretive checks}
+The \path{field-map/evidence-matrix.csv} records forty-four settings. Its companion target sheet records label basis, execution outcome, failure handling and policy context. The main maps cover all fifteen sources, including descriptive mechanisms and controls as such. Numeric values are not normalized across reconstruction, classification, candidate detection and prevention endpoints.
+
+\paragraph{Composition and scaffold transfer} Communication graphs holds out one of three compositions within each of nine known labels, with 270 workflows. Its .18 result is not unknown-label recognition. Trace instead holds out one of three Agent scaffolds for model-family attribution, reporting macro-F1 .815 versus .981 in the mixed-session test. The separate proprietary-scaffold 78\% accuracy uses a narrower model set. These are named transfer axes, not interchangeable estimates of generalization.
+
+\paragraph{Live adaptation and costs} The inspected \path{scripts/eval_ohttp_live.py} path passes live captures through \texttt{evaluate\_binding} in \path{binding.py}, \texttt{evaluate\_views} in \path{evaluate.py} and fold-wise training in \texttt{cross\_validate} in \path{classify.py}. This establishes protected-capture RF refitting. A separate stronger-search output covers direct/Tor/Nym/shim conditions and is not assigned to the live OHTTP row. The six-class .30 live result and its approximately thirteen-fold bytes/eleven-fold latency cannot be paired with the nine-class .67 workflow score as a before/after comparison.
+
+\paragraph{WRA conditions} The official final PDF retains five-decoy functional recovery .565 versus .770 without defense. Visibility Table 11 instead pairs 100\%/10\% visibility with recovery .770/.610 and report utility 8.55/8.54. The latter utility does not price executed decoys. Earlier selected-code inspection of \path{config_defence.json} and \path{utils_ICL_prompt.py} locates decoy mixing on test traces, while ICL examples call \texttt{sample\_traces} with ratio 1.0. The full training-folder contents were not exhaustively inspected; this selected path does not establish the absence of every other adaptation configuration. Matched protected examples remain unresolved. These final-text checks cover the stated passages.
+
+\paragraph{ANT and recipient objectives} ANT's approximate absolute model-view accuracies are reconstructed from the displayed full scores and rounded changes: .737, .450, .679, .665, .713, .689, .594 and .637. Risk counts use a separate 209-episode population, while primitive windows use runtime boundaries. CHeaT separates request-trigger presence checks, password-output controls and CTF prevention. Its adaptive payload-detection FPR is not the FPR of a natural-traffic Agent classifier. The main maps keep these denominators and objectives separate.
+
+\paragraph{Links to the mechanism synthesis} The seven factual comparison groups retain their original definitions. Execution organization uses the named-transfer and failure-signal groups; distributed exposure uses observation, label, policy and model-view statements; cover costs use the matched-intervention statements. Section~\ref{sec:mechanism-agenda} separates their observed basis from design implications and proposed tests. The \texttt{synthesis/claims.csv} protocol joins and \texttt{mechanism-synthesis/} interpretation links are complementary. Neither verifier establishes semantic source correctness.
+
+\subsection{Unified premise withdrawal}\label{supp:conclusion-withdrawal}
+The analysis follows thirty-three source statements in seven comparisons across twenty scenarios, yielding 140 retained/withdrawn rows. Each premise has a source, setting and locator. Scenarios remove each of fifteen sources, retain matched inspected publications only, remove either known shared-author pair, or withhold the live-refitting code premise. The pairs are AgentPrint/ANT and WRA/MARK; shared authors motivate concentration checks, not assertions of shared data. The statements cover label definitions, selection, security references, observation units, transfer, containment and failure handling.
+
+J1 requires an objective and an action example; J2 requires success-selection and a contrasting first-pass/null/refusal rule; J3 requires the risk comparator, disclosure-rule example and an outcome check. The failure-signal contrast requires both its Trace selection premise and AgentTrace repair premise. Other comparisons retain individual propositions without treating transfer axes as substitutes. Table~\ref{tab:target-dependence} summarizes the retained statements and sources; \path{field-map/source-dependence.json} records every row. Strict publication filtering retains WRA and CHeaT. The HTTP short-paper identity alone does not retain claims extracted only from the extended version.
+\input{tables/unified-dependence}
+
+Five unresolved numerical fields remain outside these synthesis premises: AgentPrint's behavior F1 and capture-pool totals, WRA's persona test count, the cloud benchmark's capture totals and PersonaFingerprint's pooled summaries. Exact conflicting values and locators remain in the input record. No preferred value is silently substituted.

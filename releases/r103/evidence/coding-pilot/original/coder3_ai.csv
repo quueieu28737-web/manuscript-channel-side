@@ -1,0 +1,45 @@
+setting_id,access_class,protection,named_transfer,open_world,failure_status,outcome_status,note
+AP-identity,transit,N,N,Y,partly_reported,partly_reported,App D-A/B: collection-level filter only (discard text-only <500 chars; exclude low-function GPTs); capability trigger is a retention condition
+AP-behavior,transit,N,N,N,partly_reported,partly_reported,Same collection filter; activated capability recorded but not task success
+AP-persona,derived_preference,N,N,N,not_applicable,not_applicable,Analysis of preference records; no agent execution population
+WRA-prompt,transit,N,N,N,not_located,not_located,Secs 3-4/6: no treatment of failed or incomplete research runs; report quality not scored in this setting
+WRA-persona,transit,N,N,N,not_located,not_located,Persona aggregation; no failure or outcome accounting
+WRA-decoy,transit,Y,N,N,not_located,not_located,Sec 8.1: decoy runs; no failure accounting; Table 11 utility belongs to visibility setting
+WRA-visibility,transit,Y,N,N,not_located,reported,Sec 8.2 Table 11: LLM-rated report utility under each visibility level
+CG-workflow,transit,N,N,N,not_located,not_located,Recorded workflow records; no failed-exchange treatment or completion measure located
+CG-composition,transit,N,Y,N,not_located,not_located,Same records with composition holdout
+CG-MCP,transit,N,N,N,not_located,not_located,Single endpoint fixed workflows; no outcome
+CG-transform,transit,Y,N,N,not_located,not_located,Transformations of recorded captures
+CG-live,transit,Y,N,N,not_located,not_located,Live OHTTP bytes/latency; task completion not claimed
+CG-active,active,N,N,N,not_located,not_located,Attack-budget evaluation; no execution outcome
+CB-task,transit,N,N,N,reported,reported,Successful and failed executions counted with success rate; failed captures discarded and re-executed; only successful runs retained
+CB-topology,transit,N,Y,N,reported,reported,Same collection
+CB-size-excluded,transit,N,N,N,reported,reported,Same collection
+CB-partial,transit,N,N,N,reported,reported,Same collection
+PF-session,transit,N,N,N,partly_reported,partly_reported,Trailing short windows discarded; optional out-of-character discard; persona adherence is a sanity check not a goal outcome
+PF-pooled,transit,N,N,N,partly_reported,partly_reported,As above
+PF-open,transit,N,N,Y,partly_reported,partly_reported,As above
+MARK-protocol,recipient,N,N,N,reported,partly_reported,Sec III: first-pass interaction; explicitly no retry-until-success; completion deliberately not required
+MARK-combined,recipient,N,N,N,reported,partly_reported,As above
+FAY-network,recipient,N,N,N,reported,reported,Failed visits (anti-bot/technical errors/timeouts) excluded: 1449 initiated -> 1385 associated; visit success via form/cookie/page id
+FAY-combined,recipient,N,N,N,reported,reported,As above
+FAY-blocking,active,Y,N,N,reported,reported,Per-agent success/blocked/timeout table
+AT-choice,active,N,N,N,reported,reported,App D.3: failed sessions (no page view/stall/limit/error) excluded and re-run; requested action or null recorded per session
+ANT-scenario,transit,N,N,N,partly_reported,not_located,Refusal-only episodes and packetless segments excluded; no general failure stratification; task success not reported
+ANT-model-scope,transit,N,N,N,partly_reported,not_located,As above
+ANT-risk,transit,N,N,N,partly_reported,not_located,As above; risk label is the target not an execution outcome
+ANT-stage,transit,N,N,N,partly_reported,not_located,As above
+CHT-lure,active,N,N,N,not_located,reported,Lure following per model is the measured outcome; no failure accounting
+CHT-password,active,N,N,N,not_located,reported,Password output comparison is the measured outcome
+CHT-blocking,active,Y,N,N,reported,reported,DSR by judge; HackingBuddy execution failures discussed and retained
+PT-metadata,recipient,N,N,N,partly_reported,partly_reported,Rejected task draws resampled; failed attacker generations scored incorrect; agent episode failures not stated; plan validity checked
+PT-content,recipient,N,N,N,partly_reported,partly_reported,As above
+ATR-main,active,Y,N,N,reported,reported,Parser failures and unsuccessful repairs retained as signal; parser outcome and retry sequence logged
+ATR-budget,active,Y,N,N,reported,reported,As above
+ATR-obfuscation,active,Y,N,N,reported,reported,As above
+TR-within,recipient,N,N,N,reported,partly_reported,Crashed/no-command sessions discarded (Table 2 counts); sessions end at all flags/turn limit/timeout but flag outcomes not reported
+TR-scaffold,recipient,N,Y,N,reported,partly_reported,As above
+TR-proprietary,recipient,N,Y,N,not_located,not_located,Vulnetic sessions: no exclusion rule or outcome restated
+HTTP-signature,recipient,N,N,N,not_located,not_located,Three trials per service; retrieval success or failed trials not described
+HP-calibration,active,N,N,N,not_located,partly_reported,Internal prototype agents: response-time thresholds only
+HP-field,active,N,N,N,not_located,partly_reported,Field candidates by compliance and timing; no verified outcome
