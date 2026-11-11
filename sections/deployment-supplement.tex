@@ -1,5 +1,5 @@
 \section{Deployment and Defense Source Anchors}\label{supp:deployment}
-The main deployment map separates the observer's rights from the tested source view. Table~\ref{tab:deployment} supplies the protocol layer behind that map. HTTP/2 concurrent streams and DATA framing follow RFC 9113, Sections 4--6; QUIC streams and migration follow RFC 9000, Sections 2 and 9; HTTP/3 maps requests to QUIC streams in RFC 9114, Sections 4 and 6. The MCP reference is the 2025-06-18 Streamable HTTP specification, including POST/GET, optional SSE and local stdio. These specifications do not prescribe a privacy padding or pacing policy.
+The main deployment map separates the observer's rights from the tested source view. Table~\ref{tab:deployment} supplies the protocol layer behind that map. TLS~1.3 record protection follows RFC 8446, Section~5~\cite{rfc8446}. HTTP/2 concurrent streams and DATA framing follow RFC 9113, Sections 4--6; QUIC streams and migration follow RFC 9000, Sections 2 and 9; HTTP/3 maps requests to QUIC streams in RFC 9114, Sections 4 and 6. The MCP reference is the 2025-06-18 Streamable HTTP specification, including POST/GET, optional SSE and local stdio. These specifications do not prescribe a privacy padding or pacing policy.
 
 \input{tables/deployment-map}
 

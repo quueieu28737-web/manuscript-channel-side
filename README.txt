@@ -1,4 +1,4 @@
-R103 - SoK: Agent Communication Side Channels
+R105 - SoK: Agent Communication Side Channels
 Feedback Paths and Executed Cover
 
 Compile main.tex and supplement.tex separately with pdfLaTeX and BibTeX:
@@ -27,5 +27,14 @@ The review package supplies the current field-map and coding manual, the M3
 synthetic artifact and an immutable prior-evidence archive for earlier analyses.
 It excludes credentials, raw captures, private transcripts and third-party full
 texts. Source versions and passage locators provide the external checking route.
-No new collection, model fitting, source search or analyst study was performed
-for this manuscript integration. Previously completed measurements are retained.
+No new collection, model fitting or analyst study was performed. Targeted
+related-work checks add context without changing the direct corpus or anchors.
+Previously completed measurements and inference procedures are retained.
+
+R105 foregrounds the evidence synthesis and treats adverse writes as an
+evaluation example. It connects the discussion to CaMeL, FIDES, Progent,
+SPILLage, tau-bench and AgentDojo; extends the inspection summary to all fifteen
+direct sources; and corrects WRA's query-decoy locator to Table 8. It clarifies
+the fixture contract, position-rule freeze and planner-path variation. All
+original measurements and statistical comparisons are unchanged. The feedback
+pilot remains condensed in the main paper and preserved in Supplement S1.

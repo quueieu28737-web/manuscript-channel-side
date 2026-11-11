@@ -1,0 +1,14 @@
+\begin{table*}[t]\centering\small
+\caption{Defense design space: enforcement authority, costs to measure and remaining exposure. Source-specific measurements appear in the text and Supplement S7.}
+\label{tab:defense-space}
+\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\textwidth}{@{}P{.17\textwidth}P{.25\textwidth}P{.23\textwidth}Y@{}}\toprule
+Layer / mechanism & What must be trusted or controlled & Costs to measure together & Residual exposure and practical decision \\\midrule
+Naming / association: encrypted name resolution, relays, OHTTP & Name resolver or relay placement; the parties able to link the user to the destination & Added hops, bytes, latency and availability & Shape can survive name hiding. Choose this layer when destination association is the private target; then test remaining observers. \\\addlinespace[3pt]
+Representation: message, TLS-record or packet padding & Component that controls the final visible size; padding survives later encoding & Added bytes, record/packet count, fragmentation & Timing, count and other links remain. State the padding layer and test downstream captures. \\\addlinespace[3pt]
+Scheduling: batching, pacing, fixed-rate cover & Sender/relay controls output schedule and cover lifetime & First-response delay, completion delay, bandwidth during idle periods & Admission, termination and overflow can reveal activity. Budget these events as part of the visible trace. \\\addlinespace[3pt]
+Transport cover: dummy exchanges discarded at a tunnel endpoint & Trusted cover terminator; no dispatch into business tools & Cover bandwidth, queueing, resource use & Other endpoints still see their inputs. Prefer this boundary when the aim is traffic shaping without extra business work. \\\addlinespace[3pt]
+Execution cover: extra research or tool calls & Tool privileges, isolated state and whether decoy feedback reaches the planner & Model tokens, tool quota, task success, state changes and latency & A decoy can affect the real execution. Measure privacy and original-task utility on the same protected runs. \\\addlinespace[3pt]
+Shared-state isolation / minimization & Tenant separation, cache keys and information passed between services & Lost cache reuse, compute, latency, task accuracy & Isolation removes a sharing channel, not every traffic signal. Minimize tool arguments and feedback according to each recipient's role. \\\bottomrule
+\end{tabularx}
+\end{table*}

@@ -1,0 +1,143 @@
+{
+  "status": "PASS",
+  "rows": 44,
+  "adjudicated": 15,
+  "status_changes": 13,
+  "retained_despite_AI_majority": [
+    "CG-transform",
+    "CG-active"
+  ],
+  "counts": {
+    "C1_original": {
+      "failure_status": {
+        "reported": 19,
+        "applicable": 42,
+        "statuses": {
+          "reported": 19,
+          "not_applicable": 2,
+          "not_located": 12,
+          "partly_reported": 11
+        }
+      },
+      "outcome_status": {
+        "reported": 13,
+        "applicable": 38,
+        "statuses": {
+          "partly_reported": 18,
+          "reported": 13,
+          "not_applicable": 6,
+          "not_located": 7
+        }
+      }
+    },
+    "C2_AI": {
+      "failure_status": {
+        "reported": 18,
+        "applicable": 43,
+        "statuses": {
+          "partly_reported": 9,
+          "not_applicable": 1,
+          "not_located": 16,
+          "reported": 18
+        }
+      },
+      "outcome_status": {
+        "reported": 7,
+        "applicable": 38,
+        "statuses": {
+          "partly_reported": 13,
+          "not_applicable": 6,
+          "not_located": 18,
+          "reported": 7
+        }
+      }
+    },
+    "C3_AI": {
+      "failure_status": {
+        "reported": 16,
+        "applicable": 43,
+        "statuses": {
+          "partly_reported": 11,
+          "not_applicable": 1,
+          "not_located": 16,
+          "reported": 16
+        }
+      },
+      "outcome_status": {
+        "reported": 15,
+        "applicable": 43,
+        "statuses": {
+          "partly_reported": 13,
+          "not_applicable": 1,
+          "not_located": 15,
+          "reported": 15
+        }
+      }
+    },
+    "author_after_15_row_adjudication": {
+      "failure_status": {
+        "reported": 19,
+        "applicable": 42,
+        "statuses": {
+          "reported": 19,
+          "not_applicable": 2,
+          "not_located": 12,
+          "partly_reported": 11
+        }
+      },
+      "outcome_status": {
+        "reported": 15,
+        "applicable": 42,
+        "statuses": {
+          "partly_reported": 15,
+          "not_applicable": 2,
+          "not_located": 12,
+          "reported": 15
+        }
+      }
+    }
+  },
+  "interpretation": "Descriptive sensitivity, not independent human reliability or post-adjudication validation.",
+  "original_hashes": {
+    "author-evidence-matrix.csv": "2f98f02412e94de00f0b65633bc9c4f37a8bda2f510b97a86054f9eebf628826",
+    "author-setting-availability.csv": "cdfb82209d225fe279c8a5f6922f31c937e6b57f551ec972c43e7d24e310627c",
+    "author-target-evidence.csv": "83520cf7c93217c1f69853f9cb3a088d63e4aa94bb0fa26477b01e76adac8c4c",
+    "CODEBOOK.md": "22e7de4b77378fa4877bf854d671ef9ab8dcbca7d7cff5cc5bfc58f9dcb883a7",
+    "coder2_ai.csv": "b0de564a38647aad27a4c210950ffa9b769e6140f352b5da13c617ca1d7b1b8a",
+    "coder2_template.csv": "e2853cb190f48851fd25206c0671bb505889145da4689fb2b75e273a5373697b",
+    "coder3_ai.csv": "a447eb59d689c1722d3c7b3caef6c0262eae6d774a6b544af38c9be28b114aa5",
+    "irr_kappa.py": "c2b9fdf94bed8d14f818017526d3329bf6ea9fadb93472b8d02ea39af765f8fa",
+    "irr_three.py": "9e9f5401c8c729d91c04975a0e7dfd5caf90ffd75be2e65c2052b2b8a45f4941",
+    "kappa-coder2_ai.json": "7cee4dc4dfdef5db1d530226967219fd2789a353526e9cdfaa90533449247c25",
+    "kappa-coder3_ai.json": "25e00fb59834e0e18b8427168d901763a4f40c91ae54b884fd3001c03c241627",
+    "kappa-sensitivity-unexposed34.json": "90fc4252dcfd9bb0102c4d8e5c5e18f6031b5c84196e29cdf01fad415b852baa",
+    "kappa-three-coders.json": "a49d928279032d88c13180df5b81c27be2b409f616e1fcd1120805271f40c388",
+    "reported-counts-by-coder.json": "14a93087f09c7851149947b7639203cadec3ee023a0150e1d176358154695cbd"
+  },
+  "source_bindings": {
+    "ant": {
+      "version_file": "2610.06514v1.txt",
+      "sha256": "19cffbaf9d8876adbb9f715b255322baec56d939520aaa611a8d753b23aad241"
+    },
+    "cb": {
+      "version_file": "2609.31877v2.txt",
+      "sha256": "bf5a3b2f92847a5a542331729fb5bd2dafb6fb09e7896ed70b5a87f7311bda0d"
+    },
+    "pf": {
+      "version_file": "2605.15962v1.txt",
+      "sha256": "ca1fe3a219fd0057a0222a8be73964cd5637ae11716b7a40c58cf249e5570ed6"
+    },
+    "ap": {
+      "version_file": "agentprint-2510.07176v1.reading.txt",
+      "sha256": "a6169c35ae36628c41424a8c2fdce13084faf5fd677c35e2952a069eb65c980a"
+    },
+    "cg": {
+      "version_file": "2606.07150v3.txt",
+      "sha256": "6cfdb1f5a4b2b43d52d7edad58c2cb9264e99f341233e5cdcd38c53a8ebb102b"
+    },
+    "http": {
+      "version_file": "paper-2604.02544v3.txt",
+      "sha256": "a62e2bbc88489ae9275f0a17a87ac03bfb9451747af9413415ec8c21726bf3ed"
+    }
+  }
+}

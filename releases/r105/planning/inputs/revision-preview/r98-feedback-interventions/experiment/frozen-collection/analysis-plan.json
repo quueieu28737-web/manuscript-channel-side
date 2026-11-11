@@ -1,0 +1,32 @@
+{
+  "id": "r98-analysis-v1-before-collection",
+  "primary_question": "With identical initial prompts and protected tool messages, does forwarding full versus minimum sufficient feedback change model-link task inference?",
+  "primary_view": "M physical encrypted metadata; supplied model-call phase windows for attribution, separate continuous task localization",
+  "primary_attacks": ["aggregate LR", "released k-FP 175 timing/direction features with 1000-tree RF"],
+  "secondary_attacks": ["aggregate RF 500 trees", "signed packet size/interarrival temporal sequence classifier selected using validation only"],
+  "views": ["T", "M", "TM"],
+  "phases": ["prefix model call", "first post-ticket model call", "complete execution"],
+  "mechanism_contrasts": ["serial_full post-ticket minus prefix", "serial_full minus serial_projected post-ticket"],
+  "deployment_contrasts": ["dedicated_full minus serial_full", "shared_full minus dedicated_full", "shared_joint minus shared_full"],
+  "training": "fit separately within each condition; also evaluate frozen serial_full attacks; all declared learners reported",
+  "testing": "formal test predictions are examined only after model/feature selection is frozen; readiness and R97 data never enter the formal held-out set",
+  "multiplicity": "Holm across the two mechanism contrasts, two local models and two primary attacks; remote four comparisons form a separately identified replication family; deployment contrasts descriptive with intervals",
+  "uncertainty": "paired whole-session test bootstrap 2000; LR training-and-test session bootstrap with refitting 300; conditional on designed workload and chosen learner family",
+  "permutation": "within-session intended-label permutations 2000 for prefix/post recognition; paired arm correctness swap sign test at session level, 10000 draws",
+  "meaningful_effect": "10 percentage points is the predeclared practically relevant mechanism contrast; a CI crossing zero is inconclusive, not equivalence; no optional stopping on accuracy",
+  "continuous": {
+    "observer": "whole session clock, physical connection identifiers, no private job/stream mapping or task boundaries",
+    "unit": "class-instance intervals; simultaneous repeated classes remain distinct true events",
+    "grid_seconds": 0.25,
+    "window_seconds": [1, 2, 4],
+    "learners": ["six multilabel LR", "window RF 500 trees", "idle-gap plus known-window classifier"],
+    "selection": "validation event F1 at primary IoU .5; ties select higher threshold, then shorter window",
+    "thresholds": [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9],
+    "negative_controls": ["all-active full-session per-class intervals", "training class-prior intervals", "empty/background sessions"],
+    "metrics": ["event precision/recall/F1 at IoU .3/.5/.7", "false class events per hour", "absolute onset/offset error for matched events", "time-grid precision/recall"],
+    "instance_limit": "binary class activity cannot separate two overlapping same-class instances; retain the resulting missed-event penalties and report this limitation"
+  },
+  "utility": ["completed intended business action", "wrong action", "missing checks", "step limit", "unknown terminal", "applied state"],
+  "costs": ["physical bytes per view", "per-task completion latency", "total session time", "model requests and tool calls", "joint shaper overruns"],
+  "preservation": "All planned outcomes remain in denominators with explicit unknown handling. No resampling of model outcomes, no test-driven replacement of workload."
+}

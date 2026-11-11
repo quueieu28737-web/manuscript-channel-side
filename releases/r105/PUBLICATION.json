@@ -1,0 +1,24 @@
+{
+  "revision": "R105",
+  "publication_date_utc": "2026-11-11",
+  "documents_unchanged": {
+    "main.pdf": {
+      "sha256": "06bd8d59649986a0f72b18b6a6be7b47f50c3b4fcb17e19c1f6613ba2d32bc6a",
+      "pages": 15,
+      "bytes": 264168
+    },
+    "supplement.pdf": {
+      "sha256": "28a8a2d4879b93b2ddede65d28e83652436a3ec35b35350631fea35924a46261",
+      "pages": 26,
+      "bytes": 372207
+    }
+  },
+  "source_zip_unchanged": {
+    "sha256": "5670b2ddfe182e47fb5f1a3df9967e9c889e73e7be73f16e4a1da3e83eef5f60",
+    "bytes": 119580,
+    "files": 59
+  },
+  "publication_privacy_sha256": "058a95d15df7d77648555588c4e89530461758ce2367c5204a30aec208a85c1d",
+  "new_planning_scope": "Prospective sample-size planning sensitivity using an existing pilot; no new cohort or changed original inference.",
+  "source_files": 59
+}

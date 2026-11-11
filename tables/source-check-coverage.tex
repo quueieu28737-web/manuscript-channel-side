@@ -1,51 +1,22 @@
 \begin{table*}[!tp]\centering\footnotesize
-\caption{Coverage of the original eleven sources, including current publisher-text checks. Text columns name selected passages, not blanket full-paper verification. ``Not checked'' refers to this audit. No source experiment was independently rerun. Exact receipts, hashes and version-specific URLs are in \texttt{source-accountability/}.}
+\caption{Inspection coverage for all fifteen direct sources. Each row names selected checks; code or data inspection is stated only where performed. No source experiment was independently rerun. Version identities and detailed locators are in Table~\ref{tab:versions}; the review package preserves the receipts.}
 \label{tab:check-coverage}
-\renewcommand{\arraystretch}{1.12}
-\begin{tabularx}{\textwidth}{@{}P{.19\textwidth}P{.29\textwidth}P{.27\textwidth}Y@{}}\toprule
-Source / inspected text & Text and numerical check & Implementation / episode data & Version check and remaining issue \\\midrule
-AgentPrint [preprint]\newline\href{https://arxiv.org/abs/2510.07176v1}{2510.07176v1}
-& App. B--D; identity F1 located; behavior-F1 and pool-count conflicts retained.
-& Author-bound training code and traffic data not located in the checked surfaces.
-& v1 pinned; no version diff. Occupation preference data are a separate endpoint. \\\addlinespace[4pt]
-WRA [published identity]\newline\href{https://www.usenix.org/system/files/usenixsecurity26-jeong.pdf}{USENIX final PDF}
-& Secs. 3--8; decoy/visibility results distinguished; persona-count conflict retained.
-& Selected ICL/configuration paths checked; full training-folder contents not checked.
-& Final decoy/visibility passages rechecked; no blanket version equivalence. Protected examples unresolved. \\\addlinespace[4pt]
-Communication graphs [preprint]\newline\href{https://arxiv.org/abs/2606.07150v3}{2606.07150v3}
-& Secs. 9.1, 9.3, 9.7--9.8, 9.12--9.13; composition, live scores and costs located.
-& Four live-evaluation files pinned by Git blob; refitting traced. Raw-capture experiment not rerun.
-& v3 pinned; no full v1--v3 diff. Stronger search and task utility not bound to live row. \\\addlinespace[4pt]
-Cloud-LLM benchmark [preprint]\newline\href{https://arxiv.org/abs/2609.31877v2}{2609.31877v2}
-& Secs. III--V; task and topology scores located; capture-total conflict retained.
-& Code and episode-dataset contents not independently checked.
-& Selected v1/v2 passages compared. Different feature protocols remain separate. \\\addlinespace[4pt]
-PersonaFingerprint [preprint]\newline\href{https://arxiv.org/abs/2605.15962v1}{2605.15962v1}
-& Secs. 2, 3.3, 5; session split and site scores checked; pooled-summary issue retained.
-& Code and episode-dataset contents not independently checked.
-& v1 pinned. A different published WFP title is not this paper's venue identity. \\\addlinespace[4pt]
-MARK [preprint]\newline\href{https://arxiv.org/abs/2606.20910v1}{2606.20910v1}
-& Secs. III, VI; Table IV; layer/combined F1 and first-pass selection located.
-& Code and episode-dataset contents not independently checked.
-& v1 pinned; no version diff. Combined browser view is not network-only. \\\addlinespace[4pt]
-Fayolle et al. [preprint]\newline\href{https://arxiv.org/abs/2606.30119v1}{2606.30119v1}
-& Secs. 3--8; visit endpoint and fingerprint/blocking populations distinguished.
-& Code and episode-dataset contents not independently checked.
-& v1 pinned; no version diff. Narrow visit success is not general task correctness. \\\addlinespace[4pt]
-AgentTell [preprint]\newline\href{https://arxiv.org/abs/2609.32915v1}{2609.32915v1}
-& Secs. 3.2, 4.3, 5; App. B.4, D.3; disclosure rule, failure and null outcome checked.
-& Code and episode-dataset contents not independently checked.
-& v1 pinned; no version diff. Loaded/cold is not guardrail-on/off. \\\addlinespace[4pt]
-ANT [preprint]\newline\href{https://arxiv.org/abs/2610.06514v1}{2610.06514v1}
-& Secs. 3--4; eight absolute M scores reconstructed; all thirteen risk-table count pairs reconciled.
-& Repository shell accessed; code/episode files not obtained. This does not show data absence.
-& v1 pinned; no version diff. Rounded display arithmetic is not raw-data reproduction. \\\addlinespace[4pt]
-CHeaT [published identity]\newline\href{https://www.usenix.org/system/files/usenixsecurity25-ayzenshteyn.pdf}{Official PDF excerpts}
-& Final Secs. 5.2, 6.2, 7 and Tables 3--4 rechecked; detection, prevention and adaptation distinguished.
-& Code and episode-dataset contents not independently checked.
-& Official 2025 identity retained; final PDF reacquired and selected sections checked in this audit. \\\addlinespace[4pt]
-PrivacyTrace [preprint]\newline\href{https://arxiv.org/abs/2610.41885v1}{2610.41885v1}
-& Secs. 3.2, 4.2, 5; Fig. 6; App. A.2; metadata/prior/argument scores located.
-& Code and episode-dataset contents not independently checked.
-& v1 pinned; no version diff. Negative metadata comparison retained. \\\bottomrule
+\renewcommand{\arraystretch}{1.1}
+\begin{tabularx}{\textwidth}{@{}P{.17\textwidth}P{.32\textwidth}P{.25\textwidth}Y@{}}\toprule
+Source / text & Text and numerical check & Implementation / data check & Remaining boundary \\\midrule
+AgentPrint, v1 & Apps. B--D; identity F1 and separate occupation endpoint. & Author-bound training/data not located on inspected surfaces. & Behavior-F1 and pool totals conflict. \\\addlinespace[3pt]
+WRA, official final & Secs. 3--8; query-decoy Table 8 and visibility Table 11 distinguished. & Selected ICL/configuration paths; training folder not exhaustively inspected. & Persona count conflict; protected examples unresolved. \\\addlinespace[3pt]
+Communication graphs, v3 & Secs. 9.1, 9.3, 9.7--9.8, 9.12--9.13; transfer, live scores and costs. & Four live-evaluation files pinned; protected-data refitting traced. & Live utility and broader attack search remain separate. \\\addlinespace[3pt]
+Cloud benchmark, v2 & Secs. III--V; task/topology scores and selected v1/v2 passages. & Code and episode data not independently inspected. & Capture-total conflict retained. \\\addlinespace[3pt]
+PersonaFingerprint, v1 & Secs. 2, 3.3, 5; session split and site scores. & Code and episode data not independently inspected. & Pooled-summary discrepancy retained. \\\addlinespace[3pt]
+MARK, v1 & Secs. III, VI; Table IV; layer F1 and first-pass selection. & Code and episode data not independently inspected. & Combined browser view includes non-network features. \\\addlinespace[3pt]
+Fayolle et al., v1 & Secs. 3--8; visit, fingerprint and blocking populations. & Code and episode data not independently inspected. & Visit success is a narrow outcome. \\\addlinespace[3pt]
+AgentTell, v1 & Secs. 3.2, 4.3, 5; Apps. B.4, D.3; disclosure, failure and null result. & Code and episode data not independently inspected. & Loaded/cold differs from guardrail-on/off. \\\addlinespace[3pt]
+ANT, v1 & Secs. 3--4; eight model-view scores and thirteen risk confusion matrices reconstructed. & Repository shell accessed; episode/code files not obtained. & Rounded-table arithmetic; no raw-data reproduction. \\\addlinespace[3pt]
+CHeaT, official final & Secs. 5.2, 6.2, 7; Tables 3--4; detection, prevention and adaptation. & Code and episode data not independently inspected. & Active payload controls differ from passive classification. \\\addlinespace[3pt]
+PrivacyTrace, v1 & Secs. 3--5; Fig. 6; metadata, prior and argument views. & Code and episode data not independently inspected. & Below-prior metadata result retained. \\\addlinespace[3pt]
+AgentTrace, v1 & Secs. 2--4; Tables 1--4; Fig. 3; probe split, budget and repair ablation. & Code and episode data not independently inspected. & Repeated trials reuse held-out probe identities. \\\addlinespace[3pt]
+Trace, v1 & Secs. 2--4; within-, held-out- and proprietary-scaffold results; rejection counts. & Code and episode data not independently inspected. & Transfer rows have different populations and metrics. \\\addlinespace[3pt]
+HTTP signatures, v3 & Secs. 3.3--3.6; Tables 1--3; three trials per service. & Code and episode data not independently inspected. & Descriptive signatures; short workshop identity is separate. \\\addlinespace[3pt]
+LLM Agent Honeypot, v2 & Secs. 3--5; eight detector-defined field candidates. & Code and episode data not independently inspected. & Field precision and recall unknown. \\\bottomrule
 \end{tabularx}\end{table*}

@@ -20,7 +20,7 @@ Table~\ref{tab:versions} fixes all fifteen inspected sources. WRA and CHeaT are 
 \begin{tabularx}{\textwidth}{@{}P{.29\textwidth}P{.32\textwidth}Y@{}}\toprule
 Source & Inspected version & Locations \\\midrule
 AgentPrint~\cite{agentprint2025} & 2510.07176v1 & App. B--D \\
-WRA~\cite{jeong2026wra} & USENIX Security 2026 final & Secs. 3--4, 6, 8; Tables 9--11 \\
+WRA~\cite{jeong2026wra} & USENIX Security 2026 final & Secs. 3--4, 6, 8; Tables 8--11 \\
 Communication graphs~\cite{dangol2026workflow} & 2606.07150v3 & Secs. 9.1, 9.3, 9.7--9.8, 9.12--9.13 \\
 Cloud benchmark~\cite{pouryousef2026traffic} & 2609.31877v2 & Secs. III--V \\
 PersonaFingerprint~\cite{song2026personafingerprint} & 2605.15962v1 & Secs. 2, 3.3, 5 \\
@@ -49,7 +49,7 @@ The \path{field-map/evidence-matrix.csv} records forty-four settings. Its compan
 
 \paragraph{Live adaptation and costs} The inspected \path{scripts/eval_ohttp_live.py} path passes live captures through \texttt{evaluate\_binding} in \path{binding.py}, \texttt{evaluate\_views} in \path{evaluate.py} and fold-wise training in \texttt{cross\_validate} in \path{classify.py}. This establishes protected-capture RF refitting. A separate stronger-search output covers direct/Tor/Nym/shim conditions and is not assigned to the live OHTTP row. The six-class .30 live result and its approximately thirteen-fold bytes/eleven-fold latency cannot be paired with the nine-class .67 workflow score as a before/after comparison.
 
-\paragraph{WRA conditions} The official final PDF retains five-decoy functional recovery .565 versus .770 without defense. Visibility Table 11 instead pairs 100\%/10\% visibility with recovery .770/.610 and report utility 8.55/8.54. The latter utility does not price executed decoys. Earlier selected-code inspection of \path{config_defence.json} and \path{utils_ICL_prompt.py} locates decoy mixing on test traces, while ICL examples call \texttt{sample\_traces} with ratio 1.0. The full training-folder contents were not exhaustively inspected; this selected path does not establish the absence of every other adaptation configuration. Matched protected examples remain unresolved. These final-text checks cover the stated passages.
+\paragraph{WRA conditions} The official final PDF reports five-decoy functional recovery .565 versus .770 without defense in Table~8 (query reconstruction); Table~9 concerns trait reconstruction. Visibility Table 11 instead pairs 100\%/10\% visibility with recovery .770/.610 and report utility 8.55/8.54. The latter utility does not price executed decoys. Earlier selected-code inspection of \path{config_defence.json} and \path{utils_ICL_prompt.py} locates decoy mixing on test traces, while ICL examples call \texttt{sample\_traces} with ratio 1.0. The full training-folder contents were not exhaustively inspected; this selected path does not establish the absence of every other adaptation configuration. Matched protected examples remain unresolved. These final-text checks cover the stated passages.
 
 \paragraph{ANT and recipient objectives} ANT's approximate absolute model-view accuracies are reconstructed from the displayed full scores and rounded changes: .737, .450, .679, .665, .713, .689, .594 and .637. Risk counts use a separate 209-episode population, while primitive windows use runtime boundaries. CHeaT separates request-trigger presence checks, password-output controls and CTF prevention. Its adaptive payload-detection FPR is not the FPR of a natural-traffic Agent classifier. The main maps keep these denominators and objectives separate.
 

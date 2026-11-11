@@ -1,0 +1,91 @@
+{
+  "status": "PASS",
+  "agreement": {
+    "access_class": {
+      "pairwise": {
+        "C1-C2": 1.0,
+        "C1-C3": 1.0,
+        "C2-C3": 1.0
+      },
+      "fleiss": 1.0,
+      "conditional_row_bootstrap": [
+        1.0,
+        1.0
+      ],
+      "all_agree": 44
+    },
+    "protection": {
+      "pairwise": {
+        "C1-C2": 1.0,
+        "C1-C3": 1.0,
+        "C2-C3": 1.0
+      },
+      "fleiss": 1.0,
+      "conditional_row_bootstrap": [
+        1.0,
+        1.0
+      ],
+      "all_agree": 44
+    },
+    "named_transfer": {
+      "pairwise": {
+        "C1-C2": 1.0,
+        "C1-C3": 1.0,
+        "C2-C3": 1.0
+      },
+      "fleiss": 1.0,
+      "conditional_row_bootstrap": [
+        1.0,
+        1.0
+      ],
+      "all_agree": 44
+    },
+    "open_world": {
+      "pairwise": {
+        "C1-C2": 1.0,
+        "C1-C3": 1.0,
+        "C2-C3": 1.0
+      },
+      "fleiss": 1.0,
+      "conditional_row_bootstrap": [
+        1.0,
+        1.0
+      ],
+      "all_agree": 44
+    },
+    "failure_status": {
+      "pairwise": {
+        "C1-C2": 0.459,
+        "C1-C3": 0.8,
+        "C2-C3": 0.625
+      },
+      "fleiss": 0.628,
+      "conditional_row_bootstrap": [
+        0.464,
+        0.753
+      ],
+      "all_agree": 28
+    },
+    "outcome_status": {
+      "pairwise": {
+        "C1-C2": 0.15,
+        "C1-C3": 0.464,
+        "C2-C3": 0.524
+      },
+      "fleiss": 0.366,
+      "conditional_row_bootstrap": [
+        0.227,
+        0.484
+      ],
+      "all_agree": 14
+    }
+  },
+  "unexposed_34": {
+    "failure_status": 0.785,
+    "outcome_status": 0.433
+  },
+  "adjudicated_rows": 15,
+  "changed_statuses": 13,
+  "original_inputs_preserved": true,
+  "scope": "Arithmetic of original dependent AI/author pilot; no human reliability or validity claim."
+}
