@@ -1,0 +1,9 @@
+\begin{table*}[t]\centering\small
+\caption{Descriptive audit of the 120 held-out Full/Projected task pairs per local executor. Calls are executed tool actions. Extra checks count repeated account/policy/approval/status calls beyond the first. The last four columns count agreeing pairs; a multiset ignores call order. These summaries do not assign the recognition change to a mediator.}\label{tab:paired-path-diagnostics}
+\setlength{\tabcolsep}{3pt}
+\begin{tabularx}{\textwidth}{@{}lYrrrrr@{}}\toprule
+Executor & Total calls F/P & Extra checks F/P & Same count & Same sequence & Same multiset & Same applied action \\\midrule
+Qwen3:8B & 518/518 & 26/26 & 120 & 85 & 118 & 118 \\
+Llama3.1:8B & 518/518 & 26/26 & 120 & 94 & 119 & 119 \\
+\bottomrule\end{tabularx}
+\end{table*}

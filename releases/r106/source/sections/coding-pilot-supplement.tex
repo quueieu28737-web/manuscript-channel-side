@@ -1,0 +1,23 @@
+\subsection{Coding-manual pilot and source adjudication}\label{supp:coding-pilot}
+The released author encoding (C1) and two AI passes (C2, C3) cover the same forty-four settings. The supplied provenance identifies C2 and C3 as the same model, not independent people. C2 had seen aggregate counts; C3 had seen C1's status values for ten settings. Table~\ref{tab:coding-pilot} therefore describes a non-blind coding-manual pilot and sensitivity analysis. Its bootstrap intervals resample settings despite source clustering and dependent encodings; they are not human-coder reliability bounds.
+
+\begin{table*}[t]\centering\small
+\caption{Original, unadjudicated coding pilot on forty-four settings. Pairwise columns are Cohen's $\kappa$; the three-pass column is Fleiss' $\kappa$ with a 2,000-draw setting-bootstrap interval. Full agreement in this pilot does not establish field validity.}\label{tab:coding-pilot}
+\begin{tabularx}{\textwidth}{@{}Yrrrrr@{}}\toprule
+Field & C1--C2 & C1--C3 & C2--C3 & Three-pass $\kappa$ [95\%] & All agree \\\midrule
+Access, protection, named transfer, open world (each) & 1.00 & 1.00 & 1.00 & 1.00 & 44/44 \\
+Failure handling & .46 & .80 & .63 & .63 [.46, .75] & 28/44 \\
+Execution outcome & .15 & .46 & .52 & .37 [.23, .48] & 14/44 \\\bottomrule
+\end{tabularx}\end{table*}
+
+Removing the ten C3-exposed settings leaves thirty-four rows: C1--C3 $\kappa$ is .785 for failure handling and .433 for outcomes. This does not remove the shared-model or non-blind design. The number coded \emph{reported} also depends on applicability. Failure handling is 19/42, 18/43 and 16/43 for C1--C3; outcomes are 13/38, 7/38 and 15/43. These are descriptive coding ranges with different denominators, not a common-denominator confidence interval. Neither the original 13/38 nor an AI majority is treated as a settled field-coverage estimate.
+
+\paragraph{Rules that resolve the ambiguity}
+First name the execution and criterion. A source-defined success/failure count qualifies as \emph{reported}, with the strength of its criterion recorded separately. Explicit parser/repair outcomes qualify for a probe study, not as original-task utility. Persona-alignment diagnostics assess a behavioral component and are \emph{partial}. Raw action labels or final messages alone do not establish an evaluated task outcome. Reserve \emph{not applicable} for a setting with no new execution population; missing success evidence in an execution study is \emph{not located}.
+
+\paragraph{Fifteen disputed records}
+Source inspection changes thirteen outcome codes and retains two, with a per-setting ledger. All four ANT settings become \emph{not located}: the original codes were two partial, one reported and one inapplicable, not four inapplicable. Four cloud-benchmark settings become \emph{reported} because Section IV-A states 4,070 successful and 42 failed runs (98.9\%). This is an inherited collection-level criterion, not four independent success measurements; the source's conflicting capture totals remain unresolved. Three PersonaFingerprint settings become \emph{partial} for consistency/diversity diagnostics. AgentPrint behavior becomes \emph{partial} for capability activation/retention, and HTTP signatures becomes \emph{not located} for an evaluated execution outcome.
+
+The communication-graph active setting remains \emph{reported}: Section 9.5/Table 4 supplies live front-running outcomes over 100 rounds per condition, which both AI passes missed. Its offline capture-transformation setting remains \emph{not applicable} because the transformation does not re-execute tasks. These source checks take precedence over votes. The revised sheet contains 15 reported outcomes among 42 applicable rows; twenty-nine rows retain their prior extraction rather than receiving a new independent coding. No post-adjudication $\kappa$ is presented as validation.
+
+The artifact preserves all original encodings, exact agreement calculations, the exposed-row sensitivity, the clarified manual, source versions and the fifteen-row before/after ledger. General execution-outcome reporting remains distinct from original-task utility under the \emph{same defense}; consequently these revisions do not alter the four-setting privacy/utility denominator in the main text.
