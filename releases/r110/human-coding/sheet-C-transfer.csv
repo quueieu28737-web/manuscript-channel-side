@@ -1,0 +1,7 @@
+id,classical_condition,classical_anchors,agent_settings,proposed_agent_mapping,C1_relation,reason,notes
+T1,Unknown boundaries/background belong in event-recognition evaluation.,wang2016realistic;guan2021bapm;deng2023ares;trimananda2020pingpong,ANT-stage,"Tool bursts, model waits and task intervals require an explicit observation unit and event errors.",,,
+T2,Evaluate adaptation to the protected distribution.,dyer2012peekaboo;mathews2023critical;tramer2020adaptive,CG-transform;CG-live;WRA-decoy;WRA-visibility,An unchanged learner family can refit on protected captures; state training access and residual links.,,,
+T3,Coarse features can survive specified padding; serving streams expose size/gap signals.,dyer2012peekaboo;weiss2024prompt;whisperleak2025,CB-task;CB-size-excluded;ANT-model-scope,"Fix shaping policy, receiving hop, workload and feature protocol before transferring performance.",,,
+T4,Inference depends on visible paths and representations.,chen2010web;apthorpe2019stp,WRA-prompt;ANT-model-scope;CB-task;PT-metadata;PT-content,Tool feedback can enter a later model request across separately controlled service boundaries.,,,
+T5,The STP implementation drops cover at its tunnel endpoints.,apthorpe2019stp,WRA-decoy;WRA-visibility,"Executed research cover needs original-task resource, state and feedback constraints.",,,
+T6,Distributed path reconstruction can use participating-host instrumentation.,reynolds2006wap5;tak2009vpath,ANT-stage,Instrumentation can label a study; it does not become a passive attacker input.,,,

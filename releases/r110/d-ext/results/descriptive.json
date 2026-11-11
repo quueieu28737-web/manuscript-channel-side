@@ -1,0 +1,1682 @@
+[
+  {
+    "model": "qwen3:8b",
+    "arm": "transport_drop",
+    "comparison": "C3a_gap: timing_size minus size_only_best (position_last)",
+    "condition_only": 10,
+    "reference_only": 30,
+    "difference_pp": -16.666666666666664,
+    "conditional_ci_pp": [
+      -25.833333333333336,
+      -7.5
+    ],
+    "p_raw": 0.0022214337732293643,
+    "variant": "C3a_gap"
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "transport_drop",
+    "comparison": "C3a_gap: b1_strip minus size_only_best (position_last)",
+    "condition_only": 10,
+    "reference_only": 57,
+    "difference_pp": -39.166666666666664,
+    "conditional_ci_pp": [
+      -48.333333333333336,
+      -29.166666666666668
+    ],
+    "p_raw": 4.042104433067336e-09,
+    "variant": "C3a_gap"
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "transport_drop",
+    "comparison": "C3a_gap: ctx_strip minus size_only_best (position_last)",
+    "condition_only": 13,
+    "reference_only": 21,
+    "difference_pp": -6.666666666666667,
+    "conditional_ci_pp": [
+      -15.833333333333332,
+      2.5
+    ],
+    "p_raw": 0.22948101302608848,
+    "variant": "C3a_gap"
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "transport_drop",
+    "comparison": "C3a_gap: joint minus size_only_best (position_last)",
+    "condition_only": 17,
+    "reference_only": 18,
+    "difference_pp": -0.8333333333333334,
+    "conditional_ci_pp": [
+      -10.0,
+      8.333333333333332
+    ],
+    "p_raw": 1.0,
+    "variant": "C3a_gap"
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "read",
+    "comparison": "C3a_gap: timing_size minus size_only_best (position_last)",
+    "condition_only": 12,
+    "reference_only": 37,
+    "difference_pp": -20.833333333333336,
+    "conditional_ci_pp": [
+      -30.833333333333336,
+      -10.0
+    ],
+    "p_raw": 0.0004697573180081349,
+    "variant": "C3a_gap"
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "read",
+    "comparison": "C3a_gap: b1_strip minus size_only_best (position_last)",
+    "condition_only": 10,
+    "reference_only": 57,
+    "difference_pp": -39.166666666666664,
+    "conditional_ci_pp": [
+      -48.333333333333336,
+      -29.166666666666668
+    ],
+    "p_raw": 4.042104433067336e-09,
+    "variant": "C3a_gap"
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "read",
+    "comparison": "C3a_gap: ctx_strip minus size_only_best (position_last)",
+    "condition_only": 15,
+    "reference_only": 22,
+    "difference_pp": -5.833333333333333,
+    "conditional_ci_pp": [
+      -15.833333333333332,
+      4.166666666666666
+    ],
+    "p_raw": 0.3240086000878364,
+    "variant": "C3a_gap"
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "read",
+    "comparison": "C3a_gap: joint minus size_only_best (position_last)",
+    "condition_only": 17,
+    "reference_only": 14,
+    "difference_pp": 2.5,
+    "conditional_ci_pp": [
+      -6.666666666666667,
+      11.666666666666666
+    ],
+    "p_raw": 0.720100131817162,
+    "variant": "C3a_gap"
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "isolated",
+    "comparison": "C3a_gap: timing_size minus size_only_best (position_last)",
+    "condition_only": 11,
+    "reference_only": 41,
+    "difference_pp": -25.0,
+    "conditional_ci_pp": [
+      -35.833333333333336,
+      -14.166666666666666
+    ],
+    "p_raw": 3.5887916129517805e-05,
+    "variant": "C3a_gap"
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "isolated",
+    "comparison": "C3a_gap: b1_strip minus size_only_best (position_last)",
+    "condition_only": 10,
+    "reference_only": 56,
+    "difference_pp": -38.333333333333336,
+    "conditional_ci_pp": [
+      -47.5,
+      -28.333333333333332
+    ],
+    "p_raw": 6.901424055611068e-09,
+    "variant": "C3a_gap"
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "isolated",
+    "comparison": "C3a_gap: ctx_strip minus size_only_best (position_last)",
+    "condition_only": 11,
+    "reference_only": 22,
+    "difference_pp": -9.166666666666666,
+    "conditional_ci_pp": [
+      -18.333333333333332,
+      0.0
+    ],
+    "p_raw": 0.08014331245794892,
+    "variant": "C3a_gap"
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "isolated",
+    "comparison": "C3a_gap: joint minus size_only_best (position_last)",
+    "condition_only": 15,
+    "reference_only": 18,
+    "difference_pp": -2.5,
+    "conditional_ci_pp": [
+      -11.666666666666666,
+      6.666666666666667
+    ],
+    "p_raw": 0.7283324808813632,
+    "variant": "C3a_gap"
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "live_write",
+    "comparison": "C3a_gap: timing_size minus size_only_best (position_last)",
+    "condition_only": 16,
+    "reference_only": 30,
+    "difference_pp": -11.666666666666666,
+    "conditional_ci_pp": [
+      -21.666666666666668,
+      -1.6666666666666667
+    ],
+    "p_raw": 0.054076031858869555,
+    "variant": "C3a_gap"
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "live_write",
+    "comparison": "C3a_gap: b1_strip minus size_only_best (position_last)",
+    "condition_only": 10,
+    "reference_only": 55,
+    "difference_pp": -37.5,
+    "conditional_ci_pp": [
+      -46.666666666666664,
+      -27.500000000000004
+    ],
+    "p_raw": 1.1753602809018608e-08,
+    "variant": "C3a_gap"
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "live_write",
+    "comparison": "C3a_gap: ctx_strip minus size_only_best (position_last)",
+    "condition_only": 10,
+    "reference_only": 17,
+    "difference_pp": -5.833333333333333,
+    "conditional_ci_pp": [
+      -14.166666666666666,
+      2.5
+    ],
+    "p_raw": 0.24778856337070465,
+    "variant": "C3a_gap"
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "live_write",
+    "comparison": "C3a_gap: joint minus size_only_best (position_last)",
+    "condition_only": 18,
+    "reference_only": 12,
+    "difference_pp": 5.0,
+    "conditional_ci_pp": [
+      -4.166666666666666,
+      13.333333333333334
+    ],
+    "p_raw": 0.36159460805356514,
+    "variant": "C3a_gap"
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "isolated_visible",
+    "comparison": "C3a_gap: timing_size minus size_only_best (position_last)",
+    "condition_only": 11,
+    "reference_only": 33,
+    "difference_pp": -18.333333333333332,
+    "conditional_ci_pp": [
+      -28.333333333333332,
+      -8.333333333333332
+    ],
+    "p_raw": 0.0012600338162656044,
+    "variant": "C3a_gap"
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "isolated_visible",
+    "comparison": "C3a_gap: b1_strip minus size_only_best (position_last)",
+    "condition_only": 10,
+    "reference_only": 55,
+    "difference_pp": -37.5,
+    "conditional_ci_pp": [
+      -46.666666666666664,
+      -28.333333333333332
+    ],
+    "p_raw": 1.1753602809018608e-08,
+    "variant": "C3a_gap"
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "isolated_visible",
+    "comparison": "C3a_gap: ctx_strip minus size_only_best (position_last)",
+    "condition_only": 14,
+    "reference_only": 20,
+    "difference_pp": -5.0,
+    "conditional_ci_pp": [
+      -14.166666666666666,
+      4.166666666666666
+    ],
+    "p_raw": 0.39152830513194203,
+    "variant": "C3a_gap"
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "isolated_visible",
+    "comparison": "C3a_gap: joint minus size_only_best (position_last)",
+    "condition_only": 18,
+    "reference_only": 14,
+    "difference_pp": 3.3333333333333335,
+    "conditional_ci_pp": [
+      -5.833333333333333,
+      12.5
+    ],
+    "p_raw": 0.5966148958541453,
+    "variant": "C3a_gap"
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "transport_drop",
+    "comparison": "C3b_gap_duration: timing_size minus size_only_best (position_last)",
+    "condition_only": 11,
+    "reference_only": 31,
+    "difference_pp": -16.666666666666664,
+    "conditional_ci_pp": [
+      -25.833333333333336,
+      -6.666666666666667
+    ],
+    "p_raw": 0.002887247974285856,
+    "variant": "C3b_gap_duration"
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "transport_drop",
+    "comparison": "C3b_gap_duration: b1_strip minus size_only_best (position_last)",
+    "condition_only": 14,
+    "reference_only": 48,
+    "difference_pp": -28.333333333333332,
+    "conditional_ci_pp": [
+      -38.333333333333336,
+      -17.5
+    ],
+    "p_raw": 1.7428522601631996e-05,
+    "variant": "C3b_gap_duration"
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "transport_drop",
+    "comparison": "C3b_gap_duration: ctx_strip minus size_only_best (position_last)",
+    "condition_only": 14,
+    "reference_only": 23,
+    "difference_pp": -7.5,
+    "conditional_ci_pp": [
+      -17.5,
+      1.6666666666666667
+    ],
+    "p_raw": 0.18774155899882317,
+    "variant": "C3b_gap_duration"
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "transport_drop",
+    "comparison": "C3b_gap_duration: joint minus size_only_best (position_last)",
+    "condition_only": 16,
+    "reference_only": 17,
+    "difference_pp": -0.8333333333333334,
+    "conditional_ci_pp": [
+      -10.0,
+      8.333333333333332
+    ],
+    "p_raw": 1.0,
+    "variant": "C3b_gap_duration"
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "read",
+    "comparison": "C3b_gap_duration: timing_size minus size_only_best (position_last)",
+    "condition_only": 13,
+    "reference_only": 41,
+    "difference_pp": -23.333333333333332,
+    "conditional_ci_pp": [
+      -34.166666666666664,
+      -12.5
+    ],
+    "p_raw": 0.00017512673440589485,
+    "variant": "C3b_gap_duration"
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "read",
+    "comparison": "C3b_gap_duration: b1_strip minus size_only_best (position_last)",
+    "condition_only": 17,
+    "reference_only": 44,
+    "difference_pp": -22.5,
+    "conditional_ci_pp": [
+      -33.33333333333333,
+      -10.833333333333334
+    ],
+    "p_raw": 0.0007299045109347685,
+    "variant": "C3b_gap_duration"
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "read",
+    "comparison": "C3b_gap_duration: ctx_strip minus size_only_best (position_last)",
+    "condition_only": 15,
+    "reference_only": 22,
+    "difference_pp": -5.833333333333333,
+    "conditional_ci_pp": [
+      -15.833333333333332,
+      3.3333333333333335
+    ],
+    "p_raw": 0.3240086000878364,
+    "variant": "C3b_gap_duration"
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "read",
+    "comparison": "C3b_gap_duration: joint minus size_only_best (position_last)",
+    "condition_only": 19,
+    "reference_only": 12,
+    "difference_pp": 5.833333333333333,
+    "conditional_ci_pp": [
+      -2.5,
+      15.0
+    ],
+    "p_raw": 0.28104151505976915,
+    "variant": "C3b_gap_duration"
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "isolated",
+    "comparison": "C3b_gap_duration: timing_size minus size_only_best (position_last)",
+    "condition_only": 10,
+    "reference_only": 46,
+    "difference_pp": -30.0,
+    "conditional_ci_pp": [
+      -40.0,
+      -20.0
+    ],
+    "p_raw": 1.2454514146109652e-06,
+    "variant": "C3b_gap_duration"
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "isolated",
+    "comparison": "C3b_gap_duration: b1_strip minus size_only_best (position_last)",
+    "condition_only": 18,
+    "reference_only": 38,
+    "difference_pp": -16.666666666666664,
+    "conditional_ci_pp": [
+      -27.500000000000004,
+      -5.0
+    ],
+    "p_raw": 0.01045481832189218,
+    "variant": "C3b_gap_duration"
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "isolated",
+    "comparison": "C3b_gap_duration: ctx_strip minus size_only_best (position_last)",
+    "condition_only": 15,
+    "reference_only": 13,
+    "difference_pp": 1.6666666666666667,
+    "conditional_ci_pp": [
+      -6.666666666666667,
+      10.0
+    ],
+    "p_raw": 0.8505540192127228,
+    "variant": "C3b_gap_duration"
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "isolated",
+    "comparison": "C3b_gap_duration: joint minus size_only_best (position_last)",
+    "condition_only": 18,
+    "reference_only": 11,
+    "difference_pp": 5.833333333333333,
+    "conditional_ci_pp": [
+      -2.5,
+      14.166666666666666
+    ],
+    "p_raw": 0.26493089646101,
+    "variant": "C3b_gap_duration"
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "live_write",
+    "comparison": "C3b_gap_duration: timing_size minus size_only_best (position_last)",
+    "condition_only": 14,
+    "reference_only": 35,
+    "difference_pp": -17.5,
+    "conditional_ci_pp": [
+      -27.500000000000004,
+      -7.5
+    ],
+    "p_raw": 0.003801654409748778,
+    "variant": "C3b_gap_duration"
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "live_write",
+    "comparison": "C3b_gap_duration: b1_strip minus size_only_best (position_last)",
+    "condition_only": 17,
+    "reference_only": 38,
+    "difference_pp": -17.5,
+    "conditional_ci_pp": [
+      -28.333333333333332,
+      -6.666666666666667
+    ],
+    "p_raw": 0.006455803109956635,
+    "variant": "C3b_gap_duration"
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "live_write",
+    "comparison": "C3b_gap_duration: ctx_strip minus size_only_best (position_last)",
+    "condition_only": 15,
+    "reference_only": 17,
+    "difference_pp": -1.6666666666666667,
+    "conditional_ci_pp": [
+      -10.020833333333314,
+      7.5
+    ],
+    "p_raw": 0.860050065908581,
+    "variant": "C3b_gap_duration"
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "live_write",
+    "comparison": "C3b_gap_duration: joint minus size_only_best (position_last)",
+    "condition_only": 16,
+    "reference_only": 9,
+    "difference_pp": 5.833333333333333,
+    "conditional_ci_pp": [
+      -1.6666666666666667,
+      13.333333333333334
+    ],
+    "p_raw": 0.2295229434967041,
+    "variant": "C3b_gap_duration"
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "isolated_visible",
+    "comparison": "C3b_gap_duration: timing_size minus size_only_best (position_last)",
+    "condition_only": 15,
+    "reference_only": 26,
+    "difference_pp": -9.166666666666666,
+    "conditional_ci_pp": [
+      -19.166666666666668,
+      0.8333333333333334
+    ],
+    "p_raw": 0.11727520595741225,
+    "variant": "C3b_gap_duration"
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "isolated_visible",
+    "comparison": "C3b_gap_duration: b1_strip minus size_only_best (position_last)",
+    "condition_only": 17,
+    "reference_only": 45,
+    "difference_pp": -23.333333333333332,
+    "conditional_ci_pp": [
+      -35.0,
+      -11.666666666666666
+    ],
+    "p_raw": 0.0004970915863810334,
+    "variant": "C3b_gap_duration"
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "isolated_visible",
+    "comparison": "C3b_gap_duration: ctx_strip minus size_only_best (position_last)",
+    "condition_only": 20,
+    "reference_only": 22,
+    "difference_pp": -1.6666666666666667,
+    "conditional_ci_pp": [
+      -11.666666666666666,
+      8.333333333333332
+    ],
+    "p_raw": 0.8776143287523154,
+    "variant": "C3b_gap_duration"
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "isolated_visible",
+    "comparison": "C3b_gap_duration: joint minus size_only_best (position_last)",
+    "condition_only": 21,
+    "reference_only": 12,
+    "difference_pp": 7.5,
+    "conditional_ci_pp": [
+      -1.6666666666666667,
+      16.666666666666664
+    ],
+    "p_raw": 0.16275565745308995,
+    "variant": "C3b_gap_duration"
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "transport_drop",
+    "comparison": "C3c_position: timing_size minus size_only_best (position_last)",
+    "condition_only": 13,
+    "reference_only": 29,
+    "difference_pp": -13.333333333333334,
+    "conditional_ci_pp": [
+      -23.333333333333332,
+      -3.3333333333333335
+    ],
+    "p_raw": 0.019520472782460274,
+    "variant": "C3c_position"
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "transport_drop",
+    "comparison": "C3c_position: b1_strip minus size_only_best (position_last)",
+    "condition_only": 7,
+    "reference_only": 63,
+    "difference_pp": -46.666666666666664,
+    "conditional_ci_pp": [
+      -55.833333333333336,
+      -37.5
+    ],
+    "p_raw": 2.2750760151658833e-12,
+    "variant": "C3c_position"
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "transport_drop",
+    "comparison": "C3c_position: ctx_strip minus size_only_best (position_last)",
+    "condition_only": 14,
+    "reference_only": 14,
+    "difference_pp": 0.0,
+    "conditional_ci_pp": [
+      -8.333333333333332,
+      8.333333333333332
+    ],
+    "p_raw": 1.0,
+    "variant": "C3c_position"
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "transport_drop",
+    "comparison": "C3c_position: joint minus size_only_best (position_last)",
+    "condition_only": 20,
+    "reference_only": 14,
+    "difference_pp": 5.0,
+    "conditional_ci_pp": [
+      -4.166666666666666,
+      14.166666666666666
+    ],
+    "p_raw": 0.39152830513194203,
+    "variant": "C3c_position"
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "read",
+    "comparison": "C3c_position: timing_size minus size_only_best (position_last)",
+    "condition_only": 13,
+    "reference_only": 36,
+    "difference_pp": -19.166666666666668,
+    "conditional_ci_pp": [
+      -30.0,
+      -8.333333333333332
+    ],
+    "p_raw": 0.001402688503695515,
+    "variant": "C3c_position"
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "read",
+    "comparison": "C3c_position: b1_strip minus size_only_best (position_last)",
+    "condition_only": 8,
+    "reference_only": 61,
+    "difference_pp": -44.166666666666664,
+    "conditional_ci_pp": [
+      -53.333333333333336,
+      -35.0
+    ],
+    "p_raw": 3.243250603517968e-11,
+    "variant": "C3c_position"
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "read",
+    "comparison": "C3c_position: ctx_strip minus size_only_best (position_last)",
+    "condition_only": 16,
+    "reference_only": 22,
+    "difference_pp": -5.0,
+    "conditional_ci_pp": [
+      -14.166666666666666,
+      5.0
+    ],
+    "p_raw": 0.417692190836533,
+    "variant": "C3c_position"
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "read",
+    "comparison": "C3c_position: joint minus size_only_best (position_last)",
+    "condition_only": 16,
+    "reference_only": 12,
+    "difference_pp": 3.3333333333333335,
+    "conditional_ci_pp": [
+      -5.0,
+      11.666666666666666
+    ],
+    "p_raw": 0.5715881884098053,
+    "variant": "C3c_position"
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "isolated",
+    "comparison": "C3c_position: timing_size minus size_only_best (position_last)",
+    "condition_only": 9,
+    "reference_only": 44,
+    "difference_pp": -29.166666666666668,
+    "conditional_ci_pp": [
+      -39.166666666666664,
+      -19.166666666666668
+    ],
+    "p_raw": 1.220851017613711e-06,
+    "variant": "C3c_position"
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "isolated",
+    "comparison": "C3c_position: b1_strip minus size_only_best (position_last)",
+    "condition_only": 10,
+    "reference_only": 64,
+    "difference_pp": -45.0,
+    "conditional_ci_pp": [
+      -54.18749999999998,
+      -35.0
+    ],
+    "p_raw": 8.957423581215867e-11,
+    "variant": "C3c_position"
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "isolated",
+    "comparison": "C3c_position: ctx_strip minus size_only_best (position_last)",
+    "condition_only": 14,
+    "reference_only": 14,
+    "difference_pp": 0.0,
+    "conditional_ci_pp": [
+      -8.333333333333332,
+      8.333333333333332
+    ],
+    "p_raw": 1.0,
+    "variant": "C3c_position"
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "isolated",
+    "comparison": "C3c_position: joint minus size_only_best (position_last)",
+    "condition_only": 16,
+    "reference_only": 11,
+    "difference_pp": 4.166666666666666,
+    "conditional_ci_pp": [
+      -4.166666666666666,
+      12.5
+    ],
+    "p_raw": 0.44206833839416504,
+    "variant": "C3c_position"
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "live_write",
+    "comparison": "C3c_position: timing_size minus size_only_best (position_last)",
+    "condition_only": 11,
+    "reference_only": 29,
+    "difference_pp": -15.0,
+    "conditional_ci_pp": [
+      -24.166666666666668,
+      -5.0
+    ],
+    "p_raw": 0.006426576095691416,
+    "variant": "C3c_position"
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "live_write",
+    "comparison": "C3c_position: b1_strip minus size_only_best (position_last)",
+    "condition_only": 7,
+    "reference_only": 58,
+    "difference_pp": -42.5,
+    "conditional_ci_pp": [
+      -51.66666666666667,
+      -33.33333333333333
+    ],
+    "p_raw": 4.2705216207923607e-11,
+    "variant": "C3c_position"
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "live_write",
+    "comparison": "C3c_position: ctx_strip minus size_only_best (position_last)",
+    "condition_only": 14,
+    "reference_only": 16,
+    "difference_pp": -1.6666666666666667,
+    "conditional_ci_pp": [
+      -10.0,
+      7.5
+    ],
+    "p_raw": 0.8555355519056321,
+    "variant": "C3c_position"
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "live_write",
+    "comparison": "C3c_position: joint minus size_only_best (position_last)",
+    "condition_only": 18,
+    "reference_only": 10,
+    "difference_pp": 6.666666666666667,
+    "conditional_ci_pp": [
+      -1.6666666666666667,
+      15.0
+    ],
+    "p_raw": 0.1849333420395851,
+    "variant": "C3c_position"
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "isolated_visible",
+    "comparison": "C3c_position: timing_size minus size_only_best (position_last)",
+    "condition_only": 12,
+    "reference_only": 32,
+    "difference_pp": -16.666666666666664,
+    "conditional_ci_pp": [
+      -26.666666666666668,
+      -6.666666666666667
+    ],
+    "p_raw": 0.003657766827927844,
+    "variant": "C3c_position"
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "isolated_visible",
+    "comparison": "C3c_position: b1_strip minus size_only_best (position_last)",
+    "condition_only": 6,
+    "reference_only": 62,
+    "difference_pp": -46.666666666666664,
+    "conditional_ci_pp": [
+      -55.00000000000001,
+      -37.5
+    ],
+    "p_raw": 8.181953378705309e-13,
+    "variant": "C3c_position"
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "isolated_visible",
+    "comparison": "C3c_position: ctx_strip minus size_only_best (position_last)",
+    "condition_only": 15,
+    "reference_only": 21,
+    "difference_pp": -5.0,
+    "conditional_ci_pp": [
+      -15.0,
+      4.166666666666666
+    ],
+    "p_raw": 0.4050322461407632,
+    "variant": "C3c_position"
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "isolated_visible",
+    "comparison": "C3c_position: joint minus size_only_best (position_last)",
+    "condition_only": 16,
+    "reference_only": 15,
+    "difference_pp": 0.8333333333333334,
+    "conditional_ci_pp": [
+      -8.333333333333332,
+      10.0
+    ],
+    "p_raw": 1.0,
+    "variant": "C3c_position"
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "transport_drop",
+    "comparison": "C3a_gap: timing_size minus size_only_best (byte_RF)",
+    "condition_only": 7,
+    "reference_only": 14,
+    "difference_pp": -5.833333333333333,
+    "conditional_ci_pp": [
+      -13.333333333333334,
+      1.6666666666666667
+    ],
+    "p_raw": 0.18924713134765625,
+    "variant": "C3a_gap"
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "transport_drop",
+    "comparison": "C3a_gap: b1_strip minus size_only_best (byte_RF)",
+    "condition_only": 18,
+    "reference_only": 49,
+    "difference_pp": -25.833333333333336,
+    "conditional_ci_pp": [
+      -36.666666666666664,
+      -15.812500000000302
+    ],
+    "p_raw": 0.0001942977864148144,
+    "variant": "C3a_gap"
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "transport_drop",
+    "comparison": "C3a_gap: ctx_strip minus size_only_best (byte_RF)",
+    "condition_only": 23,
+    "reference_only": 17,
+    "difference_pp": 5.0,
+    "conditional_ci_pp": [
+      -4.166666666666666,
+      14.166666666666666
+    ],
+    "p_raw": 0.42959050784338615,
+    "variant": "C3a_gap"
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "transport_drop",
+    "comparison": "C3a_gap: joint minus size_only_best (byte_RF)",
+    "condition_only": 19,
+    "reference_only": 12,
+    "difference_pp": 5.833333333333333,
+    "conditional_ci_pp": [
+      -3.3333333333333335,
+      14.166666666666666
+    ],
+    "p_raw": 0.28104151505976915,
+    "variant": "C3a_gap"
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "read",
+    "comparison": "C3a_gap: timing_size minus size_only_best (byte_RF)",
+    "condition_only": 6,
+    "reference_only": 9,
+    "difference_pp": -2.5,
+    "conditional_ci_pp": [
+      -8.333333333333332,
+      3.3333333333333335
+    ],
+    "p_raw": 0.6072387695312499,
+    "variant": "C3a_gap"
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "read",
+    "comparison": "C3a_gap: b1_strip minus size_only_best (byte_RF)",
+    "condition_only": 15,
+    "reference_only": 43,
+    "difference_pp": -23.333333333333332,
+    "conditional_ci_pp": [
+      -33.33333333333333,
+      -13.333333333333334
+    ],
+    "p_raw": 0.000306947015546566,
+    "variant": "C3a_gap"
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "read",
+    "comparison": "C3a_gap: ctx_strip minus size_only_best (byte_RF)",
+    "condition_only": 27,
+    "reference_only": 15,
+    "difference_pp": 10.0,
+    "conditional_ci_pp": [
+      0.8333333333333334,
+      19.166666666666668
+    ],
+    "p_raw": 0.08842954698775429,
+    "variant": "C3a_gap"
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "read",
+    "comparison": "C3a_gap: joint minus size_only_best (byte_RF)",
+    "condition_only": 26,
+    "reference_only": 12,
+    "difference_pp": 11.666666666666666,
+    "conditional_ci_pp": [
+      1.6666666666666667,
+      20.833333333333336
+    ],
+    "p_raw": 0.03355243967962451,
+    "variant": "C3a_gap"
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "isolated",
+    "comparison": "C3a_gap: timing_size minus size_only_best (byte_RF)",
+    "condition_only": 8,
+    "reference_only": 6,
+    "difference_pp": 1.6666666666666667,
+    "conditional_ci_pp": [
+      -4.166666666666666,
+      7.5
+    ],
+    "p_raw": 0.79052734375,
+    "variant": "C3a_gap"
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "isolated",
+    "comparison": "C3a_gap: b1_strip minus size_only_best (byte_RF)",
+    "condition_only": 15,
+    "reference_only": 45,
+    "difference_pp": -25.0,
+    "conditional_ci_pp": [
+      -35.0,
+      -15.0
+    ],
+    "p_raw": 0.00013451408092849532,
+    "variant": "C3a_gap"
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "isolated",
+    "comparison": "C3a_gap: ctx_strip minus size_only_best (byte_RF)",
+    "condition_only": 15,
+    "reference_only": 17,
+    "difference_pp": -1.6666666666666667,
+    "conditional_ci_pp": [
+      -10.0,
+      6.666666666666667
+    ],
+    "p_raw": 0.860050065908581,
+    "variant": "C3a_gap"
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "isolated",
+    "comparison": "C3a_gap: joint minus size_only_best (byte_RF)",
+    "condition_only": 15,
+    "reference_only": 11,
+    "difference_pp": 3.3333333333333335,
+    "conditional_ci_pp": [
+      -4.166666666666666,
+      11.666666666666666
+    ],
+    "p_raw": 0.557197093963623,
+    "variant": "C3a_gap"
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "live_write",
+    "comparison": "C3a_gap: timing_size minus size_only_best (position_last)",
+    "condition_only": 30,
+    "reference_only": 29,
+    "difference_pp": 0.8333333333333334,
+    "conditional_ci_pp": [
+      -10.0,
+      11.666666666666666
+    ],
+    "p_raw": 1.0,
+    "variant": "C3a_gap"
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "live_write",
+    "comparison": "C3a_gap: b1_strip minus size_only_best (position_last)",
+    "condition_only": 25,
+    "reference_only": 35,
+    "difference_pp": -8.333333333333332,
+    "conditional_ci_pp": [
+      -20.0,
+      3.3333333333333335
+    ],
+    "p_raw": 0.2450608330229457,
+    "variant": "C3a_gap"
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "live_write",
+    "comparison": "C3a_gap: ctx_strip minus size_only_best (position_last)",
+    "condition_only": 28,
+    "reference_only": 12,
+    "difference_pp": 13.333333333333334,
+    "conditional_ci_pp": [
+      4.166666666666666,
+      23.333333333333332
+    ],
+    "p_raw": 0.01658900337497471,
+    "variant": "C3a_gap"
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "live_write",
+    "comparison": "C3a_gap: joint minus size_only_best (position_last)",
+    "condition_only": 38,
+    "reference_only": 9,
+    "difference_pp": 24.166666666666668,
+    "conditional_ci_pp": [
+      15.0,
+      33.33333333333333
+    ],
+    "p_raw": 2.4904030624384174e-05,
+    "variant": "C3a_gap"
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "isolated_visible",
+    "comparison": "C3a_gap: timing_size minus size_only_best (byte_RF)",
+    "condition_only": 12,
+    "reference_only": 14,
+    "difference_pp": -1.6666666666666667,
+    "conditional_ci_pp": [
+      -10.0,
+      6.666666666666667
+    ],
+    "p_raw": 0.8450189828872681,
+    "variant": "C3a_gap"
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "isolated_visible",
+    "comparison": "C3a_gap: b1_strip minus size_only_best (byte_RF)",
+    "condition_only": 11,
+    "reference_only": 44,
+    "difference_pp": -27.500000000000004,
+    "conditional_ci_pp": [
+      -37.5,
+      -17.5
+    ],
+    "p_raw": 8.699371704778969e-06,
+    "variant": "C3a_gap"
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "isolated_visible",
+    "comparison": "C3a_gap: ctx_strip minus size_only_best (byte_RF)",
+    "condition_only": 18,
+    "reference_only": 16,
+    "difference_pp": 1.6666666666666667,
+    "conditional_ci_pp": [
+      -6.666666666666667,
+      10.0
+    ],
+    "p_raw": 0.8641662404406816,
+    "variant": "C3a_gap"
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "isolated_visible",
+    "comparison": "C3a_gap: joint minus size_only_best (byte_RF)",
+    "condition_only": 20,
+    "reference_only": 13,
+    "difference_pp": 5.833333333333333,
+    "conditional_ci_pp": [
+      -2.5,
+      15.0
+    ],
+    "p_raw": 0.296206368599087,
+    "variant": "C3a_gap"
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "transport_drop",
+    "comparison": "C3b_gap_duration: timing_size minus size_only_best (byte_RF)",
+    "condition_only": 9,
+    "reference_only": 9,
+    "difference_pp": 0.0,
+    "conditional_ci_pp": [
+      -6.666666666666667,
+      6.666666666666667
+    ],
+    "p_raw": 1.0,
+    "variant": "C3b_gap_duration"
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "transport_drop",
+    "comparison": "C3b_gap_duration: b1_strip minus size_only_best (byte_RF)",
+    "condition_only": 16,
+    "reference_only": 36,
+    "difference_pp": -16.666666666666664,
+    "conditional_ci_pp": [
+      -26.666666666666668,
+      -6.666666666666667
+    ],
+    "p_raw": 0.0077874363057435225,
+    "variant": "C3b_gap_duration"
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "transport_drop",
+    "comparison": "C3b_gap_duration: ctx_strip minus size_only_best (byte_RF)",
+    "condition_only": 22,
+    "reference_only": 19,
+    "difference_pp": 2.5,
+    "conditional_ci_pp": [
+      -7.5,
+      12.5
+    ],
+    "p_raw": 0.755228657504631,
+    "variant": "C3b_gap_duration"
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "transport_drop",
+    "comparison": "C3b_gap_duration: joint minus size_only_best (byte_RF)",
+    "condition_only": 27,
+    "reference_only": 11,
+    "difference_pp": 13.333333333333334,
+    "conditional_ci_pp": [
+      4.166666666666666,
+      22.5
+    ],
+    "p_raw": 0.013852965261321515,
+    "variant": "C3b_gap_duration"
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "read",
+    "comparison": "C3b_gap_duration: timing_size minus size_only_best (byte_RF)",
+    "condition_only": 12,
+    "reference_only": 10,
+    "difference_pp": 1.6666666666666667,
+    "conditional_ci_pp": [
+      -5.833333333333333,
+      9.166666666666666
+    ],
+    "p_raw": 0.8318119049072266,
+    "variant": "C3b_gap_duration"
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "read",
+    "comparison": "C3b_gap_duration: b1_strip minus size_only_best (byte_RF)",
+    "condition_only": 24,
+    "reference_only": 37,
+    "difference_pp": -10.833333333333334,
+    "conditional_ci_pp": [
+      -22.5,
+      0.8333333333333334
+    ],
+    "p_raw": 0.12373144253809215,
+    "variant": "C3b_gap_duration"
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "read",
+    "comparison": "C3b_gap_duration: ctx_strip minus size_only_best (byte_RF)",
+    "condition_only": 24,
+    "reference_only": 7,
+    "difference_pp": 14.166666666666666,
+    "conditional_ci_pp": [
+      5.833333333333333,
+      22.5
+    ],
+    "p_raw": 0.003326892852783203,
+    "variant": "C3b_gap_duration"
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "read",
+    "comparison": "C3b_gap_duration: joint minus size_only_best (byte_RF)",
+    "condition_only": 27,
+    "reference_only": 5,
+    "difference_pp": 18.333333333333332,
+    "conditional_ci_pp": [
+      10.0,
+      26.666666666666668
+    ],
+    "p_raw": 0.00011307420209050179,
+    "variant": "C3b_gap_duration"
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "isolated",
+    "comparison": "C3b_gap_duration: timing_size minus size_only_best (byte_RF)",
+    "condition_only": 4,
+    "reference_only": 5,
+    "difference_pp": -0.8333333333333334,
+    "conditional_ci_pp": [
+      -5.833333333333333,
+      4.166666666666666
+    ],
+    "p_raw": 1.0,
+    "variant": "C3b_gap_duration"
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "isolated",
+    "comparison": "C3b_gap_duration: b1_strip minus size_only_best (byte_RF)",
+    "condition_only": 13,
+    "reference_only": 40,
+    "difference_pp": -22.5,
+    "conditional_ci_pp": [
+      -32.5,
+      -12.5
+    ],
+    "p_raw": 0.0002685401188191605,
+    "variant": "C3b_gap_duration"
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "isolated",
+    "comparison": "C3b_gap_duration: ctx_strip minus size_only_best (byte_RF)",
+    "condition_only": 18,
+    "reference_only": 15,
+    "difference_pp": 2.5,
+    "conditional_ci_pp": [
+      -5.833333333333333,
+      11.666666666666666
+    ],
+    "p_raw": 0.7283324808813632,
+    "variant": "C3b_gap_duration"
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "isolated",
+    "comparison": "C3b_gap_duration: joint minus size_only_best (byte_RF)",
+    "condition_only": 23,
+    "reference_only": 8,
+    "difference_pp": 12.5,
+    "conditional_ci_pp": [
+      4.166666666666666,
+      20.833333333333336
+    ],
+    "p_raw": 0.010673840530216694,
+    "variant": "C3b_gap_duration"
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "live_write",
+    "comparison": "C3b_gap_duration: timing_size minus size_only_best (position_last)",
+    "condition_only": 28,
+    "reference_only": 28,
+    "difference_pp": 0.0,
+    "conditional_ci_pp": [
+      -10.833333333333334,
+      10.833333333333334
+    ],
+    "p_raw": 1.0,
+    "variant": "C3b_gap_duration"
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "live_write",
+    "comparison": "C3b_gap_duration: b1_strip minus size_only_best (position_last)",
+    "condition_only": 28,
+    "reference_only": 27,
+    "difference_pp": 0.8333333333333334,
+    "conditional_ci_pp": [
+      -10.833333333333334,
+      11.666666666666666
+    ],
+    "p_raw": 1.0,
+    "variant": "C3b_gap_duration"
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "live_write",
+    "comparison": "C3b_gap_duration: ctx_strip minus size_only_best (position_last)",
+    "condition_only": 33,
+    "reference_only": 16,
+    "difference_pp": 14.166666666666666,
+    "conditional_ci_pp": [
+      3.3333333333333335,
+      24.187499999999698
+    ],
+    "p_raw": 0.021294114141387155,
+    "variant": "C3b_gap_duration"
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "live_write",
+    "comparison": "C3b_gap_duration: joint minus size_only_best (position_last)",
+    "condition_only": 39,
+    "reference_only": 12,
+    "difference_pp": 22.5,
+    "conditional_ci_pp": [
+      12.5,
+      32.5
+    ],
+    "p_raw": 0.0001980394513374506,
+    "variant": "C3b_gap_duration"
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "isolated_visible",
+    "comparison": "C3b_gap_duration: timing_size minus size_only_best (byte_RF)",
+    "condition_only": 11,
+    "reference_only": 13,
+    "difference_pp": -1.6666666666666667,
+    "conditional_ci_pp": [
+      -9.166666666666666,
+      6.666666666666667
+    ],
+    "p_raw": 0.8388197422027588,
+    "variant": "C3b_gap_duration"
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "isolated_visible",
+    "comparison": "C3b_gap_duration: b1_strip minus size_only_best (byte_RF)",
+    "condition_only": 19,
+    "reference_only": 38,
+    "difference_pp": -15.833333333333332,
+    "conditional_ci_pp": [
+      -26.666666666666668,
+      -5.0
+    ],
+    "p_raw": 0.016348103897376145,
+    "variant": "C3b_gap_duration"
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "isolated_visible",
+    "comparison": "C3b_gap_duration: ctx_strip minus size_only_best (byte_RF)",
+    "condition_only": 17,
+    "reference_only": 18,
+    "difference_pp": -0.8333333333333334,
+    "conditional_ci_pp": [
+      -10.0,
+      8.333333333333332
+    ],
+    "p_raw": 1.0,
+    "variant": "C3b_gap_duration"
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "isolated_visible",
+    "comparison": "C3b_gap_duration: joint minus size_only_best (byte_RF)",
+    "condition_only": 22,
+    "reference_only": 16,
+    "difference_pp": 5.0,
+    "conditional_ci_pp": [
+      -4.166666666666666,
+      15.0
+    ],
+    "p_raw": 0.417692190836533,
+    "variant": "C3b_gap_duration"
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "transport_drop",
+    "comparison": "C3c_position: timing_size minus size_only_best (byte_RF)",
+    "condition_only": 10,
+    "reference_only": 11,
+    "difference_pp": -0.8333333333333334,
+    "conditional_ci_pp": [
+      -8.333333333333332,
+      6.666666666666667
+    ],
+    "p_raw": 1.0,
+    "variant": "C3c_position"
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "transport_drop",
+    "comparison": "C3c_position: b1_strip minus size_only_best (byte_RF)",
+    "condition_only": 15,
+    "reference_only": 42,
+    "difference_pp": -22.5,
+    "conditional_ci_pp": [
+      -33.33333333333333,
+      -11.666666666666666
+    ],
+    "p_raw": 0.00046000500864878935,
+    "variant": "C3c_position"
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "transport_drop",
+    "comparison": "C3c_position: ctx_strip minus size_only_best (byte_RF)",
+    "condition_only": 21,
+    "reference_only": 18,
+    "difference_pp": 2.5,
+    "conditional_ci_pp": [
+      -7.5,
+      12.5
+    ],
+    "p_raw": 0.7492586247608418,
+    "variant": "C3c_position"
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "transport_drop",
+    "comparison": "C3c_position: joint minus size_only_best (byte_RF)",
+    "condition_only": 23,
+    "reference_only": 12,
+    "difference_pp": 9.166666666666666,
+    "conditional_ci_pp": [
+      0.0,
+      18.333333333333332
+    ],
+    "p_raw": 0.08953107893466952,
+    "variant": "C3c_position"
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "read",
+    "comparison": "C3c_position: timing_size minus size_only_best (byte_RF)",
+    "condition_only": 11,
+    "reference_only": 10,
+    "difference_pp": 0.8333333333333334,
+    "conditional_ci_pp": [
+      -5.833333333333333,
+      7.5
+    ],
+    "p_raw": 1.0,
+    "variant": "C3c_position"
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "read",
+    "comparison": "C3c_position: b1_strip minus size_only_best (byte_RF)",
+    "condition_only": 26,
+    "reference_only": 41,
+    "difference_pp": -12.5,
+    "conditional_ci_pp": [
+      -24.166666666666668,
+      -0.8333333333333334
+    ],
+    "p_raw": 0.08643723427347082,
+    "variant": "C3c_position"
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "read",
+    "comparison": "C3c_position: ctx_strip minus size_only_best (byte_RF)",
+    "condition_only": 25,
+    "reference_only": 9,
+    "difference_pp": 13.333333333333334,
+    "conditional_ci_pp": [
+      4.166666666666666,
+      21.687499999999698
+    ],
+    "p_raw": 0.00904118549078703,
+    "variant": "C3c_position"
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "read",
+    "comparison": "C3c_position: joint minus size_only_best (byte_RF)",
+    "condition_only": 30,
+    "reference_only": 4,
+    "difference_pp": 21.666666666666668,
+    "conditional_ci_pp": [
+      13.333333333333334,
+      30.0
+    ],
+    "p_raw": 6.16488978266716e-06,
+    "variant": "C3c_position"
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "isolated",
+    "comparison": "C3c_position: timing_size minus size_only_best (byte_RF)",
+    "condition_only": 5,
+    "reference_only": 10,
+    "difference_pp": -4.166666666666666,
+    "conditional_ci_pp": [
+      -10.833333333333334,
+      2.5
+    ],
+    "p_raw": 0.30175781249999994,
+    "variant": "C3c_position"
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "isolated",
+    "comparison": "C3c_position: b1_strip minus size_only_best (byte_RF)",
+    "condition_only": 14,
+    "reference_only": 39,
+    "difference_pp": -20.833333333333336,
+    "conditional_ci_pp": [
+      -31.666666666666664,
+      -10.0
+    ],
+    "p_raw": 0.0008023308868949641,
+    "variant": "C3c_position"
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "isolated",
+    "comparison": "C3c_position: ctx_strip minus size_only_best (byte_RF)",
+    "condition_only": 18,
+    "reference_only": 16,
+    "difference_pp": 1.6666666666666667,
+    "conditional_ci_pp": [
+      -7.5,
+      10.833333333333334
+    ],
+    "p_raw": 0.8641662404406816,
+    "variant": "C3c_position"
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "isolated",
+    "comparison": "C3c_position: joint minus size_only_best (byte_RF)",
+    "condition_only": 16,
+    "reference_only": 12,
+    "difference_pp": 3.3333333333333335,
+    "conditional_ci_pp": [
+      -5.0,
+      11.666666666666666
+    ],
+    "p_raw": 0.5715881884098053,
+    "variant": "C3c_position"
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "live_write",
+    "comparison": "C3c_position: timing_size minus size_only_best (position_last)",
+    "condition_only": 31,
+    "reference_only": 28,
+    "difference_pp": 2.5,
+    "conditional_ci_pp": [
+      -8.333333333333332,
+      13.333333333333334
+    ],
+    "p_raw": 0.794843653982861,
+    "variant": "C3c_position"
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "live_write",
+    "comparison": "C3c_position: b1_strip minus size_only_best (position_last)",
+    "condition_only": 29,
+    "reference_only": 29,
+    "difference_pp": 0.0,
+    "conditional_ci_pp": [
+      -11.666666666666666,
+      11.666666666666666
+    ],
+    "p_raw": 1.0,
+    "variant": "C3c_position"
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "live_write",
+    "comparison": "C3c_position: ctx_strip minus size_only_best (position_last)",
+    "condition_only": 34,
+    "reference_only": 15,
+    "difference_pp": 15.833333333333332,
+    "conditional_ci_pp": [
+      5.0,
+      25.833333333333336
+    ],
+    "p_raw": 0.009399241523873059,
+    "variant": "C3c_position"
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "live_write",
+    "comparison": "C3c_position: joint minus size_only_best (position_last)",
+    "condition_only": 35,
+    "reference_only": 11,
+    "difference_pp": 20.0,
+    "conditional_ci_pp": [
+      10.0,
+      30.0
+    ],
+    "p_raw": 0.0005355850721002753,
+    "variant": "C3c_position"
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "isolated_visible",
+    "comparison": "C3c_position: timing_size minus size_only_best (byte_RF)",
+    "condition_only": 12,
+    "reference_only": 14,
+    "difference_pp": -1.6666666666666667,
+    "conditional_ci_pp": [
+      -10.0,
+      6.666666666666667
+    ],
+    "p_raw": 0.8450189828872681,
+    "variant": "C3c_position"
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "isolated_visible",
+    "comparison": "C3c_position: b1_strip minus size_only_best (byte_RF)",
+    "condition_only": 19,
+    "reference_only": 38,
+    "difference_pp": -15.833333333333332,
+    "conditional_ci_pp": [
+      -26.666666666666668,
+      -5.0
+    ],
+    "p_raw": 0.016348103897376145,
+    "variant": "C3c_position"
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "isolated_visible",
+    "comparison": "C3c_position: ctx_strip minus size_only_best (byte_RF)",
+    "condition_only": 18,
+    "reference_only": 14,
+    "difference_pp": 3.3333333333333335,
+    "conditional_ci_pp": [
+      -5.0,
+      12.5
+    ],
+    "p_raw": 0.5966148958541453,
+    "variant": "C3c_position"
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "isolated_visible",
+    "comparison": "C3c_position: joint minus size_only_best (byte_RF)",
+    "condition_only": 19,
+    "reference_only": 11,
+    "difference_pp": 6.666666666666667,
+    "conditional_ci_pp": [
+      -1.6666666666666667,
+      15.0
+    ],
+    "p_raw": 0.20048842206597334,
+    "variant": "C3c_position"
+  }
+]

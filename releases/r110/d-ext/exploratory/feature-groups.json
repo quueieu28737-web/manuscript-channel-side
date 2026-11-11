@@ -1,0 +1,122 @@
+[
+  {
+    "model": "qwen3:8b",
+    "variant": "C3b_gap_duration",
+    "group": "all",
+    "test_auroc_non_first_calls": 0.9200725441767788
+  },
+  {
+    "model": "qwen3:8b",
+    "variant": "C3b_gap_duration",
+    "group": "no_timing",
+    "test_auroc_non_first_calls": 0.830409492787343
+  },
+  {
+    "model": "qwen3:8b",
+    "variant": "C3b_gap_duration",
+    "group": "no_size",
+    "test_auroc_non_first_calls": 0.9135901015379843
+  },
+  {
+    "model": "qwen3:8b",
+    "variant": "C3b_gap_duration",
+    "group": "no_position_context",
+    "test_auroc_non_first_calls": 0.9158392096502846
+  },
+  {
+    "model": "qwen3:8b",
+    "variant": "C3b_gap_duration",
+    "group": "timing_only",
+    "test_auroc_non_first_calls": 0.8121323573277971
+  },
+  {
+    "model": "qwen3:8b",
+    "variant": "C3c_position",
+    "group": "all",
+    "test_auroc_non_first_calls": 0.9178064335230458
+  },
+  {
+    "model": "qwen3:8b",
+    "variant": "C3c_position",
+    "group": "no_timing",
+    "test_auroc_non_first_calls": 0.830409492787343
+  },
+  {
+    "model": "qwen3:8b",
+    "variant": "C3c_position",
+    "group": "no_size",
+    "test_auroc_non_first_calls": 0.9155952082662181
+  },
+  {
+    "model": "qwen3:8b",
+    "variant": "C3c_position",
+    "group": "no_position_context",
+    "test_auroc_non_first_calls": 0.9114555368627031
+  },
+  {
+    "model": "qwen3:8b",
+    "variant": "C3c_position",
+    "group": "timing_only",
+    "test_auroc_non_first_calls": 0.8156611304005441
+  },
+  {
+    "model": "llama3.1:8b",
+    "variant": "C3b_gap_duration",
+    "group": "all",
+    "test_auroc_non_first_calls": 0.9131036404555569
+  },
+  {
+    "model": "llama3.1:8b",
+    "variant": "C3b_gap_duration",
+    "group": "no_timing",
+    "test_auroc_non_first_calls": 0.8518272474718469
+  },
+  {
+    "model": "llama3.1:8b",
+    "variant": "C3b_gap_duration",
+    "group": "no_size",
+    "test_auroc_non_first_calls": 0.9043094536125896
+  },
+  {
+    "model": "llama3.1:8b",
+    "variant": "C3b_gap_duration",
+    "group": "no_position_context",
+    "test_auroc_non_first_calls": 0.8970049308028403
+  },
+  {
+    "model": "llama3.1:8b",
+    "variant": "C3b_gap_duration",
+    "group": "timing_only",
+    "test_auroc_non_first_calls": 0.8028061756284753
+  },
+  {
+    "model": "llama3.1:8b",
+    "variant": "C3c_position",
+    "group": "all",
+    "test_auroc_non_first_calls": 0.9140689546612891
+  },
+  {
+    "model": "llama3.1:8b",
+    "variant": "C3c_position",
+    "group": "no_timing",
+    "test_auroc_non_first_calls": 0.8518272474718469
+  },
+  {
+    "model": "llama3.1:8b",
+    "variant": "C3c_position",
+    "group": "no_size",
+    "test_auroc_non_first_calls": 0.9067159321514723
+  },
+  {
+    "model": "llama3.1:8b",
+    "variant": "C3c_position",
+    "group": "no_position_context",
+    "test_auroc_non_first_calls": 0.8959906914610747
+  },
+  {
+    "model": "llama3.1:8b",
+    "variant": "C3c_position",
+    "group": "timing_only",
+    "test_auroc_non_first_calls": 0.8205938660642494
+  }
+]

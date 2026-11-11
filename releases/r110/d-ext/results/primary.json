@@ -1,0 +1,152 @@
+[
+  {
+    "model": "qwen3:8b",
+    "arm": "transport_drop",
+    "comparison": "C3b_gap_duration: adaptive_best (joint) minus size_only_best (position_last)",
+    "condition_only": 16,
+    "reference_only": 17,
+    "difference_pp": -0.8333333333333334,
+    "conditional_ci_pp": [
+      -10.0,
+      8.333333333333332
+    ],
+    "p_raw": 1.0,
+    "variant": "C3b_gap_duration",
+    "p_holm": 1.0
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "read",
+    "comparison": "C3b_gap_duration: adaptive_best (joint) minus size_only_best (position_last)",
+    "condition_only": 19,
+    "reference_only": 12,
+    "difference_pp": 5.833333333333333,
+    "conditional_ci_pp": [
+      -2.5,
+      15.0
+    ],
+    "p_raw": 0.28104151505976915,
+    "variant": "C3b_gap_duration",
+    "p_holm": 1.0
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "isolated",
+    "comparison": "C3b_gap_duration: adaptive_best (joint) minus size_only_best (position_last)",
+    "condition_only": 18,
+    "reference_only": 11,
+    "difference_pp": 5.833333333333333,
+    "conditional_ci_pp": [
+      -2.5,
+      14.166666666666666
+    ],
+    "p_raw": 0.26493089646101,
+    "variant": "C3b_gap_duration",
+    "p_holm": 1.0
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "live_write",
+    "comparison": "C3b_gap_duration: adaptive_best (joint) minus size_only_best (position_last)",
+    "condition_only": 16,
+    "reference_only": 9,
+    "difference_pp": 5.833333333333333,
+    "conditional_ci_pp": [
+      -1.6666666666666667,
+      13.333333333333334
+    ],
+    "p_raw": 0.2295229434967041,
+    "variant": "C3b_gap_duration",
+    "p_holm": 1.0
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "isolated_visible",
+    "comparison": "C3b_gap_duration: adaptive_best (joint) minus size_only_best (position_last)",
+    "condition_only": 21,
+    "reference_only": 12,
+    "difference_pp": 7.5,
+    "conditional_ci_pp": [
+      -1.6666666666666667,
+      16.666666666666664
+    ],
+    "p_raw": 0.16275565745308995,
+    "variant": "C3b_gap_duration",
+    "p_holm": 0.9765339447185397
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "transport_drop",
+    "comparison": "C3b_gap_duration: adaptive_best (joint) minus size_only_best (byte_RF)",
+    "condition_only": 27,
+    "reference_only": 11,
+    "difference_pp": 13.333333333333334,
+    "conditional_ci_pp": [
+      4.166666666666666,
+      22.5
+    ],
+    "p_raw": 0.013852965261321515,
+    "variant": "C3b_gap_duration",
+    "p_holm": 0.0969707568292506
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "read",
+    "comparison": "C3b_gap_duration: adaptive_best (ctx_strip) minus size_only_best (byte_RF)",
+    "condition_only": 24,
+    "reference_only": 7,
+    "difference_pp": 14.166666666666666,
+    "conditional_ci_pp": [
+      5.833333333333333,
+      22.5
+    ],
+    "p_raw": 0.003326892852783203,
+    "variant": "C3b_gap_duration",
+    "p_holm": 0.029942035675048828
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "isolated",
+    "comparison": "C3b_gap_duration: adaptive_best (joint) minus size_only_best (byte_RF)",
+    "condition_only": 23,
+    "reference_only": 8,
+    "difference_pp": 12.5,
+    "conditional_ci_pp": [
+      4.166666666666666,
+      20.833333333333336
+    ],
+    "p_raw": 0.010673840530216694,
+    "variant": "C3b_gap_duration",
+    "p_holm": 0.08539072424173355
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "live_write",
+    "comparison": "C3b_gap_duration: adaptive_best (joint) minus size_only_best (position_last)",
+    "condition_only": 39,
+    "reference_only": 12,
+    "difference_pp": 22.5,
+    "conditional_ci_pp": [
+      12.5,
+      32.5
+    ],
+    "p_raw": 0.0001980394513374506,
+    "variant": "C3b_gap_duration",
+    "p_holm": 0.001980394513374506
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "isolated_visible",
+    "comparison": "C3b_gap_duration: adaptive_best (joint) minus size_only_best (byte_RF)",
+    "condition_only": 22,
+    "reference_only": 16,
+    "difference_pp": 5.0,
+    "conditional_ci_pp": [
+      -4.166666666666666,
+      15.0
+    ],
+    "p_raw": 0.417692190836533,
+    "variant": "C3b_gap_duration",
+    "p_holm": 1.0
+  }
+]
