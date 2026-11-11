@@ -1,0 +1,13 @@
+model,arm,n,bytes_selected_correct,timing_size_selected_correct,timing_informed_stripping_correct,privileged_reference_correct,cover_tp,honest_fp,cover_fn,honest_tn,cover_precision,cover_recall,cover_auc
+qwen3:8b,none,120,118,118,118,118,0,0,0,487,0.0,0.0,
+qwen3:8b,transport_drop,120,62,56,114,115,179,0,3,487,1.0,0.9835164835164835,1.0
+qwen3:8b,read,120,62,54,114,114,182,0,0,488,1.0,1.0,1.0
+qwen3:8b,isolated,120,61,43,112,114,180,0,2,488,1.0,0.989010989010989,1.0
+qwen3:8b,live_write,120,62,56,111,112,179,0,3,490,1.0,0.9835164835164835,1.0
+qwen3:8b,isolated_visible,120,63,60,111,111,179,0,3,489,1.0,0.9835164835164835,1.0
+llama3.1:8b,none,120,113,111,113,113,0,0,0,629,0.0,0.0,
+llama3.1:8b,transport_drop,120,79,74,115,116,181,0,1,638,1.0,0.9945054945054945,1.0
+llama3.1:8b,read,120,72,69,112,112,182,0,0,631,1.0,1.0,1.0
+llama3.1:8b,isolated,120,82,79,112,112,181,0,1,631,1.0,0.9945054945054945,1.0
+llama3.1:8b,live_write,120,80,70,112,112,182,0,0,644,1.0,1.0,1.0
+llama3.1:8b,isolated_visible,120,81,81,107,107,182,0,0,639,1.0,1.0,1.0

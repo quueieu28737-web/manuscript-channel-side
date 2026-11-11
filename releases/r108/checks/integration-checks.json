@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "scope": "Changed prose and tables against frozen B1 results; original source-study corpus and scientific inputs preserved. This is a scoped assistant alignment check, not independent human review or venue acceptance.",
+  "checked_numeric_cells": 372,
+  "original_table_figure_files_unchanged": 27,
+  "bibliography_items": 62,
+  "documents": {
+    "main": {
+      "pages": 15,
+      "references_start": 13,
+      "sha256": "a0005341c1af21d3794bf0d2feaf3b9fbe7465b40b8a4ba6f73d48567cf165d3"
+    },
+    "supplement": {
+      "pages": 30,
+      "references_start": 29,
+      "sha256": "a35060f85996a4c0e523fa1695f06dcdf1f0be9436b5fd1258d3fc55b5bebc82"
+    }
+  },
+  "boundaries": [
+    "Endpoint-receipt timing is distinct from packet timing.",
+    "Primary and planned secondary families are preserved.",
+    "Post-scoring diagnostic is explicitly exploratory.",
+    "The same 3600 M3 episodes are reused; no added cohort or independent-fixture count.",
+    "A and B2 are unperformed future designs; no equivalence claim.",
+    "No claim of complete privacy loss, zero future detector errors or production state harms."
+  ]
+}

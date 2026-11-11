@@ -1,0 +1,19 @@
+\begin{table*}[t]\centering\small
+\caption{Event overlap sensitivity on the same predictions. Each condition contains 120 tasks in 24 sessions, including four empty sessions. Learned detectors use T+M; all-active emits one session interval per class. IoU .5 is primary; .3/.7 are sensitivity checks. FP/session divides all false events by 24, retaining empty sessions. Supplement S1 retains hourly normalization, counts and intervals for these bounded recordings.}\label{tab:randomized-events}
+\setlength{\tabcolsep}{3pt}
+\begin{tabularx}{\textwidth}{@{}llYrrrrrr@{}}\toprule
+Executor & Policy & Detector & F1 (.3) & F1 (.5) & F1 (.7) & P (.5) & R (.5) & FP/session (.5) \\\midrule
+Qwen3:8B & Shared & LR & 0.216 & 0.119 & 0.048 & 0.072 & 0.350 & 22.54 \\
+Qwen3:8B & Shared & RF & 0.106 & 0.077 & 0.035 & 0.043 & 0.400 & 44.79 \\
+Qwen3:8B & Shared & all-active & 0.295 & 0.038 & 0.000 & 0.035 & 0.042 & 5.79 \\
+Qwen3:8B & Joint & LR & 0.196 & 0.117 & 0.050 & 0.070 & 0.375 & 25.04 \\
+Qwen3:8B & Joint & RF & 0.329 & 0.188 & 0.090 & 0.123 & 0.400 & 14.29 \\
+Qwen3:8B & Joint & all-active & 0.265 & 0.038 & 0.000 & 0.035 & 0.042 & 5.79 \\
+Llama3.1:8B & Shared & LR & 0.333 & 0.216 & 0.104 & 0.144 & 0.433 & 12.88 \\
+Llama3.1:8B & Shared & RF & 0.464 & 0.249 & 0.105 & 0.186 & 0.375 & 8.21 \\
+Llama3.1:8B & Shared & all-active & 0.508 & 0.098 & 0.000 & 0.090 & 0.108 & 5.46 \\
+Llama3.1:8B & Joint & LR & 0.441 & 0.251 & 0.104 & 0.186 & 0.383 & 8.38 \\
+Llama3.1:8B & Joint & RF & 0.429 & 0.274 & 0.129 & 0.199 & 0.442 & 8.92 \\
+Llama3.1:8B & Joint & all-active & 0.530 & 0.121 & 0.000 & 0.111 & 0.133 & 5.33 \\
+\bottomrule\end{tabularx}
+\end{table*}

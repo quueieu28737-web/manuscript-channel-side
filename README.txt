@@ -1,4 +1,4 @@
-R105 - SoK: Agent Communication Side Channels
+R108 - SoK: Agent Communication Side Channels
 Feedback Paths and Executed Cover
 
 Compile main.tex and supplement.tex separately with pdfLaTeX and BibTeX:
@@ -6,35 +6,29 @@ Compile main.tex and supplement.tex separately with pdfLaTeX and BibTeX:
   bibtex main
   pdflatex -interaction=nonstopmode -halt-on-error -no-shell-escape main.tex
   pdflatex -interaction=nonstopmode -halt-on-error -no-shell-escape main.tex
-Repeat with supplement. On Overleaf upload this ZIP as a new project; select
-main.tex or supplement.tex as the Main document, and use pdfLaTeX. Current
-.bbl files are included; both documents use identical reference numbers.
+Repeat with supplement in place of main. On Overleaf upload this ZIP as a
+new project, choose pdfLaTeX, and select main.tex or supplement.tex as the
+Main document. Current .bbl files are included. Both documents share reference
+numbers. No external experiment files or shell-escape commands are needed.
 
-This whole-manuscript revision retains the Agent side-channel SoK scope:
-15 direct studies, 44 settings, 22 mechanism anchors and the six-row transfer
-matrix. It integrates the completed six-condition LLM executed-cover study
-into Section 7.1 and Supplement S8. Task completion and full-state integrity
-are separate endpoints; all 36 paired contrasts and all attackers are reported.
-The earlier forwarding pilot retains its nonsignificant primary comparisons.
+This revision preserves the Agent communication side-channel SoK scope:
+15 direct studies, 44 settings and 22 mechanism anchors. Main Section 7.1
+and Supplement S9 integrate the completed B1 timing reanalysis of the same
+3,600 M3 episodes. There is no new collection and no additional independent
+test cohort. Original measurements and business outcomes are preserved.
 
-Supplement S4.1 and the accompanying evidence package describe a coding-manual
-pilot: the author extraction and two dependent, non-blind AI passes. It is not
-independent human coding. Fifteen outcome disagreements were source-adjudicated,
-changing thirteen statuses and retaining two contrary to the AI majority.
-Original codes, agreement statistics and exposed-row sensitivity are preserved.
+B1's direct-feature primary comparisons and planned cover-removal secondary
+comparisons are reported separately. The input diagnostic was performed after
+scoring and is labelled exploratory. Timestamps come from client receipts;
+the study does not measure passive packet-time or WAN recovery. Experiments
+A and B2 remain future new-cohort designs and are not reported as completed.
 
-The review package supplies the current field-map and coding manual, the M3
-synthetic artifact and an immutable prior-evidence archive for earlier analyses.
-It excludes credentials, raw captures, private transcripts and third-party full
-texts. Source versions and passage locators provide the external checking route.
-No new collection, model fitting or analyst study was performed. Targeted
-related-work checks add context without changing the direct corpus or anchors.
-Previously completed measurements and inference procedures are retained.
+The separate review evidence contains frozen protocols, feature arrays,
+predictions, statistical checks and input fingerprints. Original synthetic
+M3 metadata permit state replay. The evidence also preserves the earlier
+forwarding pilot, source extraction and dependent AI coding-manual pilot;
+these are not independent human coding or new confirmation studies.
 
-R105 foregrounds the evidence synthesis and treats adverse writes as an
-evaluation example. It connects the discussion to CaMeL, FIDES, Progent,
-SPILLage, tau-bench and AgentDojo; extends the inspection summary to all fifteen
-direct sources; and corrects WRA's query-decoy locator to Table 8. It clarifies
-the fixture contract, position-rule freeze and planner-path variation. All
-original measurements and statistical comparisons are unchanged. The feedback
-pilot remains condensed in the main paper and preserved in Supplement S1.
+This LaTeX ZIP contains manuscript sources and bibliography only. It excludes
+credentials, raw captures, private transcripts, model weights and third-party
+full texts. Source versions and passage locators support external checking.

@@ -1,3 +1,24 @@
+# Latest manuscript: R108 Agent communication side-channel SoK
+
+- [Main PDF](main.pdf) | [Supplement PDF](supplement.pdf)
+- [Compilable LaTeX ZIP](latex-source.zip)
+- [Versioned source, evidence and validation](releases/r108/README.md)
+- [B1 timing analysis and replay](releases/r108/b1/README.md)
+- [44-setting evidence matrix](releases/r108/evidence/field-map/evidence-matrix.csv)
+
+B1's planned secondary timing-informed cover-removal attack recovers high
+task recognition. The direct-feature primary comparisons remain nonsignificant.
+Client-receipt timing and supplied windows define this result; packet-time/WAN
+validation remains open. A and B2 have not been collected. Main: 15 pages;
+supplement: 30 pages. All prior releases and unrelated files are preserved.
+Use the versioned source or clean 66-file ZIP for a new Overleaf project.
+
+---
+
+## Historical repository notes
+
+Earlier version notes follow; the links above identify R108.
+
 # Latest manuscript: R107 Agent communication side-channel SoK
 
 - [Main PDF](main.pdf) | [Supplement PDF](supplement.pdf)

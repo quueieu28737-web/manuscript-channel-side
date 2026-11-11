@@ -1,0 +1,36 @@
+{
+  "version": "R107-B1-v1",
+  "question": "Does adding client-receipt timing expose controller-inserted cover and restore requested-action recognition in the existing M3 cohort?",
+  "study_type": "Retrospective new-observer reanalysis, frozen before new timing test evaluation; not a new independent confirmation cohort.",
+  "upstream": "manuscript-channel-side PR5 at 6c832f068a7fb2dfc38feb1bde37c38252250bd5; releases/r107/EXPERIMENT-PLANS.md",
+  "source": "Original public M3 export, 3600 episodes, 2 fixed models x 6 arms x 300 fixtures. Retain original 120/60/120 split and all execution outcomes.",
+  "exposure": "Original M3 test byte-only scores and outcomes have already been published and discussed. The upstream schedule-timing hypothesis used validation. New test timing features/predictions are evaluated only after this plan/code/input freeze.",
+  "models": ["qwen3:8b", "llama3.1:8b"],
+  "arms": ["none", "transport_drop", "read", "isolated", "live_write", "isolated_visible"],
+  "observation": {
+    "provided": ["episode and call boundaries", "destination service", "call ciphertext up/down bytes", "client start/end times", "episode wall duration"],
+    "excluded_features": ["requested task label", "operation", "request ID", "order ID", "tool content", "cover flag", "model content", "model token counts or inference durations", "absolute timestamp", "server state", "decrypted stream identifier"],
+    "scope": "Endpoint call timing is an idealized extra observation. The data contain no TLS record timestamps. First ticket retrieval is known honest in this controller and this explicit schedule prior is used by the detector."
+  },
+  "features": {
+    "bytes": "Original 153-dimensional analyze.features without alteration.",
+    "timing_only": "49 dimensions: first 16 ordered calls each relative start from first tool start, call duration and gap since preceding tool end (first gap zero), then episode wall duration; zero-pad unused calls.",
+    "timing_size": "Concatenate original 153 and timing_only 49 = 202 dimensions.",
+    "call_detector": "10 dimensions: log1p(gap milliseconds), log1p(duration milliseconds), first-call indicator and 7 destination indicators. First call is retained.",
+    "clock_errors": "Missing, non-finite, reversed or overlapping sequential client clock records stop analysis for investigation; no silent dropping or imputation."
+  },
+  "task_attacks": "Reuse original standardized LR C=1 max_iter=3000 random_state=102 and RF 300 trees random_state=102 n_jobs=2. Fit each view/arm on train. Select LR/RF by validation accuracy; ties choose LR. Report both and selection. Exact reproduction of original byte-only validation choices and held-out LR/RF predictions is required.",
+  "cover_detector": "Fit per model pooled across training arms, preserving fixture split. Balanced LR/RF with original model sizes. Validation thresholds .05:.05:.95. Include gap rule thresholds .025,.05,.10,.20,.35,.50,1 seconds. Choose validation F1, precision, deterministic algorithm tie LR then gap_rule then RF, then larger threshold. No test-based choice.",
+  "strip_attack": "Delete predicted cover calls using the selected detector. Apply the unchanged original 153-feature extractor and the validation-selected no-cover classifier. Do not retrain on test or use true cover labels.",
+  "privileged_reference": "Delete true cover calls and use the same no-cover classifier. This is attained performance with privileged cover labels, not an upper bound on Bayes recognition or a deployable observer.",
+  "primary_family": "10 paired timing_size/validation-selected minus bytes/validation-selected contrasts: 2 models x 5 nonbaseline arms. Two-sided exact McNemar; Holm familywise .05.",
+  "secondary_families": {
+    "stripping": "10 paired stripped/frozen_none minus bytes/validation-selected contrasts, separate Holm .05; secondary mechanism analysis.",
+    "hidden_semantics": "All 6 pairs of four hidden policies x 2 models =12 comparisons, timing_size/validation-selected accuracy, exact McNemar with Holm .05. Non-rejection is not equivalence. No B1 TOST claim."
+  },
+  "uncertainty": "10000 paired fixture bootstrap draws stratified by six requested actions, fixed seed1071111. 95% unadjusted conditional intervals keep fitted attacks fixed. Detector precision/recall bootstrap resamples whole fixtures with all calls. AUROC point estimates reported, including honest false positives. Intervals do not replace corrected tests or include retraining/selection/workload uncertainty.",
+  "operating_point": "Report all classifiers, detector PR/AUC, stripping outcomes, privileged reference, false removal of honest calls and paired discordances. An attained attack remains a lower bound for the stated observer. Do not claim every decoy is removable or every cover policy loses all benefit unless measured results support that precise statement.",
+  "new_collection": false,
+  "resources": "Local CPU fits only, two threads per estimator; no Ollama launch, model/API calls, new captures or changes to old data.",
+  "publication": "Keep B1 in a separately versioned result package and correct any manuscript interpretation only after analysis and independent arithmetic/feature checks. A and B2 remain future new-cohort designs until reviewed against B1."
+}

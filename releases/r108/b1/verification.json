@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "utc": "2026-11-11T05:46:17.792836+00:00",
+  "scope": "Separate receipt extraction, original baseline prediction replay, NumPy LR/RF inference, detector masks/AUC, every paired discordance/exact McNemar p-value and Holm family. Not independent human review, new collection or packet-timing validation.",
+  "test_episodes": 1440,
+  "task_prediction_values_checked": 15840,
+  "detector_call_values_checked": 8561,
+  "paired_comparisons_checked": 32,
+  "verifier_sha256": "1701c4c449422e165cd3fccc8ec3a09ebda98b2a5d7a8cc374f9afe8df055990"
+}

@@ -1,0 +1,18 @@
+{
+  "utc": "2026-11-11T05:41:16.542018+00:00",
+  "status": "COMPLETE",
+  "seconds": 22.25777268409729,
+  "test_episodes": 1440,
+  "conditional_analysis": true,
+  "freeze_utc": "2026-11-11T05:38:46.351016+00:00",
+  "scope": "Client-receipt timing with supplied episode/call boundaries; not packet timing or production confidentiality.",
+  "files": {
+    "baseline-audit.json": "62bd5121f9415235d9cf94164822e708ace4c224c04c2b561e061c8ecc96dadf",
+    "comparisons.json": "2d6812cfac9cb59a3195f469739919210ad32e411a7339eccfff856efb695408",
+    "cover-detection.json": "bd687d4b79702364308cabacc2d4108a193fda336cad957240f3ced60eee8944",
+    "predictions.json": "8466f4efad5e9433ebd43ec1c8bd17d8ea014103c5e4f613b49770156628822b",
+    "recognition.json": "32fb16a4ee3561e4942ff35d23b1357fc68edd30ed9a14f1f289804294be3c70",
+    "started.json": "5a3d1dc5f0c9fd3018004ee9eeee13fab0675072a40bb444f4f1e14af2e36162",
+    "test-arrays.npz": "5f993081be4debc84328177dcb8db123972887e431db7352044790e4a25ad2dd"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "scope": "Separate feature construction and NumPy LR/RF inference for both post-scoring channels; all call masks, task predictions, exact paired tests and Holm values. Exploratory status unchanged.",
+  "test_tasks": 2880,
+  "call_masks_checked": 17122,
+  "code_sha256": "20736e23d7bad11be2bfa287911448d307c16829e90e7928c51765f09bb3d09e"
+}

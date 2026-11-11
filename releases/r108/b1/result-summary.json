@@ -1,0 +1,38 @@
+{
+  "status": "B1_COMPLETE_VERIFIED",
+  "upstream": "6c832f068a7fb2dfc38feb1bde37c38252250bd5",
+  "freeze_utc": "2026-11-11T05:38:46.351016+00:00",
+  "new_collection": false,
+  "primary_significant": 0,
+  "primary_tests": 10,
+  "secondary_stripping_significant": 10,
+  "secondary_stripping_tests": 10,
+  "test_cover_detected": 1807,
+  "test_cover_total": 1820,
+  "honest_false_removals": 0,
+  "honest_test_calls": 6741,
+  "models": {
+    "qwen3:8b": {
+      "original_cover_correct_range": [
+        61,
+        63
+      ],
+      "timing_stripped_correct_range": [
+        111,
+        114
+      ]
+    },
+    "llama3.1:8b": {
+      "original_cover_correct_range": [
+        72,
+        82
+      ],
+      "timing_stripped_correct_range": [
+        107,
+        115
+      ]
+    }
+  },
+  "scope": "Retrospective endpoint-receipt timing and supplied-window attack; not measured packet timing or a new confirmation cohort.",
+  "future_studies": "A and B2 revised designs only, no new collection started."
+}

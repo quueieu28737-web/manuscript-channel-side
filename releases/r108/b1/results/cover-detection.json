@@ -1,0 +1,266 @@
+[
+  {
+    "model": "qwen3:8b",
+    "arm": "none",
+    "detector": "LR",
+    "threshold": 0.9500000000000001,
+    "tp": 0,
+    "fp": 0,
+    "fn": 0,
+    "tn": 487,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "auc": null,
+    "conditional_precision_ci": [
+      0.0,
+      0.0
+    ],
+    "conditional_recall_ci": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "transport_drop",
+    "detector": "LR",
+    "threshold": 0.9500000000000001,
+    "tp": 179,
+    "fp": 0,
+    "fn": 3,
+    "tn": 487,
+    "precision": 1.0,
+    "recall": 0.9835164835164835,
+    "f1": 0.9916897506925207,
+    "auc": 1.0,
+    "conditional_precision_ci": [
+      1.0,
+      1.0
+    ],
+    "conditional_recall_ci": [
+      0.9621621621621622,
+      1.0
+    ]
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "read",
+    "detector": "LR",
+    "threshold": 0.9500000000000001,
+    "tp": 182,
+    "fp": 0,
+    "fn": 0,
+    "tn": 488,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "auc": 1.0,
+    "conditional_precision_ci": [
+      1.0,
+      1.0
+    ],
+    "conditional_recall_ci": [
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "isolated",
+    "detector": "LR",
+    "threshold": 0.9500000000000001,
+    "tp": 180,
+    "fp": 0,
+    "fn": 2,
+    "tn": 488,
+    "precision": 1.0,
+    "recall": 0.989010989010989,
+    "f1": 0.994475138121547,
+    "auc": 1.0,
+    "conditional_precision_ci": [
+      1.0,
+      1.0
+    ],
+    "conditional_recall_ci": [
+      0.9720670391061452,
+      1.0
+    ]
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "live_write",
+    "detector": "LR",
+    "threshold": 0.9500000000000001,
+    "tp": 179,
+    "fp": 0,
+    "fn": 3,
+    "tn": 490,
+    "precision": 1.0,
+    "recall": 0.9835164835164835,
+    "f1": 0.9916897506925207,
+    "auc": 1.0,
+    "conditional_precision_ci": [
+      1.0,
+      1.0
+    ],
+    "conditional_recall_ci": [
+      0.9623655913978495,
+      1.0
+    ]
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "isolated_visible",
+    "detector": "LR",
+    "threshold": 0.9500000000000001,
+    "tp": 179,
+    "fp": 0,
+    "fn": 3,
+    "tn": 489,
+    "precision": 1.0,
+    "recall": 0.9835164835164835,
+    "f1": 0.9916897506925207,
+    "auc": 1.0,
+    "conditional_precision_ci": [
+      1.0,
+      1.0
+    ],
+    "conditional_recall_ci": [
+      0.9629629629629629,
+      1.0
+    ]
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "none",
+    "detector": "LR",
+    "threshold": 0.9500000000000001,
+    "tp": 0,
+    "fp": 0,
+    "fn": 0,
+    "tn": 629,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "auc": null,
+    "conditional_precision_ci": [
+      0.0,
+      0.0
+    ],
+    "conditional_recall_ci": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "transport_drop",
+    "detector": "LR",
+    "threshold": 0.9500000000000001,
+    "tp": 181,
+    "fp": 0,
+    "fn": 1,
+    "tn": 638,
+    "precision": 1.0,
+    "recall": 0.9945054945054945,
+    "f1": 0.9972451790633609,
+    "auc": 1.0,
+    "conditional_precision_ci": [
+      1.0,
+      1.0
+    ],
+    "conditional_recall_ci": [
+      0.9830508474576272,
+      1.0
+    ]
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "read",
+    "detector": "LR",
+    "threshold": 0.9500000000000001,
+    "tp": 182,
+    "fp": 0,
+    "fn": 0,
+    "tn": 631,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "auc": 1.0,
+    "conditional_precision_ci": [
+      1.0,
+      1.0
+    ],
+    "conditional_recall_ci": [
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "isolated",
+    "detector": "LR",
+    "threshold": 0.9500000000000001,
+    "tp": 181,
+    "fp": 0,
+    "fn": 1,
+    "tn": 631,
+    "precision": 1.0,
+    "recall": 0.9945054945054945,
+    "f1": 0.9972451790633609,
+    "auc": 1.0,
+    "conditional_precision_ci": [
+      1.0,
+      1.0
+    ],
+    "conditional_recall_ci": [
+      0.9831460674157303,
+      1.0
+    ]
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "live_write",
+    "detector": "LR",
+    "threshold": 0.9500000000000001,
+    "tp": 182,
+    "fp": 0,
+    "fn": 0,
+    "tn": 644,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "auc": 1.0,
+    "conditional_precision_ci": [
+      1.0,
+      1.0
+    ],
+    "conditional_recall_ci": [
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "isolated_visible",
+    "detector": "LR",
+    "threshold": 0.9500000000000001,
+    "tp": 182,
+    "fp": 0,
+    "fn": 0,
+    "tn": 639,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "auc": 1.0,
+    "conditional_precision_ci": [
+      1.0,
+      1.0
+    ],
+    "conditional_recall_ci": [
+      1.0,
+      1.0
+    ]
+  }
+]

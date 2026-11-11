@@ -1,0 +1,12 @@
+{
+  "utc": "2026-11-11T05:39:59.980757+00:00",
+  "records": 2160,
+  "test_timing_evaluated": false,
+  "files": {
+    "detector-selection.json": "c54423dbbe29e1567b95ba8a4e3d1fd7007e7a0b6b170002b47bd032d3bf6f1a",
+    "llama3.1-8b.joblib": "1bba9ea273b184ccb7be1b4c7dd2711f507503ae4fdd0430af64452e4ab4353f",
+    "qwen3-8b.joblib": "2a50438b20750badf38e596da3baca3b207160010a007de882f4d291d1d66454",
+    "task-selection.json": "2f05add528ed624b830e7e8dc19a47bb0ecd6fbce8ccddd842271b755061e74c",
+    "timing-description.json": "1c0df0de99c8bba32033f5db6179a075d17197be11678ee2b729ee260a2097f8"
+  }
+}

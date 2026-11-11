@@ -1,0 +1,74 @@
+[
+  {
+    "model": "qwen3:8b",
+    "arm": "none",
+    "original_lr_rf_predictions_match": true,
+    "test_fixtures": 120
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "transport_drop",
+    "original_lr_rf_predictions_match": true,
+    "test_fixtures": 120
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "read",
+    "original_lr_rf_predictions_match": true,
+    "test_fixtures": 120
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "isolated",
+    "original_lr_rf_predictions_match": true,
+    "test_fixtures": 120
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "live_write",
+    "original_lr_rf_predictions_match": true,
+    "test_fixtures": 120
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "isolated_visible",
+    "original_lr_rf_predictions_match": true,
+    "test_fixtures": 120
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "none",
+    "original_lr_rf_predictions_match": true,
+    "test_fixtures": 120
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "transport_drop",
+    "original_lr_rf_predictions_match": true,
+    "test_fixtures": 120
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "read",
+    "original_lr_rf_predictions_match": true,
+    "test_fixtures": 120
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "isolated",
+    "original_lr_rf_predictions_match": true,
+    "test_fixtures": 120
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "live_write",
+    "original_lr_rf_predictions_match": true,
+    "test_fixtures": 120
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "isolated_visible",
+    "original_lr_rf_predictions_match": true,
+    "test_fixtures": 120
+  }
+]

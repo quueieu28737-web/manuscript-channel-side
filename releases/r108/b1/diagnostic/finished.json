@@ -1,0 +1,15 @@
+{
+  "utc": "2026-11-11T05:57:34.620714+00:00",
+  "status": "COMPLETE_POST_SCORING_DIAGNOSTIC",
+  "files": {
+    "comparisons.json": "4b53883347018010e5aba6f1954a1422d79a5b82586dd3d2cc44f9395cd4a332",
+    "llama3.1-8b-no_clock_context.joblib": "51c7f1ee56fde4afe53dee7675a0828f41b5d6babbd392c0dbcdd780461d4a00",
+    "llama3.1-8b-timing_only.joblib": "5352580272f08e65a50061927d50122b252ad572d9ea9c21e3f98245e500a363",
+    "plan-freeze.json": "bd5e22f21c7fc7455dcf50ad894c75f7e5962fa8c6f5f07ce455ef8bf16d264d",
+    "predictions.json": "297b36a6e4dbea6504d3701cc80777324d4bdcb0a6d6f251a6082b934e4c4e7a",
+    "qwen3-8b-no_clock_context.joblib": "a61efdda99279a68014bfc1d52b0e9a931a251fa7995cde666d5980458bc19e1",
+    "qwen3-8b-timing_only.joblib": "41ee042e48c7d1a71f5994a9ae46a59428764bdb5ce0d68749aff13b8cece13e",
+    "results.json": "94a6b33f578230b48ff682c90c210541c3c993b56633ae9820e948fc2670ae7a",
+    "validation-selection.json": "6225bb074035c36f3802a99a22200afa9cc27b9401fe520b6f9029bb8fc9beb4"
+  }
+}

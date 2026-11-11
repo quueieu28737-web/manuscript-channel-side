@@ -1,0 +1,16 @@
+\begin{table*}[t]\centering\small
+\caption{Every planned secondary B1 removal comparison. The ten tests have their own declared Holm family. All reject; this family does not replace the primary family in Table~\ref{tab:b1-primary}.}\label{tab:b1-removal}
+\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\textwidth}{@{}lP{.12\textwidth}Yrrrr@{}}\toprule
+Model & Policy & Contrast & $\Delta$ pp & 95\% conditional CI & Raw $p$ & Holm $p$ \\\midrule
+Qwen3:8B & Proxy discard & Strip $-$ Byte & 43.3 & [34.2, 52.5] & $6.106\times10^{-15}$ & $6.106\times10^{-14}$ \\
+Qwen3:8B & Read cover & Strip $-$ Byte & 43.3 & [34.2, 52.5] & $6.106\times10^{-15}$ & $6.106\times10^{-14}$ \\
+Qwen3:8B & Isolated, hidden & Strip $-$ Byte & 42.5 & [33.3, 51.7] & $8.554\times10^{-14}$ & $6.843\times10^{-13}$ \\
+Qwen3:8B & Live write & Strip $-$ Byte & 40.8 & [30.8, 50.8] & $5.911\times10^{-12}$ & $2.955\times10^{-11}$ \\
+Qwen3:8B & Isolated, visible & Strip $-$ Byte & 40.0 & [30.8, 49.2] & $2.919\times10^{-12}$ & $1.751\times10^{-11}$ \\
+Llama3.1:8B & Proxy discard & Strip $-$ Byte & 30.0 & [21.7, 38.3] & $2.838\times10^{-10}$ & $1.135\times10^{-9}$ \\
+Llama3.1:8B & Read cover & Strip $-$ Byte & 33.3 & [25.0, 41.7] & $1.819\times10^{-12}$ & $1.273\times10^{-11}$ \\
+Llama3.1:8B & Isolated, hidden & Strip $-$ Byte & 25.0 & [17.5, 33.3] & $1.537\times10^{-8}$ & $4.610\times10^{-8}$ \\
+Llama3.1:8B & Live write & Strip $-$ Byte & 26.7 & [18.3, 35.8] & $6.678\times10^{-8}$ & $1.336\times10^{-7}$ \\
+Llama3.1:8B & Isolated, visible & Strip $-$ Byte & 21.7 & [13.3, 30.0] & $6.165\times10^{-6}$ & $6.165\times10^{-6}$ \\
+\bottomrule\end{tabularx}\end{table*}
