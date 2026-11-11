@@ -31,10 +31,28 @@
 - **Page budget.** Main: 16 pages; the body ends on page 13, references on pages 14–16.
   Supplement: 35 pages.
 
+## Independent human coding (coder-1)
+
+An independent security PhD researcher coded the blind packet (`human-coding/coder-1/`).
+Agreement before discussion is 104/111 decisions:
+
+| Field | Agreement | κ |
+|---|---|---|
+| Access class | 44/44 | 1 |
+| Intervention purpose | 9/9 | 1 |
+| Adaptation in the privacy settings | 4/4 | 1 |
+| Utility in the privacy settings | 4/4 | 1 |
+| Protection flag | 38/44 | .61 |
+| Transfer relation | 5/6 | .77 |
+
+The privacy denominator and every Finding 2 decision are reproduced. §2.2, §10 and S4.1 report
+these numbers.
+
 ## Still open (needs the author)
 
-- **Human coding.** A second human coder has not yet coded `human-coding/`. When the sheets come
-  back, run `python agreement.py <dir>` and replace the "no second human coder has yet re-coded"
-  sentences in §2.2, §10 and S4.1 with the agreement numbers.
+- **Adjudication.** Adjudicate the 7 disagreements in
+  [`human-coding/coder-1/ADJUDICATION.md`](human-coding/coder-1/ADJUDICATION.md) and record final
+  codes in `disagreements.csv`. Then update the protection-flag counts (35 / 3 / 4) in §2.2, §8.2,
+  S5.1 and, if T1 changes, Table 2. No combination changes Finding 2's zero.
 - **Live cohort.** No live timing-matched cohort, and no planner-sampled cover design, has been
   collected yet.

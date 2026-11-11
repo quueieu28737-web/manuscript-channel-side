@@ -1,0 +1,8 @@
+sheet,id,field,author,coder,resolution,final,reason
+A,CG-composition,A2_has_protection_comparison,no,yes,,,
+A,CG-active,A2_has_protection_comparison,no,yes,,,
+A,FAY-network,A2_has_protection_comparison,no,yes,,,
+A,FAY-combined,A2_has_protection_comparison,no,yes,,,
+A,ATR-main,A2_has_protection_comparison,yes,no,,,
+A,ATR-budget,A2_has_protection_comparison,yes,no,,,
+C,T1,C1_relation,retained,extended,,,
