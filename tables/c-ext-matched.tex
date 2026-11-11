@@ -1,27 +1,27 @@
 \begin{table*}[t]\centering\small
-\caption{C3: timing-matched dispatch (receipt-level counterfactual). C3a draws each decoy gap, C3b gap and duration, from no-cover training history; the attacker is fully refitted. Detector P/R/AUROC on test calls. B1 is the unmatched supervised strip score, Strip the matched strip score, T+S the refitted direct timing-plus-size attack, Byte the size view. Latency is mean added seconds per covered episode (percentage of no-cover wall time). Holm columns: C3b Strip vs.\ B1 (primary family) and C3b Strip vs.\ Byte (secondary family).}\label{tab:c3}
+\caption{Timing-matched dispatch (receipt-level counterfactual). GM draws each decoy gap, GDM its gap and duration, from no-cover training history; the attacker is fully refitted. Detector P/R/AUROC on test calls. Unm.\ is the unmatched supervised strip score (Section~\ref{supp:b1-timing}), Strip the matched strip score, T+S the refitted direct timing-plus-size attack, Byte the size view. Latency is mean added seconds per covered episode (percentage of no-cover wall time). Holm columns: GDM Strip vs.\ Unm.\ (primary family) and GDM Strip vs.\ Byte (secondary family).}\label{tab:c3}
 \setlength{\tabcolsep}{4pt}
 \begin{tabularx}{\textwidth}{@{}llrYrrrrrrr@{}}\toprule
-Model & Policy & Var. & P/R/AUC & B1 & Strip & T+S & Byte & +Latency s & Holm (B1) & Holm (Byte)\\\midrule
-Qwen3:8B & Proxy discard & C3a & 0.57/0.66/0.80 & 114 & 30 & 57 & 62 & 1.07 (12.3\%) & -- & -- \\
-Qwen3:8B & Read & C3a & 0.58/0.67/0.80 & 114 & 30 & 52 & 62 & 1.05 (12.0\%) & -- & -- \\
-Qwen3:8B & Isolated, hidden & C3a & 0.57/0.65/0.80 & 112 & 31 & 47 & 61 & 1.07 (12.3\%) & -- & -- \\
-Qwen3:8B & Live write & C3a & 0.57/0.66/0.79 & 111 & 30 & 61 & 62 & 1.04 (11.9\%) & -- & -- \\
-Qwen3:8B & Isolated, visible & C3a & 0.57/0.66/0.79 & 111 & 32 & 55 & 63 & 1.04 (11.9\%) & -- & -- \\
-Qwen3:8B & Proxy discard & C3b & 0.54/0.79/0.86 & 114 & 43 & 57 & 62 & 1.08 (12.4\%) & 1.5e-18 & 0.174 \\
-Qwen3:8B & Read & C3b & 0.55/0.79/0.87 & 114 & 50 & 49 & 62 & 1.09 (12.4\%) & 1.4e-16 & 0.495 \\
-Qwen3:8B & Isolated, hidden & C3b & 0.57/0.77/0.88 & 112 & 57 & 41 & 61 & 1.12 (12.8\%) & 9.9e-14 & 0.733 \\
-Qwen3:8B & Live write & C3b & 0.56/0.81/0.87 & 111 & 54 & 54 & 62 & 1.11 (12.7\%) & 1.5e-15 & 0.733 \\
-Qwen3:8B & Isolated, visible & C3b & 0.53/0.76/0.86 & 111 & 49 & 66 & 63 & 1.08 (12.3\%) & 4.8e-16 & 0.462 \\
-Llama3.1:8B & Proxy discard & C3a & 0.38/0.68/0.75 & 115 & 48 & 72 & 79 & 1.20 (14.7\%) & -- & -- \\
-Llama3.1:8B & Read & C3a & 0.38/0.69/0.77 & 112 & 44 & 69 & 72 & 1.21 (14.8\%) & -- & -- \\
-Llama3.1:8B & Isolated, hidden & C3a & 0.39/0.73/0.76 & 112 & 52 & 84 & 82 & 1.22 (14.9\%) & -- & -- \\
-Llama3.1:8B & Live write & C3a & 0.39/0.71/0.77 & 112 & 55 & 66 & 80 & 1.21 (14.8\%) & -- & -- \\
-Llama3.1:8B & Isolated, visible & C3a & 0.35/0.61/0.74 & 107 & 48 & 79 & 81 & 1.23 (15.1\%) & -- & -- \\
-Llama3.1:8B & Proxy discard & C3b & 0.46/0.65/0.82 & 115 & 59 & 79 & 79 & 1.33 (16.4\%) & 1.6e-15 & 0.070 \\
-Llama3.1:8B & Read & C3b & 0.49/0.70/0.84 & 112 & 59 & 74 & 72 & 1.29 (15.8\%) & 1.5e-15 & 0.495 \\
-Llama3.1:8B & Isolated, hidden & C3b & 0.46/0.65/0.83 & 112 & 55 & 81 & 82 & 1.28 (15.7\%) & 1.5e-15 & 0.003 \\
-Llama3.1:8B & Live write & C3b & 0.49/0.65/0.82 & 112 & 66 & 65 & 80 & 1.34 (16.4\%) & 7.6e-11 & 0.324 \\
-Llama3.1:8B & Isolated, visible & C3b & 0.47/0.63/0.82 & 107 & 62 & 79 & 81 & 1.32 (16.2\%) & 2.1e-10 & 0.131 \\
+Model & Policy & Var. & P/R/AUC & Unm. & Strip & T+S & Byte & +Latency s & Holm (Unm.) & Holm (Byte)\\\midrule
+Qwen3:8B & Proxy discard & GM & 0.57/0.66/0.80 & 114 & 30 & 57 & 62 & 1.07 (12.3\%) & -- & -- \\
+Qwen3:8B & Read & GM & 0.58/0.67/0.80 & 114 & 30 & 52 & 62 & 1.05 (12.0\%) & -- & -- \\
+Qwen3:8B & Isolated, hidden & GM & 0.57/0.65/0.80 & 112 & 31 & 47 & 61 & 1.07 (12.3\%) & -- & -- \\
+Qwen3:8B & Live write & GM & 0.57/0.66/0.79 & 111 & 30 & 61 & 62 & 1.04 (11.9\%) & -- & -- \\
+Qwen3:8B & Isolated, visible & GM & 0.57/0.66/0.79 & 111 & 32 & 55 & 63 & 1.04 (11.9\%) & -- & -- \\
+Qwen3:8B & Proxy discard & GDM & 0.54/0.79/0.86 & 114 & 43 & 57 & 62 & 1.08 (12.4\%) & 1.5e-18 & 0.174 \\
+Qwen3:8B & Read & GDM & 0.55/0.79/0.87 & 114 & 50 & 49 & 62 & 1.09 (12.4\%) & 1.4e-16 & 0.495 \\
+Qwen3:8B & Isolated, hidden & GDM & 0.57/0.77/0.88 & 112 & 57 & 41 & 61 & 1.12 (12.8\%) & 9.9e-14 & 0.733 \\
+Qwen3:8B & Live write & GDM & 0.56/0.81/0.87 & 111 & 54 & 54 & 62 & 1.11 (12.7\%) & 1.5e-15 & 0.733 \\
+Qwen3:8B & Isolated, visible & GDM & 0.53/0.76/0.86 & 111 & 49 & 66 & 63 & 1.08 (12.3\%) & 4.8e-16 & 0.462 \\
+Llama3.1:8B & Proxy discard & GM & 0.38/0.68/0.75 & 115 & 48 & 72 & 79 & 1.20 (14.7\%) & -- & -- \\
+Llama3.1:8B & Read & GM & 0.38/0.69/0.77 & 112 & 44 & 69 & 72 & 1.21 (14.8\%) & -- & -- \\
+Llama3.1:8B & Isolated, hidden & GM & 0.39/0.73/0.76 & 112 & 52 & 84 & 82 & 1.22 (14.9\%) & -- & -- \\
+Llama3.1:8B & Live write & GM & 0.39/0.71/0.77 & 112 & 55 & 66 & 80 & 1.21 (14.8\%) & -- & -- \\
+Llama3.1:8B & Isolated, visible & GM & 0.35/0.61/0.74 & 107 & 48 & 79 & 81 & 1.23 (15.1\%) & -- & -- \\
+Llama3.1:8B & Proxy discard & GDM & 0.46/0.65/0.82 & 115 & 59 & 79 & 79 & 1.33 (16.4\%) & 1.6e-15 & 0.070 \\
+Llama3.1:8B & Read & GDM & 0.49/0.70/0.84 & 112 & 59 & 74 & 72 & 1.29 (15.8\%) & 1.5e-15 & 0.495 \\
+Llama3.1:8B & Isolated, hidden & GDM & 0.46/0.65/0.83 & 112 & 55 & 81 & 82 & 1.28 (15.7\%) & 1.5e-15 & 0.003 \\
+Llama3.1:8B & Live write & GDM & 0.49/0.65/0.82 & 112 & 66 & 65 & 80 & 1.34 (16.4\%) & 7.6e-11 & 0.324 \\
+Llama3.1:8B & Isolated, visible & GDM & 0.47/0.63/0.82 & 107 & 62 & 79 & 81 & 1.32 (16.2\%) & 2.1e-10 & 0.131 \\
 \bottomrule\end{tabularx}
 \end{table*}

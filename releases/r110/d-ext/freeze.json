@@ -1,0 +1,21 @@
+{
+  "utc": "2026-11-11T08:33:39.051178+00:00",
+  "status": "FROZEN_BEFORE_D_EVALUATION",
+  "plan_sha256": "a97cf880e11b135efea96569b7eb06b03d0a4798a986eb1fab2f46289cb4f670",
+  "code_sha256": "fcc1ebd68aaf624b650df894cb553e96579c72a664e4a3928444cbefdf458fe8",
+  "c_ext_code_sha256": "810a1b2da7eaa57efdfeae0edc940e7f53e19cc4277758a38c5561a7abc8a50a",
+  "c_ext_plan_sha256": "7d93689da7d910386a8ffb038d58bdae338ba7776b459221525a2a8de0c7bee5",
+  "inputs": {
+    "data/episodes.jsonl.gz": "54e90cb6b43d130f2477d3409ed4830957cf5a4c85170bcbea58a571c546e6a1",
+    "experiment/analyze.py": "beb314b22021158925439f23e3b4c732032bd09d67a19233ed3910c592afb29a",
+    "experiment/common.py": "f0c02419f54490415ab653967dbf63f2df6a367e18dbe698d185ef37a00a1f94",
+    "analysis/predictions.csv": "acb7f1d7a711526dc92ee2118f18764f8d6d1bbf8a88bdc84511f95ad03b2db8",
+    "analysis/validation-selection.json": "977e7683308ff99de664ccfb2fdd987d35f4933919f24107fc031f5a7319e68a"
+  },
+  "environment": {
+    "python": "3.11.17 (main, Oct  1 2026, 15:41:07) [GCC 13.3.0]",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "sklearn": "1.9.1"
+  }
+}

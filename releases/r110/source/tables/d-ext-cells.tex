@@ -1,0 +1,39 @@
+\begin{table*}[t]\centering\scriptsize
+\caption{Adaptive attacks against timing-matched dispatch (correct/120 on the same test fixtures). GM: gap-matched; GDM: gap and duration matched (Section~\ref{supp:c-ext}); PM: gap drawn by call position, duration as GDM. LR/RF: byte learners; Last: last-destination rule; Best: validation-selected size-only attack among learners and position rules; T+S: refitted timing-plus-size learner; Strip: refitted gap detector, then removal; Ctx: context detector, then removal; Joint: joint decoding; Adapt.: validation-selected attack among all of them, ties to size-only. Ctx P/R/AUC: context detector on test calls. +Lat: added latency as a percentage of no-cover wall time. Every attacker is refitted on the transformed cohort.}\label{tab:d-cells}
+\setlength{\tabcolsep}{2.6pt}
+\begin{tabularx}{\textwidth}{@{}lYlrrrrrrrrrrr@{}}\toprule
+Model & Policy & Var. & LR & RF & Last & Best & T+S & Strip & Ctx & Joint & Adapt. & Ctx P/R/AUC & +Lat\%\\\midrule
+Qwen3:8B & Proxy discard & GM & 63 & 62 & 77 & 77 (Last) & 57 & 30 & 69 & 76 & 77 (Last) & 0.73/0.78/0.93 & 12.3 \\
+Qwen3:8B & Read & GM & 59 & 62 & 77 & 77 (Last) & 52 & 30 & 70 & 80 & 80 (Joint) & 0.72/0.75/0.93 & 12.0 \\
+Qwen3:8B & Isolated, hidden & GM & 62 & 61 & 77 & 77 (Last) & 47 & 31 & 66 & 74 & 74 (Joint) & 0.73/0.77/0.92 & 12.3 \\
+Qwen3:8B & Live write & GM & 60 & 62 & 75 & 75 (Last) & 61 & 30 & 68 & 81 & 75 (Last) & 0.70/0.78/0.92 & 11.9 \\
+Qwen3:8B & Isolated, visible & GM & 63 & 63 & 77 & 77 (Last) & 55 & 32 & 71 & 81 & 77 (Last) & 0.74/0.81/0.94 & 11.9 \\
+Llama3.1:8B & Proxy discard & GM & 81 & 79 & 67 & 79 (RF) & 72 & 48 & 85 & 86 & 86 (Joint) & 0.66/0.77/0.92 & 14.7 \\
+Llama3.1:8B & Read & GM & 78 & 72 & 67 & 72 (RF) & 69 & 44 & 84 & 86 & 86 (Joint) & 0.62/0.76/0.91 & 14.8 \\
+Llama3.1:8B & Isolated, hidden & GM & 81 & 82 & 67 & 82 (RF) & 84 & 52 & 80 & 86 & 86 (Joint) & 0.63/0.76/0.92 & 14.9 \\
+Llama3.1:8B & Live write & GM & 80 & 75 & 65 & 65 (Last) & 66 & 55 & 81 & 94 & 94 (Joint) & 0.61/0.73/0.92 & 14.8 \\
+Llama3.1:8B & Isolated, visible & GM & 79 & 81 & 68 & 81 (RF) & 79 & 48 & 83 & 88 & 88 (Joint) & 0.62/0.73/0.91 & 15.1 \\
+\addlinespace[3pt]
+Qwen3:8B & Proxy discard & GDM & 63 & 62 & 77 & 77 (Last) & 57 & 43 & 68 & 76 & 76 (Joint) & 0.74/0.77/0.94 & 12.4 \\
+Qwen3:8B & Read & GDM & 59 & 62 & 77 & 77 (Last) & 49 & 50 & 70 & 84 & 84 (Joint) & 0.74/0.77/0.94 & 12.4 \\
+Qwen3:8B & Isolated, hidden & GDM & 62 & 61 & 77 & 77 (Last) & 41 & 57 & 79 & 84 & 84 (Joint) & 0.77/0.79/0.94 & 12.8 \\
+Qwen3:8B & Live write & GDM & 60 & 62 & 75 & 75 (Last) & 54 & 54 & 73 & 82 & 82 (Joint) & 0.75/0.80/0.94 & 12.7 \\
+Qwen3:8B & Isolated, visible & GDM & 63 & 63 & 77 & 77 (Last) & 66 & 49 & 75 & 86 & 86 (Joint) & 0.74/0.76/0.93 & 12.3 \\
+Llama3.1:8B & Proxy discard & GDM & 81 & 79 & 67 & 79 (RF) & 79 & 59 & 82 & 95 & 95 (Joint) & 0.72/0.67/0.93 & 16.4 \\
+Llama3.1:8B & Read & GDM & 78 & 72 & 67 & 72 (RF) & 74 & 59 & 89 & 94 & 89 (Ctx) & 0.75/0.74/0.94 & 15.8 \\
+Llama3.1:8B & Isolated, hidden & GDM & 81 & 82 & 67 & 82 (RF) & 81 & 55 & 85 & 97 & 97 (Joint) & 0.68/0.74/0.93 & 15.7 \\
+Llama3.1:8B & Live write & GDM & 80 & 75 & 65 & 65 (Last) & 65 & 66 & 82 & 92 & 92 (Joint) & 0.71/0.71/0.93 & 16.4 \\
+Llama3.1:8B & Isolated, visible & GDM & 79 & 81 & 68 & 81 (RF) & 79 & 62 & 80 & 87 & 87 (Joint) & 0.69/0.68/0.93 & 16.2 \\
+\addlinespace[3pt]
+Qwen3:8B & Proxy discard & PM & 63 & 62 & 77 & 77 (Last) & 61 & 21 & 77 & 83 & 83 (Joint) & 0.75/0.77/0.94 & 12.0 \\
+Qwen3:8B & Read & PM & 59 & 62 & 77 & 77 (Last) & 54 & 24 & 71 & 81 & 81 (Joint) & 0.75/0.79/0.93 & 12.3 \\
+Qwen3:8B & Isolated, hidden & PM & 62 & 61 & 77 & 77 (Last) & 42 & 23 & 77 & 82 & 82 (Joint) & 0.75/0.75/0.93 & 12.1 \\
+Qwen3:8B & Live write & PM & 60 & 62 & 75 & 75 (Last) & 57 & 24 & 73 & 83 & 75 (Last) & 0.75/0.75/0.93 & 12.2 \\
+Qwen3:8B & Isolated, visible & PM & 63 & 63 & 77 & 77 (Last) & 57 & 21 & 71 & 78 & 78 (Joint) & 0.76/0.77/0.94 & 12.3 \\
+Llama3.1:8B & Proxy discard & PM & 81 & 79 & 67 & 79 (RF) & 78 & 52 & 82 & 90 & 90 (Joint) & 0.72/0.67/0.93 & 16.8 \\
+Llama3.1:8B & Read & PM & 78 & 72 & 67 & 72 (RF) & 73 & 57 & 88 & 98 & 98 (Joint) & 0.71/0.73/0.94 & 16.1 \\
+Llama3.1:8B & Isolated, hidden & PM & 81 & 82 & 67 & 82 (RF) & 77 & 57 & 84 & 86 & 86 (Joint) & 0.67/0.70/0.92 & 15.9 \\
+Llama3.1:8B & Live write & PM & 80 & 75 & 65 & 65 (Last) & 68 & 65 & 84 & 89 & 89 (Joint) & 0.68/0.71/0.93 & 15.8 \\
+Llama3.1:8B & Isolated, visible & PM & 79 & 81 & 68 & 81 (RF) & 79 & 62 & 85 & 89 & 89 (Joint) & 0.72/0.75/0.93 & 16.2 \\
+\bottomrule\end{tabularx}
+\end{table*}

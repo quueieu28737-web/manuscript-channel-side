@@ -1,0 +1,152 @@
+[
+  {
+    "model": "qwen3:8b",
+    "arm": "transport_drop",
+    "comparison": "C3c_position: adaptive_best (joint) minus size_only_best (position_last)",
+    "condition_only": 20,
+    "reference_only": 14,
+    "difference_pp": 5.0,
+    "conditional_ci_pp": [
+      -4.166666666666666,
+      14.166666666666666
+    ],
+    "p_raw": 0.39152830513194203,
+    "variant": "C3c_position",
+    "p_holm": 1.0
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "read",
+    "comparison": "C3c_position: adaptive_best (joint) minus size_only_best (position_last)",
+    "condition_only": 16,
+    "reference_only": 12,
+    "difference_pp": 3.3333333333333335,
+    "conditional_ci_pp": [
+      -5.0,
+      11.666666666666666
+    ],
+    "p_raw": 0.5715881884098053,
+    "variant": "C3c_position",
+    "p_holm": 1.0
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "isolated",
+    "comparison": "C3c_position: adaptive_best (joint) minus size_only_best (position_last)",
+    "condition_only": 16,
+    "reference_only": 11,
+    "difference_pp": 4.166666666666666,
+    "conditional_ci_pp": [
+      -4.166666666666666,
+      12.5
+    ],
+    "p_raw": 0.44206833839416504,
+    "variant": "C3c_position",
+    "p_holm": 1.0
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "live_write",
+    "comparison": "C3c_position: adaptive_best (position_last) minus size_only_best (position_last)",
+    "condition_only": 0,
+    "reference_only": 0,
+    "difference_pp": 0.0,
+    "conditional_ci_pp": [
+      0.0,
+      0.0
+    ],
+    "p_raw": 1.0,
+    "variant": "C3c_position",
+    "p_holm": 1.0
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "isolated_visible",
+    "comparison": "C3c_position: adaptive_best (joint) minus size_only_best (position_last)",
+    "condition_only": 16,
+    "reference_only": 15,
+    "difference_pp": 0.8333333333333334,
+    "conditional_ci_pp": [
+      -8.333333333333332,
+      10.0
+    ],
+    "p_raw": 1.0,
+    "variant": "C3c_position",
+    "p_holm": 1.0
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "transport_drop",
+    "comparison": "C3c_position: adaptive_best (joint) minus size_only_best (byte_RF)",
+    "condition_only": 23,
+    "reference_only": 12,
+    "difference_pp": 9.166666666666666,
+    "conditional_ci_pp": [
+      0.0,
+      18.333333333333332
+    ],
+    "p_raw": 0.08953107893466952,
+    "variant": "C3c_position",
+    "p_holm": 0.7162486314773562
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "read",
+    "comparison": "C3c_position: adaptive_best (joint) minus size_only_best (byte_RF)",
+    "condition_only": 30,
+    "reference_only": 4,
+    "difference_pp": 21.666666666666668,
+    "conditional_ci_pp": [
+      13.333333333333334,
+      30.0
+    ],
+    "p_raw": 6.16488978266716e-06,
+    "variant": "C3c_position",
+    "p_holm": 6.16488978266716e-05
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "isolated",
+    "comparison": "C3c_position: adaptive_best (joint) minus size_only_best (byte_RF)",
+    "condition_only": 16,
+    "reference_only": 12,
+    "difference_pp": 3.3333333333333335,
+    "conditional_ci_pp": [
+      -5.0,
+      11.666666666666666
+    ],
+    "p_raw": 0.5715881884098053,
+    "variant": "C3c_position",
+    "p_holm": 1.0
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "live_write",
+    "comparison": "C3c_position: adaptive_best (joint) minus size_only_best (position_last)",
+    "condition_only": 35,
+    "reference_only": 11,
+    "difference_pp": 20.0,
+    "conditional_ci_pp": [
+      10.0,
+      30.0
+    ],
+    "p_raw": 0.0005355850721002753,
+    "variant": "C3c_position",
+    "p_holm": 0.0048202656489024776
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "isolated_visible",
+    "comparison": "C3c_position: adaptive_best (joint) minus size_only_best (byte_RF)",
+    "condition_only": 19,
+    "reference_only": 11,
+    "difference_pp": 6.666666666666667,
+    "conditional_ci_pp": [
+      -1.6666666666666667,
+      15.0
+    ],
+    "p_raw": 0.20048842206597334,
+    "variant": "C3c_position",
+    "p_holm": 1.0
+  }
+]

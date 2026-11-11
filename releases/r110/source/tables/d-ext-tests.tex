@@ -1,0 +1,28 @@
+\begin{table*}[t]\centering\scriptsize
+\caption{Pre-registered families: validation-selected adaptive attack minus validation-selected size-only attack, exact paired McNemar tests. GDM is the primary family and PM the secondary family; each has ten tests and its own Holm correction. Differences and conditional intervals are percentage points. The rule for declaring the countermeasure defeated (at least 12/120 with Holm $p<.05$ in five or more cells) is met in two of ten cells in each family.}\label{tab:d-tests}
+\setlength{\tabcolsep}{3pt}
+\begin{tabularx}{\textwidth}{@{}lllYrrrr@{}}\toprule
+Family & Model & Policy & Contrast (selected attacks) & $\Delta$ pp & 95\% cond.\ CI & Raw $p$ & Holm $p$\\\midrule
+GDM & Qwen3:8B & Proxy discard & Adapt.\ (Joint) $-$ Best (Last) & -0.8 & [-10.0, 8.3] & 1 & 1 \\
+GDM & Qwen3:8B & Read & Adapt.\ (Joint) $-$ Best (Last) & 5.8 & [-2.5, 15.0] & 0.281 & 1 \\
+GDM & Qwen3:8B & Isolated, hidden & Adapt.\ (Joint) $-$ Best (Last) & 5.8 & [-2.5, 14.2] & 0.265 & 1 \\
+GDM & Qwen3:8B & Live write & Adapt.\ (Joint) $-$ Best (Last) & 5.8 & [-1.7, 13.3] & 0.23 & 1 \\
+GDM & Qwen3:8B & Isolated, visible & Adapt.\ (Joint) $-$ Best (Last) & 7.5 & [-1.7, 16.7] & 0.163 & 0.977 \\
+GDM & Llama3.1:8B & Proxy discard & Adapt.\ (Joint) $-$ Best (RF) & 13.3 & [4.2, 22.5] & 0.0139 & 0.097 \\
+GDM & Llama3.1:8B & Read & Adapt.\ (Ctx) $-$ Best (RF) & 14.2 & [5.8, 22.5] & 0.00333 & 0.0299 \\
+GDM & Llama3.1:8B & Isolated, hidden & Adapt.\ (Joint) $-$ Best (RF) & 12.5 & [4.2, 20.8] & 0.0107 & 0.0854 \\
+GDM & Llama3.1:8B & Live write & Adapt.\ (Joint) $-$ Best (Last) & 22.5 & [12.5, 32.5] & 2.0e-04 & 0.00198 \\
+GDM & Llama3.1:8B & Isolated, visible & Adapt.\ (Joint) $-$ Best (RF) & 5.0 & [-4.2, 15.0] & 0.418 & 1 \\
+\addlinespace[3pt]
+PM & Qwen3:8B & Proxy discard & Adapt.\ (Joint) $-$ Best (Last) & 5.0 & [-4.2, 14.2] & 0.392 & 1 \\
+PM & Qwen3:8B & Read & Adapt.\ (Joint) $-$ Best (Last) & 3.3 & [-5.0, 11.7] & 0.572 & 1 \\
+PM & Qwen3:8B & Isolated, hidden & Adapt.\ (Joint) $-$ Best (Last) & 4.2 & [-4.2, 12.5] & 0.442 & 1 \\
+PM & Qwen3:8B & Live write & Adapt.\ (Last) $-$ Best (Last) & 0.0 & [0.0, 0.0] & 1 & 1 \\
+PM & Qwen3:8B & Isolated, visible & Adapt.\ (Joint) $-$ Best (Last) & 0.8 & [-8.3, 10.0] & 1 & 1 \\
+PM & Llama3.1:8B & Proxy discard & Adapt.\ (Joint) $-$ Best (RF) & 9.2 & [0.0, 18.3] & 0.0895 & 0.716 \\
+PM & Llama3.1:8B & Read & Adapt.\ (Joint) $-$ Best (RF) & 21.7 & [13.3, 30.0] & 6.2e-06 & 6.2e-05 \\
+PM & Llama3.1:8B & Isolated, hidden & Adapt.\ (Joint) $-$ Best (RF) & 3.3 & [-5.0, 11.7] & 0.572 & 1 \\
+PM & Llama3.1:8B & Live write & Adapt.\ (Joint) $-$ Best (Last) & 20.0 & [10.0, 30.0] & 5.4e-04 & 0.00482 \\
+PM & Llama3.1:8B & Isolated, visible & Adapt.\ (Joint) $-$ Best (RF) & 6.7 & [-1.7, 15.0] & 0.2 & 1 \\
+\bottomrule\end{tabularx}
+\end{table*}

@@ -1,0 +1,15 @@
+{
+  "utc": "2026-11-11T08:37:21.079978+00:00",
+  "seconds": 212.05618047714233,
+  "freeze_sha256": "ca91792c0c5464ad7c11d78c1933f1ef5da069161d143e04aadbd58a0e9bdf49",
+  "files": {
+    "cells.json": "1bd193c4a46ddf9729ea11774e8ad41d94b2c314826fa9582e90302dc5e672b5",
+    "ctx_selection.json": "f8ab814f6f204dbc67071a09a6e3cd8f61f57c37ec0e88d0770cc334e99e48ef",
+    "descriptive.json": "63d2b4d437cf4e4511c1143bc9b2447d29fc0f6fb74efb0acd43ce3d7cb34802",
+    "gate.json": "b68ff2d0f6ddfa8ed575afb40d45d8629275b0c0c40115758e449ea67aa02719",
+    "joint_selection.json": "644ce963262406280c830a888d8b0fa58c24e15e1a465560fb4c2e09f34275a5",
+    "primary.json": "938dc6100ca42bd4030714ad70d19289cd0c8ccaa20a994a7cbdfb99c326bb9b",
+    "secondary.json": "e0262aaffffea7bf1fb039febd9cecb7ba5e3f76bab5137087181f1b36140cfb",
+    "selection.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+  }
+}

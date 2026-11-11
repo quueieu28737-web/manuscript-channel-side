@@ -1,0 +1,31 @@
+\section{Attacks that adapt to timing-matched dispatch}\label{supp:d-ext}
+Section~\ref{supp:c-ext} evaluated timing-matched dispatch against the byte learner, the timing-plus-size learner and the gap detector. This section asks two further questions. Does the conclusion hold when position rules count as size-only attacks? And does it hold against attackers that adapt to the matched cover? The analysis again reuses the 3,600 collected episodes and their 120/60/120 split, without new LLM requests or captures.
+
+\paragraph{Freeze, exposure and gate}
+The plan, code and input hashes were committed and pushed before any test quantity of this section was computed. All published results of Sections~\ref{supp:cover-study}--\ref{supp:c-ext} were known, including that the last-destination rule scores 75--77/120 for Qwen on unmodified traces. The training split was inspected to design the attacks: cover episodes contain one or two decoys at call positions 1--6. A gate regenerated both matched cohorts with the original seeds and generation order, refitted the original detector and timing-plus-size learner, and reproduced all twenty strip and timing-plus-size counts of Table~\ref{tab:c3} exactly. An independent script re-derives every selection, McNemar value, Holm family and decision rule from the saved records (242 checks).
+
+\paragraph{Best size-only attack}
+Matched dispatch delays calls but leaves the destination sequence unchanged, so position rules score as on the unmatched cover. For each model and policy, validation accuracy on the 60 validation fixtures selects the size-only attack among the two byte learners, the frozen no-cover learner, and the last- and penultimate-destination rules, with ties going to the earlier entry. Validation selects the last-destination rule for Qwen in all five policies (75--77/120) and for Llama's live-write policy (65/120, although the byte learner scores 80 on test). Elsewhere it selects the byte random forest (72--82). These are the protection levels against which timing must be judged.
+
+\paragraph{Adaptive attacks}
+The \emph{context detector} adds to the ten gap-detector inputs the call position, elapsed time, the gap's ratio to the median gap of its own episode, the previous and next gaps, the duration's ratio to the training median honest duration at that destination, encrypted byte counts, the previous destination, a last-call flag and the call count. LR and RF are fitted on labelled training calls pooled across policies, and validation F1 selects one detector and threshold under the original rules. \emph{Joint decoding} enumerates every removal of zero, one or two calls among positions 1--6. It scores each removal by a training prior on the decoy count plus the context detector's log-probabilities, optionally weighted by the frozen no-cover classifier's confidence on the remaining trace ($\lambda\in\{0,.5,1,2,4\}$). It then predicts with either the best removal or the posterior mixture over removals. Detector family, variant and $\lambda$ are chosen on pooled validation recognition. The \emph{adaptive best} is the validation-selected attack among the size-only candidates, the timing-plus-size learner, gap-detector removal, context removal and joint decoding. Ties go to size-only, so a timing attack must strictly beat it on validation. A further defender variant (PM) draws each decoy gap from honest gaps at the same call position.
+
+\input{tables/d-ext-cells}
+\input{tables/d-ext-tests}
+
+\paragraph{Results}
+Table~\ref{tab:d-cells} reports every attack and Table~\ref{tab:d-tests} both pre-registered families.
+
+\textbf{Call-level separability.} Against GDM, the context detector separates matched decoys with AUROC .93--.94 and precision .68--.77, against .82--.88 and .46--.57 for the gap detector.
+
+\textbf{Recognition.} The adaptive best exceeds the size-only best in nine of ten GDM cells: by $-0.8$ to 7.5 points for Qwen and 5.0 to 22.5 points for Llama. Two Llama cells survive Holm correction (read, $p=.030$; live write, $p=.002$). The pre-registered rule for declaring the countermeasure defeated, at least 12/120 with Holm $p<.05$ in five or more cells, is met in two of ten. We therefore do not claim that the countermeasure fails. Nor do we claim that it is equivalent to the size-only view.
+
+\textbf{Position-matched dispatch.} PM leaves the same two Llama cells significant and the rule again met in two of ten. Its added latency is 12.0--16.8\%.
+
+\input{tables/d-ext-ablation}
+
+\paragraph{What carries the separability}
+After the frozen results were saved, an exploratory ablation refitted the context detector with input groups removed (Table~\ref{tab:d-ablation}). Removing every timing input leaves AUROC .83--.85: destination, position and size context alone identify decoys whose schedule was drawn independently of the planner's destination sequence. Timing inputs alone reach .80--.82, because they compare a gap with the rest of its episode. Both signals are present, and matching timing marginals removes neither.
+
+\paragraph{Limits}
+Every limit of Section~\ref{supp:c-ext} applies: receipt timestamps on loopback, supplied windows, a receipt-level counterfactual and reuse of the same 120 fixtures. The attacks were designed after earlier results were known, and validation selection over nine attacks on 60 fixtures is noisy (see Llama live write). The joint decoder uses the training prior on decoy count and position, an observer privilege equivalent to labelled training calls. A defender that samples its decoys' destinations and timing jointly from planner behavior, or runs the planner itself to generate cover, is the untested design that these results motivate.

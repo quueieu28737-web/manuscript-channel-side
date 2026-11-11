@@ -1,0 +1,53 @@
+{
+  "A1_access_class": {
+    "n": 44,
+    "agree": 44,
+    "cohen_kappa": 1.0,
+    "coder_unclear_or_blank": 0
+  },
+  "A2_has_protection_comparison": {
+    "n": 44,
+    "agree": 38,
+    "cohen_kappa": 0.6129032258064516,
+    "coder_unclear_or_blank": 0
+  },
+  "B1_intervention_purpose": {
+    "n": 9,
+    "agree": 9,
+    "cohen_kappa": 1.0,
+    "coder_unclear_or_blank": 0
+  },
+  "B2_protected_condition_adaptation": {
+    "n": 4,
+    "agree": 4,
+    "cohen_kappa": 1.0,
+    "coder_unclear_or_blank": 0
+  },
+  "B3_original_task_utility_same_intervention": {
+    "n": 4,
+    "agree": 4,
+    "cohen_kappa": 1.0,
+    "coder_unclear_or_blank": 0
+  },
+  "C1_relation": {
+    "n": 6,
+    "agree": 5,
+    "cohen_kappa": 0.7692307692307693,
+    "coder_unclear_or_blank": 0
+  },
+  "privacy_denominator": {
+    "author": [
+      "CG-live",
+      "CG-transform",
+      "WRA-decoy",
+      "WRA-visibility"
+    ],
+    "coder": [
+      "CG-live",
+      "CG-transform",
+      "WRA-decoy",
+      "WRA-visibility"
+    ],
+    "identical": true
+  }
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "model": "qwen3:8b",
+    "arm": "none",
+    "validation_accuracy": {
+      "byte_LR": 0.9666666666666667,
+      "byte_RF": 0.9666666666666667,
+      "frozen": 0.9666666666666667,
+      "position_last": 0.9333333333333333,
+      "position_penultimate": 0.2
+    },
+    "test_correct": {
+      "byte_LR": 118,
+      "byte_RF": 117,
+      "frozen": 118,
+      "position_last": 116,
+      "position_penultimate": 14
+    },
+    "size_only_best": "byte_LR",
+    "size_only_best_correct": 118
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "none",
+    "validation_accuracy": {
+      "byte_LR": 0.9666666666666667,
+      "byte_RF": 0.9333333333333333,
+      "frozen": 0.9666666666666667,
+      "position_last": 0.6666666666666666,
+      "position_penultimate": 0.5666666666666667
+    },
+    "test_correct": {
+      "byte_LR": 113,
+      "byte_RF": 110,
+      "frozen": 113,
+      "position_last": 79,
+      "position_penultimate": 64
+    },
+    "size_only_best": "byte_LR",
+    "size_only_best_correct": 113
+  }
+]
