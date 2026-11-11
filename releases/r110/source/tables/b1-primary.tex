@@ -1,0 +1,16 @@
+\begin{table*}[t]\centering\small
+\caption{Every primary timing-concatenation comparison. Ten exact paired tests share one Holm family. None rejects; the negative differences are retained. Intervals condition on fitted predictors and fixtures.}\label{tab:b1-primary}
+\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\textwidth}{@{}lP{.12\textwidth}Yrrrr@{}}\toprule
+Model & Policy & Contrast & $\Delta$ pp & 95\% conditional CI & Raw $p$ & Holm $p$ \\\midrule
+Qwen3:8B & Proxy discard & Time+size $-$ Byte & -5.0 & [-12.5, 1.7] & 0.2632 & 1 \\
+Qwen3:8B & Read cover & Time+size $-$ Byte & -6.7 & [-15.0, 0.8] & 0.1686 & 1 \\
+Qwen3:8B & Isolated, hidden & Time+size $-$ Byte & -15.0 & [-24.2, -5.8] & 0.0064 & 0.0643 \\
+Qwen3:8B & Live write & Time+size $-$ Byte & -5.0 & [-13.3, 2.5] & 0.3269 & 1 \\
+Qwen3:8B & Isolated, visible & Time+size $-$ Byte & -2.5 & [-10.0, 5.0] & 0.6776 & 1 \\
+Llama3.1:8B & Proxy discard & Time+size $-$ Byte & -4.2 & [-10.8, 2.5] & 0.3323 & 1 \\
+Llama3.1:8B & Read cover & Time+size $-$ Byte & -2.5 & [-10.0, 4.2] & 0.6476 & 1 \\
+Llama3.1:8B & Isolated, hidden & Time+size $-$ Byte & -2.5 & [-9.2, 4.2] & 0.6476 & 1 \\
+Llama3.1:8B & Live write & Time+size $-$ Byte & -8.3 & [-15.8, 0.0] & 0.0872 & 0.7844 \\
+Llama3.1:8B & Isolated, visible & Time+size $-$ Byte & 0.0 & [-7.5, 7.5] & 1 & 1 \\
+\bottomrule\end{tabularx}\end{table*}

@@ -1,0 +1,16 @@
+\begin{table*}[t]\centering\small
+\caption{Timing-informed call detection with validation-selected LR/threshold. TP/FN count cover calls; FP counts honest calls removed. Each cover cell has 182 decoys. No-cover controls add zero false removals among 487 Qwen and 629 Llama honest calls. Scores describe this test population.}\label{tab:b1-detector}
+\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\textwidth}{@{}lYrrrrrr@{}}\toprule
+Model & Policy & TP & FP & FN & Precision & Recall & AUROC \\\midrule
+Qwen3:8B & Proxy discard & 179 & 0 & 3 & 1.000 & 0.9835 & 1.000 \\
+Qwen3:8B & Read cover & 182 & 0 & 0 & 1.000 & 1.0000 & 1.000 \\
+Qwen3:8B & Isolated, hidden & 180 & 0 & 2 & 1.000 & 0.9890 & 1.000 \\
+Qwen3:8B & Live write & 179 & 0 & 3 & 1.000 & 0.9835 & 1.000 \\
+Qwen3:8B & Isolated, visible & 179 & 0 & 3 & 1.000 & 0.9835 & 1.000 \\
+Llama3.1:8B & Proxy discard & 181 & 0 & 1 & 1.000 & 0.9945 & 1.000 \\
+Llama3.1:8B & Read cover & 182 & 0 & 0 & 1.000 & 1.0000 & 1.000 \\
+Llama3.1:8B & Isolated, hidden & 181 & 0 & 1 & 1.000 & 0.9945 & 1.000 \\
+Llama3.1:8B & Live write & 182 & 0 & 0 & 1.000 & 1.0000 & 1.000 \\
+Llama3.1:8B & Isolated, visible & 182 & 0 & 0 & 1.000 & 1.0000 & 1.000 \\
+\bottomrule\end{tabularx}\end{table*}

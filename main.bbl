@@ -496,4 +496,22 @@ X.~Cai, R.~Nithyanand, T.~Wang, R.~Johnson, and I.~Goldberg, ``A systematic
   \emph{Proceedings of the ACM SIGSAC Conference on Computer and Communications
   Security}, 2014, pp. 227--238.
 
+\bibitem{shmatikov2006adaptive}
+V.~Shmatikov and M.-H. Wang, ``Timing analysis in low-latency mix networks:
+  Attacks and defenses,'' in \emph{European Symposium on Research in Computer
+  Security (ESORICS)}, ser. LNCS, vol. 4189.\hskip 1em plus 0.5em minus
+  0.4em\relax Springer, 2006, pp. 18--33.
+
+\bibitem{juarez2016wtfpad}
+M.~Juarez, M.~Imani, M.~Perry, C.~Diaz, and M.~Wright, ``Toward an efficient
+  website fingerprinting defense,'' in \emph{European Symposium on Research in
+  Computer Security (ESORICS)}, ser. LNCS, vol. 9878.\hskip 1em plus 0.5em
+  minus 0.4em\relax Springer, 2016, pp. 27--46.
+
+\bibitem{rahman2020tiktok}
+M.~S. Rahman, P.~Sirinam, N.~Mathews, K.~G. Gangadhara, and M.~Wright,
+  ``{Tik-Tok}: The utility of packet timing in website fingerprinting
+  attacks,'' \emph{Proceedings on Privacy Enhancing Technologies}, vol. 2020,
+  no.~3, pp. 5--24, 2020.
+
 \end{thebibliography}

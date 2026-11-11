@@ -24,6 +24,8 @@
 \newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
 \renewcommand{\thesection}{S\arabic{section}}
 \renewcommand{\thesubsection}{\thesection.\arabic{subsection}}
+\renewcommand{\thetable}{S\arabic{table}}
+\renewcommand{\thefigure}{S\arabic{figure}}
 \title{Supplementary Material for\\SoK: Agent Communication Side Channels}
 \author{}
 \begin{document}
@@ -32,7 +34,7 @@
 \pagestyle{plain}
 \maketitle
 \thispagestyle{plain}
-\noindent The supplement provides the complete measurements and source basis for the two execution boundaries. Section~\ref{supp:cover-study} gives all executed-cover attacks, task/state outcomes, paired contrasts and a worked evaluation protocol. Section~\ref{supp:randomized-feedback} retains the separate feedback pilot, including its inconclusive primary tests and detector diagnostics. Sections~\ref{supp:sources}--\ref{supp:mechanisms} document sources; Section~\ref{sec:target-audit} gives extraction rules and the AI coding-manual pilot. Reporting examples, the design agenda and deployment maps follow. Section~\ref{supp:b1-timing} adds timing-informed cover removal on the same M3 executions. The review artifact preserves earlier populations separately, including failures and unknown outcomes.
+\noindent The supplement provides the complete measurements and source basis for the two execution boundaries. Section~\ref{supp:cover-study} gives all executed-cover attacks, task/state outcomes, paired contrasts and a worked evaluation protocol. Section~\ref{supp:randomized-feedback} retains the separate feedback pilot, including its inconclusive primary tests and detector diagnostics. Sections~\ref{supp:sources}--\ref{supp:mechanisms} document sources; Section~\ref{sec:target-audit} gives extraction rules and the AI coding-manual pilot. Reporting examples, the design agenda and deployment maps follow. Sections~\ref{supp:b1-timing}--\ref{supp:d-ext} add timing-informed cover removal on the same executions, its robustness and countermeasure, and attacks that adapt to that countermeasure. The review artifact preserves earlier populations separately, including failures and unknown outcomes.
 \input{sections/randomized-feedback-supplement}
 \clearpage\onecolumn\twocolumn
 \input{sections/sources-supplement}
@@ -44,6 +46,7 @@
 \input{sections/executed-cover-supplement}
 \clearpage\input{sections/b1-timing-supplement}
 \clearpage\input{sections/c-ext-supplement}
+\clearpage\input{sections/d-ext-supplement}
 % Flush the wide result tables and reset the two-column page height.
 \clearpage\onecolumn\twocolumn
 \bibliographystyle{IEEEtran}

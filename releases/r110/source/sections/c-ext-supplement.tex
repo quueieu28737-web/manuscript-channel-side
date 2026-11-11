@@ -1,0 +1,18 @@
+\section{Robustness of cover removal and the timing-matched countermeasure}\label{supp:c-ext}
+This section tests three objections to the removal attack of Section~\ref{supp:b1-timing}: that it needs cover labels, that it would not survive network timing noise, and that a defender could simply delay its decoys. All three analyses reuse the collected 3,600 episodes and their 120/60/120 split. They involve no new LLM requests or captures.
+
+\paragraph{Freeze and exposure}
+The plan, code and input hashes were frozen and committed before any of their test quantities was computed. Before the freeze, the removal results of Section~\ref{supp:b1-timing} were known. Validation gap extremes (cover at most 56\,ms, honest at least 418\,ms) and that section's validation candidate table had also been viewed. A reproduction gate refitted the Section~\ref{supp:b1-timing} pipeline first. It required, and obtained, exact equality with the original size-view LR/RF test predictions and with all twelve of its strip counts. An independent script recomputes the label-free detector counts from raw receipts, every McNemar and Holm value, and the summary criteria.
+
+\paragraph{Label-free removal}
+The attacker fits a two-component Gaussian mixture to the log gaps of unlabeled training calls. The threshold is the point of equal posterior responsibility: 0.189\,s for Qwen and 0.142\,s for Llama. Table~\ref{tab:c2} shows perfect test detection in every cell and strip recognition equal to or above the supervised detector.
+
+\paragraph{Timestamp jitter}
+Independent half-normal delays are added to every call start and end in all splits, and gaps and durations are recomputed (five draws per $\sigma$). A detector frozen on clean data degrades as $\sigma$ grows; a detector refitted on jittered training data does not, until $\sigma=200$\,ms reduces Qwen's recall to about .87 (Table~\ref{tab:c1}). Jitter is independent per event. Correlated queueing delay, which shifts neighbouring events together, would mostly preserve gaps. The analysis does not model packetization or loss.
+
+\paragraph{Timing-matched dispatch}
+The counterfactual gateway delays each decoy by a gap drawn from the defender's own no-cover training gaps (\emph{gap-matched}), and in the \emph{gap+duration-matched} variant also extends its duration to a draw from no-cover durations at the same destination. Each added delay shifts all later timestamps of the episode. Hidden cover never reaches the planner and model inference does not depend on wall-clock time, so the planner's decisions are unchanged. Visible cover changes only timing, not content. The attacker refits both the detector and the direct timing-plus-size classifier on transformed data. Table~\ref{tab:c3} reports every cell. Residual separability remains (AUROC .74--.88), but the detector's precision of .35--.58 makes stripping counter-productive. The pre-registered summary rule asked whether gap+duration-matched strip recognition falls within ten points of the size view in every cell. It does not: in 7 of 10 cells it falls more than ten points \emph{below}. The best attack reported in this section (byte learner, timing-plus-size and strip) is within three tasks of the byte learner in every cell. That comparison omits position rules and attacks that adapt to the matched cover; Section~\ref{supp:d-ext} adds both and revises the conclusion.
+
+\input{tables/c-ext-labelfree}
+\input{tables/c-ext-jitter}
+\input{tables/c-ext-matched}

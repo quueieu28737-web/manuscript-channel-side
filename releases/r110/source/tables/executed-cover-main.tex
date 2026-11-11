@@ -1,0 +1,22 @@
+\begin{table*}[t]\centering\small
+\caption{Executed cover on the same held-out executions (120 paired fixtures per model and policy; chance 20/120). \emph{Size view}: Byte is the validation-selected size/destination learner, Last the last-destination rule, and Best the validation-selected size-only attack among learners and position rules. \emph{Unmatched} (client-receipt call times): Strip removes calls flagged by the label-free gap rule and applies the frozen no-cover classifier; Jit.\ is the refitted strip attack under 200\,ms half-normal jitter (mean of five draws). \emph{Timing-matched} (gap and duration drawn from no-cover history): Strip uses the refitted gap detector; Adapt.\ is the validation-selected attack after adding the context detector and joint decoding; +Lat is added latency as a percentage of no-cover wall time. \emph{Execution}: Goal, whole-state integrity (State) and completed tasks with state errors. Call bytes are 1.28--1.35$\times$ under cover. Supplements S9--S11 give all attacks, intervals and tests.}
+\label{tab:cover-main}
+\setlength{\tabcolsep}{3.2pt}
+\begin{tabularx}{\textwidth}{@{}lYrrrrrrrrrrr@{}}\toprule
+ & & \multicolumn{3}{c}{Size view} & \multicolumn{2}{c}{Unmatched} & \multicolumn{3}{c}{Timing-matched} & \multicolumn{3}{c}{Execution}\\\cmidrule(lr){3-5}\cmidrule(lr){6-7}\cmidrule(lr){8-10}\cmidrule(l){11-13}
+Model & Cover policy & Byte & Last & Best & Strip & Jit. & Strip & Adapt. & +Lat\% & Goal & State & Goal+err \\\midrule
+Qwen3:8B & No cover & 118 & 116 & 118 & -- & -- & -- & -- & -- & 114 & 116 & 0 \\
+Qwen3:8B & Proxy discard & 62 & 77 & 77 & 115 & 104 & 43 & 76 & 12.4 & 114 & 116 & 0 \\
+Qwen3:8B & Read cover & 62 & 77 & 77 & 114 & 103 & 50 & 84 & 12.4 & 114 & 115 & 0 \\
+Qwen3:8B & Isolated, hidden & 61 & 77 & 77 & 114 & 106 & 57 & 84 & 12.8 & 114 & 115 & 0 \\
+Qwen3:8B & Live write & 62 & 75 & 75 & 112 & 102 & 54 & 82 & 12.7 & 102 & 7 & 95 \\
+Qwen3:8B & Isolated, visible & 63 & 77 & 77 & 111 & 98 & 49 & 86 & 12.3 & 113 & 114 & 1 \\
+\midrule
+Llama3.1:8B & No cover & 113 & 79 & 113 & -- & -- & -- & -- & -- & 82 & 69 & 13 \\
+Llama3.1:8B & Proxy discard & 79 & 67 & 79 & 116 & 115 & 59 & 95 & 16.4 & 80 & 68 & 13 \\
+Llama3.1:8B & Read cover & 72 & 67 & 72 & 112 & 110 & 59 & 89 & 15.8 & 84 & 71 & 14 \\
+Llama3.1:8B & Isolated, hidden & 82 & 67 & 82 & 112 & 110 & 55 & 97 & 15.7 & 83 & 70 & 13 \\
+Llama3.1:8B & Live write & 80 & 65 & 65 & 112 & 110 & 66 & 92 & 16.4 & 76 & 3 & 73 \\
+Llama3.1:8B & Isolated, visible & 81 & 68 & 81 & 107 & 105 & 62 & 87 & 16.2 & 83 & 73 & 11 \\
+\bottomrule\end{tabularx}
+\end{table*}

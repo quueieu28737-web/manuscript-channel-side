@@ -1,0 +1,60 @@
+\clearpage\onecolumn
+\small\setlength{\tabcolsep}{3pt}
+\begin{longtable}{@{}P{.14\textwidth}P{.14\textwidth}P{.08\textwidth}P{.04\textwidth}P{.125\textwidth}P{.125\textwidth}P{.125\textwidth}P{.125\textwidth}@{}}
+\caption{Complete recognition outcomes. Parentheses give the test denominator. Each attack cell gives correct predictions as matched fit / frozen Full fit; a dash means the same Full model is already reported. Prefix and post-ticket use M; complete-execution views are separately fitted. Every planned terminal outcome remains in the intended-label denominator.}\label{tab:randomized-all-recognition}\\
+\toprule
+Executor ($n$) & Condition & Phase & View & LR & k-FP & RF & CNN \\\midrule\endfirsthead
+\multicolumn{8}{l}{\textit{Table \thetable{} continued}}\\
+\toprule
+Executor ($n$) & Condition & Phase & View & LR & k-FP & RF & CNN \\\midrule\endhead
+\bottomrule\endfoot
+Qwen3:8B (120) & Full & Prefix & M & 25 / -- & 18 / -- & 25 / -- & 20 / -- \\
+Qwen3:8B (120) & Full & Post-ticket & M & 43 / -- & 32 / -- & 50 / -- & 20 / -- \\
+Qwen3:8B (120) & Full & Complete & T & 19 / -- & 21 / -- & 23 / -- & 20 / -- \\
+Qwen3:8B (120) & Full & Complete & M & 46 / -- & 43 / -- & 61 / -- & 22 / -- \\
+Qwen3:8B (120) & Full & Complete & T+M & 54 / -- & 39 / -- & 55 / -- & 20 / -- \\
+Qwen3:8B (120) & Projected & Prefix & M & 23 / 24 & 23 / 19 & 21 / 16 & 20 / 20 \\
+Qwen3:8B (120) & Projected & Post-ticket & M & 23 / 20 & 20 / 20 & 30 / 20 & 20 / 20 \\
+Qwen3:8B (120) & Projected & Complete & T & 18 / 20 & 20 / 24 & 20 / 24 & 20 / 22 \\
+Qwen3:8B (120) & Projected & Complete & M & 44 / 20 & 39 / 30 & 31 / 20 & 22 / 16 \\
+Qwen3:8B (120) & Projected & Complete & T+M & 39 / 19 & 30 / 28 & 30 / 16 & 22 / 22 \\
+Qwen3:8B (120) & Dedicated & Complete & T & 23 / 21 & 25 / 20 & 24 / 20 & 20 / 20 \\
+Qwen3:8B (120) & Dedicated & Complete & M & 25 / 24 & 22 / 19 & 24 / 23 & 25 / 19 \\
+Qwen3:8B (120) & Dedicated & Complete & T+M & 30 / 28 & 23 / 21 & 24 / 20 & 16 / 21 \\
+Qwen3:8B (120) & Shared & Complete & T & 20 / 18 & 19 / 21 & 17 / 19 & 20 / 20 \\
+Qwen3:8B (120) & Shared & Complete & M & 25 / 26 & 25 / 19 & 30 / 24 & 17 / 20 \\
+Qwen3:8B (120) & Shared & Complete & T+M & 23 / 21 & 22 / 20 & 22 / 24 & 19 / 19 \\
+Qwen3:8B (120) & Joint & Complete & T & 19 / 24 & 17 / 16 & 19 / 19 & 17 / 19 \\
+Qwen3:8B (120) & Joint & Complete & M & 18 / 20 & 24 / 20 & 22 / 20 & 25 / 20 \\
+Qwen3:8B (120) & Joint & Complete & T+M & 20 / 20 & 22 / 21 & 19 / 19 & 25 / 21 \\
+Llama3.1:8B (120) & Full & Prefix & M & 19 / -- & 14 / -- & 24 / -- & 20 / -- \\
+Llama3.1:8B (120) & Full & Post-ticket & M & 40 / -- & 31 / -- & 59 / -- & 26 / -- \\
+Llama3.1:8B (120) & Full & Complete & T & 17 / -- & 18 / -- & 19 / -- & 17 / -- \\
+Llama3.1:8B (120) & Full & Complete & M & 62 / -- & 47 / -- & 73 / -- & 22 / -- \\
+Llama3.1:8B (120) & Full & Complete & T+M & 53 / -- & 45 / -- & 55 / -- & 19 / -- \\
+Llama3.1:8B (120) & Projected & Prefix & M & 16 / 20 & 20 / 12 & 14 / 21 & 20 / 20 \\
+Llama3.1:8B (120) & Projected & Post-ticket & M & 22 / 20 & 20 / 27 & 19 / 20 & 20 / 21 \\
+Llama3.1:8B (120) & Projected & Complete & T & 18 / 22 & 19 / 20 & 16 / 23 & 19 / 17 \\
+Llama3.1:8B (120) & Projected & Complete & M & 33 / 20 & 34 / 23 & 34 / 16 & 15 / 17 \\
+Llama3.1:8B (120) & Projected & Complete & T+M & 29 / 20 & 31 / 27 & 30 / 19 & 18 / 20 \\
+Llama3.1:8B (120) & Dedicated & Complete & T & 16 / 21 & 17 / 19 & 15 / 20 & 21 / 21 \\
+Llama3.1:8B (120) & Dedicated & Complete & M & 17 / 24 & 13 / 16 & 13 / 20 & 19 / 18 \\
+Llama3.1:8B (120) & Dedicated & Complete & T+M & 20 / 23 & 16 / 21 & 18 / 20 & 19 / 18 \\
+Llama3.1:8B (120) & Shared & Complete & T & 26 / 19 & 13 / 15 & 22 / 19 & 16 / 20 \\
+Llama3.1:8B (120) & Shared & Complete & M & 19 / 21 & 19 / 17 & 21 / 21 & 19 / 18 \\
+Llama3.1:8B (120) & Shared & Complete & T+M & 19 / 22 & 17 / 17 & 17 / 21 & 20 / 20 \\
+Llama3.1:8B (120) & Joint & Complete & T & 17 / 18 & 23 / 17 & 15 / 22 & 24 / 19 \\
+Llama3.1:8B (120) & Joint & Complete & M & 25 / 20 & 22 / 20 & 16 / 20 & 21 / 20 \\
+Llama3.1:8B (120) & Joint & Complete & T+M & 22 / 20 & 17 / 20 & 17 / 20 & 18 / 18 \\
+Hosted alias (48) & Full & Prefix & M & 5 / -- & 3 / -- & 8 / -- & 8 / -- \\
+Hosted alias (48) & Full & Post-ticket & M & 15 / -- & 6 / -- & 15 / -- & 11 / -- \\
+Hosted alias (48) & Full & Complete & T & 8 / -- & 8 / -- & 10 / -- & 11 / -- \\
+Hosted alias (48) & Full & Complete & M & 9 / -- & 9 / -- & 7 / -- & 10 / -- \\
+Hosted alias (48) & Full & Complete & T+M & 12 / -- & 13 / -- & 13 / -- & 9 / -- \\
+Hosted alias (48) & Projected & Prefix & M & 5 / 5 & 6 / 5 & 6 / 8 & 8 / 8 \\
+Hosted alias (48) & Projected & Post-ticket & M & 10 / 7 & 7 / 6 & 9 / 7 & 5 / 11 \\
+Hosted alias (48) & Projected & Complete & T & 5 / 8 & 10 / 7 & 8 / 8 & 7 / 13 \\
+Hosted alias (48) & Projected & Complete & M & 9 / 7 & 5 / 10 & 7 / 6 & 8 / 11 \\
+Hosted alias (48) & Projected & Complete & T+M & 6 / 6 & 11 / 8 & 8 / 8 & 11 / 13 \\
+\end{longtable}
+\normalsize\clearpage\twocolumn

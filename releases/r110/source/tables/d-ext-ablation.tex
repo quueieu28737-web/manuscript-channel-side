@@ -1,0 +1,11 @@
+\begin{table}[t]\centering\footnotesize
+\caption{Post-hoc exploratory ablation of the context detector: random forest refitted with input groups removed; test AUROC on non-first calls of all cover arms. It was run after the frozen results were saved and tests no claim.}\label{tab:d-ablation}
+\setlength{\tabcolsep}{2.5pt}
+\begin{tabularx}{\columnwidth}{@{}Ylrrrrr@{}}\toprule
+Model & Var. & All & $-$Time & $-$Size & $-$Pos. & Time only\\\midrule
+Qwen3:8B & GDM & 0.920 & 0.830 & 0.914 & 0.916 & 0.812 \\
+Llama3.1:8B & GDM & 0.913 & 0.852 & 0.904 & 0.897 & 0.803 \\
+Qwen3:8B & PM & 0.918 & 0.830 & 0.916 & 0.911 & 0.816 \\
+Llama3.1:8B & PM & 0.914 & 0.852 & 0.907 & 0.896 & 0.821 \\
+\bottomrule\end{tabularx}
+\end{table}
