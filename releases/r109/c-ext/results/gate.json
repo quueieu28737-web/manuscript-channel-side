@@ -1,0 +1,86 @@
+[
+  {
+    "model": "qwen3:8b",
+    "arm": "none",
+    "byte_selected": 118,
+    "strip": 118,
+    "b1_strip": 118
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "transport_drop",
+    "byte_selected": 62,
+    "strip": 114,
+    "b1_strip": 114
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "read",
+    "byte_selected": 62,
+    "strip": 114,
+    "b1_strip": 114
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "isolated",
+    "byte_selected": 61,
+    "strip": 112,
+    "b1_strip": 112
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "live_write",
+    "byte_selected": 62,
+    "strip": 111,
+    "b1_strip": 111
+  },
+  {
+    "model": "qwen3:8b",
+    "arm": "isolated_visible",
+    "byte_selected": 63,
+    "strip": 111,
+    "b1_strip": 111
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "none",
+    "byte_selected": 113,
+    "strip": 113,
+    "b1_strip": 113
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "transport_drop",
+    "byte_selected": 79,
+    "strip": 115,
+    "b1_strip": 115
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "read",
+    "byte_selected": 72,
+    "strip": 112,
+    "b1_strip": 112
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "isolated",
+    "byte_selected": 82,
+    "strip": 112,
+    "b1_strip": 112
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "live_write",
+    "byte_selected": 80,
+    "strip": 112,
+    "b1_strip": 112
+  },
+  {
+    "model": "llama3.1:8b",
+    "arm": "isolated_visible",
+    "byte_selected": 81,
+    "strip": 107,
+    "b1_strip": 107
+  }
+]
