@@ -1,0 +1,19 @@
+\begin{table*}[t]\centering\small
+\caption{Numerical precision sensitivity for the complete declared primary families. MC retains the prespecified 10,000-draw session-sign approximation; exact enumerates the same sign-flip distribution using integer counts. This post-scoring arithmetic audit changes no predictions, clusters, hypotheses or multiplicity families. A PASS audit means arithmetic consistency, not hypothesis rejection.}\label{tab:randomized-sign-precision}
+\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\textwidth}{@{}llYrrrr@{}}\toprule
+Executor & Attack & Contrast & MC $p$ & Exact $p$ & MC Holm & Exact Holm \\\midrule
+Llama3.1:8B & LR & Post--prefix & 0.006199 & 0.006348 & 0.049595 & 0.050781 \\
+Llama3.1:8B & kFP & Post--prefix & 0.031997 & 0.033936 & 0.127987 & 0.135742 \\
+Llama3.1:8B & LR & Full--Projected & 0.021198 & 0.021362 & 0.109189 & 0.117188 \\
+Llama3.1:8B & kFP & Full--Projected & 0.096890 & 0.099457 & 0.193781 & 0.198914 \\
+Qwen3:8B & LR & Post--prefix & 0.036796 & 0.035339 & 0.127987 & 0.135742 \\
+Qwen3:8B & kFP & Post--prefix & 0.018198 & 0.019531 & 0.109189 & 0.117188 \\
+Qwen3:8B & LR & Full--Projected & 0.010499 & 0.011108 & 0.073493 & 0.077759 \\
+Qwen3:8B & kFP & Full--Projected & 0.141986 & 0.144592 & 0.193781 & 0.198914 \\
+Hosted alias & LR & Post--prefix & 0.039096 & 0.039062 & 0.156384 & 0.156250 \\
+Hosted alias & kFP & Post--prefix & 0.558044 & 0.562500 & 1.000000 & 1.000000 \\
+Hosted alias & LR & Full--Projected & 0.308369 & 0.307129 & 0.925107 & 0.921387 \\
+Hosted alias & kFP & Full--Projected & 1.000000 & 1.000000 & 1.000000 & 1.000000 \\
+\bottomrule\end{tabularx}
+\end{table*}

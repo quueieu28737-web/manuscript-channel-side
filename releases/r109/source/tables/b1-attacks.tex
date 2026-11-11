@@ -1,0 +1,18 @@
+\begin{table*}[t]\centering\small
+\caption{B1 recognition on the same test executions, correct/120. Byte is the original selected attack. Bold marks validation selection within each new direct LR/RF view. Strip is the planned timing-informed removal attack; Priv. supplies cover truth only to that reference. Both direct candidates, unsuccessful primary comparisons and all controls are retained.}\label{tab:b1-attacks}
+\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\textwidth}{@{}lYrrrrrrr@{}}\toprule
+Model & Policy & Byte & \multicolumn{2}{c}{Time+size} & \multicolumn{2}{c}{Time only} & Strip & Priv. \\ & & & LR & RF & LR & RF & & \\\midrule
+Qwen3:8B & No cover & 118 & \textbf{118} & 115 & 19 & \textbf{19} & 118 & 118 \\
+Qwen3:8B & Proxy discard & 62 & 55 & \textbf{56} & 25 & \textbf{28} & 114 & 115 \\
+Qwen3:8B & Read cover & 62 & 57 & \textbf{54} & \textbf{25} & 18 & 114 & 114 \\
+Qwen3:8B & Isolated, hidden & 61 & 52 & \textbf{43} & \textbf{20} & 22 & 112 & 114 \\
+Qwen3:8B & Live write & 62 & 60 & \textbf{56} & \textbf{28} & 16 & 111 & 112 \\
+Qwen3:8B & Isolated, visible & 63 & 57 & \textbf{60} & 29 & \textbf{21} & 111 & 111 \\
+Llama3.1:8B & No cover & 113 & \textbf{111} & 107 & \textbf{35} & 38 & 113 & 113 \\
+Llama3.1:8B & Proxy discard & 79 & 76 & \textbf{74} & 37 & \textbf{28} & 115 & 116 \\
+Llama3.1:8B & Read cover & 72 & 74 & \textbf{69} & 36 & \textbf{40} & 112 & 112 \\
+Llama3.1:8B & Isolated, hidden & 82 & 77 & \textbf{79} & 28 & \textbf{40} & 112 & 112 \\
+Llama3.1:8B & Live write & 80 & 69 & \textbf{70} & 40 & \textbf{33} & 112 & 112 \\
+Llama3.1:8B & Isolated, visible & 81 & \textbf{81} & 73 & 27 & \textbf{29} & 107 & 107 \\
+\bottomrule\end{tabularx}\end{table*}

@@ -1,0 +1,22 @@
+\begin{table*}[t]\centering\small
+\caption{Executed cover on the same held-out executions (120 paired fixtures per model and policy; chance 20/120). \emph{Size view}: Byte is the validation-selected size/destination attack; Last is the last-destination rule. \emph{Timing view} (client-receipt call times): Strip removes calls flagged by the label-free gap rule, then applies the frozen no-cover classifier; Jit.\ is the refitted strip attack under 200\,ms half-normal timestamp jitter (mean of five draws); Matched is the best attack after timing-matched decoy dispatch, and +Lat its added latency as a percentage of no-cover wall time. \emph{Execution}: Goal, whole-state integrity (State), completed tasks with state errors, and call-byte ratio. Dashes: not applicable without cover. Supplements S9--S10 give all attacks, intervals and tests.}
+\label{tab:cover-main}
+\setlength{\tabcolsep}{3.2pt}
+\begin{tabularx}{\textwidth}{@{}lYrrrrrrrrrr@{}}\toprule
+ & & \multicolumn{2}{c}{Size view} & \multicolumn{4}{c}{Timing view} & \multicolumn{4}{c}{Execution}\\\cmidrule(lr){3-4}\cmidrule(lr){5-8}\cmidrule(l){9-12}
+Model & Cover policy & Byte & Last & Strip & Jit. & Matched & +Lat\% & Goal & State & Goal+err & Bytes$\times$ \\\midrule
+Qwen3:8B & No cover & 118 & 116 & -- & -- & -- & -- & 114 & 116 & 0 & 1.00 \\
+Qwen3:8B & Proxy discard & 62 & 77 & 115 & 104 & 62 & 12.4 & 114 & 116 & 0 & 1.34 \\
+Qwen3:8B & Read cover & 62 & 77 & 114 & 103 & 62 & 12.4 & 114 & 115 & 0 & 1.34 \\
+Qwen3:8B & Isolated, hidden & 61 & 77 & 114 & 106 & 61 & 12.8 & 114 & 115 & 0 & 1.34 \\
+Qwen3:8B & Live write & 62 & 75 & 112 & 102 & 62 & 12.7 & 102 & 7 & 95 & 1.34 \\
+Qwen3:8B & Isolated, visible & 63 & 77 & 111 & 98 & 66 & 12.3 & 113 & 114 & 1 & 1.35 \\
+\midrule
+Llama3.1:8B & No cover & 113 & 79 & -- & -- & -- & -- & 82 & 69 & 13 & 1.00 \\
+Llama3.1:8B & Proxy discard & 79 & 67 & 116 & 115 & 79 & 16.4 & 80 & 68 & 13 & 1.29 \\
+Llama3.1:8B & Read cover & 72 & 67 & 112 & 110 & 74 & 15.8 & 84 & 71 & 14 & 1.28 \\
+Llama3.1:8B & Isolated, hidden & 82 & 67 & 112 & 110 & 82 & 15.7 & 83 & 70 & 13 & 1.28 \\
+Llama3.1:8B & Live write & 80 & 65 & 112 & 110 & 80 & 16.4 & 76 & 3 & 73 & 1.29 \\
+Llama3.1:8B & Isolated, visible & 81 & 68 & 107 & 105 & 81 & 16.2 & 83 & 73 & 11 & 1.29 \\
+\bottomrule\end{tabularx}
+\end{table*}

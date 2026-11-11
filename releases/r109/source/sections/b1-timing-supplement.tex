@@ -1,0 +1,40 @@
+\section{Timing-informed cover removal on the same M3 executions}\label{supp:b1-timing}
+The analysis adds an observer to the existing 3,600-episode cover cohort. It does not collect another cohort or increase the number of independent fixtures. Each model/condition retains its 120/60/120 training/validation/test split. The 1,440 held-out executions reuse the same 120 paired test fixtures across two models and six conditions. The original byte-only results and business outcomes remain those in Section~\ref{supp:cover-study}.
+
+\subsection{Observation and fixed attacks}
+Tool receipts contain client-side call start/end times. We match them to encrypted-byte records by request identity, then provide only service destination, ciphertext counts and relative call timing to the attacker. The original 153 features are unchanged. The direct timing-only vector has 49 dimensions: relative start, duration and preceding-call gap for the first sixteen calls, followed by episode wall duration. Unused entries are zero. Concatenation gives 202 dimensions. Original LR/RF configurations and validation tie-breaking apply to each view and condition; all original byte-only validation choices and held-out LR/RF predictions reproduce exactly.
+
+The detector has ten inputs: log-one-plus gap/duration in milliseconds, a first-call indicator and seven destination indicators. Per model, balanced LR and a 300-tree balanced RF fit labelled training calls pooled across conditions. Validation chooses model/threshold by F1, then precision, with fixed ties. Probability thresholds range from .05 to .95 in .05 steps; a gap-rule candidate uses the fixed .025/.05/.10/.20/.35/.50/1-second grid. Both models select LR. The first ticket retrieval is known honest under the public controller and is retained. No operation, requested action, order identity, tool result, business state, model content or token/inference count enters the detector. Its labelled training examples and supplied call/episode windows are explicit observer privileges.
+
+The removal attack deletes predicted cover calls and applies the validation-selected no-cover classifier with the original feature extractor. A privileged reference deletes true cover instead. True test cover labels do not enter the ordinary removal attack. The privileged classifier is an attained score with additional information, not a Bayes upper bound.
+
+\subsection{Freeze, exposure and statistical families}
+The upstream timing hypothesis used validation; original M3 test byte scores and outcomes had already been published. Before new test-timing feature evaluation, the extension freezes its plan, code, input identities and dependency versions. Thus this is a retrospective new-observer analysis rather than a newly recruited confirmation cohort. LR/RF and detector selection use train/validation only; test labels score the fixed choices.
+
+The primary family comprises ten timing-concatenation-minus-byte comparisons (two models, five cover conditions). A separate, planned secondary family contains ten removal-minus-byte comparisons. All six pairs of hidden policies across two models form a twelve-test secondary family for timing-concatenated recognition. Each uses paired two-sided exact McNemar tests and within-family Holm correction at .05. Table~\ref{tab:b1-primary} retains the unsuccessful primary family; Tables~\ref{tab:b1-removal} and~\ref{tab:b1-semantics} retain both secondary families. No policy-equivalence test is claimed. Unadjusted conditional intervals resample complete paired fixtures by requested action 10,000 times, holding fitted attacks fixed. Their population excludes fitting, selection, template and deployment uncertainty.
+
+\input{tables/b1-attacks}
+\input{tables/b1-detector}
+\input{tables/b1-primary}
+\input{tables/b1-removal}
+\input{tables/b1-semantics}
+
+\subsection{Results and mechanism}
+The direct concatenation comparisons show no improvement; all corrected primary values exceed .05. The detector instead identifies 1,807 of 1,820 test decoys, with thirteen misses and no false removals among 6,741 honest calls. Within cover conditions, precision is 1.000, recall .9835--1.000 and AUROC 1.000. Zero observed false removals and degenerate resampling intervals do not establish a zero population error rate. Detection intervals resample whole fixtures, retaining within-episode call dependence.
+
+The removal pipeline recovers 111--114 correct tasks of 120 for Qwen and 107--115 for Llama, versus original selected-byte scores of 61--63 and 72--82. The paired improvements range from 21.7 to 43.3 percentage points, and all ten planned secondary contrasts survive correction (largest adjusted $p=6.1649\times10^{-6}$). No-cover classifiers score 118 and 113. Differences from those reference scores are not equivalence tests; the analysis does not establish complete loss of every privacy gain.
+
+The controller invokes cover directly after a tool response. Honest tool dispatch normally follows a model decision, while controller-inserted cover omits that wait. Validation median gaps are about .014--.031 seconds for cover and .57--.85 seconds for later honest calls. The classifier can exploit that distinction to reconstruct a cleaner task trace, rather than directly classify the task from the raw timing vector.
+
+\subsection{Post-scoring input diagnostic}
+After the frozen B1 results, a separately recorded exploratory diagnostic compares the same two-stage procedure under different detector inputs. The timing-only detector receives the two log time variables and first-call flag. The no-clock detector receives all 153 original episode features plus the current call's position, first flag, destination and log byte counts (164 inputs). Both retain train/validation fitting and selection; the same test fixtures are reused. These results do not replace either original B1 family or form independent confirmation.
+
+Timing-only removal reaches 110--114/120 for Qwen and 107--115 for Llama; no-clock contextual removal reaches 59--66 and 80--85. Table~\ref{tab:b1-ablation} includes no-cover controls and both channels. Its ten exploratory paired comparisons are retained in Table~\ref{tab:b1-ablation-pairs}, separately corrected by Holm. This diagnostic is consistent with timing contributing to removal rather than an improvement due solely to changing the classifier pipeline.
+
+\input{tables/b1-ablation}
+\input{tables/b1-ablation-pairs}
+
+\subsection{Measurement limits and reproducibility}
+Receipt timestamps include Python/asyncio scheduling and the collector's 2ms post-response counting wait. They are not relay TLS-record timestamps or WAN packet arrivals. The timing view still assumes supplied call windows, known destinations and labelled cover training. Model-link observations are outside it. Independent record-time collection, timing-matched dispatch and full-episode schedules remain future tests, not completed defenses. Equivalence would concern a specified attack/endpoint and margin, not equality of program semantics or all attacker information.
+
+The evidence package contains the frozen protocol, selections, feature arrays, predictions, all paired tests and a separately labelled diagnostic. Separate receipt extraction and array LR/RF inference verify 15,840 task predictions, 8,561 call decisions and all 32 B1 comparisons. The diagnostic has its own array and arithmetic check. These are implementation/arithmetic audits rather than independent human source coding. Original M3 collection bytes and results remain unchanged.
