@@ -7,8 +7,8 @@
       "bytes": 2296
     },
     "analysis/README.md": {
-      "sha256": "24d828b31eeb3a87663dc2e5ce4551f42fd0c8ae68fc9cd4f4dae2f1f454c0e9",
-      "bytes": 1938
+      "sha256": "1058979ad82c8b23cc836cd6b2ea12543a60a37f357bf4cbd58a1b37fbfe1916",
+      "bytes": 2032
     },
     "analysis/boundary-diagnostic.csv": {
       "sha256": "4b4b80c7a7a0d75ab7b727cb1a41e209d99567b82ad8107e3ce3c4035f4740cc",
@@ -75,12 +75,12 @@
       "bytes": 2933
     },
     "latex-source.zip": {
-      "sha256": "675b161383d7d1c977ffe5f4a97417b4a821050b0ab51ddcc6c7c9328b2960bb",
-      "bytes": 321271
+      "sha256": "50c06c89ad1a32af93ed997712b4ffea1a59d2a4b2676b11a4980dea18573d2f",
+      "bytes": 321609
     },
     "main.pdf": {
-      "sha256": "4c340704c76294668fa7c44aec7fad5ab37651bb3b130849f770b6441036fcb7",
-      "bytes": 273579
+      "sha256": "54458818860cc497276394ecdc34e5e13af3c37c4481f13fc02aabf6d108c3eb",
+      "bytes": 274062
     },
     "requirements.txt": {
       "sha256": "89b88f8e2a4711fdf1c649689897512196f4637b3a48fa11a652606832f5ef78",
@@ -147,8 +147,8 @@
       "bytes": 23059
     },
     "source/sections/abstract.tex": {
-      "sha256": "0a8258527402d558fbc30baa618bf2a859ee53762fe55640a7659d0ef32829bc",
-      "bytes": 1493
+      "sha256": "26122c494f7005f14df8cc19d9724705e110ccef39db6c0d68b8d640235cf715",
+      "bytes": 1604
     },
     "source/sections/coding-pilot-supplement.tex": {
       "sha256": "ca32e395a1c02b0aed0b91dddbb65d9d4d51b0983d6aedea8e86845661817a9a",
@@ -175,8 +175,8 @@
       "bytes": 3294
     },
     "source/sections/executed-cover-main.tex": {
-      "sha256": "c06b89332d8bc646747c313959d85abc3f0a236873612249b972f0688ae9155e",
-      "bytes": 5197
+      "sha256": "64774c297c46af7af21fcde621f1a3ebec1b564a0c085062f8ccfb186b61f8b7",
+      "bytes": 5373
     },
     "source/sections/executed-cover-supplement.tex": {
       "sha256": "12b6a2ba05412835ea0c3481ae256d143a90a58d343b9b4e7df0022ccc285665",
@@ -187,12 +187,12 @@
       "bytes": 2766
     },
     "source/sections/introduction.tex": {
-      "sha256": "78a411b900b364c81c931d341ab080483d15367c8dfe90887d8ac85cc3653f95",
-      "bytes": 3898
+      "sha256": "6eb203f209d31f2bc964bd552c72d8ccf57e581132f6f0f5295318d44615aa1d",
+      "bytes": 4071
     },
     "source/sections/live-timing-supplement.tex": {
-      "sha256": "810c7e34ce0d59120c4f3fe0651571ca3d72fa8458f75bba6d127095ebeafaf6",
-      "bytes": 17155
+      "sha256": "28689a5f1fb37547b45d4e94e893e8ff3801901fd5b5effaaf461ac1b184db13",
+      "bytes": 17215
     },
     "source/sections/mechanism-agenda-supplement.tex": {
       "sha256": "d873db980ab37189923f27dda0656012c356a1e2e484787363b36222a2693527",
@@ -235,8 +235,8 @@
       "bytes": 2136
     },
     "source/sections/taxonomy.tex": {
-      "sha256": "ff44dfd903c48741b111e454e24857c22c6cea667b55350d2a1268315e5c15c2",
-      "bytes": 3522
+      "sha256": "258dfaff79acfce3d0baa2bfaadfb0646fb7f2378a3aee996279213108b9609b",
+      "bytes": 3717
     },
     "source/supplement.bbl": {
       "sha256": "1c60aeb9754e0c7e5a2b9e7bd3c952e5f55825dacadf2b8add67df1e23ea071a",
@@ -259,8 +259,8 @@
       "bytes": 4552
     },
     "source/tables/cover-necessity.tex": {
-      "sha256": "aa76664aa59aa2ca069f1a01af069270ac687b898052656667031cdb76a2a49e",
-      "bytes": 994
+      "sha256": "fa615a2ae0a6dec348ccf4b825e639fb16d8b95631c9a0540e0620da86f3029a",
+      "bytes": 1139
     },
     "source/tables/cover-taxonomy.tex": {
       "sha256": "55d93e1d54b195055be0a286b3bc07be7338a963fb809325fd8361bd5542a88b",
@@ -411,16 +411,16 @@
       "bytes": 1245
     },
     "source/tables/transfer-matrix.tex": {
-      "sha256": "77a4e9683ac92de0fc9865de6ae11f62132218b2c71a5a51bdd31797ffb702c2",
-      "bytes": 3233
+      "sha256": "8e2f7a1ecf849bce2bd16d8334236eb037f1896dba1ff282505fa0b1d4494b84",
+      "bytes": 3240
     },
     "source/tables/unified-dependence.tex": {
       "sha256": "a3f9901f9526f582b1156d39bceabce2e5c28ef55cd004661c024f34662076bc",
       "bytes": 1905
     },
     "supplement.pdf": {
-      "sha256": "18f38fc8cc9583dc27574fc966ff6261137468ff0ed8002e4dc7d20b543cb43d",
-      "bytes": 380989
+      "sha256": "90bbb90dc5af42eda025c24527a0638ba1292a2b89c95436852afb2f7c114cb6",
+      "bytes": 381015
     },
     "verification/no-call-verified.json": {
       "sha256": "59be86d7a1cffbb310644f0fd39624fd84e6be23c9e2d9b84d65b5e1a6e11d0a",
