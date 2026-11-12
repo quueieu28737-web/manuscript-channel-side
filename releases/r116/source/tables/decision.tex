@@ -1,0 +1,14 @@
+\begin{table*}[t]\centering\footnotesize
+\caption{Descriptive screening worksheet. Tolerances were chosen after measurement: recognition $\le60\%$, goal/state point differences at most 3/120 below no cover, model tokens $\le2.5\times$, call bytes $\le2\times$ and mean real-chain latency $\le2\times$. CW Max is the largest tested count with a nominal 95\% Clopper--Pearson count interval, not an interval for all-attacker performance or a prospectively selected attack. Goal/state and costs are descriptive. Above and unresolved refer only to the worksheet; no policy has a validated joint pass. RO history uses a weaker suite.}\label{tab:decision}
+\setlength{\tabcolsep}{3pt}
+\begin{tabularx}{\textwidth}{@{}llrrrrrrYY@{}}\toprule
+Planner & Policy & CW Max [95\% CI] & RO Max & $\Delta$G/$\Delta$S & Tok.$\times$ & Bytes$\times$ & Lat.$\times$ & CW screening & RO screening \\\midrule
+Qwen3:8B & Immediate & 112 [.87, .97] & 91 & $-2$/$-2$ & 1.00 & 1.33 & 1.23 & Above: inference & Above: inference \\
+Qwen3:8B & History, sequential & 99 [.75, .89] & 75 & $-1$/$-1$ & 1.00 & 1.32 & 1.47 & Above: inference & Unresolved; suite incomplete \\
+Qwen3:8B & History, concurrent & 99 [.75, .89] & 62 & $-2$/$-2$ & 1.00 & 1.33 & 1.14 & Above: inference & Unresolved; suite incomplete \\
+Qwen3:8B & Planner shadow & 70 [.49, .67] & 73 & $-1$/$-1$ & 2.01 & 1.68 & 1.65 & Unresolved: inference & Unresolved: inference \\\midrule
+Llama3.1:8B & Immediate & 108 [.83, .95] & 97 & $+1$/$-3$ & 1.01 & 1.27 & 0.88 & Above: inference & Above: inference \\
+Llama3.1:8B & History, sequential & 104 [.79, .92] & 93 & $+2$/$-3$ & 1.01 & 1.26 & 1.15 & Above: inference & Above: inference \\
+Llama3.1:8B & History, concurrent & 106 [.81, .94] & 88 & $0$/$-3$ & 1.02 & 1.27 & 0.84 & Above: inference & Above: inference \\
+Llama3.1:8B & Planner shadow & 64 [.44, .63] & 69 & $0$/$-3$ & 1.99 & 1.71 & 1.18 & Unresolved; state at point limit & Unresolved: inference \\\bottomrule
+\end{tabularx}\end{table*}

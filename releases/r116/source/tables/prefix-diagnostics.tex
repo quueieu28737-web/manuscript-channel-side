@@ -1,0 +1,13 @@
+\begin{table*}[t]\centering\small
+\caption{Saved prefix diagnostics. These are the original 2,000 within-session label permutations on fixed predictions, without multiplicity adjustment. They test association conditional on the observed sessions; a large value does not establish an information-free prefix.}\label{tab:prefix-diagnostics}
+\setlength{\tabcolsep}{3pt}
+\begin{tabularx}{\textwidth}{@{}lYrrrrr@{}}\toprule
+Executor & Policy & $n$ & LR correct & LR $p$ & k-FP correct & k-FP $p$ \\\midrule
+Qwen3:8B & Full & 120 & 25 & 0.0595 & 18 & 0.8071 \\
+Qwen3:8B & Projected & 120 & 23 & 0.3998 & 23 & 0.4473 \\
+Llama3.1:8B & Full & 120 & 19 & 0.6092 & 14 & 0.8646 \\
+Llama3.1:8B & Projected & 120 & 16 & 0.5347 & 20 & 0.3988 \\
+Hosted alias & Full & 48 & 5 & 0.5412 & 3 & 0.9960 \\
+Hosted alias & Projected & 48 & 5 & 0.8141 & 6 & 0.9150 \\
+\bottomrule\end{tabularx}
+\end{table*}

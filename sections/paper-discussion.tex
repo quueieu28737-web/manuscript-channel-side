@@ -1,0 +1,23 @@
+\section{Discussion}\label{sec:discussion}
+\paragraph{What the measurements add}
+Where an implementer generates a tool call becomes part of its traffic signature. Immediate cover bypasses the model wait and exposes a short-gap feature. Marginal sampled waits remove that shortcut while leaving task context useful to the tested attacks. This directs evaluation toward destinations, ordering, sizes and timing relations together. It also separates a demonstrated timing mechanism from a stronger classifier's mixed-context result.
+
+The shadow policy changes that sequence at a measured cost. Lower recognition and approximately doubled tokens describe a complete policy point; choosing online generation over controller replay requires a matched comparison. Execution authority is a second design choice. A cooperating provider can synthesize a response, use a sandbox, or execute a business operation. Those choices have different state and resource obligations even when they seek similar traces.
+
+\paragraph{Measurements that distinguish the explanations}
+Timestamp ablations can separate context from timing. Controlled replays can hold calls and composition fixed while changing dispatch; stronger decoders on record-only observations can test reliance on supplied windows. A service-capability comparison can remove response padding and holds while keeping safe synthetic states. A joint model/tool observer can seek whether each tool call follows a model exchange. These are distinct interventions, each requiring its own observation contract.
+
+\paragraph{Scope and uncertainty}\label{sec:limits}
+This is a single-host study with synthetic tools, two fixed 8B models and cooperating services (Table~\ref{tab:service-contract}). Same-service calls serialize. Fixtures are paired across conditions and reused across studies; request phrasings recur across splits. Cross-host deployment, unseen templates, unrestricted multiplexing, recipient arguments and simultaneous model-link observation are unmeasured. Loopback removes network noise; longer remote inference could strengthen the dispatch contrast. Neither extrapolation is estimated here.
+
+Intervals condition on fitted attacks and reused workloads. Test maxima describe the suite, not a population optimum. The worksheet uses post-measurement thresholds and lacks full joint uncertainty. Persistent caches and phase order affect costs. The separate state stress cohort deliberately permits collateral writes, so it illustrates endpoint sensitivity rather than harm prevalence. Appendix~\ref{app:map}'s four privacy settings come from two sources and motivate the joint record without estimating a field-wide rate.
+
+\section{Related Work}\label{sec:related}
+\paragraph{Agent side channels}
+Section~\ref{sec:background} and Appendix~\ref{app:map} cover Agent communication attacks. WRA tests research decoys and destination visibility~\cite{jeong2026wra}; the communication-graph study tests transformations and live OHTTP~\cite{dangol2026workflow}. Serving-side studies examine streams, cache sharing and token counts~\cite{weiss2024prompt,whisperleak2025,earlybird2025,timewilltell2024,carlini2024timing,wu2026cacheprune}. Our controlled study follows calls into TLS traces while measuring work under each policy.
+
+\paragraph{Decoy-query obfuscation}
+TrackMeNot generates periodic queries~\cite{howe2008trackmenot}; GooPIR combines real and decoy candidates~\cite{domingoferrer2009goopir}. Classifiers and systematic studies show how generated queries remain distinguishable~\cite{peddinti2010trackmenot,balsa2012obpws,gervais2014websearch}. This generator principle is the starting point here. We examine its interaction with model-decision latency and tool authority using actual dispatch, two observation representations and matched business/resource outcomes. The candidate-label reference is the deniability calculation for complete task labels.
+
+\paragraph{Traffic defenses and Agent evaluation}
+WF supplies adapted-attack, observer and overhead requirements~\cite{juarez2014critical,mathews2023critical,dyer2012peekaboo,wang2017walkietalkie,gong2020front,juarez2016wtfpad,shmatikov2006adaptive,cai2014tamaraw}; smart-home shaping terminates cover at a tunnel~\cite{apthorpe2019stp}. Agent information-flow controls govern tool authority~\cite{debenedetti2025camel,costa2025fides,shi2025progent}; SPILLage examines behavioral oversharing~\cite{roh2026spillage}. Environment outcomes in $\tau$-bench and AgentDojo~\cite{yao2024taubench,debenedetti2024agentdojo} motivate our state endpoint. We bind those endpoints to protected traffic, complementing lifecycle and attack-surface surveys~\cite{yao2024survey,shahriar2025survey,ferrag2025survey}.

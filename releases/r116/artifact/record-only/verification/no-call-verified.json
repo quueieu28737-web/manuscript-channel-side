@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "checks": 4041,
+  "episodes": 3000,
+  "prediction_rows": 52800,
+  "protocol_prediction_rows": 9600,
+  "boundary_audit_rows": 40,
+  "scope": "Separate saved-vector arithmetic, exposure schema, selection and private boundary audit. Does not establish universal attacker optimality.",
+  "inputs": {
+    "analysis/no-call-results.json": "964090dd6bcbf7c7bbaef78c4f986e8edc8d916bd32c6e8de73a598ede563bd2",
+    "analysis/no-call-predictions.csv": "58751739487b0096ed1d5cdd17908796ccbb1018d56bcb642acd9b602425bf19",
+    "analysis/protocol-event-results.json": "31b6c29c51e60614cc345878b16ea6003c2fdeee4b44aec3a50f0dbf738383a4",
+    "analysis/protocol-event-predictions.csv": "ea9397f03a687dc6d15a93fe55304a7e4b57e85ec38b37a0285c05900e06bfbc",
+    "inputs/record-only.jsonl": "7641a2c7211dc344971465e3448529294e15c8e6a6fa44a975094a274980361c"
+  }
+}

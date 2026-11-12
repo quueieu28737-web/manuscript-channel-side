@@ -1,3 +1,23 @@
+# Latest manuscript: R116 — Decoys That Do Work
+
+**Evaluating Executed Cover for LLM Agent Communication Privacy**
+
+- [Main PDF](main.pdf) | [Supplement PDF](supplement.pdf)
+- [Compilable LaTeX ZIP](latex-source.zip)
+- [Versioned R116 source and release index](releases/r116/README.md)
+- [44-setting evidence matrix](releases/r116/evidence/field-map/evidence-matrix.csv)
+- [Code and grouped results](releases/r116/artifact/README.md)
+- [Unrun experiment proposals](releases/r116/EXPERIMENT-PLANS.md)
+- [Latest author-side review](releases/r116/reviews/scientific-review.md)
+
+Main: 12 pages; supplement: 15 pages. R116 preserves actual results and separates immediate timing evidence, residual call context and complete shadow-policy costs. No new experiment was run. Individual observations, predictions, timestamps, captures, keys and full local data packages remain LOCAL ONLY. Previous releases and development branches are retained.
+
+---
+
+## Historical repository notes
+
+Earlier version statements below retain their original context. The links above identify the current R116 release and its actual distribution boundary.
+
 # Latest manuscript: R112 Agent communication side-channel SoK
 
 **Executed Cover and Joint Privacy-State Evaluation**

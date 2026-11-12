@@ -1,0 +1,11 @@
+\begin{table*}[t]\centering\small
+\caption{Achieved history-based cover timing, all splits (455 cover calls per row). Means in seconds. An anchor gap is measured from the actual prior completed anchor call to cover record start. Sampled durations are minimum server holds, while achieved durations include record-level transport and scheduling.}
+\label{tab:live-draws}
+\begin{tabularx}{\textwidth}{@{}lYrrrr@{}}\toprule
+Model & Arm & Drawn gap & Achieved anchor gap & Drawn hold & Achieved duration\\\midrule
+Qwen & History seq. & 0.5198 & 0.5660 & 0.0405 & 0.1004\\
+Qwen & History concurrent & 0.5198 & 0.5772 & 0.0405 & 0.1712\\
+Llama & History seq. & 0.5865 & 0.6203 & 0.0768 & 0.1097\\
+Llama & History concurrent & 0.5865 & 0.6204 & 0.0768 & 0.1234\\
+\bottomrule\end{tabularx}
+\end{table*}

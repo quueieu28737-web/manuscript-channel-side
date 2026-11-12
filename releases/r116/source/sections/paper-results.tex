@@ -1,0 +1,40 @@
+\section{Results}\label{sec:results}
+\subsection{A dispatch shortcut and residual trace context}\label{sec:dispatch}
+\input{tables/live-timing-main}
+\paragraph{Immediate cover exposes its short gap}
+A label-free two-component mixture over training gaps selects the short-gap component for removal, and a classifier trained on no-cover traffic decodes the rest. With supplied call windows it recognizes 112/120 and 108/120 tasks, against selected size-only attacks at 75 and 80 (Table~\ref{tab:live-timing-main}). Both gains meet the replication rule after Holm correction ($p=1.9\times10^{-8}$ and $4.3\times10^{-6}$). Independent TCP reassembly matches all 773,450 TLS record types, lengths and counts, and packet-capture clocks reproduce both scores. The mixture flags 181/182 and 182/182 held-out immediate decoys with no false flags (Supplement S2.7). This directly supports the short-gap mechanism in the measured planner loop.
+
+\paragraph{Sampled waits leave recognizable call context}
+Sampling training gaps defeats the mixture: recognition falls to 53 and 14 (sequential) and 38 and 66 (concurrent). Context removal or joint decoding recognizes 93/120 and 104/120 sequential tasks against size-only attacks at 76 and 82, and 99/120 and 106/120 concurrent tasks against 66 and 68. Three comparisons survive Holm correction: Llama sequential ($p=.00078$) and both concurrent comparisons ($p<10^{-4}$); Qwen sequential does not ($p=.0559$).
+
+These attacks use destinations, positions, sizes and timing relations. Direct timing-plus-size classification is weaker: Qwen scores 57 and 47 in the history arms, versus size-only LR's 61 and 52 (Supplement Table S6). Thus these policies leave useful trace context, but the history comparisons do not isolate timestamps. Sampled waits are minimums rather than matched conditional timing laws: Qwen's 40.5\,ms mean hold becomes 100.4\,ms sequential and 171.2\,ms concurrent at the observer (Table~\ref{tab:live-draws}).
+\input{tables/live-draws}
+Llama's sequential mixture deletes 477/634 honest calls while detecting only 64/182 cover calls, explaining its 14/120 score; joint decoding on the same traces reaches 104/120. A failed removal model therefore leaves a separate residual-recognition question.
+
+\subsection{What survives without supplied call windows}\label{sec:noboundary}
+We reanalyze all 3,000 episodes from complete encrypted connections, including setup and teardown. The attacker receives relative record times, directions, ciphertext lengths and destinations. Episode association remains supplied, but call endpoints, operation names, roles and HTTP stream assignments are removed. An idle-gap rule proposes events; raw-record classifiers skip this step. A training-only mixture removes short-gap events. The immediate-arm pair is the only primary test, and this suite lacks the stronger context and joint decoders of Section~\ref{sec:dispatch}.
+\input{tables/no-call-main}
+Selected removal recognizes 69/120 and 86/120 tasks against baselines of 80 and 90: paired differences $-9.2$ and $-3.3$ points (Holm $p=.025$ and $.54$). Thus the prespecified removal pipeline loses its advantage without supplied call windows. A subsequent exploratory eventizer uses the padding quantum and MCP setup sequence. It changes Qwen's removal score from 68 to 91 and Llama's from 90 to 87, with event F1 .295 and .380 at IoU .5. It was designed after the first results and adds no confirmatory superiority claim.
+
+Every arm retains above-chance recognition in the tested suite (Table~\ref{tab:no-call-main}). This supports residual recognition from associated encrypted connections and diagnoses this removal pipeline. Unknown-task discovery and strong context attacks on inferred events are separate questions. Unequal representations and suites prevent a causal comparison of boundary access.
+
+\subsection{Recognition and work under planner shadows}\label{sec:shadow}
+The strongest tested call-window attack, a size/destination RF, recognizes 70/120 Qwen and 64/120 Llama shadow tasks; validation-selected attacks score 54 and 64. Record-only maxima are 73 and 69 over 52 candidates, with selected attacks at 69 and 69. These are residuals of the complete shadow policy.
+
+The shadow uses 8.14 and 10.46 total tool calls per fixture against controller cover's 5.6 and 6.8, changes their composition to a complete task, and uses 2.01 and 1.99 times the model tokens. Real-chain time rises from 2.91/3.33\,s to 4.80/3.94\,s; call-window bytes rise 1.68/1.71 times. This quantifies the complete policy's trade-off. Isolating online planner generation requires a controller replay with matched calls and composition.
+
+The ideal observer in Section~\ref{sec:floor} knows both candidate labels but no real-chain identity. With 21 matching pairs among 120 fixtures, its reference is 70.5/120. The measured counts are compatible with that reference, which neither bounds actual trace attacks nor proves role indistinguishability. The chain attack recovers the real chain exactly in only 29 and 32 fixtures. On the 99 different-label cases, aggregate RF counts bound task accuracy only to $[49,70]/99$ and $[43,64]/99$; this is not a direct role test. Cache histories and start-order strata motivate that separate analysis (Supplement S2.5--S2.6). The shadow equivalence family compares identical selected attacks and supplies no indistinguishability evidence.
+
+\subsection{Business outcomes from the same runs}\label{sec:state}
+The live study records goal, state and cost on the same executions as traffic. All cover runs on isolated clones. Goal/state counts stay within three fixtures of no cover (Table~\ref{tab:live-timing-main}); honest paths match no cover on 115/120 Qwen and 103/120 Llama shadow fixtures. Llama's baseline goal/state counts, 82/70 of 120, define a limited executor baseline rather than a production reliability target.
+
+A separate state-control cohort tests whether these endpoints distinguish collateral effects. Proxy, read and hidden-isolated cover keep Qwen state correctness at 115--116/120. Deliberate live writes reduce it to 7/120 while 102/120 goals complete, including 95 with collateral errors. Llama has 3/120 intact and 73 of 76 completed tasks with collateral errors. Both integrity reductions survive Holm correction ($p=3.7\times10^{-32}$ and $3.0\times10^{-19}$; Supplement S1). These constructed cases demonstrate endpoint sensitivity; their separate counts estimate no production damage rate.
+
+\subsection{A worked screening example}\label{sec:decision}
+Table~\ref{tab:decision} uses illustrative tolerances chosen after measurement. It is a descriptive worksheet, not a validated deployment decision. All call-window controller maxima exceed 60\%; shadow's displayed count intervals straddle it. A decision study must fix selection and uncertainty procedures in advance and cover every mandatory outcome, including paired goal/state changes and costs.
+
+The sample has limited resolution near 60\%. As a nominal binomial example, 1,983 correct of 3,400 gives a 95\% Clopper--Pearson upper limit below 60\%; at the distinct-label reference, 60/120 already does so. Neither calculation is a powered role-equivalence study. Distinct-label sampling changes the ideal reference and remains unmeasured.
+
+Record-only history results come from a weaker suite and cannot establish protection relative to the call-window suite. Observed mean costs are below the worksheet budgets; complete joint uncertainty is unassessed. Figure~\ref{fig:frontier} shows the measured policy points; Table~\ref{tab:shadow-floor} gives the ideal label references separately.
+\input{tables/decision}
+\input{figures/cost-frontier}

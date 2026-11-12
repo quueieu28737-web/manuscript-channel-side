@@ -1,0 +1,14 @@
+\begin{table*}[t]\centering\small
+\caption{Selected record-only attacks. B/R/A refer to validation-selected fixed-grid baseline, removal and overall attackers. Proto B/R gives the separate exploratory protocol-aware selection; Max spans both suites. Counts are out of 120. Complete candidate outcomes remain in the local analysis package.}\label{tab:no-call-results}
+\begin{tabularx}{\textwidth}{@{}llrrrrY@{}}\toprule Planner & Policy & B & R & Proto B/R & Max & Selected fixed-grid attacks (B; R; A) \\\midrule
+Qwen & No cover & 115 & 109 & 117/93 & 117 & events 5ms LR; remove 20ms timing RF; events 5ms LR \\
+Qwen & Immediate & 80 & 69 & 68/91 & 91 & records timing RF; remove 5ms RF; records timing RF \\
+Qwen & History, sequential & 73 & 74 & 66/45 & 75 & records timing RF; remove 5ms RF; remove 5ms RF \\
+Qwen & History, concurrent & 56 & 61 & 51/47 & 62 & events 5ms LR; remove 5ms RF; remove 5ms RF \\
+Qwen & Planner shadow & 69 & 65 & 66/52 & 73 & events 20ms RF; remove 100ms timing RF; events 20ms RF \\
+Llama & No cover & 108 & 101 & 109/88 & 112 & events 5ms timing LR; remove 20ms RF; events 5ms timing LR \\
+Llama & Immediate & 90 & 86 & 90/87 & 97 & records RF; remove 5ms timing RF; records RF \\
+Llama & History, sequential & 88 & 56 & 90/71 & 93 & events 5ms timing RF; remove 20ms LR; events 5ms timing RF \\
+Llama & History, concurrent & 78 & 62 & 83/68 & 88 & events 50ms RF; remove 5ms LR; events 50ms RF \\
+Llama & Planner shadow & 69 & 56 & 68/52 & 69 & events 5ms RF; remove 5ms RF; events 5ms RF \\
+\bottomrule\end{tabularx}\end{table*}

@@ -1,0 +1,10 @@
+# Versions actually inspected in the existing M3 Python 3.12 runtime.
+numpy==2.3.3
+scipy==1.18.1
+scikit-learn==1.9.1
+httpx[http2]==0.28.1
+h2==4.4.1
+mcp==1.21.1
+langgraph==1.0.3
+hypercorn==0.17.3
+# cryptography and LangChain transitive versions are recorded in freeze metadata.

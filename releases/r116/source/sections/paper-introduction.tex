@@ -1,0 +1,22 @@
+\section{Introduction}\label{sec:intro}
+An LLM Agent receives a support ticket, checks an order and submits a refund. An observer of the encrypted path to the commerce service sees contacted endpoints, exchange sizes and waiting times. Recent Agent studies use such metadata to infer prompts, tasks, workflows and user traits~\cite{jeong2026wra,dangol2026workflow,pouryousef2026traffic,li2026ant}. Adding decoy calls can obscure the requested action, but each extra exchange must be generated somewhere and terminated somewhere. These choices determine its traffic signature and business cost.
+
+\paragraph{The mechanism}
+In the planner loop we measure, an ordinary tool call follows a model decision. A controller can insert a decoy directly after a tool response, bypassing the next model wait. That shortcut separates the decoy by its inter-call gap. Delaying the call changes this feature, but leaves its destination, position, size and relationship to the other calls available to an attacker. A complete shadow task changes those relationships as well as adding a second planner's work. We compare these implemented choices on actual TLS records and track the work performed with each trace.
+
+Classical query obfuscation already links decoy quality to its generator~\cite{howe2008trackmenot,peddinti2010trackmenot,balsa2012obpws}. Our question is how that principle interacts with an Agent's model decisions and tool authority. A byte-only attack can miss the controller's timing shortcut; a timing-only explanation can miss remaining call structure; a goal-only check can miss collateral business effects. The measurements therefore pair observation information with inference, task outcome, business state and resource use.
+
+\input{figures/ticket-threat-model}
+
+\paragraph{Setting}
+We compare four cover policies and no cover in 3,000 live executions of Qwen3:8B and Llama3.1:8B over MCP and TLS~1.3/HTTP/2 on one host. The provider cooperates by padding responses and permitting isolated execution; history-based policies also use server-side minimum holds. Section~\ref{sec:design} states these capabilities. When only request shape is private, protocol padding may suffice. Hiding response activity calls for additional responses, which a cooperating provider can synthesize or an application call can produce. Reaching the application need not require a business write.
+
+\paragraph{Findings}
+\begin{itemize}
+\item \textbf{A controller shortcut is exploitable when calls are delimited.} Label-free gap removal raises recognition from 75 to 112 (Qwen) and from 80 to 108 (Llama) of 120 tasks; both gains survive Holm correction and reproduce on independent packet-capture clocks. With sampled waits, mixed-context attacks recognize 93--106/120. Three history-arm comparisons survive Holm correction; Qwen sequential does not ($p=.0559$).
+\item \textbf{Attack effectiveness depends on the observation unit.} Without call windows, selected removal recognizes 69/120 and 86/120 against baselines of 80 and 90. This record-only suite lacks the stronger context and joint decoders, so it answers a separate attack-pipeline question rather than measuring a pure boundary effect.
+\item \textbf{Shadow cover changes a complete policy's inference--cost trade-off.} The strongest tested call-window attack scores 70/120 and 64/120 at about twice the model tokens, with more and different cover calls. The main study records task and state outcomes on those same executions; a separate stress control illustrates collateral effects missed by goal completion.
+\end{itemize}
+
+\paragraph{Contributions}
+We contribute (1) a live measurement distinguishing a short-gap dispatch shortcut from residual trace context; (2) an observer-explicit comparison of implemented controller and shadow policies with matched inference, task, state and resource outcomes; and (3) an execution-aware evaluation method that states cover termination, state and feedback authority, and service support. Section~\ref{sec:floor} provides an ideal candidate-label reference for interpreting shadow results. Appendix~\ref{app:map} supplies the forty-four-setting background, rather than a field-wide evaluation-quality estimate.

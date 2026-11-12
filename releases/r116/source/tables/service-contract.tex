@@ -1,0 +1,11 @@
+\begin{table}[t]\centering\footnotesize
+\caption{Service capabilities used by the live study and who must provide them. The study therefore models a cooperating provider; against a non-cooperating provider only client-side capabilities remain.}\label{tab:service-contract}
+\setlength{\tabcolsep}{3pt}
+\begin{tabularx}{\columnwidth}{@{}P{.3\columnwidth}P{.2\columnwidth}P{.14\columnwidth}Y@{}}\toprule
+Capability & Used by & Provided by & Non-cooperating provider \\\midrule
+Response body padding (16\,KiB quanta) & All arms & Service & Unavailable \\\addlinespace[2pt]
+Server-side hold of a cover response & History arms & Service & Unavailable; client can delay only its next request \\\addlinespace[2pt]
+Isolated clone for cover execution & All cover arms & Service & Only with a sandbox on the same endpoint \\\addlinespace[2pt]
+Request padding, dispatch timing & All arms & Client & Available \\\addlinespace[2pt]
+Same-service serialization & All arms & Client & Available \\\bottomrule
+\end{tabularx}\end{table}

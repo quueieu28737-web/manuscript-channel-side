@@ -1,0 +1,12 @@
+\begin{table}[t]\centering\footnotesize
+\caption{Ideal candidate-label reference $P^*(k)$ for $k$ shadow planners and six classes, computed exactly (\texttt{experiment/shadow\_floor.py}). iid: shadow labels drawn uniformly; distinct: drawn without replacement from classes other than the real one. Tokens are nominal planner multiples. Only $k=1$, iid, was run.}\label{tab:shadow-floor}
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}rrrrl@{}}\toprule
+$k$ & iid & distinct & Tokens$\times$ & Live result ($k=1$) \\\midrule
+0 & 1.000 & -- & 1 & \\
+1 & .583 & .500 & 2 & Max 70 / 64 of 120 \\
+2 & .491 & .333 & 3 & \\
+3 & .456 & .250 & 4 & \\
+4 & .428 & .200 & 5 & \\\midrule
+\multicolumn{5}{@{}l}{Test-split reference: 70.5/120 (21 matching labels)} \\\bottomrule
+\end{tabular}\end{table}

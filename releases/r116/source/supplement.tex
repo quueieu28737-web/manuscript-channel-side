@@ -1,0 +1,45 @@
+\documentclass[conference,compsoc]{IEEEtran}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{booktabs,tabularx,array,graphicx,amsmath,amssymb,longtable}
+\usepackage{placeins}
+\usepackage{etoolbox}
+% Avoid infinite shrink glue when the current LaTeX output routine splits
+% longtable pages to extract marks. Preserve stretch-only bottom spacing.
+\makeatletter
+\patchcmd{\LT@output}{\copy\LT@foot\vss}{\copy\LT@foot\vfil}{}{\PackageError{audit-layout}{Longtable footer patch failed}{Check the installed longtable version.}}
+\patchcmd{\LT@output}{\copy\LT@foot\vss}{\copy\LT@foot\vfil}{}{\PackageError{audit-layout}{Longtable footer patch failed}{Check the installed longtable version.}}
+\makeatother
+\usepackage[hyphens]{url}
+\usepackage{hyperref}
+\hypersetup{hidelinks,pdfauthor={}}
+% Avoid synthetic glyphs at math/text boundaries; preserve Unicode mappings.
+\SetSymbolFont{letters}{normal}{OML}{lmm}{m}{it}
+\SetSymbolFont{letters}{bold}{OML}{lmm}{b}{it}
+\input{glyphtounicode}
+\pdfgentounicode=1
+\pdfglyphtounicode{space}{0020}
+\ifdefined\pdfinterwordspaceoff\pdfinterwordspaceoff\fi
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcommand{\artifacturl}{the accompanying review artifact}
+\renewcommand{\thesection}{S\arabic{section}}
+\renewcommand{\thesubsection}{\thesection.\arabic{subsection}}
+\renewcommand{\thetable}{S\arabic{table}}
+\renewcommand{\thefigure}{S\arabic{figure}}
+\title{Supplementary Material for\\Decoys That Do Work: Evaluating Executed Cover\\for LLM Agent Communication Privacy}
+\author{}
+\begin{document}
+\input{bibliography-order}
+\raggedbottom
+\pagestyle{plain}
+\maketitle
+\thispagestyle{plain}
+\noindent This supplement gives the separate state-control cohort (S1), the live TLS-record study (S2), record-only analysis (S3), and reproduction scope (S4). The accompanying evidence archive preserves the source-inspection material and historical pilots with their original results. Reference numbers are shared with the main paper.
+\input{sections/executed-cover-supplement}
+\clearpage\input{sections/live-timing-supplement}
+\clearpage\input{sections/no-call-supplement}
+\clearpage\input{sections/reproducibility-supplement}
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+\end{document}

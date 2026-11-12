@@ -1,0 +1,79 @@
+{
+  "status": "DESIGN_ONLY_NOT_RUN",
+  "base_commit": "96b09983fb8c518f635a1db7a951e26698b8b94f",
+  "preregistered": false,
+  "execution_authorized": false,
+  "modules": [
+    {
+      "id": "P0-A",
+      "type": "retrospective_exploratory",
+      "question": "timestamp versus non-timing context",
+      "data": "existing R110 fixtures",
+      "views": [
+        "full",
+        "no_time",
+        "no_position",
+        "size_destination"
+      ],
+      "family_comparisons": 8
+    },
+    {
+      "id": "P0-B",
+      "type": "retrospective_diagnostic",
+      "question": "real-chain role, separately from task accuracy"
+    },
+    {
+      "id": "P0-C",
+      "type": "retrospective_exploratory",
+      "question": "context and joint decoders without supplied call windows"
+    },
+    {
+      "id": "P1",
+      "type": "new_cohort_draft",
+      "arms": [
+        "none",
+        "fixed_script_immediate",
+        "fixed_script_conditional_wait",
+        "fixed_script_recorded_wait",
+        "fixed_script_model_computation",
+        "natural_shadow_descriptive"
+      ],
+      "models": [
+        "qwen3:8b",
+        "llama3.1:8b"
+      ],
+      "initial_split_per_model_arm": {
+        "train": 360,
+        "validation": 180,
+        "test": 600
+      },
+      "test_template_clusters_min": 60,
+      "final_sample_rule": "fix before test access using independent train/validation variance and template dependence; draft test ceiling 1200",
+      "primary_contrasts": [
+        "conditional_vs_recorded_wait",
+        "recorded_wait_vs_model_computation"
+      ],
+      "holm_family": 4,
+      "equivalence_margin_pp": 8,
+      "scope": "fixed-script effects; natural shadow is a separate complete policy"
+    },
+    {
+      "id": "P2",
+      "type": "conditional_extensions",
+      "questions": [
+        "noncooperating_provider_capabilities",
+        "joint_model_tool_observation",
+        "placement_and_true_concurrency"
+      ]
+    }
+  ],
+  "prohibited_now": [
+    "collection",
+    "model_calls",
+    "refitting",
+    "test_scoring",
+    "cloud_API",
+    "publication_of_individual_data"
+  ],
+  "results": {}
+}

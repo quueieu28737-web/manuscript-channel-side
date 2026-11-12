@@ -21,7 +21,8 @@
 \ifdefined\pdfinterwordspaceoff\pdfinterwordspaceoff\fi
 \newcolumntype{Y}{>{\raggedright\arraybackslash}X}
 \newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
-\newcommand{\papername}{SoK: Agent Communication Side Channels\\Executed Cover and Joint Privacy--State Evaluation}
+\newcommand{\artifacturl}{the accompanying review artifact}
+\newcommand{\papername}{Decoys That Do Work: Evaluating Executed Cover\\for LLM Agent Communication Privacy}
 \title{\papername}
 \author{}
 \begin{document}
@@ -31,16 +32,17 @@
 \maketitle
 \thispagestyle{plain}
 \input{sections/abstract}
-\input{sections/introduction}
-\input{sections/scope}
-\input{sections/taxonomy}
-\input{sections/correspondence}
-\input{sections/evidence}
-\input{sections/defenses}
-\input{sections/experiment}
-\input{sections/reporting}
-\input{sections/discussion}
+\input{sections/paper-introduction}
+\input{sections/paper-background}
+\input{sections/paper-threat}
+\input{sections/paper-design}
+\input{sections/paper-method}
+\input{sections/paper-setup}
+\input{sections/paper-results}
+\input{sections/paper-discussion}
+\input{sections/paper-closing}
 \FloatBarrier
 \bibliographystyle{IEEEtran}
 \bibliography{references}
+\input{sections/paper-appendix}
 \end{document}

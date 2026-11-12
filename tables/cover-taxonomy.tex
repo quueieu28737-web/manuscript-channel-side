@@ -1,0 +1,15 @@
+\begin{table*}[t]\centering\small
+\caption{Cover taxonomy. Each policy is classified by where it terminates and what state it touches, whether its responses reach the real planner, and which process dispatches it. The last column names the evaluation in which the policy is measured; S1 is the earlier state control and Section~\ref{sec:dispatch} the live timing study.}\label{tab:cover-taxonomy}
+\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\textwidth}{@{}P{.17\textwidth}P{.26\textwidth}P{.13\textwidth}P{.2\textwidth}Y@{}}\toprule
+Policy & Terminates at / state touched & Feedback to planner & Dispatcher & Measured in \\\midrule
+Transport cover & Tunnel endpoint before the service; no business state & No & Sender schedule & STP~\cite{apthorpe2019stp}; WF padding~\cite{juarez2016wtfpad,gong2020front} \\
+Proxy discard & Defender proxy computes on a disposable copy & No & Controller & S1 \\
+Read cover & Real service; reads only & No & Controller & S1 \\
+Isolated execution & Real service on a persistent clone & No / yes & Controller & S1 (hidden and visible); all live cover arms \\
+Live write & Real service on production state & No & Controller & S1 (stress control) \\
+Research decoys & Real third-party Web destinations & Not located & Decoy generator & WRA~\cite{jeong2026wra} \\\midrule
+Immediate & Isolated clone & No & Controller, directly after an honest response & Section~\ref{sec:dispatch} (calibration) \\
+History-matched & Isolated clone & No & Controller, training-gap and duration samples; sequential or concurrent & Section~\ref{sec:dispatch} \\
+Planner shadow & Isolated clone; separate planner context & No & Second planner on an independent ticket & Section~\ref{sec:dispatch} \\\bottomrule
+\end{tabularx}\end{table*}
