@@ -1,0 +1,12 @@
+\section{Experimental Setup}\label{sec:setup}
+\paragraph{Workload and planners}
+Each fixture is a synthetic support ticket requesting one of six business actions over a state with three orders, a customer address, a compensation quota, an escalation status and a ledger. LangGraph~\cite{langchain2025langgraph} alternates model decisions with real tool calls to seven MCP Streamable HTTP services over TLS~1.3/HTTP/2, with request and response bodies padded to 4,096 and 16,384 bytes. Two fixed-weight planners, Qwen3:8B and Llama3.1:8B, run at temperature zero with weights pinned by layer hashes. Each planner executes 300 fixtures per condition: 120 training, 60 validation and 120 paired test fixtures, balanced over the six actions. The label is the requested action, and wrong or failed executions remain in every denominator.
+
+\paragraph{Cover policies}
+All four cover arms execute cover on an isolated clone and hide its responses from the real planner; they differ only in the dispatcher (Figure~\ref{fig:dispatch}). \emph{Immediate} cover follows an honest response directly. \emph{History} cover samples a training-only honest gap and service duration, waits in real time and holds the response for the sampled minimum; the \emph{sequential} variant blocks the real chain and the \emph{concurrent} variant overlaps real model inference. \emph{Shadow} runs a complete second planner on an independent ticket whose action is drawn uniformly, and a fair draw decides which chain starts first. Calls to the same service serialize. The five conditions give 3,000 main episodes and 600 shadow chains.
+
+\input{figures/dispatch-timeline}
+\input{tables/study-map}
+
+\paragraph{Studies}
+Table~\ref{tab:study-map} lists the populations. The live timing study and its record-only reanalysis answer the privacy questions. A separate earlier state control on the same workload varies termination and feedback across six policies, including a deliberately harmful live-write arm, to test whether goal completion misses collateral state. A forwarding pilot appears only in Supplement S10. All runs use one host over loopback with synthetic tools; Section~\ref{sec:limits} states what this does not test.

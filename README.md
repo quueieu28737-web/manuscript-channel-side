@@ -1,3 +1,17 @@
+# Latest manuscript: R114 — Decoys That Do Work
+
+**Evaluating Executed Cover for LLM Agent Communication Privacy** (research-track version for IEEE S&P 2027)
+
+- [Main PDF](main.pdf) | [Supplement PDF](supplement.pdf)
+- [Compilable LaTeX ZIP](latex-source.zip)
+- [Versioned source](releases/r114/README.md) · [修订说明](releases/r114/修订说明.md)
+
+R114 answers the R113 review: the cross-observer claim is dropped (unequal
+attack suites), a decoy-query obfuscation related-work section is added, and
+decisions are interval-based with a latency column. No new runs.
+
+---
+
 # Latest manuscript: R113 — Decoys That Do Work
 
 **Evaluating Executed Cover for LLM Agent Communication Privacy** (research-track version for IEEE S&P 2027)

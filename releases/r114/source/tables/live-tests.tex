@@ -1,0 +1,33 @@
+\begin{table*}[t]\centering\small
+\caption{All prespecified live-record test families. P/E compare the validation-selected adaptive and size attacks; R compares label-free immediate removal with size; C compares each cover size attack with no cover. $+$/$-$ count fixture discordances. Intervals are 95\% paired action-stratified bootstrap intervals conditional on the fitted attacks. E uses paired t-TOST with a $\pm10$-point margin; the shadow selectors choose the identical size attack, so all pairs tie. Holm correction is separate within each declared family.}
+\label{tab:live-tests}
+\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\textwidth}{@{}llYrrrrr@{}}\toprule
+Family & Model & Arm & $+$/$-$ & $\Delta$ (pp) & Conditional interval & Raw $p$ & Holm $p$\\\midrule
+P & Qwen & History seq. & 32/15 & 14.2 & [3.3, 25.0] & 0.0186 & 0.0559 \\
+P & Qwen & History concurrent & 42/9 & 27.5 & [17.5, 38.3] & $3.4\times10^{-6}$ & $1.7\times10^{-5}$ \\
+P & Qwen & Shadow & 0/0 & 0.0 & [0.0, 0.0] & 1 & 1 \\
+P & Llama & History seq. & 28/6 & 18.3 & [10.0, 26.7] & $2\times10^{-4}$ & $7.8\times10^{-4}$ \\
+P & Llama & History concurrent & 41/3 & 31.7 & [22.5, 40.8] & $1.6\times10^{-9}$ & $9.7\times10^{-9}$ \\
+P & Llama & Shadow & 0/0 & 0.0 & [0.0, 0.0] & 1 & 1 \\
+\midrule
+E & Qwen & History seq. & 32/15 & 14.2 & [3.3, 25.0] & 0.7713 & 1 \\
+E & Qwen & History concurrent & 42/9 & 27.5 & [17.5, 38.3] & 0.9992 & 1 \\
+E & Qwen & Shadow & 0/0 & 0.0 & [0.0, 0.0] & $3.2\times10^{-6}$ & $1.9\times10^{-5}$ \\
+E & Llama & History seq. & 28/6 & 18.3 & [10.0, 26.7] & 0.9643 & 1 \\
+E & Llama & History concurrent & 41/3 & 31.7 & [22.5, 40.8] & 1 & 1 \\
+E & Llama & Shadow & 0/0 & 0.0 & [0.0, 0.0] & $3.2\times10^{-6}$ & $1.9\times10^{-5}$ \\
+\midrule
+R & Qwen & Immediate & 41/4 & 30.8 & [21.7, 40.0] & $9.3\times10^{-9}$ & $1.9\times10^{-8}$ \\
+R & Llama & Immediate & 33/5 & 23.3 & [15.0, 32.5] & $4.3\times10^{-6}$ & $4.3\times10^{-6}$ \\
+\midrule
+C & Qwen & Immediate & 0/42 & -35.0 & [-43.3, -26.7] & $4.5\times10^{-13}$ & $2.7\times10^{-12}$ \\
+C & Qwen & History seq. & 0/41 & -34.2 & [-42.5, -25.8] & $9.1\times10^{-13}$ & $4.5\times10^{-12}$ \\
+C & Qwen & History concurrent & 0/51 & -42.5 & [-50.8, -34.2] & $8.9\times10^{-16}$ & $6.2\times10^{-15}$ \\
+C & Qwen & Shadow & 0/63 & -52.5 & [-60.8, -43.3] & $2.2\times10^{-19}$ & $1.7\times10^{-18}$ \\
+C & Llama & Immediate & 3/33 & -25.0 & [-33.3, -16.7] & $2.3\times10^{-7}$ & $4.5\times10^{-7}$ \\
+C & Llama & History seq. & 2/30 & -23.3 & [-31.7, -15.0] & $2.5\times10^{-7}$ & $4.5\times10^{-7}$ \\
+C & Llama & History concurrent & 2/44 & -35.0 & [-44.2, -25.8] & $3.1\times10^{-11}$ & $1.2\times10^{-10}$ \\
+C & Llama & Shadow & 4/50 & -38.3 & [-47.5, -28.3] & $3.8\times10^{-11}$ & $1.2\times10^{-10}$ \\
+\bottomrule\end{tabularx}
+\end{table*}

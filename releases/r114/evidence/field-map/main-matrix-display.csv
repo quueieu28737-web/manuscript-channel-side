@@ -1,0 +1,45 @@
+setting_id,source_key,access,link,target,signals,unit,result,intervention,adaptation_utility
+AP-identity,agentprint2025,transit,client,hosted-agent identity,Packet size/direction; CNN,interaction,F1 .8660 closed; .8477 open,none,--
+AP-behavior,agentprint2025,transit,client,interaction mode,Packet size/direction; CNN,interaction,F1 .924/.889 conflict,none,--
+AP-persona,agentprint2025,derived,preferences,occupation,Inferred preferences,participant preferences,Top-3 occupation 69.1%,none,--
+WRA-prompt,jeong2026wra,transit,tool/Web,prompt meaning,Domains/time; LLM,research task,Query recovery .770 / .725,none,--
+WRA-persona,jeong2026wra,transit,tool/Web,user traits,Domains/time; LLM,multiple sessions,Separate trait-category scores,none,--
+WRA-decoy,jeong2026wra,transit,tool/Web,prompt meaning,Domains/time; LLM,research task,.770 to .565; five decoys,privacy,NR/NR
+WRA-visibility,jeong2026wra,transit,tool/Web,prompt meaning,Domains/time; LLM,research task,.770/.610; quality 8.55/8.54,privacy,NR/yes
+CG-workflow,dangol2026workflow,transit,coord.,workflow class,Graph/size/time; RF,workflow,Nine-class accuracy .67,none,--
+CG-composition,dangol2026workflow,transit,coord.,workflow class,Graph/size/time; RF,workflow,Known-label holdout .18,shared*,--
+CG-MCP,dangol2026workflow,transit,tool,sequence class,Graph/size/time; RF,fixed sequence,Fixed-sequence accuracy .99,none,--
+CG-transform,dangol2026workflow,transit,coord.,workflow class,Graph/size/time; RF,workflow,Capture transformation; separate from live,privacy,yes/NR
+CG-live,dangol2026workflow,transit,coord.,workflow class,Graph/size/time; RF,workflow,"Six-class .30; 13x bytes, 11x delay",privacy,yes/NR
+CG-active,dangol2026workflow,active,coord.,integrity impact,Graph/size/time; RF,pending workflow,Live integrity endpoint,none,--
+CB-task,pouryousef2026traffic,transit,model,task,Traffic statistics; RF,MARBLE execution,Ten-class BA .853/.860,none,--
+CB-topology,pouryousef2026traffic,transit,model,task,Traffic statistics; RF,execution,Topology change .83 to .52,none,--
+CB-size-excluded,pouryousef2026traffic,transit,model,task class,Traffic statistics; RF,execution,BA .540/.587,none,--
+CB-partial,pouryousef2026traffic,transit,model,task,Traffic statistics; RF,execution,One-agent BA .665/.780,none,--
+PF-session,song2026personafingerprint,transit,tool/Web,synthetic persona,Signed intervals; CNN,fixed packet window,Per-site persona F1 .78--.91,none,--
+PF-pooled,song2026personafingerprint,transit,tool/Web,synthetic persona,Signed intervals; CNN,packet window,Pooled summaries conflict,none,--
+PF-open,song2026personafingerprint,transit,tool/Web,persona membership,Signed intervals; CNN,window,Open-world misattribution,none,--
+MARK-protocol,kang2026whoseagent,recipient,tool/Web,agent stack identity,Protocol/headers,trial,TLS/H2 F1 .725; HTTP .799,none,--
+MARK-combined,kang2026whoseagent,recipient,tool/Web,agent identity,Protocol/headers,trial,Combined F1 .971,none,--
+FAY-network,fayolle2026webagents,recipient,tool/Web,implementation,Protocol/site features,connection/request,Layer-specific distinguishability,identity,--
+FAY-combined,fayolle2026webagents,recipient,tool/Web,agent identity,Protocol/site features,visit,Combined fingerprint view,identity,--
+FAY-blocking,fayolle2026webagents,active,tool/Web,access outcome,Protocol/site features,visit,Access success; not privacy score,blocking,--
+AT-choice,shahriar2026agenttell,active,tool/Web,cross-origin fact,Challenge choice,two-origin session,61.1% loaded choice; cold-adjusted LS,none,--
+ANT-scenario,li2026ant,transit,egress,scenario,Direction/size/time,episode,Five-task accuracy .431--.727,none,--
+ANT-model-scope,li2026ant,transit,model/rest,scenario,Direction/size/time,episode,Eight approximate model-view scores,none,--
+ANT-risk,li2026ant,transit,egress,benchmark risk label,Direction/size/time,episode,209 episodes; risk recall .15--.95,none,--
+ANT-stage,li2026ant,transit,egress,primitive group,Direction/size/time,primitive segment,47-group accuracy .355--.462,none,--
+CHT-lure,ayzenshteyn2025cheat,active,asset,LLM-based visitor presence,Lure/output/challenge,probe interaction,Presence mechanism; no natural F1,none,--
+CHT-password,ayzenshteyn2025cheat,active,output,LLM presence,Lure/output/challenge,challenge response,Password-output control,none,--
+CHT-blocking,ayzenshteyn2025cheat,active,CTF,defender prevention success,Lure/output/challenge,CTF attempt,CTF prevention endpoint,blocking,--
+PT-metadata,duan2026privacytrace,recipient,tool,profile attributes,Tool metadata/arguments,single-domain trajectory,ASR .1453; prior .1797,none,--
+PT-content,duan2026privacytrace,recipient,tool,profile attributes,Tool metadata/arguments,single-domain trajectory,Arguments ASR .2771,none,--
+ATR-main,zhao2026agenttrace,active,tool,model identity,Arguments/repairs,multi-probe attribution trial,50-probe accuracy .960,none,--
+ATR-budget,zhao2026agenttrace,active,tool,model identity,Arguments/repairs,multi-probe attribution trial,1--50 probes: .652--.960,none,--
+ATR-obfuscation,zhao2026agenttrace,active,tool,model identity,Arguments/repairs,multi-probe attribution trial,Attribution above .94,identity,--
+TR-within,ediga2026trace,recipient,terminal,model family,Terminal n-grams; SVM,terminal session,Mixed-session F1 .981,none,--
+TR-scaffold,ediga2026trace,recipient,terminal,model family,Terminal n-grams; SVM,terminal session,Scaffold holdout F1 .815,none,--
+TR-proprietary,ediga2026trace,recipient,terminal,model family,Terminal n-grams; SVM,terminal session,Accuracy .78; narrower models,none,--
+HTTP-signature,borysenko2026http,recipient,docs,implementation,HTTP trace,documentation-retrieval trial,9 agents/6 services; descriptive,none,--
+HP-calibration,reworr2024honeypot,active,SSH,Agent candidate,Timing/prompt responses,controlled probe interaction,Probe timing about 1.7s,none,--
+HP-field,reworr2024honeypot,active,SSH,Agent candidate,Timing/prompt responses,field interaction/session,8 candidates; identity unverified,none,--

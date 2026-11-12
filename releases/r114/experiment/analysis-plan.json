@@ -1,0 +1,15 @@
+{
+  "version": "R111-record-only-v1",
+  "date_client": "2026-11-12",
+  "status": "Fixed before new test scoring; retrospective on reused R110 workloads",
+  "population": "All 3000 R110 main episodes, two models and five arms; original120/60/120 fixture split",
+  "observation": "All encrypted outer-type23 TLS records from all seven episode-associated full connections, including setup and close. Relative times, destination, direction, record ciphertext length only.",
+  "excluded": "No supplied call boundaries, request/operation/role IDs, plaintext, HTTP stream IDs, per-call receipts, model link, tokens or business state in features.",
+  "retained_privilege": "Whole-episode connection association supplied. Does not test task discovery in an unlabelled continuous deployment.",
+  "segmentation": "Per-connection idle gaps at .005/.02/.05/.1/.25 seconds, chosen by validation task accuracy; first4 plus final16 events and destination aggregates. Raw-record baselines bypass segmentation.",
+  "attacks": "Per-condition LR(C1) and RF300, size/destination and timing views. TRAIN-only unlabelled gap GMM removal followed by no-cover TRAIN task LR/RF. Fixed seed111121 and two numerical threads.",
+  "selection": "Each candidate fit onTRAIN; validation selects baseline(no removal), removal, and suite, ties in fixed code insertion order. Selections written before that cell test prediction. No test-directed changes.",
+  "primary": "Immediate cover only: per model selected removal minus selected baseline, exact paired McNemar, Holm across2 models, paired fixture bootstrap10000. Other arms and test maxima descriptive. No claim of independent workload confirmation.",
+  "audit": "Separate ground-truth call audit after prediction; not an attacker input. Check record counts/source hashes, exposure whitelist, selection and saved prediction arithmetic.",
+  "publication": "Individual records/predictions remain local; only PDFs/source/aggregates may be delivered or considered for later public scope."
+}

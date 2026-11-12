@@ -1,0 +1,13 @@
+\section{Threat Model}\label{sec:threat}
+\paragraph{Assets and adversary}
+The private target is the user's requested task, here one of six support actions. The defender controls the Agent and its controller, and may run relays, but does not control third-party tool services. We consider three observers, distinguished by their rights. A \emph{transit observer} sees connection destinations, directions, ciphertext lengths and times on the links it watches. A \emph{recipient} additionally reads the requests addressed to it, including arguments. An \emph{active auditor} also chooses probes. Identifying a requested action does not establish whether it was authorized; that needs the principal and policy context. Table~\ref{tab:deployment-access} maps these rights to common deployments and to the existing evidence for each view.
+
+\input{tables/deployment-access}
+
+\paragraph{When cover must execute}
+Transport cover ends before a business tool, at an endpoint the defender controls~\cite{apthorpe2019stp}. That endpoint must sit after the observer, or the observer sees it discard the cover. A defender can move the endpoint, for example to a relay outside a monitored egress, but the segment from the last defender-controlled hop to a third-party service remains. If the adversary observes that segment, or is the service, every request it sees must be real (Table~\ref{tab:cover-necessity}). Executed cover then follows from the deployment rather than from a design preference.
+
+\input{tables/cover-necessity}
+
+\paragraph{Observer in this paper}
+Our measurements use a transit observer on the final hop to seven tool services that stand for third-party tools, with no defender relay in between. It receives destinations, ciphertext bytes and TLS record completion times. Section~\ref{sec:dispatch} additionally supplies episode and call windows, an evaluator privilege that Section~\ref{sec:noboundary} withdraws. The recipient view, where decoy arguments are also visible, is part of the threat model but not of these measurements (Section~\ref{sec:limits}). The adversary may train on traffic generated under the same cover policy; the attack suite therefore includes classifiers and cover-removal models fitted on protected training executions, alongside attacks frozen on unprotected traffic.

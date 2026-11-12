@@ -1,0 +1,738 @@
+{
+  "scope": "Exploratory public-protocol eventizer; episode association retained; declared after Qwen idle-gap test counts were known.",
+  "attacks": [
+    {
+      "model": "qwen3:8b",
+      "arm": "none",
+      "attack": "protocol_size_LR",
+      "n": 120,
+      "correct": 117
+    },
+    {
+      "model": "qwen3:8b",
+      "arm": "none",
+      "attack": "protocol_strip_size_LR",
+      "n": 120,
+      "correct": 30
+    },
+    {
+      "model": "qwen3:8b",
+      "arm": "none",
+      "attack": "protocol_size_RF",
+      "n": 120,
+      "correct": 117
+    },
+    {
+      "model": "qwen3:8b",
+      "arm": "none",
+      "attack": "protocol_strip_size_RF",
+      "n": 120,
+      "correct": 86
+    },
+    {
+      "model": "qwen3:8b",
+      "arm": "none",
+      "attack": "protocol_time_LR",
+      "n": 120,
+      "correct": 106
+    },
+    {
+      "model": "qwen3:8b",
+      "arm": "none",
+      "attack": "protocol_strip_time_LR",
+      "n": 120,
+      "correct": 29
+    },
+    {
+      "model": "qwen3:8b",
+      "arm": "none",
+      "attack": "protocol_time_RF",
+      "n": 120,
+      "correct": 112
+    },
+    {
+      "model": "qwen3:8b",
+      "arm": "none",
+      "attack": "protocol_strip_time_RF",
+      "n": 120,
+      "correct": 93
+    },
+    {
+      "model": "qwen3:8b",
+      "arm": "unmatched",
+      "attack": "protocol_size_LR",
+      "n": 120,
+      "correct": 58
+    },
+    {
+      "model": "qwen3:8b",
+      "arm": "unmatched",
+      "attack": "protocol_strip_size_LR",
+      "n": 120,
+      "correct": 30
+    },
+    {
+      "model": "qwen3:8b",
+      "arm": "unmatched",
+      "attack": "protocol_size_RF",
+      "n": 120,
+      "correct": 57
+    },
+    {
+      "model": "qwen3:8b",
+      "arm": "unmatched",
+      "attack": "protocol_strip_size_RF",
+      "n": 120,
+      "correct": 86
+    },
+    {
+      "model": "qwen3:8b",
+      "arm": "unmatched",
+      "attack": "protocol_time_LR",
+      "n": 120,
+      "correct": 67
+    },
+    {
+      "model": "qwen3:8b",
+      "arm": "unmatched",
+      "attack": "protocol_strip_time_LR",
+      "n": 120,
+      "correct": 27
+    },
+    {
+      "model": "qwen3:8b",
+      "arm": "unmatched",
+      "attack": "protocol_time_RF",
+      "n": 120,
+      "correct": 68
+    },
+    {
+      "model": "qwen3:8b",
+      "arm": "unmatched",
+      "attack": "protocol_strip_time_RF",
+      "n": 120,
+      "correct": 91
+    },
+    {
+      "model": "qwen3:8b",
+      "arm": "gdm_live",
+      "attack": "protocol_size_LR",
+      "n": 120,
+      "correct": 58
+    },
+    {
+      "model": "qwen3:8b",
+      "arm": "gdm_live",
+      "attack": "protocol_strip_size_LR",
+      "n": 120,
+      "correct": 45
+    },
+    {
+      "model": "qwen3:8b",
+      "arm": "gdm_live",
+      "attack": "protocol_size_RF",
+      "n": 120,
+      "correct": 54
+    },
+    {
+      "model": "qwen3:8b",
+      "arm": "gdm_live",
+      "attack": "protocol_strip_size_RF",
+      "n": 120,
+      "correct": 51
+    },
+    {
+      "model": "qwen3:8b",
+      "arm": "gdm_live",
+      "attack": "protocol_time_LR",
+      "n": 120,
+      "correct": 58
+    },
+    {
+      "model": "qwen3:8b",
+      "arm": "gdm_live",
+      "attack": "protocol_strip_time_LR",
+      "n": 120,
+      "correct": 28
+    },
+    {
+      "model": "qwen3:8b",
+      "arm": "gdm_live",
+      "attack": "protocol_time_RF",
+      "n": 120,
+      "correct": 66
+    },
+    {
+      "model": "qwen3:8b",
+      "arm": "gdm_live",
+      "attack": "protocol_strip_time_RF",
+      "n": 120,
+      "correct": 50
+    },
+    {
+      "model": "qwen3:8b",
+      "arm": "concurrent",
+      "attack": "protocol_size_LR",
+      "n": 120,
+      "correct": 54
+    },
+    {
+      "model": "qwen3:8b",
+      "arm": "concurrent",
+      "attack": "protocol_strip_size_LR",
+      "n": 120,
+      "correct": 47
+    },
+    {
+      "model": "qwen3:8b",
+      "arm": "concurrent",
+      "attack": "protocol_size_RF",
+      "n": 120,
+      "correct": 47
+    },
+    {
+      "model": "qwen3:8b",
+      "arm": "concurrent",
+      "attack": "protocol_strip_size_RF",
+      "n": 120,
+      "correct": 52
+    },
+    {
+      "model": "qwen3:8b",
+      "arm": "concurrent",
+      "attack": "protocol_time_LR",
+      "n": 120,
+      "correct": 51
+    },
+    {
+      "model": "qwen3:8b",
+      "arm": "concurrent",
+      "attack": "protocol_strip_time_LR",
+      "n": 120,
+      "correct": 40
+    },
+    {
+      "model": "qwen3:8b",
+      "arm": "concurrent",
+      "attack": "protocol_time_RF",
+      "n": 120,
+      "correct": 54
+    },
+    {
+      "model": "qwen3:8b",
+      "arm": "concurrent",
+      "attack": "protocol_strip_time_RF",
+      "n": 120,
+      "correct": 48
+    },
+    {
+      "model": "qwen3:8b",
+      "arm": "shadow",
+      "attack": "protocol_size_LR",
+      "n": 120,
+      "correct": 61
+    },
+    {
+      "model": "qwen3:8b",
+      "arm": "shadow",
+      "attack": "protocol_strip_size_LR",
+      "n": 120,
+      "correct": 45
+    },
+    {
+      "model": "qwen3:8b",
+      "arm": "shadow",
+      "attack": "protocol_size_RF",
+      "n": 120,
+      "correct": 66
+    },
+    {
+      "model": "qwen3:8b",
+      "arm": "shadow",
+      "attack": "protocol_strip_size_RF",
+      "n": 120,
+      "correct": 47
+    },
+    {
+      "model": "qwen3:8b",
+      "arm": "shadow",
+      "attack": "protocol_time_LR",
+      "n": 120,
+      "correct": 63
+    },
+    {
+      "model": "qwen3:8b",
+      "arm": "shadow",
+      "attack": "protocol_strip_time_LR",
+      "n": 120,
+      "correct": 26
+    },
+    {
+      "model": "qwen3:8b",
+      "arm": "shadow",
+      "attack": "protocol_time_RF",
+      "n": 120,
+      "correct": 66
+    },
+    {
+      "model": "qwen3:8b",
+      "arm": "shadow",
+      "attack": "protocol_strip_time_RF",
+      "n": 120,
+      "correct": 52
+    },
+    {
+      "model": "llama3.1:8b",
+      "arm": "none",
+      "attack": "protocol_size_LR",
+      "n": 120,
+      "correct": 109
+    },
+    {
+      "model": "llama3.1:8b",
+      "arm": "none",
+      "attack": "protocol_strip_size_LR",
+      "n": 120,
+      "correct": 66
+    },
+    {
+      "model": "llama3.1:8b",
+      "arm": "none",
+      "attack": "protocol_size_RF",
+      "n": 120,
+      "correct": 112
+    },
+    {
+      "model": "llama3.1:8b",
+      "arm": "none",
+      "attack": "protocol_strip_size_RF",
+      "n": 120,
+      "correct": 88
+    },
+    {
+      "model": "llama3.1:8b",
+      "arm": "none",
+      "attack": "protocol_time_LR",
+      "n": 120,
+      "correct": 111
+    },
+    {
+      "model": "llama3.1:8b",
+      "arm": "none",
+      "attack": "protocol_strip_time_LR",
+      "n": 120,
+      "correct": 31
+    },
+    {
+      "model": "llama3.1:8b",
+      "arm": "none",
+      "attack": "protocol_time_RF",
+      "n": 120,
+      "correct": 110
+    },
+    {
+      "model": "llama3.1:8b",
+      "arm": "none",
+      "attack": "protocol_strip_time_RF",
+      "n": 120,
+      "correct": 86
+    },
+    {
+      "model": "llama3.1:8b",
+      "arm": "unmatched",
+      "attack": "protocol_size_LR",
+      "n": 120,
+      "correct": 85
+    },
+    {
+      "model": "llama3.1:8b",
+      "arm": "unmatched",
+      "attack": "protocol_strip_size_LR",
+      "n": 120,
+      "correct": 69
+    },
+    {
+      "model": "llama3.1:8b",
+      "arm": "unmatched",
+      "attack": "protocol_size_RF",
+      "n": 120,
+      "correct": 79
+    },
+    {
+      "model": "llama3.1:8b",
+      "arm": "unmatched",
+      "attack": "protocol_strip_size_RF",
+      "n": 120,
+      "correct": 87
+    },
+    {
+      "model": "llama3.1:8b",
+      "arm": "unmatched",
+      "attack": "protocol_time_LR",
+      "n": 120,
+      "correct": 84
+    },
+    {
+      "model": "llama3.1:8b",
+      "arm": "unmatched",
+      "attack": "protocol_strip_time_LR",
+      "n": 120,
+      "correct": 38
+    },
+    {
+      "model": "llama3.1:8b",
+      "arm": "unmatched",
+      "attack": "protocol_time_RF",
+      "n": 120,
+      "correct": 90
+    },
+    {
+      "model": "llama3.1:8b",
+      "arm": "unmatched",
+      "attack": "protocol_strip_time_RF",
+      "n": 120,
+      "correct": 85
+    },
+    {
+      "model": "llama3.1:8b",
+      "arm": "gdm_live",
+      "attack": "protocol_size_LR",
+      "n": 120,
+      "correct": 87
+    },
+    {
+      "model": "llama3.1:8b",
+      "arm": "gdm_live",
+      "attack": "protocol_strip_size_LR",
+      "n": 120,
+      "correct": 71
+    },
+    {
+      "model": "llama3.1:8b",
+      "arm": "gdm_live",
+      "attack": "protocol_size_RF",
+      "n": 120,
+      "correct": 76
+    },
+    {
+      "model": "llama3.1:8b",
+      "arm": "gdm_live",
+      "attack": "protocol_strip_size_RF",
+      "n": 120,
+      "correct": 58
+    },
+    {
+      "model": "llama3.1:8b",
+      "arm": "gdm_live",
+      "attack": "protocol_time_LR",
+      "n": 120,
+      "correct": 83
+    },
+    {
+      "model": "llama3.1:8b",
+      "arm": "gdm_live",
+      "attack": "protocol_strip_time_LR",
+      "n": 120,
+      "correct": 29
+    },
+    {
+      "model": "llama3.1:8b",
+      "arm": "gdm_live",
+      "attack": "protocol_time_RF",
+      "n": 120,
+      "correct": 90
+    },
+    {
+      "model": "llama3.1:8b",
+      "arm": "gdm_live",
+      "attack": "protocol_strip_time_RF",
+      "n": 120,
+      "correct": 55
+    },
+    {
+      "model": "llama3.1:8b",
+      "arm": "concurrent",
+      "attack": "protocol_size_LR",
+      "n": 120,
+      "correct": 62
+    },
+    {
+      "model": "llama3.1:8b",
+      "arm": "concurrent",
+      "attack": "protocol_strip_size_LR",
+      "n": 120,
+      "correct": 56
+    },
+    {
+      "model": "llama3.1:8b",
+      "arm": "concurrent",
+      "attack": "protocol_size_RF",
+      "n": 120,
+      "correct": 75
+    },
+    {
+      "model": "llama3.1:8b",
+      "arm": "concurrent",
+      "attack": "protocol_strip_size_RF",
+      "n": 120,
+      "correct": 68
+    },
+    {
+      "model": "llama3.1:8b",
+      "arm": "concurrent",
+      "attack": "protocol_time_LR",
+      "n": 120,
+      "correct": 71
+    },
+    {
+      "model": "llama3.1:8b",
+      "arm": "concurrent",
+      "attack": "protocol_strip_time_LR",
+      "n": 120,
+      "correct": 25
+    },
+    {
+      "model": "llama3.1:8b",
+      "arm": "concurrent",
+      "attack": "protocol_time_RF",
+      "n": 120,
+      "correct": 83
+    },
+    {
+      "model": "llama3.1:8b",
+      "arm": "concurrent",
+      "attack": "protocol_strip_time_RF",
+      "n": 120,
+      "correct": 68
+    },
+    {
+      "model": "llama3.1:8b",
+      "arm": "shadow",
+      "attack": "protocol_size_LR",
+      "n": 120,
+      "correct": 61
+    },
+    {
+      "model": "llama3.1:8b",
+      "arm": "shadow",
+      "attack": "protocol_strip_size_LR",
+      "n": 120,
+      "correct": 43
+    },
+    {
+      "model": "llama3.1:8b",
+      "arm": "shadow",
+      "attack": "protocol_size_RF",
+      "n": 120,
+      "correct": 68
+    },
+    {
+      "model": "llama3.1:8b",
+      "arm": "shadow",
+      "attack": "protocol_strip_size_RF",
+      "n": 120,
+      "correct": 55
+    },
+    {
+      "model": "llama3.1:8b",
+      "arm": "shadow",
+      "attack": "protocol_time_LR",
+      "n": 120,
+      "correct": 61
+    },
+    {
+      "model": "llama3.1:8b",
+      "arm": "shadow",
+      "attack": "protocol_strip_time_LR",
+      "n": 120,
+      "correct": 52
+    },
+    {
+      "model": "llama3.1:8b",
+      "arm": "shadow",
+      "attack": "protocol_time_RF",
+      "n": 120,
+      "correct": 66
+    },
+    {
+      "model": "llama3.1:8b",
+      "arm": "shadow",
+      "attack": "protocol_strip_time_RF",
+      "n": 120,
+      "correct": 57
+    }
+  ],
+  "selections": [
+    {
+      "model": "qwen3:8b",
+      "arm": "none",
+      "baseline": "protocol_size_LR",
+      "removal": "protocol_strip_time_RF",
+      "validation_correct": {
+        "protocol_size_LR": 59,
+        "protocol_strip_size_LR": 16,
+        "protocol_size_RF": 59,
+        "protocol_strip_size_RF": 43,
+        "protocol_time_LR": 59,
+        "protocol_strip_time_LR": 17,
+        "protocol_time_RF": 58,
+        "protocol_strip_time_RF": 48
+      },
+      "gmm_threshold_s": 0.11036049924637854
+    },
+    {
+      "model": "qwen3:8b",
+      "arm": "unmatched",
+      "baseline": "protocol_time_RF",
+      "removal": "protocol_strip_time_RF",
+      "validation_correct": {
+        "protocol_size_LR": 30,
+        "protocol_strip_size_LR": 16,
+        "protocol_size_RF": 30,
+        "protocol_strip_size_RF": 43,
+        "protocol_time_LR": 32,
+        "protocol_strip_time_LR": 16,
+        "protocol_time_RF": 36,
+        "protocol_strip_time_RF": 46
+      },
+      "gmm_threshold_s": 0.2617097263558126
+    },
+    {
+      "model": "qwen3:8b",
+      "arm": "gdm_live",
+      "baseline": "protocol_time_RF",
+      "removal": "protocol_strip_size_LR",
+      "validation_correct": {
+        "protocol_size_LR": 30,
+        "protocol_strip_size_LR": 28,
+        "protocol_size_RF": 29,
+        "protocol_strip_size_RF": 26,
+        "protocol_time_LR": 35,
+        "protocol_strip_time_LR": 14,
+        "protocol_time_RF": 37,
+        "protocol_strip_time_RF": 24
+      },
+      "gmm_threshold_s": 0.19251192110858018
+    },
+    {
+      "model": "qwen3:8b",
+      "arm": "concurrent",
+      "baseline": "protocol_time_LR",
+      "removal": "protocol_strip_size_LR",
+      "validation_correct": {
+        "protocol_size_LR": 27,
+        "protocol_strip_size_LR": 26,
+        "protocol_size_RF": 26,
+        "protocol_strip_size_RF": 25,
+        "protocol_time_LR": 28,
+        "protocol_strip_time_LR": 26,
+        "protocol_time_RF": 26,
+        "protocol_strip_time_RF": 24
+      },
+      "gmm_threshold_s": 0.0001011144973717899
+    },
+    {
+      "model": "qwen3:8b",
+      "arm": "shadow",
+      "baseline": "protocol_time_RF",
+      "removal": "protocol_strip_time_RF",
+      "validation_correct": {
+        "protocol_size_LR": 33,
+        "protocol_strip_size_LR": 30,
+        "protocol_size_RF": 38,
+        "protocol_strip_size_RF": 29,
+        "protocol_time_LR": 36,
+        "protocol_strip_time_LR": 19,
+        "protocol_time_RF": 39,
+        "protocol_strip_time_RF": 34
+      },
+      "gmm_threshold_s": 0.00010116436184635484
+    },
+    {
+      "model": "llama3.1:8b",
+      "arm": "none",
+      "baseline": "protocol_size_LR",
+      "removal": "protocol_strip_size_RF",
+      "validation_correct": {
+        "protocol_size_LR": 56,
+        "protocol_strip_size_LR": 31,
+        "protocol_size_RF": 56,
+        "protocol_strip_size_RF": 39,
+        "protocol_time_LR": 55,
+        "protocol_strip_time_LR": 12,
+        "protocol_time_RF": 53,
+        "protocol_strip_time_RF": 39
+      },
+      "gmm_threshold_s": 0.16443687286154213
+    },
+    {
+      "model": "llama3.1:8b",
+      "arm": "unmatched",
+      "baseline": "protocol_time_RF",
+      "removal": "protocol_strip_size_RF",
+      "validation_correct": {
+        "protocol_size_LR": 32,
+        "protocol_strip_size_LR": 32,
+        "protocol_size_RF": 36,
+        "protocol_strip_size_RF": 39,
+        "protocol_time_LR": 34,
+        "protocol_strip_time_LR": 16,
+        "protocol_time_RF": 37,
+        "protocol_strip_time_RF": 39
+      },
+      "gmm_threshold_s": 0.24446009385177814
+    },
+    {
+      "model": "llama3.1:8b",
+      "arm": "gdm_live",
+      "baseline": "protocol_time_RF",
+      "removal": "protocol_strip_size_LR",
+      "validation_correct": {
+        "protocol_size_LR": 33,
+        "protocol_strip_size_LR": 34,
+        "protocol_size_RF": 36,
+        "protocol_strip_size_RF": 27,
+        "protocol_time_LR": 34,
+        "protocol_strip_time_LR": 12,
+        "protocol_time_RF": 37,
+        "protocol_strip_time_RF": 23
+      },
+      "gmm_threshold_s": 0.11033723077309907
+    },
+    {
+      "model": "llama3.1:8b",
+      "arm": "concurrent",
+      "baseline": "protocol_time_RF",
+      "removal": "protocol_strip_size_RF",
+      "validation_correct": {
+        "protocol_size_LR": 29,
+        "protocol_strip_size_LR": 26,
+        "protocol_size_RF": 33,
+        "protocol_strip_size_RF": 32,
+        "protocol_time_LR": 33,
+        "protocol_strip_time_LR": 12,
+        "protocol_time_RF": 35,
+        "protocol_strip_time_RF": 30
+      },
+      "gmm_threshold_s": 0.32207173125045263
+    },
+    {
+      "model": "llama3.1:8b",
+      "arm": "shadow",
+      "baseline": "protocol_size_RF",
+      "removal": "protocol_strip_time_LR",
+      "validation_correct": {
+        "protocol_size_LR": 34,
+        "protocol_strip_size_LR": 27,
+        "protocol_size_RF": 37,
+        "protocol_strip_size_RF": 31,
+        "protocol_time_LR": 32,
+        "protocol_strip_time_LR": 33,
+        "protocol_time_RF": 37,
+        "protocol_strip_time_RF": 32
+      },
+      "gmm_threshold_s": 0.00010117248047286425
+    }
+  ],
+  "primary_p_values": null
+}

@@ -1,0 +1,29 @@
+\begin{table*}[t]\centering\footnotesize
+\caption{Complete setting matrix, part 2 of 2. Each row is one of the forty-four retained settings. Scores keep the source's metric and target; they are not cross-paper rankings. Access states the observer's rights. Last column gives intervention purpose and, for the four privacy comparisons, adapted attack / same-intervention original-task utility (yes or NR: not located). A dash is outside that denominator. Shared* is counted with CG-transform. Full features, split rules and locators remain in the extraction sheet.}\label{tab:complete-matrix-b}
+\setlength{\tabcolsep}{3pt}\renewcommand{\arraystretch}{1.12}
+\begin{tabularx}{\textwidth}{@{}P{.14\textwidth}P{.11\textwidth}P{.13\textwidth}P{.14\textwidth}P{.12\textwidth}Y P{.09\textwidth}@{}}\toprule
+Work / setting & Link; access & Target & Signal / learner & Evaluation unit & Source result & Purpose; A/U \\\midrule
+
+FAY-network~\cite{fayolle2026webagents} & tool/Web; recipient & implementation & Protocol/site features & connection/request & Layer-specific distinguishability & identity; -- \\
+FAY-combined~\cite{fayolle2026webagents} & tool/Web; recipient & agent identity & Protocol/site features & visit & Combined fingerprint view & identity; -- \\
+FAY-blocking~\cite{fayolle2026webagents} & tool/Web; active & access outcome & Protocol/site features & visit & Access success; not privacy score & blocking; -- \\
+AT-choice~\cite{shahriar2026agenttell} & tool/Web; active & cross-origin fact & Challenge choice & two-origin session & 61.1\% loaded choice; cold-adjusted LS & none; -- \\
+ANT-scenario~\cite{li2026ant} & egress; transit & scenario & Direction/size/time & episode & Five-task accuracy .431--.727 & none; -- \\
+ANT-model-scope~\cite{li2026ant} & model/rest; transit & scenario & Direction/size/time & episode & Eight approximate model-view scores & none; -- \\
+ANT-risk~\cite{li2026ant} & egress; transit & benchmark risk label & Direction/size/time & episode & 209 episodes; risk recall .15--.95 & none; -- \\
+ANT-stage~\cite{li2026ant} & egress; transit & primitive group & Direction/size/time & primitive segment & 47-group accuracy .355--.462 & none; -- \\
+CHT-lure~\cite{ayzenshteyn2025cheat} & asset; active & LLM-based visitor presence & Lure/output/challenge & probe interaction & Presence mechanism; no natural F1 & none; -- \\
+CHT-password~\cite{ayzenshteyn2025cheat} & output; active & LLM presence & Lure/output/challenge & challenge response & Password-output control & none; -- \\
+CHT-blocking~\cite{ayzenshteyn2025cheat} & CTF; active & defender prevention success & Lure/output/challenge & CTF attempt & CTF prevention endpoint & blocking; -- \\
+PT-metadata~\cite{duan2026privacytrace} & tool; recipient & profile attributes & Tool metadata/arguments & single-domain trajectory & ASR .1453; prior .1797 & none; -- \\
+PT-content~\cite{duan2026privacytrace} & tool; recipient & profile attributes & Tool metadata/arguments & single-domain trajectory & Arguments ASR .2771 & none; -- \\
+ATR-main~\cite{zhao2026agenttrace} & tool; active & model identity & Arguments/repairs & multi-probe attribution trial & 50-probe accuracy .960 & none; -- \\
+ATR-budget~\cite{zhao2026agenttrace} & tool; active & model identity & Arguments/repairs & multi-probe attribution trial & 1--50 probes: .652--.960 & none; -- \\
+ATR-obfuscation~\cite{zhao2026agenttrace} & tool; active & model identity & Arguments/repairs & multi-probe attribution trial & Attribution above .94 & identity; -- \\
+TR-within~\cite{ediga2026trace} & terminal; recipient & model family & Terminal n-grams; SVM & terminal session & Mixed-session F1 .981 & none; -- \\
+TR-scaffold~\cite{ediga2026trace} & terminal; recipient & model family & Terminal n-grams; SVM & terminal session & Scaffold holdout F1 .815 & none; -- \\
+TR-proprietary~\cite{ediga2026trace} & terminal; recipient & model family & Terminal n-grams; SVM & terminal session & Accuracy .78; narrower models & none; -- \\
+HTTP-signature~\cite{borysenko2026http} & docs; recipient & implementation & HTTP trace & documentation-retrieval trial & 9 agents/6 services; descriptive & none; -- \\
+HP-calibration~\cite{reworr2024honeypot} & SSH; active & Agent candidate & Timing/prompt responses & controlled probe interaction & Probe timing about 1.7s & none; -- \\
+HP-field~\cite{reworr2024honeypot} & SSH; active & Agent candidate & Timing/prompt responses & field interaction/session & 8 candidates; identity unverified & none; -- \\
+\bottomrule\end{tabularx}\end{table*}

@@ -1,0 +1,19 @@
+\begin{table*}[t]\centering\small
+\caption{All frozen Qwen3:8B attacks on live-record test observations: correct out of 120 per cell. None is no cover; history-based policies sample minimum gap/response holds. Dashes indicate an attack not applied to no-cover traffic. Validation choices are reported separately from these individual test scores.}
+\label{tab:live-attacks-qwen}
+\setlength{\tabcolsep}{5pt}
+\begin{tabularx}{\textwidth}{@{}Yrrrrr@{}}\toprule
+Attack & None & Immediate & History seq. & History concurrent & Shadow\\\midrule
+Size/destination LR & 117 & 64 & 61 & 52 & 60\\
+Size/destination RF & 116 & 59 & 61 & 52 & 70\\
+Frozen no-cover classifier & 117 & 40 & 41 & 40 & 31\\
+Last destination & 114 & 75 & 76 & 66 & 54\\
+Penultimate destination & 14 & 43 & 42 & 47 & 43\\
+Direct timing + size & 104 & 60 & 57 & 47 & 64\\
+Supervised gap removal & -- & 112 & 67 & 57 & 20\\
+Label-free mixture removal & -- & 112 & 53 & 38 & 34\\
+Context removal & -- & 111 & 93 & 87 & 20\\
+Joint removal/task decoding & -- & 112 & 99 & 99 & 32\\
+Two-chain separation & -- & -- & -- & -- & 49\\
+\bottomrule\end{tabularx}
+\end{table*}

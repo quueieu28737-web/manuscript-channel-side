@@ -1,0 +1,18 @@
+\appendices
+\section{Map of Agent Communication Side-Channel Studies}\label{app:map}
+\paragraph{Inclusion and retrieval}
+A study is included if an LLM selects actions with external feedback able to affect later actions, and the study links that execution to a communication-side inference or an evaluated protection. Client, tool, model and inter-agent interfaces are eligible; transit, recipient and active observers remain separate. Whole semantic trajectories or browser instrumentation alone, deliberate covert messages and prompt-injection defenses without a communication-side endpoint are excluded~\cite{yao2026intentminer,uitraces2026}. The window covers first public submissions from 1 January 2024 through 9 November 2026. Twelve topic queries, a native arXiv query (180 records) and public-web queries (33 scholarly candidates) gave 209 records after deduplication; two citation leads brought screening to 211, of which fourteen were direct, forty adjacent, 155 outside scope and two unresolved. A retained published seed (CHeaT) gives fifteen direct sources with forty-four settings. Twelve of the fifteen lack a verified formal publication at the cutoff. Exact queries and dispositions are in Supplement S4.
+
+\paragraph{Coding and reliability}
+Each setting record binds source version and locator to access, features, learner, target, population, split, intervention, result and cost. We assigned and decided every code against the cited passage; AI tools located candidate passages and proposed drafts, which we accepted, changed or rejected. An independent security PhD researcher, blind to the manuscript and our codes, re-coded the decision-critical subset from the sources without AI tools. Access class (44/44), intervention purpose (9/9), and adaptation and utility in the four privacy settings (4/4 each) agree fully ($\kappa=1$); the protection flag agrees on 38/44 ($\kappa=.61$) and transfer relations on 5/6 ($\kappa=.77$). After adjudication of the seven disagreements against the sources, no privacy setting has both an adapted attacker and matched utility (Supplement S6.1).
+
+\paragraph{The map}
+Supplement S11 lists all forty-four settings with their interface, access, target, signal, unit, reported result and intervention evidence. Twenty-two use transit observations, ten recipient access, eleven active access and one inferred preferences. Three settings compare identity obfuscation and two adversarial-Agent blocking; thirty-four contain no protection comparison. Scores keep their source-defined metric and target and are not cross-paper rankings. Table~\ref{tab:transfer-matrix} relates the Agent evidence to established traffic-analysis conditions: a condition is \emph{retained} when it applies directly, \emph{extended} when an execution condition must be added, \emph{untested} when the Agent evidence does not evaluate it, and an \emph{access mismatch} when host instrumentation is mistaken for passive observation.
+
+\input{tables/transfer-matrix}
+
+
+\section{Defense Design Space}\label{app:defense}
+Table~\ref{tab:defense-space} lists defense layers, what each requires the defender to control, the costs to measure together and the exposure that remains.
+
+\input{tables/defense-space}
