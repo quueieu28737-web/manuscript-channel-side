@@ -1,0 +1,48 @@
+\documentclass[conference,compsoc]{IEEEtran}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{booktabs,tabularx,array,graphicx,amsmath,amssymb}
+\usepackage{placeins}
+\usepackage[dvipsnames,table]{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,fit}
+\usepackage{pgfplots}
+\usepgfplotslibrary{groupplots}
+\pgfplotsset{compat=1.18}
+\usepackage[hyphens]{url}
+\usepackage{hyperref}
+\hypersetup{hidelinks,pdfauthor={}}
+% Avoid synthetic glyphs at math/text boundaries; preserve Unicode mappings.
+\SetSymbolFont{letters}{normal}{OML}{lmm}{m}{it}
+\SetSymbolFont{letters}{bold}{OML}{lmm}{b}{it}
+\input{glyphtounicode}
+\pdfgentounicode=1
+\pdfglyphtounicode{space}{0020}
+\ifdefined\pdfinterwordspaceoff\pdfinterwordspaceoff\fi
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
+% Replace with the anonymized artifact URL before submission.
+\newcommand{\artifacturl}{[anonymized artifact link]}
+\newcommand{\papername}{SoK: Agent Communication Side Channels\\Executed Cover and Joint Privacy--State Evaluation}
+\title{\papername}
+\author{}
+\begin{document}
+\input{bibliography-order}
+\raggedbottom
+\pagestyle{plain}
+\maketitle
+\thispagestyle{plain}
+\input{sections/abstract}
+\input{sections/introduction}
+\input{sections/scope}
+\input{sections/taxonomy}
+\input{sections/correspondence}
+\input{sections/evidence}
+\input{sections/defenses}
+\input{sections/experiment}
+\input{sections/reporting}
+\input{sections/discussion}
+\FloatBarrier
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+\end{document}

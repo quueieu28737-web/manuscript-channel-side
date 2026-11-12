@@ -1,3 +1,23 @@
+# Latest manuscript: R112 Agent communication side-channel SoK
+
+**Executed Cover and Joint Privacy-State Evaluation**
+
+- [Main PDF](main.pdf) | [Supplement PDF](supplement.pdf)
+- [Compilable LaTeX ZIP](latex-source.zip)
+- [Versioned source and revision notes](releases/r112/README.md) · [修订说明](releases/r112/修订说明.md)
+
+R112 revises R111 for review points W2–W7: a cover-necessity rule and four-axis
+cover taxonomy, the shadow result read against its 7/12 pair-ambiguity floor,
+validation-selected numbers in the abstract, a study map and dispatcher figure,
+and a complete-artifact availability statement. No new runs. Main: 15 pages
+(body 12); supplement: 38 pages.
+
+---
+
+## Historical repository notes
+
+The text below records earlier releases.
+
 # Latest manuscript: R111 Agent communication side-channel SoK
 
 **Executed Cover and Joint Privacy-State Evaluation**

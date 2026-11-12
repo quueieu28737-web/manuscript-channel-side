@@ -1,0 +1,14 @@
+\begin{table*}[t]\centering\small
+\caption{Independent call-boundary audit, IoU .5, after prediction. Each row uses120 associated test episodes. Idle selects its burst gap by validation task accuracy; Protocol uses public padding/setup rules. Values are precision / recall / F1, including spurious proposed events. These truth comparisons are not attacker inputs.}\label{tab:no-call-boundaries}
+\begin{tabularx}{\textwidth}{@{}llYY@{}}\toprule Planner & Policy & Idle-gap eventization & Protocol-aware eventization \\\midrule
+Qwen & No cover & 0.000/0.000/0.000 & 0.233/0.434/0.303 \\
+Qwen & Immediate & 0.000/0.000/0.000 & 0.229/0.412/0.295 \\
+Qwen & History sequential & 0.000/0.000/0.000 & 0.272/0.489/0.350 \\
+Qwen & History concurrent & 0.000/0.001/0.000 & 0.266/0.478/0.342 \\
+Qwen & Shadow & 0.012/0.078/0.021 & 0.390/0.612/0.476 \\
+Llama & No cover & 0.000/0.000/0.000 & 0.294/0.510/0.373 \\
+Llama & Immediate & 0.000/0.000/0.000 & 0.302/0.512/0.380 \\
+Llama & History sequential & 0.000/0.000/0.000 & 0.378/0.641/0.476 \\
+Llama & History concurrent & 0.357/0.802/0.494 & 0.358/0.606/0.450 \\
+Llama & Shadow & 0.000/0.000/0.000 & 0.428/0.637/0.512 \\
+\bottomrule\end{tabularx}\end{table*}

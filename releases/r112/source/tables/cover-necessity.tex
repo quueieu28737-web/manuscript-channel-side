@@ -1,0 +1,10 @@
+\begin{table}[t]\centering\footnotesize
+\caption{When cover must execute. Transport cover needs a defender-controlled terminator located after the observer and before the business service. Without one, cover can hide the real call only by arriving as a real call.}\label{tab:cover-necessity}
+\setlength{\tabcolsep}{3pt}
+\begin{tabularx}{\columnwidth}{@{}P{.27\columnwidth}P{.2\columnwidth}Y@{}}\toprule
+Observer $\to$ service & Terminator after observer? & Cover that can work \\\midrule
+Egress $\to$ own service & Yes (own tunnel) & Transport cover suffices~\cite{apthorpe2019stp} \\\addlinespace[2pt]
+Egress $\to$ third-party SaaS or remote MCP & No & Executed cover; isolation only if the provider offers it \\\addlinespace[2pt]
+Recipient (tool provider) & No & Executed cover whose arguments must also be plausible to the recipient \\\addlinespace[2pt]
+TLS-terminating gateway & After gateway only & Executed cover, or trust the gateway with content \\\bottomrule
+\end{tabularx}\end{table}
