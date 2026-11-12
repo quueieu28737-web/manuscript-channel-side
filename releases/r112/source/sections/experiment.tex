@@ -1,0 +1,18 @@
+\section{A Joint Evaluation of Executed Cover}\label{sec:experiment}
+\textbf{The dispatcher changes residual inference and resource use; business correctness needs its own endpoint.}
+Table~\ref{tab:study-map} lists the populations used here. Each keeps its own denominators, and only the families named there are primary.
+
+\input{tables/study-map}
+
+\paragraph{Statistical conventions}
+These apply throughout this section and are not repeated. \emph{Sel.}\ is the attack chosen on validation data before test scoring; primary tests use only these choices. \emph{Max} is the largest test count in a finite attack suite; it is descriptive and is not an upper bound on inference. \emph{Exploratory} marks an analysis designed after test results were seen. Intervals condition on the fitted attacks and the designed workload. All runs are on one host over loopback with synthetic tools and fixtures reused across studies; Section~\ref{sec:validity} lists what this does not test.
+
+\input{figures/dispatch-timeline}
+\input{sections/executed-cover-main}
+\input{sections/no-call-main}
+\subsection{Business constraints and the protection decision}\label{sec:business}
+Every live cover arm executes in isolated state and hides cover feedback from the real planner. Table~\ref{tab:live-timing-main} reports goal/state counts on the same fixtures as inference and costs. Shadow outcomes are 112/113 for Qwen and 82/67 for Llama, versus no-cover 113/114 and 82/70. These are different endpoint counts: a correctly preserved state need not contain a successful intended action. Low Llama baseline performance and changed planning paths limit business-equivalence conclusions.
+
+The earlier six-policy study supplies a deliberately adverse state control (Supplement S1). Read/proxy/hidden-isolated cover retains Qwen state correctness at 115--116/120. Live writes can alter other objects and reduce it to 7/120; 95 of 102 completed Qwen tasks have collateral errors. Llama's corresponding counts are 3/120 intact and 73 of 76 completed tasks with collateral errors. The harm direction is built into that stress condition: it tests whether the evaluation records forbidden effects, not how often production writes cause them.
+
+The combined decision is concrete. Immediate cover leaves high inference after removal. Historical dispatch changes that attack but retains substantial adapted inference. Shadow execution trades model work for a trace whose strongest tested attack sits at the design's pair-ambiguity floor; lowering that floor needs more shadows. An adverse write can fail the state contract even when the requested goal passes. Choosing a policy requires stating acceptable inference, task, state and resource tolerances rather than comparing a single accuracy decrease.
