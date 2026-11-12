@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "zip_sha256": "39ac81a101cd714f7bfb2e2cd5311f9d828010924ce6eaec919a724e6aa23881",
+  "documents": [
+    {
+      "document": "main",
+      "pages": 14,
+      "page_texts": "identical",
+      "page_content_streams": "identical",
+      "bibliography": "identical"
+    },
+    {
+      "document": "supplement",
+      "pages": 38,
+      "page_texts": "identical",
+      "page_content_streams": "identical",
+      "bibliography": "identical"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "status": "COMPLETE",
+  "reviewed_utc": "2026-11-12T03:17:16.401474+00:00",
+  "reviewer": "Primary assistant; no independent reviewer was used",
+  "pdfs": {
+    "main": {
+      "sha256": "ecb2d9ed9c694151bf92e858315b91c22a068cf85e9fb91391822686716dde4d",
+      "pages": 14
+    },
+    "supplement": {
+      "sha256": "8b5e3021a4cb1c62fc87691906af6d548a60c319efcbf602a48699c9ec11c801",
+      "pages": 38
+    }
+  },
+  "coverage": "All 14 main and 38 supplement pages inspected in rendered contact sheets; final main matrix pages 5/6 and supplement result page 12 additionally inspected at full page resolution.",
+  "observed": "No clipped or overlapping tables, missing glyphs, detached cell text, blank pages or unreadable result columns observed. Dedicated float pages contain intentional whitespace.",
+  "scope": "Layout judgment on these bytes, not independent scientific validation or venue acceptance."
+}

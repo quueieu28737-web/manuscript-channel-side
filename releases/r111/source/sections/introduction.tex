@@ -1,0 +1,20 @@
+\section{Introduction}
+An Agent receives a support ticket, checks an order and submits a refund. An observer sees the contacted services, encrypted message sizes and gaps between requests. A defender adds decoy calls to obscure the real task. Those calls create two outputs: an observable communication trace and work performed by the application. A decoy may stop at a relay, execute on isolated state, or consume a business resource. Evaluating its traffic alone leaves the second output unmeasured.
+
+\input{figures/ticket-threat-model}
+
+\paragraph{The research question}
+How should Agent communication defenses be evaluated when cover is executable work? We systematize fifteen Agent studies, with forty-four settings, against twenty-two traffic-analysis anchors. The central contribution is a joint evaluation of residual inference, original-task completion, business state and resource cost under the same intervention. The evidence map identifies which existing results can populate that record; a controlled case applies it to controller-generated and planner-generated cover.
+
+\textbf{A privacy result needs outcomes from the same protected execution.} WRA's published research decoys reduce query recovery from .770 to .565, while its report-utility scores 8.55 and 8.54 belong to a different intervention that changes destination visibility~\cite{jeong2026wra}. The communication-graph study refits an attacker on protected OHTTP captures and reports traffic cost, but its matched original-task utility is unresolved~\cite{dangol2026workflow}. Across the four mapped query/workflow privacy settings from these two sources, none documents both attack adaptation and matched task utility. This is a concrete missing connection between measurements, not an estimate of how often the entire field omits it.
+
+\textbf{The process generating cover is itself observable.} Honest tool calls follow model decisions; controller-inserted calls can skip that wait. In 3,000 executions with two fixed-weight planners over real MCP, TLS~1.3 and HTTP/2, given call boundaries, gap-based removal without cover-role labels restores recognition to 112/120 and 108/120. Historical-gap dispatch changes that shortcut, but adapted attacks remain effective. A complete shadow planner creates a different trace and approximately doubles model tokens. The case reports the strongest tested attacks alongside the frozen validation choices, and evaluates task, state and costs on the same runs.
+
+Established WF and ML-security work already requires realistic observation units, protected-condition attacks and matched costs~\cite{juarez2014critical,mathews2023critical,arp2022dos,tramer2020adaptive}. Agent execution adds the need to specify where cover terminates, what privileges it has and whether its results return to the planner. Tool feedback also reaches later model requests, making service access part of protection scope. We use that relationship to organize residual views, rather than claim a new, isolated causal result from the inconclusive forwarding pilot.
+
+\paragraph{Contributions}
+\begin{itemize}
+\item \textbf{An execution-aware field map}: all forty-four settings appear in a compact main-text matrix, with interfaces, observation rights, targets, signals, units, reported results and intervention evidence. The transfer matrix connects the Agent evidence to established communication analysis (Sections~\ref{sec:scope}--\ref{sec:correspondence}).
+\item \textbf{A joint privacy--business evaluation protocol}: cover termination and execution authority determine the state, task and resource outcomes that must accompany residual inference. A reusable checklist and source-matched examples make the protocol concrete (Sections~\ref{sec:evidence}, \ref{sec:defenses}, \ref{sec:reporting}).
+\item \textbf{A worked technical case}: actual controller and shadow dispatch, timing-aware removal, strongest tested inference and business outcomes expose which protection decisions each measurement supports. A record-only reanalysis removes supplied call boundaries while retaining episode association (Section~\ref{sec:experiment}).
+\end{itemize}

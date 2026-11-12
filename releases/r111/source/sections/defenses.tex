@@ -1,0 +1,9 @@
+\section{Defense Mechanisms and Execution Costs}\label{sec:defenses}
+\textbf{The layer that controls a signal determines which protection and business costs it can change.}
+Table~\ref{tab:defense-space} classifies naming, representation, scheduling, transport cover, execution cover and shared-state isolation. The map extends traffic-budget comparisons with tool privileges, business state and model work.
+
+\input{tables/defense-space}
+
+Name hiding changes destination association; message padding changes lengths; pacing changes timing and termination. STP's tunnel endpoints discard cover before devices process it~\cite{apthorpe2019stp}. Walkie-Talkie, FRONT, Adaptive Padding and WTF-PAD supply different scheduling and overhead choices~\cite{wang2017walkietalkie,gong2020front,shmatikov2006adaptive,juarez2016wtfpad}. Their evaluation lessons carry over, while executed research or tool calls add application work. Matching interarrival marginals alone is not a new security principle: receive-dependent padding already models request--response dependencies. The Agent-specific object tested here is the controller/model decision process that generates tool calls.
+
+Model services introduce additional timing and sharing signals. Token streams, cache behavior and token count can remain observable under particular interfaces~\cite{weiss2024prompt,whisperleak2025,earlybird2025,timewilltell2024,carlini2024timing,wu2026cacheprune}. A tool-message padding rule does not determine a later model request's shape. In the separate concurrent pilot, one constant-rate policy increases model bytes 19.5--22.5 times without a consistent inference improvement; this is a measured implementation, not a verdict on all pacing designs. Defense comparisons should report the achieved downstream trace, task/state outcomes and resources together.

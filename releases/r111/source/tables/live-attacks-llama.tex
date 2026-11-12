@@ -1,0 +1,19 @@
+\begin{table*}[t]\centering\small
+\caption{All frozen Llama3.1:8B attacks on live-record test observations: correct out of 120 per cell. None is no cover; history-based policies sample minimum gap/response holds. Dashes indicate an attack not applied to no-cover traffic. Validation choices are reported separately from these individual test scores.}
+\label{tab:live-attacks-llama}
+\setlength{\tabcolsep}{5pt}
+\begin{tabularx}{\textwidth}{@{}Yrrrrr@{}}\toprule
+Attack & None & Immediate & History seq. & History concurrent & Shadow\\\midrule
+Size/destination LR & 110 & 82 & 79 & 68 & 59\\
+Size/destination RF & 112 & 80 & 82 & 68 & 64\\
+Frozen no-cover classifier & 110 & 54 & 57 & 57 & 43\\
+Last destination & 80 & 65 & 65 & 48 & 43\\
+Penultimate destination & 66 & 65 & 64 & 64 & 46\\
+Direct timing + size & 110 & 77 & 81 & 75 & 59\\
+Supervised gap removal & -- & 108 & 100 & 98 & 20\\
+Label-free mixture removal & -- & 108 & 14 & 66 & 43\\
+Context removal & -- & 108 & 101 & 103 & 20\\
+Joint removal/task decoding & -- & 108 & 104 & 106 & 33\\
+Two-chain separation & -- & -- & -- & -- & 34\\
+\bottomrule\end{tabularx}
+\end{table*}

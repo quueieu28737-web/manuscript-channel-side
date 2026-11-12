@@ -1,4 +1,11 @@
-\section{Controlled Measurements at the Two Boundaries}\label{sec:experiment}
-The cover study measures recognition, task completion, state integrity and cost on matched executions. Its timing reanalysis tests whether an attacker can remove the cover itself. A separate forwarding/concurrency pilot retains its own population and inferential results.
+\section{A Joint Evaluation of Executed Cover}\label{sec:experiment}
+\textbf{Cover generation changes residual inference and resource use, while business correctness requires a separate endpoint.}
+The five-arm live study compares dispatch policies on actual TLS records. A record-only extension withdraws call boundaries; a separate earlier state control tests whether completion alone can miss collateral effects. These populations and their statistical roles remain separate.
 \input{sections/executed-cover-main}
-\input{sections/feedback-compact-main}
+\input{sections/no-call-main}
+\subsection{Business constraints and the protection decision}
+Every live cover arm executes in isolated state and hides cover feedback from the real planner. Table~\ref{tab:live-timing-main} reports goal/state counts on the same fixtures as inference and costs. Shadow outcomes are 112/113 for Qwen and 82/67 for Llama, versus no-cover 113/114 and 82/70. These are different endpoint counts: a correctly preserved state need not contain a successful intended action. Low Llama baseline performance and changed planning paths limit business-equivalence conclusions.
+
+The earlier six-policy study supplies a deliberately adverse state control (Supplement S10). Read/proxy/hidden-isolated cover retains Qwen state correctness at 115--116/120. Live writes can alter other objects and reduce it to 7/120; 95 of 102 completed Qwen tasks have collateral errors. Llama's corresponding counts are 3/120 intact and 73 of 76 completed tasks with collateral errors. The harm direction is built into that stress condition; its role is to test whether the evaluation records forbidden effects, not estimate production harms or reproduce WRA decoys.
+
+The combined decision is concrete. Immediate cover leaves high inference after removal. Historical dispatch changes that attack but retains substantial adapted inference. Shadow execution trades additional model work for a different observed trace, with residual task recognition. An adverse write can fail the state contract even when the requested goal passes. Choosing a policy requires stating acceptable inference, task, state and resource tolerances rather than comparing a single accuracy decrease.

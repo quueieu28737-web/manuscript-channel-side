@@ -1,0 +1,26 @@
+{
+  "status": "PASS_FOR_LOCAL_DELIVERY",
+  "created_utc": "2026-11-12T03:17:16.401474+00:00",
+  "original_document_receipt_sha256": "82b517dcce90ac4e42307b05008f0cd3d0d79d5de71f0957e37fbbe92df233ef",
+  "scope": "R111 analysis arithmetic/input binding, current-paper alignment, PDF/source integrity and local distribution scope. Not an institutional security/privacy audit or submission-acceptance decision.",
+  "analysis_checks": 4041,
+  "matrix_settings": 44,
+  "source_zip_files": 78,
+  "recursive_zip_members_scanned": 160,
+  "credential_or_prohibited_artifact_matches": 0,
+  "standalone_compile": "Same page text, content streams and bibliography for both documents",
+  "visual_pages": 52,
+  "individual_metadata_policy": "LOCAL ONLY; no upload, public repository update or new export consent",
+  "original_r110_bytes_unchanged": {
+    "revision-preview/r110-live-timing/output/pdf/main.pdf": "87b18a3cc8cba3a96f035ed87f7d6bb62e9fad82aed43aae51a690a3d954b01d",
+    "revision-preview/r110-live-timing/output/pdf/supplement.pdf": "8fedd5b3288e0dbecd67335daef2e6263ff6bd9cc5709a73322fb39d05b5837f",
+    "revision-preview/r110-live-timing/output/latex-source.zip": "43a9577032a54842b07811e500dafdadb187e274c72a1f25f26444031a0c3558"
+  },
+  "remaining_scientific_limits": [
+    "Episode-associated connection bundles remain supplied; continuous-stream task discovery is not evaluated.",
+    "Reuses previously studied synthetic fixtures and local services; no new independent cohort or LLM requests.",
+    "Protocol-aware eventization is exploratory after first-suite test inspection; primary tests are unchanged.",
+    "Finite tested attack maxima do not bound every possible attacker.",
+    "Sparse source dependence and the adverse-write stress control remain disclosed."
+  ]
+}

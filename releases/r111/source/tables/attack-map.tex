@@ -1,0 +1,30 @@
+\begin{table*}[t]\centering\small
+\caption{Attack field map, panel A: transit observations. Scores retain their metric, task and supplied unit; they are representative reported operating points, not a cross-paper ranking. The matrix records all forty-four settings. P: inspected preprint; V: inspected publisher version.}
+\label{fig:capabilities}\label{tab:attack-map}
+\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\textwidth}{@{}P{.12\textwidth}P{.14\textwidth}P{.20\textwidth}P{.13\textwidth}Y@{}}\toprule
+Interface / observer & Work / target & Observable features / learner & Evaluation unit & Reported result and boundary \\\midrule
+Client--agent; transit & AgentPrint [P]~\cite{agentprint2025}; hosted agent & Directional packet counts/bytes in 1,800 relative-time bins; CNN & Supplied browser interaction & Mixed-flow macro-F1: .8660 closed, .8477 open; 50 monitored agents. Behavior-F1 conflict is kept separate. \\\addlinespace[3pt]
+Agent--Web; transit & WRA [V]~\cite{jeong2026wra}; research query & Contacted domains and timing; ICL or fine-tuned LLM & Supplied research trace & Functional query recovery .770 with domains; .725 with domains plus timing in the compared visibility views. This is a reconstruction score. \\\addlinespace[3pt]
+Inter-agent / tools; transit & Communication graphs [P]~\cite{dangol2026workflow}; workflow & Message/graph, size and timing descriptors; random forest & Workflow record & Nine-class accuracy .67; within-label composition holdout .18. The live defense test instead has six classes. \\\addlinespace[3pt]
+Agent--model; transit & Cloud benchmark [P]~\cite{pouryousef2026traffic}; assigned task & 247 traffic descriptors; random forest & Logged successful run & Ten-class balanced accuracy .853/.860 for graph/star coordination. Size-excluded feature protocols score .540/.587. \\\addlinespace[3pt]
+Agent--Web; transit & PersonaFingerprint [P]~\cite{song2026personafingerprint}; browsing persona & Signed lengths/interarrival times; CNN representation and prediction heads & Fixed packet window; session split & Per-site macro-F1 about .78--.91; pooled-summary discrepancy excluded from synthesis. Explicit other-class tests have a different population. \\\addlinespace[3pt]
+Combined egress, M or remaining links; transit & ANT [P]~\cite{li2026ant}; task, primitive, risk & Direction/length/time; 13 learners including DF and TikTok & Supplied episode or logged stage & Five-task accuracy .431--.727; 47-primitive accuracy .355--.462. Risk test: 20 positive/189 negative, requiring recall and false alarms. \\\bottomrule
+\end{tabularx}\end{table*}
+
+\begin{table*}[t]\centering\small
+\caption{Attack field map, panel B: contacted recipients and active auditors. These observers see requests addressed to them or issue probes; their results do not measure encrypted-transit inference. E: inspected extended preprint with a separately verified published short version. NR: no recognition rate reported in the mapped setting. ASR: attack success rate.}
+\label{tab:attack-recipient}
+\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\textwidth}{@{}P{.13\textwidth}P{.18\textwidth}P{.23\textwidth}Y@{}}\toprule
+Interface / access & Work / target & Observable features / learner & Reported result and evaluation boundary \\\midrule
+Web recipient & MARK [P]~\cite{kang2026whoseagent}; client identity & TLS/HTTP2 and headers; decision tree & F1 .725 for TLS/HTTP2, .799 for headers; .971 combined with browser instrumentation, a richer view. First-pass trials. \\\addlinespace[3pt]
+Web recipient & Fayolle et al. [P]~\cite{fayolle2026webagents}; client / access & Protocol signatures; richer behavior classifier and site challenges & Fingerprint analysis excludes failed visits. Access success is separately verified through form/cookie/page identifiers; not a privacy score. \\\addlinespace[3pt]
+Documentation recipient & HTTP signatures [E]~\cite{borysenko2026http}; service/client & Request method/version, headers and origin; descriptive comparison & Nine coding agents and six assistants, three trials each; NR. Request signatures are observations, not a held-out identification rate. \\\addlinespace[3pt]
+Terminal recipient & Trace [P]~\cite{ediga2026trace}; model family & Command TF-IDF unigrams/bigrams; linear SVM & Seven families; 2,028 clean/injected sessions: macro-F1 .981; held-out scaffold .815. A separate proprietary-scaffold test reports 78\% accuracy. \\\addlinespace[3pt]
+Tool interface; active audit & AgentTrace [P]~\cite{zhao2026agenttrace}; model identity & Serialized arguments, parser errors and repair order; Markov likelihood & Six models, 50 held-out probes per trial: 96.0\% accuracy; 10 probes: 92.8\%. Repeated stochastic trials reuse probe identities. \\\addlinespace[3pt]
+Web recipient; active choice & AgentTell [P]~\cite{shahriar2026agenttell}; prior-origin fact & Which offered action is requested; loaded/cold comparison & Matching choice in 61.1\% of 7,630 loaded sessions; the leakage measure subtracts cold matching. Actions share a completable probe task. \\\addlinespace[3pt]
+Tool recipient / gateway & PrivacyTrace [P]~\cite{duan2026privacytrace}; profile attribute & Tool metadata/order; content-added LLM inference & Metadata ASR 14.53\%, schema prior 17.97\%; arguments 27.71\%. 68,000 attribute slots are clustered within 4,000 trajectories. \\\addlinespace[3pt]
+Contacted asset; active challenge & CHeaT [V]~\cite{ayzenshteyn2025cheat}; agent presence & Planted URL following; separate password-output control & Presence-detection mechanisms, NR for natural-traffic classification. Capture-the-flag prevention is a distinct endpoint (Supplement S7). \\\addlinespace[3pt]
+SSH recipient; active probes & LLM Agent Honeypot [P]~\cite{reworr2024honeypot}; possible agent & Prompt compliance and response-time heuristic & Three-month deployment: eight candidate agents among 8,130,731 interactions. No externally verified field labels or detection precision/recall. \\\bottomrule
+\end{tabularx}\end{table*}

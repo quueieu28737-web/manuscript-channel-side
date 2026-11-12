@@ -1,0 +1,17 @@
+\begin{table*}[t]\centering\small
+\caption{Call-window clock diagnostics across all 300 fixtures per cell. Relay versus independent packet completion errors, in milliseconds. Values are absolute-error median / 99th percentile / maximum. Every call retains its chronological order under the packet clock. Setup/teardown records are excluded from this table.}
+\label{tab:live-clock}
+\begin{tabularx}{\textwidth}{@{}lYrrr@{}}\toprule
+Model & Arm & Call windows & Start: median / p99 / max & End: median / p99 / max\\\midrule
+Qwen & None & 1218 & 0.58 / 7.67 / 18.01 & 0.42 / 5.89 / 9.21 \\
+Qwen & Immediate & 1673 & 1.70 / 8.57 / 32.76 & 1.23 / 4.20 / 7.98 \\
+Qwen & History seq. & 1671 & 1.46 / 8.03 / 10.62 & 1.07 / 4.36 / 7.02 \\
+Qwen & History concurrent & 1672 & 1.74 / 26.06 / 42.48 & 1.36 / 11.96 / 89.31 \\
+Qwen & Shadow & 2411 & 2.17 / 57.62 / 148.39 & 1.72 / 25.46 / 116.16 \\
+Llama & None & 1536 & 0.84 / 7.55 / 68.03 & 0.62 / 5.27 / 8.95 \\
+Llama & Immediate & 1998 & 0.58 / 4.49 / 17.04 & 0.41 / 2.31 / 5.63 \\
+Llama & History seq. & 1996 & 0.50 / 4.19 / 9.63 & 0.39 / 2.40 / 4.50 \\
+Llama & History concurrent & 2002 & 0.58 / 5.54 / 71.35 & 0.43 / 6.65 / 29.04 \\
+Llama & Shadow & 3067 & 0.72 / 12.10 / 99.22 & 0.64 / 9.71 / 89.08 \\
+\bottomrule\end{tabularx}
+\end{table*}

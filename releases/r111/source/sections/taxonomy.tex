@@ -1,0 +1,11 @@
+\section{Threat Model and Classification}\label{sec:taxonomy}
+\textbf{A result is meaningful only for the target and observations actually supplied to its attacker.}
+The ticket example has client--Agent, Agent--model, Agent--tool and coordination links (Figure~\ref{fig:chain}). A transit observer sees connection destinations, directions, lengths and times. A contacted service reads the request addressed to it; an active auditor can also choose challenges. Table~\ref{tab:deployment-access} maps these rights to deployment configurations. The same traffic may encode requested intent, a logged action or successful execution. Authorization additionally requires the principal and policy context: identifying a refund does not decide whether it was approved.
+
+\input{tables/deployment-access}
+
+\subsection{What is observed and what is predicted}
+A captured packet, TLS record, HTTP stream, tool call and complete task are different units. A gateway can regroup streamed output; HTTP/2 and QUIC can multiplex streams; MCP may use local stdio or remote HTTP~\cite{mcp2025transports,rfc9113,rfc9114,rfc9000,rfc8446}. A boundary supplied by the evaluator is prior information, not a classifier output. Six fields specify each inference setting: interface and representation, observer access, supplied prior information, prediction target, evaluation population and base rate, and protected-training access. Host traces can supply experimental truth without becoming transit-visible features~\cite{reynolds2006wap5,tak2009vpath}.
+
+\subsection{Why execution matters to cover}
+Transport cover can end before a business tool. Executed cover crosses an application boundary: it may consume quota, access other objects, update state or enter the planner's context. We classify a policy by its termination point, state isolation, feedback visibility and dispatcher. These choices determine both its observable signal and the original task's execution budget. Information forwarded to another service creates another permitted observation; it does not imply that every service is visible to the same attacker.

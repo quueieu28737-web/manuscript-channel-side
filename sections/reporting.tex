@@ -1,21 +1,16 @@
-\section{Evaluating Both Boundaries}\label{sec:reporting}
-An intervention needs one record linking the attacker's remaining observations to the original task and allowed collateral effects. Table~\ref{tab:availability} shows why this joint record matters: among four query/workflow privacy settings from two sources, adaptation is documented in two and matched original-task utility in one, with no setting documenting both. The adapted settings share a preprint; the utility observation is WRA's published visibility comparison. These are descriptive counts of inspected configurations.
+\section{A Reusable Joint Evaluation Protocol}\label{sec:reporting}
+\textbf{Privacy, task success, business state and cost must refer to the same intervention and evaluation population.}
+Table~\ref{tab:joint-checklist} is a compact reporting form; the procedure below explains how to use it. It combines established security-evaluation guidance~\cite{arp2022dos,juarez2014critical,mathews2023critical,tramer2020adaptive} with explicit cover execution constraints. It is a reporting proposal, not a measured analyst-performance improvement.
 
+\input{tables/joint-checklist}
 \input{tables/evidence-availability}
-\input{tables/open-questions}
-
-\subsection{A minimal evaluation procedure}
-The following procedure connects established evaluation guidance~\cite{arp2022dos,juarez2014critical,mathews2023critical} to the information and action boundaries. It is a proposed reporting procedure, illustrated by the controlled cover case. The six observation-contract fields in Section~3 specify an inference setting; the eight checklist items organize the broader study report, including its outcomes, uncertainty and provenance.
 
 \begin{enumerate}
-\item \textbf{Declare the target and permitted observations.} Name the private fact, visible model/tool/recipient interfaces, access rights and any supplied execution windows. Track where tool results are forwarded.
-\item \textbf{Declare the allowed execution effects.} Specify the original goal, other objects that may change, resource budgets and what cover may return to the planner. Use business invariants that permit legitimate concurrent updates; exact state equality fits only a correspondingly constrained fixture.
-\item \textbf{Pair protection, attacks and outcomes.} Evaluate the baseline and intervention on matched tasks. Train permitted attackers on protected executions and include detection--removal attacks that exploit cover timing or position. Record goal completion, completed tasks violating the state contract, and bytes, delay and resource use on those same runs.
-\item \textbf{Make the decision against stated tolerances.} Report attack-specific inference and uncertainty together with task, state and resource tolerances fixed before evaluation. A completed task with a state change outside the declared contract fails its utility requirement. Successful inference on another permitted view defeats a claim of containment across those views. An unsuccessful tested attack supplies no general secrecy guarantee.
+\item \textbf{Specify observations and execution authority.} Name the hidden target, visible links, recipient rights and supplied boundaries. State where cover ends, which state it can access and whether its responses reach the planner.
+\item \textbf{Specify business invariants and budgets.} Define the original goal, allowed collateral transitions and quota/token/latency tolerances. Separate a goal that was attempted, one that completed and a whole execution satisfying its state contract.
+\item \textbf{Measure matched executions and adapted attacks.} Pair baseline and policy on the same workload. Include cover-detection/removal and schedule-aware attacks, plus the largest tested residual inference. Report original-task outcomes and all resource costs from those protected runs.
+\item \textbf{Decide using the declared tolerances.} An execution outside its state or resource contract fails that requirement even if its goal passes. An attacker exceeding the allowed inference threshold defeats the corresponding protection claim. Passing a finite attack suite is not a general secrecy proof.
 \end{enumerate}
 
-\paragraph{Worked application}
-Section~\ref{sec:cover-study} follows steps 1--3 for a tool-metadata observer. Step 4 is where completion-only reporting would have failed: live writes pass the goal predicate in 102/120 Qwen runs but violate the state contract in 95 of them. Supplement S8 derives the fixture contract; Supplement S9 adds the timing-informed residual view.
-
-\subsection{Reusable forms}
-Supplement S5 provides the eight-field checklist, its correspondence to established guidance, and completed WRA, OHTTP and ANT forms. Each form records evidence, a missing item or inapplicability. Identity-obfuscation (3), adversarial-Agent blocking (2) and non-protection (35) settings keep separate denominators. The access map assigns 22 transit, 10 recipient, 11 active and one downstream preference setting.
+\paragraph{Source-matched examples}
+WRA-decoy fills the privacy and extra-research fields, while its original-task quality under that intervention is unresolved. WRA-visibility supplies matched quality, but for a different policy. Live OHTTP supplies adapted inference and traffic cost, while original-task utility remains unresolved. ANT supplies observation/label evidence without a protection comparison. These entries preserve each study's scope; they are not paper-quality scores. Supplement S7 gives the complete source-located forms.

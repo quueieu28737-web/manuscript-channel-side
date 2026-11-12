@@ -1,0 +1,19 @@
+\begin{table*}[t]\centering\small
+\caption{Live test-set costs. Real and All are mean seconds from admission to real-planner finish and to all planner/tool-response completion, respectively; both exclude session setup/teardown. Record span is the mean first-to-last tool-record observation. Unique/Call bytes are summed-byte factors versus no cover for complete connections and supplied call windows. Calls count all tool/model calls per fixture; token factors include the shadow planner. These are observed costs under persistent caches and phase order, not isolated causal speed measurements.}
+\label{tab:live-costs}
+\setlength{\tabcolsep}{3.2pt}
+\begin{tabularx}{\textwidth}{@{}lYrrrrrrrr@{}}\toprule
+Model & Arm & Real s & All s & Span s & Unique$\times$ & Call$\times$ & Tool calls & Model calls & Tokens$\times$\\\midrule
+Qwen & None & 2.912 & 2.912 & 2.272 & 1.00 & 1.00 & 4.08 & 4.08 & 1.00 \\
+Qwen & Immediate & 3.575 & 3.575 & 2.899 & 1.15 & 1.33 & 5.60 & 4.08 & 1.00 \\
+Qwen & History seq. & 4.280 & 4.280 & 3.611 & 1.15 & 1.32 & 5.59 & 4.08 & 1.00 \\
+Qwen & History concurrent & 3.328 & 3.369 & 2.896 & 1.15 & 1.33 & 5.60 & 4.08 & 1.00 \\
+Qwen & Shadow & 4.804 & 5.543 & 4.681 & 1.31 & 1.68 & 8.14 & 8.14 & 2.01 \\
+\midrule
+Llama & None & 3.332 & 3.332 & 2.759 & 1.00 & 1.00 & 5.24 & 5.24 & 1.00 \\
+Llama & Immediate & 2.916 & 2.916 & 2.420 & 1.13 & 1.27 & 6.80 & 5.28 & 1.01 \\
+Llama & History seq. & 3.822 & 3.822 & 3.339 & 1.13 & 1.26 & 6.80 & 5.28 & 1.01 \\
+Llama & History concurrent & 2.791 & 2.835 & 2.448 & 1.13 & 1.27 & 6.83 & 5.31 & 1.02 \\
+Llama & Shadow & 3.939 & 4.643 & 4.087 & 1.35 & 1.71 & 10.46 & 10.45 & 1.99 \\
+\bottomrule\end{tabularx}
+\end{table*}

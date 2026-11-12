@@ -1,0 +1,44 @@
+{
+  "status": "PASS",
+  "pdfs": {
+    "main": {
+      "sha256": "ecb2d9ed9c694151bf92e858315b91c22a068cf85e9fb91391822686716dde4d",
+      "pages": 14,
+      "bytes": 260706,
+      "log_sha256": "0d6ee6199f521cc2a62a90efb301b60bf504b0b6999e6d93526d587f6d59ab6a",
+      "contacts": [
+        "tmp\\pdfs\\main-contact-01.jpg",
+        "tmp\\pdfs\\main-contact-02.jpg",
+        "tmp\\pdfs\\main-contact-03.jpg",
+        "tmp\\pdfs\\main-contact-04.jpg"
+      ],
+      "bibliography_entries": 64
+    },
+    "supplement": {
+      "sha256": "8b5e3021a4cb1c62fc87691906af6d548a60c319efcbf602a48699c9ec11c801",
+      "pages": 38,
+      "bytes": 436329,
+      "log_sha256": "5e72cab888e4a96dc7a1e78ee09c2453c4fbf83b5bc2ef0d9f0d5eeea8714d10",
+      "contacts": [
+        "tmp\\pdfs\\supplement-contact-01.jpg",
+        "tmp\\pdfs\\supplement-contact-02.jpg",
+        "tmp\\pdfs\\supplement-contact-03.jpg",
+        "tmp\\pdfs\\supplement-contact-04.jpg",
+        "tmp\\pdfs\\supplement-contact-05.jpg",
+        "tmp\\pdfs\\supplement-contact-06.jpg",
+        "tmp\\pdfs\\supplement-contact-07.jpg",
+        "tmp\\pdfs\\supplement-contact-08.jpg",
+        "tmp\\pdfs\\supplement-contact-09.jpg",
+        "tmp\\pdfs\\supplement-contact-10.jpg"
+      ],
+      "bibliography_entries": 62
+    }
+  },
+  "visual_review": {
+    "status": "COMPLETE",
+    "receipt": "verification/visual-review.json",
+    "pages": 52
+  },
+  "main_reference_start_page": 12,
+  "shared_numbered_references": 62
+}

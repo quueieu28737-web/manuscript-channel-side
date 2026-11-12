@@ -1,36 +1,11 @@
-\section{Reading the Evidence Map}\label{sec:taxonomy}
-The same ticket can expose different facts at the network link, the tool recipient and the model service.
-\subsection{From private task to observed execution}
-An execution maps a hidden task or state through an agent policy and environment into communication, then into an observer's features:
-\begin{center}
-\begin{tabular}{c}
-hidden task/state $\longrightarrow$ agent execution\\
-$\longrightarrow$ observed communication $\longrightarrow$ inference.
-\end{tabular}
-\end{center}
-Different cuts through this chain expose different objects. A client link can reveal response mode or hosted-agent identity. Tool egress exposes contacted services and request/response shape. The model link carries prompts, tool feedback and model responses. Inter-agent links expose delegation and coordination. Figure~\ref{fig:chain} places these observations on the feedback path.
-
-
-
-
-\subsection{What the inferred label means}
-The ticket example separates four labels. \emph{Intent} is the requested objective or assigned task family. \emph{Execution} is the recorded action sequence. \emph{Success} states whether that sequence and its final state meet the task's criterion. \emph{Authorization} states whether the action is permitted for the principal under the applicable policy. A failed refund task can still contain a refund attempt; a successful refund can still be unauthorized. An evaluation should bind its target to the corresponding reference instead of letting one label stand for all four.
-
-Exposure is relative to both the target and the observer. The same execution may expose intended-task information on M and actual contacted services on T. Initial instructions, tool feedback and later decisions all contribute to the complete M trace. Assigning a task-family label to that trace measures intention recognition; attributing the signal to a particular feedback step requires a further controlled comparison.
-
-
-\subsection{What each record specifies}
-Six fields give a score its meaning: the \emph{interface and visible representation}; \emph{observer access}; \emph{prior information} supplied by the evaluator; \emph{target}; \emph{population and base rate}; and \emph{protected training access}. These fields define the comparison record. The matrix records the fields once; the reporting checklist in Section~\ref{sec:reporting} turns them into entries for future studies.
-
-Access determines what a feature can mean. A server can inspect decrypted HTTP/2 properties that a transit observer cannot. The content-aware MCP study's ``metadata'' includes argument hashes, and its graph uses content matches~\cite[Secs.~4.1--4.2]{zavrak2026content}. Its representation therefore requires more than packet metadata. Logs and browser instrumentation can provide evaluation labels without becoming attacker inputs.
-
-ANT's supplied stage boundary is prior information; its 2,101 stages and 47 labels define the decision population; the primitive is the target~\cite{li2026ant}. In the live OHTTP comparison, an unchanged random-forest (RF) family refits on protected data, so it is an adapted attacker~\cite{dangol2026workflow}.
-
-\subsection{Deployment determines who can see each signal}
-Table~\ref{tab:deployment-access} maps common deployments to observation rights and the corresponding source evidence. A visible model link is an access condition, not a property granted to every attacker. Captured packets, TLS records, HTTP streams, server-sent events (SSE) and tool calls are different units. Segmentation, buffering and retransmission change their correspondence. Supplement S7 gives the protocol-level map.
-
-Two simultaneous tickets may use separate connections or share an encrypted HTTP/2 connection. In the latter case, a transit observer sees combined packets while stream identifiers remain encrypted. A gateway that buffers SSE output changes the pattern again. The connection and flush policy therefore determine the measured trace.
+\section{Threat Model and Classification}\label{sec:taxonomy}
+\textbf{A result is meaningful only for the target and observations actually supplied to its attacker.}
+The ticket example has client--Agent, Agent--model, Agent--tool and coordination links (Figure~\ref{fig:chain}). A transit observer sees connection destinations, directions, lengths and times. A contacted service reads the request addressed to it; an active auditor can also choose challenges. Table~\ref{tab:deployment-access} maps these rights to deployment configurations. The same traffic may encode requested intent, a logged action or successful execution. Authorization additionally requires the principal and policy context: identifying a refund does not decide whether it was approved.
 
 \input{tables/deployment-access}
 
-The same reasoning explains defense placement. Padding a tool message before a gateway does not specify the gateway's output. Local MCP over \texttt{stdio} removes that network tool leg, while remote model requests may remain. Shared key/value (KV) cache state creates an additional timing interface for a querying tenant. The map therefore records the transport, observation layer, terminating parties and shared state alongside each result. Section~\ref{sec:live-study} compares real HTTP/2 concurrency with paired feedback and shaping interventions.
+\subsection{What is observed and what is predicted}
+A captured packet, TLS record, HTTP stream, tool call and complete task are different units. A gateway can regroup streamed output; HTTP/2 and QUIC can multiplex streams; MCP may use local stdio or remote HTTP~\cite{mcp2025transports,rfc9113,rfc9114,rfc9000,rfc8446}. A boundary supplied by the evaluator is prior information, not a classifier output. Six fields specify each inference setting: interface and representation, observer access, supplied prior information, prediction target, evaluation population and base rate, and protected-training access. Host traces can supply experimental truth without becoming transit-visible features~\cite{reynolds2006wap5,tak2009vpath}.
+
+\subsection{Why execution matters to cover}
+Transport cover can end before a business tool. Executed cover crosses an application boundary: it may consume quota, access other objects, update state or enter the planner's context. We classify a policy by its termination point, state isolation, feedback visibility and dispatcher. These choices determine both its observable signal and the original task's execution budget. Information forwarded to another service creates another permitted observation; it does not imply that every service is visible to the same attacker.
