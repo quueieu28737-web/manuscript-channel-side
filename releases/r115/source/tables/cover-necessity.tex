@@ -1,0 +1,11 @@
+\begin{table}[t]\centering\footnotesize
+\caption{What each terminator hides from an observer of the final hop to a third-party service. Protocol-level padding is discarded by the service's TLS or HTTP/2 layer without its cooperation~\cite{rfc8446,rfc9113}, but responses still follow real application calls.}\label{tab:cover-necessity}
+\setlength{\tabcolsep}{3pt}
+\begin{tabularx}{\columnwidth}{@{}P{.3\columnwidth}P{.22\columnwidth}Y@{}}\toprule
+Cover mechanism & Terminated by & Still visible to the observer \\\midrule
+Defender tunnel or relay & Defender endpoint & Everything on the relay's upstream hop \\\addlinespace[2pt]
+TLS record padding, padding-only records & Service TLS layer & Response presence, size and latency of real calls \\\addlinespace[2pt]
+HTTP/2 frame padding, PING & Service HTTP/2 layer & As above; PING answers are immediate 8-octet ACKs \\\addlinespace[2pt]
+Read-only or no-op call & Application & Read-versus-write response differences; quota use \\\addlinespace[2pt]
+Business operation (sandbox or live) & Application & Only what the attack can still separate \\\bottomrule
+\end{tabularx}\end{table}

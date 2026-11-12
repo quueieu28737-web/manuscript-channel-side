@@ -1,0 +1,8 @@
+{
+  "utc": "2026-11-12T02:34:48.260079+00:00",
+  "type": "Exploratory extension; Qwen idle-gap test results already observed; original plan/results retained.",
+  "rationale": "Known fixed body padding makes application request-sized records visible; same-service calls serialize. Test whether public-protocol eventization can recover the useful event structure without true call intervals.",
+  "fixed_rules": "Per destination: upward encrypted record >=4096 bytes triggers a transaction; first two are public MCP setup; remaining groups end at last downward record >=4096 before next trigger. No true call data read.",
+  "fitting": "Same TRAIN/validation/test, feature vectors, LR/RF and TRAIN-only unlabelled GMM as first analysis. Validation selection before new test prediction. All five arms and both models; no new superiority p-values.",
+  "scope": "Still supplies episode-associated connection bundles; not task discovery or unrestricted H2 demultiplexing."
+}

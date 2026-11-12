@@ -1,3 +1,18 @@
+# Latest manuscript: R115 — Decoys That Do Work
+
+**Evaluating Executed Cover for LLM Agent Communication Privacy** (research-track version for IEEE S&P 2027)
+
+- [Main PDF](main.pdf) | [Supplement PDF](supplement.pdf)
+- [Compilable LaTeX ZIP](latex-source.zip)
+- [Versioned source](releases/r115/README.md) · [修订说明](releases/r115/修订说明.md)
+
+R115 leads with the dispatcher result, narrows the necessity rule against
+TLS/HTTP/2 padding, reframes the shadow result as consistent with its
+reference, adds the service contract, and states exactly what is released.
+No new runs.
+
+---
+
 # Latest manuscript: R114 — Decoys That Do Work
 
 **Evaluating Executed Cover for LLM Agent Communication Privacy** (research-track version for IEEE S&P 2027)
