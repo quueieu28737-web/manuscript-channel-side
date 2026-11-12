@@ -1,0 +1,10 @@
+{
+  "utc": "2026-11-12T02:14:53.648295+00:00",
+  "files": {
+    "experiment/analysis-plan.json": "f25a0691d7e36d221b4c4be5a7d58b3b12c8ec52205aebcbbda67234c4c1ebee",
+    "experiment/no_call_windows.py": "26d06bc308bbe382ba68fc4fbe16cf57d4d5d7c3f594798a5413e733edd5b880",
+    "inputs/manifest.json": "19386dac8fab5039f2f84531849aa71b9b7d04cd2ee81455331d9a9c0d109562"
+  },
+  "storage_correction": "Normalize Windows relative manifest separators before extraction; first run failed before reading records or fitting.",
+  "pre_fit_correction": "Use final closed run/wire records rather than early episode snapshots; preserved failure, code and partial extract. No fits or test scores yet."
+}

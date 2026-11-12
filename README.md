@@ -1,3 +1,18 @@
+# Latest manuscript: R113 — Decoys That Do Work
+
+**Evaluating Executed Cover for LLM Agent Communication Privacy** (research-track version for IEEE S&P 2027)
+
+- [Main PDF](main.pdf) | [Supplement PDF](supplement.pdf)
+- [Compilable LaTeX ZIP](latex-source.zip)
+- [Versioned source](releases/r113/README.md) · [修订说明](releases/r113/修订说明.md)
+
+R113 turns the SoK into a research paper: threat model and necessity rule,
+executed-cover design space, joint evaluation protocol with a derived
+pair-ambiguity floor, live results, a per-policy decision table and an
+inference-cost frontier. The literature map is Appendix A. No new runs.
+
+---
+
 # Latest manuscript: R112 Agent communication side-channel SoK
 
 **Executed Cover and Joint Privacy-State Evaluation**

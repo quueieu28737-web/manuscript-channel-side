@@ -1,0 +1,49 @@
+\documentclass[conference,compsoc]{IEEEtran}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{booktabs,tabularx,array,graphicx,amsmath,amssymb}
+\usepackage{placeins}
+\usepackage[dvipsnames,table]{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,fit}
+\usepackage{pgfplots}
+\usepgfplotslibrary{groupplots}
+\pgfplotsset{compat=1.18}
+\usepackage[hyphens]{url}
+\usepackage{hyperref}
+\hypersetup{hidelinks,pdfauthor={}}
+% Avoid synthetic glyphs at math/text boundaries; preserve Unicode mappings.
+\SetSymbolFont{letters}{normal}{OML}{lmm}{m}{it}
+\SetSymbolFont{letters}{bold}{OML}{lmm}{b}{it}
+\input{glyphtounicode}
+\pdfgentounicode=1
+\pdfglyphtounicode{space}{0020}
+\ifdefined\pdfinterwordspaceoff\pdfinterwordspaceoff\fi
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
+% Replace with the anonymized artifact URL before submission.
+\newcommand{\artifacturl}{[anonymized artifact link]}
+\newcommand{\papername}{Decoys That Do Work: Evaluating Executed Cover\\for LLM Agent Communication Privacy}
+\title{\papername}
+\author{}
+\begin{document}
+\input{bibliography-order}
+\raggedbottom
+\pagestyle{plain}
+\maketitle
+\thispagestyle{plain}
+\input{sections/abstract}
+\input{sections/paper-introduction}
+\input{sections/paper-background}
+\input{sections/paper-threat}
+\input{sections/paper-design}
+\input{sections/paper-method}
+\input{sections/paper-setup}
+\input{sections/paper-results}
+\input{sections/paper-discussion}
+\input{sections/paper-closing}
+\FloatBarrier
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+\input{sections/paper-appendix}
+\end{document}

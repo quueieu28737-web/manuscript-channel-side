@@ -1,0 +1,11 @@
+\begin{figure}[t]\centering
+\begin{tikzpicture}[node distance=4mm,box/.style={draw,rounded corners,align=center,text width=.88\columnwidth,inner sep=4pt,font=\footnotesize},arr/.style={-{Latex[length=1.5mm]}}]
+\node[box] (a) {Fixed 2024--2026 retrieval\\180 arXiv records + 33 web candidates};
+\node[box,below=of a] (b) {209 records after cross-channel deduplication\\+ 2 entered citation leads = 211 screened};
+\node[box,below=of b] (c) {14 direct\quad40 adjacent\quad155 outside\\2 unresolved identities};
+\node[box,below=of c] (d) {+ 1 retained published seed\\15 direct sources / 44 settings};
+\draw[arr] (a)--(b);\draw[arr] (b)--(c);\draw[arr] (c)--(d);
+\end{tikzpicture}
+\caption{Executed coverage audit. Counts are deduplicated work/lead records; two identities remain unresolved. Mechanism anchors use a separate inclusion rule.}
+\label{fig:selection-main}
+\end{figure}

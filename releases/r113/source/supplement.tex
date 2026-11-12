@@ -1,0 +1,54 @@
+\documentclass[conference,compsoc]{IEEEtran}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{booktabs,tabularx,array,graphicx,amsmath,amssymb,longtable}
+\usepackage{placeins}
+\usepackage{etoolbox}
+% Avoid infinite shrink glue when the current LaTeX output routine splits
+% longtable pages to extract marks. Preserve stretch-only bottom spacing.
+\makeatletter
+\patchcmd{\LT@output}{\copy\LT@foot\vss}{\copy\LT@foot\vfil}{}{\PackageError{audit-layout}{Longtable footer patch failed}{Check the installed longtable version.}}
+\patchcmd{\LT@output}{\copy\LT@foot\vss}{\copy\LT@foot\vfil}{}{\PackageError{audit-layout}{Longtable footer patch failed}{Check the installed longtable version.}}
+\makeatother
+\usepackage[hyphens]{url}
+\usepackage{hyperref}
+\hypersetup{hidelinks,pdfauthor={}}
+% Avoid synthetic glyphs at math/text boundaries; preserve Unicode mappings.
+\SetSymbolFont{letters}{normal}{OML}{lmm}{m}{it}
+\SetSymbolFont{letters}{bold}{OML}{lmm}{b}{it}
+\input{glyphtounicode}
+\pdfgentounicode=1
+\pdfglyphtounicode{space}{0020}
+\ifdefined\pdfinterwordspaceoff\pdfinterwordspaceoff\fi
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcommand{\artifacturl}{[anonymized artifact link]}
+\renewcommand{\thesection}{S\arabic{section}}
+\renewcommand{\thesubsection}{\thesection.\arabic{subsection}}
+\renewcommand{\thetable}{S\arabic{table}}
+\renewcommand{\thefigure}{S\arabic{figure}}
+\title{Supplementary Material for\\Decoys That Do Work: Evaluating Executed Cover\\for LLM Agent Communication Privacy}
+\author{}
+\begin{document}
+\input{bibliography-order}
+\raggedbottom
+\pagestyle{plain}
+\maketitle
+\thispagestyle{plain}
+\noindent The supplement starts with the executed-cover state control, the live TLS-record study and the record-only analysis without call boundaries. Source inspection, coding, the reporting forms and deployment maps follow. The forwarding/concurrency pilot remains a separate final section with its non-rejecting primary tests. Earlier receipt-level timing analyses are preserved in the preserved historical source archive accompanying the LaTeX package.
+\input{sections/executed-cover-supplement}
+\clearpage\input{sections/live-timing-supplement}
+\clearpage\input{sections/no-call-supplement}
+\clearpage\onecolumn\twocolumn
+\input{sections/sources-supplement}
+\input{sections/mechanisms-supplement}
+\input{sections/target-evidence-summary}
+\input{sections/reporting-examples-supplement}
+\input{sections/mechanism-agenda-supplement}
+\input{sections/deployment-supplement}
+\clearpage\input{sections/randomized-feedback-supplement}
+% Flush the wide result tables and reset the two-column page height.
+\clearpage\onecolumn\twocolumn
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+\end{document}

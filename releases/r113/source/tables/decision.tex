@@ -1,0 +1,14 @@
+\begin{table*}[t]\centering\small
+\caption{Protocol step 4 on the live policies under illustrative tolerances, set by us for this synthetic scenario after the measurements and not validated for any deployment: strongest tested recognition $\le 72/120$ (60\%); goal and state each at most 3/120 below no cover; model tokens $\le2.5\times$; call-window bytes $\le2\times$. CW and RO are the call-window and record-only observers (Max counts from Tables~\ref{tab:live-timing-main} and~\ref{tab:no-call-main}). $\Delta$G/$\Delta$S are goal/state differences from no cover. A decision names the first violated tolerance.}\label{tab:decision}
+\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\textwidth}{@{}llrrrrrYY@{}}\toprule
+Planner & Policy & CW Max & RO Max & $\Delta$G/$\Delta$S & Tokens$\times$ & Bytes$\times$ & Decision, CW observer & Decision, RO observer \\\midrule
+Qwen3:8B & Immediate & 112 & 91 & $-2$/$-2$ & 1.00 & 1.33 & Fail: inference & Fail: inference \\
+Qwen3:8B & History, sequential & 99 & 75 & $-1$/$-1$ & 1.00 & 1.32 & Fail: inference & Fail: inference (by 3) \\
+Qwen3:8B & History, concurrent & 99 & 62 & $-2$/$-2$ & 1.00 & 1.33 & Fail: inference & \textbf{Pass} \\
+Qwen3:8B & Planner shadow & 70 & 73 & $-1$/$-1$ & 2.01 & 1.68 & \textbf{Pass} & Fail: inference (by 1) \\\midrule
+Llama3.1:8B & Immediate & 108 & 97 & $+1$/$-3$ & 1.01 & 1.27 & Fail: inference & Fail: inference \\
+Llama3.1:8B & History, sequential & 104 & 93 & $+2$/$-3$ & 1.01 & 1.26 & Fail: inference & Fail: inference \\
+Llama3.1:8B & History, concurrent & 106 & 88 & $0$/$-3$ & 1.02 & 1.27 & Fail: inference & Fail: inference \\
+Llama3.1:8B & Planner shadow & 64 & 69 & $0$/$-3$ & 1.99 & 1.71 & \textbf{Pass} (state at limit) & \textbf{Pass} (state at limit) \\\bottomrule
+\end{tabularx}\end{table*}

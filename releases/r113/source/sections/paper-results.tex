@@ -1,0 +1,34 @@
+\section{Results}\label{sec:results}
+\subsection{The dispatcher leaks}\label{sec:dispatch}
+\input{tables/live-timing-main}
+
+\paragraph{Immediate cover is removable}
+A label-free two-component mixture over training gaps selects the short-gap component for removal, and a classifier trained on no-cover traffic decodes the rest. On immediate cover this restores 112/120 and 108/120 correct predictions, against selected size-only attacks at 75 and 80 (Table~\ref{tab:live-timing-main}); both gains meet the prespecified replication rule after Holm correction ($p=1.9\times10^{-8}$ and $4.3\times10^{-6}$). Independent TCP reassembly matches all 773,450 recorded TLS record types, lengths and counts, and refitting the mixture on packet-capture clocks reproduces both scores; on held-out immediate calls it flags 181/182 and 182/182 decoys with no false flags (Supplement S2.7). A controller that skips the model wait therefore exposes its cover.
+
+\paragraph{History matching hides the shortcut, not the signal}
+Sampling honest gaps defeats the simple mixture: it falls to 53 and 14 (sequential) and 38 and 66 (concurrent). Adapted context removal or joint decoding still recognizes 93/120 and 104/120 sequential executions, against selected size-only attacks at 76 and 82 (Holm $p=.0559$ and $.00078$), and 99/120 and 106/120 concurrent ones against 66 and 68 (both $p<10^{-4}$). The policy controls minimum waits, not achieved timing (Table~\ref{tab:live-draws}): Qwen's mean sampled hold of 40.5\,ms becomes 100.4\,ms sequential and 171.2\,ms concurrent at the record observer.
+
+\input{tables/live-draws}
+ A failed simple attack is therefore not evidence of concealment. Llama's sequential mixture deletes 477/634 honest calls while detecting only 64/182 cover calls, which explains its 14/120, whereas joint decoding on the same traces reaches 104/120.
+
+\subsection{Without call boundaries}\label{sec:noboundary}
+We reanalyze all 3,000 episodes from complete encrypted connections, including setup and teardown records. The attacker receives relative record times, directions, ciphertext lengths and destinations, but no call boundaries, operation names, role labels or HTTP stream assignment; whole-episode association remains supplied. An idle-gap rule proposes events (five gaps from 5 to 250\,ms compete on validation accuracy), raw-record classifiers skip eventization, and a training-only mixture removes short-gap events. The immediate-arm pair is the only primary test.
+
+\input{tables/no-call-main}
+Selected removal recognizes 69/120 and 86/120 immediate-cover tasks against baselines of 80 and 90, paired differences of $-9.2$ and $-3.3$ points (Holm $p=.025$ and $.54$): the call-window removal advantage does not carry over. An exploratory eventizer, designed after these results were seen, uses the public padding quantum and MCP setup sequence to propose requests; it raises Qwen's removal count from 68 to 91 but lowers Llama's from 90 to 87, and recovers calls poorly (event F1 .295 and .380 at IoU .5). Recognition stays well above the 20/120 reference in every arm (Table~\ref{tab:no-call-main}), so withholding boundaries changes which attack works rather than removing the leak. Because the representations differ, the gap from the call-window counts is not a pure causal effect of boundaries.
+
+\subsection{Planner shadows sit on their floor}\label{sec:shadow}
+The strongest tested call-window attack on shadow cover, a size/destination RF, scores 70/120 for Qwen and 64/120 for Llama; the validation-selected attacks score 54 and 64. On the realized test split, 21 of 120 shadow labels match the real one, so the $k=1$ floor of Section~\ref{sec:floor} is 70.5/120. No attack exceeds it: the tested attacks are no more accurate than an attacker who already knew both tasks. A chain-separation attack recovers the real chain exactly in only 29 and 32 fixtures. Record-only attacks give a maximum of 73/120 for Qwen over 52 candidates, 2.5 fixtures above the floor, with selected attacks at 69 and 69 below it.
+
+Whether an attacker can tell the chains apart is a separate question. Among the 99 fixtures whose labels differ, where the floor is one half, aggregate counts bound the forest's real-label accuracy only to $[49,70]/99$ and $[43,64]/99$; the exact test needs per-fixture predictions (Section~\ref{sec:limits}). The prespecified equivalence family is degenerate for shadow because both selectors chose the same attack, and we do not count it. Shadow costs 2.01/1.99 times the model tokens and 1.68/1.71 times the call-window bytes, and raises mean real-chain time from 2.91/3.33\,s to 4.80/3.94\,s.
+
+\subsection{Goal completion misses state}\label{sec:state}
+In the live arms, all cover executes on an isolated clone. Goal and state counts stay within three fixtures of no cover for every arm (Table~\ref{tab:live-timing-main}), although cover still changes planning: honest paths match no cover in only 115/120 (Qwen) and 103/120 (Llama) shadow fixtures. Llama's no-cover goal and state counts (82 and 70 of 120) are already imperfect.
+
+The state control tests whether the evaluation would detect forbidden effects. Proxy, read and hidden-isolated cover keep Qwen state correctness at 115--116/120. Live writes reduce it to 7/120 while goal completion stays at 102/120: 95 of the 102 completed tasks leave collateral errors on other orders, shared quota or the ledger. Llama's counts are 3/120 intact and 73 of 76 completed tasks with collateral errors. Both integrity reductions survive Holm correction ($p=3.7\times10^{-32}$ and $3.0\times10^{-19}$; Supplement S1). The harm direction is built into this stress arm; it shows what a goal-only evaluation omits, not how often production writes cause it.
+
+\subsection{Deciding with declared tolerances}\label{sec:decision}
+Table~\ref{tab:decision} carries out step 4 of the protocol. The tolerances are illustrative: we set them for this synthetic scenario after the measurements, so the table demonstrates the procedure rather than validating any policy. Against the call-window observer, only the shadow passes, and Llama's shadow does so with its state loss exactly at the limit. Against the record-only observer the picture changes: Qwen's history-concurrent policy passes at no model cost, while Qwen's shadow fails by one fixture. The same measurements thus support different deployments depending on the declared observer and tolerances, which is why the protocol requires both to be fixed before measuring. Tightening the state tolerance to 2/120 fails every Llama arm; loosening inference to 65\% passes Qwen's sequential policy and shadow against the record-only observer. Figure~\ref{fig:frontier} places the measured policies against the derived floors.
+
+\input{tables/decision}
+\input{figures/cost-frontier}

@@ -1,0 +1,23 @@
+\section{Introduction}\label{sec:intro}
+An LLM Agent receives a support ticket, checks an order and submits a refund through a third-party commerce service. The traffic is encrypted, yet an observer of the path to that service sees which endpoints are contacted, how large each exchange is and how long the Agent waits between them. Recent work shows that such metadata reveal prompts, tasks, workflows and user traits~\cite{jeong2026wra,dangol2026workflow,pouryousef2026traffic,li2026ant}.
+
+A defender who wants to hide the refund can add decoy calls. Classical traffic-analysis defenses discard their cover at a cooperating endpoint before it reaches an application~\cite{apthorpe2019stp}. The commerce service is not under the defender's control and offers no such endpoint. A relay could move the discard point, but the hop from the relay to the service remains visible to whoever watches it, and the service itself sees every request it receives. Against these observers, decoys must arrive as real requests and \emph{execute}. Executed cover then has two outputs: a communication trace and application work, which can consume quota, touch other objects and re-enter the planner's context.
+
+This paper asks how such cover should be designed and evaluated. Existing Agent studies do not answer it. In the four query/workflow privacy settings we could locate, none reports both an attack adapted to the protected traffic and original-task utility under the same intervention~\cite{jeong2026wra,dangol2026workflow}. Website-fingerprinting research already requires adapted attacks and matched costs~\cite{juarez2014critical,mathews2023critical}; Agent execution adds business state and the process that generates cover.
+
+\input{figures/ticket-threat-model}
+
+\paragraph{Approach}
+We characterize when cover must execute, classify executed cover along four axes (termination, state, feedback and dispatcher), and define an evaluation that binds residual inference, requested-goal completion, business-state integrity and resource cost to the same protected executions. We apply it to 3,000 live executions of two fixed-weight planners, Qwen3:8B and Llama3.1:8B, over MCP and TLS~1.3/HTTP/2 on one host, comparing four cover dispatchers against no cover.
+
+\paragraph{Findings}
+\begin{itemize}
+\item \textbf{The dispatcher leaks.} Honest calls follow a model decision. Controller cover that skips that wait is removable: given call boundaries, label-free gap removal raises recognition from 75 to 112 (Qwen) and from 80 to 108 (Llama) of 120 tasks.
+\item \textbf{History matching hides the shortcut, not the signal.} Sampling honest gaps defeats the simple removal, yet adapted attacks still recognize 93--106/120, a significant gain in three of four model/arm cells. Without call boundaries, the prespecified removal attack loses its advantage.
+\item \textbf{Planner shadows have a computable floor.} A second planner on an independent ticket leaves an idealized attacker the modal-label guess among the chains. We derive this pair-ambiguity floor $P^*(k)$ for $k$ shadows; with one shadow it is 7/12, and the strongest tested attack reaches but does not exceed it, at about twice the model tokens.
+\item \textbf{Goal completion is not state integrity.} In a stress control where cover writes to live state, 95 of 102 completed Qwen tasks leave collateral damage that a goal check misses.
+\item \textbf{The decision depends on the observer.} Under illustrative tolerances, only the shadow passes against a call-window observer, whereas the cheaper history-concurrent policy passes for Qwen when call boundaries are withheld.
+\end{itemize}
+
+\paragraph{Contributions}
+(1) A threat model and necessity rule for executed cover, and a four-axis design space (Sections~\ref{sec:threat}--\ref{sec:design}). (2) A joint evaluation protocol with a derived pair-ambiguity floor for planner cover (Section~\ref{sec:method}). (3) A live measurement of dispatch leakage, boundary-free recognition, shadow floors and business-state effects, with per-policy decisions (Sections~\ref{sec:setup}--\ref{sec:results}). Appendix~\ref{app:map} maps all forty-four existing Agent side-channel settings that motivate the protocol.
