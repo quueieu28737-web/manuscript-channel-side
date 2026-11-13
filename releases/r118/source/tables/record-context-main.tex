@@ -1,0 +1,14 @@
+\begin{table*}[t]\centering\footnotesize
+\caption{Exploratory attacks without test call windows; episode association remains supplied. Counts /120. B: validation-selected baseline, including all raw-record candidates. J: validation-selected context-removal/joint-decoding candidate. All: validation selection across all 76 candidates. Max: descriptive test maximum. Difference and Holm $p$ compare J with B in one eight-test family. Both shadow cells select the baseline in All.}\label{tab:record-context}
+\setlength{\tabcolsep}{3pt}
+\begin{tabularx}{\textwidth}{@{}llrrrrrr@{}}\toprule
+Planner & Policy & B & J & All & Max & J$-$B (pp) & Holm $p$ \\\midrule
+Qwen & Immediate & 80 & 112 & 112 & 114 & +26.7 & $2.9\!\times\!10^{-8}$ \\
+Qwen & History, seq. & 73 & 90 & 90 & 99 & +14.2 & 0.0182 \\
+Qwen & History, conc. & 56 & 80 & 80 & 95 & +20.0 & 0.0079 \\
+Qwen & Shadow & 69 & 60 & 69 & 73 & -7.5 & 0.5057 \\
+Llama & Immediate & 90 & 102 & 102 & 112 & +10.0 & 0.1503 \\
+Llama & History, seq. & 88 & 107 & 107 & 111 & +15.8 & 0.0079 \\
+Llama & History, conc. & 78 & 112 & 112 & 112 & +28.3 & $8.6\!\times\!10^{-9}$ \\
+Llama & Shadow & 69 & 64 & 69 & 69 & -4.2 & 0.5057 \\
+\bottomrule\end{tabularx}\end{table*}

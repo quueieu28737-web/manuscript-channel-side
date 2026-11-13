@@ -1,0 +1,9 @@
+model,arm,strong,baseline,strong_correct,baseline_correct,condition_only,reference_only,difference_pp,p_raw,n,p_holm
+qwen3:8b,Immediate,joint_idle_0.1_size_RF,base_raw_time_RF,112,80,33,1,26.666666666666668,4.0745362639427185e-09,120,2.852175384759903e-08
+qwen3:8b,"History, sequential",joint_idle_0.1_size_LR,base_raw_time_RF,90,73,25,8,14.166666666666666,0.004551384132355452,120,0.018205536529421806
+qwen3:8b,"History, concurrent",joint_idle_0.1_size_RF,base_idle_0.005_size_LR,80,56,39,15,20.0,0.0014962588853935084,120,0.007912362925708294
+qwen3:8b,Planner shadow,joint_protocol_time_RF,base_idle_0.02_size_RF,60,69,20,29,-7.5,0.2528697301676033,120,0.5057394603352066
+llama3.1:8b,Immediate,joint_idle_0.1_size_LR,base_raw_size_RF,102,90,22,10,10.0,0.050102459732443094,120,0.15030737919732928
+llama3.1:8b,"History, sequential",joint_idle_0.25_size_LR,base_idle_0.005_time_RF,107,88,26,7,15.833333333333334,0.0013187271542847157,120,0.007912362925708294
+llama3.1:8b,"History, concurrent",joint_idle_0.25_size_LR,base_idle_0.05_size_RF,112,78,35,1,28.333333333333332,1.076841726899147e-09,120,8.614733815193176e-09
+llama3.1:8b,Planner shadow,joint_idle_0.005_size_RF,base_idle_0.005_size_RF,64,69,14,19,-4.166666666666667,0.48685024166479707,120,0.5057394603352066

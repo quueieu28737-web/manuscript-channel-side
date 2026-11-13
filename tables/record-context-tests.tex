@@ -1,0 +1,14 @@
+\begin{table*}[t]\centering\footnotesize
+\caption{All eight exploratory context/joint minus baseline tests on record-only observations. Discordances and denominators are paired fixture counts; $n=120$ in each cell. Holm correction covers all eight rows.}\label{tab:supp-record-tests}
+\setlength{\tabcolsep}{3pt}
+\begin{tabularx}{\textwidth}{@{}llrrrrr@{}}\toprule
+Planner & Policy & J-only & B-only & Difference (pp) & Raw $p$ & Holm $p$ \\\midrule
+Qwen & Immediate & 33 & 1 & +26.7 & $4.1\!\times\!10^{-9}$ & $2.9\!\times\!10^{-8}$ \\
+Qwen & History, seq. & 25 & 8 & +14.2 & 0.0046 & 0.0182 \\
+Qwen & History, conc. & 39 & 15 & +20.0 & 0.0015 & 0.0079 \\
+Qwen & Shadow & 20 & 29 & -7.5 & 0.2529 & 0.5057 \\
+Llama & Immediate & 22 & 10 & +10.0 & 0.0501 & 0.1503 \\
+Llama & History, seq. & 26 & 7 & +15.8 & 0.0013 & 0.0079 \\
+Llama & History, conc. & 35 & 1 & +28.3 & $1.1\!\times\!10^{-9}$ & $8.6\!\times\!10^{-9}$ \\
+Llama & Shadow & 14 & 19 & -4.2 & 0.4869 & 0.5057 \\
+\bottomrule\end{tabularx}\end{table*}

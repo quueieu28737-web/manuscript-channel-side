@@ -1,0 +1,5 @@
+model,stratum,n,exact_partition,exact_real_chain
+qwen3:8b,real-first,67,29,14
+qwen3:8b,shadow-first,53,19,15
+llama3.1:8b,real-first,67,33,14
+llama3.1:8b,shadow-first,53,26,18

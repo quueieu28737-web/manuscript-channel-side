@@ -1,0 +1,8 @@
+\begin{table*}[t]\centering\footnotesize
+\caption{Exploratory shadow diagnostics. First-role prediction uses the frozen $p\ge.5$ selector and is compared with the TRAIN-majority start-order baseline by exact paired testing, Holm across two models. Counts /120 except RF task recognition on the 99 different-label pairs. First-role prediction, exact partition and exact real-chain recovery are distinct endpoints.}\label{tab:supp-shadow-role}
+\setlength{\tabcolsep}{3pt}
+\begin{tabularx}{\textwidth}{@{}lrrrrrY@{}}\toprule
+Planner & First role & Order baseline & Holm $p$ & Exact partition & Exact real chain & RF different-label correct/$n$ \\\midrule
+Qwen & 78 & 53 & 0.0012 & 48 & 29 & 49/99 \\
+Llama & 68 & 53 & 0.0201 & 59 & 32 & 44/99 \\
+\bottomrule\end{tabularx}\end{table*}

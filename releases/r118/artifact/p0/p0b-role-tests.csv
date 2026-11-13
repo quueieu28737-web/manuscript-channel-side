@@ -1,0 +1,3 @@
+model,test,selector_correct,baseline_correct,baseline_rule,selector_predicts_first_chain_real,condition_only,reference_only,difference_pp,p_raw,n,p_holm
+qwen3:8b,selector role accuracy - start-order baseline,78,53,always shadow-first,51,38,13,20.833333333333332,0.0006210434562277101,120,0.0012420869124554201
+llama3.1:8b,selector role accuracy - start-order baseline,68,53,always shadow-first,37,26,11,12.5,0.020073851919732988,120,0.020073851919732988

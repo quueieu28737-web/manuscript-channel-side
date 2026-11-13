@@ -1,0 +1,48 @@
+{
+  "original_frozen_commit": "994e8e3b6dade9a544f4a2793128d01d0ce133dd",
+  "original_private_freeze_sha256": "d3fb91d7d653bf89542fd649e6b12f7c97b39f014338c868cf471819d0ea6b5f",
+  "code": {
+    "PROTOCOL.md": "20dd2e0d191441a2fc631fae71e5f35cf114dff2105d59d5f3c9d49f2df29ca1",
+    "README.md": "f893f5c8a5bf976c288e4bf3f5eba3ae73fd5fd0ddc7ef1278d1fce6d36b587c",
+    "check_protocol.py": "33392244e30cbed14b98cf344bd5b2bf89e128c2ef05815d641852494395a52b",
+    "common_local.py": "1d85a84dbe87233feaa3d27ded191adaccf0b14dac7c88cd5d2692616b162038",
+    "freeze.py": "7f9bc192a219e4aaa9afc547dc04af9144f0b484f5c33d1fdc5ad60012cc3e0d",
+    "p0_terminal_coverage.py": "7b3c5917c67b70801b2c9c5cfa6e2452c516466b72cfcc40b74f43e0dc3a1a38",
+    "p0a_feature_ablation.py": "6aa068bcbc3a91eda98ba6235ac5eb481f534c321498a64c8fd898533678f7dc",
+    "p0b_shadow_roles.py": "cc92370ca112b9ea5f2efde900b06698e75f3678d8935dfa97502faeb914971f",
+    "p0c_record_only_strong.py": "984f671b10854eb7f63f9aed2d96eb1fadecf92591335714305fb0f77312fc7c",
+    "run_queue.py": "3cfe1cf32b4868bc90add534d730d50532db5cf12f921931ec7c7e9926cf8d76",
+    "seal_inputs.py": "6065965f3d86f0aef2eecc07e27f6c541014dbf97ea1b6cda8faf39d5c3969e4",
+    "verify_results.py": "8e8f3bc1531762b58173f32c213e662956305a4a5988167bd0ad61b215b1cab6"
+  },
+  "dependencies": {
+    "analyze.py": "6cd75fd342bbfd5cbe47b98a0871cc280e91529d0075f2ae495e812da8150eba",
+    "live_common.py": "efaf9b0bf2bfd434d430d48be0ac522cd600ecb6cadfd3d30dfa8c501fa61e3e",
+    "no_call_windows.py": "26d06bc308bbe382ba68fc4fbe16cf57d4d5d7c3f594798a5413e733edd5b880",
+    "protocol_record_events.py": "7b39f1e93631a036283eeff1010ba620543d22460d5e1dfde7f1a2c7aecf7ca5"
+  },
+  "runtime": {
+    "python": "3.12.10",
+    "numpy": "2.3.3",
+    "scipy": "1.18.1",
+    "sklearn": "1.9.1"
+  },
+  "scope": "Portable derivative identity; machine paths and individual input manifests withheld. This is not the original freeze receipt.",
+  "aggregate_inputs": {
+    "p0a-attacks.csv": "5519aad76d37479143287df281aeed7170e8b4d946d05e263f3d1b4f9abf5deb",
+    "p0a-tests.csv": "179ba5e4395a1123eeb76446d0b6e821661de16187a2914624505da88162965e",
+    "p0a-reproduction.csv": "ba755b083fce8af0b0e0f3fc532d00fba80cfb1ad04a0a07d3c610c157ce22e7",
+    "p0a-summary.json": "f3daa85702a09a6125534e455712d1176808269bd9d34f13f49d3e230fb02d08",
+    "p0b-role-tests.csv": "208fa2c95c04ef099c9636032ea1cbda293eb9ebcb04eefc05b4d3213c4eb2f9",
+    "p0b-start-order.csv": "d38461b2e8c5b2d9dd8cd2e2000746461febe21ce4f09cc1aa372e77db3b0c76",
+    "p0b-task-labels.csv": "c8cfa8a87962172cc665e2cdddf8365abbdeb6d2b3d6aa1450b2db81c1cc4091",
+    "p0b-summary.json": "c5ffabc22935f5ff0ba3f22974e085462cb8b287f139e77d1e8b74234edacc86",
+    "p0c-attacks.csv": "9fc7634d386eb2c1c43bc92e1ea8092534940cf60cfe3547cfc06ee7755cc3de",
+    "p0c-tests.csv": "a0bd799a87395124f7161abc4eda5518078e836f9545956cfe14073b6959f914",
+    "p0c-event-audit.csv": "4207dadf652d0be70ed14a67930a02d97cb99c902225a45867ae6787fe1654dd",
+    "p0c-summary.json": "8a9d4e22a8d9a989a37ad2dc3c9c2046303b88dce27ade60d2853fe93e17721c",
+    "p0t-attack-strata.csv": "64db8645aa41c2e64512c4826d74080109aeab1129a001dbbe69954ff228d938",
+    "p0t-summary.json": "23ffef6b964ddcccfa7743e398f9f7cf98099d154028e9a9c747e1f8156c4ee7",
+    "verification.json": "4429447731058295c3a8e6d0616693382ca028b864c353680c49e80045192689"
+  }
+}

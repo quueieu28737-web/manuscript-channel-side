@@ -1,0 +1,14 @@
+\begin{table*}[t]\centering\footnotesize
+\caption{Exploratory stratification by the last issued honest business call. After means later start time; for shadow, coverage requires a later shadow business call. Requested-goal correctness is not part of this definition. Scores are the saved validation-selected adaptive attack; strata are observational, not randomized position interventions.}\label{tab:supp-terminal}
+\setlength{\tabcolsep}{3pt}
+\begin{tabularx}{\textwidth}{@{}llrrrYY@{}}\toprule
+Planner & Policy & No business call & Uncovered & Covered & Uncovered correct/$n$ & Covered correct/$n$ \\\midrule
+Qwen & Immediate & 0 & 83 & 37 & 75/83 & 37/37 \\
+Qwen & History, seq. & 0 & 83 & 37 & 64/83 & 29/37 \\
+Qwen & History, conc. & 0 & 73 & 47 & 60/73 & 39/47 \\
+Qwen & Shadow & 0 & 46 & 74 & 41/46 & 13/74 \\
+Llama & Immediate & 0 & 107 & 13 & 96/107 & 12/13 \\
+Llama & History, seq. & 0 & 107 & 13 & 93/107 & 11/13 \\
+Llama & History, conc. & 0 & 80 & 40 & 69/80 & 37/40 \\
+Llama & Shadow & 0 & 57 & 63 & 33/57 & 31/63 \\
+\bottomrule\end{tabularx}\end{table*}

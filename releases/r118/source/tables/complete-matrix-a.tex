@@ -1,0 +1,29 @@
+\begin{table*}[t]\centering\footnotesize
+\caption{Complete setting matrix, part 1 of 2. Each row is one of the forty-four retained settings. Scores keep the source's metric and target; they are not cross-paper rankings. Access states the observer's rights. Last column gives intervention purpose and, for the four privacy comparisons, adapted attack / same-intervention original-task utility (yes or NR: not located). A dash is outside that denominator. Shared* is counted with CG-transform. Full features, split rules and locators remain in the extraction sheet.}\label{tab:complete-matrix-a}
+\setlength{\tabcolsep}{3pt}\renewcommand{\arraystretch}{1.12}
+\begin{tabularx}{\textwidth}{@{}P{.14\textwidth}P{.11\textwidth}P{.13\textwidth}P{.14\textwidth}P{.12\textwidth}Y P{.09\textwidth}@{}}\toprule
+Work / setting & Link; access & Target & Signal / learner & Evaluation unit & Source result & Purpose; A/U \\\midrule
+
+AP-identity~\cite{agentprint2025} & client; transit & hosted-agent identity & Packet size/direction; CNN & interaction & F1 .8660 closed; .8477 open & none; -- \\
+AP-behavior~\cite{agentprint2025} & client; transit & interaction mode & Packet size/direction; CNN & interaction & F1 .924/.889 conflict & none; -- \\
+AP-persona~\cite{agentprint2025} & preferences; derived & occupation & Inferred preferences & participant preferences & Top-3 occupation 69.1\% & none; -- \\
+WRA-prompt~\cite{jeong2026wra} & tool/Web; transit & prompt meaning & Domains/time; LLM & research task & Query recovery .770 / .725 & none; -- \\
+WRA-persona~\cite{jeong2026wra} & tool/Web; transit & user traits & Domains/time; LLM & multiple sessions & Separate trait-category scores & none; -- \\
+WRA-decoy~\cite{jeong2026wra} & tool/Web; transit & prompt meaning & Domains/time; LLM & research task & .770 to .565; five decoys & privacy; NR/NR \\
+WRA-visibility~\cite{jeong2026wra} & tool/Web; transit & prompt meaning & Domains/time; LLM & research task & .770/.610; quality 8.55/8.54 & privacy; NR/yes \\
+CG-workflow~\cite{dangol2026workflow} & coord.; transit & workflow class & Graph/size/time; RF & workflow & Nine-class accuracy .67 & none; -- \\
+CG-composition~\cite{dangol2026workflow} & coord.; transit & workflow class & Graph/size/time; RF & workflow & Known-label holdout .18 & shared*; -- \\
+CG-MCP~\cite{dangol2026workflow} & tool; transit & sequence class & Graph/size/time; RF & fixed sequence & Fixed-sequence accuracy .99 & none; -- \\
+CG-transform~\cite{dangol2026workflow} & coord.; transit & workflow class & Graph/size/time; RF & workflow & Capture transformation; separate from live & privacy; yes/NR \\
+CG-live~\cite{dangol2026workflow} & coord.; transit & workflow class & Graph/size/time; RF & workflow & Six-class .30; 13x bytes, 11x delay & privacy; yes/NR \\
+CG-active~\cite{dangol2026workflow} & coord.; active & integrity impact & Graph/size/time; RF & pending workflow & Live integrity endpoint & none; -- \\
+CB-task~\cite{pouryousef2026traffic} & model; transit & task & Traffic statistics; RF & MARBLE execution & Ten-class BA .853/.860 & none; -- \\
+CB-topology~\cite{pouryousef2026traffic} & model; transit & task & Traffic statistics; RF & execution & Topology change .83 to .52 & none; -- \\
+CB-size-excluded~\cite{pouryousef2026traffic} & model; transit & task class & Traffic statistics; RF & execution & BA .540/.587 & none; -- \\
+CB-partial~\cite{pouryousef2026traffic} & model; transit & task & Traffic statistics; RF & execution & One-agent BA .665/.780 & none; -- \\
+PF-session~\cite{song2026personafingerprint} & tool/Web; transit & synthetic persona & Signed intervals; CNN & fixed packet window & Per-site persona F1 .78--.91 & none; -- \\
+PF-pooled~\cite{song2026personafingerprint} & tool/Web; transit & synthetic persona & Signed intervals; CNN & packet window & Pooled summaries conflict & none; -- \\
+PF-open~\cite{song2026personafingerprint} & tool/Web; transit & persona membership & Signed intervals; CNN & window & Open-world misattribution & none; -- \\
+MARK-protocol~\cite{kang2026whoseagent} & tool/Web; recipient & agent stack identity & Protocol/headers & trial & TLS/H2 F1 .725; HTTP .799 & none; -- \\
+MARK-combined~\cite{kang2026whoseagent} & tool/Web; recipient & agent identity & Protocol/headers & trial & Combined F1 .971 & none; -- \\
+\bottomrule\end{tabularx}\end{table*}

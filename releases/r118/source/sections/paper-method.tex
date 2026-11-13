@@ -1,0 +1,28 @@
+\section{Evaluation Methodology}\label{sec:method}
+\subsection{Joint evaluation protocol}
+Privacy, task success, business state and cost must refer to the same intervention and evaluation population. The protocol has four steps; Table~\ref{tab:joint-checklist} is its reporting form.
+\begin{enumerate}
+\item \textbf{Specify observations and execution authority.} Name the hidden target, the visible links, recipient rights and any supplied boundaries. State where cover ends, which state it can access and whether its responses reach the planner.
+\item \textbf{Specify the contract and tolerances.} Define the requested goal, allowed collateral transitions, and the inference, quota, token and latency tolerances, before measuring.
+\item \textbf{Measure matched executions and adapted attacks.} Pair baseline and policy on the same workload. Include cover-removal and schedule-aware attacks, report the strongest tested residual inference, and take task, state and cost outcomes from those protected runs.
+\item \textbf{Assess requirements.} Fix the attack selection and uncertainty procedure before evaluation. Joint acceptance requires simultaneous support for every mandatory endpoint; an unresolved endpoint leaves the policy undecided. Record forbidden executions separately from goal completion and compare observers using the same attack suite. Our worked example is descriptive because full joint uncertainty is not implemented.
+\end{enumerate}
+
+\input{tables/joint-checklist}
+
+\subsection{Attacks and statistics}\label{sec:stats}
+Each condition has its own attack suite, fitted on its training split. Size-only attacks are logistic regression (LR) and a 300-tree random forest (RF) on destinations and ciphertext sizes, a classifier frozen on no-cover traffic, and last- and penultimate-destination rules. Timing attacks add timing features, supervised and label-free gap removal, context-aware removal and joint decoding; Supplement S2.3 defines them. \emph{Sel.}\ denotes validation selection; reported paired tests use these frozen choices. \emph{Max} is the descriptive largest test count in a finite suite, not an upper bound on inference. \emph{Exploratory} marks analyses designed after earlier test results were seen. Tests are exact paired McNemar tests with Holm correction within each declared family. Original intervals use 10,000 action-stratified fixture bootstraps conditional on fitted attacks and the designed workload; the added diagnostics report paired counts and tests without new bootstrap intervals.
+
+\paragraph{Exploratory extensions}
+Feature ablations refit the original suite using the same splits and seeds. No-time removes timestamps, gaps, durations and elapsed-time features while retaining destinations, order, bytes and every candidate procedure. No-position replaces ordered byte slots with destination summaries and removes explicit position features and position-only rules, while retaining timing order. The eight timing contrasts and four position contrasts form separate correction families (Supplement S2.9).
+
+The record-only extension uses the original encrypted records, five idle-gap eventizations and a protocol-aware eventizer. It retains every refitted baseline, including raw-record LR/RF, and adds context removal and joint decoding. TRAIN and validation call-role labels fit the detector and choose its threshold; validation task accuracy selects the final attack. TEST call truth enters only audits performed after predictions have been saved. Joint decoding removes at most two of the top ten candidate events; it is not a two-call budget. The eight selected-strong-minus-baseline comparisons form one exploratory family (Supplement S3.4).
+
+\subsection{An ideal candidate-label reference}\label{sec:floor}
+Decoy-query obfuscation hides a query among candidates~\cite{domingoferrer2009goopir}. For planner cover, each candidate is a complete task. Consider the ideal observation consisting only of the unordered real and $k$ shadow labels, all recovered perfectly. If the real chain is exchangeable with the shadows, its posterior label probability is $n_c/(k+1)$, where $n_c$ counts chains labeled $c$. The modal-label guess succeeds with probability
+\[P^*(k)=\frac{\mathbb{E}[\max_c n_c]}{k+1}.\]
+This is optimal accuracy for that ideal label observation. With one shadow and six uniform classes, $P^*(1)=\tfrac16+\tfrac56\cdot\tfrac12=\tfrac7{12}$. Table~\ref{tab:shadow-floor} gives the exact enumeration. Drawing distinct shadows from the other labels yields $1/(k+1)$ while preserving each shadow's uniform marginal.
+
+The six-class prior reference is $1/6$; $P^*(k)$ instead describes ambiguity when all candidate labels are known but roles are hidden. Actual traces may obscure labels or disclose roles, so $P^*(k)$ is neither a universal upper nor lower bound on trace inference. Reused fixtures and cache histories also limit exchangeability.
+
+\input{tables/shadow-floor}

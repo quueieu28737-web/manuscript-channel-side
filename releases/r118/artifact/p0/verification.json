@@ -1,0 +1,14 @@
+{
+  "status": "SAVED_VECTORS_ARITHMETIC_AND_INPUTS_VERIFIED",
+  "utc": "2026-11-12T17:38:34.324750+00:00",
+  "checks": 47108,
+  "unchanged_original_input_files": 45003,
+  "full_reproduction_rows": 60,
+  "ablation_family_tests": {
+    "A": 8,
+    "B": 4
+  },
+  "record_only_tests": 8,
+  "scope": "Independent saved-vector/selection/paired-statistic arithmetic and input preservation; not a second fit or external-validity guarantee",
+  "individual_data_released": false
+}

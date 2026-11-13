@@ -1,0 +1,169 @@
+variant,model,arm,attack,validation_correct,test_correct,selected
+full,qwen3:8b,Immediate,byte_LR,25,64,
+full,qwen3:8b,Immediate,byte_RF,32,59,
+full,qwen3:8b,Immediate,frozen,18,40,
+full,qwen3:8b,Immediate,position_last,44,75,size
+full,qwen3:8b,Immediate,position_penultimate,15,43,
+full,qwen3:8b,Immediate,timing_size,30,60,
+full,qwen3:8b,Immediate,gap_detector_strip,57,112,adaptive
+full,qwen3:8b,Immediate,label_free_gmm_strip,57,112,
+full,qwen3:8b,Immediate,context_strip,57,111,
+full,qwen3:8b,Immediate,joint_decoding,57,112,
+full,qwen3:8b,"History, sequential",byte_LR,26,61,
+full,qwen3:8b,"History, sequential",byte_RF,36,61,
+full,qwen3:8b,"History, sequential",frozen,19,41,
+full,qwen3:8b,"History, sequential",position_last,44,76,size
+full,qwen3:8b,"History, sequential",position_penultimate,15,42,
+full,qwen3:8b,"History, sequential",timing_size,30,57,
+full,qwen3:8b,"History, sequential",gap_detector_strip,38,67,
+full,qwen3:8b,"History, sequential",label_free_gmm_strip,23,53,
+full,qwen3:8b,"History, sequential",context_strip,52,93,adaptive
+full,qwen3:8b,"History, sequential",joint_decoding,51,99,
+full,qwen3:8b,"History, concurrent",byte_LR,29,52,
+full,qwen3:8b,"History, concurrent",byte_RF,33,52,
+full,qwen3:8b,"History, concurrent",frozen,20,40,
+full,qwen3:8b,"History, concurrent",position_last,37,66,size
+full,qwen3:8b,"History, concurrent",position_penultimate,18,47,
+full,qwen3:8b,"History, concurrent",timing_size,33,47,
+full,qwen3:8b,"History, concurrent",gap_detector_strip,30,57,
+full,qwen3:8b,"History, concurrent",label_free_gmm_strip,24,38,
+full,qwen3:8b,"History, concurrent",context_strip,45,87,
+full,qwen3:8b,"History, concurrent",joint_decoding,52,99,adaptive
+full,llama3.1:8b,Immediate,byte_LR,34,82,
+full,llama3.1:8b,Immediate,byte_RF,37,80,size
+full,llama3.1:8b,Immediate,frozen,26,54,
+full,llama3.1:8b,Immediate,position_last,36,65,
+full,llama3.1:8b,Immediate,position_penultimate,30,65,
+full,llama3.1:8b,Immediate,timing_size,35,77,
+full,llama3.1:8b,Immediate,gap_detector_strip,54,108,adaptive
+full,llama3.1:8b,Immediate,label_free_gmm_strip,54,108,
+full,llama3.1:8b,Immediate,context_strip,54,108,
+full,llama3.1:8b,Immediate,joint_decoding,54,108,
+full,llama3.1:8b,"History, sequential",byte_LR,35,79,
+full,llama3.1:8b,"History, sequential",byte_RF,37,82,size
+full,llama3.1:8b,"History, sequential",frozen,27,57,
+full,llama3.1:8b,"History, sequential",position_last,36,65,
+full,llama3.1:8b,"History, sequential",position_penultimate,30,64,
+full,llama3.1:8b,"History, sequential",timing_size,38,81,
+full,llama3.1:8b,"History, sequential",gap_detector_strip,50,100,
+full,llama3.1:8b,"History, sequential",label_free_gmm_strip,7,14,
+full,llama3.1:8b,"History, sequential",context_strip,50,101,
+full,llama3.1:8b,"History, sequential",joint_decoding,53,104,adaptive
+full,llama3.1:8b,"History, concurrent",byte_LR,32,68,
+full,llama3.1:8b,"History, concurrent",byte_RF,37,68,size
+full,llama3.1:8b,"History, concurrent",frozen,33,57,
+full,llama3.1:8b,"History, concurrent",position_last,26,48,
+full,llama3.1:8b,"History, concurrent",position_penultimate,25,64,
+full,llama3.1:8b,"History, concurrent",timing_size,41,75,
+full,llama3.1:8b,"History, concurrent",gap_detector_strip,52,98,
+full,llama3.1:8b,"History, concurrent",label_free_gmm_strip,36,66,
+full,llama3.1:8b,"History, concurrent",context_strip,55,103,
+full,llama3.1:8b,"History, concurrent",joint_decoding,56,106,adaptive
+no_time,qwen3:8b,Immediate,byte_LR,25,64,
+no_time,qwen3:8b,Immediate,byte_RF,32,59,
+no_time,qwen3:8b,Immediate,frozen,18,40,
+no_time,qwen3:8b,Immediate,position_last,44,75,size+adaptive
+no_time,qwen3:8b,Immediate,position_penultimate,15,43,
+no_time,qwen3:8b,Immediate,timing_size,34,58,
+no_time,qwen3:8b,Immediate,gap_detector_strip,17,30,
+no_time,qwen3:8b,Immediate,label_free_gmm_strip,10,20,
+no_time,qwen3:8b,Immediate,context_strip,30,49,
+no_time,qwen3:8b,Immediate,joint_decoding,39,66,
+no_time,qwen3:8b,"History, sequential",byte_LR,26,61,
+no_time,qwen3:8b,"History, sequential",byte_RF,36,61,
+no_time,qwen3:8b,"History, sequential",frozen,19,41,
+no_time,qwen3:8b,"History, sequential",position_last,44,76,size+adaptive
+no_time,qwen3:8b,"History, sequential",position_penultimate,15,42,
+no_time,qwen3:8b,"History, sequential",timing_size,35,59,
+no_time,qwen3:8b,"History, sequential",gap_detector_strip,17,30,
+no_time,qwen3:8b,"History, sequential",label_free_gmm_strip,10,20,
+no_time,qwen3:8b,"History, sequential",context_strip,33,59,
+no_time,qwen3:8b,"History, sequential",joint_decoding,41,71,
+no_time,qwen3:8b,"History, concurrent",byte_LR,29,52,
+no_time,qwen3:8b,"History, concurrent",byte_RF,33,52,
+no_time,qwen3:8b,"History, concurrent",frozen,20,40,
+no_time,qwen3:8b,"History, concurrent",position_last,37,66,size+adaptive
+no_time,qwen3:8b,"History, concurrent",position_penultimate,18,47,
+no_time,qwen3:8b,"History, concurrent",timing_size,32,55,
+no_time,qwen3:8b,"History, concurrent",gap_detector_strip,18,30,
+no_time,qwen3:8b,"History, concurrent",label_free_gmm_strip,10,20,
+no_time,qwen3:8b,"History, concurrent",context_strip,23,40,
+no_time,qwen3:8b,"History, concurrent",joint_decoding,37,66,
+no_time,llama3.1:8b,Immediate,byte_LR,34,82,
+no_time,llama3.1:8b,Immediate,byte_RF,37,80,size
+no_time,llama3.1:8b,Immediate,frozen,26,54,
+no_time,llama3.1:8b,Immediate,position_last,36,65,
+no_time,llama3.1:8b,Immediate,position_penultimate,30,65,
+no_time,llama3.1:8b,Immediate,timing_size,37,80,
+no_time,llama3.1:8b,Immediate,gap_detector_strip,10,21,
+no_time,llama3.1:8b,Immediate,label_free_gmm_strip,10,20,
+no_time,llama3.1:8b,Immediate,context_strip,43,75,
+no_time,llama3.1:8b,Immediate,joint_decoding,44,85,adaptive
+no_time,llama3.1:8b,"History, sequential",byte_LR,35,79,
+no_time,llama3.1:8b,"History, sequential",byte_RF,37,82,size
+no_time,llama3.1:8b,"History, sequential",frozen,27,57,
+no_time,llama3.1:8b,"History, sequential",position_last,36,65,
+no_time,llama3.1:8b,"History, sequential",position_penultimate,30,64,
+no_time,llama3.1:8b,"History, sequential",timing_size,35,79,
+no_time,llama3.1:8b,"History, sequential",gap_detector_strip,10,21,
+no_time,llama3.1:8b,"History, sequential",label_free_gmm_strip,10,20,
+no_time,llama3.1:8b,"History, sequential",context_strip,34,64,
+no_time,llama3.1:8b,"History, sequential",joint_decoding,43,80,adaptive
+no_time,llama3.1:8b,"History, concurrent",byte_LR,32,68,
+no_time,llama3.1:8b,"History, concurrent",byte_RF,37,68,size
+no_time,llama3.1:8b,"History, concurrent",frozen,33,57,
+no_time,llama3.1:8b,"History, concurrent",position_last,26,48,
+no_time,llama3.1:8b,"History, concurrent",position_penultimate,25,64,
+no_time,llama3.1:8b,"History, concurrent",timing_size,35,69,
+no_time,llama3.1:8b,"History, concurrent",gap_detector_strip,10,21,
+no_time,llama3.1:8b,"History, concurrent",label_free_gmm_strip,10,20,
+no_time,llama3.1:8b,"History, concurrent",context_strip,34,61,
+no_time,llama3.1:8b,"History, concurrent",joint_decoding,41,77,adaptive
+no_position,qwen3:8b,Immediate,byte_LR,22,34,size
+no_position,qwen3:8b,Immediate,byte_RF,21,49,
+no_position,qwen3:8b,Immediate,frozen,19,51,
+no_position,qwen3:8b,Immediate,timing_size,22,51,
+no_position,qwen3:8b,Immediate,gap_detector_strip,56,111,adaptive
+no_position,qwen3:8b,Immediate,label_free_gmm_strip,56,111,
+no_position,qwen3:8b,Immediate,context_strip,56,111,
+no_position,qwen3:8b,Immediate,joint_decoding,56,111,
+no_position,qwen3:8b,"History, sequential",byte_LR,23,33,size
+no_position,qwen3:8b,"History, sequential",byte_RF,20,42,
+no_position,qwen3:8b,"History, sequential",frozen,19,51,
+no_position,qwen3:8b,"History, sequential",timing_size,24,45,
+no_position,qwen3:8b,"History, sequential",gap_detector_strip,34,58,
+no_position,qwen3:8b,"History, sequential",label_free_gmm_strip,20,54,
+no_position,qwen3:8b,"History, sequential",context_strip,45,89,
+no_position,qwen3:8b,"History, sequential",joint_decoding,48,101,adaptive
+no_position,qwen3:8b,"History, concurrent",byte_LR,23,33,size
+no_position,qwen3:8b,"History, concurrent",byte_RF,22,44,
+no_position,qwen3:8b,"History, concurrent",frozen,19,51,
+no_position,qwen3:8b,"History, concurrent",timing_size,24,47,
+no_position,qwen3:8b,"History, concurrent",gap_detector_strip,29,54,
+no_position,qwen3:8b,"History, concurrent",label_free_gmm_strip,22,48,
+no_position,qwen3:8b,"History, concurrent",context_strip,42,87,
+no_position,qwen3:8b,"History, concurrent",joint_decoding,48,91,adaptive
+no_position,llama3.1:8b,Immediate,byte_LR,37,70,size
+no_position,llama3.1:8b,Immediate,byte_RF,33,72,
+no_position,llama3.1:8b,Immediate,frozen,33,76,
+no_position,llama3.1:8b,Immediate,timing_size,30,72,
+no_position,llama3.1:8b,Immediate,gap_detector_strip,55,113,adaptive
+no_position,llama3.1:8b,Immediate,label_free_gmm_strip,55,113,
+no_position,llama3.1:8b,Immediate,context_strip,55,113,
+no_position,llama3.1:8b,Immediate,joint_decoding,55,113,
+no_position,llama3.1:8b,"History, sequential",byte_LR,37,70,size
+no_position,llama3.1:8b,"History, sequential",byte_RF,33,67,
+no_position,llama3.1:8b,"History, sequential",frozen,33,75,
+no_position,llama3.1:8b,"History, sequential",timing_size,35,82,
+no_position,llama3.1:8b,"History, sequential",gap_detector_strip,53,103,adaptive
+no_position,llama3.1:8b,"History, sequential",label_free_gmm_strip,5,5,
+no_position,llama3.1:8b,"History, sequential",context_strip,52,110,
+no_position,llama3.1:8b,"History, sequential",joint_decoding,53,111,
+no_position,llama3.1:8b,"History, concurrent",byte_LR,38,69,size
+no_position,llama3.1:8b,"History, concurrent",byte_RF,33,72,
+no_position,llama3.1:8b,"History, concurrent",frozen,33,76,
+no_position,llama3.1:8b,"History, concurrent",timing_size,35,79,
+no_position,llama3.1:8b,"History, concurrent",gap_detector_strip,47,99,
+no_position,llama3.1:8b,"History, concurrent",label_free_gmm_strip,32,79,
+no_position,llama3.1:8b,"History, concurrent",context_strip,50,106,
+no_position,llama3.1:8b,"History, concurrent",joint_decoding,53,110,adaptive

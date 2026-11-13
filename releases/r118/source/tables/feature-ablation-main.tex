@@ -1,0 +1,10 @@
+\begin{table*}[t]\centering\footnotesize
+\caption{Exploratory feature ablations on the same test fixtures. Full, No-time and No-position are validation-selected task-recognition counts /120. No-time retains destinations, order, ciphertext bytes and the candidate suite. No-position changes the explicit-position representation and omits position-only rules; timing order remains. $p_T$: Full minus No-time, Holm within eight timing contrasts; $p_P$: Full minus No-position, Holm within four contrasts. All tests are two-sided.}\label{tab:feature-ablation}
+\setlength{\tabcolsep}{3pt}
+\begin{tabularx}{\textwidth}{@{}llrrrrrr@{}}\toprule
+Planner & Policy & Full & No-time & No-position & Time gain (pp) & $p_T$ & $p_P$ \\\midrule
+Qwen & History, seq. & 93 & 76 & 101 & +14.2 & 0.0931 & 0.5059 \\
+Qwen & History, conc. & 99 & 66 & 91 & +27.5 & $2.4\!\times\!10^{-5}$ & 0.385 \\
+Llama & History, seq. & 104 & 80 & 103 & +20.0 & $5.1\!\times\!10^{-5}$ & 1 \\
+Llama & History, conc. & 106 & 77 & 110 & +24.2 & $8.7\!\times\!10^{-6}$ & 0.9614 \\
+\bottomrule\end{tabularx}\end{table*}

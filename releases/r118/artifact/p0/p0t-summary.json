@@ -1,0 +1,95 @@
+{
+  "utc": "2026-11-12T16:05:48.532589+00:00",
+  "role": "exploratory association, not a causal placement intervention; no refit; Fisher p descriptive only",
+  "terminal_definition": "last actual honest business operation, not necessarily requested/correct; after means later start, not completion",
+  "cells": [
+    {
+      "model": "qwen3:8b",
+      "arm": "Immediate",
+      "n": 120,
+      "no_real_business_call": 0,
+      "uncovered_terminal": 83,
+      "covered_terminal": 37,
+      "real_action_is_last_call": 83,
+      "size_selected": "position_last",
+      "adaptive_selected": "gap_detector_strip"
+    },
+    {
+      "model": "qwen3:8b",
+      "arm": "History, sequential",
+      "n": 120,
+      "no_real_business_call": 0,
+      "uncovered_terminal": 83,
+      "covered_terminal": 37,
+      "real_action_is_last_call": 83,
+      "size_selected": "position_last",
+      "adaptive_selected": "context_strip"
+    },
+    {
+      "model": "qwen3:8b",
+      "arm": "History, concurrent",
+      "n": 120,
+      "no_real_business_call": 0,
+      "uncovered_terminal": 73,
+      "covered_terminal": 47,
+      "real_action_is_last_call": 73,
+      "size_selected": "position_last",
+      "adaptive_selected": "joint_decoding"
+    },
+    {
+      "model": "qwen3:8b",
+      "arm": "Planner shadow",
+      "n": 120,
+      "no_real_business_call": 0,
+      "uncovered_terminal": 46,
+      "covered_terminal": 74,
+      "real_action_is_last_call": 46,
+      "size_selected": "position_last",
+      "adaptive_selected": "position_last"
+    },
+    {
+      "model": "llama3.1:8b",
+      "arm": "Immediate",
+      "n": 120,
+      "no_real_business_call": 0,
+      "uncovered_terminal": 107,
+      "covered_terminal": 13,
+      "real_action_is_last_call": 107,
+      "size_selected": "byte_RF",
+      "adaptive_selected": "gap_detector_strip"
+    },
+    {
+      "model": "llama3.1:8b",
+      "arm": "History, sequential",
+      "n": 120,
+      "no_real_business_call": 0,
+      "uncovered_terminal": 107,
+      "covered_terminal": 13,
+      "real_action_is_last_call": 107,
+      "size_selected": "byte_RF",
+      "adaptive_selected": "joint_decoding"
+    },
+    {
+      "model": "llama3.1:8b",
+      "arm": "History, concurrent",
+      "n": 120,
+      "no_real_business_call": 0,
+      "uncovered_terminal": 80,
+      "covered_terminal": 40,
+      "real_action_is_last_call": 80,
+      "size_selected": "byte_RF",
+      "adaptive_selected": "joint_decoding"
+    },
+    {
+      "model": "llama3.1:8b",
+      "arm": "Planner shadow",
+      "n": 120,
+      "no_real_business_call": 0,
+      "uncovered_terminal": 57,
+      "covered_terminal": 63,
+      "real_action_is_last_call": 57,
+      "size_selected": "byte_RF",
+      "adaptive_selected": "byte_RF"
+    }
+  ]
+}

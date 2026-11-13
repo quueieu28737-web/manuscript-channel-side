@@ -1,3 +1,9 @@
+# Latest manuscript: R118
+
+Updated papers: [main](releases/r118/main.pdf), [supplement](releases/r118/supplement.pdf), [LaTeX ZIP](releases/r118/latex-source.zip). [R118 results and aggregate companion](releases/r118/README.md). All individual data remain local.
+
+---
+
 # Latest manuscript: R116 — Decoys That Do Work
 
 **Evaluating Executed Cover for LLM Agent Communication Privacy**

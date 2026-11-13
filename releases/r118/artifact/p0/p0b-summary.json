@@ -1,0 +1,82 @@
+{
+  "utc": "2026-11-12T16:06:00.701544+00:00",
+  "role": "exploratory post-hoc; no refit; T2 tests real-versus-shadow prediction asymmetry under exchangeability, not causal role leakage or equivalence",
+  "R1": [
+    {
+      "model": "qwen3:8b",
+      "test": "selector role accuracy - start-order baseline",
+      "selector_correct": 78,
+      "baseline_correct": 53,
+      "baseline_rule": "always shadow-first",
+      "selector_predicts_first_chain_real": 51,
+      "condition_only": 38,
+      "reference_only": 13,
+      "difference_pp": 20.833333333333332,
+      "p_raw": 0.0006210434562277101,
+      "n": 120,
+      "p_holm": 0.0012420869124554201
+    },
+    {
+      "model": "llama3.1:8b",
+      "test": "selector role accuracy - start-order baseline",
+      "selector_correct": 68,
+      "baseline_correct": 53,
+      "baseline_rule": "always shadow-first",
+      "selector_predicts_first_chain_real": 37,
+      "condition_only": 26,
+      "reference_only": 11,
+      "difference_pp": 12.5,
+      "p_raw": 0.020073851919732988,
+      "n": 120,
+      "p_holm": 0.020073851919732988
+    }
+  ],
+  "R2": [
+    {
+      "model": "qwen3:8b",
+      "stratum": "real-first",
+      "n": 67,
+      "exact_partition": 29,
+      "exact_real_chain": 14
+    },
+    {
+      "model": "qwen3:8b",
+      "stratum": "shadow-first",
+      "n": 53,
+      "exact_partition": 19,
+      "exact_real_chain": 15
+    },
+    {
+      "model": "llama3.1:8b",
+      "stratum": "real-first",
+      "n": 67,
+      "exact_partition": 33,
+      "exact_real_chain": 14
+    },
+    {
+      "model": "llama3.1:8b",
+      "stratum": "shadow-first",
+      "n": 53,
+      "exact_partition": 26,
+      "exact_real_chain": 18
+    }
+  ],
+  "T2_selected": [
+    {
+      "model": "qwen3:8b",
+      "attack": "position_last",
+      "p_raw": 0.005572997762164588,
+      "real": 34,
+      "shadow": 62,
+      "p_holm": 0.011145995524329176
+    },
+    {
+      "model": "llama3.1:8b",
+      "attack": "byte_RF",
+      "p_raw": 0.7436441861052039,
+      "real": 44,
+      "shadow": 40,
+      "p_holm": 0.7436441861052039
+    }
+  ]
+}

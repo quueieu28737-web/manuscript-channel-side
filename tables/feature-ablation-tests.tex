@@ -1,0 +1,18 @@
+\begin{table*}[t]\centering\footnotesize
+\caption{All exploratory ablation tests. Discordant counts are condition-only ($+$) and reference-only ($-$), with 120 paired fixtures. Timing family A contains eight contrasts; position family B contains four. Full size denotes its original validation-selected size attack.}\label{tab:supp-ablation-tests}
+\setlength{\tabcolsep}{3pt}
+\begin{tabularx}{\textwidth}{@{}lllYrrrrr@{}}\toprule
+Family & Planner & Policy & Contrast & $+$ & $-$ & Difference (pp) & Raw $p$ & Holm $p$ \\\midrule
+A & Qwen & History, seq. & Full $-$ No-time & 32 & 15 & +14.2 & 0.0186 & 0.0931 \\
+A & Qwen & History, seq. & No-time $-$ Full size & 0 & 0 & +0.0 & 1 & 1 \\
+A & Qwen & History, conc. & Full $-$ No-time & 42 & 9 & +27.5 & $3.4\!\times\!10^{-6}$ & $2.4\!\times\!10^{-5}$ \\
+A & Qwen & History, conc. & No-time $-$ Full size & 0 & 0 & +0.0 & 1 & 1 \\
+A & Llama & History, seq. & Full $-$ No-time & 27 & 3 & +20.0 & $8.4\!\times\!10^{-6}$ & $5.1\!\times\!10^{-5}$ \\
+A & Llama & History, seq. & No-time $-$ Full size & 13 & 15 & -1.7 & 0.8506 & 1 \\
+A & Llama & History, conc. & Full $-$ No-time & 33 & 4 & +24.2 & $1.1\!\times\!10^{-6}$ & $8.7\!\times\!10^{-6}$ \\
+A & Llama & History, conc. & No-time $-$ Full size & 19 & 10 & +7.5 & 0.136 & 0.5442 \\
+B & Qwen & History, seq. & Full $-$ No-position & 9 & 17 & -6.7 & 0.1686 & 0.5059 \\
+B & Qwen & History, conc. & Full $-$ No-position & 13 & 5 & +6.7 & 0.0963 & 0.385 \\
+B & Llama & History, seq. & Full $-$ No-position & 12 & 11 & +0.8 & 1 & 1 \\
+B & Llama & History, conc. & Full $-$ No-position & 7 & 11 & -3.3 & 0.4807 & 0.9614 \\
+\bottomrule\end{tabularx}\end{table*}

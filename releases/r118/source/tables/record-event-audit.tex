@@ -1,0 +1,14 @@
+\begin{table*}[t]\centering\footnotesize
+\caption{Test audits for the eventization used by the validation-selected strong attack. Role P/R/F1 labels an event as cover if it overlaps any cover call; boundary P/R/F1 matches events to calls at IoU .5. Mixed events overlap real and cover calls. All test predictions were saved before these private-truth audits. The complete six-eventizer audit is in the aggregate artifact.}\label{tab:supp-record-audit}
+\setlength{\tabcolsep}{3pt}
+\begin{tabularx}{\textwidth}{@{}llrYYrr@{}}\toprule
+Planner & Policy & Event gap & Role P/R/F1 & Boundary P/R/F1 & Mixed & Events \\\midrule
+Qwen & Immediate & 100 ms & 0.994/0.989/0.992 & 0.411/0.938/0.571 & 14 & 1534 \\
+Qwen & History, seq. & 100 ms & 0.784/0.870/0.825 & 0.420/0.969/0.586 & 0 & 1547 \\
+Qwen & History, conc. & 100 ms & 0.807/0.934/0.866 & 0.366/0.896/0.520 & 7 & 1643 \\
+Qwen & Shadow & Protocol & 0.505/0.912/0.650 & 0.390/0.612/0.476 & 0 & 1533 \\
+Llama & Immediate & 100 ms & 1.000/1.000/1.000 & 0.475/0.947/0.632 & 17 & 1629 \\
+Llama & History, seq. & 250 ms & 0.963/0.857/0.907 & 0.491/0.999/0.659 & 0 & 1659 \\
+Llama & History, conc. & 250 ms & 0.988/0.929/0.958 & 0.488/0.982/0.652 & 10 & 1649 \\
+Llama & Shadow & 5 ms & 0.488/0.998/0.655 & 0.000/0.000/0.000 & 0 & 8629 \\
+\bottomrule\end{tabularx}\end{table*}

@@ -1,0 +1,83 @@
+model,arm,attack,selected,correct_total,n,uncovered_correct,uncovered_n,covered_correct,covered_n,no_business_correct,no_business_n,fisher_p_descriptive
+qwen3:8b,Immediate,byte_LR,,64,120,51,83,13,37,0,0,0.009974060930138633
+qwen3:8b,Immediate,byte_RF,,59,120,49,83,10,37,0,0,0.0014962606564604315
+qwen3:8b,Immediate,frozen,,40,120,25,83,15,37,0,0,0.29792598276261406
+qwen3:8b,Immediate,position_last,size,75,120,75,83,0,37,0,0,1.7498554585217496e-23
+qwen3:8b,Immediate,position_penultimate,,43,120,7,83,36,37,0,0,2.019227147288128e-22
+qwen3:8b,Immediate,timing_size,,60,120,46,83,14,37,0,0,0.11316926214639558
+qwen3:8b,Immediate,gap_detector_strip,adaptive,112,120,75,83,37,37,0,0,0.057419714594545146
+qwen3:8b,Immediate,context_strip,,111,120,75,83,36,37,0,0,0.27170168426275015
+qwen3:8b,Immediate,label_free_gmm_strip,,112,120,75,83,37,37,0,0,0.057419714594545146
+qwen3:8b,Immediate,joint_decoding,,112,120,75,83,37,37,0,0,0.057419714594545146
+qwen3:8b,"History, sequential",byte_LR,,61,120,49,83,12,37,0,0,0.009890473013570551
+qwen3:8b,"History, sequential",byte_RF,,61,120,51,83,10,37,0,0,0.0006909550928095399
+qwen3:8b,"History, sequential",frozen,,41,120,25,83,16,37,0,0,0.21118321776911866
+qwen3:8b,"History, sequential",position_last,size,76,120,76,83,0,37,0,0,3.11085414848311e-24
+qwen3:8b,"History, sequential",position_penultimate,,42,120,6,83,36,37,0,0,3.3285481702902776e-23
+qwen3:8b,"History, sequential",timing_size,,57,120,44,83,13,37,0,0,0.07826657308501263
+qwen3:8b,"History, sequential",gap_detector_strip,,67,120,45,83,22,37,0,0,0.6916383729025043
+qwen3:8b,"History, sequential",context_strip,adaptive,93,120,64,83,29,37,0,0,1.0
+qwen3:8b,"History, sequential",label_free_gmm_strip,,53,120,33,83,20,37,0,0,0.1667944528842787
+qwen3:8b,"History, sequential",joint_decoding,,99,120,71,83,28,37,0,0,0.20217892355465988
+qwen3:8b,"History, concurrent",byte_LR,,52,120,31,73,21,47,0,0,0.8517513791621836
+qwen3:8b,"History, concurrent",byte_RF,,52,120,33,73,19,47,0,0,0.7065282403822817
+qwen3:8b,"History, concurrent",frozen,,40,120,22,73,18,47,0,0,0.4284077959026782
+qwen3:8b,"History, concurrent",position_last,size,66,120,66,73,0,47,0,0,3.0606409097976614e-26
+qwen3:8b,"History, concurrent",position_penultimate,,47,120,6,73,41,47,0,0,3.199054942354239e-19
+qwen3:8b,"History, concurrent",timing_size,,47,120,27,73,20,47,0,0,0.5699915555991436
+qwen3:8b,"History, concurrent",gap_detector_strip,,57,120,34,73,23,47,0,0,0.8526305128393248
+qwen3:8b,"History, concurrent",context_strip,,87,120,48,73,39,47,0,0,0.05850424423452216
+qwen3:8b,"History, concurrent",label_free_gmm_strip,,38,120,20,73,18,47,0,0,0.23241643806388096
+qwen3:8b,"History, concurrent",joint_decoding,adaptive,99,120,60,73,39,47,0,0,1.0
+qwen3:8b,Planner shadow,byte_LR,,60,120,22,46,38,74,0,0,0.8511964124858098
+qwen3:8b,Planner shadow,byte_RF,,70,120,26,46,44,74,0,0,0.849353043322063
+qwen3:8b,Planner shadow,frozen,,31,120,8,46,23,74,0,0,0.13299664216045565
+qwen3:8b,Planner shadow,position_last,size+adaptive,54,120,41,46,13,74,0,0,4.083011103839978e-15
+qwen3:8b,Planner shadow,position_penultimate,,43,120,13,46,30,74,0,0,0.2399709675919077
+qwen3:8b,Planner shadow,timing_size,,64,120,23,46,41,74,0,0,0.5783196764813181
+qwen3:8b,Planner shadow,gap_detector_strip,,20,120,10,46,10,74,0,0,0.3142441416521466
+qwen3:8b,Planner shadow,context_strip,,20,120,7,46,13,74,0,0,0.8056519235278307
+qwen3:8b,Planner shadow,label_free_gmm_strip,,34,120,9,46,25,74,0,0,0.10109799235928787
+qwen3:8b,Planner shadow,joint_decoding,,32,120,11,46,21,74,0,0,0.6737689555904327
+qwen3:8b,Planner shadow,chain_separation,,49,120,19,46,30,74,0,0,1.0
+llama3.1:8b,Immediate,byte_LR,,82,120,73,107,9,13,0,0,1.0
+llama3.1:8b,Immediate,byte_RF,size,80,120,74,107,6,13,0,0,0.12200531183731514
+llama3.1:8b,Immediate,frozen,,54,120,47,107,7,13,0,0,0.5629705264431795
+llama3.1:8b,Immediate,position_last,,65,120,65,107,0,13,0,0,1.6568506210945782e-05
+llama3.1:8b,Immediate,position_penultimate,,65,120,53,107,12,13,0,0,0.0030588988821863687
+llama3.1:8b,Immediate,timing_size,,77,120,71,107,6,13,0,0,0.21948686913732562
+llama3.1:8b,Immediate,gap_detector_strip,adaptive,108,120,96,107,12,13,0,0,1.0
+llama3.1:8b,Immediate,context_strip,,108,120,96,107,12,13,0,0,1.0
+llama3.1:8b,Immediate,label_free_gmm_strip,,108,120,96,107,12,13,0,0,1.0
+llama3.1:8b,Immediate,joint_decoding,,108,120,96,107,12,13,0,0,1.0
+llama3.1:8b,"History, sequential",byte_LR,,79,120,71,107,8,13,0,0,0.7620357852658569
+llama3.1:8b,"History, sequential",byte_RF,size,82,120,76,107,6,13,0,0,0.11050788693464413
+llama3.1:8b,"History, sequential",frozen,,57,120,50,107,7,13,0,0,0.7707734737630312
+llama3.1:8b,"History, sequential",position_last,,65,120,65,107,0,13,0,0,1.6568506210945782e-05
+llama3.1:8b,"History, sequential",position_penultimate,,64,120,52,107,12,13,0,0,0.0026793904726825153
+llama3.1:8b,"History, sequential",timing_size,,81,120,74,107,7,13,0,0,0.34757650808261836
+llama3.1:8b,"History, sequential",gap_detector_strip,,100,120,89,107,11,13,0,0,1.0
+llama3.1:8b,"History, sequential",context_strip,,101,120,91,107,10,13,0,0,0.4311048371900331
+llama3.1:8b,"History, sequential",label_free_gmm_strip,,14,120,14,107,0,13,0,0,0.35939568206880823
+llama3.1:8b,"History, sequential",joint_decoding,adaptive,104,120,93,107,11,13,0,0,0.6842270323777027
+llama3.1:8b,"History, concurrent",byte_LR,,68,120,51,80,17,40,0,0,0.03249003691731363
+llama3.1:8b,"History, concurrent",byte_RF,size,68,120,49,80,19,40,0,0,0.17444062230964907
+llama3.1:8b,"History, concurrent",frozen,,57,120,41,80,16,40,0,0,0.3323786202664165
+llama3.1:8b,"History, concurrent",position_last,,48,120,48,80,0,40,0,0,3.171779411194296e-12
+llama3.1:8b,"History, concurrent",position_penultimate,,64,120,35,80,29,40,0,0,0.003577583556714577
+llama3.1:8b,"History, concurrent",timing_size,,75,120,55,80,20,40,0,0,0.07104487830222807
+llama3.1:8b,"History, concurrent",gap_detector_strip,,98,120,64,80,34,40,0,0,0.620327083257546
+llama3.1:8b,"History, concurrent",context_strip,,103,120,67,80,36,40,0,0,0.4178678500613757
+llama3.1:8b,"History, concurrent",label_free_gmm_strip,,66,120,46,80,20,40,0,0,0.4446237656641609
+llama3.1:8b,"History, concurrent",joint_decoding,adaptive,106,120,69,80,37,40,0,0,0.3810548307088626
+llama3.1:8b,Planner shadow,byte_LR,,59,120,32,57,27,63,0,0,0.20045141344125783
+llama3.1:8b,Planner shadow,byte_RF,size+adaptive,64,120,33,57,31,63,0,0,0.36487591253637136
+llama3.1:8b,Planner shadow,frozen,,43,120,20,57,23,63,0,0,1.0
+llama3.1:8b,Planner shadow,position_last,,43,120,28,57,15,63,0,0,0.004519985208726565
+llama3.1:8b,Planner shadow,position_penultimate,,46,120,30,57,16,63,0,0,0.002689895664554095
+llama3.1:8b,Planner shadow,timing_size,,59,120,27,57,32,63,0,0,0.7188695879793132
+llama3.1:8b,Planner shadow,gap_detector_strip,,20,120,16,57,4,63,0,0,0.00253943537577995
+llama3.1:8b,Planner shadow,context_strip,,20,120,16,57,4,63,0,0,0.00253943537577995
+llama3.1:8b,Planner shadow,label_free_gmm_strip,,43,120,22,57,21,63,0,0,0.5725742150488882
+llama3.1:8b,Planner shadow,joint_decoding,,33,120,17,57,16,63,0,0,0.6832962106690916
+llama3.1:8b,Planner shadow,chain_separation,,34,120,13,57,21,63,0,0,0.22814342075389954

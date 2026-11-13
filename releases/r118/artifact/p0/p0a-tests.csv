@@ -1,0 +1,13 @@
+family,model,arm,contrast,condition_only,reference_only,difference_pp,p_raw,n,p_holm
+A,qwen3:8b,"History, sequential",full_adaptive - no_time_adaptive,32,15,14.166666666666666,0.018623836615006432,120,0.09311918307503217
+A,qwen3:8b,"History, sequential",no_time_adaptive - full_size_selected,0,0,0.0,1.0,120,1.0
+A,qwen3:8b,"History, concurrent",full_adaptive - no_time_adaptive,42,9,27.5,3.3888279489246997e-06,120,2.3721795642472898e-05
+A,qwen3:8b,"History, concurrent",no_time_adaptive - full_size_selected,0,0,0.0,1.0,120,1.0
+A,llama3.1:8b,"History, sequential",full_adaptive - no_time_adaptive,27,3,20.0,8.430331945419312e-06,120,5.058199167251587e-05
+A,llama3.1:8b,"History, sequential",no_time_adaptive - full_size_selected,13,15,-1.6666666666666667,0.8505540192127228,120,1.0
+A,llama3.1:8b,"History, concurrent",full_adaptive - no_time_adaptive,33,4,24.166666666666668,1.0843941709026694e-06,120,8.675153367221355e-06
+A,llama3.1:8b,"History, concurrent",no_time_adaptive - full_size_selected,19,10,7.5,0.13604594767093658,120,0.5441837906837463
+B,qwen3:8b,"History, sequential",full_adaptive - no_position_adaptive,9,17,-6.666666666666667,0.16863754391670227,120,0.5059126317501068
+B,qwen3:8b,"History, concurrent",full_adaptive - no_position_adaptive,13,5,6.666666666666667,0.09625244140625,120,0.385009765625
+B,llama3.1:8b,"History, sequential",full_adaptive - no_position_adaptive,12,11,0.8333333333333334,1.0,120,1.0
+B,llama3.1:8b,"History, concurrent",full_adaptive - no_position_adaptive,7,11,-3.3333333333333335,0.480682373046875,120,0.96136474609375
